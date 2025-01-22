@@ -55,8 +55,9 @@ def load_difficulty_dict():
 
 
 def compute_reward(words, difficulty_factor, language_factor, urgency, base_fee, proofread_iteration):
-    reward = (urgency * (words * difficulty_factor * language_factor) + base_fee) * 2**(-proofread_iteration)
-    reward = floor(reward) 
+    euros_per_word = 0.0006
+    reward = (urgency * (euros_per_word * words * difficulty_factor * language_factor) + base_fee) * 2**(-proofread_iteration)
+    reward = round(reward, 2)
     return reward
 
 
