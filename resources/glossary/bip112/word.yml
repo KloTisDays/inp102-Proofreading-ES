@@ -1,10 +1,6 @@
 en_word: BIP112
 related_words:
   - OP_CHECKSEQUENCEVERIFY
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en

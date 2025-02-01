@@ -1,10 +1,6 @@
 en_word: OP_FALSE (0X00)
 related_words:
   - OP_0
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en

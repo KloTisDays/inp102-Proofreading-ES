@@ -1,10 +1,6 @@
 en_word: BIP125
 related_words:
   - RBF (REPLACE-BY-FEE)
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en

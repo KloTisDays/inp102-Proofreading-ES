@@ -1,10 +1,6 @@
 en_word: BIP65
 related_words:
   - OP_CHECKLOCKTIMEVERIFY
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en

@@ -1,10 +1,6 @@
 en_word: ANYPREVOUT (APO)
 related_words:
   - SIGHASH_ANYPREVOUT
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en

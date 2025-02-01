@@ -3,10 +3,6 @@ name: NOSTR
 links:
   website: https://nostr.com/
 
-tags:
-  - protocols
-  - cypherpunk
-  - self-sovereignty
 category: privacy
 
 # Proofreading metadata

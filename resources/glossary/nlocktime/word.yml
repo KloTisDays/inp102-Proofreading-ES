@@ -2,10 +2,6 @@ en_word: NLOCKTIME
 related_words:
   - OP_CHECKLOCKTIMEVERIFY
   - TIMELOCK
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en

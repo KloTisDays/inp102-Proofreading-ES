@@ -9,9 +9,5 @@ language: fr
 description: |
   Des publications traitant d'Histoire, d'économie et de Bitcoin... Le passé peut
   parfois être aussi surprenant que l'avenir.
-tags:
-  - historical
-  - finance
-  - future-outlook
 contributors:
   - hunt-wood

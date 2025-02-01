@@ -1,10 +1,6 @@
 en_word: BIP147
 related_words:
   - OP_CHECKMULTISIG
-tags:
-  - ''
-
-# Proofreading metadata
 original_language: fr
 proofreading:
   - language: en
