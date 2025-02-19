@@ -5,13 +5,13 @@ category: conference
 links:
   website: https://planb.sv/
   twitter: https://x.com/PlanBElsalvador
-  youtube: https://youtube.com/playlist?list=PLNETuT4LKydIXpVYuVxJYsjtcDKJeilIe&si=iqqcOUA6t2uJisLC
+  youtube: 
+    https://youtube.com/playlist?list=PLNETuT4LKydIXpVYuVxJYsjtcDKJeilIe&si=iqqcOUA6t2uJisLC
 
 tags:
   - adoption
-  - finance
-  - risks
-
+  - regulation
+  - case-studies
 original_language: en
 proofreading:
   - language: en

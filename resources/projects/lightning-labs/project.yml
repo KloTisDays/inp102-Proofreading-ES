@@ -5,10 +5,9 @@ links:
   twitter: https://twitter.com/lightning
   github: https://github.com/lightningnetwork/lnd
 tags:
-  - bitcoin-only
-  - open-source
-  - lightning-infrastructure
-
+  - lightning
+  - software
+  - business
 category: infrastructure
 
 # Proofreading metadata

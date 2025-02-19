@@ -2,10 +2,9 @@ id: 84def86d-faf5-4589-807a-83be60720c8b
 builder: Sparrow
 
 tags:
+  - wallets
   - privacy
-  - coinjoin
-  - mix
-
+  - guides
 category: on-chain
 
 level: intermediate

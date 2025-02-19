@@ -5,10 +5,9 @@ links:
   website: https://www.walletofsatoshi.com/
   twitter: https://twitter.com/walletofsatoshi
 tags:
-  - custodial
-  - bitcoin-only
-  - LN wallet
-
+  - wallets
+  - lightning
+  - user-friendly
 category: wallet
 
 # Proofreading metadata

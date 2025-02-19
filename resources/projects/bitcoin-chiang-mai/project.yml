@@ -10,11 +10,9 @@ links:
   website: https://www.bitcoinchiangmai.org/
 
 tags:
+  - business
   - adoption
-  - education
-  - lightning
-
-# Proofreading metadata
+  - guides
 original_language: en
 proofreading:
   - language: cs

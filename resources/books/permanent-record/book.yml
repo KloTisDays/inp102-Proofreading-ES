@@ -2,11 +2,9 @@ id: 7df018b9-936d-400d-be8b-c63f41a9e2b4
 author: Edward Snowden
 level: intermediate
 tags:
-  - autobiography
   - privacy
-  - technology
-
-# Proofreading metadata
+  - personal-security
+  - cypherpunk
 original_language: en
 proofreading:
   - language: cs

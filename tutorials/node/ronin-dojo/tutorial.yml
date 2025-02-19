@@ -3,10 +3,8 @@ builder: Samourai
 
 tags:
   - node
-  - privacy
-  - whirlpool
-  - Coinjoin
-
+  - guides
+  - DIY
 category: bitcoin
 
 level: advanced

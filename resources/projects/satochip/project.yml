@@ -7,9 +7,9 @@ links:
   github: https://github.com/toporin
 
 tags:
-  - wallets
   - hardware
-
+  - wallets
+  - keys
 category: wallet
 
 # Proofreading metadata

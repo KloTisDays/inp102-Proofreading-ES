@@ -5,10 +5,9 @@ credits:
   professor: rebuild-kiss
 
 tags:
+  - guides
   - node
-  - lightning
-  - decentralization
-
+  - user-friendly
 category: lightning-network
 
 level: advanced

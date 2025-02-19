@@ -6,8 +6,9 @@ links:
   github: https://github.com/apotdevin/thunderhub
 
 tags:
-  - lightning-infrastructure
-
+  - lightning
+  - software
+  - node
 category: service
 
 # Proofreading metadata

@@ -6,12 +6,9 @@ level: intermediate
 category: merchant
 
 tags:
-  - wallet
+  - guides
+  - wallets
   - lightning
-  - infrasctructure
-  - POS
-
-# Proofreading metadata
 project_id: 41c4621e-7411-42a8-9ef9-90c29e19b76a
 original_language: en
 proofreading:

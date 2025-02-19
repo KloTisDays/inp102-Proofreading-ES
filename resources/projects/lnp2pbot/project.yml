@@ -5,10 +5,9 @@ links:
   website: https://lnp2pbot.com/
   twitter: https://twitter.com/lnp2pBot
 tags:
-  - Open-source
-  - bitcoin-only
-  - exchange
-
+  - software
+  - lightning
+  - wallets
 category: exchange
 
 # Proofreading metadata

@@ -3,9 +3,8 @@ builder: Samourai
 
 tags:
   - privacy
-  - coinjoin
-  - mix
-
+  - guides
+  - node
 category: on-chain
 
 level: advanced

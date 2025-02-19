@@ -8,11 +8,9 @@ links:
 category: education
 
 tags:
-  - blog
-  - education
+  - cypherpunk
   - privacy
-
-# Proofreading metadata
+  - network-security
 original_language: en
 proofreading:
   - language: cs

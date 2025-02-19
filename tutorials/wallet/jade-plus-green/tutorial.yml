@@ -4,9 +4,8 @@ builder: Blockstream
 
 tags:
   - hardware
+  - guides
   - wallets
-  - keys
-
 category: hardware
 
 level: beginner

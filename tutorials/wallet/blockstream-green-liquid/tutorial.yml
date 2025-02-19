@@ -4,9 +4,8 @@ builder: Blockstream
 
 tags:
   - sidechains
-  - offchain
   - wallets
-
+  - guides
 category: mobile
 
 level: beginner

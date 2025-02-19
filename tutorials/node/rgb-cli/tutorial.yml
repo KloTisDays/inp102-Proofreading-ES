@@ -3,10 +3,9 @@ id: 1f8a28d4-fa99-4261-9d80-48275b496fd4
 builder: LNP BP
 
 tags:
-  - offchain
-  - layers
-  - protocols
-
+  - smart-contracts
+  - guides
+  - experimental
 category: rgb
 
 level: advanced

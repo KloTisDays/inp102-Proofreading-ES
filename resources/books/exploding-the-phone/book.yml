@@ -2,11 +2,9 @@ id: 2da26abb-6c7f-4516-a711-09d553066281
 author: Phil Lapsley
 level: intermediate
 tags:
-  - history
-  - technology
-  - hacking
-
-# Proofreading metadata
+  - historical
+  - cypherpunk
+  - network-security
 original_language: en
 proofreading:
   - language: cs

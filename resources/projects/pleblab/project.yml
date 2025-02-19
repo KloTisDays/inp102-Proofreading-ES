@@ -11,13 +11,13 @@ links:
   twitter: https://twitter.com/PlebLab
   github: https://www.github.com/PlebLab
   youtube: https://www.youtube.com/channel/UCoUUXOdWNOSv_MTtYXMUwDA
-  nostr: https://primal.net/profile/npub1an84q6c03wml5lf0uwcqcr20ydwv0t0lvv0xktlcfs9seattef8sdhz6yg
+  nostr: 
+    https://primal.net/profile/npub1an84q6c03wml5lf0uwcqcr20ydwv0t0lvv0xktlcfs9seattef8sdhz6yg
 
 tags:
-  - education
-  - finance
-
-# Proofreading metadata
+  - business
+  - innovation
+  - adoption
 original_language: en
 proofreading:
   - language: cs

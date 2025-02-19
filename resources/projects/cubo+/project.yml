@@ -6,7 +6,7 @@ address_line_2:
 address_line_3:
 language:
   - en
-  - - es
+  -   - es
 links:
   website: https://www.cuboplus.academy/
   twitter: https://x.com/cuboplus?t=qXP3Sckahhzw-Y_5sSGoxA&s=09
@@ -14,11 +14,9 @@ links:
   instagram: https://www.instagram.com/cubo_plus/
 
 tags:
-  - education
-  - development
-  - lightning
-
-# Proofreading metadata
+  - protocols
+  - interoperability
+  - complex-DIY
 original_language: en
 proofreading:
   - language: cs

@@ -9,11 +9,9 @@ links:
   website: https://afrobitcoin.org/
   twitter: https://twitter.com/AfroBitcoinOrg
 tags:
-  - Bitcoiner
-  - General
-  - lightning network
-
-# Proofreading metadata
+  - adoption
+  - historical
+  - case-studies
 project_id: db0f0b26-3fd8-4d3b-94cc-1f55f30fe768
 original_language: en
 proofreading:

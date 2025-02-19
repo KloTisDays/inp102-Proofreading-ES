@@ -16,8 +16,9 @@ language:
 links:
   website: https://bitcoinbushbash.info/
   replay_url:
-  live_url :
+  live_url:
 tags:
-  - bitcoiner
-
+  - adoption
+  - personal-security
+  - user-friendly
 project_id: 2509a2dd-5592-4097-a68f-bd7e5e228b04

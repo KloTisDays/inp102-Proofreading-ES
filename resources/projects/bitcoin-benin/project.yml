@@ -6,15 +6,14 @@ address_line_2:
 address_line_3:
 language:
   - en
-  - - fr
+  -   - fr
 links:
   twitter: https://twitter.com/BitcoinBenin
 
 tags:
-  - bitcoin-only
-  - education
-
-# Proofreading metadata
+  - adoption
+  - user-friendly
+  - case-studies
 original_language: en
 proofreading:
   - language: cs

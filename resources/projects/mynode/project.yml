@@ -5,10 +5,9 @@ links:
   twitter: https://twitter.com/mynodebtc
   github: https://github.com/mynodebtc
 tags:
-  - bitcoin-only
-  - Node
-  - infrastructure
-
+  - node
+  - guides
+  - DIY
 category: node
 
 # Proofreading metadata

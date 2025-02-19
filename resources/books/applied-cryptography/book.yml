@@ -2,11 +2,9 @@ id: 68f51233-7c01-43cf-bf15-4bdbd331dbc8
 author: Bruce Schneier
 level: advanced
 tags:
-  - security
-  - technology
-  - cryptography
-
-# Proofreading metadata
+  - cypherpunk
+  - privacy
+  - personal-security
 original_language: en
 proofreading:
   - language: cs

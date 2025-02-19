@@ -6,10 +6,9 @@ links:
   github: https://github.com/cashubtc
 
 tags:
-  - bitcoin-only
-  - infrastructure
-  - wallet
-
+  - offchain
+  - protocols
+  - wallets
 category: infrastructure
 
 # Proofreading metadata

@@ -2,10 +2,9 @@ id: d5ed4c83-7c1c-4181-95ea-963fdf2d83c5
 builder: VeraCrypt
 
 tags:
-  - security
-  - privacy
-  - encryption
-
+  - guides
+  - personal-security
+  - DIY
 category: general
 
 level: intermediate

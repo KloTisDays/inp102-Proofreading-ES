@@ -14,10 +14,9 @@ links:
   youtube: https://www.youtube.com/@dvadesetjedan
 
 tags:
-  - bitcoin-only
-  - education
-  - communities
-# Proofreading metadata
+  - node
+  - guides
+  - fees
 original_language: en
 proofreading:
   - language: cs

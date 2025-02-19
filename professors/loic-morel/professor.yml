@@ -13,9 +13,9 @@ affiliations:
   - DécouvreBitcoin
 
 tags:
-  - privacy
-  - cryptography
-
+  - wallets
+  - user-friendly
+  - guides
 tips:
   lightning_address: pandul@sats.rs
 

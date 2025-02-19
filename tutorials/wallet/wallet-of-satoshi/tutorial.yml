@@ -6,11 +6,9 @@ level: beginner
 category: mobile
 
 tags:
-  - wallet
-  - lightning-network
-  - custodial
-
-# Proofreading metadata
+  - lightning
+  - wallets
+  - user-friendly
 project_id: 6ca330b1-d19c-470e-93a7-98bce38ff0f5
 original_language: en
 proofreading:

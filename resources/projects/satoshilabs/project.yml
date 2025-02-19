@@ -6,10 +6,9 @@ links:
   github: https://github.com/trezor
 
 tags:
-  - security-solution
-  - open-source
-  - wallet
-
+  - hardware
+  - wallets
+  - business
 category: wallet
 
 # Proofreading metadata

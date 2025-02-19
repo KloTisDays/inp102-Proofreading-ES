@@ -4,9 +4,8 @@ builder: Blockstream
 
 tags:
   - wallets
-  - software
-  - keys
-
+  - guides
+  - good-practice
 category: mobile
 
 level: intermediate

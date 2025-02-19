@@ -6,10 +6,9 @@ level: advanced
 category: mobile
 
 tags:
-  - self-custodial
   - lightning
-  - open-source
-
+  - wallets
+  - node
 credits:
   professor: motor-chef
 

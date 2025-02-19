@@ -6,12 +6,9 @@ level: beginner
 category: mobile
 
 tags:
-  - wallet
-  - lightning-network
-  - self-custodial
-  - open-source
-  - on-chain
-
+  - wallets
+  - guides
+  - user-friendly
 credits:
   professor: casual-chaos
   link: https://help.bitkit.to

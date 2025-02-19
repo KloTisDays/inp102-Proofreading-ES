@@ -10,7 +10,8 @@ type: course
 book_online: false
 book_in_person: false
 price_dollars: 0
-description: Lugano Plan ₿ Summer School is a special bootcamp-week in Lugano with world-class industry leaders and mentors.
+description: Lugano Plan ₿ Summer School is a special bootcamp-week in Lugano with
+  world-class industry leaders and mentors.
 language:
   - en
 links:
@@ -18,8 +19,7 @@ links:
   replay_url:
   live_url:
 tags:
-  - bitcoiner
-  - general
-  - economics
-
+  - guides
+  - good-practice
+  - evaluation
 project_id: cd62a137-baad-4133-b90d-711963e510c7

@@ -6,17 +6,16 @@ address_line_2: Calle Principal, Pristine Bay
 address_line_3:
 language:
   - en
-  - - es
+  -   - es
 links:
   website: https://www.amityage.com/
   twitter: https://twitter.com/AmityAge
   instagram: https://www.instagram.com/amityage/
 
 tags:
-  - finance
-  - education
-
-# Proofreading metadata
+  - legacy
+  - experimental
+  - future-outlook
 original_language: en
 proofreading:
   - language: cs

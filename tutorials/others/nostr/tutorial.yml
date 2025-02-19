@@ -6,9 +6,9 @@ level: advanced
 category: general
 
 tags:
-  - peer to peer
-  - open-source
-
+  - protocols
+  - offchain
+  - adoption
 credits:
   professor: fire-poet
   link: https://agora256.com/nostr/

@@ -6,11 +6,9 @@ links:
   github: https://github.com/zkSNACKs/WalletWasabi
 
 tags:
-  - bitcoin-only
-  - open-source
-  - wallet
+  - wallets
   - privacy
-
+  - user-friendly
 category: wallet
 
 # Proofreading metadata

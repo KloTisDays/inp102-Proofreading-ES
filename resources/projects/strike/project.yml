@@ -5,10 +5,9 @@ links:
   twitter: https://twitter.com/Strike
   github: https://github.com/GaloyMoney
 tags:
-  - bitcoin-only
-  - wallet
-  - lightning-infrastructure
-
+  - wallets
+  - lightning
+  - user-friendly
 category: wallet
 
 # Proofreading metadata
