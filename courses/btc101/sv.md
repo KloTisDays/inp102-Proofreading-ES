@@ -1,5 +1,5 @@
 ---
-name: Bitcoin-resan
+namn: Bitcoin-resan
 goal: Upptäck grundläggande Bitcoin, inklusive dess monetära värdeförslag, gruvarbetare, transaktioner och plånböcker.
 objectives: 
 
