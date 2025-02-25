@@ -359,7 +359,7 @@ I april 2009 meddelade finansministern att den zimbabwiska dollarn skulle dras i
 
 ![image](assets/en/15.webp)
 
-Sammanfattningsvis leder hyperinflation till att valutans värde snabbt degraderas, vilket leder till att sparandet urholkas och förtroendet för det monetära systemet försvinner. Som Voltaire en gång föreslog kommer en fiatvaluta alltid till slut att förlora sitt inneboende värde och konvergera mot noll.
+Sammanfattningsvis leder hyperinflation till att valutans värde snabbt degraderas, vilket leder till att sparandet urholkas och förtroendet för det monetära systemet försvinner. Som Voltaire en gång föreslog kommer en fiatvaluta alltid till slut att förlora sitt egentliga värde och gå mot noll.
 
 En valuta som förlitar sig på en betrodd tredje part som ett finansinstitut är i praktiken och på lång sikt en defekt valuta, eftersom den inte kan garantera köpkraft eller bevara sparande.
 
@@ -372,19 +372,19 @@ https://planb.network/courses/caa75343-ac90-4249-bcca-0e2e57c3a0f1
 
 ### Bitcoins penningpolitik
 
-Bitcoin är en decentraliserad digital valuta med en fördefinierad maximal kvantitet på **21 miljoner enheter**. Denna inneboende egenskap av knapphet bestäms av dess datorkod och förstärks av samförståndet mellan alla användare som deltar i protokollet.
+Bitcoin är en decentraliserad digital valuta med en fördefinierad maximal mängd på **21 miljoner enheter**. Denna egenskap av knapphet bestäms av dess datorkod och förstärks av ett konsensus mellan alla användare som deltar i protokollet.
 
 ![image](assets/en/22.webp)
 
-Dess monetära utgivning kan illustreras med en kurva som representerar mängden bitcoins som skapas över tid. År 2022 var till exempel cirka 18,5 miljoner bitcoins i omlopp. Prognoser visar att det 2025 kommer att finnas cirka 19,5 miljoner bitcoins, vilket motsvarar cirka 93% av det totala utbudet, och 2037 kommer denna siffra att nå 20,4 miljoner.
+Dess monetära skapande kan illustreras med en kurva som representerar mängden bitcoins som skapas över tid. År 2022 var till exempel cirka 18,5 miljoner bitcoins i omlopp. Prognoser visar att det 2025 kommer att finnas cirka 19,5 miljoner bitcoins, vilket motsvarar cirka 93% av det totala utbudet, och 2037 kommer denna siffra att nå 20,4 miljoner.
 
 ### Hur skapas nya bitcoins?
 
-Skapandet av nya bitcoins är resultatet av gruvprocessen. I ett nötskal använder miners kraftfulla datorer som löser komplexa matematiska problem, vilket validerar och säkrar transaktioner. När ett problem har lösts lägger minern till ett nytt block med transaktioner i blockkedjan, en decentraliserad och distribuerad huvudbok som registrerar alla transaktioner som görs i nätverket. Blockkedjan garanterar transparens och säkerhet, eftersom varje block är länkat till det föregående, vilket gör det nästan omöjligt att ändra tidigare data utan samtycke från nätverket.
+Skapandet av nya bitcoins är resultatet av mining-processen. I ett nötskal använder miners kraftfulla datorer som löser komplexa matematiska problem, vilket validerar och säkrar transaktioner. När ett problem har lösts lägger minern till ett nytt block med transaktioner i blockkedjan, ett decentraliserat och distribuerat register som registrerar alla transaktioner som görs i nätverket. Blockkedjan garanterar transparens och säkerhet, eftersom varje block är länkat till det föregående, vilket gör det nästan omöjligt att ändra tidigare data utan samtycke från nätverket.
 
 ![image](assets/en/23.webp)
 
-Efter att framgångsrikt ha utfört denna uppgift belönas miners med utgivning av nya bitcoins var tionde minut. Denna belöning är programmerad att halveras var 210 000:e block, vilket är ungefär vart fjärde år (en händelse som kallas "halvering"), vilket ger den monetära utgivningskurvan en trappliknande form. På grund av denna mekanism kan det matematiskt förutsägas att skapandet av nya bitcoins kommer att upphöra omkring år 2140, när det totala antalet når sin gräns på 21 miljoner.
+Efter att framgångsrikt ha utfört denna uppgift belönas miners med skapandet av nya bitcoins var tionde minut. Denna belöning är programmerad att halveras var 210 000:e block, vilket är ungefär vart fjärde år (en händelse som kallas "halvering"), vilket ger kurvan av det monetära skapandet en trappliknande form. På grund av denna mekanism kan det matematiskt förutsägas att skapandet av nya bitcoins kommer att upphöra omkring år 2140, när det totala antalet når sin gräns på 21 miljoner.
 
 | Halveringsnummer | Blockhöjd | BTC-belöning efter halvering | Beräknad BTC i omlopp efter halvering |
 
@@ -434,18 +434,18 @@ Vi kommer att återkomma till begreppet mining i mer detalj i [miner-kapitlet] (
 
 ### Garantera digital knapphet
 
-Gränsen på 21 miljoner är grunden för Bitcoins knapphet och garanteras av två viktiga mekanismer: justeringen av brytningssvårigheter och spelteorin.
+Gränsen på 21 miljoner är grunden för Bitcoins knapphet och garanteras av två viktiga mekanismer: justeringen av svårigheten av mining och spelteorin.
 
 
-- Justeringen av brytningssvårigheten är en process som sker vart 2016:e block, eller cirka två veckor, för att säkerställa att ett nytt block läggs till i blockkedjan var tionde minut i genomsnitt. Denna frekvens av blockskapande och den totala mängden bitcoins är båda fasta aspekter av Bitcoin-protokollet och kan inte ändras utan ett allmänt samförstånd, till skillnad från de godtyckliga beslut som fattas i traditionella monetära system.
+- Justeringen av svårigheten av mining är en process som sker vart 2016:e block, eller cirka två veckor, för att säkerställa att ett nytt block läggs till i blockkedjan var tionde minut i genomsnitt. Denna frekvens av blockskapande och den totala mängden bitcoins är båda fasta aspekter av Bitcoin-protokollet och kan inte ändras utan ett allmänt samförstånd, till skillnad från de godtyckliga beslut som fattas i traditionella monetära system.
 
 Svårigheten att hitta en giltig hash följer ett slags cykel: om antalet miners ökar innebär det att antalet block de hittar är högre, vilket leder till att den genomsnittliga tiden för att hitta ett block minskar. På grund av detta ökar svårighetsgraden. Som en följd av detta sänks antalet block som miners hittar, vilket innebär att mekanismen går tillbaka till genomsnittet på 10 minuter per block. Vänligen se bilden nedan för en visuell visning.
 
 ![image](assets/en/24.webp)
 
-Visste du att gruvarbetare har incitament att bryta ett block för att tjäna nya bitcoins genom blocksubventionen samt transaktionsavgifter från de transaktioner de inkluderar i det blocket?
+Visste du att miners har incitament att mina ett block för att tjäna nya bitcoins genom blocksubventionen samt transaktionsavgifter från de transaktioner de inkluderar i det blocket?
 
-När antalet utgivna bitcoins närmar sig gränsen på 21 miljoner kommer miners således att ersättas mer genom sina transaktionsavgifter än genom blocksubventionen.
+När antalet skapade bitcoins närmar sig gränsen på 21 miljoner kommer miners således att ersättas mer genom sina transaktionsavgifter än genom blocksubventionen.
 
 
 - Spelteori är ett matematiskt koncept som bygger på mänsklig rationalitet. Det förutsätter att individer agerar logiskt och försöker maximera sina egna fördelar samtidigt som de beaktar andras potentiella beslut. I Bitcoin bidrar spelteorin till att säkerställa att majoriteten av miners och användare agerar i nätverkets bästa intresse. Eftersom protokolländringar röstas fram av användarna skulle faktiskt varje ändring av Bitcoin-protokollet kräva att hela användargruppen samtycker, vilket är mycket komplext. Så om någon ville skapa en bitcoin på 22 miljoner skulle de behöva övertyga alla användare att frivilligt devalvera sina egna besparingar, vilket är osannolikt eftersom Bitcoin är globalt och inte styrs av en central grupp.
@@ -454,7 +454,7 @@ När antalet utgivna bitcoins närmar sig gränsen på 21 miljoner kommer miners
 
 Idén om att devalvera valutan går emot den grundläggande filosofin för Bitcoin, så en förändring i dess totala kvantitet är mycket osannolik att hända.
 
-### En granskningsbar monetär molicy: varje sekund, från början och för alltid!
+### En granskningsbar monetär policy: varje sekund, från början och för alltid!
 
 Bitcoins knapphet är en stor tillgång, och den maximala mängden på 21 miljoner bitcoins i omlopp är offentlig och kan verifieras av vem som helst.
 
