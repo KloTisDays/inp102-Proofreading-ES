@@ -1,6 +1,6 @@
 ---
 namn: Bitcoin-resan
-mål: Upptäck grunderna av Bitcoin, inklusive dess monetära värde, miners, transaktioner och wallets.
+mål: Upptäck grunderna av Bitcoin, inklusive dess monetära värde, miners, transaktioner och bitcoin-plånböcker.
 objektiv: 
 
   - Få en allmän förståelse för Bitcoin-tekniken
@@ -473,13 +473,13 @@ Faktum är att vem som helst kan göra detta via en Bitcoin-nod (dvs. en transak
 }
 ```
 
-Bitcoin garanterar en sund monetär förvaltning genom att begränsa dess skapande genom design, vilket gör den mycket annorlunda än andra valutor eftersom den kan skydda användarnas besparingar. I linje med principerna för österrikisk ekonomi skyddar dess stabila kvantitet och förutsägbara distribution den från de inneboende riskerna för inflation som traditionella valutor måste möta (se ECO201-kursen för att få veta mer).
+Bitcoin garanterar en sund monetär hantering genom att begränsa dess skapande avsiktligt, vilket gör den mycket annorlunda än andra valutor eftersom den kan skydda användarnas besparingar. I enlighet med principerna för österrikisk ekonomi säkerställer dess stabila mängd och förutsägbara distribution ett starkt skydd mot de inneboende inflationsrisker som traditionella valutor ständigt står inför (se ECO201-kursen för att få veta mer).
 
-Sammanfattningsvis erbjuder Bitcoin, med sin decentraliserade natur, programmerade knapphet och transparens, ett unikt alternativ till traditionella monetära system. Det illustrerar hur teknik kan användas för att skapa en valuta som inte bara är användbar och verifierbar, utan också bevarar värdet på användarnas besparingar genom att strikt begränsa tillgången.
+Sammanfattningsvis erbjuder Bitcoin, med sin decentraliserade natur, programmerade knapphet och transparens, ett unikt alternativ till traditionella monetära system. Den illustrerar hur teknik kan användas för att skapa en valuta som inte bara är användbar och verifierbar, utan också bevarar värdet på användarnas besparingar genom att strikt begränsa tillgången.
 
 ### Slutsats av avsnitt 1!
 
-# Bitcoin plånböcker
+# Bitcoin-plånböcker
 
 <partId>28860585-4f61-59d9-b242-f4c57d837cc1</partId>
 
@@ -487,31 +487,31 @@ Sammanfattningsvis erbjuder Bitcoin, med sin decentraliserade natur, programmera
 
 <chapterId>1c0166ab-cb7a-5bc6-9175-d13482bd91f1</chapterId>
 
-I avsnitt 2 kommer vi att utforska lagring och säkerhet för Bitcoin genom användning av plånböcker, för att förstå var dessa berömda bitcoins finns och hur man interagerar med dem!
+I avsnitt 2 kommer vi att utforska Bitcoins förvaring och säkerhet genom användning av digitala plånböcker, för att förstå var dessa berömda bitcoins finns och hur man interagerar med dem!
 
 ### Avmystifiering av Bitcoin-plånböcker
 
-Vi använder plånböcker för att interagera med Bitcoin-nätverket på tre huvudsakliga sätt:
+Vi använder digitala plånböcker för att interagera med Bitcoin-nätverket på tre huvudsakliga sätt:
 
 
 - För att ta emot bitcoins
 - För att skicka bitcoins
 - För att skydda dem mot hackning och stöldförsök
 
-En Bitcoin-plånbok kan ha många olika former: en programvara på din dator, en applikation på din smartphone, en fysisk enhet som en USB-nyckel eller till och med ett papper. Var och en av dem tjänar olika användningsfall. Faktum är att vissa är utformade för stora transaktioner med betoning på säkerhet, medan andra prioriterar integritet, eller så är de avsedda för dagliga betalningar av små belopp.
+En Bitcoin-plånbok kan ha många olika former: en programvara på din dator, en applikation på din smartphone, en fysisk enhet som en USB-nyckel eller till och med ett papper. Var och en av dem tjänar olika användning. Faktum är att vissa är utformade för stora transaktioner med betoning på säkerhet, medan andra prioriterar integritet, eller så är de avsedda för dagliga betalningar av små belopp.
 
-Portföljer kan således kategoriseras i breda användningsområden, som alltid kretsar kring en nyckelfråga: är du ägare till pengarna eller lämnar du över kontrollen över dina pengar till en tredje part? Vi kommer att utforska detta ämne i detalj i nästa kapitel, men frågan är fortfarande enkel: ligger pengarna i din ficka eller i din bankmans ficka?
+Portföljer kan således kategoriseras i breda användningsområden, som alltid kretsar kring en nyckelfråga: är du ägare till pengarna eller lämnar du över kontrollen av dina pengar till en tredje part? Vi kommer att utforska detta ämne i detalj i nästa kapitel, men frågan är fortfarande enkel: ligger pengarna i din ficka eller i din bankmans ficka?
 
 ![image](assets/en/26.webp)
 
 ### Hur fungerar en Bitcoin-plånbok?
 
-Oavsett om det är din Bitcoin-"bankir" eller du själv, arbetar de allra flesta Bitcoin-plånböcker med en liknande teknik baserad på asymmetrisk kryptografi, vilket innebär ett system med nyckelpar: en privat nyckel för utgifter och en offentlig nyckel för mottagande.
+Oavsett om det är din Bitcoin-"bankman" eller du själv, arbetar de allra flesta Bitcoin-plånböcker med en liknande teknik baserad på asymmetrisk kryptografi, vilket innebär ett system med nyckelpar: en privat nyckel för spenderande och en offentlig nyckel för mottagande.
 
 
 - Privat nyckel
 
-När du initierar en plånbok genereras en hemlig återställningsfras (privat nyckel) som presenteras för dig i form av 12 eller 24 ord.
+När du initierar en digital plånbok genereras en hemlig återställningsfras (privat nyckel) som presenteras för dig i form av 12 eller 24 ord.
 
 Den privata nyckeln är grundläggande eftersom den utgör äganderätten till bitcoins och därmed rätten att använda eller skicka dem. Därför är innehavaren av den privata nyckeln den verkliga ägaren av bitcoins.
 
@@ -530,7 +530,7 @@ Sammanfattningsvis gör den här tekniken det möjligt för oss att ta emot bitc
 
 ### Finns bitcoins i plånboken?
 
-Även om dina nycklar lagras i din plånbok "lagras" själva bitcoins faktiskt i Bitcoin-blockkedjan, som är en offentlig distribuerad huvudbok inom Bitcoin peer-to-peer-nätverket (vi kommer att fördjupa oss i det i avsnitt 3). Detta innebär att om du förlorar enheten som innehåller din plånbok behöver det inte nödvändigtvis leda till att du förlorar dina bitcoins. Det som gör att du kan återskapa din plånbok och spendera dina bitcoin är faktiskt den privata nyckeln, så kom alltid ihåg att säkra den ordentligt!
+Även om dina nycklar lagras i din plånbok "lagras" själva bitcoins faktiskt på Bitcoin-blockkedjan, som är ett offentligt distribuerat register inom Bitcoin peer-to-peer-nätverket (vi kommer att fördjupa oss i det i avsnitt 3). Detta innebär att om du förlorar enheten som innehåller din plånbok behöver det inte nödvändigtvis leda till att du förlorar dina bitcoins. Det som gör att du kan återskapa din plånbok och spendera dina bitcoin är faktiskt den privata nyckeln, så kom alltid ihåg att säkra den ordentligt!
 
 ![image](assets/en/28.webp)
 
@@ -538,7 +538,7 @@ Lyckligtvis kan den privata nyckeln sedan 2017 representeras av en enkel lista m
 
 ### Hur är det med hackare?
 
-Vad händer om någon av misstag gissar vår lista med 12 eller 24 ord? Det korta svaret är att det är mycket osannolikt, tack vare den kryptografi som används för att skapa plånboken. För att sätta det i perspektiv, att av misstag upptäcka samma minnesfras är som att hitta "rätt" nummer mellan 1 och $2^256$, vilket nästan är likvärdigt med att hitta "rätt" atom i universum. Men om du inte är nöjd med denna standardsäkerhet kan du alltid förbättra den genom att lägga till en lösenfras (ett extra ord) i din Bitcoin-plånbok.
+Vad händer om någon av misstag gissar vår lista med 12 eller 24 ord? Det korta svaret är att det är mycket osannolikt, tack vare den kryptografi som används för att skapa plånboken. För att sätta det i perspektiv, att av misstag upptäcka samma minnesfras är som att hitta "rätt" nummer mellan 1 och $2^256$, vilket nästan är likvärdigt med att hitta "rätt" atom i universum. Men om du inte är nöjd med denna standardsäkerhet kan du alltid förbättra den genom att lägga till en lösenordsfras (ett extra ord) till din Bitcoin-plånbok.
 
 ![image](assets/en/29.webp)
 
@@ -555,10 +555,10 @@ https://planb.network/courses/46b0ced2-9028-4a61-8fbc-3b005ee8d70f
 
 ### Ställ rätt frågor innan du börjar
 
-När du äger bitcoins är säkerheten för dina medel ett stort bekymmer. Det bästa sättet att definiera en säkerhetsnivå som är lämplig för din situation är att ställa dig själv en rad frågor:
+När du äger bitcoins är säkerheten för dina tillgångar ett stort bekymmer. Det bästa sättet att definiera en säkerhetsnivå som är lämplig för din situation är att ställa dig själv en rad frågor:
 
 
-- Vem kan få tillgång till dina medel? Med andra ord, har du ensam tillgång till dina bitcoins, eller ger en tredje part (t.ex. ett företag) dig tillgång till dina medel?
+- Vem kan få tillgång till dina pengar? Med andra ord, har du ensam tillgång till dina bitcoins, eller ger en tredje part (t.ex. ett företag) dig tillgång till dina pengar?
 - Hur planerar du att använda bitcoins i den specifika plånboken? Regelbundet? För sparande på medellång eller lång sikt?
 - Vilka är dina tekniska färdigheter?
 - Vad är din säkerhetsbudget?
@@ -572,18 +572,18 @@ Det finns faktiskt inget universellt svar eller lösning, så ta dig tid att sva
 Här nedan kommer vi att definiera flera säkerhetsnivåer:
 
 
-- Nivå 0**, du använder en så kallad "custodial service" där du inte är den enda innehavaren av dina bitcoins. Var medveten om att denna betrodda tredje part när som helst kan begränsa din tillgång till dina medel. I det här fallet liknar din nivå av finansiell suveränitet den som gäller för ett traditionellt banksystem med ett bankkonto.
+- Nivå 0**, du använder en så kallad "custodial service" där du inte är den enda innehavaren av dina bitcoins. Var medveten om att denna betrodda tredje part när som helst kan begränsa din tillgång till dina pengar. I det här fallet liknar din nivå av finansiell suveränitet det som gäller för ett traditionellt banksystem med ett bankkonto.
 
 ![image](assets/en/31.webp)
 
 
-- Nivå 1**, du använder en Bitcoin-plånbok på din telefon eller dator, där du är den enda innehavaren av dina bitcoins och du enkelt kan utföra dina transaktioner. Det ovan nämnda verktyget kallas "hot wallet", eftersom den privata nyckeln lagras på en enhet med internetåtkomst. I det här fallet är det viktigt att säkerhetskopiera din minnesfras för att återfå tillgång till dina pengar om du tappar bort din telefon eller dator.
+- Nivå 1**, du använder en Bitcoin-plånbok på din telefon eller dator, där du är den enda innehavaren av dina bitcoins och du kan enkelt utföra dina transaktioner. Det ovan nämnda verktyget kallas "varm plånbok", eftersom den privata nyckeln lagras på en enhet med internetåtkomst. I det här fallet är det viktigt att säkerhetskopiera din minnesfras för att återfå tillgång till dina pengar om du tappar bort din telefon eller dator.
 
 Du kan till exempel använda Sparrow Wallet som en varm plånbok:
 
 https://planb.network/tutorials/wallet/desktop/sparrow-7e9a77c0-013d-4f8e-a811-408b71dc7607
 
-- Nivå 2**, du använder en fysisk plånbok och du har säkrat din lista med 12/24 ord. Det kallas ofta för "cold Wallet" eftersom dina nycklar lagras på en enhet som inte är ansluten till internet. I det här fallet måste du alltid signera varje transaktion med din enhet, vilket gör dina pengar mindre tillgängliga på daglig basis.
+- Nivå 2**, du använder en fysisk digital plånbok och du har säkrat din lista med 12/24 ord. Det kallas ofta för "kall plånbok" eftersom dina nycklar lagras på en enhet som inte är ansluten till internet. I det här fallet måste du alltid signera varje transaktion med din enhet, vilket gör dina pengar mindre tillgängliga på daglig basis.
 
 Du kan till exempel använda en Ledger, en Satochip eller en Tapsigner:
 
@@ -593,25 +593,25 @@ https://planb.network/tutorials/wallet/hardware/tapsigner-ab2bcdf9-9509-4908-9a4
 ![image](assets/en/32.webp)
 
 
-- Nivå 3**, du använder en plånbok på nivå 1 eller 2, men du har lagt till ytterligare en lösenfras. I det här fallet måste du vara medveten om att du måste säkerhetskopiera både listan med 12/24 ord **och** din lösenfras. Helst ska dessa två delar av informationen lagras på två olika platser.
+- Nivå 3**, du använder en plånbok på nivå 1 eller 2, men du har lagt till ytterligare en lösenordsfras. I det här fallet måste du vara medveten om att du måste säkerhetskopiera både listan med 12/24 ord **och** din lösenordsfras. Helst ska dessa två delar av informationen lagras på två olika platser.
 
-För att lära dig mer om hur BIP39-passfras används och fungerar:
+För att lära dig mer om hur BIP39-lösenordsfras används och fungerar:
 
 https://planb.network/tutorials/wallet/backup/passphrase-a26a0220-806c-44b4-af14-bafdeb1adce7
 ![image](assets/en/33.webp)
 
 
-- Nivå 4**, du använder en uppsättning plånböcker för att skapa en "multisig"-plånbok, vilket innebär att flera signaturer krävs för att genomföra en transaktion. I det här fallet bör du vara medveten om att varje del av multisignaturen ska lagras på olika platser. Detta tillvägagångssätt anses ofta vara en avancerad användning av Bitcoin, främst för att hantera stora belopp och för företagsändamål.
+- Nivå 4**, du använder ett set av plånböcker för att skapa en "multisig"-plånbok, vilket innebär att flera signaturer krävs för att genomföra en transaktion. I det här fallet bör du vara medveten om att varje del av multisignaturen ska lagras på olika platser. Detta tillvägagångssätt anses ofta vara en avancerad användning av Bitcoin, främst för att hantera stora belopp och för företagsändamål.
 
 ![image](assets/en/34.webp)
 
-Naturligtvis kräver olika användningsfall också olika Bitcoin-plånböcker, och det finns ingen lösning som passar alla.
+Naturligtvis kräver olika användningar också olika Bitcoin-plånböcker, och det finns ingen lösning som passar alla.
 
 ### Säkerheten måste anpassas
 
-Hur mycket man är villig att lämna på en specifik säkerhetsnivå beror på varje individ. För vissa är det rimligt att lämna 1 BTC på en varm plånbok, medan det för andra är det motsatta. I vilket fall som helst, när du vill säkra en liten summa, rekommenderar vi att du inte spenderar för mycket på säkerhet genom att köpa en fysisk plånbok. Tänk dessutom på att det kan vara skadligt att överkomplicera säkerheten och tillgängligheten för dina bitcoins, särskilt om du misshandlar säkerhetskopiorna av dina plånböcker.
+Beloppet man är villig att lämna på en specifik säkerhetsnivå beror på varje individ. För vissa är det rimligt att lämna 1 BTC på en varm plånbok, medan det för andra är det motsatta. I vilket fall som helst, när du vill säkra en liten summa rekommenderar vi att du inte spenderar för mycket på säkerhet genom att köpa en fysisk plånbok. Tänk dessutom på att det kan vara skadligt att överkomplicera säkerheten och tillgängligheten för dina bitcoins, särskilt om du misssköter backups av dina plånböcker.
 
-Sammanfattningsvis är direkt ägande av ens bitcoins ett viktigt element för att säkerställa finansiell suveränitet. Det rekommenderas att använda en mobil plånbok för dagliga utgifter och en offline, eller "kall", fysisk plånbok för att lagra större belopp. Företag bör å andra sidan överväga att använda system med flera signaturer, eller "multisig", för ökad och delad säkerhet. Det är också viktigt att undvika depåtjänster, som kan återskapa vissa sårbarheter i det traditionella finansiella systemet.
+Sammanfattningsvis är direkt ägande av ens bitcoins ett viktigt element för att säkerställa finansiell suveränitet. Det rekommenderas att använda en mobil plånbok för dagliga utgifter och en offline, eller "kall", fysisk plånbok för att lagra större belopp. Företag bör å andra sidan överväga att använda system med flera signaturer, eller "multisig", för ökad och delad säkerhet. Det är också viktigt att undvika custodial services, som kan återskapa vissa sårbarheter som i det traditionella finansiella systemet.
 
 Med detta i åtanke kan vi nu gå vidare till nästa avsnitt där vi beskriver hur man skapar en Bitcoin-plånbok. Men om du vill utforska ämnet säkerhet ytterligare kan du läsa den här [artikeln av DarthCoin] (https://asi0.substack.com/p/bitcoin-soyez-votre-propre-banque).
 
@@ -626,7 +626,7 @@ Observera att BTC102-kursen kommer att vägleda dig genom detta steg.
 https://planb.network/courses/f3e3843d-1a1d-450c-96d6-d7232158b81f
 ### Det här steget är inget skämt!
 
-När du skapar en plånbok skapar programvaran vanligtvis din privata nyckel, som vanligtvis representeras av en lista med 12/24 ord (ofta kallad "seed phrase" eller "mnemonic phrase"): dessa ord utgör tillgången till dina medel. Om den här nyckeln någonsin avslöjas för en tredje part bör du anse att de tillhörande medlen har äventyrats. När du konfigurerar din plånbok är det därför viktigt att följa dessa regler:
+När du skapar en plånbok skapar programvaran vanligtvis din privata nyckel, som vanligtvis representeras av en lista med 12/24 ord (ofta kallad "återställningsfras" eller "mnemonisk fras"): dessa ord ger tillgången till dina pengar. Om den här nyckeln någonsin avslöjas för en tredje part bör du antaga att de tillhörande pengarna har äventyrats. När du konfigurerar din plånbok är det därför viktigt att följa dessa regler:
 
 
 - Täck alla kameror.
@@ -644,7 +644,7 @@ Här nedan hittar du ett exempel på hur du sammanställer papperet: orden är f
 
 ### Våra tips för att göra det rätt
 
-Se dessutom till att inte göra något misstag under kopian, annars kan dina arvingar kämpa för att läsa den och kanske inte kunna återfå pengarna. När du har sparat orden är det dessutom tillrådligt att skapa en andra kopia och lagra den på en annan plats än den första. Detta säkerställer att du har en säkerhetskopia om originalet går förlorat eller skadas.
+Se dessutom till att inte göra något misstag under skrivningen, annars kan dina arvtagare ha det svårt att läsa den och kanske inte kunna återfå pengarna. När du har sparat orden är det dessutom rekommenderat att skapa en andra kopia och lagra den på en annan plats än den första. Detta säkerställer att du har en backup om originalet går förlorat eller skadas.
 
 ![image](assets/en/36.webp)
 
@@ -652,22 +652,22 @@ Ordlistorna bör förvaras på ett säkert ställe som du lätt kan komma ihåg.
 
 **Dina ord = dina pengar.**
 
-Både "kalla" och "varma" plånböcker använder ordlistmetoden som standard för säkerhetskopiering av privata nycklar. Det innebär att du kan ange din minnesfras i vilken kompatibel plånboksprogramvara eller enhet som helst för att återställa din åtkomst. Å andra sidan avråder vi starkt från att använda plånböcker som inte tillhandahåller en fröfras, eftersom de kan kräva att du uppger ett konto, en e-postadress eller, ännu värre, ett ID.
+Både "kalla" och "varma" plånböcker använder ordlistmetoden som standard för backup av privata nycklar. Det innebär att du kan ange din mnemoniska fras i vilken kompatibel plånboksprogramvara eller enhet som helst för att återställa din åtkomst. Å andra sidan avråder vi starkt från att använda plånböcker som inte tillhandahåller en återställningsfras, eftersom de kan kräva att du uppger ett konto, en e-postadress eller, ännu värre, ett ID.
 
 **OBS: Avsaknaden av en lista med 12/24 ord bör göra dig uppmärksam
 
 Om du sedan vill upptäcka, steg för steg, hur du ställer in din egen plånbok och får dina första bitcoins, rekommenderar vi också att du tar den här andra kursen:
 
 https://planb.network/courses/f3e3843d-1a1d-450c-96d6-d7232158b81f
-## Klarar tidens test
+## Att klara tidens test
 
 <chapterId>f58cd446-c202-5eff-aab7-e61cc40e5c06</chapterId>
 
-Som alla former av rikedom måste dina bitcoins skyddas mot förlust, stöld och nedbrytning, särskilt på lång sikt. För att skydda dina bitcoins krävs viss teknisk kunskap och en förståelse för de risker som är förknippade med dem, vilket öppnar vägen för två huvudstrategier: att gravera dina bitcoins på en stålplatta och att upprätta en arvsplan.
+Som alla former av rikedom måste dina bitcoins skyddas mot förlust, stöld och förfall, särskilt på lång sikt. För att skydda dina bitcoins krävs viss teknisk kunskap och en förståelse för de risker som är förknippade med dem, vilket öppnar vägen för två huvudstrategier: att gravera dina bitcoins på en stålplatta och att upprätta en arvsplan.
 
 ### Gravyr i stål
 
-En metod för att säkra dina bitcoins på lång sikt är att gravera din mnemoniska fras på ett motståndskraftigt material som stål, genom att skapa en fysisk säkerhetskopia av dina nycklar som är resistent mot både vatten- och brandskador.
+En metod för att säkra dina bitcoins på lång sikt är att gravera din mnemoniska fras på ett motståndskraftigt material som stål, genom att skapa en fysisk backup av dina nycklar som är resistent mot både vatten- och brandskador.
 
 Det finns olika lösningar: vissa av dem är billiga, t.ex. "Blockmit", medan andra kan kräva mer specialiserad utrustning. Du kan utforska detta ämne ytterligare i avsnittet [tutorials](https://planb.network/en/tutorials/wallet) i vår akademi.
 
@@ -675,7 +675,7 @@ Det finns olika lösningar: vissa av dem är billiga, t.ex. "Blockmit", medan an
 
 ### Tänk på nästa generation!
 
-Vid sidan av denna första praxis är det ett avgörande steg att skapa en arvsplan för att säkerställa att dina bitcoins hanteras korrekt efter din död. Denna plan innebär att du skriver ett handskrivet brev där du beskriver dina tillgångar, deras åtkomstmetoder och kontaktinformationen till de betrodda personer som har ansvar för dem. Det är också viktigt att diskutera arvet av bitcoins med en notarie för att säkerställa skatteöverensstämmelse, även om den här personen aldrig bör anförtros direkt med förvaltningen av dina bitcoins.
+Vid sidan av denna första praxis är det ett avgörande steg att skapa en arvsplan för att säkerställa att dina bitcoins hanteras korrekt efter din död. Denna plan innebär att du skriver ett handskrivet brev där du beskriver dina tillgångar, deras åtkomstmetoder och kontaktinformationen till de betrodda personer som har ansvar för dem. Det är också viktigt att diskutera arvet av bitcoins med en notarie för att säkerställa skatteöverensstämmelse, även om den här personen aldrig bör anförtros direkt med hanteringen av dina bitcoins.
 
 Om du vill utforska ämnet arvsplan för dina bitcoins ytterligare rekommenderar vi att du läser Pamela Morgans bok [Cryptoasset Inheritance Plan] (https://planb.network/resources/books/28) eller anmäler dig till BTC102-kursen, där vi ger vägledning om hur du skapar din plan.
 
@@ -683,7 +683,7 @@ Om du vill utforska ämnet arvsplan för dina bitcoins ytterligare rekommenderar
 
 ### Integritet är viktigt
 
-Förutom att skapa fysiska säkerhetskopior eller utveckla en arvsplan är integritet ett annat viktigt ämne när det gäller den långsiktiga säkerheten för dina bitcoins. Det är till exempel att föredra att köpa bitcoins utan att identifiera sig för att minimera riskerna för identitetsstöld eller spårning av dina medel av de enheter som har rätt verktyg.
+Förutom att skapa fysiska backups eller utveckla en arvsplan är integritet ett annat viktigt ämne när det gäller den långsiktiga säkerheten för dina bitcoins. Det är till exempel att föredra att köpa bitcoins utan att identifiera sig för att minimera riskerna för identitetsstöld eller spårning av dina tillgångar av de enheter som har rätt verktyg.
 
 När det gäller integritet är det viktigt att undvika att prata med alla om dina bitcoins. Vi kan inte förutsäga hur denna teknik kommer att uppfattas i framtiden, så att upprätthålla diskretion om ditt ägande är ett klokt val: du vill inte dra uppmärksamhet till dig själv eller din plånbok.
 
@@ -696,18 +696,18 @@ Bitcoin-plånböcker är mjukvara som gör att du kan lagra bitcoins och göra t
 
 - mobil- eller datorplånböcker, praktiska för små belopp och/eller regelbundna utgifter;
 - fysiska plånböcker, mer lämpade för lagring av bitcoins på medellång och lång sikt;
-- plånböcker med flera signaturer, som är mer komplexa att hantera och kräver flera signaturer för att utföra transaktioner.
+- plånböcker med multisig, som är mer komplexa att hantera och kräver flera signaturer för att utföra transaktioner.
 
-När du skapar en plånbok måste du först säkerhetskopiera din lista med 12 eller 24 ord på ett papper eller en metallplatta. Denna så kallade mnemoniska fras gör att du kan återställa din plånbok genom vilken Bitcoin-plånboksapplikation som helst. Tänk på att den som får tillgång till den här listan också får tillgång till dina pengar.
+När du skapar en plånbok måste du först göra en backup av din lista med 12 eller 24 ord på ett papper eller en metallplatta. Denna så kallade mnemoniska fras gör att du kan återställa din plånbok genom vilken Bitcoin-plånboksapplikation som helst. Tänk på att den som får tillgång till den här listan också får tillgång till dina pengar.
 
-I Bitcoin-världen är ekonomisk suveränitet nära kopplad till individuellt ansvar, vilket gör det viktigt att säkra tillgången till dina plånböcker och säkerhetskopior. För att uppnå detta är det viktigt att följa vissa riktlinjer:
+I Bitcoin-världen är ekonomisk suveränitet nära kopplad till individuellt ansvar, vilket gör det viktigt att säkra tillgången till dina plånböcker och backups. För att uppnå detta är det viktigt att följa vissa riktlinjer:
 
 
 - Skapa en arvsplan för att säkerställa att dina nära och kära kan hämta ut pengarna om det skulle uppstå problem.
-- Undvik att lämna dina Bitcoins på utbytesplattformar eftersom de kan vara mottagliga för hackerattacker.
-- Anpassa din säkerhetsnivå till dina behov och användningsfall för att kunna välja bra bland de olika Bitcoin-plånböcker som finns tillgängliga.
+- Undvik att lämna dina Bitcoins på köp- och säljplattformar eftersom de kan vara mottagliga för hackerattacker.
+- Anpassa din säkerhetsnivå till dina behov och användningar för att kunna göra ett bra val bland de olika Bitcoin-plånböcker som finns tillgängliga.
 
-Nu när vi har gått igenom grunderna i Bitcoin-plånböcker och de bästa metoderna för att säkra dem, kommer vi i nästa kapitel att utforska de tekniska funktionerna i Bitcoin. Återigen kommer en förståelse för grunderna i Bitcoin-protokollet att förbättra din förståelse för hur det fungerar, vilket ger dig möjlighet att använda det bättre.
+Nu när vi har gått igenom grunderna inom Bitcoin-plånböcker och de bästa metoderna för att säkra dem, kommer vi i nästa kapitel att utforska de tekniska funktionerna inom Bitcoin. Återigen kommer en förståelse för grunderna av Bitcoin-protokollet att förbättra din förståelse för hur det fungerar, vilket ger dig möjlighet att använda det bättre.
 
 # De tekniska aspekterna av Bitcoin.
 
@@ -723,25 +723,24 @@ Nu när vi har gått igenom grunderna i Bitcoin-plånböcker och de bästa metod
 
 Den 31 oktober 2008 föddes den nya finansiella tekniken som är Bitcoin. Den här dagen presenterade den anonyme Satoshi Nakamoto sin innovation för världen genom ett e-postmeddelande som skickades till cypherpunks e-postlista, en grupp kryptografientusiaster som arbetar för att främja integritet på internet. E-postmeddelandet innehöll ett dokument kallat "White Paper", som beskrev hur Bitcoin fungerade.
 
-Initiativet väckte inte omedelbart entusiasm, förmodligen på grund av de tidigare misslyckandena i försöken att skapa ett digitalt kontantsystem. Trots detta blev vitboken så småningom en referens för Bitcoin-användare och har varit föremål för många debatter i Bitcoin-ekosystemet genom åren.
+Initiativet väckte inte omedelbart entusiasm, förmodligen på grund av de tidigare misslyckandena av försöken att skapa ett digitalt kontantsystem. Trots detta blev White Paper så småningom en referens för Bitcoin-användare och har varit föremål för många debatter i Bitcoin-ekosystemet genom åren.
 
 ![image](assets/en/40.webp)
 
-Den 3 januari 2009 invigde Satoshi officiellt Bitcoin-nätverket genom att skapa det första blocket, även känt som "Genesis-blocket", som markerade lanseringen av Bitcoin-blockkedjan. Detta block innehåller ett avslöjande meddelande som speglar Bitcoins mission: "03/jan/2009 Chancellor on brink of second bailout for banks."
+Den 3 januari 2009 invigde Satoshi officiellt Bitcoin-nätverket genom att skapa det första blocket, även känt som "Genesis-blocket", som markerade lanseringen av Bitcoin-blockkedjan. Detta block innehåller ett avslöjande meddelande som speglar Bitcoins uppdrag: "03/jan/2009 Chancellor on brink of second bailout for banks."
 
 ![image](assets/en/41.webp)
 
-> "Vi kan vinna en viktig strid i kapprustningen och få en
-> nya territorium av frihet i flera år." - Satoshi Nakamoto
+> "Vi kan vinna en viktig strid i kapprustningen och få nya territorium av frihet i flera år." - Satoshi Nakamoto
 ![image](assets/en/42.webp)
 
 ### Bitcoin-protokollet vaknar till liv
 
-Den 9 januari 2009 tillkännagav Satoshi lanseringen av Bitcoin 0.1.0-versionen. Strax därefter tog Hal Finney tag i programvaran och gick med i nätverket, vilket markerade närvaron av två noder och därmed två gruvarbetare i nätverket. Finney förevigade till och med detta steg genom att twittra: "Running Bitcoin". Den 12 januari 2009 gjordes den första Bitcoin-transaktionen på 10 BTC mellan Satoshi och Hal Finney, och du kan enkelt hitta den om du går tillbaka till block 170.
+Den 9 januari 2009 tillkännagav Satoshi lanseringen av Bitcoin 0.1.0-versionen. Strax därefter tog Hal Finney tag i programvaran och gick med i nätverket, vilket markerade närvaron av två noder och därmed två miners i nätverket. Finney förevigde till och med detta steg genom att twittra: "Running Bitcoin". Den 12 januari 2009 gjordes den första Bitcoin-transaktionen på 10 BTC mellan Satoshi och Hal Finney, och du kan enkelt hitta den om du går tillbaka till block 170.
 
 ![image](assets/en/43.webp)
 
-Intresset för Bitcoin växte snabbt, vilket ledde till att många människor testade den, deltog i debatter, löste buggar och reflekterade över dess etiska, ekonomiska och filosofiska aspekter. Folk var så fängslade att Satoshi skapade forumet BitcoinTalk den 22 november 2009 för att underlätta den här typen av konfrontationer.
+Intresset för Bitcoin växte snabbt, vilket ledde till att många människor testade den, deltog i debatter, löste buggar och reflekterade över dess etiska, ekonomiska och filosofiska aspekter. Folk var så fängslade att Satoshi skapade forumet BitcoinTalk den 22 november 2009 för att underlätta den här typen av diskussioner.
 
 Forumet blev snabbt den föredragna platsen för diskussion för Bitcoin-användare, så mycket att kända memes och symboler som är förknippade med Bitcoin föddes ur det, till exempel [Bitcoin-logotypen] (https://bitcointalk.org/index.php?topic=64.0), den berömda [Hodl] (https://bitcointalk.org/index.php?topic=375643.0) eller till och med [Pizza day] (https://bitcointalk.org/index.php?topic=137.msg1195).
 
@@ -753,9 +752,7 @@ Forumet blev snabbt den föredragna platsen för diskussion för Bitcoin-använd
 
 Under 2010, när Bitcoin började uppmärksammas i media, bestämde sig Satoshi för att ta avstånd från sig själv genom att meddela sin avgång i ett foruminlägg den 12 december 2010. Den 23 april 2011 gjorde han sitt sista kända privata utbyte via e-post, försvann sedan och lämnade sin skapelse i händerna på samhället.
 
-> "Regeringar är bra på att hugga av huvudena på en centralstyrd
-> kontrollerade nätverk som Napster, men rena P2P-nätverk som
-> Gnutella och Tor verkar hålla ställningarna." - Satoshi Nakamoto
+> "Regeringar är bra på att hugga av huvudena på ett centralstyrd kontrollerat nätverk som Napster, men rena P2P-nätverk som Gnutella och Tor verkar hålla ställningarna." - Satoshi Nakamoto
 Trots Satoshis frånvaro fortsatte Bitcoin att utvecklas: Bitcoins historia skrivs var tionde minut, och protokollet fortsätter att fungera som avsett än idag. Oavsett rädsla, osäkerhet eller tvivel fortsätter Bitcoin att gå framåt, med en mycket stark online-tillgänglighet. Enligt den här [webbplatsen] (https://bitcoinuptime.com/) har Bitcoin faktiskt varit funktionellt och kört utan massiva problem under 99,988% av tiden sedan det skapades.
 
 För vissa definieras Bitcoin som en svampliknande enhet som ett [mycelium] (https://brandonquittem.com/bitcoin-is-the-mycelium-of-money/), medan andra beskriver det som ett [svart hål] (https://dergigi.com/). Vare sig man älskar eller hatar den fortsätter Bitcoin att existera, med sin konstanta rytm på 10 minuter per block, som hjärtslaget i ett nytt monetärt system.
@@ -764,14 +761,14 @@ För att lära dig mer om Satoshi Nakamotos skrifter rekommenderar vi att du lä
 
 ![image](assets/en/45.webp)
 
-> "Grundproblemet med konventionell valuta är allt det förtroende som krävs för att få den att fungera. Man måste lita på att centralbanken inte förfalskar valutan, men fiatvalutornas historia är full av brott mot det förtroendet. Bankerna måste vara betrodda att hålla våra pengar och överföra dem elektroniskt, men de lånar ut dem i vågor av kreditbubblor med knappt en bråkdel i reserv" - [Satoshi Nakamoto](https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/)
+> "Grundproblemet med konventionell valuta är allt det förtroende som krävs för att få den att fungera. Man måste lita på att centralbanken inte förfalskar valutan, men fiatvalutornas historia är full av brott mot det förtroendet. Bankerna måste vara betrodda att bevara våra pengar och överföra dem elektroniskt, men de lånar ut dem i vågor av kreditbubblor med knappt en bråkdel i reserv" - [Satoshi Nakamoto](https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/)
 Nu när vi har lite bakgrund ska vi undersöka hur en Bitcoin-transaktion fungerar i allmänhet.
 
 ## Bitcoin-transaktioner
 
 <chapterId>03482644-5473-590b-975b-b43bb65eac21</chapterId>
 
-En Bitcoin-transaktion är helt enkelt en överföring av äganderätten till bitcoins genom användning av en Bitcoin-adress. För att beskriva denna process, låt oss introducera två huvudpersoner: Alice och Bob. Alice vill förvärva bitcoins, medan Bob redan äger några.
+En Bitcoin-transaktion är helt enkelt en överföring av äganderätten till bitcoins genom användning av en Bitcoin-adress. För att beskriva denna process, låt oss introducera två huvudpersoner: Alice och Bob. Alice vill skaffa sig bitcoins, medan Bob redan äger några.
 
 ### Steg 1 - Skapa transaktionen via plånboken
 
