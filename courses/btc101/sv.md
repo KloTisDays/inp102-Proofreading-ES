@@ -1,18 +1,18 @@
 ---
 namn: Bitcoin-resan
-goal: Upptäck grundläggande Bitcoin, inklusive dess monetära värdeförslag, gruvarbetare, transaktioner och plånböcker.
-objectives: 
+mål: Upptäck grunderna av Bitcoin, inklusive dess monetära värde, miners, transaktioner och wallets.
+objektiv: 
 
   - Få en allmän förståelse för Bitcoin-tekniken
   - Förstå hur man köper och säkrar bitcoins
-  - Ha en allmän förståelse för Blockchain-tekniken
+  - Få en allmän förståelse för Blockchain-tekniken
   - Bekanta dig med konceptet Lightning Network
   - Inse den geopolitiska och sociala effekten av Bitcoin
 
 ---
 # Ditt första Bitcoin-äventyr
 
-I den här kursen förklarar vi grunderna i Bitcoin i 25 kapitel, så att du kan förstå den här tekniken på ett enkelt och effektivt sätt. Kursen utforskar grunderna i branschen som helhet, inklusive ämnen som gruvdrift, plånböcker, köp- och säljplattformar och mer. Ytterligare utbildningsmaterial kommer att finnas tillgängligt under hela resan, och vi uppmanar dig också att kolla in "21 affischer" i resursavsnittet efter att du har avslutat den här kursen.
+I den här kursen förklarar vi grunderna i Bitcoin i 25 kapitel, så att du kan förstå tekniken på ett enkelt och effektivt sätt. Kursen utforskar grunderna i branschen som helhet, inklusive ämnen som mining, wallets, köp- och säljplattformar och mer. Extra utbildningsmaterial kommer att finnas tillgängligt under hela resan, och vi uppmanar dig också att kolla in "21 affischer" i resursavsnittet efter att du har avslutat den här kursen.
 
 Du behöver inte ha några särskilda förkunskaper för att komma igång. Faktum är att följande innehåll är tillgängligt för studenter på alla nivåer, och det bör ta cirka 15 timmar att slutföra.
 
@@ -29,15 +29,15 @@ Du behöver inte ha några särskilda förkunskaper för att komma igång. Faktu
 
 Bitcoin är en teknisk och monetär revolution som kan få oss att ifrågasätta vårt förhållande till pengar och samhälle. Faktum är att Bitcoin (BTC) är en **neutral** och **decentraliserad** valuta, vilket innebär att den inte kontrolleras av någon enhet eller institution. Det är en innovation som går längre än bara en "internetvaluta": det är både ett datorprotokoll (Bitcoin) och en monetär enhet (bitcoin).
 
-Protokollet använder underliggande tekniker som kryptografi, nätverkskommunikation och den berömda "blockkedjan", medan bitcoin-enheten fungerar som den nödvändiga valutan för att protokollet ska fungera korrekt. I vardagen använder salvadoraner och bitcoinare runt om i världen bitcoinvalutan för att köpa och sälja varor och tjänster och förlitar sig på att denna teknik ska göra deras liv bättre.
+Protokollet använder underliggande tekniker som kryptografi, nätverkskommunikation och den berömda "blockkedjan", medan bitcoin-enheten fungerar som den nödvändiga valutan för att protokollet ska fungera korrekt. I vardagen använder salvadoraner och bitcoiners runt om i världen bitcoinvalutan för att köpa och sälja varor och tjänster och förlitar sig på att denna teknik ska göra deras liv bättre.
 
 ### En omfattande men ändå lättillgänglig läroplan
 
-I den här kursen kommer vi att diskutera några monetära aspekter av Bitcoin, inklusive hur man köper och säljer bitcoins, lagrar dem säkert i digitala plånböcker och använder dem för transaktioner. Vi kommer också att undersöka miners roll, som är avgörande för att skapa nya bitcoins och säkra Bitcoin-nätverket. Slutligen kommer vi att utforska framtiden för Bitcoin och hur Lightning Network-tekniken kan förbättra Bitcoin-transaktioner.
+I den här kursen kommer vi att diskutera några monetära aspekter av Bitcoin, inklusive hur man köper och säljer bitcoins, förvarar dem säkert i digitala plånböcker och använder dem för transaktioner. Vi kommer också att undersöka miners roll, som är avgörande för att skapa nya bitcoins och säkra Bitcoin-nätverket. Slutligen kommer vi att utforska framtiden för Bitcoin och hur Lightning Network-tekniken kan förbättra Bitcoin-transaktioner.
 
 ![image](assets/en/01.webp)
 
-Det är viktigt att förstå att Bitcoin är ett nytt monetärt system som helt förändrar vårt förhållande till pengar, så att lära sig hur man använder det är en nödvändig färdighet för alla som vill ha kontroll över sina egna medel.
+Det är viktigt att förstå att Bitcoin är ett nytt monetärt system som helt förändrar vårt förhållande till pengar, så att lära sig hur man använder det är en nödvändig färdighet för alla som vill ha kontroll över sina egna tillgångar.
 
 **Avsnitt 1 - Pengar**
 
@@ -60,8 +60,8 @@ Det är viktigt att förstå att Bitcoin är ett nytt monetärt system som helt 
 
 - Kapitel 9 - Vad är en transaktion?
 - Kapitel 10 - Bitcoin-noder
-- Kapitel 11 - Gruvarbetare
-- Kapitel 12 - Gruvarbetare och ekologi
+- Kapitel 11 - Miners
+- Kapitel 12 - Miners och ekologi
 
 **Avsnitt 4 - Sparande i Bitcoin**
 
@@ -71,7 +71,7 @@ Det är viktigt att förstå att Bitcoin är ett nytt monetärt system som helt 
 - Kapitel 15 - Att arbeta för Bitcoin
 - Kapitel 16 - Hyper-bitcoinisering
 
-**Avsnitt 5 - Blixtnätverk**
+**Avsnitt 5 - Lightning Network**
 
 
 - Kapitel 17 - Introduktion till Lightning Network
@@ -79,7 +79,7 @@ Det är viktigt att förstå att Bitcoin är ett nytt monetärt system som helt 
 
 Innan vi introducerar definitionen av pengar och dess funktion i samhället (kapitel 1) bör vi börja med uppkomsten av Bitcoin. Bitcoin lanserades 2009 och är en relativt ny teknik som skiljer sig från allt annat. Det är därför normalt att inte förstå allt om den, allt på en gång. Precis som när man lär sig använda internet eller köra bil behöver man inte kunna alla tekniska detaljer på en gång: man kan börja med att lära sig hur man tar emot, betalar och säkrar sina pengar och sedan ta små steg för att fördjupa sig.
 
-När allt kommer omkring befinner vi oss bara i början av införandet, eftersom vi har passerat startfasen: du är precis i tid för att skaffa dig så mycket kunskap som du vill om denna viktiga innovation.
+Trots allt befinner vi oss bara i början av adoptionen, då vi har passerat startfasen: du är precis i tid för att skaffa dig så mycket kunskap som du vill om denna viktiga innovation.
 
 ![image](assets/en/02.webp)
 
@@ -95,9 +95,9 @@ Innan termen "Bitcoin" blev synonymt med digital valuta och finansiell omvandlin
 
 ![image](assets/en/03.webp)
 
-Mitt under den tekniska utvecklingen på 1980- och 1990-talen började en grupp människor på allvar ifrågasätta den roll som integritet och frihet spelar i den digitala tidsåldern. Dessa personer, som senare skulle bli kända som "cypherpunks", var övertygade om att kryptografi kunde fungera som ett verktyg för att skydda individuella rättigheter mot inblandning från regeringar och stora företag.
+Mitt under den tekniska utvecklingen på 1980- och 1990-talen började en grupp människor på allvar ifrågasätta den roll som integritet och frihet spelar i den digitala tidsåldern. Dessa personer, som senare skulle bli kända som "cypherpunks", var övertygade om att kryptografi kunde fungera som ett verktyg för att skydda individuella rättigheter mot inblandning av regeringar och stora företag.
 
-Ikoniska personer som Julian Assange, Wei Dai, Tim May och David Chaum spelade en central roll i utformningen av rörelsens filosofi och vision. Dessa tänkare delade med sig av sina idéer på en inflytelserik e-postlista, där deltagare från hela världen deltog i debatter om de bästa sätten att utnyttja tekniken för att öka den individuella friheten.
+Ikoniska personer som Julian Assange, Wei Dai, Tim May och David Chaum spelade en central roll i utformningen av rörelsens filosofi och vision. Dessa tänkare delade med sig av sina idéer med hjälp av en inflytelserik e-postlista, där deltagare från hela världen deltog i debatter om de bästa sätten att använda teknik för att öka den individuella friheten.
 
 ### De tre grundläggande dokumenten för Cypherpunks
 
@@ -108,17 +108,17 @@ Cypherpunk-rörelsen, som är djupt rotad i digital aktivism och kryptografi, an
 
 - "Cypherpunk-manifestet":
 
-"Cypherpunk Manifesto", som skrevs av Eric Hughes 1993, hävdar att privatlivet är en grundläggande rättighet. Författaren menar att möjligheten att kommunicera fritt och konfidentiellt är avgörande för ett fritt samhälle. I manifestet sägs följande: "Vi kan inte förvänta oss att regeringar, företag eller andra stora, ansiktslösa organisationer ska ge oss integritet [...]. Vi måste försvara vår egen integritet om vi ska kunna förvänta oss att ha någon".
+"Cypherpunk Manifesto", som skrevs av Eric Hughes 1993, hävdar att integritet är en grundläggande rättighet. Författaren menar att möjligheten att kommunicera fritt och konfidentiellt är avgörande för ett fritt samhälle. I manifestet sägs följande: "Vi kan inte förvänta oss att regeringar, företag eller andra stora, ansiktslösa organisationer ska ge oss integritet [...]. Vi måste försvara vår egen integritet om vi ska kunna förvänta oss att ha någon".
 
 
 - Det "kryptoanarkistiska manifestet":
 
-skrivet av Timothy C. May 1992, förklarar detta dokument hur användningen av kryptografi kan leda till en era av kryptografisk anarki där regeringar skulle vara maktlösa att ingripa i medborgarnas privata angelägenheter. May föreställde sig en framtid där människor anonymt utbyter information och pengar utan inblandning av en tredje part.
+skrivet av Timothy C. May år 1992, förklarar detta dokument hur användningen av kryptografi kan leda till en era av kryptografisk anarki där regeringar skulle vara maktlösa att ingripa i medborgarnas privata angelägenheter. May föreställde sig en framtid där människor anonymt utbyter information och pengar utan inblandning av en tredje part.
 
 
 - "Deklaration om cyberrymdens självständighet":
 
-även om den inte är uteslutande cypherpunk, återspeglar denna text känslorna hos många deltagare i rörelsen. Den skrevs 1996 av John Perry Barlow och är ett svar på regeringarnas ökande reglering av Internet. I deklarationen hävdas att cyberspace är en annan sfär än den fysiska och inte bör omfattas av samma lagar. Som det står: "Vi har ingen vald regering, och det är inte heller troligt att vi kommer att få någon".
+även om den inte är uteslutande cypherpunk, återspeglar denna text känslorna hos många deltagare i rörelsen. Den skrevs 1996 av John Perry Barlow och är ett svar på regeringarnas ökande reglering av Internet. I deklarationen hävdas att cyberspace är en annan sfär än den fysiska och inte bör omfattas av samma lagar. Som det står: "Vi har ingen vald regering, och det är inte heller troligt att vi kommer att ha någon".
 
 ### Föregångarna till Bitcoin
 
@@ -157,9 +157,9 @@ Pengarnas utveckling är en fascinerande aspekt av mänsklighetens historia som 
 
 ![image](assets/en/06.webp)
 
-### Från snäckskal till bankkonton
+### Från snäckor till bankkonton
 
-Ursprungligen var valuta en materiell tillgång, som spannmål, boskap eller någon annan råvara. Dessa varor hade dock den stora nackdelen att de var förgängliga, vilket gjorde det svårt att använda dem som ett långsiktigt sparmedel. Till exempel kunde dåliga skördar eller djursjukdomar förstöra en individs förmögenhet över en natt.
+Ursprungligen var valuta en materiell tillgång, som spannmål, boskap eller någon annan råvara. Dessa varor hade dock den stora nackdelen att de var ömtåliga, vilket gjorde det svårt att använda dem som ett långsiktigt sparmedel. Till exempel kunde dåliga skördar eller djursjukdomar förstöra en individs förmögenhet över en natt.
 
 I takt med att civilisationerna utvecklades och handeln expanderade till nya regioner uppstod behovet av ett universellt bytesmedel. Människor experimenterade först med föremål som snäckor och ädelstenar, men de var inte så hållbara eller sällsynta som de trodde. Så småningom blev guld standard, på grund av dess sällsynthet, hållbarhet och delbarhet. Det var, och är än idag, en symbol för rikedom och makt.
 
@@ -173,14 +173,14 @@ Pengar är ett mycket sofistikerat kommunikationsverktyg:
 - Den möjliggör kommunikation mellan nutid och framtid, eftersom den omvandlar vår tid och energi till en tillgång som kan återanvändas i framtiden utan risk för devalvering.
 - Det underlättar kommunikation på ett universellt språk: utan att känna varandra eller tala samma språk kan två främlingar utbyta, handla och komma överens om värdet på saker och ting.
 
-Dess funktion i vår värld är svår att återskapa på konstgjord väg. Faktum är att ingen individ eller grupp kan skapa pengar, eftersom det är ett naturligt fenomen som måste uppstå på marknaden och genom frivilligt samförstånd. På så sätt fungerar priser som signaler och information som vägleder samhället i dess resursfördelning.
+Dess funktion i vår värld är svår att återskapa på konstgjord väg. Faktum är att ingen individ eller grupp kan skapa pengar, eftersom det är ett naturligt fenomen som måste uppstå på marknaden och genom frivilligt konsensus. På så sätt fungerar priser som signaler och information som vägleder samhället i dess resursfördelning.
 
 Av dessa skäl är guld som pengar resultatet av 4 000 år av monetär darwinism baserad på följande aristoteliska funktioner:
 
 
-- Värdebevarare**: Pengar kan användas för att överföra köpkraft till framtiden, så de måste vara ett hållbart material;
-- Bytesmedel**: Pengar kan användas i utbyte mot varor och tjänster i stället för byteshandel, vilket gör att man undviker sammanfallande behov mellan handlare;
-- Räkneenhet**: Pengar gör det också möjligt för oss att jämföra värdet på olika varor för att bättre förstå deras relativa bekvämlighet.
+- Värdebevaring**: Pengar kan användas för att överföra köpkraft till framtiden, så de måste vara ett hållbart material;
+- Betalningsmedel**: Pengar kan användas i utbyte mot varor och tjänster i stället för byteshandel, vilket gör att man undviker sammanträffande behov mellan handlare;
+- En enda beräkningsenhet**: Pengar gör det också möjligt för oss att jämföra värdet på olika varor för att bättre förstå deras relativa förmån.
 
 ![image](assets/en/08.webp)
 
@@ -190,7 +190,7 @@ Av dessa skäl är guld som pengar resultatet av 4 000 år av monetär darwinism
 
 ### Pengarnas egenskaper
 
-Guld uppfyller alla kriterier för en effektiv valuta: dess naturliga sällsynthet gör det värdefullt, samtidigt som dess kemiska egenskaper gör att det inte eroderar med tiden. Dessa egenskaper har gjort guld till en utmärkt **värdebevarare**, men inte till en vanlig valuta, eftersom denna form av pengar inte är lätt att dela upp eller transportera över långa avstånd. I en globaliserad och digital värld har guld svårt att hänga med och kräver en central enhet som gör det delbart och lätt att växla in (t.ex. genom att prägla mynt).
+Guld uppfyller alla kriterier för en effektiv valuta: dess naturliga sällsynthet gör det värdefullt, samtidigt som dess kemiska egenskaper gör att det inte eroderar med tiden. Dessa egenskaper har gjort guld till en utmärkt **värdebevarare**, men inte till en vanlig valuta, eftersom denna form av pengar inte är lätt att dela upp eller transportera över långa avstånd. I en globaliserad och digital värld har guld svårt att hänga med och kräver en central enhet som gör det delbart och lätt att växla in (t.ex. genom att skapa mynt).
 
 På motsatt sida är statliga fiduciära valutor (fiat) lättanvända, men devalveras ständigt av de enheter som kontrollerar dem (kungar, centralbanker, kejsare, diktatorer).
 
@@ -203,49 +203,49 @@ För att förklara detta begrepp bättre ska vi undersöka vad som kännetecknar
 - Delbarhet**, eftersom den kan delas upp i mindre enheter för att underlätta transaktioner av varierande volym;
 - Likviditet**, vilket innebär att den lätt kan omvandlas till varor eller tjänster.
 
-För att uppfylla dessa kriterier har valutan historiskt sett utvecklats genom olika steg:
+För att uppfylla dessa kriterier har valutor historiskt sett utvecklats genom olika steg:
 
 
 - Rå sten -> Mynt
 - Sedel -> Bankkort
-- Blockchain -> Blixtnätverk
+- Blockchain -> Lightning Network
 
-Valutorna utvecklas än idag och anpassar sina former för att möta olika användningsområden. Guld är som sagt en utmärkt värdebevarare, men passar inte längre i dagens globaliserade ekonomi. På samma sätt är förvaltningsvalutor som dollar och euro mycket likvida och lätta att transportera eftersom de nu till största delen är digitala, men deras värde sänks ständigt av monetär inflation.
+Valutorna utvecklas än idag och anpassar sina former för att möta olika användningsområden. Guld är som sagt en utmärkt värdebevarare, men passar inte längre i dagens globaliserade ekonomi. På samma sätt är fiduciära valutor som dollar och euro mycket likvida och lätta att transportera eftersom de nu till största delen är digitala, men deras värde sänks ständigt av monetär inflation.
 
-Å andra sidan erbjuder Bitcoin nya möjligheter. Dess egenskaper, t.ex. den strikt begränsade tillgången, gör den till en utmärkt värdebevarare. Som en neutral internetvaluta fungerar den dessutom som ett livskraftigt **utbytesmedium** som överskrider gränser. Den är dock fortfarande inte allmänt accepterad i handeln idag, trots att den [ständigt används] (https://btcmap.org/map).
+Å andra sidan erbjuder Bitcoin nya möjligheter. Dess egenskaper, t.ex. den strikt begränsade tillgången, gör den till en utmärkt värdebevarare. Som en neutral internetvaluta fungerar den dessutom som ett livskraftigt **betalningsmedel** som överskrider gränser. Den är dock fortfarande inte allmänt accepterad i handeln idag, trots att den [ständigt används] (https://btcmap.org/map).
 
-## Förvaltningsvalutor
+## Fiduciära valutor
 
 <chapterId>25151d46-7db1-5b48-8bba-cbde1944555a</chapterId>
 
 > "De som inte kan minnas det förflutna är dömda att upprepa det", sa George Santayana.
 En sanning som stämmer väl när det gäller det nuvarande monetära systemet.
 
-### Förvaltare = Förtroende
+### Fiduciär = förtroende
 
-I dag betraktas stora valutor som euron och dollarn som fiduciära. Det innebär att de saknar egenvärde och är helt beroende av den tillit och det förtroende vi har för de institutioner som styr dem.
+I dag betraktas stora valutor som euron och dollarn som fiduciära. Det innebär att de saknar egentligt värde och är helt beroende av den tillit och det förtroende vi har för de institutioner som styr dem.
 
-En förvaltarvaluta är en form av pengar som har fastställts som sådan av en institution, dvs. en stat, som Kina med yuanen, eller en politisk-ekonomisk union, som Europeiska unionen med euron. Den enhet som ansvarar för dess utgivning är centralbanken (vi kan till exempel nämna People's Bank of China, Federal Reserve i USA eller Central Bank of the Republic of Guinea). Det är just dessa enheter som ansvarar för att utforma penningpolitiken och därmed hur mycket pengar som ska sättas i omlopp eller tryckas.
+En fiduciär valuta är en form av pengar som har fastställts som sådan av en institution, dvs. en stat, som Kina med yuan, eller en politisk-ekonomisk union, som Europeiska unionen med euron. Den enhet som ansvarar för dess utgivning är centralbanken (vi kan till exempel nämna People's Bank of China, Federal Reserve i USA eller Central Bank of the Republic of Guinea). Det är just dessa enheter som ansvarar för att utforma penningpolitiken och därmed hur mycket pengar som ska sättas i omlopp eller skapas.
 
 ![image](assets/en/12.webp)
 
 ### Monetär devalvering: en strategi lika gammal som romarriket
 
-Sedan antiken har guld fungerat som en monetär referens, men dess stelhet har ofta lett till att ledare, vare sig romerska kejsare eller moderna regeringar, har antagit alternativa valutor, ofta fiduciära.
+Sedan antiken har guld fungerat som en monetär referens, men dess fasthet har ofta lett till att ledare, vare sig romerska kejsare eller moderna regeringar, har antagit alternativa valutor, ofta fiduciära.
 
-Mekanismen är enkel och inspirerad av metoder som har funnits sedan civilisationens begynnelse. Ledare som är angelägna om att utöva kontroll över rikedomar börjar med att centralisera guld, ofta genom att utnyttja sin makt och lova skydd och säkerhet. Med denna dyrbara reserv i sina händer inför de en ny valuta, som motsvarar guldets värde, men som präglas till deras avbild. Denna valuta börjar sedan cirkulera, och människor anpassar sig snabbt till bekvämligheten med dess enkla användning.
+Mekanismen är enkel och inspirerad av metoder som har funnits sedan civilisationens begynnelse. Ledare som är angelägna om att utöva kontroll över rikedomar börjar med att centralisera guld, ofta genom att utnyttja sin makt och lova skydd och säkerhet. Med denna dyrbara reserv i sina händer inför de en ny valuta, som motsvarar guldets värde, men som skapas till deras avbild. Denna valuta börjar sedan cirkulera, och människor anpassar sig snabbt till bekvämligheten med dess enkla användning.
 
-Dessa ledare börjar dock sedan gradvis devalvera den nya valutan och minskar i praktiken dess värde med några procent varje år jämfört med det ursprungliga guldpriset. Denna tysta devalvering motiveras ofta med att den ligger i folkets intresse. I själva verket ser de som sparar i denna förtroendevaluta värdet på sina besparingar minska, medan staten finansierar sina projekt genom inflation. Dessutom gör denna devalvering att skulder blir lättare att betala tillbaka.
+Dessa ledare börjar dock sedan gradvis devalvera den nya valutan och i praktiken minskar dess värde med några procent varje år jämfört med det ursprungliga guldpriset. Denna tysta devalvering motiveras ofta med att den ligger i folkets intresse. De som sparar i denna fiduciära valuta ser i själva verket hur värdet på deras besparingar gradvis minskar, medan staten finansierar sina projekt genom inflation. Dessutom gör denna devalvering att skulder blir lättare att betala tillbaka.
 
 ![image](assets/en/13.webp)
 
-I ett kritiskt ögonblick gör ledaren tillkännagivandet: valutan är inte längre uppbackad av guld. Allmänheten, som nu är van vid förvaltarvalutan och ofta är felinformerad om finansiella frågor, accepterar denna verklighet, vilket gör att staten fritt kan manipulera penningmängden och trycka enorma summor pengar nästan utan kostnad.
+I ett kritiskt ögonblick gör ledaren tillkännagivandet: valutan är inte längre uppbackad av guld. Allmänheten, som nu är van vid den fiduciära valutan och som ofta är felinformerad om finansiella frågor, accepterar denna verklighet, vilket gör att staten fritt kan manipulera penningmängden och trycka enorma summor pengar nästan utan bekostnad.
 
-Penningtrycket leder sedan till inflation och utarmar gradvis befolkningen. Dessutom regleras och begränsas det finansiella systemet för att undvika att det kollapsar, eftersom varje störning skulle kunna orsaka en stor ekonomisk kris. I motsats till massorna drar finansinstitut och rika individer stor nytta av detta system, vilket skapar en ojämlikhet och gynnar auktoritära system. I detta sammanhang är de inte motiverade att göra radikala förändringar, vilket gör att systemet kan fortsätta sin kurs fram till en eventuell implosion.
+Penningskapandet leder sedan till inflation och utarmar gradvis befolkningen. Dessutom regleras och begränsas det finansiella systemet för att undvika att det kollapsar, eftersom varje störning skulle kunna orsaka en stor ekonomisk kris. I motsats till massorna drar finansiella institut och rika individer stor nytta av detta system, vilket skapar en ojämlikhet och gynnar auktoritära system. I detta sammanhang är de inte motiverade att göra radikala förändringar, vilket gör att systemet kan fortsätta sin kurs fram till en eventuell implosion.
 
-Väl genomförd kan denna strategi hålla i decennier. Det är dock viktigt att notera att en mycket snabb devalvering eller förlust av förtroende kan leda till hyperinflation (se nästa kapitel). Historien visar att dollarn har förlorat 98% av sitt värde på 100 år, euron 30% på 20 år och pundet 99% sedan det skapades.
+Denna strategi hålla i decennier när den är väl genomförd. Det är dock viktigt att notera att en mycket snabb devalvering eller förlust av förtroende kan leda till hyperinflation (se nästa kapitel). Historien visar att dollarn har förlorat 98% av sitt värde på 100 år, euron 30% på 20 år och pundet 99% sedan det skapades.
 
-I slutändan kanske valutan inte längre har någon koppling till guld, på samma sätt som romerska mynt i slutet av imperiet, eller till och med reduceras till ett enkelt numeriskt värde, frikopplat från den konkreta verkligheten.
+I slutändan kanske valutan inte längre har någon koppling till guld, på samma sätt som romerska mynt i slutet av imperiet, eller till och med reduceras till ett enkelt numeriskt värde, skiljt från den konkreta verkligheten.
 
 I dag bevittnar vi en historisk vändpunkt. Dollarn, som länge har dominerat, verkar vara på tillbakagång, samtidigt som guldet har förlorat sin centrala roll. Vi står på tröskeln till en ny monetär cykel, som påminner oss om att historiens lärdomar ofta glöms bort
 
@@ -253,27 +253,27 @@ I dag bevittnar vi en historisk vändpunkt. Dollarn, som länge har dominerat, v
 
 ### Är Bitcoin en lösning?
 
-På grund av dessa förutsättningar tar Bitcoin-revolutionen fart. I motsats till tidigare valutor kräver den **ingen betrodd tredje part** och syftar till att skilja staten från pengar.
+På grund av dessa premisser tar Bitcoin-revolutionen fart. I motsats till tidigare valutor kräver den **ingen betrodd tredje part** och syftar till att skilja staten från pengar.
 
 ![image](assets/en/15.webp)
 
-Faktum är att Bitcoin presenterar sig själv som ett svar på dessa systemutmaningar genom att föreslå en decentraliserad lösning och ett nytt parallellt monetärt system. Historiskt sett har guld gynnats som valuta på grund av dess motståndskraft mot förfalskning, och Bitcoin kan inte heller förfalskas. Dessutom är den begränsad till 21 miljoner enheter, tack vare dess decentraliserade och kryptografiska natur. Bitcoin är en valuta som bygger på transparens och neutralitet och som erbjuder ett attraktivt alternativ till det nuvarande centraliserade monetära systemet.
+Faktum är att Bitcoin presenterar sig själv som ett svar på systemets utmaningar genom att föreslå en decentraliserad lösning och ett nytt parallellt monetärt system. Historiskt sett har guld gynnats som valuta på grund av dess motståndskraft mot förfalskning, och Bitcoin kan inte heller förfalskas. Dessutom är den begränsad till 21 miljoner enheter, tack vare dess decentraliserade och kryptografiska natur. Bitcoin är en valuta som bygger på transparens och neutralitet och som erbjuder ett attraktivt alternativ till det nuvarande centraliserade monetära systemet.
 
 ![image](assets/en/16.webp)
 
-En annan anledning till att Bitcoin har fått uppmärksamhet är uppkomsten av digitala centralbanksvalutor, CBDC, som verkar oundviklig. Denna nya form av pengar skulle utveckla en mer centralt planerad ekonomi och skulle både kunna hindra individers finansiella frihet och underlätta auktoritära övergrepp.
+En annan anledning till att Bitcoin har fått uppmärksamhet är uppkomsten av digitala centralbanksvalutor, CBDC, som verkar oundviklig. Denna nya form av pengar skulle utveckla en mer central planerad ekonomi och skulle både kunna hindra individers finansiella frihet och underlätta auktoritära övergrepp.
 
 Vi kan avsluta detta kapitel med ett citat från Nobelpristagaren F.A Hayek 1984:
 
-> "Jag tror inte att vi någonsin ska ha bra pengar igen, innan vi tar saken ur händerna på regeringen. Om vi inte kan ta dem våldsamt ur regeringens händer, är allt vi kan göra att på något listigt eller omständligt sätt införa något de inte kan stoppa."
-För att lära dig mer om ekonomiska villfarelser och frihet inbjuder vi dig att upptäcka vår ECO 102-kurs, som spårar livet och idéerna hos Frédéric Bastiat, en fransk 1800-talstänkare som säkert skulle ha uppskattat uppkomsten av Bitcoin:
+> "Jag tror inte att vi någonsin kommer att ha bra pengar igen, innan vi tar saken ur händerna på regeringen. Om vi inte kan ta det våldsamt ur regeringens händer, är allt vi kan göra att på något listigt eller omständigt sätt införa något de inte kan stoppa."
+För att lära dig mer om ekonomiska felaktigheter och frihet inbjuder vi dig att upptäcka vår ECO 102-kurs, som följer livet och idéerna hos Frédéric Bastiat, en fransk 1800-talstänkare som säkerligen skulle ha uppskattat uppkomsten av Bitcoin:
 
 https://planb.network/courses/d07b092b-fa9a-4dd7-bf94-0453e479c7df
 ## Hyperinflation
 
 <chapterId>b04c024c-54f3-50cb-997f-58721cfc74be</chapterId>
 
-Hyperinflation är ett monetärt fenomen som är specifikt för fiatvalutor: det kännetecknas av en fullständig förlust av förtroendet för en valuta och en drastisk ökning av inflationen på grund av myndigheternas penningtryckande. Som ett resultat kan de besparingar som ackumulerats av individer försvinna på en relativt kort tidsperiod, vilket driver landet på randen till ekonomisk, social och politisk kollaps.
+Hyperinflation är ett monetärt fenomen som är specifikt för fiatvalutor: det kännetecknas av en fullständig förlust av förtroendet för en valuta och en drastisk ökning av inflation på grund av myndigheternas penningskapande. Som ett resultat kan de besparingar som ackumulerats av individer försvinna på en relativt kort tidsperiod, vilket driver landet på gränsen till ekonomisk, social och politisk kollaps.
 
 ### Inflationen skenar iväg!
 
@@ -286,7 +286,7 @@ För att förstå inflationens inverkan på sparandet måste vi ta hänsyn till 
 
 När hyperinflation uppstår talar vi inte längre om 20 procent per år, utan snarare om 20 procent per månad eller, när det är som värst, till och med per DAG. Att uppleva en inflation på 100 % per dag under tre dagar är ett realistiskt scenario som har inträffat och fortsätter att inträffa i vår värld.
 
-Det är viktigt att förstå att hyperinflation inte uppstår av en slump, på grund av kapitalism eller politiska attacker från motståndare. Hyperinflation är den direkta konsekvensen av dåliga monetära beslut som fattas av centralbanker och politiker. Dess efterverkningar påverkar varje medborgare och även kommande generationer. Vi ber er vänligen att ägna fem minuter åt att läsa följande tabell för att fullt ut inse den verkliga effekten av detta fenomen (kursen ECO204 fördjupar sig ytterligare i detta ämne). Som du kan se är inget land eller valuta potentiellt säkert.
+Det är viktigt att förstå att hyperinflation inte uppstår av en slump, på grund av kapitalism eller politiska attacker från motståndare. Hyperinflation är den direkta konsekvensen av dåliga monetära beslut som fattas av centralbanker och politiker. Dess efterdyningar påverkar varje medborgare och även kommande generationer. Vi ber er vänligen att ägna fem minuter åt att läsa följande tabell för att fullt ut inse den verkliga effekten av detta fenomen (kursen ECO204 fördjupar sig ytterligare i detta ämne). Som du kan se är inget land eller valuta potentiellt säkert.
 
 ![image](assets/en/17.webp)
 
@@ -304,12 +304,12 @@ Fas 1 - Förlorat förtroende
 Fas 2 - Valutakollaps och prishöjning
 
 
-- När regeringar tappar kontrollen över förtroendet börjar individer byta ut sin valuta mot en mer stabil, som det som hände i Venezuela med den amerikanska dollarn. Detta leder till stigande priser, vilket skapar en ond cirkel där varor och tjänster blir allt dyrare. För att möta dessa behov och korrigera penningpolitiken trycker staten mer pengar, vilket resulterar i exponentiell inflation.
+- När regeringar tappar kontrollen över förtroendet börjar individer byta ut sin valuta mot en mer stabil, likt det som hände i Venezuela med den amerikanska dollarn. Detta leder till stigande priser, vilket skapar en ond cirkel där varor och tjänster blir allt dyrare. För att möta dessa behov och korrigera penningpolitiken skapar staten mer pengar, vilket resulterar i exponentiell inflation.
 
-Fas 3 - Penningtryckandets onda cirkel
+Fas 3 - Penningskapandets onda cirkel
 
 
-- Allt fler sedlar behövs därför för att köpa varor, vilket leder till att det blir ont om papperspengar. Som svar på detta trycker regeringarna fler sedlar, vilket spär på inflationen ytterligare.
+- Allt fler sedlar behövs därför för att köpa varor, vilket leder till att det blir ont om papperspengar. Som svar på detta trycker regeringarna upp fler sedlar, vilket driver på inflationen ytterligare.
 
 ![image](assets/en/19.webp)
 
