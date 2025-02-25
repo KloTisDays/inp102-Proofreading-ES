@@ -774,9 +774,9 @@ En Bitcoin-transaktion är helt enkelt en överföring av äganderätten till bi
 
 För att Bob ska kunna överföra bitcoins till Alice måste hon förse honom med en av sina Bitcoin-adresser, som är unika för hennes Bitcoin-plånbok. Precis som den privata nyckeln används för att generera den publika nyckeln, används den senare för att generera adresser.
 
-Konkret innebär det att när Alice öppnar sin plånbok och trycker på "receive" visas en QR-kod eller en adress (som denna bc1q7957hh3nj47efn8t2r6xdzs2cy3wjcyp8pch6hfkggy7jwrzj93sv4uykr). Detta fungerar som hennes "Bitcoin IBAN", som hon sedan ger till Bob.
+Konkret innebär det att när Alice öppnar sin plånbok och klickar på "ta emot" visas en QR-kod eller en adress (som denna bc1q7957hh3nj47efn8t2r6xdzs2cy3wjcyp8pch6hfkggy7jwrzj93sv4uykr). Detta fungerar som hennes "Bitcoin IBAN", som hon sedan ger till Bob.
 
-Efteråt gör Bob transaktionen genom att öppna sin Bitcoin-plånbok och trycka på "skicka". Han kopierar och klistrar sedan in Alices adress i det obligatoriska fältet, lägger till det belopp han vill skicka och beslutar om transaktionsavgifterna, som fungerar som ett incitament för miners att inkludera transaktionen i nästa block. Faktum är att ju högre avgifter Bob betalar, desto större är chansen att transaktionen inkluderas i nästa block som läggs till i blockkedjan, dvs. en offentlig och oföränderlig huvudbok som registrerar alla Bitcoin-transaktioner.
+Efteråt gör Bob transaktionen genom att öppna sin Bitcoin-plånbok och klicka på "skicka". Han kopierar och klistrar sedan in Alices adress i det obligatoriska fältet, lägger till det belopp han vill skicka och beslutar om transaktionsavgifterna, som fungerar som ett incitament för miners att inkludera transaktionen i nästa block. Faktum är att ju högre avgifter Bob betalar, desto större är chansen att transaktionen inkluderas i nästa block som läggs till i blockkedjan, dvs. ett offentligt och oföränderligt register som registrerar alla Bitcoin-transaktioner.
 
 För att slutföra transaktionen måste Bob signera den med sin privata nyckel för att verifiera att han är ägare till de bitcoins han vill överföra. Detta steg är vanligtvis automatiskt i mobila plånböcker, eller så sker det i form av en bekräftelse i din fysiska plånbok: "Är du säker på att du vill skicka X till Y? Ja eller nej".
 
@@ -798,25 +798,25 @@ I själva verket har miners rollen att samla in giltiga och obekräftade transak
 
 ### Steg 3: Transaktionen minas i ett block av en miner.
 
-Proof of work-systemet kräver att man hittar en giltig "hash" för blocket i fråga: tänk på det som ett unikt fingeravtryck som är associerat med blocket och som består av 256 tecken. Giltigheten för denna hash beror på svårighetsgraden i Bitcoin-nätverket (vi kommer att gå in på mer detaljer senare). För tillfället kan vi tänka oss att en gruvarbetare har hittat ett giltigt block och att Bobs transaktion till Alice ingår i det. Därefter läggs det nya giltiga blocket till i blockkedjan, den gemensamma huvudboken för alla Bitcoin-användare.
+Proof of work-systemet kräver att man hittar en giltig "hash" för blocket i fråga: tänk på det som ett unikt fingeravtryck som är associerat med blocket och som består av 256 tecken. Giltigheten för denna hash beror på svårighetsgraden i Bitcoin-nätverket (vi kommer att gå in på mer detaljer senare). För tillfället kan vi tänka oss att en miner har hittat ett giltigt block och att Bobs transaktion till Alice ingår i det. Därefter läggs det nya giltiga blocket till i blockkedjan, det gemensamma registret för alla Bitcoin-användare.
 
 ![image](assets/en/49.webp)
 
 ### Steg 4: Blocket är giltigt och verifieras av Alices referentnod.
 
-I det här skedet anses transaktionen vara giltig: utvinnaren sprider sedan det nya blocket till nätverket via sin nod, och Alices plånbok uppdateras.
+I det här skedet anses transaktionen vara giltig: minern sprider sedan det nya blocket till nätverket via sin nod, och Alices plånbok uppdateras.
 
 ![image](assets/en/50.webp)
 
-**Även om Alice får ett meddelande om att hon har tagit emot bitcoins på en av sina adresser är det lämpligt att betrakta transaktionen som oföränderlig först efter att den har fått **sex** bekräftelser. Detta innebär att ytterligare sex block måste brytas ovanpå det block som innehåller Bobs transaktion. Med andra ord, ju äldre en transaktion är i blockkedjan, desto mer oföränderlig blir den.
+**Även om Alice får ett meddelande om att hon har tagit emot bitcoins på en av sina adresser är det lämpligt att betrakta transaktionen som oföränderlig först efter att den har fått **sex** bekräftelser. Detta innebär att ytterligare sex block måste minas ovanpå det block som innehåller Bobs transaktion. Med andra ord, ju äldre en transaktion är i blockkedjan, desto mer oföränderlig blir den.
 
 ### Vilken betydelse har denna process?
 
 Bitcoins transaktionssystem är decentraliserat och fungerar peer-to-peer, utan några betrodda mellanhänder.
 
-Bob skickar sin transaktion till Bitcoin-nätverket, och när en miner publicerar ett giltigt block som innehåller Bobs transaktion kan Alice börja anse att bitcoins tillhör henne. Förtroende krävs inte i något steg av överföringen av bitcoinägande: enbart protokollreglerna och de ekonomiska incitamenten gör det oöverkomligt kostsamt att agera illvilligt inom Bitcoinsystemet.
+Bob skickar sin transaktion till Bitcoin-nätverket, och när en miner publicerar ett giltigt block som innehåller Bobs transaktion kan Alice börja antaga att bitcoins tillhör henne. Förtroende krävs inte i något steg av överföringen av bitcoinägande: enbart protokollreglerna och de ekonomiska incitamenten gör det oöverkomligt kostsamt att agera illvilligt inom Bitcoinsystemet.
 
-Faktum är att användarna överför äganderätten till sina medel genom att digitalt signera transaktioner med sina egna privata nycklar. Å andra sidan har miners begränsad makt och användarna behåller en betydande kontroll genom att använda Bitcoin-noder för att validera de nya blocken och de inkluderade transaktionerna. Varje nod har antingen en fullständig eller en partiell kopia av huvudboken, så det nätverk som bildas av Bitcoin-noderna gör systemet verkligt decentraliserat.
+Faktum är att användarna överför äganderätten till sina tillgångar genom att digitalt signera transaktioner med sina egna privata nycklar. Å andra sidan har miners begränsad makt och användarna behåller en betydande kontroll genom att använda Bitcoin-noder för att validera de nya blocken och de inkluderade transaktionerna. Varje nod har antingen en fullständig eller en partiell kopia av registret, så det nätverk som bildas av Bitcoin-noderna gör systemet verkligt decentraliserat.
 
 För att Bitcoin-nätverket ska kunna förstöras helt måste följaktligen varje kopia av blockkedjan på alla Bitcoin-noder elimineras, vilket är en praktiskt taget omöjlig uppgift på grund av den geografiska fördelningen av dessa noder och svårigheten att fysiskt beslagta dem.
 
@@ -829,7 +829,7 @@ Låt oss ta en närmare titt på hur en Bitcoin-nod fungerar.
 Noder är en grundläggande del av Bitcoins nätverksarkitektur, eftersom de utför olika viktiga funktioner:
 
 
-- Behålla en kopia av Bitcoin-blockkedjan
+- Förvara en kopia av Bitcoin-blockkedjan
 - Validering av transaktioner
 - Överföring av information till andra noder
 - Tillämpning av reglerna i Bitcoin-protokollet.
@@ -840,17 +840,17 @@ Därför bidrar alla enheter som kör en del av Bitcoins programvara, kallad Bit
 
 ### Noder är den centrala kärnan i Bitcoin.
 
-Varje nod har en kopia av blockkedjan, vilket möjliggör verifiering av transaktioner och förhindrar bedrägeriförsök. Nätverkets decentraliserade natur ger Bitcoin en exceptionell motståndskraft och robusthet. Faktum är att för att stoppa Bitcoin-protokollet skulle alla noder runt om i världen behöva stängas av. För din information, i september 2023 fanns det ungefär [45 000 noder] (https://bitnodes.io/nodes/all/) fördelade över hela världen.
+Varje nod har en kopia av blockkedjan, vilket möjliggör verifiering av transaktioner och förhindrar bedrägeriförsök. Nätverkets decentraliserade natur ger Bitcoin en exceptionell motståndskraft och robusthet. För att stoppa Bitcoin-protokollet skulle alla noder runt om i världen behöva stängas ned. Det kan vara bra att veta att i september 2023 fanns det ungefär [45 000 noder] (https://bitnodes.io/nodes/all/) fördelade över hela världen.
 
 Noder kan verifiera giltigheten av block och transaktioner eftersom de följer reglerna för Bitcoins konsensus. Dessa regler fastställer Bitcoins penningpolitik, t.ex. beloppet för miners belöning (som vi kommer att diskutera mer i detalj i nästa avsnitt) och mängden bitcoin i omlopp. På sätt och vis fungerar noder som nätverkets rättssystem eftersom alla nätverksdeltagare följer samma regler på grund av dem, så de säkerställer neutraliteten i Bitcoin-protokollet. Konsensusreglerna varierar knappast, om ens alls, eftersom det krävs godkännande från alla noder för att göra ändringar.
 
 ![image](assets/en/52.webp)
 
-Styrning inom protokollet ligger utanför ramen för denna grundkurs, men det är viktigt att notera att varje användare som driver en Bitcoin-nod kan bestämma vilka regler som ska följas. En användare kan välja att följa andra regler (d.v.s. göra ändringar i koden), men om dessa ändringar ogiltigförklarar de nuvarande konsensusreglerna kommer den noden inte längre att vara en del av Bitcoin-nätverket. Följaktligen är större ändringar sällsynta och kräver betydande samordning mellan tusentals deltagare med olika ideologier och intressen, vilket tvingar dem att tillhandahålla uppdateringar som anses vara "bättre" av alla Bitcoin-användare.
+Styrning inom protokollet ligger utanför ramen för denna grundkurs, men det är viktigt att notera att varje användare som driver en Bitcoin-nod kan bestämma vilka regler som ska följas. En användare kan välja att följa andra regler (d.v.s. göra ändringar i koden), men om dessa ändringar ogiltigförklarar de nuvarande konsensusreglerna kommer den noden inte längre att vara en del av Bitcoin-nätverket. Följaktligen är större ändringar sällsynta och kräver betydande samordning mellan tusentals deltagare med olika ideologier och intressen, vilket tvingar dem att göra uppdateringar som anses vara "bättre" av alla Bitcoin-användare.
 
 ### Hur ser en nod ut?
 
-Det finns flera alternativ tillgängliga när du vill installera din egen nod, med olika underhållskostnader. Du kan helt enkelt köra Bitcoin Core-programvaran på din dator, men det kommer att kräva en betydande mängd lagringsutrymme, eftersom blockkedjan är cirka ~ 500 GB. För att övervinna denna begränsning kan du välja att bara behålla de senaste N blocken i minnet genom att skapa en "beskuren nod". För den här andra lösningen är kostnaden försumbar eftersom noden bara är aktiv när du behöver den.
+Det finns flera alternativ tillgängliga när du vill installera din egen nod, med olika underhållskostnader. Du kan helt enkelt köra Bitcoin Core-programvaran på din dator, men det kommer att kräva en betydande mängd lagringsutrymme, eftersom blockkedjan är cirka ~ 500 GB. För att övervinna denna begränsning kan du välja att bara behålla de senaste N-blocken i minnet genom att skapa en "beskuren nod". För den här andra lösningen är kostnaden obetydlig eftersom noden bara är aktiv när du behöver den.
 
 ![image](assets/en/53.webp)
 
@@ -862,25 +862,25 @@ Ur ett bandbreddsperspektiv, med tanke på 1 block på 1 MB var 10:e minut, mots
 
 Den överkomliga kostnaden och tillgängligheten för en Bitcoin-nod när det gäller hårdvaruresurser, lagring och bandbredd är en mycket viktig egenskap, eftersom det underlättar decentraliseringen av nätverket.
 
-Alla har faktiskt en bra anledning att driva en nod! Kostnaderna och ansträngningarna är minimala jämfört med de fördelar som erhålls. Du behöver bara ge dig ut på äventyret och ansluta dig till tusentals andra bitcoinare för att bilda Bitcoin-nätverket tillsammans.
+Alla har faktiskt en bra anledning att driva en nod! Kostnaderna och ansträngningarna är minimala jämfört med de fördelar som erhålls. Du behöver bara ge dig ut på äventyret och ansluta dig till tusentals andra bitcoiners för att bilda Bitcoin-nätverket tillsammans.
 
 ![image](assets/en/54.webp)
 
-Tvärtom, om blocken var 100 gånger tyngre skulle vi säkert kunna göra 100 gånger fler transaktioner var 10:e minut, men för att driva en Bitcoin-nod skulle det krävas en 50 TB hårddisk, en bandbredd på över 500 GB/månad och en hårdvara som kan validera hundratusentals transaktioner på mindre än 10 minuter. I den här hypotetiska situationen med 100 gånger större block skulle det inte vara tillgängligt för gemene man att driva en Bitcoin-nod, vilket skulle äventyra både protokollets decentralisering och oföränderligheten i transaktioner och konsensusregler.
+Å andra sidan, om blocken var 100 gånger tyngre skulle vi säkert kunna göra 100 gånger fler transaktioner var 10:e minut, men för att driva en Bitcoin-nod skulle det krävas en 50 TB hårddisk, en bandbredd på över 500 GB/månad och en hårdvara som kan validera hundratusentals transaktioner på mindre än 10 minuter. I den här hypotetiska situationen med 100 gånger större block skulle det inte vara tillgängligt för gemene man att driva en Bitcoin-nod, vilket skulle äventyra både protokollets decentralisering och oföränderligheten i transaktioner och konsensusregler.
 
-Således har protokollbegränsningarna utformats för att göra det möjligt för så många människor som möjligt att driva sina egna Bitcoin-noder. Faktum är att år 2017 präglades av en intensiv kontrovers känd som "blockstorlekskriget". I denna konflikt stod de som ville modifiera Bitcoin genom att öka blockstorleken för att förbättra transaktionskapaciteten (miners, utbytesplattformar och institutioner) mot de som ville bevara användarnas oberoende och makt (noder och användare). I slutändan segrade den andra parten.
+Således har protokollbegränsningarna utformats för att göra det möjligt för så många människor som möjligt att driva sina egna Bitcoin-noder. Faktum är att år 2017 präglades av en intensiv kontrovers känd som "kriget om blockstorlek". I denna konflikt stod de som ville modifiera Bitcoin genom att öka blockstorleken för att förbättra transaktionskapaciteten (miners, utbytesplattformar och institutioner) mot de som ville bevara användarnas oberoende och makt (noder och användare). I slutändan segrade den andra parten.
 
 Efter denna seger aktiverade noderna en uppdatering kallad SegWit, vilket banade väg för implementeringen av Lightning Network, ett omedelbart Bitcoin-betalningsnätverk byggt som ett andra lager av Bitcoin-blockkedjan. Den här situationen visar att användarna, genom sina noder, har verklig makt inom Bitcoin, vilket gör att de kan stå upp mot stora institutioner i tider av oenighet.
 
-## Gruvarbetare
+## Miners
 
 <chapterId>dbb8264a-7434-57e4-9d1b-fbd1bae37fdf</chapterId>
 
-**Miners säkrar nätverket och lägger till transaktioner i blocken. De använder elektricitet genom ASIC-maskiner för att lösa Bitcoin proof of work.**
+**Miners säkrar nätverket och lägger till transaktioner i blocken. De använder elektricitet genom ASIC-maskiner för att lösa Bitcoins proof of work.**
 
 ![image](assets/en/55.webp)
 
-### Förklaring av bevis på arbete
+### Förklaring av Proof of Work
 
 "Proof of Work" (POW) är säkerhetsmekanismen för konsensus i Bitcoin-protokollet. Den är grunden för allt och spelar en avgörande roll i Bitcoins spelteori.
 
@@ -890,39 +890,39 @@ Om det valda numret är korrekt: Jackpot! Annars fortsätter sökningen.
 
 För att optimera antalet försök används särskilda maskiner, s.k. ASICs, som har som enda uppgift att beräkna miljarder möjligheter per sekund (det totala antalet försök kallas "HashRate"). För att driva dessa maskiner måste stora mängder el förbrukas. POW omvandlar därför energi till valuta och kopplar samman den verkliga och den digitala världen för att skapa den första energibaserade valutan.
 
-Maskinerna arbetar kontinuerligt och efter i genomsnitt 10 minuter utses en vinnare: den här deltagaren har lyckats hitta rätt hash som faller under svårighetströskeln. Den stora och enda vinnaren kommer sedan att signera det nya blocket på timestamp-servern och lägga till det i blockkedjan. De får sina belöningar och återvänder för att pröva lyckan med att bryta nästa block. Denna process har pågått i mer än tio år, med en vinnare som bekräftar Bitcoin-transaktioner var tionde minut samtidigt som tidigare transaktioner säkras, vilket gör Bitcoin-blockkedjan mer robust och säker.
+Maskinerna arbetar kontinuerligt och efter i genomsnitt 10 minuter utses en vinnare: den här deltagaren har lyckats hitta rätt hash som faller under svårighetströskeln. Den stora och enda vinnaren kommer sedan att signera det nya blocket på timestamp-servern och lägga till det i blockkedjan. De får sina belöningar och återvänder för att pröva lyckan genom att mina nästa block. Denna process har pågått i mer än tio år, med en vinnare som bekräftar Bitcoin-transaktioner var tionde minut samtidigt som tidigare transaktioner säkras, vilket gör Bitcoin-blockkedjan mer robust och säker.
 
-Vart 2016:e block (ungefär varannan vecka) ombalanserar **difficulty adjustment** det globala gruvspelet baserat på antalet deltagare. Denna justering är nödvändig eftersom antalet miners och deras kombinerade datorkraft kan variera avsevärt över tid. För att bibehålla målblocktiden omkalibrerar nätverket svårighetsgraden baserat på hur snabbt de senaste blocken från 2016 utvanns. Om de utvanns för snabbt ökar svårighetsgraden, vilket gör det svårare att hitta rätt hash. Om de tvärtom bryts för långsamt minskar svårighetsgraden, vilket gör det enklare.
+Vart 2016:e block (ungefär varannan vecka) ombalanserar **svårighetsjusteringen** det globala miningspelet baserat på antalet deltagare. Denna justering är nödvändig eftersom antalet miners och deras kombinerade datorkraft kan variera avsevärt över tid. För att bibehålla blocktiden omkalibrerar nätverket svårighetsgraden baserat på hur snabbt de senaste blocken från 2016 minades. Om de minades för snabbt ökar svårighetsgraden, vilket gör det svårare att hitta rätt hash. Om de tvärtom minades för långsamt minskar svårighetsgraden, vilket gör det enklare.
 
 ![image](assets/en/24.webp)
 
-### Gruvdrift är under ständig utveckling
+### Mining är under ständig utveckling
 
-Under årens lopp har miners utrustat sig med allt effektivare datorhårdvara för att kunna producera så många hashes som möjligt per sekund (HashRate) samtidigt som de förbrukar så lite energi som möjligt på ett så kostnadseffektivt sätt som möjligt. De tidiga miners som Satoshi eller Hal Finney använde bara sin CPU, sedan började andra minera med sina grafikkort. Numera använder miners ASIC (Application-Specific Integrated Circuit): maskiner som enbart är utformade för att tillämpa SHA256-algoritmen.
+Under årens lopp har miners utrustat sig med allt effektivare datorhårdvara för att kunna producera så många hashes som möjligt per sekund (HashRate) samtidigt som de förbrukar så lite energi som möjligt på ett så kostnadseffektivt sätt som möjligt. De tidiga miners som Satoshi eller Hal Finney använde bara sin CPU, sedan började andra mina med sina grafikkort. Numera använder miners ASIC (Application-Specific Integrated Circuit): maskiner som enbart är utformade för att tillämpa SHA256-algoritmen.
 
 ![image](assets/en/56.webp)
 
-Hashrate i Bitcoin-nätverket representerar antalet försök som görs per sekund för att hitta nästa block. Idag översteg den till och med 500 TH/s, vilket är 500 000 miljarder försök per sekund! Ju högre den globala hashhastigheten är, desto svårare är det för en illvillig aktör att monopolisera de resurser som behövs för att få majoriteten av gruvkraften och spendera sina medel mer än en gång (dubbelutgiftsproblem). Det är därför mer ekonomiskt lönsamt att följa reglerna i Bitcoin-protokollet än att agera mot dem.
+Hashrate i Bitcoin-nätverket representerar antalet försök som görs per sekund för att hitta nästa block. Idag översteg den till och med 500 TH/s, vilket är 500 000 miljarder försök per sekund! Ju högre den globala hash-hastigheten är, desto svårare är det för en illvillig aktör att monopolisera de resurser som behövs för att få majoriteten av mining-kraften och spendera sina pengar mer än en gång (problem med dubbelspendering). Det är därför mer ekonomiskt lönsamt att följa reglerna i Bitcoin-protokollet än att agera mot dem.
 
 ![image](assets/en/57.webp)
 
 ### Vad kan man hitta i ett block?
 
-Blockhuvudet innehåller flera element, t.ex. tid, svårighetsmål, det senaste blockets nummer, den version som används och Merkle-roten för de tidigare transaktionerna.
+Block header innehåller flera element, t.ex. tid, svårighetsgrad, det senaste blockets nummer, den version som används och Merkle-roten för de tidigare transaktionerna.
 
-**coinbase-transaktionen** är alltid den första som ingår i blocket: den innehåller gruvarbetarens belöning för att ha utfört validerarens arbete. Därefter kommer de validerade transaktionerna. Utvinnarna väljer att infoga de transaktioner som ger dem mest vinst, det vill säga små transaktioner med maximala avgifter.
+**coinbase-transaktionen** är alltid den första som ingår i blocket: den innehåller minerns belöning för att ha utfört validerarens arbete. Därefter kommer de validerade transaktionerna. Miners väljer att inkludera de transaktioner som ger dem mest vinst, det vill säga små transaktioner med maximala avgifter.
 
-### Ersättning till gruvarbetare
+### Ersättning till miners
 
-Inledningsvis kompenseras en gruvarbetare när han eller hon hittar ett giltigt block. Mer exakt belönas de på två sätt:
+Inledningsvis kompenseras en miner när han eller hon hittar ett giltigt block. Mer specifikt belönas de på två sätt:
 
 
-- genom den subvention (nypräglade bitcoins) som ingår i blocket;
+- genom den subvention (nyskapade bitcoins) som ingår i blocket;
 - genom transaktionsavgifter från de transaktioner som ingår i blocket.
 
 Subventionens storlek definieras av konsensusreglerna och beror på epoken: **blockbelöning = blocksubvention + transaktionsavgifter**.
 
-För de första blocken var blocksubventionen faktiskt 50 bitcoins. Varje 210 000 block (ungefär vart fjärde år) halveras detta belopp. Idag (2024) befinner vi oss i den femte epoken, vilket innebär att subventionen är 3,125 bitcoins. Kort sagt är detta den automatiska mekanismen som frigör nya bitcoins i systemet. Subventionen minskar över tiden tills den når gränsen för utfärdande av 21 miljoner bitcoins. Det finns redan över 19,4 miljoner bitcoins i omlopp, vilket är över 92%.
+För de första blocken var blocksubventionen faktiskt 50 bitcoins. Varje 210 000 block (ungefär vart fjärde år) halveras detta belopp. Idag (2024) befinner vi oss i den femte epoken, vilket innebär att subventionen är 3,125 bitcoins. Kort sagt är detta den automatiska mekanismen som frigör nya bitcoins i systemet. Subventionen minskar över tiden tills den når gränsen för utfärdandet av 21 miljoner bitcoins. Det finns redan över 19,4 miljoner bitcoins i omlopp, vilket är över 92%.
 
 ![image](assets/en/58.webp)
 
@@ -934,9 +934,9 @@ För att stabilisera sin affärsmodell, som är beroende av de belöningar de f�
 
 ### Varför bry sig om att göra allt detta?
 
-Kort sagt är innovationen med Bitcoin att föreslå en lösning på problemet med dubbla utgifter genom att använda en blockkedja baserad på Proof of Work med en flytande svårighet. I den digitala världen skiljer sig ägandebegreppet från den fysiska världen. I själva verket kan allt kopieras och klistras in i den digitala världen, vilket skapar en risk för att digitala tillgångar av värde används flera gånger. Betrodda mellanhänder, t.ex. banker, har skapats för att lösa detta tekniska problem och säkerställa att en tillgång inte längre tillhör avsändaren när den överförs.
+Kort sagt är innovationen med Bitcoin att föreslå en lösning på problemet med dubbelspendering genom att använda en blockkedja baserad på Proof of Work med en varierande svårighet. I den digitala världen skiljer sig konceptet om ägande från den fysiska världen. I själva verket kan allt kopieras och klistras in i den digitala världen, vilket skapar en risk för att digitala tillgångar av värde används flera gånger. Betrodda mellanhänder, t.ex. banker, har skapats för att lösa detta tekniska problem och säkerställa att en tillgång inte längre tillhör avsändaren när den överförs.
 
-Men hur kan detta göras utan en betrodd mellanhand? Detta problem beskrivs väl genom de bysantinska generalernas paradox, ett problem med att samordna information i ett system där olika aktörer inte går att lita på. I Byzantine Generals Problem måste en grupp generaler samordna en attack mot en stad, men vissa kan vara förrädare som försöker störa planen. Utmaningen är att de lojala generalerna ska nå konsensus om huruvida de ska anfalla eller retirera, trots att de får potentiellt vilseledande meddelanden från förrädarna.
+Men hur kan detta göras utan en betrodd mellanhand? Detta problem beskrivs väl genom de bysantinska generalernas paradox, ett problem med att samordna information i ett system där olika aktörer inte går att lita på. I de bysantinska generalernas problem måste en grupp generaler samordna en attack mot en stad, men vissa kan vara förrädare som försöker störa planen. Utmaningen är att de lojala generalerna ska nå konsensus om huruvida de ska anfalla eller retirera, trots att de får potentiellt vilseledande meddelanden från förrädarna.
 
 ![image](assets/en/60.webp)
 
