@@ -1138,13 +1138,13 @@ Innan du dyker in i att köpa Bitcoin, se till att du har:
 - En sparplan att följa.
 - En långsiktig vision.
 
-Om ämnet fortfarande är oklart, var medveten om att BTC102-kursen kommer att vägleda dig i att säkra och skaffa dina första bitcoins. Här kommer vi bara att skumma ytan på ämnet.
+Om ämnet fortfarande är oklart, var medveten om att BTC102-kursen kommer att vägleda dig i att säkra och skaffa dina första bitcoins. Här kommer vi bara att skrapa på ytan av ämnet.
 
 Konkret finns det två frågor att ställa sig:
 
 
-- Bör du anta en gradvis eller en heltäckande förvärvsstrategi?
-- Ska du använda en reglerad eller en oreglerad plattform?
+- Bör du anta en gradvis eller en omedelbar förvärvsstrategi?
+- Bör du använda en reglerad eller en oreglerad plattform?
 
 ### Förvärvsstrategier
 
@@ -1155,7 +1155,7 @@ En gradvis strategi innebär återkommande köp, vilket innebär att man köper 
 
 ![image](assets/en/74.webp)
 
-** Akta dig för UTXO**: Kom ihåg att konsolidera dina UTXO:er i dina plånböcker då och då. Denna praxis är viktig för att effektivt hantera dina bitcoins och undvika onödiga avgifter under transaktioner.
+** Var försiktig med UTXO**: Kom ihåg att konsolidera dina UTXO:er i dina plånböcker då och då. Denna praxis är viktig för att effektivt hantera dina bitcoins och undvika onödiga avgifter under transaktioner.
 
 
 - Spontant köp
@@ -1166,7 +1166,7 @@ I det här fallet bör du vara försiktig och kontrollera dina känslor, efterso
 
 ### Vem ska vi köpa våra bitcoin av?
 
-Det finns flera sätt att förvärva bitcoins, var och en omfattas av sin egen uppsättning regler som kan variera beroende på jurisdiktion. Vissa plattformar kräver identifiering för verifiering (KYC), medan andra inte gör det. Därför är det viktigt att förstå de regler som är kopplade till varje plattform.
+Det finns flera sätt att skaffa bitcoins, var och en omfattas av sin egen uppsättning regler som kan variera beroende på jurisdiktion. Vissa plattformar kräver identifiering för verifiering (KYC), medan andra inte gör det. Därför är det viktigt att förstå de regler som är kopplade till varje plattform.
 
 
 - DCA-plattformar
@@ -1176,15 +1176,15 @@ Som vi introducerade ovan är en vanlig metod för att ackumulera bitcoins Dolla
 Idag är nästan alla DCA-lösningar relativt effektiva och har nästan liknande avgifter, så valet beror mer på tillgängligheten i ditt land.
 
 
-- Plattformar för mäklare
+- Handelsplattformar
 
 För storskaliga investeringar rekommenderas reglerade och erkända plattformar som Kraken, Bitstamp och Paymium. De erbjuder en trygg och säker miljö för transaktioner med stora volymer.
 
 De är enkla att använda och tillgängliga för alla:
 
-1. Skapa ett KYC/\*-konto
+1. Skapa ett KYC/*-konto
 
-2. Överföra pengar till ditt konto
+2. Överför pengar till ditt konto
 
 3. Köp bitcoin
 
@@ -1192,15 +1192,15 @@ De är enkla att använda och tillgängliga för alla:
 
 ![image](assets/en/75.webp)
 
-Efter köpet är det tillrådligt att omedelbart ta ut bitcoins från utbytesplattformarna för att minimera riskerna för hackning och fondblockering. Var medveten om att uttagsavgifterna kan vara höga, ibland upp till 25 euro beroende på plattform.
+Efter köpet är det rekommenderat att omedelbart ta ut bitcoins från handelsplattformarna för att minimera riskerna för hackning och blockering. Var medveten om att uttagsavgifterna kan vara höga, ibland upp till 25 euro beroende på plattform.
 
-**KYC-bestämmelser (Know Your Customer) kräver att användare identifierar sig för att bekämpa finansiering av terrorism, skatteflykt och penningtvätt
+**KYC-bestämmelser (Know Your Customer) kräver att användare identifierar sig för att bekämpa finansiering av terrorism, skatteflykt och penningtvätt.
 
 Det är viktigt att erkänna att KYC är ett viktigt diskussionsämne i Bitcoin-industrin. Medan många människor debatterar dess effektivitet finns det många problem förknippade med det. I många av vår akademis utbildningsprogram och innehåll råder vi avancerade användare att undvika plattformar som kräver KYC, eftersom det ofta finns mer integritetsfokuserade alternativ tillgängliga.
 
-### Icke-KYC-lösningar
+### Lösningar med icke-KYC
 
-Dessutom finns det flera [marknadsplatser] (https://planb.network/tutorials/exchange) där man kan köpa och sälja bitcoins i ett peer-to-peer-utbyte. I allmänhet måste du överväga följande:
+Dessutom finns det flera [marknadsplatser] (https://planb.network/tutorials/exchange) där man kan köpa och sälja bitcoins i ett peer-to-peer-utbyte. I allmänhet kan du överväga följande:
 
 
 - Uttagsautomater för Bitcoin
@@ -1211,7 +1211,7 @@ Dessutom finns det flera [marknadsplatser] (https://planb.network/tutorials/exch
 
 ![image](assets/en/76.webp)
 
-Slutligen är det viktigt att notera att skattskyldigheter kan variera beroende på jurisdiktion, så vi rekommenderar starkt att du konsulterar bestämmelserna i ditt land innan du vidtar några åtgärder som kan innebära en risk för dig.
+Slutligen är det viktigt att notera att skatteskyldigheter kan variera beroende på jurisdiktion, så vi rekommenderar starkt att du konsulterar bestämmelserna i ditt land innan du vidtar några åtgärder som kan innebära en risk för dig.
 
 ## Hyper-bitcoinisering
 
@@ -1219,24 +1219,24 @@ Slutligen är det viktigt att notera att skattskyldigheter kan variera beroende 
 
 ### Den vilda kapplöpningen har bara börjat!
 
-Liksom all ny teknik följer antagandet av Bitcoin en S-kurva, som illustrerar utvecklingen från tidiga användare till bredare acceptans. Vi har lämnat de tidiga användarnas era bakom oss och indikatorer tyder på en potentiell demokratisering av Bitcoin. Det är trots allt en viral teknik som inte lätt kan stoppas. Å ena sidan har El Salvador tagit det djärva steget att fullt ut anta Bitcoin som lagligt betalningsmedel. Å andra sidan har andra länder reagerat genom att förbjuda och kriminalisera användningen, vilket visar att antagandet av Bitcoin är komplext och påverkas av kulturella, historiska och nationella faktorer.
+Liksom all ny teknik följer adoption av Bitcoin en S-kurva, som illustrerar utvecklingen från tidiga användare till bredare acceptans. Vi har lämnat de tidiga användarnas era bakom oss och indikatorer tyder på en potentiell demokratisering av Bitcoin. Det är trots allt en viral teknik som inte lätt kan stoppas. Å ena sidan har El Salvador tagit det djärva steget att fullt ut anta Bitcoin som lagligt betalningsmedel. Å andra sidan har andra länder reagerat genom att förbjuda och kriminalisera användningen, vilket visar att adoptionen av Bitcoin är komplext och påverkas av kulturella, historiska och nationella faktorer.
 
 ![image](assets/en/02.webp)
 
-Bitcoins uppgång tvingar företag, universitet, tillsynsmyndigheter och privatpersoner att ta hänsyn till denna nya teknik. Nya verktyg måste skapas, tjänster måste anpassas och innovation måste fortsätta för att säkerställa deras överlevnad. Detta sammanhang väcker många frågor som rör olika områden, bland annat kryptografi, spelteori, ekonomi och penningpolitik, datavetenskap, filosofi, energi, lagar och regler. Bitcoin är kort sagt ett tvärvetenskapligt ämne.
+Bitcoins framfart tvingar företag, universitet, myndigheter och privatpersoner att ta hänsyn till denna nya teknik. Nya verktyg måste skapas, tjänster måste anpassas och innovation måste fortsätta för att säkerställa deras överlevnad. Detta sammanhang väcker många frågor som rör olika områden, bland annat kryptografi, spelteori, ekonomi och penningpolitik, datavetenskap, filosofi, energi, lagar och regler. Bitcoin är kort sagt ett tvärvetenskapligt ämne.
 
 ![image](assets/en/01.webp)
 
-### Bitcoin är en 0 till 1
+### Bitcoin är 0 till 1
 
 I slutändan uppmanar vi dig att reflektera över denna nya monetära revolution. Det finns så mycket att utforska med Bitcoin att det är komplicerat att assimilera allt på en gång. Ta din tid, Bitcoin kommer inte att försvinna. Tvärtom, revolutionen har bara börjat. Vi tror att vi är kapabla att skapa den värld som vi vill anförtro våra barn: en värld där mänsklig suveränitet är en rättighet, där integritet respekteras som standard och där pengar inte manipuleras. Vi hoppas att vi tillsammans kommer att uppnå detta.
 
 ![image](assets/en/77.webp)
 
-Om du vill bredda din kunskap om Bitcoin är det här rätt tid: ett stort antal författare, tänkare och essäister har skapat pedagogiskt innehåll om Bitcoin. Under de senaste åren har vi listat och kategoriserat dessa verk för att erbjuda ett [resursbibliotek](https://planb.network/resources) till de mest nyfikna bland er. I det avsnittet hittar du de bästa podcasterna, webbplatserna, artiklarna, handledningarna, böckerna och annat innehåll.
+Om du vill bredda din kunskap om Bitcoin är det här rätt tid: ett stort antal författare, tänkare och essäister har skapat pedagogiskt innehåll om Bitcoin. Under de senaste åren har vi listat och kategoriserat dessa verk för att erbjuda ett [resursbibliotek](https://planb.network/resources) till de mest nyfikna bland er. I det avsnittet hittar du de bästa podcasts, webbplatserna, artiklarna, tutorials, böckerna och annat innehåll.
 
 > "Jag tror att Internet kommer att bli en av de stora krafterna för att minska statens roll. Det enda som saknas, men som snart kommer att utvecklas, är en tillförlitlig e-cash - en metod där man på Internet kan överföra pengar från A till B utan att A känner till B eller B känner till A." - Milton Friedmans förutsägelse 1999
-# Bitcoins framtid: Blixtnätverket
+# Bitcoins framtid: Lightning Network
 
 <partId>899fd35e-39e6-5a25-a73e-6fed6e725094</partId>
 
@@ -1244,15 +1244,15 @@ Om du vill bredda din kunskap om Bitcoin är det här rätt tid: ett stort antal
 
 <chapterId>b403f1e4-f1ff-572b-a242-9b58cb3736d0</chapterId>
 
-Nu när vi har grunderna i Bitcoin-protokollet kommer vi att presentera ett betalningsnätverk som använder Bitcoin-protokollet för att möjliggöra blixtsnabba transaktioner: Lightning Network!
+Nu när vi har kunskap om grunderna i Bitcoin-protokollet kommer vi att presentera ett betalningsnätverk som använder Bitcoin-protokollet för att möjliggöra blixtsnabba transaktioner: Lightning Network!
 
-Var medveten om att följande endast är en allmän beskrivning, så om du vill förstå det i djupare detaljer inbjuder vi dig att kolla vår LNP201-kurs.
+Var medveten om att följande endast är en allmän beskrivning, så om du vill förstå det i djupare detaljer rekommenderar vi dig att kolla vår LNP201-kurs.
 
 ### I ett nötskal
 
 Lightning Network är en revolutionerande teknik som på ett genomgripande sätt har förändrat vår uppfattning om Bitcoin, eftersom den löser problemet med Bitcoins skalbarhet.
 
-För att fullt ut förstå Lightning Network är det viktigt att förstå hur Bitcoin utvecklas och utvecklas i infrastrukturlager: det första lagret är blockkedjan och det andra är Lightning Network.
+För att fullt ut förstå Lightning Network är det viktigt att förstå hur Bitcoin växer och utvecklas i infrastrukturlager: det första lagret är blockkedjan och det andra är Lightning Network.
 
 ![image](assets/en/78.webp)
 
@@ -1264,26 +1264,26 @@ Skalbarhetsproblemet avser utmaningen att implementera ett monetärt system som 
 
 ![image](assets/en/79.webp)
 
-Enligt den kan ett protokoll som baseras på en blockkedja bara uppfylla två av dessa tre funktioner. Inom Bitcoin-protokollet har utvecklare gjort val för att gynna decentralisering och säkerhet. Å ena sidan gör blockstorleken på 1 MB och tiden mellan två block (i genomsnitt 10 minuter) det möjligt att driva en Bitcoin-nod till en lägre kostnad, vilket gynnar decentralisering. Å andra sidan gör produktionen av block genom Proof-of-Work bedrägeri inom protokollet extremt kostsamt, samtidigt som det underlättar verifiering av nätverksnoder och gynnar säkerhet. Dessa val innebär dock en begränsning av det genomsnittliga antalet transaktioner i ett block, vilket ungefär motsvarar några transaktioner per sekund. Detta antal är löjligt jämfört med beräkningskapaciteten hos betalningsprocessorer som VISA (1700/s), men denna gräns är nödvändig för att kunna göra transaktioner med Bitcoin på ett censurresistent och förtroendefritt sätt. Trots detta har de som utvecklar Bitcoin tänkt på detta problem sedan början.
+Enligt den kan ett protokoll som baseras på en blockkedja bara uppfylla två av dessa tre funktioner. Inom Bitcoin-protokollet har utvecklare gjort val för att gynna decentralisering och säkerhet. Å ena sidan gör blockstorleken på 1 MB och tiden mellan två block (i genomsnitt 10 minuter) det möjligt att driva en Bitcoin-nod till en lägre kostnad, vilket gynnar decentralisering. Å andra sidan gör produktionen av block genom Proof-of-Work-metoden det oerhört kostsamt och resurskrävande att genomföra bedrägerier inom protokollet, samtidigt som det underlättar verifiering av nätverksnoder och gynnar säkerhet. Dessa val innebär dock en begränsning av det genomsnittliga antalet transaktioner i ett block, vilket ungefär motsvarar några transaktioner per sekund. Detta antal är löjligt jämfört med beräkningskapaciteten hos betalningsprocessorer som VISA (1700/s), men denna gräns är nödvändig för att kunna göra transaktioner med Bitcoin på ett censurresistent och förtroendefritt sätt. Trots detta har de som utvecklar Bitcoin tänkt på detta problem sedan början.
 
-### Blixten som ett lager ovanpå
+### Lightning som ett andra lager ovanpå
 
 Efter år av överväganden och flera försök uppstod Lightning-protokollet. Med hjälp av ett visst antal specifikationer konstruerar detta protokoll ett peer-to-peer-betalningsnätverk genom att utnyttja säkerheten och programmerbarheten i Bitcoins transaktionsprotokoll. Lightning Network fungerar som ett nätverk av betalningskanaler, vilket möjliggör omedelbara transaktioner med låga avgifter för avsändaren, och det skapar även utbytesvägar mellan individer som inte har en direkt kanalanslutning.
 
 ![image](assets/en/80.webp)
 
-Traditionella penningöverföringstjänster som Western Union, centralbanker, Visa och Mastercard kan försvinna om de inte antar Lightning Network-tekniken, som är mer effektiv och kostnadseffektiv än nuvarande betalningssystem. Lightning Network möjliggör i själva verket nästan obegränsade transaktioner mellan två peers som delar en kanal, där endast energikostnaderna för att meddela att kanalen har skapats uppstår i samband med transaktionen, snarare än för varje enskild transaktion.
+Traditionella överföringstjänster som Western Union, centralbanker, Visa och Mastercard kan försvinna om de inte antar Lightning Network-tekniken, som är mer effektiv och kostnadseffektiv än nuvarande betalningssystem. Lightning Network möjliggör i själva verket nästan obegränsade transaktioner mellan två peers som delar en kanal, där endast energikostnaderna för att meddela att kanalen har skapats uppstår i samband med transaktionen, snarare än för varje enskild transaktion.
 
 ![image](assets/en/81.webp)
 
 Transaktioner säkras genom kryptografi och indirekt genom den energi som förbrukas av miners på Bitcoin. De kan göras direkt, utan geografiska begränsningar och med extremt låga avgifter (ofta mindre än 0,5%).
 
-Sammanfattningsvis är Lightning Network ett lovande försök att distribuera ett effektivt betalningssystem för att köpa och sälja i Bitcoin. Det finns redan många Lightning-plånböcker tillgängliga, som du kan upptäcka i vårt handledningsavsnitt eller genom våra Lightning Network-kurser.
+Sammanfattningsvis är Lightning Network ett lovande försök att sprida ett effektivt betalningssystem för att köpa och sälja i Bitcoin. Det finns redan många Lightning-plånböcker tillgängliga, som du kan upptäcka i vår tutorial-sektion eller genom våra Lightning Network-kurser.
 
 Om du vill gå längre än den här introduktionen och förstå hur Lightning Network fungerar rekommenderar vi att du tar den här utmärkta kursen av Fanis Michalakis i ämnet:
 
 https://planb.network/courses/34bd43ef-6683-4a5c-b239-7cb1e40a4aeb
-## Användningsfall för blixtnätverk
+## Användning av Lightning Network
 
 <chapterId>684e31f9-ebd1-51b6-91c0-1e6a315f1141</chapterId>
 
@@ -1291,18 +1291,18 @@ Som vi just har sett står Bitcoin-protokollet, även om det är revolutionerand
 
 
 - Core-lightning av Blockstream
-- Eclair från Acinq
-- LND genom blixtnedslag
+- Eclair av Acinq
+- LND av Lightning Strike
 
-Detta peer-to-peer-nätverk syftar till att underlätta mikrotransaktioner (med mycket lågt värde) som annars skulle vara opraktiska på grund av höga avgifter och långa bekräftelsetider på Bitcoin-blockkedjan.
+Detta peer-to-peer-nätverk syftar till att underlätta mikrotransaktioner (med mycket låga belopp) som annars skulle vara opraktiska på grund av höga avgifter och långa bekräftelsetider på Bitcoin-blockkedjan.
 
 ### Vilka är användningsområdena för nätverket?
 
-Den här tekniken öppnar dörren för ett brett spektrum av potentiella tillämpningar för Bitcoin som tidigare var utom räckhåll på grund av de nödvändiga begränsningarna för att säkerställa säkerheten och decentraliseringen av Bitcoin. Bland dessa vardagliga användningsområden kan vi nämna omedelbar fakturering inom både fysisk handel och onlinehandel, strömmande pengar för realtidsbetalningar och mikrodonationer för innehållsskapare. Genom att möjliggöra ett nätverk av nästan omedelbara, säkra och billiga transaktioner (i genomsnitt mindre än 0,5%) kan många tidigare otänkbara affärsmodeller förverkligas. Detta möjliggörs genom att Lightning Network använder satoshis (sats), den minsta enheten av Bitcoin.
+Den här tekniken öppnar dörren för ett brett spektrum av potentiella tillämpningar för Bitcoin som tidigare var utom räckhåll på grund av de nödvändiga begränsningarna för att säkerställa säkerheten och decentraliseringen av Bitcoin. Bland dessa vardagliga användningsområden kan vi nämna omedelbara transaktioner inom både fysisk handel och onlinehandel, pengar för realtidsbetalningar och mikrodonationer för innehållsskapare. Genom att möjliggöra ett nätverk av nästan omedelbara, säkra och billiga transaktioner (i genomsnitt mindre än 0,5%) kan många tidigare otänkbara affärsmodeller förverkligas. Detta möjliggörs genom att Lightning Network använder satoshis (sats), den minsta enheten av Bitcoin.
 
 ![image](assets/en/82.webp)
 
-Videospelsbranschen är ett särskilt intressant exempel på hur Lightning Network kan användas för att förändra befintliga affärsmodeller. Begreppet "skin in the game" är en idé som nyligen har blivit populär i detta sammanhang. Det innebär i princip att man har en ekonomisk andel i utfallet av ett spel. Lightning Network gör det faktiskt möjligt för spelare att satsa mycket små summor pengar när de spelar spel, till exempel några satoshis (ungefär en bråkdel av en eurocent) för att skapa en insats som stimulerar konkurrensen samtidigt som kostnaden för att använda botar ökar avsevärt.
+Videospelsbranschen är ett särskilt intressant exempel på hur Lightning Network kan användas för att förändra befintliga affärsmodeller. Begreppet "skin in the game" är en idé som nyligen har blivit populär i detta sammanhang. Det innebär i princip att man har en ekonomisk andel i utfallet av ett spel. Lightning Network gör det faktiskt möjligt för spelare att satsa mycket små summor pengar när de spelar spel, till exempel några satoshis (ungefär en bråkdel av en euro-cent) för att skapa en insats som stimulerar konkurrensen samtidigt som kostnaden för att använda bots ökar avsevärt.
 
 ![image](assets/en/83.webp)
 
@@ -1310,13 +1310,13 @@ Sammanfattningsvis ser framtiden för mikrotransaktioner med Bitcoin lovande ut 
 
 ![image](assets/en/84.webp)
 
-Ett annat exempel skulle kunna vara "money streaming": genom Lightning Network kan vi göra mikrotransaktioner varje minut (eventuellt utan en betrodd tredje part), vilket öppnar dörren för att experimentera med ekonomiska modeller där konsumenterna betalar för innehåll baserat på deras faktiska konsumtion. Det är till och med tänkbart att använda detta system för att hyra varor. I ett sådant system delas pengarna automatiskt, baserat på en fördefinierad procentsats, mellan de olika bidragsgivarna till en tjänst eller produkt. Detta skulle kunna revolutionera vårt sätt att tänka kring betalningsmodeller: istället för att betala ett månadsabonnemang för en tjänst skulle användarna kunna debiteras per minut, eller till och med per sekund, för den tid de spenderar med att använda tjänsten. En sådan ekonomisk modell skulle kunna få djupgående konsekvenser för innehållsskapare, som skulle få incitament att producera kvalitetsinnehåll för att behålla användarnas uppmärksamhet.
+Ett annat exempel skulle kunna vara "pengaflöde": genom Lightning Network kan vi göra mikrotransaktioner varje minut (eventuellt utan en betrodd tredje part), vilket öppnar dörren för att experimentera med ekonomiska modeller där konsumenterna betalar för innehåll baserat på deras faktiska konsumtion. Det är till och med tänkbart att använda detta system för att hyra varor. I ett sådant system delas pengarna automatiskt, baserat på en fördefinierad procentsats, mellan de olika bidragsgivarna till en tjänst eller produkt. Detta skulle kunna revolutionera vårt sätt att tänka kring betalningsmodeller: istället för att betala ett månadsabonnemang för en tjänst skulle användarna kunna debiteras per minut, eller till och med per sekund, för den tid de spenderar med att använda tjänsten. En sådan ekonomisk modell skulle kunna få djupgående konsekvenser för innehållsskapare, som skulle få incitament att producera kvalitetsinnehåll för att behålla användarnas uppmärksamhet.
 
 ![image](assets/en/85.webp)
 
-Sammanfattningsvis öppnar Lightning Network upp för en mängd spännande användningsfall för Bitcoin-användare. De resulterande ekonomiska modellerna och affärsmöjligheterna är många och varierade, och vi uppmuntrar dig att kontrollera själv genom att prova podcastapplikationen [Fountain] (https://www.fountain.fm/), som gör att du kan belönas med några sats för att lyssna på dina favoritpodcasts!
+Sammanfattningsvis öppnar Lightning Network upp för en mängd spännande användningsområden för Bitcoin-användare. De resulterande ekonomiska modellerna och affärsmöjligheterna är många och varierade, och vi uppmuntrar dig att ta reda på det själv genom att prova podcastapplikationen [Fountain] (https://www.fountain.fm/), som gör att du kan belönas med några sats för att lyssna på dina favoritpodcasts!
 
-## Rödpiller eller blåpiller?
+## Red pill eller blue pill?
 
 <chapterId>c81cdb45-6aa9-5462-9835-c4852084b2cc</chapterId>
 
@@ -1336,11 +1336,11 @@ Vi har några viktiga frågor att ställa oss själva:
 - Finns det behov av lika många lärare?
 - De geopolitiska, politiska och mänskliga konsekvenserna av automatisering diskuteras inte tillräckligt.
 
-Datorer, internet, streaming och VR kommer att förändra utbildningen. Vi skulle kunna ha en allmän kurs för alla franska studenter som sköts av regeringen och lärare som inte längre håller föreläsningar utan direkt följer med studenterna. Barn skulle kunna gå in i en virtuell värld och få hjälp med att lära sig historia.
+Datorer, internet, streaming och VR kommer att förändra utbildningen. Vi skulle kunna ha en allmän kurs för alla franska studenter som hanteras av regeringen och lärare som inte längre håller föreläsningar utan direkt följer studenterna. Barn skulle kunna gå in i en virtuell värld och få hjälp med att lära sig historia.
 
 
 - Var går gränsen mellan en lärare och en personifierad AI?
-- Hur kan vi garantera ett samhälle som lever i välstånd?
+- Hur kan vi garantera ett samhälle som lever i framgång?
 
 Dessa grundläggande frågor för vår framtid måste debatteras och beslutas kollektivt.
 
@@ -1348,7 +1348,7 @@ Vad är kopplingen till Bitcoin? Precis som Internet revolutionerade kommunikati
 
 ### Hur ser framtidens finansmarknad ut?
 
-Dessa överväganden väcker också frågor om vem som ska inneha, auktorisera och spåra de pengar vi använder. Målet är att välja mellan ett slutet system med icke valda ledare eller ett öppet system utan betrodda tredje parter, där neutralitet råder.
+Dessa överväganden väcker också frågor om vem som ska bevara, auktorisera och spåra de pengar vi använder. Målet är att välja mellan ett slutet system med icke valda ledare eller ett öppet system utan betrodda tredje parter, där neutralitet råder.
 
 
 - Är valuta en form av privat egendom?
@@ -1357,9 +1357,9 @@ Dessa överväganden väcker också frågor om vem som ska inneha, auktorisera o
 - Hur kan en individ vara suverän över sina pengar och samtidigt förlita sig på en betrodd tredje part?
 - Kan pengar skickas till andra sidan jordklotet utan avgifter eller mellanhänder?
 
-Att acceptera dessa nya tekniker skulle kunna generera enorma stordriftsfördelar över hela världen. Bör vi tillåta fri rörlighet för kapitalflöden? Internationella blockader får ekonomiska och politiska konsekvenser. Är det etiskt att använda sig av finansiella mellanhänder som Western Union, som ibland tar ut upp till 25 procent i avgifter? Vi anser att pengar i en alltmer digitaliserad värld bör demokratiseras och betraktas som en gemensam nyttighet som tillhör folket snarare än staten eller ogenomskinliga finansinstitut.
+Att acceptera dessa nya tekniker skulle kunna generera enorma stordriftsfördelar över hela världen. Bör vi tillåta fri rörlighet för kapitalflöden? Internationella blockeringar får ekonomiska och politiska konsekvenser. Är det etiskt att använda sig av finansiella mellanhänder som Western Union, som ibland tar ut upp till 25 procent i avgifter? Vi anser att pengar i en alltmer digitaliserad värld bör demokratiseras och betraktas som ett gemensamt intresse som tillhör folket snarare än staten eller oklara finansinstitut.
 
-Frågan om vem som ska kontrollera banksystemet är avgörande eftersom reglerna för bankspelet inte är transparenta och begripliga för alla, vilket gör det möjligt för en kast av politiker och tillsynsmyndigheter att behålla sitt grepp om systemet, så det är viktigt att fråga sig om den fria marknaden eller en grupp intellektuella ska ha makten över den.
+Frågan om vem som ska kontrollera banksystemet är avgörande eftersom reglerna för bankspelet inte är transparenta och begripliga för alla, vilket gör det möjligt för politiker och tillsynsmyndigheter att behålla sitt grepp om systemet, så det är viktigt att fråga sig om den fria marknaden eller en grupp intellektuella personer ska ha makten över den.
 
 ### Vår frihet står på spel.
 
@@ -1371,19 +1371,19 @@ Censuren måste också ifrågasättas: vem har kunskapen att avgöra vad som ska
 
 Vi är övertygade om att tolerans av censur kan förstöra yttrandefriheten och rätten till sammankomster, eftersom det kan ha en negativ inverkan på innovation och fri vilja. Det är tekniskt svårt att införa censur utan att skapa en fullständig dystopi. Så vilken enhet ska ha makten över censuren? Frågan är komplicerad, och det är också svårt att avgöra vem som ska begränsas eller inte.
 
-Det finns 2,4 miljarder människor i världen som saknar bankkonto, vilket med nödvändighet skapar geografiska ojämlikheter. Å andra sidan ger Bitcoin transaktioner jämlikhet, oavsett din sociala status eller politiska ställning. Protokollet är opolitiskt och ger inte specifika privilegier till ledare eller andra inflytelserika personer, vilket säkerställer att alla har samma möjligheter att driva utvecklingen framåt, snarare än att låta ett fåtal stanna kvar på toppen medan andra hamnar på efterkälken. Ska alla ha tillgång till samma valuta, oavsett social status? Det är viktigt att fundera över vilken värld vi vill lämna över till våra barn, och vi strävar efter att skapa en öppen värld där de är fria att hantera sina pengar som de vill.
+Det finns 2,4 miljarder människor i världen som saknar bankkonto, vilket med nödvändighet skapar geografiska ojämlikheter. Å andra sidan ger Bitcoin jämlikhet till transaktioner, oavsett din sociala status eller politiska ställning. Protokollet är opolitiskt och ger inte specifika privilegier till ledare eller andra inflytelserika personer, vilket säkerställer att alla har samma möjligheter att driva utvecklingen framåt, snarare än att låta ett fåtal stanna kvar på toppen medan andra hamnar på efterkälken. Ska alla ha tillgång till samma valuta, oavsett social status? Det är viktigt att fundera över vilken värld vi vill lämna över till våra barn, och vi strävar efter att skapa en öppen värld där de är fria att hantera sina pengar som de vill.
 
-Bitcoin är viktigt och bör inte bara betraktas som ett hasardspel, så det är viktigt att fortsätta ställa frågor om Bitcoin och dess konsekvenser för världen.
+Bitcoin är viktigt och bör inte bara betraktas som ett slumpspel, så det är viktigt att fortsätta ställa frågor om Bitcoin och dess konsekvenser för världen.
 
 ### Bitcoin: ett revolutionerande protokoll
 
-Som vi har sett i föregående kapitel är Bitcoinprotokollet neutralt gentemot alla sina användare. Tack vare konsensusregler och kryptografi kan vi på ett oföränderligt sätt registrera transaktioner i en global offentlig liggare, vilket garanterar överföringar av penningvärde utan någon betrodd tredje part. Infrastrukturen i det andra lagret (och snart i det tredje lagret med RGB) används för nätverksskalbarhet och utveckling av nya funktioner.
+Som vi har sett i föregående kapitel är Bitcoinprotokollet neutralt gentemot alla sina användare. Tack vare konsensusregler och kryptografi kan vi på ett oföränderligt sätt registrera transaktioner i ett globalt offentligt register, vilket garanterar överföringar av penningvärde utan någon betrodd tredje part. Infrastrukturen i det andra lagret (och snart i det tredje lagret med RGB) används för skalbarhet av nätverket och utveckling av nya funktioner.
 
-Bitcoin har alla nödvändiga egenskaper för att vara en effektiv och sund valuta: delbar, omedelbart transporterbar, ocensoriserbar, försumbara verifieringskostnader och med en penningpolitik som redan är inställd på 21 miljoner enheter i århundraden framöver. Bitcoin är pseudonymt och kan växlas var som helst i världen utan något tillstånd från någon enhet. Du behöver bara ha dina egna privata nycklar och komma ihåg talesättet "Inte dina nycklar, inte dina bitcoins".
+Bitcoin har alla nödvändiga egenskaper för att vara en effektiv och sund valuta: delbar, omedelbart transporterbar, ocensurerbar, obetydliga verifieringskostnader och med en penningpolitik som redan är inställd på 21 miljoner enheter i århundraden framöver. Bitcoin är pseudonymt och kan växlas var som helst i världen utan något tillstånd från någon enhet. Du behöver bara ha dina egna privata nycklar och komma ihåg talesättet "Inte dina nycklar, inte dina bitcoins".
 
 Den används av olika grupper av människor, från kryptografer och libertarianer till traditionella företag och till och med hela länder. Bitcoin är dock till för alla, och i takt med att antalet användare växer, växer också antalet Bitcoin-noder som fungerar som väktare av transaktionshistoriken och säkerställer dess decentralisering.
 
-Bitcoin kan inte stoppas och kan inte censureras längre. Det är en fredlig revolution som förändrar det monetära systemet och möjliggör finansiell inkludering. Användare kan få tag på bitcoins genom att acceptera dem för sin handel eller genom att köpa dem via reglerade eller oreglerade plattformar. De kan lagra medel i sina plånböcker, mobila applikationer eller fysiska enheter utan behov av betrodda mellanhänder. Bitcoin förespråkar transparens, frihet och individuellt ansvar: som ordspråket säger "Lita inte, verifiera".
+Bitcoin kan inte stoppas och kan inte censureras längre. Det är en fredlig revolution som förändrar det monetära systemet och möjliggör finansiell inkludering. Användare kan få tag på bitcoins genom att acceptera dem för sin handel eller genom att köpa dem via reglerade eller oreglerade plattformar. De kan förvara tillgångar i sina plånböcker, mobila applikationer eller fysiska enheter utan behov av betrodda mellanhänder. Bitcoin förespråkar transparens, frihet och individuellt ansvar: som ordspråket säger "Lita inte på, verifiera".
 
 Satoshi skapade Bitcoin 2008 för att föreslå en förändring av det finansiella systemet genom att byta valuta, eftersom han visste att tillgång till enkla och "magiska" pengar lätt leder till korruption. Bitcoin är därför ett alternativ för att bygga ett nytt neutralt monetärt system, eftersom det gör det möjligt att frigöra sig från banksystemet. I slutändan är det ett socialt fenomen som uppmuntrar oss att delta i en fredlig revolution.
 
