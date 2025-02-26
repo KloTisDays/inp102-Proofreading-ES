@@ -942,36 +942,36 @@ Men hur kan detta göras utan en betrodd mellanhand? Detta problem beskrivs väl
 
 Bitcoin är därför en slags lösning för att lösa detta problem, eller åtminstone för att komma runt det. Bitcoins "generaler", eller miners, producerar block (med information) och Bitcoin-noder verifierar finansiella transaktioner med hjälp av konsensusregler för att säkerställa informationens äkthet. Asymmetrin i energikostnaden mellan informationsproduktion och verifiering säkerställer informationens tillförlitlighet, utan en betrodd tredje part.
 
-Miners är de som bygger upp säkerheten i Bitcoin-nätverket. Genom att spendera energi på att producera hashes bygger de en mur som gör det extremt kostsamt för en illasinnad agent att skriva om transaktionshistoriken, och denna ekonomiska avskräckande effekt avskräcker andra från att bete sig oärligt.
+Miners är de som bygger upp säkerheten i Bitcoin-nätverket. Genom att spendera energi på att producera hashes bygger de en mur som gör det extremt kostsamt för en illasinnad agent att skriva om transaktionshistoriken, och denna ekonomiska negativa effekt avskräcker andra från att bete sig oärligt.
 
 Även vid en 51%-attack, där en agent skulle inneha mer än hälften av hashraten, skulle nätverket förbli säkert eftersom angriparen måste spendera lika mycket energi som alla miners tillsammans för att försöka modifiera blockkedjan. Denna energikrävande proof-of-work-mekanism är det som garanterar nätverkets säkerhet.
 
 ### Sammanfattningsvis
 
-Den spelteori som tillämpas på Bitcoin eliminerar oärliga miners, som använder ASIC-maskiner för att bryta och får en belöning om de lyckas. Dessutom går de ofta med i miningpooler för att dela med sig av sin datorkraft och få mindre men mer regelbundna belöningar. Bitcoin-mining medför höga energikostnader, men är avgörande för driften och säkerheten i Bitcoin-nätverket. Proof-of-work-mekanismen och blockkedjetekniken löser problemet med dubbelspendering och säkerställer informationens integritet utan att förlita sig på en betrodd tredje part. Att producera information kräver en betydande energiförbrukning, men att verifiera informationen medför en försumbar kostnad. Denna asymmetri förstärker nätverkets säkerhet och gör det mer ekonomiskt lönsamt att följa konsensusreglerna än att försöka bryta mot dem.
+Den spelteori som tillämpas på Bitcoin eliminerar oärliga miners, som använder ASIC-maskiner för att mina och får en belöning om de lyckas. Dessutom går de ofta med i miningpooler för att dela med sig av sin datorkraft och få mindre men mer regelbundna belöningar. Bitcoin-mining medför höga energikostnader, men är avgörande för driften och säkerheten av Bitcoin-nätverket. Proof-of-work-mekanismen och blockkedjetekniken löser problemet med dubbelspendering och säkerställer informationens integritet utan att förlita sig på en betrodd tredje part. Att producera information kräver en betydande energiförbrukning, men att verifiera informationen medför en försumbar kostnad. Denna asymmetri förstärker nätverkets säkerhet och gör det mer ekonomiskt lönsamt att följa konsensusreglerna än att försöka bryta dem.
 
-Om du vill fördjupa dig i det specifika ämnet Bitcoin-gruvdrift kan du konsultera vår MIN 201-kurs. Du kommer att upptäcka hur Proof-of-Work fungerar och vilken roll det har, samt mekaniken i gruvindustrin. Vi förklarar också hur man konverterar en ASIC till en värmare, så att du kan bryta dina första satoshis samtidigt som du värmer upp ditt hem!
+Om du vill fördjupa dig i det specifika ämnet Bitcoin-mining kan du konsultera vår MIN 201-kurs. Du kommer att upptäcka hur Proof-of-Work fungerar och vilken roll det har, samt mekaniken inom mining. Vi förklarar också hur man konverterar en ASIC till en värmare, så att du kan mina dina första satoshis samtidigt som du värmer upp ditt hem!
 
 https://planb.network/courses/ce272232-0d97-4482-884a-0f77a2ebc036
 ## Bitcoin och ekologi
 
 <chapterId>4b227ae6-443a-5739-b443-60b7931130d9</chapterId>
 
-I föregående avsnitt förstod vi att säkerheten i Bitcoin-protokollet bygger på hög energiförbrukning för att producera en offentlig huvudbok med transaktioner utan en betrodd tredje part. I mainstream media jämförs ofta den totala energikostnaden med elanvändningen i ett litet land. Men är denna jämförelse rimlig? Är det relevant att förstå orsakerna bakom sådana kostnader?
+I föregående avsnitt förstod vi att säkerheten i Bitcoin-protokollet bygger på hög energiförbrukning för att skapa ett offentligt register med transaktioner utan en betrodd tredje part. I mainstream media jämförs ofta den totala energikostnaden med elanvändningen i ett litet land. Men är denna jämförelse rimlig? Är det relevant att förstå orsakerna bakom sådana kostnader?
 
 ### Energikostnaderna för Bitcoin.
 
-Låt oss först göra en kvalitativ bedömning av miljökostnaden för gruvdrift. En gruvarbetare måste ha en maskin som en ASIC och en energikälla i form av elektricitet för att driva dessa maskiner. ASIC:ar är oftast tillverkade av aluminium och kan antingen återvinnas eller återanvändas för ett annat ändamål (vilket demonstreras av Attakaï-projektet som beskrivs i vår kurs MIN201), som omvandlar en Antminer S9 till en rumsvärmare). Det största problemet är därför energiförbrukningen.
+Låt oss först göra en kvalitativ bedömning av miljökostnaden för mining. En miner måste ha en maskin som en ASIC och en energikälla i form av elektricitet för att driva dessa maskiner. ASICs är oftast tillverkade av aluminium och kan antingen återvinnas eller återanvändas för ett annat ändamål (vilket demonstreras av Attakaï-projektet som beskrivs i vår kurs MIN201), som omvandlar en Antminer S9 till en rumsvärmare). Det största problemet är därför energiförbrukningen.
 
 ![image](assets/en/61.webp)
 
-Elförbrukningen står för nästan alla kostnader för en gruvarbetare. Därför uppmuntras de att hitta en billig elkälla, så att de kan åka till platser där kraftverk har installerats men ännu inte anslutits till områdets elnät. I det här fallet fungerar gruvarbetarna som en sista utvägsköpare, vilket gör att kraftverken kan säkra finansieringen redan innan de ansluts till elnätet. När de väl är anslutna kommer efterfrågan på el att öka, vilket höjer priset och gör det mindre lönsamt för gruvarbetarna att skaffa el på dessa platser. Eftersom maskinerna lätt kan flyttas kommer gruvarbetarna då att välja att ta med sig sin anläggning och bosätta sig längre bort där efterfrågan är låg och priset likaså, oftast i områden där de kan få energi från gröna kraftverk.
+Elförbrukningen står för nästan alla kostnader för en miner. Därför uppmuntras de att hitta en billig elkälla, så att de kan åka till platser där kraftverk har installerats men ännu inte anslutits till områdets elnät. I det här fallet fungerar miners som en köpare av sista utväg, vilket gör att kraftverken kan säkra finansieringen redan innan de ansluts till elnätet. När de väl är anslutna kommer efterfrågan på el att öka, vilket höjer priset och gör det mindre lönsamt för miners att skaffa el på dessa platser. Eftersom maskinerna lätt kan flyttas kommer miners då att välja att ta med sig sin installation och bosätta sig längre bort där efterfrågan är låg och priset likaså, oftast i områden där de kan få energi från gröna kraftverk.
 
 ### En oändlig debatt
 
-Debatten om Bitcoins ekologiska påverkan är därför ofta missriktad, främst på grund av en otillräcklig förståelse för dess användbarhet. Bitcoin kan inte utvärderas enbart utifrån energikostnader per transaktion, eftersom miners säkrar både det nuvarande och det historiska nätverket, och transaktioner är grupperade och inte alla likvärdiga. Dessutom tas inte ens Lightning Networks inverkan med i beräkningen. De som hävdar att Bitcoin förbrukar för mycket energi kan ha politiska motiv eller försöka sälja sin egen blockkedjelösning. Många gånger används den ekologiska förevändningen för att motivera förbudet mot Bitcoin.
+Debatten om Bitcoins ekologiska påverkan är därför ofta missvisande, främst på grund av en otillräcklig förståelse för dess användbarhet. Bitcoin kan inte utvärderas enbart utifrån energikostnader per transaktion, eftersom miners säkrar både det nuvarande och det historiska nätverket, och transaktioner är grupperade och inte alla likvärdiga. Dessutom tas inte ens Lightning Networks inverkan med i beräkningen. De som hävdar att Bitcoin förbrukar för mycket energi kan ha politiska motiv eller försöka sälja sin egen blockkedjelösning. Många gånger används den ekologiska ursäkten för att motivera förbudet mot Bitcoin.
 
-Det är viktigt att betona att Bitcoin, som en revolutionerande uppfinning, ger ett sätt för individer som lever under ekonomiskt förtryck eller diktatoriska regimer att kämpa för sin frihet. Som en sista utväg erbjuder Bitcoin en väg till ekonomiskt oberoende genom att kringgå censur och bankrestriktioner. Mer än bara en valuta fungerar Bitcoin som en form av kommunikation och en symbol för frihet, och den energi som spenderas av gruvarbetare spelar en avgörande roll för att försvara denna frihet, vilket möjliggör frigörelse från ett finansiellt system som domineras av skuld och överdrivet monetärt skapande av centralbanker.
+Det är viktigt att betona att Bitcoin, som en revolutionerande uppfinning, ger ett sätt för individer som lever under ekonomiskt förtryck eller diktatoriska regimer att kämpa för sin frihet. Som en sista utväg erbjuder Bitcoin en väg till ekonomiskt oberoende genom att kringgå censur och bankrestriktioner. Mer än bara en valuta fungerar Bitcoin som en form av kommunikation och en symbol för frihet, och den energi som spenderas av miners spelar en avgörande roll för att försvara denna frihet, vilket möjliggör frigörelse från ett finansiellt system som domineras av skuld och överdrivet monetärt skapande av centralbanker.
 
 ![image](assets/en/62.webp)
 
@@ -979,13 +979,13 @@ Det är viktigt att betona att Bitcoin, som en revolutionerande uppfinning, ger 
 
 ![image](assets/en/64.webp)
 
-För dem som bor i länder med hög inflation är Bitcoin en överlevnadsfråga. Det ger ett sätt att överleva i prekära ekonomiska situationer. Dessutom erbjuder Bitcoin ett mer rättvist och opartiskt finansiellt system, vilket ger miljarder människor världen över tillgång till finansiella resurser. Med tanke på detta perspektiv, är energiförbrukningen berättigad?
+För dem som bor i länder med hög inflation är Bitcoin en överlevnadsfråga. Det ger ett sätt att överleva i osäkra ekonomiska situationer. Dessutom erbjuder Bitcoin ett mer rättvist och opartiskt finansiellt system, vilket ger miljarder människor världen över tillgång till finansiella resurser. Med tanke på detta perspektiv, är energiförbrukningen rättfärdigad?
 
-### Bitcoin kan vara ett positivt netto för miljön
+### Bitcoin kan vara nettopositivt för miljön
 
-Slutligen är det viktigt att diskutera de ekonomiska och miljömässiga konsekvenserna av Bitcoin-användningen.
+Slutligen är det viktigt att diskutera de ekonomiska och miljömässiga konsekvenserna av Bitcoin-adoptionen.
 
-Om man jämför med det nuvarande finansiella systemet innebär det senare allvarliga problem på grund av att det uppmuntrar till överkonsumtion och skuldsättning. Faktorer som lätt tillgång till krediter, bankernas utgivning av pengar och bruket av fraktionella reserver bidrar alla till överskuldsättning och, som en följd av detta, överdriven konsumtion.
+Om man jämför med det nuvarande finansiella systemet innebär det senare allvarliga problem på grund av att det uppmuntrar till överkonsumtion och skuldsättning. Faktorer såsom lätt tillgång till krediter, bankernas utgivning av pengar och bruket av fraktionella reserver bidrar alla till överskuldsättning och, som en följd av detta, överdriven konsumtion.
 
 ![image](assets/en/65.webp)
 
@@ -997,19 +997,19 @@ Det nuvarande finansiella systemet ligger i linje med den keynesianska ekonomins
 
 Å andra sidan har politiker oftast en kortsiktig vision och de behöver ekonomisk tillväxt för att bli omvalda, så de kan inte lösa ekologiska problem på lång sikt. Omvänt är antagandet av en sund valuta som Bitcoin ett potentiellt alternativ som kan ge människor ekonomisk styrka.
 
-De känner inte till att Bitcoin främjar användningen av grön energi. Till exempel kan lågorna som tänds i oljekällor för att bränna metan och förhindra föroreningar släckas av Bitcoin-gruvarbetare, eftersom metan kan omvandlas till elektricitet för att driva gruvmaskiner, vilket är fördelaktigt för miljön.
+De känner inte till att Bitcoin främjar användningen av grön energi. Till exempel kan lågorna som tänds i oljekällor för att bränna metan och förhindra föroreningar släckas av Bitcoin-miners, eftersom metan kan omvandlas till elektricitet för att driva mining-maskiner, vilket är fördelaktigt för miljön.
 
 **Följ en av Bitcoins maximer: Lita inte på, verifiera själv!**
 
 ### Kort sammanfattning av de tekniska egenskaperna hos Bitcoin
 
-Satoshi Nakamoto släppte Bitcoin-protokollet i januari 2009, som sedan dess har utvecklats tack vare en växande gemenskap av utvecklare, miners och användare med Bitcoin-noder. Genom att hålla sin egen kopia av Bitcoin-blockkedjan, en offentlig huvudbok över alla Bitcoin-transaktioner, kan dessa noder säkerställa transaktionernas giltighet enligt Bitcoins konsensusregler. Detta inkluderar att se till att miners producerar giltiga block, som innehåller tusentals väntande transaktioner.
+Satoshi Nakamoto släppte Bitcoin-protokollet i januari 2009, som sedan dess har utvecklats tack vare en växande gemenskap av utvecklare, miners och användare med Bitcoin-noder. Genom att behålla sin egen kopia av Bitcoin-blockkedjan, ett offentligt register över alla Bitcoin-transaktioner, kan dessa noder säkerställa transaktionernas giltighet enligt Bitcoins konsensusregler. Detta inkluderar att se till att miners producerar giltiga block, som innehåller tusentals väntande transaktioner.
 
 I genomsnitt skapas ett block var 10:e minut och den miner som hittar en giltig hash för nästa block belönas av protokollet med både ett belopp som definieras av konsensusreglerna samt transaktionsavgifterna från alla transaktioner som ingår i det giltiga blocket. Eftersom resultatet av hash-algoritmen (SHA256) för en given input anses vara oförutsägbart, innebär miningprocessen att man bygger många kandidatblock och testar om deras hash är giltig eller inte. För att säkerställa att den genomsnittliga tiden mellan två block förblir konstant (~10 minuter) oavsett antalet miners och deras datorkraft, justeras svårigheten att hitta en giltig hash var 2016:e block, ungefär varannan vecka. Miners har med tiden utvecklat specialiserade SHA256-maskiner, så kallade ASICS, för att öka hashfrekvensen per joule, vilket innebär antalet försök per sekund och per förbrukad energi.
 
-För att gruvarbetarna ska kunna vara så lönsamma som möjligt i sin verksamhet måste de skaffa billigast möjliga el, vilket ofta sker på avlägsna platser, i kraftverk som ännu inte är anslutna till elnätet. Gruvarbetaren fungerar då som en sista utvägsköpare, och så snart elpriset stiger på grund av ökad efterfrågan tenderar gruvarbetaren att flytta sin verksamhet någon annanstans.
+För att miners ska kunna vara så lönsamma som möjligt i sin verksamhet måste de skaffa billigast möjliga el, vilket ofta sker på avlägsna platser, i kraftverk som ännu inte är anslutna till elnätet. Miners fungerar då som en köpare av sista utväg, och så snart elpriset stiger på grund av ökad efterfrågan tenderar minern att flytta sin verksamhet någon annanstans.
 
-Bitcoin-protokollet är således ett ocensoriserbart och ostoppbart monetärt system eftersom varje komponent i protokollet är geografiskt distribuerad över hela världen. Det finns t.ex. mer än 40 000 Bitcoin-noder över alla kontinenter. Bitcoins konsensusregler är sådana att det är ekonomiskt mer lönsamt att följa dem än att försöka bryta mot dem, och därför krävs inget förtroende mellan aktörerna. Bitcoin har ingen ledare och kan inte stoppas. Även om det är möjligt att reglera handelsplattformar för att begränsa Bitcoin, har detta tillvägagångssätt en marginell inverkan på systemet. Kort sagt, ingen domare eller stat kan censurera eller stoppa Bitcoin.
+Bitcoin-protokollet är således ett ocensurerbart och ostoppbart monetärt system eftersom varje komponent i protokollet är geografiskt distribuerad över hela världen. Det finns t.ex. mer än 40 000 Bitcoin-noder över alla kontinenter. Bitcoins konsensusregler är sådana att det är ekonomiskt mer lönsamt att följa dem än att försöka bryta mot dem, och därför krävs inget förtroende mellan aktörerna. Bitcoin har ingen ledare och kan inte stoppas. Även om det är möjligt att reglera växelplattformar för att begränsa Bitcoin, har detta tillvägagångssätt en marginell inverkan på systemet. Kort sagt, ingen domare eller stat kan censurera eller stoppa Bitcoin.
 
 # Hur får du tag på Bitcoin?
 
@@ -1027,22 +1027,22 @@ Enkelt uttryckt tenderar människor att köpa allt på en gång och sälja allt 
 
 ### Förståelse för adoptionsvågor
 
-Både utvecklingen av Bitcoin och dess utveckling är till stor del kopplad till de olika grupper av aktörer som gradvis har integrerat dess ekosystem.
+Både utvecklingen av Bitcoin och dess evolution är till stor del kopplad till de olika grupper av aktörer som gradvis har integrerat dess ekosystem.
 
 ![image](assets/en/68.webp)
 
 
 - De troende:
 
-De tidiga användarna av Bitcoin var främst teknofiler, cypherpunks, libertarianer och guldentusiaster. Dessa grupper attraherades av Bitcoin på grund av dess värde som tillförlitliga elektroniska kontanter, dess motståndskraft mot censur och dess transparenta och oföränderliga penningpolitik.
+De tidiga användarna av Bitcoin var främst teknofiler, cypherpunks, libertarianer och guldentusiaster. Dessa grupper attraherades av Bitcoin på grund av dess värde som förtroendelösa elektroniska kontanter, dess motståndskraft mot censur och dess transparenta och oföränderliga penningpolitik.
 
 
-- Den mörka webben & brottslingar
+- Dark Web & brottslingar
 
-Sedan utvidgades användningen av Bitcoin till marknadsplatser på den mörka webben som Silk Road, till stor del på grund av dess okontrollerbara och pseudonyma natur, vilket också lockade individer bortom den plattformen, inklusive vissa personer som bedriver kriminell verksamhet. Det är dock viktigt att understryka att det är tillämpningen av ett verktyg, snarare än verktyget i sig, som avgör lagligheten. Den olagliga användningen av Bitcoin gör inte någon till en brottsling i sig, utan det är snarare de specifika handlingarna som kan klassificeras som olagliga. Att till exempel använda Bitcoin för att köpa vissa droger kan vara lagligt eller olagligt beroende på de regler som styr det territorium där transaktionen sker.
+Sedan spreds användningen av Bitcoin till marknadsplatser på Dark Web, såsom Silk Road, främst på grund av dess decentraliserade och pseudonyma natur. Detta lockade inte bara användare på plattformen utan även individer utanför den, inklusive vissa som ägnade sig åt olaglig verksamhet. Det är dock viktigt att understryka att det är tillämpningen av ett verktyg, snarare än verktyget i sig, som avgör lagligheten. Den olagliga användningen av Bitcoin gör inte någon till en brottsling i sig, utan det är snarare de specifika handlingarna som kan klassificeras som olagliga. Att till exempel använda Bitcoin för att köpa vissa droger kan vara lagligt eller olagligt beroende på de regler som styr det territorium där transaktionen sker.
 
 
-- ICO-frossan och allmänhetens ankomst.
+- ICO-hysterin och allmänhetens ankomst
 
 År 2017 präglades av en betydande spekulationsbubbla i kryptovalutavärlden, särskilt med lanseringen av tusentals ICO:er (Initial Coin Offerings). Många av dessa nya kryptovalutor hade dock ingen konkret utveckling eller nytta, och försvann snabbt. Bubblan 2017 följdes av en kraftig korrigering 2018-2019.
 
@@ -1055,13 +1055,13 @@ Sedan utvidgades användningen av Bitcoin till marknadsplatser på den mörka we
 
 Baserat på tidigare cykler verkar det som om periodiciteten i Bitcoins ekonomiska cykler motsvarar varaktigheten mellan två halveringar, kanske för att halveringshändelsen fungerar som en utlösande faktor genom att halvera utsläppet av nya bitcoins.
 
-Dessa betydande fluktuationer har gett Bitcoin ett rykte som en mycket volatil tillgång, vilket ofta leder till betydande förluster för dess användare. Även om priset kan sjunka med 10 %, 20 % eller till och med 50 % på några dagar är det viktigt att förstå att Bitcoin-protokollet i sig inte påverkas av prisförändringar.
+Dessa betydande fluktuationer har givit Bitcoin ett rykte som en mycket volatil tillgång, vilket ofta leder till betydande förluster för dess användare. Även om priset kan sjunka med 10 %, 20 % eller till och med 50 % på några dagar är det viktigt att förstå att Bitcoin-protokollet i sig inte påverkas av prisförändringar.
 
-Denna betydande volatilitet är idag helt accepterad av Bitcoin-aktörer och kan mildras genom flera lösningar såsom finansiella säkringar (stablecoins), en stark långsiktig tro (hodling) eller helt enkelt undvika risken att investera 100% av sina medel i Bitcoin utan en solid förståelse. Att förstå varför priset på Bitcoin fluktuerar så mycket är därför viktigt för att göra framsteg i denna bransch, eftersom det i slutändan är prisrörelserna och cyklerna som hjälper till att temperera och reglera marknaden i viss utsträckning. Det är dock viktigt att notera att när Bitcoin växer och mognar blir volatiliteten mindre betydelsefull.
+Denna betydande volatilitet är idag helt accepterad av Bitcoin-aktörer och kan mildras genom flera lösningar såsom finansiella säkringar (stablecoins), en stark långsiktig övertygelse (hodling) eller helt enkelt undvika risken att investera 100% av sina tillgångar i Bitcoin utan en gedigen förståelse. Att förstå varför priset på Bitcoin fluktuerar så mycket är därför viktigt för att göra framsteg i denna industri, eftersom det i slutändan är prisrörelserna och cyklerna som hjälper till att dämpa och reglera marknaden i viss utsträckning. Det är dock viktigt att notera att när Bitcoin växer och mognar blir volatiliteten mindre effektfull.
 
 ![image](assets/en/69.webp)
 
-Även om btc/dollar-paret fluktuerar på kort sikt följer bitcoin, på grund av sin begränsade kvantitet på 21 miljoner bitcoins och sin halveringsprocess (halvering av den monetära skapelsen vart fjärde år i genomsnitt), en allmän uppåtgående trend på ett kvasimekaniskt sätt. Precis som alla andra finansiella tillgångar är bitcoin naturligtvis föremål för ekonomiska cykler, inklusive perioder av eufori, spekulationsbubblor och korrigeringar. Detta fenomen är ganska vanligt inom nya teknologier, där marknaden inte alltid är rationell eller effektiv.
+Även om btc/dollar-valutaparet fluktuerar på kort sikt följer bitcoin, på grund av sin begränsade kvantitet på 21 miljoner bitcoins och sin halveringsprocess (halvering av den monetära skapelsen vart fjärde år i genomsnitt), en allmän uppåtgående trend på ett kvasimekaniskt sätt. Precis som alla andra finansiella tillgångar är bitcoin naturligtvis föremål för ekonomiska cykler, inklusive perioder av eufori, spekulationsbubblor och korrigeringar. Detta fenomen är ganska vanligt inom nya teknologier, där marknaden inte alltid är rationell eller effektiv.
 
 ### En unik marknad
 
@@ -1069,7 +1069,7 @@ Dessa cykler av spekulativa bubblor är ganska unika i världen, eftersom det ä
 
 ![image](assets/en/70.webp)
 
-Idag fortsätter Bitcoin att överleva och växa ännu mer genom att integreras mer och mer i den traditionella marknaden, och införandet av Bitcoin ETF: er, tydligare regler och förbättrade verktyg för förvärv och lagring bidrar alla till detta positiva momentum. Bitcoin har ÄNNU EN GÅNG överlevt sin spekulativa bubbla, så kanske är det inte bara varm luft trots allt!
+Idag fortsätter Bitcoin att överleva och växa ännu mer genom att integreras mer och mer i den traditionella marknaden, och införandet av Bitcoin ETF:er, tydligare regler och förbättrade verktyg för förvärv och förvaring bidrar alla till detta positiva momentum. Bitcoin har ÅTERIGEN överlevt sin spekulativa bubbla, så kanske är det inte bara en massa varm luft trots allt!
 
 ![image](assets/en/71.webp)
 
@@ -1085,19 +1085,19 @@ Bitcoin-ekonomin finns och utvecklas i vissa regioner i världen, som i El Salva
 
 ![image](assets/en/72.webp)
 
-Dessutom har ett open source- och samarbetsprojekt lanserats, [BTCMap] (https://btcmap.org/map#2/21.28937/5.46680), för att underlätta användningen av Bitcoin i vardagliga transaktioner. Denna plattform listar alla handlare som accepterar Bitcoin, liksom de olika Bitcoin-samhällena runt om i världen, så du kan besöka deras webbplats för att upptäcka Bitcoin-ekosystemet runt omkring dig. Trots svårigheter och tveksamheter finns det alltså initiativ som BTCMap som bidrar till att göra Bitcoin-ekonomin mer tillgänglig och bekväm för alla.
+Dessutom har ett open source- och samarbetsprojekt lanserats, [BTCMap] (https://btcmap.org/map#2/21.28937/5.46680), för att underlätta användningen av Bitcoin i vardagliga transaktioner. Denna plattform listar alla handlare som accepterar Bitcoin, liksom de olika Bitcoin-samhällena runt om i världen, så att du kan besöka deras webbplats för att upptäcka Bitcoin-ekosystemet runt omkring dig. Trots svårigheter och tveksamheter finns det alltså initiativ som BTCMap som bidrar till att göra Bitcoin-ekonomin mer tillgänglig och bekväm för alla.
 
 ### Varför ska vi acceptera Bitcoin istället för att köpa dem?
 
 För att få bitcoins kan du köpa dem på plattformar som regleras av organisationer som AMF (Autorité des Marchés Financiers) i Frankrike eller Securities & Exchange Commission (SEC) i USA, men den här lösningen medför spårbarhet för dina transaktioner. En annan metod för att få bitcoins är att acceptera dem som betalningsmedel för de produkter eller tjänster du erbjuder, så att du kan förvärva bitcoins genom ditt arbete utan att ständigt oroa dig för priset på Bitcoin.
 
-Att acceptera Bitcoin som handelsvara har dessutom flera fördelar, bland annat motståndskraft mot censur, lägre transaktionsavgifter, ökad effektivitet, skydd mot inflation samt finansiell frihet och suveränitet.
+Att acceptera Bitcoin som handlare har dessutom flera fördelar, bland annat motståndskraft mot censur, lägre transaktionsavgifter, ökad effektivitet, skydd mot inflation samt finansiell frihet och suveränitet.
 
 ![image](assets/en/73.webp)
 
 ### Hur kan du gå vidare?
 
-För att acceptera Bitcoin är det nödvändigt att studera de olika tillgängliga lösningarna och välja den som passar ditt företag bäst. Det finns ingen perfekt lösning, och flera faktorer måste beaktas för att göra ditt val, till exempel den förväntade transaktionsvolymen, tilldelad budget och typ av verksamhet (online eller fysisk).
+För att acceptera Bitcoin är det nödvändigt att studera de olika tillgängliga lösningarna och välja den som passar ditt företag bäst. Det finns ingen perfekt lösning, och flera faktorer måste beaktas för att göra ditt val, till exempel den förväntade transaktionsvolymen, fördelad budget och typ av verksamhet (online eller fysisk).
 
 Vi kommer att behandla detta ämne i detalj i en annan kurs, men för att hålla det enkelt kan vi tänka oss flera kategorier av företag och därmed relaterade lösningar.
 
@@ -1110,7 +1110,7 @@ https://planb.network/tutorials/merchant/merchant/open-node-e69a0c1c-47f7-4932-8
 
 https://planb.network/tutorials/merchant/merchant/swiss-bitcoin-pay-2-a78b057e-ed11-47ac-860c-71019fcb451a
 
-- Lösning för stora strukturer eller passionerade bitcoinare: BTCpay-server
+- Lösning för stora strukturer eller passionerade bitcoiners: BTCpay Server
 
 ## Spara med Bitcoin
 
@@ -1118,7 +1118,7 @@ https://planb.network/tutorials/merchant/merchant/swiss-bitcoin-pay-2-a78b057e-e
 
 ### En varning innan vi sätter igång!
 
-Bitcoin har blivit en viktig finansiell tillgång, främst på grund av dess begränsade utbud och ökande efterfrågan. Att köpa Bitcoin medför dock risker som kräver särskild uppmärksamhet. Det rekommenderas därför att du gör egna efterforskningar och lär dig mer om ämnet för att bli bekant med tekniken innan du investerar några medel.
+Bitcoin har blivit en viktig finansiell tillgång, främst på grund av dess begränsade utbud och ökande efterfrågan. Att köpa Bitcoin medför dock risker som kräver särskild uppmärksamhet. Det rekommenderas därför att du gör egna efterforskningar och lär dig mer om ämnet för att bli bekant med tekniken innan du investerar några pengar.
 
 
 - Investera bara det du har råd att förlora.
@@ -1128,7 +1128,7 @@ Bitcoin har blivit en viktig finansiell tillgång, främst på grund av dess beg
 
 **Plan ₿ Network ger ingen investeringsrådgivning, och inget som sägs här ska betraktas som sådan**
 
-### Mini checklista innan du tar steget fullt ut
+### Mini-checklista innan du tar steget fullt ut
 
 Innan du dyker in i att köpa Bitcoin, se till att du har:
 
@@ -1138,7 +1138,7 @@ Innan du dyker in i att köpa Bitcoin, se till att du har:
 - En sparplan att följa.
 - En långsiktig vision.
 
-Om ämnet fortfarande är oklart, var medveten om att BTC102-kursen kommer att vägleda dig i att säkra och förvärva dina första bitcoins. Här kommer vi bara att skumma ytan på ämnet.
+Om ämnet fortfarande är oklart, var medveten om att BTC102-kursen kommer att vägleda dig i att säkra och skaffa dina första bitcoins. Här kommer vi bara att skumma ytan på ämnet.
 
 Konkret finns det två frågor att ställa sig:
 
