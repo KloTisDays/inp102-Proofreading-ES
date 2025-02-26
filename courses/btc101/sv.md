@@ -12,7 +12,7 @@ objektiv:
 ---
 # Ditt första Bitcoin-äventyr
 
-I den här kursen förklarar vi grunderna i Bitcoin i 25 kapitel, så att du kan förstå tekniken på ett enkelt och effektivt sätt. Kursen utforskar grunderna i branschen som helhet, inklusive ämnen som mining, wallets, köp- och säljplattformar och mer. Extra utbildningsmaterial kommer att finnas tillgängligt under hela resan, och vi uppmanar dig också att kolla in "21 affischer" i resursavsnittet efter att du har avslutat den här kursen.
+I den här kursen förklarar vi grunderna i Bitcoin i 25 kapitel, så att du kan förstå tekniken på ett enkelt och effektivt sätt. Kursen utforskar grunderna i branschen som helhet, inklusive ämnen som mining, digitala plånböcker, köp- och säljplattformar och mer. Extra utbildningsmaterial kommer att finnas tillgängligt under hela resan, och vi uppmanar dig också att kolla in "21 affischer" i resursavsnittet efter att du har avslutat den här kursen.
 
 Du behöver inte ha några särskilda förkunskaper för att komma igång. Faktum är att följande innehåll är tillgängligt för studenter på alla nivåer, och det bör ta cirka 15 timmar att slutföra.
 
@@ -518,7 +518,7 @@ Den privata nyckeln är grundläggande eftersom den utgör äganderätten till b
 Denna nyckel måste hållas hemlig och väl skyddad, eftersom den låser upp din förmögenhet!
 
 
-- Offentlig nyckel & adress
+- Offentlig nyckel och adress
 
 Den publika nyckeln genereras från den privata nyckeln och är kopplad till den. Att dela den publika nyckeln innebär risker för integriteten (eftersom andra användare kan se ditt saldo) men inte för säkerheten (eftersom de inte kan spendera dina pengar utan att ha den privata nyckeln). Den publika nyckeln används i sin tur för att skapa Bitcoin-adresser och därmed ta emot pengar.
 
@@ -1037,7 +1037,7 @@ Både utvecklingen av Bitcoin och dess evolution är till stor del kopplad till 
 De tidiga användarna av Bitcoin var främst teknofiler, cypherpunks, libertarianer och guldentusiaster. Dessa grupper attraherades av Bitcoin på grund av dess värde som förtroendelösa elektroniska kontanter, dess motståndskraft mot censur och dess transparenta och oföränderliga penningpolitik.
 
 
-- Dark Web & brottslingar
+- Dark Web och brottslingar
 
 Sedan spreds användningen av Bitcoin till marknadsplatser på Dark Web, såsom Silk Road, främst på grund av dess decentraliserade och pseudonyma natur. Detta lockade inte bara användare på plattformen utan även individer utanför den, inklusive vissa som ägnade sig åt olaglig verksamhet. Det är dock viktigt att understryka att det är tillämpningen av ett verktyg, snarare än verktyget i sig, som avgör lagligheten. Den olagliga användningen av Bitcoin gör inte någon till en brottsling i sig, utan det är snarare de specifika handlingarna som kan klassificeras som olagliga. Att till exempel använda Bitcoin för att köpa vissa droger kan vara lagligt eller olagligt beroende på de regler som styr det territorium där transaktionen sker.
 
