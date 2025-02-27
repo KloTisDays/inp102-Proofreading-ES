@@ -1445,7 +1445,8 @@ Jednodušší variantou je mobilní aplikace [Peach](https://peachbitcoin.com/),
 
 -> Podívejte se na náš výukový program Peach.
 
-https://planb.network/tutorials/exchange/peer-to-peer/peach-wallet-db64fe42-17ca-4b24-abb8-e7d4c03b2028
+https://planb.network/tutorials/exchange/peer-to-peer/peach-c6143241-d900-4047-9b73-1caba5e1f874
+
 Další online možností je [HodlHodl](https://hodlhodl.com/), zavedená platforma, která nabízí dobrou likviditu, ačkoli jsem ji osobně netestoval.
 
 -> Viz náš výukový program HodlHodl.

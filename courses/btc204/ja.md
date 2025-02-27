@@ -1445,7 +1445,8 @@ https://planb.network/tutorials/exchange/peer-to-peer/bisq-fe244bfa-dcc4-4522-8e
 
 -> ピーチのチュートリアルをご覧ください。
 
-https://planb.network/tutorials/exchange/peer-to-peer/peach-wallet-db64fe42-17ca-4b24-abb8-e7d4c03b2028
+https://planb.network/tutorials/exchange/peer-to-peer/peach-c6143241-d900-4047-9b73-1caba5e1f874
+
 もう一つのオンライン・オプションは[HodlHodl](https://hodlhodl.com/)で、個人的にはテストしていないが、良い流動性を提供する定評のあるプラットフォームである。
 
 -> HodlHodlのチュートリアルをご覧ください。
