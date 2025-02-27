@@ -102,3 +102,9 @@ proofreading:
     urgency: 1
     contributors_id:
     reward: 16.81
+
+  - language: vi
+    last_contribution_date:
+    urgency: 1
+    contributors_id:
+    reward: 20.15
