@@ -7,11 +7,6 @@ links:
   twitter: https://x.com/MinibitsCash
   Github: https://github.com/minibits-cash/minibits_wallet
 
-tags:
-  - layers
-  - offchain
-  - lightning
-
 original_language: en
 proofreading:
   - language: en
@@ -20,3 +15,7 @@ proofreading:
     contributors_id:
       - PaoloFoti
     reward: 0
+tags:
+  - software
+  - wallets
+  - user-friendly

@@ -2,10 +2,6 @@ id: bd6e83f0-0100-4689-aeb3-513cca944ace
 
 project_id: aaa8a7b8-9e89-495f-9697-2a448906d132
 
-tags:
-  - wallets
-  - hardware
-
 category: hardware
 
 level: intermediate
@@ -106,3 +102,7 @@ proofreading:
     urgency: 1
     contributors_id:
     reward: 5.14
+tags:
+  - hardware
+  - wallets
+  - guides
