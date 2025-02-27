@@ -1,6 +1,6 @@
 ---
 name: Bitcoin-resan
-mdescription: Upptäck grunderna av Bitcoin, inklusive dess monetära värde, miners, transaktioner och bitcoin-plånböcker.
+description: Upptäck grunderna av Bitcoin, inklusive dess monetära värde, miners, transaktioner och bitcoin-plånböcker.
 objectives: 
 
   - Få en allmän förståelse för Bitcoin-tekniken
