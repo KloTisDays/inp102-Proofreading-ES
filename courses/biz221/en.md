@@ -1,5 +1,5 @@
 ---
-name: Plan ₿ Biz School 2024
+name: Plan ₿ Biz School Archive
 goal: learn the basics of Bitcoin, with particular focus on its economical rationale, historical context, social, financial and business implications.
 objectives:
   - Master Bitcoin's economic principles and market impact.
