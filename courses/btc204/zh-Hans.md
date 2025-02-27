@@ -1445,7 +1445,8 @@ https://planb.network/tutorials/exchange/peer-to-peer/bisq-fe244bfa-dcc4-4522-8e
 
 -> 请参阅我们的 Peach 教程。
 
-https://planb.network/tutorials/exchange/peer-to-peer/peach-wallet-db64fe42-17ca-4b24-abb8-e7d4c03b2028
+https://planb.network/tutorials/exchange/peer-to-peer/peach-c6143241-d900-4047-9b73-1caba5e1f874
+
 另一个在线选择是 [HodlHodl](https://hodlhodl.com/)，这是一个成熟的平台，提供良好的流动性，不过我没有亲自测试过。
 
 -> 请参阅我们的 HodlHodl 教程。

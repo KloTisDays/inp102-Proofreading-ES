@@ -1445,7 +1445,8 @@ Yksinkertaisempi vaihtoehto on [Peach](https://peachbitcoin.com/), mobiilisovell
 
 -> Katso Peach-opas.
 
-https://planb.network/tutorials/exchange/peer-to-peer/peach-wallet-db64fe42-17ca-4b24-abb8-e7d4c03b2028
+https://planb.network/tutorials/exchange/peer-to-peer/peach-c6143241-d900-4047-9b73-1caba5e1f874
+
 Toinen online-vaihtoehto on [HodlHodl](https://hodlhodl.com/), vakiintunut alusta, joka tarjoaa hyvää likviditeettiä, vaikka en olekaan henkilökohtaisesti testannut sitä.
 
 -> Katso HodlHodl-opas.
