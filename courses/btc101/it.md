@@ -1089,8 +1089,8 @@ Per approfondire questo argomento, ti consigliamo la nostra formazione BIZ101! S
 
 https://planb.network/courses/a804c4b6-9ff5-4a29-a530-7d2f5d04bb7a
 
-## Risparmiare in Bitcoin
 
+## Risparmiare in Bitcoin
 
 <chapterId>1d9570c6-5b63-51a6-b87c-7bdb0fc4aa87</chapterId>
 
