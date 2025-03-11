@@ -7,9 +7,15 @@ test_only: true
 
 professors:
   - old-uncle
+  - rabbit-hole
+  - radio-talent
+  - melody-spark
+  - crystal-blade
+  - soldier-attitude
+  - quick-shade
+  - iron-dream
 
 contributors:
-  - rabbit-hole
   - another-satoshi
 
 published_at: 2025-02-27
