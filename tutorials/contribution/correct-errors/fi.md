@@ -12,7 +12,7 @@ Tämä opas ohjaa sinut askel askeleelta läpi prosessin näiden pienten virheid
 
 Huomaa, että jos aiot suorittaa koko asiakirjan tarkistuksen ja tarkistamisen, erityisesti sisällön käännösten osalta, kehotan sinua tutustumaan tähän toiseen yksityiskohtaisempaan oppaaseen.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Tässä keskitymme vain siihen, miten tehdä nopea korjaus pienelle virheelle.
 

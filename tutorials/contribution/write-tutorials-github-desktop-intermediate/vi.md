@@ -6,7 +6,7 @@ description: Hướng dẫn đầy đủ để đề xuất hướng dẫn về 
 
 Trước khi làm theo hướng dẫn này để thêm hướng dẫn mới, bạn phải hoàn thành một số bước sơ bộ. Nếu bạn chưa làm như vậy, tôi mời bạn tham khảo hướng dẫn giới thiệu này trước, sau đó quay lại đây:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 Bạn đã có:
 
 
@@ -19,13 +19,13 @@ Trong hướng dẫn này, chúng ta sẽ xem cách thêm hướng dẫn của b
 
 - Người dùng có kinh nghiệm**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 Nếu bạn không muốn thiết lập môi trường cục bộ, hãy làm theo hướng dẫn này dành cho người mới bắt đầu, trong đó chúng tôi thực hiện các thay đổi trực tiếp thông qua giao diện web của GitHub:
 
 
 - Người mới bắt đầu (giao diện web)**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 ## Điều kiện tiên quyết
 
 Phần mềm cần thiết để thực hiện hướng dẫn này:

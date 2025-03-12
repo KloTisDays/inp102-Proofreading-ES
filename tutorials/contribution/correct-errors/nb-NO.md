@@ -12,7 +12,7 @@ Denne veiledningen guider deg trinn for trinn gjennom prosessen med å korrigere
 
 Vennligst merk at hvis du planlegger å utføre en komplett gjennomgang og revisjon av et dokument, spesielt for innholdsoversettelser, inviterer jeg deg til å konsultere denne andre mer detaljerte veiledningen.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
 Her fokuserer vi kun på hvordan man gjør en rask korreksjon for en liten feil.
 

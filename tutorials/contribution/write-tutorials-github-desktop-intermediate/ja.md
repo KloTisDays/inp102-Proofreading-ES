@@ -6,7 +6,7 @@ description: GitHub Desktop を使って Plan ₿ Network にチュートリア�
 
 新しいチュートリアルの追加に関するこのチュートリアルに従う前に、いくつかの予備ステップを完了している必要があります。まだ完了していない場合は、まずこの入門チュートリアルを参照し、それからここに戻ってきてください：
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 あなたはすでにそうしている：
 
 
@@ -19,13 +19,13 @@ https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9
 
 - 経験豊富なユーザー
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 ローカル環境を構築したくない場合は、初心者向けの別のチュートリアルを参考にしてください。このチュートリアルでは、GitHub のウェブインターフェイスを使って直接変更を行います：
 
 
 - 初心者（ウェブインターフェース）**：
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 ## 前提条件
 
 このチュートリアルに従うために必要なソフトウェア：

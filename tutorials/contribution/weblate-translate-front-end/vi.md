@@ -14,7 +14,7 @@ Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách dễ dàng đ�
 
 Để dịch nội dung giáo dục, chúng tôi sử dụng [trí tuệ nhân tạo](https://github.com/Asi0Flammeus/LLM-Translator). Sau đó, để sửa các lỗi có thể xảy ra trong các tệp này, chúng tôi mời những người hiệu đính đóng góp. Nếu bạn muốn hiệu đính một số nội dung, hãy tham khảo hướng dẫn sau:
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 Mặt khác, nếu bạn quan tâm đến việc dịch các thành phần tĩnh của trang web (trừ nội dung giáo dục), bạn đã đến đúng nơi rồi! Để dịch hiệu quả giao diện người dùng, chúng tôi sử dụng công cụ Weblate, rất dễ sử dụng và tạo điều kiện thuận lợi cho việc tiếp cận dịch thuật.
 
 Nếu bạn muốn thêm một ngôn ngữ hoàn toàn mới vào Plan ₿ Network, hãy đảm bảo liên hệ với nhóm Plan ₿ Network qua [nhóm Telegram](https://t.me/PlanBNetwork_ContentBuilder) của chúng tôi. Nếu bạn không có telegram, bạn có thể gửi email đến mari@planb.network. Hãy đảm bảo viết một bài thuyết trình ngắn về bạn là ai và ngôn ngữ bạn nói.

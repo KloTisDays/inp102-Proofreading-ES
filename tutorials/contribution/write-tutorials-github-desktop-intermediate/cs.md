@@ -6,7 +6,7 @@ description: Kompletní průvodce návrhem výukového programu na síti Plan �
 
 Než se pustíte do tohoto návodu na přidání nového tutoriálu, musíte provést několik předběžných kroků. Pokud jste tak ještě neučinili, vyzývám vás, abyste se nejprve seznámili s tímto úvodním tutoriálem a poté se sem vrátili:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 Už jste to udělali:
 
 
@@ -19,13 +19,13 @@ V tomto tutoriálu se podíváme, jak přidat svůj tutoriál do sítě Plan ₿
 
 - Zkušení uživatelé**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 Pokud nechcete nastavovat místní prostředí, postupujte podle tohoto dalšího návodu určeného pro začátečníky, kde změny provedeme přímo přes webové rozhraní GitHubu:
 
 
 - Pro začátečníky (webové rozhraní)**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 ## Předpoklady
 
 Software potřebný pro tento výukový program:

@@ -12,7 +12,7 @@ Este tutorial te guía paso a paso a través del proceso de corregir estos peque
 
 Ten en cuenta que si planeas realizar una revisión completa y revisión de un documento, especialmente para traducciones de contenido, te invito a consultar este otro tutorial más detallado.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Aquí, nos enfocamos solo en cómo hacer una corrección rápida para un pequeño error.
 

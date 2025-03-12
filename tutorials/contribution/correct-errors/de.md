@@ -12,7 +12,7 @@ Dieses Tutorial führt Sie Schritt für Schritt durch den Prozess der Korrektur 
 
 Bitte beachten Sie, dass, wenn Sie eine vollständige Überprüfung und Revision eines Dokuments planen, insbesondere für Inhaltsübersetzungen, ich Sie einlade, dieses andere, detailliertere Tutorial zu konsultieren.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Hier konzentrieren wir uns nur darauf, wie man eine schnelle Korrektur für einen kleinen Fehler vornimmt.
 

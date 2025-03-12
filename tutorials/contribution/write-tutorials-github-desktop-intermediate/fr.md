@@ -6,7 +6,7 @@ description: Guide complet pour proposer un tutoriel sur Plan ₿ Network avec G
 
 Avant de suivre ce tutoriel sur l'ajout d'un nouveau tutoriel, vous devez avoir complété quelques étapes préliminaires. Si ce n'est pas encore fait, je vous invite à consulter d'abord ce tutoriel introductif, puis à revenir ici :
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 
 Vous avez déjà :
 - Choisi le thème de votre tutoriel ;
@@ -17,13 +17,13 @@ Dans ce tutoriel, nous allons voir comment ajouter votre tutoriel sur Plan ₿ N
 
 - **Utilisateurs expérimentés** :
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 
 Si vous préférez ne pas configurer votre environnement local, suivez cet autre tutoriel conçu pour les débutants, où nous effectuons les modifications directement via l'interface web de GitHub :
 
 - **Débutants (interface web)** :
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 
 ## Prérequis
 

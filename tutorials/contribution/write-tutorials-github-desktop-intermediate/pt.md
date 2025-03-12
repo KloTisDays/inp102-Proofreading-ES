@@ -6,7 +6,7 @@ description: Guia completo para propor um tutorial sobre o Plano ₿ Rede usando
 
 Antes de seguir este tutorial sobre como adicionar um novo tutorial, deve ter completado alguns passos preliminares. Se ainda não o fez, convido-o a consultar primeiro este tutorial introdutório e depois a voltar aqui:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 Já o fez:
 
 
@@ -19,13 +19,13 @@ Neste tutorial, veremos como adicionar seu tutorial no Plan ₿ Network configur
 
 - Utilizadores experientes**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 Se preferir não configurar o seu ambiente local, siga este outro tutorial concebido para principiantes, onde fazemos as alterações diretamente através da interface Web do GitHub:
 
 
 - Iniciantes (interface web)**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 ## Pré-requisitos
 
 Software necessário para seguir este tutorial:
