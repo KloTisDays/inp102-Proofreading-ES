@@ -6,7 +6,7 @@ description: Vollständige Anleitung zum Vorschlagen eines Tutorials zum Plan �
 
 Bevor Sie diese Anleitung zum Hinzufügen eines neuen Tutorials lesen, müssen Sie einige vorbereitende Schritte durchgeführt haben. Wenn Sie dies noch nicht getan haben, sollten Sie zunächst dieses einführende Tutorial lesen und dann hierher zurückkehren:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 Das haben Sie bereits:
 
 
@@ -19,13 +19,13 @@ In diesem Tutorial werden wir sehen, wie Sie Ihr Tutorial zum Plan ₿ Network h
 
 - Erfahrene Benutzer**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 Wenn Sie es vorziehen, Ihre lokale Umgebung nicht einzurichten, folgen Sie dieser anderen Anleitung für Anfänger, in der wir die Änderungen direkt über die Weboberfläche von GitHub vornehmen:
 
 
 - Anfänger (Webschnittstelle)**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 ## Voraussetzungen
 
 Erforderliche Software, um diesem Tutorial zu folgen:

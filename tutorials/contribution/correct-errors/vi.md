@@ -12,7 +12,7 @@ Hướng dẫn này sẽ dẫn dắt bạn từng bước qua quá trình sửa 
 
 Xin lưu ý rằng nếu bạn dự định thực hiện một bản xem xét và sửa đổi toàn diện của một tài liệu, đặc biệt là dịch nội dung, tôi mời bạn tham khảo hướng dẫn chi tiết hơn này.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Ở đây, chúng tôi chỉ tập trung vào cách thực hiện một sửa đổi nhanh cho một lỗi nhỏ.
 

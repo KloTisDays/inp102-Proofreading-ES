@@ -12,7 +12,7 @@ Tento tutoriál vás krok za krokem provede procesem opravy těchto drobných ch
 
 Vezměte prosím na vědomí, že pokud plánujete provést kompletní přezkum a revizi dokumentu, zejména pro překlady obsahu, doporučuji vám poradit se s tímto dalším podrobnějším tutoriálem.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Zde se zaměřujeme pouze na to, jak provést rychlou opravu malé chyby.
 

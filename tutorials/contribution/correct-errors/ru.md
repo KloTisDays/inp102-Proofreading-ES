@@ -12,7 +12,7 @@ description: Как исправить ошибку на сети PlanB?
 
 Обратите внимание, если вы планируете выполнить полный обзор и ревизию документа, особенно для переводов контента, я приглашаю вас ознакомиться с этим другим более подробным руководством.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Здесь мы сосредотачиваемся только на том, как сделать быстрое исправление для маленькой ошибки.
 

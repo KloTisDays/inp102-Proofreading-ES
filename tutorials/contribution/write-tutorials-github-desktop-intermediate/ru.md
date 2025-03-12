@@ -6,7 +6,7 @@ description: Полное руководство по созданию учеб�
 
 Прежде чем следовать этому руководству по добавлению нового учебника, вы должны выполнить несколько предварительных шагов. Если вы еще не сделали этого, я приглашаю вас сначала ознакомиться с этим вводным уроком, а затем вернуться сюда:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
+https://planb.network/tutorials/contribution/content/write-tutorials-4d142a6a-9127-4ffb-9e0a-5aba29f169e2
 Вы уже сделали это:
 
 
@@ -19,13 +19,13 @@ https://planb.network/tutorials/contribution/tutorial/write-tutorials-4d142a6a-9
 
 - Опытные пользователи**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
+https://planb.network/tutorials/contribution/content/write-tutorials-git-expert-0ce1e490-c28f-4c51-b7e0-9a6ac9728410
 Если вы предпочитаете не настраивать локальное окружение, следуйте другому руководству, предназначенному для новичков, где мы вносим изменения непосредственно через веб-интерфейс GitHub:
 
 
 - Новички (веб-интерфейс)**:
 
-https://planb.network/tutorials/contribution/tutorial/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
+https://planb.network/tutorials/contribution/content/write-tutorials-github-web-beginner-e64f8fed-4c0b-4225-9ebb-7fc5f1c01a79
 ## Пререквизиты
 
 Программное обеспечение, необходимое для выполнения данного руководства:

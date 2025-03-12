@@ -12,7 +12,7 @@ This tutorial guides you step by step through the process of correcting these mi
 
 Please note that if you plan to perform a complete review and revision of a document, especially for content translations, I invite you to consult this other more detailed tutorial.
 
-https://planb.network/tutorials/contribution/tutorial/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
+https://planb.network/tutorials/contribution/content/content-review-tutorial-1ee068ca-ddaf-4bec-b44e-b41a9abfdef6
 
  Here, we focus only on how to make a quick correction for a small error.
 
