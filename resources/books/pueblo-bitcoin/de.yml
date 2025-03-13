@@ -10,5 +10,5 @@ original_language: en
 proofreading:
   - language: en
     urgency: 1
-    contributors_id:
+    contributor_names:
       - davidecoltro
