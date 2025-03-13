@@ -3,4 +3,4 @@ description: |
 
   Se käyttää pääasiassa Bitcoin Lightning -solmujen verkkojuorua tarjotakseen asiaankuuluvaa tietoa. Alustaan sisältyy myös API toimintojen suorittamiseen, sekä Magma, omistettu likviditeettimarkkinapaikka. Sitoutumisellaan datavetoisiin oivalluksiin Amboss tarjoaa kattavan ratkaisun tehokkaaseen ja perilliseen Lightning Network -hallintaan.
 contributors:
-  - rabbit-hole
+  - Rogzy-DB

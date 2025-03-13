@@ -3,5 +3,5 @@ description: |
 
   Principalmente utiliza el gossip de la red de nodos de Bitcoin Lightning para proporcionar información relevante. La plataforma también incluye una API para realizar operaciones, junto con Magma, un mercado de liquidez dedicado. Con su compromiso con los conocimientos impulsados por datos, Amboss proporciona una solución integral para una gestión eficiente e informada de la red Lightning.
 contributors:
-  - rabbit-hole
-  - another-satoshi
+  - Rogzy-DB
+  - Asi0Flammeus

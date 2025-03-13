@@ -3,4 +3,4 @@ description: |
 
   Käyttäjät voivat itse isännöidä erilaisia sovelluksia, mukaan lukien Nextcloud yksityiseen pilvitallennukseen, PhotoPrism valokuva- ja videotallennukseen sekä henkilökohtaiset Bitcoin ja Lightning solmut bitcoin-siirtoihin. Umbrel sisältää myös oman sovelluskauppansa lisäsovelluksia varten, mainosten estotoimintoja ja kotiautomaation integraatioita.
 contributors:
-  - rabbit-hole
+  - Rogzy-DB

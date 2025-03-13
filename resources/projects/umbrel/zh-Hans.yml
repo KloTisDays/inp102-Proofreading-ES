@@ -3,4 +3,4 @@ description: |
 
   用户可以自行托管各种应用程序，包括用于私人云存储的 Nextcloud、用于照片和视频存储的 PhotoPrism，以及用于比特币交易的个人比特币和闪电网络节点。Umbrel 还特设有自己的应用商店，用于增加自托管应用，广告屏蔽功能，以及家庭自动化集成。
 contributors:
-  - rabbit-hole
+  - Rogzy-DB
