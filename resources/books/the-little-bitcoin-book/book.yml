@@ -1,5 +1,6 @@
 id: 10d7a78f-b293-436b-bede-2cfc06a4b579
-author: Timi Ajiboye, Luis Buenaventura, Alex Gladstein, Lily Liu, Alexander Lloyd, Alejandro Machado, Jimmy Song, Alena Vranova
+author: Timi Ajiboye, Luis Buenaventura, Alex Gladstein, Lily Liu, Alexander Lloyd,
+  Alejandro Machado, Jimmy Song, Alena Vranova
 level: beginner
 original_language: en
 proofreading:
@@ -84,3 +85,5 @@ tags:
   - user-friendly
   - high-level
   - easy-explain
+contributor_names:
+  - Rogzy-DB
