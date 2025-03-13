@@ -3,4 +3,4 @@ description: |
 
   Kasutajad saavad ise majutada erinevaid rakendusi, sealhulgas Nextcloud privaatseks pilvesalvestuseks, PhotoPrism fotode ja videote salvestamiseks ning isiklikud Bitcoin ja Lightning sõlmed bitcoin tehingute jaoks. Umbrel sisaldab ka oma rakenduste poodi täiendavate ise majutatavate rakenduste jaoks, reklaamide blokeerimise võimekust ning koduautomaatika integratsioone.
 contributors:
-  - rabbit-hole
+  - Rogzy-DB

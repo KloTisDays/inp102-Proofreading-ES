@@ -33,7 +33,7 @@ professors:
 # They are identified by their UUID
 # Currently, there are no shared record of these UUIDs
 contributors:
-  - another-satoshi
+  - Asi0Flammeus
 
 # Proofreading metadata
 # Only the original author needs to add this data related to initial proofreading
@@ -52,5 +52,5 @@ proofreading:
     last_contribution_date: YYYY-MM-DD
     urgency: # leave as empty
     contributors_id:
-    - author_github_id #insert your github ID
+      - author_github_id #insert your github ID
     reward: # leave as empty

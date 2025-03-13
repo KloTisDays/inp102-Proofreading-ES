@@ -3,10 +3,9 @@ type: Educational Content
 links:
   download: https://github.com/MyFirstBitcoin
   view:
-    - en: 
-        https://github.com/MyFirstBitcoin/Bitcoin-Diploma-2024/blob/main/Bitcoin%20Diploma%20-%202024%20-%20PDF.pdf
+    - en: https://github.com/MyFirstBitcoin/Bitcoin-Diploma-2024/blob/main/Bitcoin%20Diploma%20-%202024%20-%20PDF.pdf
 contributors:
-  - rabbit-hole
+  - Rogzy-DB
 
 # Proofreading metadata
 project_id: d32cad04-30b1-4790-a390-0b5f14724243
