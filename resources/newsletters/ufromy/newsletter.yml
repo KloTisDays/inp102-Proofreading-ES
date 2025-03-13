@@ -9,7 +9,7 @@ language: fr
 description: |
   Des publications traitant d'Histoire, d'économie et de Bitcoin... Le passé peut
   parfois être aussi surprenant que l'avenir.
-contributors:
+contributor_names:
   - PaoloFoti
 tags:
   - historical

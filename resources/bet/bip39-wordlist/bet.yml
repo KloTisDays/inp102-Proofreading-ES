@@ -12,7 +12,7 @@ links:
     - ja: https://github.com/DecouvreBitcoin/sovereign-university-data/blob/dev/resources/bet/bip39-wordlist/assets
     - vi: https://github.com/DecouvreBitcoin/sovereign-university-data/blob/dev/resources/bet/bip39-wordlist/assets
     - fi: https://github.com/DecouvreBitcoin/sovereign-university-data/blob/dev/resources/bet/bip39-wordlist/assets
-contributors:
+contributor_names:
   - LoicPandul
 # Proofreading metadata
 project_id: cd62a137-baad-4133-b90d-711963e510c7

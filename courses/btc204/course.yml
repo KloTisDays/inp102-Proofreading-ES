@@ -8,7 +8,8 @@ hours: 26
 professors:
   - pretty-private
 
-contributors:
+contributor_names:
+  - LoicPandul
 
 published_at: 2024-06-13
 # Proofreading metadata
