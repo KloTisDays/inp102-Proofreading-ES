@@ -2,7 +2,6 @@
 
 # Builder
 # Write the builder name
-builder: Cool tutorial
 
 # Level
 # Level can be one of following:

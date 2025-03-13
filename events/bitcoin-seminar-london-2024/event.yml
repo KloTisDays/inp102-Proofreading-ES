@@ -5,7 +5,6 @@ address_line_1: London, Ontario
 address_line_2: Canada
 address_line_3:
 name: Bitcoin Seminar in London
-builder: London BTC Meetup
 type: meetup
 book_online: false
 book_in_person: false

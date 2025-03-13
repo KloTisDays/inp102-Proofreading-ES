@@ -5,7 +5,6 @@ address_line_1: Berlin, Germany
 address_line_2:
 address_line_3:
 name: Bitcoin++ mints ecash
-builder: Base58 school
 type: conference
 book_online: false
 book_in_person: false

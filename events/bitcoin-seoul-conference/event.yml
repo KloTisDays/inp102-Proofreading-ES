@@ -4,7 +4,6 @@ end_date: 2025-06-06 09:00:00
 timezone: Asia/Seoul
 address_line_1: Seoul, Korea
 name: Bitcoin Seoul Conference 2025
-builder: Bitcoin Seoul Conference
 type: conference
 description: A conference focusing on Bitcoin trends, innovation, and networking.
 language:

@@ -6,7 +6,6 @@ address_line_1: Kuta Utara, Bali, Indonesia
 address_line_2: Jalan Kayu Manis, Canggu, Kec. Kuta Utara
 address_line_3:
 name: Learn Bitcoin from the Command Line
-builder: Bitcoin House Bali
 type: workshop
 book_online: false
 book_in_person: true

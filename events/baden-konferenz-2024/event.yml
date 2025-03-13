@@ -6,7 +6,6 @@ address_line_1: Wiesenstrasse 32, Baden, Switzerland
 address_line_2: BBB Martinsberg, Wiesenstrasse 32, 5400 Baden, Switzerland
 address_line_3:
 name: Bitcoin Baden Konferenz
-builder: Verein Bitcoin Baden
 type: conference
 book_online: false
 book_in_person: false

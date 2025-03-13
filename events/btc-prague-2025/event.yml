@@ -6,7 +6,6 @@ address_line_1: Prague, Czech Republic
 address_line_2:
 address_line_3:
 name: BTC Prague 2025
-builder: BTCprague
 type: conference
 book_online: false
 book_in_person: false

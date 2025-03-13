@@ -4,7 +4,6 @@ end_date: 2025-04-13 21:00:00
 timezone: America/New_York
 address_line_1: Tysons, VA, USA
 name: OPNEXT
-builder: OPNEXT
 type: conference
 description: A conference focusing on Bitcoin trends, innovation, and networking.
 language:
