@@ -5,7 +5,6 @@ address_line_1: Victoria BC, Canada
 address_line_2: The Crystal Garden
 address_line_3:
 name: Learning Bitcoin Conference
-builder: Learning Bitcoin
 type: conference
 book_online: false
 book_in_person: false

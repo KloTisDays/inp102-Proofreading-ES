@@ -6,7 +6,6 @@ address_line_1:
 address_line_2:
 address_line_3:
 name: Startup Day in Mexico City
-builder: PlebLab
 type: meetup
 book_online: false
 book_in_person: false

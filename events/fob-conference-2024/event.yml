@@ -5,7 +5,6 @@ address_line_1: Antwerpen, Belgium
 address_line_2: Handelsbeurs in Antwerpen
 address_line_3:
 name: Future of Bitcoin Conference
-builder: Bitvavo
 type: conference
 book_online: false
 book_in_person: false

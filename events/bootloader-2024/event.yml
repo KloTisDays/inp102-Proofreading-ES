@@ -5,7 +5,6 @@ address_line_1: Cyberspace
 address_line_2:
 address_line_3:
 name: BootLoader
-builder: Wolf
 type: conference
 book_online: false
 book_in_person: false

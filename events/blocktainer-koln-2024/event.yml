@@ -5,7 +5,6 @@ address_line_1: Köln, germany
 address_line_2: MMC Studios, Köln
 address_line_3:
 name: Blocktrainer at the Movies
-builder: Blocktrainer
 type: conference
 book_online: false
 book_in_person: false

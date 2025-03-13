@@ -6,7 +6,6 @@ address_line_1: Austin, Texas (USA)
 address_line_2: 621 E 6th St
 address_line_3:
 name: LBbits workshop
-builder: PlebLab
 type: workshop
 book_online: false
 book_in_person: false

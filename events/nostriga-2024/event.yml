@@ -5,7 +5,6 @@ address_line_1: Riga, Latvia
 address_line_2:
 address_line_3:
 name: NOSTRIGA 2024
-builder: Nostr.World
 type: conference
 book_online: false
 book_in_person: false

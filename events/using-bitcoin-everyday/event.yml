@@ -6,7 +6,6 @@ address_line_1: Turin, Italy
 address_line_2: 7 del Politecnico
 address_line_3:
 name: Using Bitcoin Everyday
-builder: BitPolito
 type: workshop
 book_online: false
 book_in_person: false
