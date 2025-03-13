@@ -13,6 +13,6 @@ proofreading:
   - language: en
     last_contribution_date:
     urgency: 1
-    contributors_id:
+    contributor_names:
       - davidecoltro
     reward:
