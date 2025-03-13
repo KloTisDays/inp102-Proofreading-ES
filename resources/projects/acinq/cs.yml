@@ -6,5 +6,5 @@ description: |
   ACINQ je hlavním provozovatelem a poskytovatelem likvidity na síti Lightning Network. Provozujeme největší uzel na této síti, kde využíváme naše odborné znalosti o Lightningu.
 
   Jsme také vývojáři Phoenixu, špičkové self-custodial Bitcoin Lightning peněženky.
-contributors:
+contributor_names:
   - Rogzy-DB

@@ -9,7 +9,7 @@ language: en
 description: |
   Expert data driven insights into the Bitcoin ecosystem with a long term bias.
   Delivered weekly.
-contributors:
+contributor_names:
   - PaoloFoti
 tags:
   - market-trends

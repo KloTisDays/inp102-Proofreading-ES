@@ -8,7 +8,7 @@ links:
   website: https://bitcoinops.org/en/podcast/
 description: |
   We provide weekly newsletters, workshops, case studies, and research for the #Bitcoin community.
-contributors:
+contributor_names:
   - Rogzy-DB
 tags:
   - case-studies
