@@ -9,7 +9,7 @@ language: en
 description: |
   A weekly Bitcoin newsletter keeping thousands of busy people in the loop. For
   free, from the Bitcoin Collective.
-contributors:
+contributor_names:
   - PaoloFoti
 tags:
   - user-friendly
