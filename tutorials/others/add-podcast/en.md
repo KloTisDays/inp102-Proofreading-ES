@@ -177,7 +177,7 @@ links:
   trailer:
 description: |
 
-contributors:
+contributor_names:
   -
 tags:
   -
@@ -195,7 +195,7 @@ links:
   trailer: https://youtu.be/-R7TFUr0tzw
 description: |
   BTC Sessions is geared towards helping you understand Bitcoin. Get the tutorials on wallets, hardware, security, exchanges and much more, as well as the latest news and industry interviews.
-contributors:
+contributor_names:
   - YourGithubUsername
 tags:
   - guides
@@ -223,7 +223,7 @@ language:
   -
 description: |
 
-contributors:
+contributor_names:
   -
 tags:
   -
@@ -244,7 +244,7 @@ language:
   - en
 description: |
   A key initiative from the Bitcoin Operations Technology Group (Optech) that bridges the gap between Bitcoin businesses and open source technology. The newsletter, released weekly, focuses on helping Bitcoin companies implement the most efficient and cost-effective operational practices. A primary focus is optimizing transaction sizes and managing fee costs through better technical implementation. The content covers technical developments, practical workshops, original research, and real-world case studies. What makes this newsletter particularly valuable is its non-profit nature (funded by member companies and seed investors Wences Casares and John Pfeffer) and its commitment to open source - all materials are released under the MIT license. It's especially relevant for engineers and managers at Bitcoin companies who want to stay current with the latest operational best practices and strengthen their connection to the open source community.
-contributors:
+contributor_names:
   - YourGithubUsername
 tags:
   - technical-analysis
@@ -268,7 +268,7 @@ links:
 language:
 description: |
 
-contributors:
+contributor_names:
   -
 tags:
   -
@@ -300,7 +300,7 @@ description: |
   debt? Will Bitcoin and cryptocurrency spark a revolution in how we use money
   peer to peer? Is it a gift to criminals? Or is it the next bubble waiting to
   burst? If you trust in your money just as it is - this film has news for you.
-contributors:
+contributor_names:
   - YourGithubUsername
 tags:
   - finance
