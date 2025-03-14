@@ -19,13 +19,13 @@ proofreading:
   - language: de
     last_contribution_date:
     urgency: 1
-    contributors_id:
-    reward: 0.94
+    contributor_names:
+    reward: 1.36
   - language: en
     last_contribution_date: 2025-03-13
     urgency: 1
-    contributors_id:
-          - MariJJhodl
+    contributor_names:
+      - MariJJhodl
     reward: 0.94
   - language: es
     last_contribution_date:
@@ -56,7 +56,7 @@ proofreading:
   - language: pt
     last_contribution_date:
     urgency: 1
-    contributors_id:
+    contributor_names:
     reward: 0.94
   - language: ru
     last_contribution_date:
@@ -83,8 +83,6 @@ proofreading:
     urgency: 1
     contributor_names:
     reward: 2.2
-
-
   - language: nb-NO
     last_contribution_date:
     urgency: 1
