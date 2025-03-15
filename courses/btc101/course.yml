@@ -25,13 +25,7 @@ hours: 7
 # They are identified by their UUID
 # See /professors folder for examples
 professors:
-  - rabbit-hole
-
-# contributors
-# List who is/are the contributors who help format, review,
-# translate the course.
-# They are identified by their UUID
-# Currently, there are no shared record of these UUIDs
+  - 2e1b5182-567e-453a-af29-36009340ff02
 contributor_names:
   - Asi0Flammeus
 
