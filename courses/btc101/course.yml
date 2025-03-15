@@ -24,7 +24,7 @@ hours: 7
 # List who is/are the professor(s)
 # They are identified by their UUID
 # See /professors folder for examples
-professors:
+professors_id:
   - 2e1b5182-567e-453a-af29-36009340ff02
 contributor_names:
   - Asi0Flammeus
