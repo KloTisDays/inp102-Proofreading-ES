@@ -5,7 +5,7 @@ level: beginner
 hours: 102
 test_only: true
 
-professors:
+professors_id:
   - dac3b166-31ef-41f3-bfef-6e9d3855c12c
   - 2e1b5182-567e-453a-af29-36009340ff02
   - e7e63d59-ea19-4960-9446-61bd4dcc98f0
