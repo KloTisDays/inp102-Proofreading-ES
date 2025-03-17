@@ -1,3 +1,4 @@
+
 {
   "languages": [
     {
@@ -118,7 +119,8 @@
       "code": "sr",
       "name": "Serbian",
       "translator": "openai",
-      "code_translator": "sr"
+      "code_translator": "sr",
+      "custom_prompt": "Only use the Latin alphabet when translating this content. Do not use Cyrillic characters."
     },
     {
       "code": "sv",
