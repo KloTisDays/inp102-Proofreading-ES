@@ -1769,7 +1769,6 @@ In summary, proper node operation ensures atomic payments, and the Lightning Net
 ## BOLT Review
 
 <chapterId>ba4b09ae-81de-53f2-8c15-316f037aaea9</chapterId>
-<professorId>17f8bc5b-7034-4ff6-96e0-11484a133642</professorId>
 
 ![Video](https://youtu.be/1aIuKBkPlkg)
 
@@ -1893,7 +1892,6 @@ In conclusion, understanding the Second Layer Importance, Lightning Network Spec
 ## Major LN Clients
 
 <chapterId>a2ad8db4-aea2-5231-927c-616c53db31bf</chapterId>
-<professorId>17f8bc5b-7034-4ff6-96e0-11484a133642</professorId>
 
 ![Video](https://youtu.be/a0Q_5dzpqKw)
 
@@ -2027,7 +2025,6 @@ In conclusion, understanding the various aspects of Lightning Network clients, t
 ## Practical Challenges to LN
 
 <chapterId>014c7c40-aef7-58ac-b51f-33784463f482</chapterId>
-<professorId>17f8bc5b-7034-4ff6-96e0-11484a133642</professorId>
 
 **(the video will be available soon)**
 
