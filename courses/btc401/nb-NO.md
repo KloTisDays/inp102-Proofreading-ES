@@ -1743,7 +1743,6 @@ Oppsummert sikrer korrekt noddrift atomiske betalinger, og Lightning Network sik
 ## BOLT Gjennomgang
 
 <chapterId>ba4b09ae-81de-53f2-8c15-316f037aaea9</chapterId>
-<professorId>17f8bc5b-7034-4ff6-96e0-11484a133642</professorId>
 
 ![Video](https://youtu.be/1aIuKBkPlkg)
 
@@ -1867,7 +1866,6 @@ Avslutningsvis er det avgjørende for alle som ønsker å dykke ned i detaljene 
 ## Viktige LN Klienter
 
 <chapterId>a2ad8db4-aea2-5231-927c-616c53db31bf</chapterId>
-<professorId>17f8bc5b-7034-4ff6-96e0-11484a133642</professorId>
 
 ![Video](https://youtu.be/a0Q_5dzpqKw)
 
@@ -2001,7 +1999,6 @@ Avslutningsvis er det avgjørende å forstå de ulike aspektene ved Lightning Ne
 ## Praktiske Utfordringer med LN
 
 <chapterId>014c7c40-aef7-58ac-b51f-33784463f482</chapterId>
-<professorId>17f8bc5b-7034-4ff6-96e0-11484a133642</professorId>
 
 **(videoen vil være tilgjengelig snart)**
 
