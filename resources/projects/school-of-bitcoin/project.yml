@@ -1,0 +1,16 @@
+id: 77f56919-1875-45ab-8c4c-b8fb26b021de
+name: schoolofbitcoin.com
+links:
+  website: https://schoolofbitcoin.com/
+  twitter: https://x.com/schoolofbitcoin
+category: education
+
+# Proofreading metadata
+original_language: en
+proofreading:
+  - language: en
+    last_contribution_date: 2025-03-17
+    urgency: 1
+    contributor_names:
+      - Asi0Flammeus
+    reward: 0
