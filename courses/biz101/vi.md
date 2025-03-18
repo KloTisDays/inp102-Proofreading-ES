@@ -629,8 +629,10 @@ Vì Bitcoin hoạt động như một phương tiện trao đổi, nên có th�
 
 Để tìm hiểu cách mở tài khoản doanh nghiệp và sử dụng tài khoản này để mua, bán và chuyển bitcoin, bạn có thể xem hai hướng dẫn được thiết kế riêng cho doanh nghiệp, bao gồm các nền tảng Kraken và Bitfinex trong phiên bản dành cho doanh nghiệp:
 
-https://planb.network/tutorials/exchange/centralized/bitfinex-pro-c8ef7476-5f60-4205-935e-a545ced0022a
-https://planb.network/tutorials/exchange/centralized/kraken-pro-07b1c16c-d517-4bf7-9a78-b42dc0f21785
+https://planb.network/tutorials/business/others/bitfinex-pro-c8ef7476-5f60-4205-935e-a545ced0022a
+
+https://planb.network/tutorials/business/others/kraken-pro-07b1c16c-d517-4bf7-9a78-b42dc0f21785
+
 Để tìm hiểu thêm về các phương pháp mua bitcoin thông qua sàn giao dịch hoặc ngang hàng, bạn có thể [tham khảo phần "sàn giao dịch" trong hướng dẫn của chúng tôi](https://planb.network/tutorials/exchange).
 
 ![BIZ101](assets/en/16.webp)
