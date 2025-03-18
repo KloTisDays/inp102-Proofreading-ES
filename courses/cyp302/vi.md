@@ -2,7 +2,6 @@
 name: Giới thiệu về mật mã học chính thức
 goal: Giới thiệu sâu sắc về khoa học và thực hành mật mã.
 objectives: 
-
   - Khám phá mật mã Beale và các phương pháp mật mã hiện đại để hiểu các khái niệm cơ bản và lịch sử về mật mã.
   - Đi sâu vào lý thuyết số, nhóm và các lĩnh vực để nắm vững các khái niệm toán học quan trọng làm nền tảng cho mật mã học.
   - Nghiên cứu mã hóa luồng RC4 và AES với khóa 128 bit để tìm hiểu về các thuật toán mã hóa đối xứng.
@@ -291,7 +290,9 @@ Trong cụm từ “biến ngẫu nhiên”, thuật ngữ “ngẫu nhiên” c
 
 **Biến đồng dạng** là trường hợp đặc biệt của biến ngẫu nhiên. Biến này có thể nhận hai hoặc nhiều giá trị với xác suất bằng nhau. Biến ngẫu nhiên $X$ được mô tả trong *Hình 1* rõ ràng là biến đồng dạng, vì cả hai kết quả có thể xảy ra đều có xác suất là $0,5$. Tuy nhiên, có nhiều biến ngẫu nhiên không phải là trường hợp của biến đồng dạng.
 
+
 Ví dụ, hãy xem xét biến ngẫu nhiên $Y$. Nó có tập kết quả $\{1, 2, 3, 8, 10\}$ và phân phối xác suất sau:
+
 
 $$
 \Pr[Y = 1] = 0.25
@@ -2100,7 +2101,9 @@ Bây giờ chúng ta có thể định nghĩa thứ tự của $N$ như sau. Gi�
 
 Ví dụ, nếu $N = 12$, thì 1, 5, 7 và 11 là các số nguyên tố cùng nhau duy nhất đáp ứng yêu cầu trên. Do đó, cấp số của 12 bằng 4.
 
+
 Giả sử $N$ là số nguyên tố. Khi đó, bất kỳ số nguyên nào nhỏ hơn $N$ nhưng lớn hơn hoặc bằng 1 đều nguyên tố cùng nhau với nó. Điều này bao gồm tất cả các phần tử trong tập hợp sau: $\{1,2,3,….,N - 1\}$. Do đó, khi $N$ là số nguyên tố, thì cấp của $N$ là $N - 1$. Điều này được nêu trong mệnh đề 1, trong đó $\phi(N)$ biểu thị cấp của $N$.
+
 
 **Đề xuất 1**. $\phi(N) = N - 1$ khi $N$ là số nguyên tố
 
@@ -2296,11 +2299,12 @@ Tuy nhiên, với việc thêm một chút phức tạp thông minh, bài toán 
 <chapterId>366d6fd0-ceb2-4299-bf37-8c6dfcb681d5</chapterId>
 
 <isCourseReview>true</isCourseReview>
-## Bài thi cuối kỳ
 
+## Bài thi cuối kỳ
 <chapterId>44882d2b-63cd-4fde-8485-f76f14d8b2fe</chapterId>
 
 <isCourseExam>true</isCourseExam>
+
 ## Phần kết luận
 
 <chapterId>f1905f78-8cf7-5031-949a-dfa8b76079b4</chapterId>
