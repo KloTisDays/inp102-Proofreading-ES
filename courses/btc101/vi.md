@@ -581,7 +581,7 @@ Dưới đây, chúng tôi sẽ định nghĩa một số cấp độ bảo mậ
 
 Ví dụ, bạn có thể sử dụng Sparrow Wallet như một ví nóng:
 
-https://planb.network/tutorials/wallet/desktop/sparrow-7e9a77c0-013d-4f8e-a811-408b71dc7607
+https://planb.network/tutorials/wallet/desktop/sparrow-c674e2ac-d46f-4c82-92a7-7d1b0e262f5d
 
 - Cấp độ 2**, bạn sử dụng ví vật lý và bạn đã bảo mật danh sách 12/24 từ của mình. Nó thường được gọi là "Ví lạnh" vì khóa của bạn được lưu trữ trên thiết bị không được kết nối với internet. Trong trường hợp này, bạn sẽ luôn cần phải ký mọi giao dịch bằng thiết bị của mình, điều này khiến tiền của bạn khó truy cập hơn hàng ngày.
 
