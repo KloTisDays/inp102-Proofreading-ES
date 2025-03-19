@@ -113,7 +113,7 @@ Cypherpunk-rörelsen, som är djupt rotad i digital aktivism och kryptografi, an
 
 - Det "kryptoanarkistiska manifestet":
 
-skrivet av Timothy C. May år 1992, förklarar detta dokument hur användningen av kryptografi kan leda till en era av kryptografisk anarki där regeringar skulle vara maktlösa att ingripa i medborgarnas privata angelägenheter. May föreställde sig en framtid där människor anonymt utbyter information och pengar utan inblandning av en tredje part.
+skrivet av Timothy C. May år 1992, förklarar detta dokument hur användningen av kryptografi kan leda till en era av kryptografisk anarki där regeringar skulle vara maktlösa att ingripa i medborgarnas privata angelägenheter. May föreställde sig en framtid där människor anonymt uyter information och pengar utan inblandning av en tredje part.
 
 
 - "Deklaration om cyberrymdens självständighet":
@@ -171,7 +171,7 @@ Pengar är ett mycket sofistikerat kommunikationsverktyg:
 
 
 - Den möjliggör kommunikation mellan nutid och framtid, eftersom den omvandlar vår tid och energi till en tillgång som kan återanvändas i framtiden utan risk för devalvering.
-- Det underlättar kommunikation på ett universellt språk: utan att känna varandra eller tala samma språk kan två främlingar utbyta, handla och komma överens om värdet på saker och ting.
+- Det underlättar kommunikation på ett universellt språk: utan att känna varandra eller tala samma språk kan två främlingar uyta, handla och komma överens om värdet på saker och ting.
 
 Dess funktion i vår värld är svår att återskapa på konstgjord väg. Faktum är att ingen individ eller grupp kan skapa pengar, eftersom det är ett naturligt fenomen som måste uppstå på marknaden och genom frivilligt konsensus. På så sätt fungerar priser som signaler och information som vägleder samhället i dess resursfördelning.
 
@@ -179,7 +179,7 @@ Av dessa skäl är guld som pengar resultatet av 4 000 år av monetär darwinism
 
 
 - **Värdebevaring**: Pengar kan användas för att överföra köpkraft till framtiden, så de måste vara ett hållbart material;
-- **Betalningsmedel**: Pengar kan användas i utbyte mot varor och tjänster i stället för byteshandel, vilket gör att man undviker sammanträffande behov mellan handlare;
+- **Betalningsmedel**: Pengar kan användas i uyte mot varor och tjänster i stället för byteshandel, vilket gör att man undviker sammanträffande behov mellan handlare;
 - **En enda beräkningsenhet**: Pengar gör det också möjligt för oss att jämföra värdet på olika varor för att bättre förstå deras relativa förmån.
 
 ![image](assets/en/08.webp)
@@ -376,7 +376,7 @@ Bitcoin är en decentraliserad digital valuta med en fördefinierad maximal män
 
 ![image](assets/en/22.webp)
 
-Dess monetära skapande kan illustreras med en kurva som representerar mängden bitcoins som skapas över tid. År 2022 var till exempel cirka 18,5 miljoner bitcoins i omlopp. Prognoser visar att det 2025 kommer att finnas cirka 19,5 miljoner bitcoins, vilket motsvarar cirka 93% av det totala utbudet, och 2037 kommer denna siffra att nå 20,4 miljoner.
+Dess monetära skapande kan illustreras med en kurva som representerar mängden bitcoins som skapas över tid. År 2022 var till exempel cirka 18,5 miljoner bitcoins i omlopp. Prognoser visar att det 2025 kommer att finnas cirka 19,5 miljoner bitcoins, vilket motsvarar cirka 93% av det totala uudet, och 2037 kommer denna siffra att nå 20,4 miljoner.
 
 ### Hur skapas nya bitcoins?
 
@@ -463,7 +463,7 @@ Faktum är att vem som helst kan göra detta via en Bitcoin-nod (dvs. en transak
 ```json
 {
 "height": 710560,
-"bestblock": "0000000000000000000887384d67103412ea7f18a43953e65c8c4ac36bf42e54",
+"beslock": "0000000000000000000887384d67103412ea7f18a43953e65c8c4ac36bf42e54",
 "transactions": 473244,
 "txouts": 1018917,
 "bogosize": 2183872374,
@@ -750,7 +750,7 @@ Forumet blev snabbt den föredragna platsen för diskussion för Bitcoin-använd
 
 ### Satoshi Nakamotos försvinnande
 
-Under 2010, när Bitcoin började uppmärksammas i media, bestämde sig Satoshi för att ta avstånd från sig själv genom att meddela sin avgång i ett foruminlägg den 12 december 2010. Den 23 april 2011 gjorde han sitt sista kända privata utbyte via e-post, försvann sedan och lämnade sin skapelse i händerna på samhället.
+Under 2010, när Bitcoin började uppmärksammas i media, bestämde sig Satoshi för att ta avstånd från sig själv genom att meddela sin avgång i ett foruminlägg den 12 december 2010. Den 23 april 2011 gjorde han sitt sista kända privata uyte via e-post, försvann sedan och lämnade sin skapelse i händerna på samhället.
 
 > "Regeringar är bra på att hugga av huvudena på ett centralstyrd kontrollerat nätverk som Napster, men rena P2P-nätverk som Gnutella och Tor verkar hålla ställningarna." - Satoshi Nakamoto
 Trots Satoshis frånvaro fortsatte Bitcoin att utvecklas: Bitcoins historia skrivs var tionde minut, och protokollet fortsätter att fungera som avsett än idag. Oavsett rädsla, osäkerhet eller tvivel fortsätter Bitcoin att gå framåt, med en mycket stark online-tillgänglighet. Enligt den här [webbplatsen] (https://bitcoinuptime.com/) har Bitcoin faktiskt varit funktionellt och kört utan massiva problem under 99,988% av tiden sedan det skapades.
@@ -761,7 +761,7 @@ För att lära dig mer om Satoshi Nakamotos skrifter rekommenderar vi att du lä
 
 ![image](assets/en/45.webp)
 
-> "Grundproblemet med konventionell valuta är allt det förtroende som krävs för att få den att fungera. Man måste lita på att centralbanken inte förfalskar valutan, men fiatvalutornas historia är full av brott mot det förtroendet. Bankerna måste vara betrodda att bevara våra pengar och överföra dem elektroniskt, men de lånar ut dem i vågor av kreditbubblor med knappt en bråkdel i reserv" - [Satoshi Nakamoto](https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/)
+> "Grundproblemet med konventionell valuta är allt det förtroende som krävs för att få den att fungera. Man måste lita på att centralbanken inte förfalskar valutan, men fiatvalutornas historia är full av brott mot det förtroendet. Bankerna måste vara betrodda att bevara våra pengar och överföra dem elektroniskt, men de lånar ut dem i vågor av krediubblor med knappt en bråkdel i reserv" - [Satoshi Nakamoto](https://satoshi.nakamotoinstitute.org/posts/p2pfoundation/1/)
 Nu när vi har lite bakgrund ska vi undersöka hur en Bitcoin-transaktion fungerar i allmänhet.
 
 ## Bitcoin-transaktioner
@@ -854,7 +854,7 @@ Det finns flera alternativ tillgängliga när du vill installera din egen nod, m
 
 ![image](assets/en/53.webp)
 
-Ett annat alternativ är att använda en särskild hårdvara för detta ändamål, t.ex. en Raspberry Pi 4 med en tillräckligt stor SSD-enhet (ca ~1 TB). Detta andra alternativ är dyrare om du måste köpa hårdvaran, men det motsvarar lite mindre än 10,00 euro per år när det gäller elförbrukning.
+Ett annat alternativ är att använda en särskild hårdvara för detta ändamål, t.ex. en Raspberry Pi 4 med en tillräckligt stor SSD-enhet (ca ~2 TB). Detta andra alternativ är dyrare om du måste köpa hårdvaran, men det motsvarar lite mindre än 10,00 euro per år när det gäller elförbrukning.
 
 Ur ett bandbreddsperspektiv, med tanke på 1 block på 1 MB var 10:e minut, motsvarar det ungefär 5 GB per månad.
 
