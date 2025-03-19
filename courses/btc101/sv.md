@@ -1157,6 +1157,7 @@ En gradvis strategi innebär återkommande köp, vilket innebär att man köper 
 
 ** Var försiktig med UTXO**: Kom ihåg att konsolidera dina UTXO:er i dina plånböcker då och då. Denna praxis är viktig för att effektivt hantera dina bitcoins och undvika onödiga avgifter under transaktioner.
 
+Ett [UTXO](https://planb.network/en/resources/glossary/utxo) är en utgång från en transaktion som ännu inte har spenderats, det vill säga som inte har använts som ingång för en ny transaktion. Att konsolidera dem innebär att sammanfoga flera små UTXO till en större, för att minska "vikten" av transaktionen och därmed betala mindre avgifter.
 
 - Spontant köp
 
