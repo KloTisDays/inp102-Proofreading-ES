@@ -178,9 +178,9 @@ Dess funktion i vår värld är svår att återskapa på konstgjord väg. Faktum
 Av dessa skäl är guld som pengar resultatet av 4 000 år av monetär darwinism baserad på följande aristoteliska funktioner:
 
 
-- Värdebevaring**: Pengar kan användas för att överföra köpkraft till framtiden, så de måste vara ett hållbart material;
-- Betalningsmedel**: Pengar kan användas i utbyte mot varor och tjänster i stället för byteshandel, vilket gör att man undviker sammanträffande behov mellan handlare;
-- En enda beräkningsenhet**: Pengar gör det också möjligt för oss att jämföra värdet på olika varor för att bättre förstå deras relativa förmån.
+- **Värdebevaring**: Pengar kan användas för att överföra köpkraft till framtiden, så de måste vara ett hållbart material;
+- **Betalningsmedel**: Pengar kan användas i utbyte mot varor och tjänster i stället för byteshandel, vilket gör att man undviker sammanträffande behov mellan handlare;
+- **En enda beräkningsenhet**: Pengar gör det också möjligt för oss att jämföra värdet på olika varor för att bättre förstå deras relativa förmån.
 
 ![image](assets/en/08.webp)
 
@@ -199,9 +199,9 @@ För att förklara detta begrepp bättre ska vi undersöka vad som kännetecknar
 ![image](assets/en/11.webp)
 
 
-- Fungibilitet**, vilket innebär att den kan bytas ut mot en annan enhet av samma slag utan värdeförlust;
-- Delbarhet**, eftersom den kan delas upp i mindre enheter för att underlätta transaktioner av varierande volym;
-- Likviditet**, vilket innebär att den lätt kan omvandlas till varor eller tjänster.
+- **Fungibilitet**, vilket innebär att den kan bytas ut mot en annan enhet av samma slag utan värdeförlust;
+- **Delbarhet**, eftersom den kan delas upp i mindre enheter för att underlätta transaktioner av varierande volym;
+- **Likviditet**, vilket innebär att den lätt kan omvandlas till varor eller tjänster.
 
 För att uppfylla dessa kriterier har valutor historiskt sett utvecklats genom olika steg:
 
@@ -572,18 +572,18 @@ Det finns faktiskt inget universellt svar eller lösning, så ta dig tid att sva
 Här nedan kommer vi att definiera flera säkerhetsnivåer:
 
 
-- Nivå 0**, du använder en så kallad "custodial service" där du inte är den enda innehavaren av dina bitcoins. Var medveten om att denna betrodda tredje part när som helst kan begränsa din tillgång till dina pengar. I det här fallet liknar din nivå av finansiell suveränitet det som gäller för ett traditionellt banksystem med ett bankkonto.
+- **Nivå 0**, du använder en så kallad "custodial service" där du inte är den enda innehavaren av dina bitcoins. Var medveten om att denna betrodda tredje part när som helst kan begränsa din tillgång till dina pengar. I det här fallet liknar din nivå av finansiell suveränitet det som gäller för ett traditionellt banksystem med ett bankkonto.
 
 ![image](assets/en/31.webp)
 
 
-- Nivå 1**, du använder en Bitcoin-plånbok på din telefon eller dator, där du är den enda innehavaren av dina bitcoins och du kan enkelt utföra dina transaktioner. Det ovan nämnda verktyget kallas "varm plånbok", eftersom den privata nyckeln lagras på en enhet med internetåtkomst. I det här fallet är det viktigt att säkerhetskopiera din minnesfras för att återfå tillgång till dina pengar om du tappar bort din telefon eller dator.
+- **Nivå 1**, du använder en Bitcoin-plånbok på din telefon eller dator, där du är den enda innehavaren av dina bitcoins och du kan enkelt utföra dina transaktioner. Det ovan nämnda verktyget kallas "varm plånbok", eftersom den privata nyckeln lagras på en enhet med internetåtkomst. I det här fallet är det viktigt att säkerhetskopiera din minnesfras för att återfå tillgång till dina pengar om du tappar bort din telefon eller dator.
 
 Du kan till exempel använda Sparrow Wallet som en varm plånbok:
 
 https://planb.network/tutorials/wallet/desktop/sparrow-7e9a77c0-013d-4f8e-a811-408b71dc7607
 
-- Nivå 2**, du använder en fysisk digital plånbok och du har säkrat din lista med 12/24 ord. Det kallas ofta för "kall plånbok" eftersom dina nycklar lagras på en enhet som inte är ansluten till internet. I det här fallet måste du alltid signera varje transaktion med din enhet, vilket gör dina pengar mindre tillgängliga på daglig basis.
+- **Nivå 2**, du använder en fysisk digital plånbok och du har säkrat din lista med 12/24 ord. Det kallas ofta för "kall plånbok" eftersom dina nycklar lagras på en enhet som inte är ansluten till internet. I det här fallet måste du alltid signera varje transaktion med din enhet, vilket gör dina pengar mindre tillgängliga på daglig basis.
 
 Du kan till exempel använda en Ledger, en Satochip eller en Tapsigner:
 
@@ -593,7 +593,7 @@ https://planb.network/tutorials/wallet/hardware/tapsigner-ab2bcdf9-9509-4908-9a4
 ![image](assets/en/32.webp)
 
 
-- Nivå 3**, du använder en plånbok på nivå 1 eller 2, men du har lagt till ytterligare en lösenordsfras. I det här fallet måste du vara medveten om att du måste säkerhetskopiera både listan med 12/24 ord **och** din lösenordsfras. Helst ska dessa två delar av informationen lagras på två olika platser.
+- **Nivå 3**, du använder en plånbok på nivå 1 eller 2, men du har lagt till ytterligare en lösenordsfras. I det här fallet måste du vara medveten om att du måste säkerhetskopiera både listan med 12/24 ord **och** din lösenordsfras. Helst ska dessa två delar av informationen lagras på två olika platser.
 
 För att lära dig mer om hur BIP39-lösenordsfras används och fungerar:
 
@@ -601,7 +601,7 @@ https://planb.network/tutorials/wallet/backup/passphrase-a26a0220-806c-44b4-af14
 ![image](assets/en/33.webp)
 
 
-- Nivå 4**, du använder ett set av plånböcker för att skapa en "multisig"-plånbok, vilket innebär att flera signaturer krävs för att genomföra en transaktion. I det här fallet bör du vara medveten om att varje del av multisignaturen ska lagras på olika platser. Detta tillvägagångssätt anses ofta vara en avancerad användning av Bitcoin, främst för att hantera stora belopp och för företagsändamål.
+- **Nivå 4**, du använder ett set av plånböcker för att skapa en "multisig"-plånbok, vilket innebär att flera signaturer krävs för att genomföra en transaktion. I det här fallet bör du vara medveten om att varje del av multisignaturen ska lagras på olika platser. Detta tillvägagångssätt anses ofta vara en avancerad användning av Bitcoin, främst för att hantera stora belopp och för företagsändamål.
 
 ![image](assets/en/34.webp)
 
@@ -654,7 +654,7 @@ Ordlistorna bör förvaras på ett säkert ställe som du lätt kan komma ihåg.
 
 Både "kalla" och "varma" plånböcker använder ordlistmetoden som standard för backup av privata nycklar. Det innebär att du kan ange din mnemoniska fras i vilken kompatibel plånboksprogramvara eller enhet som helst för att återställa din åtkomst. Å andra sidan avråder vi starkt från att använda plånböcker som inte tillhandahåller en återställningsfras, eftersom de kan kräva att du uppger ett konto, en e-postadress eller, ännu värre, ett ID.
 
-**OBS: Avsaknaden av en lista med 12/24 ord bör göra dig uppmärksam
+**OBS: Avsaknaden av en lista med 12/24 ord bör göra dig uppmärksam**
 
 Om du sedan vill upptäcka, steg för steg, hur du ställer in din egen plånbok och får dina första bitcoins, rekommenderar vi också att du tar den här andra kursen:
 
@@ -744,7 +744,7 @@ Intresset för Bitcoin växte snabbt, vilket ledde till att många människor te
 
 Forumet blev snabbt den föredragna platsen för diskussion för Bitcoin-användare, så mycket att kända memes och symboler som är förknippade med Bitcoin föddes ur det, till exempel [Bitcoin-logotypen] (https://bitcointalk.org/index.php?topic=64.0), den berömda [Hodl] (https://bitcointalk.org/index.php?topic=375643.0) eller till och med [Pizza day] (https://bitcointalk.org/index.php?topic=137.msg1195).
 
-**Den 22 maj 2010 skrev Laszlo Hanyecz historia genom att erbjuda sig att köpa två pizzor för 10 000 BTC: det var första gången som Bitcoin användes för att köpa fysiska varor.
+**visste du det?** Den 22 maj 2010 skrev Laszlo Hanyecz historia genom att erbjuda sig att köpa två pizzor för 10 000 BTC: det var första gången som Bitcoin användes för att köpa fysiska varor.
 
 ![image](assets/en/44.webp)
 
@@ -782,7 +782,7 @@ För att slutföra transaktionen måste Bob signera den med sin privata nyckel f
 
 ![image](assets/en/46.webp)
 
-**Varför betalar vi avgifter? ** Avgifter är nödvändiga för att skapa en fri marknad för att inkludera transaktioner i block. Faktum är att ett block har en storlek på 1 MB (som utökades till 4 MB efter Segwit-uppdateringen), så antalet transaktioner som kan "infogas" i ett block är begränsat till några tusen transaktioner per block. Storleken på en transaktion beror på dess komplexitet. Därför medför mer komplexa transaktioner vanligtvis högre avgifter.
+**Varför betalar vi avgifter?** Avgifter är nödvändiga för att skapa en fri marknad för att inkludera transaktioner i block. Faktum är att ett block har en storlek på 1 MB (som utökades till 4 MB efter Segwit-uppdateringen), så antalet transaktioner som kan "infogas" i ett block är begränsat till några tusen transaktioner per block. Storleken på en transaktion beror på dess komplexitet. Därför medför mer komplexa transaktioner vanligtvis högre avgifter.
 
 ### Steg 2: Spridning av transaktionen genom noderna
 
@@ -808,7 +808,7 @@ I det här skedet anses transaktionen vara giltig: minern sprider sedan det nya 
 
 ![image](assets/en/50.webp)
 
-**Även om Alice får ett meddelande om att hon har tagit emot bitcoins på en av sina adresser är det lämpligt att betrakta transaktionen som oföränderlig först efter att den har fått **sex** bekräftelser. Detta innebär att ytterligare sex block måste minas ovanpå det block som innehåller Bobs transaktion. Med andra ord, ju äldre en transaktion är i blockkedjan, desto mer oföränderlig blir den.
+**Observera** Även om Alice får ett meddelande om att hon har tagit emot bitcoins på en av sina adresser är det lämpligt att betrakta transaktionen som oföränderlig först efter att den har fått **sex** bekräftelser. Detta innebär att ytterligare sex block måste minas ovanpå det block som innehåller Bobs transaktion. Med andra ord, ju äldre en transaktion är i blockkedjan, desto mer oföränderlig blir den.
 
 ### Vilken betydelse har denna process?
 
@@ -1023,7 +1023,7 @@ Priset på Bitcoin kännetecknas ofta av betydande volatilitet. Dess värde kan 
 
 ![image](assets/en/67.webp)
 
-Enkelt uttryckt tenderar människor att köpa allt på en gång och sälja allt på en gång. **Bitcoin är inte immunt mot den mänskliga naturen
+Enkelt uttryckt tenderar människor att köpa allt på en gång och sälja allt på en gång. **Bitcoin är inte immunt mot den mänskliga naturen.**
 
 ### Förståelse för adoptionsvågor
 
@@ -1194,7 +1194,7 @@ De är enkla att använda och tillgängliga för alla:
 
 Efter köpet är det rekommenderat att omedelbart ta ut bitcoins från handelsplattformarna för att minimera riskerna för hackning och blockering. Var medveten om att uttagsavgifterna kan vara höga, ibland upp till 25 euro beroende på plattform.
 
-**KYC-bestämmelser (Know Your Customer) kräver att användare identifierar sig för att bekämpa finansiering av terrorism, skatteflykt och penningtvätt.
+**KYC-bestämmelser** (Know Your Customer) kräver att användare identifierar sig för att bekämpa finansiering av terrorism, skatteflykt och penningtvätt.
 
 Det är viktigt att erkänna att KYC är ett viktigt diskussionsämne i Bitcoin-industrin. Medan många människor debatterar dess effektivitet finns det många problem förknippade med det. I många av vår akademis utbildningsprogram och innehåll råder vi avancerade användare att undvika plattformar som kräver KYC, eftersom det ofta finns mer integritetsfokuserade alternativ tillgängliga.
 
