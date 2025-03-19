@@ -82,8 +82,8 @@ Ve složce `../Bitcoin-learning-management-system/` spusťte následující př�
 pnpm install
 ```
 
-> [!TIP]
-> Nezapomeňte čas od času aktualizovat závislosti i samotné pnpm
+__TIP:__ Nezapomeňte čas od času aktualizovat závislosti i samotné pnpm
+
 **5. Spuštění kontejnerů**
 
 Ve složce `../Bitcoin-learning-management-system/` spusťte vývojové prostředí pomocí nástroje Docker:

@@ -82,8 +82,7 @@ Käivitage oma kaustas `../Bitcoin-learning-management-system/` järgmine käsk,
 pnpm install
 ```
 
-> [!TIPP]
-> Ärge unustage aeg-ajalt uuendada nii sõltuvusi kui ka pnpm ise
+__TIP:__ Ärge unustage aeg-ajalt uuendada nii sõltuvusi kui ka pnpm ise
 **5. Käivitage konteinerid**
 
 Käivitage arenduskeskkond Dockeriga oma kaustas `../Bitcoin-learning-management-system/`:

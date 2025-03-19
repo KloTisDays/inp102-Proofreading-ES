@@ -82,8 +82,8 @@ sudo apt install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-esse
 pnpm install
 ```
 
-> [！提示]
-> 切记不时更新依赖项和 pnpm 本身
+__TIP:__ 切记不时更新依赖项和 pnpm 本身
+
 **5.运行容器**
 
 在 `../Bitcoin-learning-management-system/` 文件夹中，使用 Docker 启动开发环境：

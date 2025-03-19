@@ -82,8 +82,8 @@ sudo apt install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-esse
 pnpm install
 ```
 
-> [!TIP]
-> Не забывайте время от времени обновлять как зависимости, так и сам pnpm
+__TIP:__ Не забывайте время от времени обновлять как зависимости, так и сам pnpm
+
 **5. Запустите контейнеры**
 
 В папке `../Bitcoin-learning-management-system/` запустите среду разработки с помощью Docker:
