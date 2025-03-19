@@ -82,8 +82,8 @@ Dentro da sua pasta `../Bitcoin-learning-management-system/`, execute o seguinte
 pnpm install
 ```
 
-> [!TIP]
-> Lembre-se de atualizar periodicamente as dependências e o próprio pnpm
+__TIP:__ Lembre-se de atualizar periodicamente as dependências e o próprio pnpm
+
 **5. Executar os contentores**
 
 Dentro da sua pasta `../Bitcoin-learning-management-system/`, inicie o ambiente de desenvolvimento com o Docker:

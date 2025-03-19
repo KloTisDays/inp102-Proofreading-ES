@@ -82,8 +82,8 @@ I mappen `../Bitcoin-learning-management-system/` kjører du følgende kommando 
 pnpm install
 ```
 
-> [!TIP]
-> Husk å oppdatere både avhengigheter og selve pnpm fra tid til annen
+__TIP:__ Husk å oppdatere både avhengigheter og selve pnpm fra tid til annen
+
 **5. Kjør beholderne**
 
 Start utviklingsmiljøet med Docker i mappen `../Bitcoin-learning-management-system/`:

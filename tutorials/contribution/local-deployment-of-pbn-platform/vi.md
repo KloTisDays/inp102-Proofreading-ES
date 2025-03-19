@@ -82,8 +82,8 @@ Trong thư mục `../Bitcoin-learning-management-system/` của bạn, hãy ch�
 pnpm install
 ```
 
-> [!MẸO]
-> Hãy nhớ cập nhật theo thời gian cả các phụ thuộc và pnpm
+__TIP:__ Hãy nhớ cập nhật theo thời gian cả các phụ thuộc và pnpm
+
 **5. Chạy các Container**
 
 Trong thư mục `../Bitcoin-learning-management-system/` của bạn, hãy khởi động môi trường phát triển với Docker:

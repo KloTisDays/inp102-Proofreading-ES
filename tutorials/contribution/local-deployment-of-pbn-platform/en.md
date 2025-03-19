@@ -1,5 +1,5 @@
 ---
-name: Guide to Running the Plan ₿ Network Plattform Locally
+name: Guide to Running the Plan ₿ Network Platform Locally
 description: How can you run the Plan ₿ Network in a local environment to test my content contribution or proofreading/review of educational content on Plan ₿ Network?
 ---
 ![github](assets/cover.webp)
@@ -88,8 +88,7 @@ Inside your `../bitcoin-learning-management-system/` folder, run the following c
 pnpm install
 ```
 
-> [!TIP]
-> Remember to update from time to time both dependencies and pnpm itself
+__TIP:__Remember to update from time to time both dependencies and pnpm itself
 
 
 **5. Run the Containers**  

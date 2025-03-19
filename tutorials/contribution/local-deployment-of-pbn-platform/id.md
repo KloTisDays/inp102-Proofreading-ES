@@ -82,8 +82,8 @@ Di dalam folder `../Bitcoin-learning-management-system/`, jalankan perintah beri
 pnpm install
 ```
 
-> [!TIP]
-> Ingatlah untuk memperbarui dari waktu ke waktu baik dependensi maupun pnpm itu sendiri
+__TIP:__ Ingatlah untuk memperbarui dari waktu ke waktu baik dependensi maupun pnpm itu sendiri
+
 **5. Jalankan Wadah**
 
 Di dalam folder `../Bitcoin-learning-management-system/`, mulai lingkungan pengembangan dengan Docker:

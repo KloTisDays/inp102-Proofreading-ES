@@ -82,8 +82,8 @@ Asenna `../Bitcoin-learning-management-system/` -kansioon seuraava komento asent
 pnpm install
 ```
 
-> [!TIP]
-> Muista päivittää aika ajoin sekä riippuvuudet että itse pnpm:n tiedot
+__TIP:__ Muista päivittää aika ajoin sekä riippuvuudet että itse pnpm:n tiedot
+
 **5. Suorita säiliöt**
 
 Käynnistä kehitysympäristö Dockerilla kansiossa `../Bitcoin-learning-management-system/`:
