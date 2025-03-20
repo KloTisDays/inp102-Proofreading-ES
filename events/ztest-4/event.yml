@@ -1,18 +1,20 @@
-id: 1bcf15fe-f4a7-4225-b85c-0829ea5ec4e2
+id: 0f17beae-82c0-4622-aa64-3af2c37fcabc
 test_only: true
-start_date: 2027-01-08  12:00:00
-end_date: 2027-01-08 19:00:00
-timezone: Europe/Prague
-address_city_country: Prague, Czech Republic
-name: TEST - Free hybrid
-type: workshop
-book_online: true
+start_date: 2027-01-03
+end_date: 2027-01-04
+timezone: Mexico/General
+address_city_country: Cholul, Merida, Mexico
+address_line_2: Universidad Latino, Plaza Altabrisa, Cholul, Merida
+name: TEST - Free in person
+type: conference
+book_online: false
 book_in_person: true
 price_dollars: 0
 available_seats: 20
-is_gdpr_compliance: false
-custom_tc_disclaimer: 
-description: .
+is_gdpr_compliance: true
+custom_tc_disclaimer: This is a test of custom gdpr message.
+description: A virtual world conference without compromise on experienced focused
+  on Lightning and Nostr.
 language:
   - en
 links:
