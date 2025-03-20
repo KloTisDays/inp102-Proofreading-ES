@@ -1,7 +1,7 @@
 id: b6cf659a-1a49-4f20-80dd-32deac3fd70d
 test_only: true
-start_date: 2027-01-03
-end_date: 2027-01-04
+start_date: 2027-01-01 12:00:00
+end_date: 2027-01-01 14:00:00
 timezone: Europe/Berlin
 address_city_country: Thun, Switzerland
 address_line_2:
