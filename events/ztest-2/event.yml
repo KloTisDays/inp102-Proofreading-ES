@@ -11,8 +11,8 @@ book_online: false
 book_in_person: true
 price_dollars: 0
 available_seats: 20
-is_gdpr_compliance: false
-custom_tc_disclaimer: 
+is_gdpr_compliance: true
+custom_tc_disclaimer: This is a test of custom gdpr message.
 description: A virtual world conference without compromise on experienced focused
   on Lightning and Nostr.
 language:

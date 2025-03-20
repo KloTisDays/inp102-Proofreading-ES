@@ -9,11 +9,12 @@ type: workshop
 book_online: true
 book_in_person: false
 price_dollars: 5
-is_gdpr_compliance: false
+is_gdpr_compliance: true
 custom_tc_disclaimer: 
 description: .
 language:
   - en
+  - fr
 links:
   website: https://www.planbtest.network
   replay_url:
