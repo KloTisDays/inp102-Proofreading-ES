@@ -1,0 +1,27 @@
+id: b6cf659a-1a49-4f20-80dd-32deac3fd70d
+test_only: true
+start_date: 2027-01-01 12:00:00
+end_date: 2027-01-01 14:00:00
+timezone: Mexico/General
+address_city_country: Cholul, Merida, Mexico
+address_line_2: Universidad Latino, Plaza Altabrisa, Cholul, Merida
+name: TEST - Charged in person
+type: conference
+book_online: false
+book_in_person: true
+price_dollars: 0
+is_gdpr_compliance: true
+custom_tc_disclaimer: This is a test of custom gdpr message.
+description: A virtual world conference without compromise on experienced focused
+  on Lightning and Nostr.
+language:
+  - en
+links:
+  website: https://www.planbtest.network
+  replay_url:
+  live_url:
+project_id: 3833a0e2-4fac-4832-8e7c-487f736d24cd
+tags:
+  - lightning
+  - node
+  - protocols
