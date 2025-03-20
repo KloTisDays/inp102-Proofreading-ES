@@ -1,18 +1,17 @@
 id: b6cf659a-1a49-4f20-80dd-32deac3fd70d
 test_only: true
-start_date: 2027-01-03
-end_date: 2027-01-04
-timezone: Europe/Berlin
-address_city_country: Thun, Switzerland
-address_line_2:
-address_line_3:
-name: TEST - Charged in person
+start_date: 2027-01-01 12:00:00
+end_date: 2027-01-01 14:00:00
+timezone: Mexico/General
+address_city_country: Cholul, Merida, Mexico
+address_line_2: Universidad Latino, Plaza Altabrisa, Cholul, Merida
+name: TEST - Free in person
 type: conference
 book_online: false
 book_in_person: true
-price_dollars: 3
-is_gdpr_compliance: true
-custom_tc_disclaimer: This is a test of custom gdpr message.
+price_dollars: 0
+is_gdpr_compliance: false
+custom_tc_disclaimer: 
 description: A virtual world conference without compromise on experienced focused
   on Lightning and Nostr.
 language:
