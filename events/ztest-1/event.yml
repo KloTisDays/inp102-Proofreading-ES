@@ -11,6 +11,7 @@ type: conference
 book_online: false
 book_in_person: true
 price_dollars: 3
+available_seats: 0
 is_gdpr_compliance: true
 custom_tc_disclaimer: This is a test of custom gdpr message.
 description: A virtual world conference without compromise on experienced focused
@@ -21,7 +22,7 @@ links:
   website: https://www.planbtest.network
   replay_url:
   live_url:
-project_id: 3833a0e2-4fac-4832-8e7c-487f736d24cd
+project_id: cd62a137-baad-4133-b90d-711963e510c7
 tags:
   - lightning
   - node

@@ -1,14 +1,15 @@
-id: 65bf44e7-dcf9-4629-ad44-dc3c15f773a9
+id: 1bcf15fe-f4a7-4225-b85c-0829ea5ec4e2
 test_only: true
-start_date: 2027-01-06 12:00:00
-end_date: 2027-01-07
+start_date: 2027-01-08  12:00:00
+end_date: 2027-01-08 19:00:00
 timezone: Europe/Prague
 address_city_country: Prague, Czech Republic
-name: TEST - Charged online
+name: TEST - Free hybrid
 type: workshop
 book_online: true
-book_in_person: false
-price_dollars: 5
+book_in_person: true
+price_dollars: 0
+available_seats: 20
 is_gdpr_compliance: false
 custom_tc_disclaimer: 
 description: .
