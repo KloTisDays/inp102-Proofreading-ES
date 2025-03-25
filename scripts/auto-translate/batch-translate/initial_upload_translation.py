@@ -79,7 +79,7 @@ def main():
     base_directories = [
         "../../../courses",
         "../../../professors",
-        "../../../resources/builders",
+        "../../../resources/projects/",
         "../../../resources/bet",
         "../../../resources/books",
         "../../../tutorials"
