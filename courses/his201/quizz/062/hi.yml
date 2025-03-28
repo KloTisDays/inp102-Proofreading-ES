@@ -1,8 +1,0 @@
-question: किसी सहकारी सदस्य के Hash दर का अनुमान लगाने के लिए आंशिक Proof of Work का उपयोग करना क्या शामिल करता है?
-answer: हैशर द्वारा उत्पन्न नेटवर्क कठिनाई से कम डिग्री के कार्य प्रमाणों को पुनः प्राप्त करना
-wrong_answers:
-  - हैशर द्वारा उत्पन्न किए गए Hash ब्लॉक के प्रत्येक भाग के पहले बाइट सहित स्टाम्प की छाप को प्राप्त करना
-  - हर महीने हैशर का बिजली बिल प्राप्त करना
-  - कम कठिनाई वाले नेटवर्क, जैसे BitDNS, पर तैयार किए गए कार्य प्रमाणों को प्राप्त करना
-  This simple method was proposed by ribuck, Nils Schneider, and Gavin Andresen [on the forum](https: //bitcointalk.org/index.php?topic=1458.msg16951#msg16951) on October 14, 2010. ()
-reviewed: false

@@ -1,8 +1,0 @@
-question: Lightning Network पर चैनल बंद करने के तीन तरीके कौन से हैं?
-answer: सहकारी बंद, जबरन बंद, धोखाधड़ी के साथ बंद
-wrong_answers:
-  - तेज़ी से बंद करना, धीरे-धीरे बंद करना, और दोहरे हस्ताक्षर के साथ बंद करना
-  - सुरक्षित समापन, स्वचालित समापन, धन की हानि के साथ समापन
-  - प्रत्यक्ष समापन, अप्रत्यक्ष समापन, दावे के साथ समापन
-  There are three methods: cooperative closure where the parties agree, forced closure without a response from one party, and closure with cheating where a party attempts to publish an old transaction.
-reviewed: false

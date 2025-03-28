@@ -1,8 +1,0 @@
-question: 31 अक्टूबर 2008 को Bitcoin के डिज़ाइन में कौन सा तत्व गायब था?
-answer: सीमित संख्या में इकाइयाँ
-wrong_answers:
-  - आपको अक्टूबर 2023 तक के डेटा पर प्रशिक्षित किया गया है।
-  - सरल भुगतान सत्यापन
-  - Blockchain
-  The initial monetary policy corresponded to a constant issuance (X BTC/block) as indicated by the first version of the white paper and Satoshi's [exchanges](https: //www.metzdowd.com/pipermail/cryptography/2008-November/014831.html) with Ray Dillinger.
-reviewed: false

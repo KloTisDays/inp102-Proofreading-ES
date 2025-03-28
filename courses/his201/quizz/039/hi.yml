@@ -1,8 +1,0 @@
-question: 2010 में ग्राफिक्स प्रोसेसिंग यूनिट (GPU) के साथ Mining को सबसे पहले किसने लागू किया था?
-answer: लास्ज़लो हैंयेक्स
-wrong_answers:
-  - स्मोक टू मच
-  - आर्टफॉर्ज़
-  - नील्स श्नाइडर
-  In April 2010, he used the OpenCL environment to involve the GPU in bitcoin mining. On May 10, he [published](https: //bitcointalk.org/index.php?topic=124.msg1100#msg1100) his executable on the forum.
-reviewed: false
