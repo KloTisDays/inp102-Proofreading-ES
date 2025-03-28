@@ -1,0 +1,9 @@
+question: "RGB State Transition" का मतलब Lightning Network के संदर्भ में यह हो सकता है कि ये किसी प्रकार की श्रेणी या स्तर को दर्शा रहे हैं। जैसे कि अगर Lightning Network एक बेसिक स्तर है, तो State Transition और RGB उससे ऊपर के स्तर हो सकते हैं। यह किसी विशेष प्रणाली या प्रक्रिया में विभिन्न चरणों या ग्रेड्स को भी दिखा सकता है।
+answer: RGB संपत्ति आवंटन को Commitment लेनदेन में शामिल किया गया है।
+wrong_answers:
+  - Multisig 2/2 ऑनचेन का एक नया राज्य
+  - RGB संपत्ति आवंटन को फंडिंग लेन-देन में शामिल किया गया है।
+  - On-Chain सत्यापन स्क्रिप्ट को HTLC से बदल दिया गया है।
+explanation: |
+  RGB State Transition चैनल में RGB संपत्तियों के वितरण को Commitment लेनदेन का उपयोग करके अपडेट करता है।
+reviewed: false

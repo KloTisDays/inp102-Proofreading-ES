@@ -1,0 +1,8 @@
+question: Satoshi नाकामोटो ने अपने लेखन में जिस निजी मुद्रा प्रणाली का स्पष्ट रूप से उल्लेख किया था, वह "बिटकॉइन" है।
+answer: लिबर्टी रिज़र्व
+wrong_answers:
+  - ई-गोल्ड
+  - लिबर्टी डॉलर
+  - ई-बुलियन
+  This one was indeed still active at the time of Bitcoin, unlike e-gold and the Liberty Dollar. Satoshi also [mentioned](https: //bitcointalk.org/index.php?topic=87.msg807#msg807) Pecunix, a digital gold currency created in 2002.
+reviewed: false

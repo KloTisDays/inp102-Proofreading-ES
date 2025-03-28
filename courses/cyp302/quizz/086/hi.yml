@@ -1,0 +1,8 @@
+question: ECB (Electronic Codebook) विधि का मुख्य दोष यह है कि यह एक ही plaintext ब्लॉक को हमेशा एक ही ciphertext ब्लॉक में एन्क्रिप्ट करता है। इसका मतलब है कि अगर एक ही डेटा पैटर्न बार-बार आता है, तो उसका एन्क्रिप्टेड आउटपुट भी एक जैसा होगा। इससे डेटा पैटर्न को पहचानना आसान हो जाता है, जिससे सुरक्षा में कमी आती है। यह विधि डेटा की गोपनीयता को पूरी तरह से सुनिश्चित नहीं कर पाती, खासकर जब डेटा में दोहराव होता है।
+answer: यह निर्धारक है और डेटा में पैटर्न को उजागर कर सकता है।
+wrong_answers:
+  - यह विभिन्न लंबाई की चाबियों की आवश्यकता होती है।
+  - यह 128 बिट्स से अधिक के संदेशों के साथ काम नहीं करता है।
+  - यह 256 बिट्स से अधिक के संदेशों के साथ काम नहीं करता है।
+  The ECB method (Electronic Code Book) is deterministic: identical blocks of data are encrypted in the same way, which allows patterns to be detected in the encrypted text.
+reviewed: false

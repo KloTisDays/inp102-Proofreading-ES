@@ -1,0 +1,8 @@
+question: जुलाई 2010 में, Satoshi ने अपनी बातचीत में Bitcoin के किस पहलू को कम महत्व देना चाहा?
+answer: लेन-देन की गुमनामी
+wrong_answers:
+  - मौद्रिक नीति
+  - ई-कॉमर्स
+  - प्रोग्रामेबिलिटी
+  Regarding the draft presentation for Slashdot, he stated he did not want to put the anonymous aspect in the foreground. He explained his reasons to Martti Malmi [in private](https: //mmalmi.github.io/satoshi/#email-197).
+reviewed: false

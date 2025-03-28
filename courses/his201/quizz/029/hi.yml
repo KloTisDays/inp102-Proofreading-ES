@@ -1,0 +1,8 @@
+question: साइफरपंक्स के संस्थापक सदस्य जॉन गिल्मोर ने जनवरी 2009 में Satoshi नाकामोटो के आविष्कार की आलोचना की थी। उन्होंने कहा कि यह आविष्कार गोपनीयता और विकेंद्रीकरण के सिद्धांतों पर पूरी तरह खरा नहीं उतरता। गिल्मोर का मानना था कि इस तकनीक में कुछ खामियां हैं जो इसके मूल उद्देश्यों को प्रभावित कर सकती हैं।
+answer: Bitcoin ग्रह को प्रदूषित करता है।
+wrong_answers:
+  - Bitcoin कर चोरी को आसान बनाता है।
+  - Bitcoin सिबिल हमलों के प्रति संवेदनशील है।
+  - Bitcoin अपस्फीतिकारी है।
+  He [criticized](https: //www.metzdowd.com/pipermail/cryptography/2009-January/015042.html) Bitcoin for consuming electricity and generating carbon dioxide (a greenhouse gas).
+reviewed: false

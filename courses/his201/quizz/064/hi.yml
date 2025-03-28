@@ -1,0 +1,8 @@
+question: पहला लेख जिसमें Bitcoin का परिचय दिया गया था और जो फ्रेंच में प्रकाशित हुआ था, उसके लेखक कौन थे?
+answer: लुसियन ग्रोंडिन (ग्रोंडिलू)
+wrong_answers:
+  - लियोनेल ड्रिकोट (प्लूम)
+  - अमौरी सेशे (डेडलनिक्स)
+  - डेविड फ्रांस्वा (दवू)
+  It was a [text](https: //linuxfr.org/news/connaissez-vous-les-bitcoins) published on September 30, 2010, on LinuxFr.org titled Do you know about bitcoins?.
+reviewed: false
