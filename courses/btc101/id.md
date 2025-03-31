@@ -1048,6 +1048,7 @@ Saat ini, Bitcoin terus bertahan dan semakin berkembang dengan semakin diintegra
 
 ![image](assets/en/71.webp)
 
+
 ## Mendapatkan Bitcoin dengan Bekerja
 
 <chapterId>be2d83be-406f-582c-83ca-6aa905ff7b04</chapterId>
@@ -1085,6 +1086,10 @@ https://planb.network/tutorials/business/point-of-sale/open-node-e69a0c1c-47f7-4
 https://planb.network/tutorials/business/point-of-sale/swiss-bitcoin-pay-2-a78b057e-ed11-47ac-860c-71019fcb451a
 
 - Solusi untuk struktur besar atau pengguna bitcoin yang bersemangat: Server BTCpay
+
+Untuk mempelajari lebih lanjut tentang topik ini, kami merekomendasikan pelatihan kami BIZ101! Temukan cara mengintegrasikan bitcoin secara efektif ke dalam kas perusahaan Anda, menerima bitcoin sebagai alat pembayaran sesuai dengan profil organisasi Anda, dan memahami persyaratan pajak dan akuntansi terkait:
+
+https://planb.network/courses/a804c4b6-9ff5-4a29-a530-7d2f5d04bb7a
 
 ## Menabung dengan Bitcoin
 
