@@ -1,7 +1,7 @@
 ---
 name: लाइटनिंग के साथ SDK पर विकास करना
 goal: अपने लाइटनिंग विकास कौशल को उन्नत करें मध्यम स्तर के Rust और SDK प्रशिक्षण के साथ।
-objectives: 
+objectives:
 
   - आपको Rust भाषा की आदत डालनी होगी।
   - Bitcoin को विकसित करने के लिए Rust का उपयोग क्यों करें, इसे समझें।
@@ -66,42 +66,49 @@ LN टस्कनी इवेंट का पहला हफ्ता
 आपका प्रशिक्षण अक्टूबर 2023 तक के डेटा पर आधारित है।
 
 ![video](https://www.youtube.com/watch?v=aZYhDXE_Gas)
+<videoId>90b7647a-3072-449a-9308-c4de5b31e6b9</videoId>
 
 ## Rust का परिचय (2/7)
 
 <chapterId>918ca359-c123-5414-af01-253016670f3a</chapterId>
 
 ![video](https://youtu.be/Xm8eCv4LQPc)
+<videoId>b36a6daa-0d20-4845-955d-85609c59073c</videoId>
 
 ## Rust का परिचय (3/7)
 
 <chapterId>0278ed13-68b6-59e1-97c5-f8dde505549b</chapterId>
 
 ![video](https://youtu.be/R8NeHvHT0uc)
+<videoId>4edc57df-84dd-4d42-8ffa-08be94039412</videoId>
 
 ## Rust का परिचय (4/7)
 
 <chapterId>915e523a-8fbd-5789-ab42-99b56a2a16c3</chapterId>
 
 ![video](https://youtu.be/et8pKvYiO4c)
+<videoId>6f80b98a-8b33-4888-b674-1bbc28c405e9</videoId>
 
 ## Rust का परिचय (5/7)
 
 <chapterId>96d54999-cdbc-5601-acac-1bc7acbe2eb7</chapterId>
 
 ![video](https://youtu.be/PxQkVmxOc40)
+<videoId>ca2a257a-abf3-4eed-adf2-19bd39b91182</videoId>
 
 ## परिचय Rust (6/7)
 
 <chapterId>a66c63ed-9514-51d1-b3a0-c8edb57603bb</chapterId>
 
 ![video](https://youtu.be/3C6hl9BW-Ho)
+<videoId>664b758a-4459-4c53-ba56-c2d9b03c285e</videoId>
 
 ## Rust का परिचय (7/7)
 
 <chapterId>21cf8dab-239a-580a-85cd-34326aeb1b26</chapterId>
 
 ![video](https://youtu.be/SBDcb_AauHM)
+<videoId>95e644d8-f2a6-4850-a5db-508dc5dbece6</videoId>
 
 # Rust और BTC
 
@@ -112,24 +119,28 @@ LN टस्कनी इवेंट का पहला हफ्ता
 <chapterId>92f13f36-70bd-5b00-8c6c-fcd1a1bd1531</chapterId>
 
 ![video](https://youtu.be/veLj2w6ulpc)
+<videoId>2d7caa3a-06e0-415d-96e2-43b175bd87f2</videoId>
 
 ## त्रुटि मॉडल
 
 <chapterId>1a648363-0aff-54dd-a79d-ead75231e5d6</chapterId>
 
 ![video](https://youtu.be/X3VKhLtKTRU)
+<videoId>3f932564-51fa-4175-9080-8c925f7151b2</videoId>
 
 ## आपको अक्टूबर 2023 तक के डेटा पर प्रशिक्षित किया गया है।
 
 <chapterId>fe1be3e3-2288-5a10-b64b-9ba72fb985d1</chapterId>
 
 ![video](https://youtu.be/zro9GQpJrH0)
+<videoId>e4a4c8bc-e4ab-42c0-bf08-4e298c02129c</videoId>
 
 ## ऐसिंक ट्रेट्स
 
 <chapterId>e1610abe-574c-5995-abe4-a92b0dca4c93</chapterId>
 
 ![video](https://youtu.be/cz66eTfk0lw)
+<videoId>f8f45f03-0f65-42d6-b56c-b5527a8f79ce</videoId>
 
 # SDK के साथ LNP/BP विकसित करना
 
@@ -140,24 +151,28 @@ LN टस्कनी इवेंट का पहला हफ्ता
 <chapterId>643e4670-bb1f-581f-a102-f84e8e5d2a02</chapterId>
 
 ![video](https://youtu.be/aEzpxuhLdeo)
+<videoId>3e96a549-bbbb-4c02-9056-6f4369a29c6f</videoId>
 
 ## ब्रीज़ एसडीके
 
 <chapterId>52f20a4d-7d81-58e4-be00-9d39334352af</chapterId>
 
 ![video](https://youtu.be/M3ad9BE6ovo)
+<videoId>eb036dc9-3f80-4b31-a029-9a6354892b5a</videoId>
 
 ## लिपा के लिए हरी झंडी
 
 <chapterId>7ba30435-d26e-5e6f-a973-94080d44bf27</chapterId>
 
 ![video](https://youtu.be/gKiIPF4apeE)
+<videoId>1873568a-0d9c-41f5-81af-b85a4ff5c287</videoId>
 
 ## ब्रीज़ एसडीके लिपा के लिए
 
 <chapterId>93d87d63-dd7b-5e05-ad2e-dda12915ea32</chapterId>
 
 ![video](https://youtu.be/6VaIVvBKjLY)
+<videoId>5c65201d-c103-4e31-92aa-0c3ae023fe78</videoId>
 
 # निष्कर्ष
 

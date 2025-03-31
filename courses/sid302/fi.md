@@ -1,7 +1,7 @@
 ---
 name: Liquid Bootcamp Essentials
 goal: Saat kattavan ymmärryksen Liquid Networkista ja Elements-projektista ja opit toteuttamaan kehittyneitä ratkaisuja luottamuksellisten transaktioiden, tokenisoinnin ja hajautetun verkkoarkkitehtuurin alalla.
-objectives: 
+objectives:
 
   - Ymmärtää Liquid-arkkitehtuurin perusteet ja sen suhde Bitcoiniin.
   - Opi konfiguroimaan ja käyttämään Liquid-solmuja Elements-ohjelmiston avulla.
@@ -41,6 +41,7 @@ Matka on suunniteltu siten, että se sopii eritasoisille osallistujille, ja se t
 <chapterId>4bca9c70-d54d-4e9a-b2db-17c3a6fa655b</chapterId>
 
 ![Video](https://youtu.be/QCyWXVWkcAM)
+<videoId>3cc7ea99-b139-44e0-b7b9-2753bdf766e5</videoId>
 
 Pablo esittelee Liquid Networkin arkkitehtuurin ja korostaa sen roolia Bitcoinin liitännäisketjuna. Esittelyssä käsitellään keskeisiä ominaisuuksia, kuten luottamuksellisia transaktioita, federaatiomallia ja sen toimintaa innovoinnin hiekkalaatikkona. Osallistujat saavat käsityksen siitä, miten Liquid täydentää Bitcoinia tarjoamalla nopeampia ja yksityisempiä transaktioita.
 
@@ -49,6 +50,7 @@ Pablo esittelee Liquid Networkin arkkitehtuurin ja korostaa sen roolia Bitcoinin
 <chapterId>1e9cfbed-108e-4067-afb9-4cf950cb43d3</chapterId>
 
 ![Video](https://youtu.be/9Yu0dPAJSek)
+<videoId>8c92a54a-2221-4b80-bad7-90aa1bdb180c</videoId>
 
 James esittelee Elements-ohjelmiston ja sen integroinnin Liquid Networkiin. Tämä istunto sisältää käytännön opastuksen Liquid-solmun käyttämiseen, Elementsin paikalliseen konfigurointiin ja transaktioiden hallintaan CLI- ja RPC-komennoilla.
 
@@ -57,6 +59,7 @@ James esittelee Elements-ohjelmiston ja sen integroinnin Liquid Networkiin. Täm
 <chapterId>3ff2df4a-8995-4d5e-9b8a-cd114880e666</chapterId>
 
 ![Video](https://youtu.be/zFvv0bn4ZWY)
+<videoId>3c4dc753-80d3-4ef9-b3bd-bb36f2f83376</videoId>
 
 Michael kertoo, miten monikerroksiset teknologiat, kuten Liquid, Lightning ja Bitcoin, parantavat transaktioiden tehokkuutta ja luotettavuutta. Keskeisiä aiheita ovat muun muassa HTLC:t turvallisia kerrosten välisiä transaktioita varten ja kehittyneet skriptiominaisuudet, jotka optimoivat Bitcoin-ekosysteemin.
 
@@ -65,6 +68,7 @@ Michael kertoo, miten monikerroksiset teknologiat, kuten Liquid, Lightning ja Bi
 <chapterId>1968db03-2364-46c0-9670-9e9844289ca1</chapterId>
 
 ![Video](https://youtu.be/6wNeHQBlhA4)
+<videoId>194a21d9-c695-4c23-96cc-805dbf65ac27</videoId>
 
 Bozza käsittelee Liquid Networkin liittovaltiorakennetta ja sen teknisiä komponentteja. Aiheisiin kuuluvat Liquidissa testatut innovaatiot, kuten Schnorr-allekirjoitukset ja Simplicity-skriptaukset, sekä Layer Two -ratkaisujen käyttöön liittyvät kompromissit.
 
@@ -73,6 +77,7 @@ Bozza käsittelee Liquid Networkin liittovaltiorakennetta ja sen teknisiä kompo
 <chapterId>5f4c0e50-b435-4b6c-b8b7-c55cc1a35431</chapterId>
 
 ![Video](https://youtu.be/IAdOxZyx7-Y)
+<videoId>e0b0519f-a72a-4b28-b171-ed7cd7b50c34</videoId>
 
 Chase korostaa Liquidin ekosysteemiä ja sen sovelluksia pääomamarkkinoilla. Hän käsittelee tokenisointia, yhteisön resursseja, Sid Swapin ja Stokrin kaltaisia työkaluja omaisuudenhallintaan sekä Liquidin kasvavaa käyttöönottoa liiketoimintaympäristöissä.
 
@@ -81,6 +86,7 @@ Chase korostaa Liquidin ekosysteemiä ja sen sovelluksia pääomamarkkinoilla. H
 <chapterId>4f21a0a7-0dc0-44cf-8a3a-d9e2f8a3f05f</chapterId>
 
 ![Video](https://youtu.be/AnMiD9amSUg)
+<videoId>a4d85d98-1136-4a9d-95e0-8a460e04e83c</videoId>
 
 Nardo tarjoaa yleiskatsauksen Blockstream AMP:stä, joka on alusta digitaalisten varojen hallinnointiin Liquidissa. Hän tarkastelee AMP:n arkkitehtuuria, sen kykyä hallita omaisuuserien siirtoja ja sen käytännön sovelluksia kehittäjille. Lisäksi tuodaan esiin AMP:n haasteita ja tulevia parannuksia.
 
@@ -95,6 +101,7 @@ Nardo tarjoaa yleiskatsauksen Blockstream AMP:stä, joka on alusta digitaalisten
 <chapterId>fb77442c-3d1e-427e-b2f5-16668ce4c643</chapterId>
 
 ![Video](https://youtu.be/ucc3a-udbgo)
+<videoId>4df51e5a-e95b-4bad-875f-1a1e147b2772</videoId>
 
 Antonio esittelee Breezen, avoimen lähdekoodin SDK:n, joka on suunniteltu hajautettuihin transaktioihin Liquid Networkissa. Hän käsittelee sen ominaisuuksia, kuten tukea monikielisille sidoksille ja turvallisille transaktioprosesseille, ja korostaa samalla sen tavoitetta yksinkertaistaa rahoitusteknologiaa kehittäjille
 

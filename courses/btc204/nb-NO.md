@@ -1,7 +1,7 @@
 ---
 name: Personvern på Bitcoin
 goal: Forstå og beherske prinsippene for personvern ved bruk av Bitcoin
-objectives: 
+objectives:
 
   - Definere de teoretiske begrepene som trengs for å forstå personvernspørsmål
   - Identifisere og redusere risikoen forbundet med tap av konfidensialitet for Bitcoin-brukere

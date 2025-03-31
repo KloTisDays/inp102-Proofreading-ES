@@ -1,7 +1,7 @@
 ---
 name: The RGB protocol, from theory to practice
 goal: Acquire the skills needed to understand and use RGB
-objectives: 
+objectives:
   - Understand the fundamental concepts of the RGB protocol
   - Master the principles of client-side validation and Bitcoin commitments
   - Learn how to create, manage and transfer RGB contracts
@@ -78,6 +78,7 @@ The written version of this training course was drafted using 2 main resources:
 <chapterId>f52f8af5-5d7c-588b-b56d-99b97176204b</chapterId>
 
 ![video](https://youtu.be/AF2XbifPGXM)
+<videoId>64c7692c-983d-4e4a-9744-5cc7d87c70f1</videoId>
 
 RGB is a protocol designed to apply and enforce digital rights (in the form of contracts and assets) in a scalable and confidential way, based on the consensus rules and operations of the Bitcoin blockchain. The aim of this first chapter is to present the basic concepts and terminology around the RGB protocol, highlighting in particular its close links with basic distributed computing concepts such as Client-side Validation and Single-use Seals.
 
@@ -421,6 +422,7 @@ Before diving into the more technical details of the second chapter, feel free t
 <chapterId>cc2fe85a-9cc7-5b8c-a00a-c0a867241061</chapterId>
 
 ![video](https://youtu.be/FS6PDprWl5Q)
+<videoId>7b14e637-3ca8-498f-8498-503005cb91b0</videoId>
 
 In this chapter, we'll look at the implementation of Client-side Validation and Single-use Seals within the Bitcoin blockchain. We'll present the main principles of RGB's **commitment layer** (layer 1), with a particular focus on the **TxO2** scheme, which RGB uses to define and close a seal in a Bitcoin transaction. Next, we'll discuss two important points that haven't yet been covered in detail:
 
@@ -1010,6 +1012,7 @@ In the next chapter, we'll look at the purely off-chain component of RGB, namely
 <chapterId>04a9569f-3563-5382-bf53-0c7069343ba0</chapterId>
 
 ![video](https://youtu.be/tmAVdyXGmj4)
+<videoId>be292911-b669-4d5d-b992-115f8cc9863d</videoId>
 
 In this and the next chapter, we'll look at the notion of **smart contract** within the RGB environment and explore the different ways in which these contracts can define and evolve their *state*. We'll see why the RGB architecture, using the ordered sequence of Single-use Seals, makes it possible to execute various types of ***Contract Operations*** in a scalable way and without going through a centralized registry. We'll also look at the fundamental role of ***Business Logic*** in framing the evolution of the contract state.
 
@@ -1102,6 +1105,7 @@ In the next chapter, we'll go into more detail about the concrete representation
 <chapterId>78c44e88-50c4-5ec4-befe-456c1a9f080b</chapterId>
 
 ![video](https://youtu.be/lUTjeuM0oTA)
+<videoId>fa2a44f7-dac8-4a71-8aa9-567e4e6f970c</videoId>
 
 In this chapter, we'll look at how operations in smart contracts and state transitions work, again within the RGB protocol. The aim will also be to understand how several participants cooperate to transfer ownership of an asset.
 
@@ -1925,6 +1929,7 @@ The Witness Transaction is the Bitcoin transaction that closes the Single-use Se
 <chapterId>8333ea5f-51c7-5dd5-b1d7-47d491e58e51</chapterId>
 
 ![video](https://youtu.be/Uo1UoxiImsI)
+<videoId>bc012288-ecbe-44f2-90f0-64b78733af25</videoId>
 
 In this chapter, we'll take a closer look at how an RGB contract is defined and implemented. We'll see what the components of an RGB contract are, what their roles are and how they are constructed.
 
@@ -2613,6 +2618,7 @@ In the next chapter, we'll look at how a contract transfer works, and how RGB in
 <chapterId>f043a307-d420-5752-b0d7-ebfd845802c0</chapterId>
 
 ![video](https://youtu.be/sVoKIi-1XbY)
+<videoId>e8043aff-1cb4-4e85-8576-b8745bae01a1</videoId>
 
 In this chapter, we're going to analyze the process of a contract transfer in the RGB ecosystem. To illustrate this, we'll take a look at Alice and Bob, our usual protagonists, who wish to exchange an RGB asset. We'll also show some command excerpts from the `rgb` command-line tool, to see how it works in practice.
 
@@ -2907,6 +2913,7 @@ Now that we've looked at the main elements of RGB programming, I'll take you thr
 <chapterId>0e0a645c-0049-588d-8965-b8c536590cc9</chapterId>
 
 ![video](https://youtu.be/GRwS-NvWF3I)
+<videoId>76080e68-faa2-473f-b69e-1c543c268457</videoId>
 
 In this chapter, we'll take a step-by-step approach to writing a contract, using the command-line tool `rgb`. The aim is to show how to install and manipulate the CLI, compile a **Schema**, import the **Interface** and the **Interface Implementation**, then issue (*issue*) an asset. We'll also look at the underlying logic, including compilation and state validation. By the end of this chapter, you should be able to reproduce the process and create your own RGB contracts.
 
@@ -3206,6 +3213,7 @@ In the next chapter, we'll take a closer look at integrating RGB into the Lightn
 <chapterId>0962980a-8f94-5d0f-9cd0-43d7f884a01d</chapterId>
 
 ![video](https://youtu.be/mqCupTlDbA0)
+<videoId>51d07a09-941d-43fe-9e24-6934382d7661</videoId>
 
 In this chapter, I propose to examine how RGB can be used within the Lightning Network, to integrate and move RGB assets (tokens, NFTs, etc.) via off-chain payment channels.
 
@@ -3361,6 +3369,7 @@ Ecosystem linked to open-source deterministic developments.
 <chapterId>dc92a5e8-ed93-5a3f-bcd0-d433932842f4</chapterId>
 
 ![video](https://youtu.be/nbUtV8GOR_U)
+<videoId>bd9db370-1e28-4ed2-b8ef-3fbf7707b216</videoId>
 
 This final section of the course is based on presentations made by various speakers at the RGB bootcamp. It includes testimonials and reflections on RGB and its ecosystem, as well as presentations of tools and projects based on the protocol. This first chapter is moderated by Hunter Beast, and the next two by Frederico Tenga.
 
@@ -3427,6 +3436,7 @@ The **Bitmask** wallet is part of this approach: on the blockchain side, all you
 <chapterId>d4d80e07-5eac-5b29-a93a-123180e97047</chapterId>
 
 ![vidéo](https://youtu.be/5iAhsgCSL3U)
+<videoId>1616639a-5447-4e77-b308-9369bd89961b</videoId>
 
 In this chapter, based on a presentation by Frederico Tenga, we look at a set of tools and projects created by the Bitfinex team dedicated to RGB, with the aim of fostering the emergence of a rich and diverse ecosystem around this protocol. The team's initial aim is not to release a specific commercial product, but rather to provide software building blocks, contribute to the RGB protocol itself, and propose concrete implementation references such as a mobile wallet (*Iris Wallet*) or an RGB-compatible Lightning node.
 
@@ -3541,6 +3551,7 @@ In the next chapter, we'll take a closer look at how to launch an RGB Lightning 
 <chapterId>ecaabe32-20ba-5f8c-8ca1-a3f095792958</chapterId>
 
 ![vidéo](https://youtu.be/piQQH4Q2nr0)
+<videoId>01467b5b-e3e3-4370-813d-c52fddaad42d</videoId>
 
 In this final chapter, Frederico Tenga takes you step-by-step through setting up a Lightning RGB node on a Regtest environment, and shows you how to create RGB tokens on it. By launching two separate nodes, you'll also discover how to open a Lightning channel between them and exchange RGB assets.
 

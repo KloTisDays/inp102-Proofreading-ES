@@ -564,8 +564,8 @@ This brings us to the second element presented by Satoshi on the day of the netw
 
 > "The total circulation will be 21,000,000 units. &nbsp;They will be distributed to network nodes as they create blocks, with the amount issued being halved every 4 years.
 >
-> the first 4 years: 10,500,000 units 
-> the next 4 years: 5,250,000 units 
+> the first 4 years: 10,500,000 units
+> the next 4 years: 5,250,000 units
 > the next 4 years: 2,625,000 units
 > the next 4 years: 1,312,500 units
 > etc.

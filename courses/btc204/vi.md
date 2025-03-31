@@ -1,7 +1,7 @@
 ---
 name: Quyền riêng tư trên Bitcoin
 goal: Hiểu và nắm vững các nguyên tắc bảo vệ quyền riêng tư khi sử dụng Bitcoin
-objectives: 
+objectives:
 
   - Xác định các khái niệm lý thuyết cần thiết để hiểu các vấn đề về quyền riêng tư
   - Xác định và giảm thiểu rủi ro liên quan đến việc mất tính bảo mật cho người dùng Bitcoin

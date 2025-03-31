@@ -1,7 +1,7 @@
 ---
 name: Lo esencial del Liquid Bootcamp
 goal: Obtenga un conocimiento exhaustivo de la red Liquid y del proyecto Elements, y aprenda a implantar soluciones avanzadas en transacciones confidenciales, tokenización y arquitectura de red descentralizada.
-objectives: 
+objectives:
 
   - Comprender los fundamentos de la arquitectura Liquid y su relación con Bitcoin.
   - Aprenda a configurar y manejar los nodos Liquid mediante el software Elements.
@@ -41,6 +41,7 @@ Esta jornada está estructurada para dar cabida a participantes con distintos ni
 <chapterId>4bca9c70-d54d-4e9a-b2db-17c3a6fa655b</chapterId>
 
 ![Video](https://youtu.be/QCyWXVWkcAM)
+<videoId>3cc7ea99-b139-44e0-b7b9-2753bdf766e5</videoId>
 
 Pablo presenta la arquitectura de la Red Líquida, haciendo hincapié en su papel como cadena lateral federada de Bitcoin. Se cubren características clave como las transacciones confidenciales, el modelo de federación y su función como sandbox para la innovación. Los participantes comprenderán cómo Liquid complementa a Bitcoin ofreciendo transacciones más rápidas y privadas.
 
@@ -49,6 +50,7 @@ Pablo presenta la arquitectura de la Red Líquida, haciendo hincapié en su pape
 <chapterId>1e9cfbed-108e-4067-afb9-4cf950cb43d3</chapterId>
 
 ![Video](https://youtu.be/9Yu0dPAJSek)
+<videoId>8c92a54a-2221-4b80-bad7-90aa1bdb180c</videoId>
 
 James presenta el software Elements y su integración con la red Liquid. Esta sesión incluye una guía práctica para ejecutar un nodo Liquid, configurar Elements localmente y gestionar transacciones mediante comandos CLI y RPC.
 
@@ -57,6 +59,7 @@ James presenta el software Elements y su integración con la red Liquid. Esta se
 <chapterId>3ff2df4a-8995-4d5e-9b8a-cd114880e666</chapterId>
 
 ![Video](https://youtu.be/zFvv0bn4ZWY)
+<videoId>3c4dc753-80d3-4ef9-b3bd-bb36f2f83376</videoId>
 
 Michael analiza cómo las tecnologías multicapa, incluyendo Liquid, Lightning y Bitcoin, mejoran la eficiencia y fiabilidad de las transacciones. Los temas clave incluyen HTLC para transacciones seguras entre capas y funciones avanzadas de scripting que optimizan el ecosistema Bitcoin.
 
@@ -65,6 +68,7 @@ Michael analiza cómo las tecnologías multicapa, incluyendo Liquid, Lightning y
 <chapterId>1968db03-2364-46c0-9670-9e9844289ca1</chapterId>
 
 ![Video](https://youtu.be/6wNeHQBlhA4)
+<videoId>194a21d9-c695-4c23-96cc-805dbf65ac27</videoId>
 
 Bozza aborda la estructura federada de la red Liquid y sus componentes técnicos. Los temas incluyen innovaciones probadas en Liquid, como las firmas Schnorr y el scripting Simplicity, y las ventajas y desventajas de utilizar soluciones de capa dos.
 
@@ -73,6 +77,7 @@ Bozza aborda la estructura federada de la red Liquid y sus componentes técnicos
 <chapterId>5f4c0e50-b435-4b6c-b8b7-c55cc1a35431</chapterId>
 
 ![Video](https://youtu.be/IAdOxZyx7-Y)
+<videoId>e0b0519f-a72a-4b28-b171-ed7cd7b50c34</videoId>
 
 Chase destaca el ecosistema de Liquid y sus aplicaciones en los mercados de capitales. Habla de la tokenización, los recursos comunitarios y herramientas como Sid Swap y Stokr para la gestión de activos, así como de la creciente adopción de Liquid en entornos empresariales.
 
@@ -81,6 +86,7 @@ Chase destaca el ecosistema de Liquid y sus aplicaciones en los mercados de capi
 <chapterId>4f21a0a7-0dc0-44cf-8a3a-d9e2f8a3f05f</chapterId>
 
 ![Video](https://youtu.be/AnMiD9amSUg)
+<videoId>a4d85d98-1136-4a9d-95e0-8a460e04e83c</videoId>
 
 Nardo ofrece una visión general de Blockstream AMP, una plataforma para gestionar activos digitales en Liquid. Explora la arquitectura de AMP, su capacidad para controlar las transferencias de activos y sus aplicaciones prácticas para desarrolladores. También se destacan los retos y las futuras mejoras de AMP.
 
@@ -95,6 +101,7 @@ Nardo ofrece una visión general de Blockstream AMP, una plataforma para gestion
 <chapterId>fb77442c-3d1e-427e-b2f5-16668ce4c643</chapterId>
 
 ![Video](https://youtu.be/ucc3a-udbgo)
+<videoId>4df51e5a-e95b-4bad-875f-1a1e147b2772</videoId>
 
 Antonio presenta Breeze, un SDK de código abierto diseñado para transacciones descentralizadas en la red Liquid. Explica sus características, incluida la compatibilidad con enlaces multilingües y procesos de transacción seguros, al tiempo que hace hincapié en su objetivo de simplificar la tecnología financiera para los desarrolladores
 

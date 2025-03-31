@@ -2223,7 +2223,7 @@ $$
 
 Với:
 - $v$: số phiên bản kịch bản (mặc định `0xC0` cho Taproot);
-- $sz$: kích thước của script được mã hóa theo định dạng *CompactSize*; 
+- $sz$: kích thước của script được mã hóa theo định dạng *CompactSize*;
 - $S$: script.
 
 Các hash script khác nhau ($\text{h}_{\text{leaf}}$) được sắp xếp theo thứ tự từ điển trước tiên. Sau đó, chúng được nối lại với nhau thành từng cặp và đưa qua hàm băm có gắn thẻ `TapBranch`. Quá trình này được lặp lại từng bước để xây dựng cây Merkle:

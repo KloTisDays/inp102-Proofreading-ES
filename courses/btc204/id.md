@@ -1,7 +1,7 @@
 ---
 name: Privasi pada Bitcoin
 goal: Memahami dan menguasai prinsip-prinsip perlindungan privasi saat menggunakan Bitcoin
-objectives: 
+objectives:
 
   - Mendefinisikan konsep teoretis yang diperlukan untuk memahami masalah privasi
   - Mengidentifikasi dan memitigasi risiko yang terkait dengan hilangnya kerahasiaan pengguna Bitcoin

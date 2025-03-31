@@ -30,6 +30,7 @@ Ya seas un principiante en Bitcoin o un usuario más experimentado, este curso p
 <chapterId>df6230ae-ff35-56ea-8651-8e65580730a8</chapterId>
 
 ![video es](https://youtu.be/w9y0WsioH2c)
+<videoId>2f913acc-c2bb-4e74-9f80-5a778dc77602</videoId>
 
 Bienvenido al curso LNP201, que tiene como objetivo explicar el funcionamiento técnico de la Red Lightning.
 
@@ -87,6 +88,7 @@ Este es el final de este primer capítulo, donde hemos sentado las bases para la
 <chapterId>0cfb7e6b-96f0-508b-9210-90bc1e28649d</chapterId>
 
 ![video es](https://youtu.be/zS_isbMwT28)
+<videoId>29281b05-a693-45ba-965b-75ddfa6f07ed</videoId>
 Este capítulo es un poco especial ya que no estará dedicado directamente a Lightning, sino a Bitcoin. De hecho, la Red Lightning es una capa sobre Bitcoin. Por lo tanto, es esencial entender ciertos conceptos fundamentales de Bitcoin para comprender adecuadamente el funcionamiento de Lightning en los capítulos subsiguientes. En este capítulo, revisaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXOs, así como el funcionamiento de las transacciones de Bitcoin.
 
 ### Direcciones de Bitcoin, Claves Privadas y Claves Públicas
@@ -152,6 +154,7 @@ Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciale
 <chapterId>96243eb0-f6b5-5b68-af1f-fffa0cc16bfe</chapterId>
 
 ![video es](https://youtu.be/G9Fz1C4xf4Q)
+<videoId>51a03095-80ea-4b7d-ac2f-c66d9c3d702f</videoId>
 
 En este capítulo, veremos más precisamente cómo abrir un canal de pago en la Red Lightning y entender el vínculo entre esta operación y el sistema subyacente de Bitcoin.
 
@@ -215,6 +218,7 @@ En el próximo capítulo, exploraremos el funcionamiento técnico de una transac
 <chapterId>7d3fd135-129d-5c5a-b306-d5f2f1e63340</chapterId>
 
 ![video es](https://youtu.be/1sHUdqA7J04)
+<videoId>ad1e31b8-501e-4832-891b-ae42fb1b06f0</videoId>
 
 En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal en la Red Lightning, es decir, cuando los fondos se mueven de un lado del canal al otro.
 
@@ -270,6 +274,7 @@ Sin embargo, este sistema tiene un posible defecto, el cual abordaremos en el pr
 
 <chapterId>f2f61e5b-badb-5947-9a81-7aa530b44e59</chapterId>
 ![video es](https://youtu.be/GrXSB-nLvjE)
+<videoId>155db4bb-1fcb-41a7-b2ae-423c5aebb54d</videoId>
 En este capítulo, profundizaremos en cómo funcionan las transacciones en la Red Lightning discutiendo los mecanismos establecidos para protegerse contra el engaño, asegurando que cada parte se adhiera a las reglas dentro de un canal.
 
 ### Recordatorio: Transacciones de Compromiso
@@ -347,6 +352,7 @@ En este punto del entrenamiento, ya sabes cómo se abren los canales Lightning y
 <chapterId>29a72223-2249-5400-96f0-3756b1629bc2</chapterId>
 
 ![video es](https://youtu.be/zg-7PXwNRPc)
+<videoId>4b6f7c56-851e-47d7-9ad2-f368042d4334</videoId>
 
 En este capítulo, discutiremos **cerrar un canal** en la Red Lightning, lo cual se hace a través de una transacción de Bitcoin, justo como al abrir un canal. Después de ver cómo funcionan las transacciones dentro de un canal, ahora es momento de ver cómo cerrar un canal y recuperar los fondos en la blockchain de Bitcoin.
 
@@ -432,6 +438,7 @@ Hay tres maneras de cerrar un canal:
 <chapterId>45a7252c-fa4f-554b-b8bb-47449532918e</chapterId>
 
 ![video es](https://youtu.be/4UGonGv0toY)
+<videoId>7d744ee7-9a12-4e3a-a319-f4b18b85e972</videoId>
 
 En este capítulo, exploraremos cómo los pagos en la Red Lightning pueden llegar a un destinatario incluso si no están conectados directamente por un canal de pago. Lightning es, de hecho, una **red de canales de pago**, que permite enviar fondos a un nodo distante a través de los canales de otros participantes. Descubriremos cómo se enrutan los pagos a través de la red, cómo se mueve la liquidez entre canales y cómo se calculan las tarifas de transacción.
 
@@ -545,6 +552,7 @@ En este capítulo, exploramos el enrutamiento de pagos en la Red Lightning. Pero
 <chapterId>4369b85a-1365-55d8-99e1-509088210116</chapterId>
 
 ![video es](https://youtu.be/5ZGKt6O5gGo)
+<videoId>af711868-136b-44db-abbd-7d36f2e3fa29</videoId>
 
 En este capítulo, descubriremos cómo Lightning permite que los pagos transiten a través de nodos intermediarios sin necesidad de confiar en ellos, gracias a los **HTLC** (_Hashed Time-Locked Contracts_ o Contratos de Tiempo Bloqueado con Hash). Estos contratos inteligentes aseguran que cada nodo intermediario solo recibirá los fondos de su canal si reenvía el pago al destinatario final, de lo contrario, el pago no será validado.
 
@@ -661,6 +669,7 @@ En el próximo capítulo, descubriremos cómo un nodo que emite una transacción
 <chapterId>7e2ae959-c2a1-512e-b5d6-8fd962e819da</chapterId>
 
 ![video es](https://youtu.be/_7UuCI9TwlQ)
+<videoId>0c4faa8e-e5ca-4839-9eee-311dbe6c8304</videoId>
 
 En los capítulos anteriores, vimos cómo usar los canales de otros nodos para enrutamiento de pagos y alcanzar un nodo sin estar directamente conectado a él a través de un canal. También discutimos cómo asegurar la seguridad de la transferencia sin confiar en los nodos intermediarios. En este capítulo, nos centraremos en encontrar la mejor ruta posible para alcanzar un nodo objetivo.
 
@@ -747,6 +756,7 @@ En el siguiente capítulo, estudiaremos específicamente el funcionamiento de la
 
 <chapterId>e34c7ecd-2327-52e3-b61e-c837d9e5e8b0</chapterId>
 ![video es](https://youtu.be/V2NsdO0Zig8)
+<videoId>d1551308-34f8-41a8-a6ce-d1adcfafc9e7</videoId>
 En este capítulo, vamos a examinar más de cerca el funcionamiento de las **facturas** de Lightning, es decir, solicitudes de pago enviadas por el nodo receptor al nodo emisor. El objetivo es entender cómo pagar y recibir pagos en Lightning. También discutiremos 2 alternativas a las facturas clásicas: LNURL y Keysend.
 ![LNP201](assets/en/68.webp)
 
@@ -856,6 +866,7 @@ En el siguiente capítulo, veremos cómo un operador de nodo puede gestionar la 
 <chapterId>cc76d0c4-d958-57f5-84bf-177e21393f48</chapterId>
 
 ![video es](https://youtu.be/v3tMehXZ4R0)
+<videoId>e5909628-a221-4b7a-95b4-828b795ccbe6</videoId>
 
 En este capítulo, exploraremos estrategias para gestionar efectivamente la liquidez en la Red Lightning. La gestión de la liquidez varía dependiendo del tipo de usuario y contexto. Veremos los principios principales y las técnicas existentes para entender mejor cómo optimizar esta gestión.
 
@@ -926,6 +937,7 @@ En el próximo capítulo, propongo revisar los conceptos más importantes de est
 <chapterId>a65a571c-561b-5e1c-87bf-494644653c22</chapterId>
 
 ![video es](https://youtu.be/9VowzzMU1UA)
+<videoId>9f4ce147-4ce9-4c10-84b5-5cc15016aca5</videoId>
 En este capítulo final que marca el fin del entrenamiento LNP201, propongo revisar los conceptos importantes que hemos cubierto juntos.
 El objetivo de este entrenamiento era proporcionarte una comprensión comprensiva y técnica de la Red Lightning. Descubrimos cómo la Red Lightning depende de la blockchain de Bitcoin para realizar transacciones fuera de la cadena, mientras retiene las características fundamentales de Bitcoin, notablemente la ausencia de la necesidad de confiar en otros nodos.
 

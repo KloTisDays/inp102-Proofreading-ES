@@ -2207,7 +2207,7 @@ $$
 Con:
 
 - $v$: il numero di versione dello script (default `0xC0` per Taproot);
-- $sz$: la dimensione dello script codificato in formato _CompactSize_; 
+- $sz$: la dimensione dello script codificato in formato _CompactSize_;
 - $S$: lo script.
 
 I diversi hash dello script ($\text{h}_{\text{leaf}}$) vengono prima ordinati in ordine lessicografico. Poi, vengono concatenati a coppie e passati attraverso una funzione hash etichettata `TapBranch`. Questo processo viene ripetuto iterativamente per costruire, passo dopo passo, l'albero di Merkle:

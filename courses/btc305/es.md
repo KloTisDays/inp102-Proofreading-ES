@@ -429,11 +429,11 @@ Manten tu frase de recuperación segura. Si alguien accede a ella, específicame
 
 Usualmente, las billeteras de Bitcoin se denominan Hot Wallet (Billetera Caliente) o Cold Wallet (Billetera Fría). La mayoría de los compromisos están en la conveniencia, facilidad de uso y riesgos de seguridad. Cada uno de estos métodos también puede verse en una solución de custodia. Sin embargo, los compromisos aquí son principalmente de seguridad y privacidad y van más allá del alcance de este curso.
 
-### Hot Wallet 
+### Hot Wallet
 
 Las Hot Wallet (Billetera Caliente) son la manera más conveniente de interactuar con Bitcoin a través de móviles, web o software de escritorio. La billetera siempre está conectada a internet, permitiendo a los usuarios enviar o recibir Bitcoin. Sin embargo, esto también es su debilidad, la billetera, al estar siempre en línea, ahora es más vulnerable a ataques por hackers o malware en tu dispositivo. En BTCPay Server, las billeteras calientes almacenan las claves privadas en la instancia. Cualquiera que acceda a tu tienda BTCPay Server podría robar fondos de esta dirección si tiene malas intenciones. Cuando BTCPay Server se ejecuta en un entorno alojado, siempre deberías considerar esto en tu perfil de seguridad y preferiblemente no usar una Billetera Caliente en tal caso. Cuando BTCPay Server está instalado en hardware propio, asegurado y confiable para ti, el perfil de riesgo disminuye significativamente, ¡pero nunca desaparece!
 
-### Cold Wallet 
+### Cold Wallet
 
 Las personas mueven sus Bitcoin a una Cold Wallet (Billetera Fría) porque puede aislar las claves privadas de internet. Eliminar la conexión a internet de la ecuación reduce el riesgo de malware, spyware y swaps de SIM. Se cree que el almacenamiento en frío es superior al almacenamiento en caliente en términos de seguridad y autonomía, siempre y cuando se tomen precauciones adecuadas para evitar perder las claves privadas de Bitcoin. El almacenamiento en frío es más adecuado para grandes cantidades de Bitcoin, que no se pretenden gastar a menudo debido a la complejidad de la configuración de la billeteras.
 
@@ -1416,7 +1416,7 @@ La copia de seguridad de la semilla LND es útil para recuperar fondos de tu bil
 
 LND documenta el proceso de recuperación. Consulta https://github.com/lightningnetwork/lnd/blob/master/docs/recovery.md para la documentación.
 
-#### Ride The Lightning 
+#### Ride The Lightning
 
 Ride the Lightning es una herramienta de gestión de nodos Lightning construida como software de Código Abierto. BTCPay Server utiliza RTL como el componente de gestión de nodos Lightning en su stack. Los administradores de BTCPay Server pueden acceder a RTL a través de la configuración del Servidor - pestaña de Servicios o haciendo clic en la billetera Lightning.
 

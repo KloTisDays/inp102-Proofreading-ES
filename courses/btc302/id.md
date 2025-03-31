@@ -1,7 +1,7 @@
 ---
 name: Membuat Komunitas atau Pertemuan Bitcoin
 goal: Membuat dan mengatur komunitas atau pertemuan Bitcoin dengan mudah
-objectives: 
+objectives:
 
   - Pelajari cara membuat komunitas Bitcoin dan/atau pertemuan?
   - Membangun identitas visual dan digital untuk komunitas Anda, dan alat bantu apa yang dapat digunakan untuk memulainya?
@@ -334,6 +334,7 @@ Singkatnya, **kemungkinannya tidak terbatas dan bergantung pada kebutuhan Anda, 
 Untuk memandu Anda secara lebih detail, kami menawarkan video tutorial yang tidak lengkap, yang menyajikan beberapa kemungkinan:
 
 ![Tutorial Canva](https://www.youtube.com/watch?v=sgloI_v-nAk)
+<videoId>e6264634-2a83-4b00-b812-4e0b623f7d4c</videoId>
 
 ####
 
@@ -481,6 +482,7 @@ Kita lihat saja nanti, tetapi **sangat disarankan agar Anda memilih "Grup Telegr
 Untuk tutorial selanjutnya, kita akan menggunakan aplikasi APK "Telegram+"; sebuah aplikasi yang memungkinkan konfigurasi Telegram yang lebih canggih. Namun, hal ini tidak perlu, karena membuat grup atau super-grup di Telegram sekarang dapat dilakukan dengan sangat mudah di ponsel:
 
 ![Tutorial Telegram+](https://www.youtube.com/watch?v=Z5mE-LksBZw)
+<videoId>2fd7779c-1c8c-4bd5-8a0d-2be00343464c</videoId>
 
 ### Membuat Saluran Telegram
 
@@ -499,6 +501,7 @@ Namun, dimungkinkan untuk menambahkan kemampuan bagi anggota saluran untuk mengo
 Tutorial untuk membuat saluran Telegram:
 
 ![Tutorial Canale Telegram](https://www.youtube.com/watch?v=N5S7cgySV8U)
+<videoId>12e80598-2c37-4de8-a94b-0279b43cf387</videoId>
 
 ### Membuat Grup Telegram
 
@@ -523,6 +526,7 @@ Administrator saluran ini kemudian akan dapat:
 Tutorial untuk membuat grup Telegram:
 
 ![Tutorial canale Telegram](https://www.youtube.com/watch?v=u1BuxEsmFuA)
+<videoId>07abf25a-2357-43dc-ad01-fc16e5bb293d</videoId>
 
 Catatan: seperti yang telah disebutkan sebelumnya, tutorial di atas dibuat di komputer dengan APK "Telegram+". Namun, sekarang sangat mudah untuk membuat grup Telegram di ponsel.
 
@@ -563,6 +567,7 @@ Secara umum, tidak ada jumlah anggota tertentu yang relevan untuk menggunakan su
 Tutorial untuk membuat supergrup Telegram:
 
 ![Tutorial supergruppo Telegram](https://www.youtube.com/watch?v=GWVqpjBtg-U)
+<videoId>b81ef6a9-2a98-4aa5-9601-00604b225a53</videoId>
 
 Catatan: Seperti yang telah disebutkan di atas, tutorial di atas dibuat di komputer dengan APK "Telegram+". Namun, sekarang sangat mudah untuk membuat grup super Telegram di ponsel.
 
@@ -641,6 +646,7 @@ Sejumlah opsi tambahan juga tersedia bagi Anda. Namun demikian, sebuah saran: **
 Tutorial untuk menambahkan bot multifungsi ke grup atau super-grup di Telegram:
 
 ![Tutorial bot Telegram multifunzione](https://www.youtube.com/watch?v=l72GZcEFDtU)
+<videoId>1e539496-d32e-4ec0-8236-6da4b93b7d5d</videoId>
 
 Catatan kecil: seperti yang sudah disebutkan sebelumnya, sekarang semua prosedur ini bisa dilakukan melalui telepon.
 
@@ -659,6 +665,7 @@ Jelas, selain Telegram dan Twitter, ini membutuhkan lebih banyak waktu dalam pen
 Untuk mempermudah Anda, **kami membagikan [server Discord yang sudah jadi, dapat digandakan, dan dapat diedit](https://discord.com/template/bDY4eXXJk2C8) yang dapat Anda sesuaikan sesuai keinginan**:
 
 ![Tutorial server Discord duplicabile](https://www.youtube.com/watch?v=i3V6_359Ajw)
+<videoId>36cf649f-6563-40b9-8bb3-721a2efbc0f1</videoId>
 
 ####
 
@@ -671,6 +678,7 @@ Namun, penting untuk dicatat bahwa pemasangannya tidak terlalu mudah, bahwa **di
 Dengan tujuan untuk menghemat waktu Anda, berikut ini adalah tutorial tentang cara menambahkan bot multifungsi ke grup atau super-grup Telegram:
 
 ![Tutorial bot TediCross Discord - Telegram](https://www.youtube.com/watch?v=e4YAPG0ITF8)
+<videoId>e7d75514-3bbe-4c7f-a40e-96fdd71908fa</videoId>
 
 ## Pertimbangkan saluran komunikasi lain yang bersifat pribadi dan lebih aman
 
@@ -785,6 +793,7 @@ Terakhir, meskipun nama pengguna "@Bitcoin[CITY]" Anda unik dan sekarang menjadi
 Tutorial untuk membuat akun Twitter:
 
 ![Tutorial account Twitter](https://www.youtube.com/watch?v=pp3DDakV0bA)
+<videoId>bc2c3fc3-8ea6-4452-94c8-c619fd40ad82</videoId>
 
 ## Terhubung dengan pertemuan terdekat
 
@@ -1413,6 +1422,7 @@ Untuk menyederhanakan tugas pembuatan ini, tutorial di bawah ini menunjukkan kep
 Nantinya, Anda akan dapat membeli domain Anda sendiri dan bahkan meng-host-nya di server Anda sendiri jika Anda mau.
 
 ![Tutorial per creare un sito web WordPress gratuito](https://www.youtube.com/watch?v=cZzH4gj_kZY)
+<videoId>016dd7db-5804-4002-b71c-7c9131ce195c</videoId>
 
 ####
 
@@ -1483,6 +1493,7 @@ Jika Anda ingin merekam pada komputer Anda, perangkat lunak gratis seperti ["Aud
 Berikut ini adalah tutorial singkat yang menyajikan, dalam 10 menit, fitur-fitur utama yang perlu Anda ketahui tentang membuat podcast dengan Audacity.
 
 ![Tutorial per creare un podcast con Audacity](https://www.youtube.com/watch?v=z471_Ye6Y0I)
+<videoId>4de75f12-b526-4e51-acba-57bf2ee49b0d</videoId>
 
 Catatan: Seperti yang telah disebutkan sebelumnya, jika suatu saat Bitcoin dilarang atau disensor, maka akan sangat relevan **selalu simpan salinan lokal di hard drive podcast** yang Anda terbitkan.
 
@@ -1814,6 +1825,7 @@ Akhirnya:
 Secara lebih detail, dalam video berdurasi 21 menit, terlihat seperti ini:
 
 ![Tutorial Comunità Bitcoin](https://www.youtube.com/watch?v=EHLAmHHuZd8)
+<videoId>73a96650-4765-4466-af4d-fdcca2f64d2a</videoId>
 
 Bagaimanapun juga, **ingatlah bahwa Anda tidak sendirian dan bahwa komunitas yang ada siap membantu Anda**.
 

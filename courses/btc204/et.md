@@ -1,7 +1,7 @@
 ---
 name: Bitcoini privaatsus
 goal: Mõista ja omandada privaatsuse kaitse põhimõtteid Bitcoini kasutamisel
-objectives: 
+objectives:
 
   - Määratleda teoreetilised mõisted, mis on vajalikud eraelu puutumatuse mõistmiseks
   - Bitcoini kasutajate konfidentsiaalsuse kaotamisega seotud riskide tuvastamine ja leevendamine

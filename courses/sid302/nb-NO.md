@@ -1,7 +1,7 @@
 ---
 name: Grunnleggende om Liquid Bootcamp
 goal: Få en omfattende forståelse av Liquid Network og Elements-prosjektet, og lær hvordan du kan implementere avanserte løsninger innen konfidensielle transaksjoner, tokenisering og desentralisert nettverksarkitektur.
-objectives: 
+objectives:
 
   - Forstå det grunnleggende i Liquid-arkitekturen og dens forhold til Bitcoin.
   - Lær deg å konfigurere og betjene Liquid-noder ved hjelp av Elements-programvaren.
@@ -41,6 +41,7 @@ Denne reisen er strukturert for å imøtekomme deltakere med varierende eksperti
 <chapterId>4bca9c70-d54d-4e9a-b2db-17c3a6fa655b</chapterId>
 
 ![Video](https://youtu.be/QCyWXVWkcAM)
+<videoId>3cc7ea99-b139-44e0-b7b9-2753bdf766e5</videoId>
 
 Pablo introduserer Liquid Networks arkitektur, og legger vekt på dets rolle som en føderert sidekjede til Bitcoin. Viktige funksjoner som konfidensielle transaksjoner, føderasjonsmodellen og funksjonen som en sandkasse for innovasjon blir gjennomgått. Deltakerne vil få innsikt i hvordan Liquid utfyller Bitcoin ved å tilby raskere og mer private transaksjoner.
 
@@ -49,6 +50,7 @@ Pablo introduserer Liquid Networks arkitektur, og legger vekt på dets rolle som
 <chapterId>1e9cfbed-108e-4067-afb9-4cf950cb43d3</chapterId>
 
 ![Video](https://youtu.be/9Yu0dPAJSek)
+<videoId>8c92a54a-2221-4b80-bad7-90aa1bdb180c</videoId>
 
 James introduserer Elements-programvaren og dens integrasjon med Liquid Network. Denne økten inneholder en praktisk veiledning i hvordan du kjører en Liquid-node, konfigurerer Elements lokalt og administrerer transaksjoner ved hjelp av CLI og RPC-kommandoer.
 
@@ -57,6 +59,7 @@ James introduserer Elements-programvaren og dens integrasjon med Liquid Network.
 <chapterId>3ff2df4a-8995-4d5e-9b8a-cd114880e666</chapterId>
 
 ![Video](https://youtu.be/zFvv0bn4ZWY)
+<videoId>3c4dc753-80d3-4ef9-b3bd-bb36f2f83376</videoId>
 
 Michael diskuterer hvordan flerlagsteknologier, inkludert Liquid, Lightning og Bitcoin, forbedrer transaksjonseffektiviteten og påliteligheten. Viktige temaer inkluderer HTLC-er for sikre transaksjoner på tvers av lagene og avanserte skriptfunksjoner som optimaliserer Bitcoin-økosystemet.
 
@@ -65,6 +68,7 @@ Michael diskuterer hvordan flerlagsteknologier, inkludert Liquid, Lightning og B
 <chapterId>1968db03-2364-46c0-9670-9e9844289ca1</chapterId>
 
 ![Video](https://youtu.be/6wNeHQBlhA4)
+<videoId>194a21d9-c695-4c23-96cc-805dbf65ac27</videoId>
 
 Bozza tar for seg Liquid Networks fødererte struktur og de tekniske komponentene. Blant temaene er innovasjoner som er testet på Liquid, for eksempel Schnorr-signaturer og Simplicity-skripting, og hvilke avveininger som må gjøres ved bruk av Layer Two-løsninger.
 
@@ -73,6 +77,7 @@ Bozza tar for seg Liquid Networks fødererte struktur og de tekniske komponenten
 <chapterId>5f4c0e50-b435-4b6c-b8b7-c55cc1a35431</chapterId>
 
 ![Video](https://youtu.be/IAdOxZyx7-Y)
+<videoId>e0b0519f-a72a-4b28-b171-ed7cd7b50c34</videoId>
 
 Chase fremhever Liquids økosystem og dets bruksområder i kapitalmarkedene. Han diskuterer tokenisering, fellesskapsressurser og verktøy som Sid Swap og Stokr for kapitalforvaltning, samt den økende bruken av Liquid i forretningsmiljøer.
 
@@ -81,6 +86,7 @@ Chase fremhever Liquids økosystem og dets bruksområder i kapitalmarkedene. Han
 <chapterId>4f21a0a7-0dc0-44cf-8a3a-d9e2f8a3f05f</chapterId>
 
 ![Video](https://youtu.be/AnMiD9amSUg)
+<videoId>a4d85d98-1136-4a9d-95e0-8a460e04e83c</videoId>
 
 Nardo gir en oversikt over Blockstream AMP, en plattform for administrasjon av digitale aktiva på Liquid. Han går gjennom AMPs arkitektur, dens evne til å kontrollere overføringer av aktiva og dens praktiske bruksområder for utviklere. Utfordringer og fremtidige forbedringer for AMP blir også fremhevet.
 
@@ -95,6 +101,7 @@ Nardo gir en oversikt over Blockstream AMP, en plattform for administrasjon av d
 <chapterId>fb77442c-3d1e-427e-b2f5-16668ce4c643</chapterId>
 
 ![Video](https://youtu.be/ucc3a-udbgo)
+<videoId>4df51e5a-e95b-4bad-875f-1a1e147b2772</videoId>
 
 Antonio presenterer Breeze, et SDK med åpen kildekode som er utviklet for desentraliserte transaksjoner på Liquid Network. Han går gjennom funksjonene, inkludert støtte for flerspråklige bindinger og sikre transaksjonsprosesser, samtidig som han understreker målet om å forenkle finansiell teknologi for utviklere
 

@@ -1,7 +1,7 @@
 ---
 name: Opprette et Bitcoin-fellesskap eller en møteplass
 goal: Opprett og organiser enkelt et Bitcoin-fellesskap eller et møtepunkt
-objectives: 
+objectives:
 
   - Lær hvordan du oppretter et Bitcoin-fellesskap og/eller et møtepunkt?
   - Hvordan bygge en visuell og digital identitet for lokalsamfunnet ditt, og hvilke verktøy bør du begynne med?
@@ -334,6 +334,7 @@ Kort sagt, **mulighetene er uendelige og avhenger av dine behov, men også av gr
 For å veilede deg mer detaljert, tilbyr vi nedenfor en ikke-uttømmende videoopplæring som presenterer noen muligheter:
 
 ![Tutorial Canva](https://www.youtube.com/watch?v=sgloI_v-nAk)
+<videoId>e6264634-2a83-4b00-b812-4e0b623f7d4c</videoId>
 
 ####
 
@@ -481,6 +482,7 @@ Vi får se senere, men **det anbefales på det sterkeste at du velger "Telegram-
 For veiledningene som følger, vil vi bruke "Telegram +" APK-applikasjonen; et program som tillater mer avansert konfigurasjon av Telegram. Dette er imidlertid ikke nødvendig, ettersom det nå kan gjøres veldig enkelt å opprette en gruppe eller supergruppe på Telegram på en telefon:
 
 ![Tutorial Telegram+](https://www.youtube.com/watch?v=Z5mE-LksBZw)
+<videoId>2fd7779c-1c8c-4bd5-8a0d-2be00343464c</videoId>
 
 ### Opprette en Telegram-kanal
 
@@ -499,6 +501,7 @@ Det er imidlertid mulig å legge til muligheten for kanalmedlemmer til å kommen
 Veiledning for å opprette en Telegram-kanal:
 
 ![Tutorial Canale Telegram](https://www.youtube.com/watch?v=N5S7cgySV8U)
+<videoId>12e80598-2c37-4de8-a94b-0279b43cf387</videoId>
 
 ### Opprett en Telegram-gruppe
 
@@ -523,6 +526,7 @@ Administratorer av denne kanalen vil da kunne:
 Veiledning for å opprette en Telegram-gruppe:
 
 ![Tutorial canale Telegram](https://www.youtube.com/watch?v=u1BuxEsmFuA)
+<videoId>07abf25a-2357-43dc-ad01-fc16e5bb293d</videoId>
 
 En merknad: som nevnt tidligere, ble opplæringen ovenfor laget på en datamaskin med "Telegram +" APK. Imidlertid er det nå veldig enkelt å opprette en Telegram-gruppe på en telefon.
 
@@ -563,6 +567,7 @@ Generelt er det ikke noe spesifikt antall medlemmer som gjør det relevant å br
 Veiledning for å opprette en Telegram-supergruppe:
 
 ![Tutorial supergruppo Telegram](https://www.youtube.com/watch?v=GWVqpjBtg-U)
+<videoId>b81ef6a9-2a98-4aa5-9601-00604b225a53</videoId>
 
 Merk: Som nevnt ovenfor ble opplæringen ovenfor laget på en datamaskin med "Telegram +" APK. Nå er det imidlertid veldig enkelt å opprette en Telegram-supergruppe på en telefon.
 
@@ -641,6 +646,7 @@ Du har også mange andre muligheter. Men et godt råd: **ikke prøv å begrense 
 Veiledning for å legge til en multifunksjonell bot i en gruppe eller supergruppe på Telegram:
 
 ![Tutorial bot Telegram multifunzione](https://www.youtube.com/watch?v=l72GZcEFDtU)
+<videoId>1e539496-d32e-4ec0-8236-6da4b93b7d5d</videoId>
 
 En liten merknad: Som nevnt tidligere, kan all denne prosedyren nå gjøres på telefonen.
 
@@ -659,6 +665,7 @@ I tillegg til Telegram og Twitter krever dette åpenbart enda mer tid i administ
 For å gjøre ting enklere for deg, **deler vi en [ferdiglaget, dupliserbar og redigerbar Discord-server] (https://discord.com/template/bDY4eXXJk2C8) som du kan tilpasse etter eget ønske**:
 
 ![Tutorial server Discord duplicabile](https://www.youtube.com/watch?v=i3V6_359Ajw)
+<videoId>36cf649f-6563-40b9-8bb3-721a2efbc0f1</videoId>
 
 ####
 
@@ -671,6 +678,7 @@ Det er imidlertid viktig å merke seg at installasjonen ikke er veldig enkel, at
 For å spare deg for tid, får du her en veiledning i hvordan du legger til en multifunksjonell bot i en Telegram-gruppe eller supergruppe:
 
 ![Tutorial bot TediCross Discord - Telegram](https://www.youtube.com/watch?v=e4YAPG0ITF8)
+<videoId>e7d75514-3bbe-4c7f-a40e-96fdd71908fa</videoId>
 
 ## Vurder andre, private og sikrere kommunikasjonskanaler
 
@@ -785,6 +793,7 @@ Til slutt, selv om ditt "@Bitcoin[CITY]"-brukernavn er unikt og nå tilhører de
 Veiledning i hvordan du oppretter en Twitter-konto:
 
 ![Tutorial account Twitter](https://www.youtube.com/watch?v=pp3DDakV0bA)
+<videoId>bc2c3fc3-8ea6-4452-94c8-c619fd40ad82</videoId>
 
 ## Få kontakt med møteplasser i nærheten
 
@@ -1413,6 +1422,7 @@ For å forenkle denne oppgaven, viser veiledningen nedenfor deg på en halv time
 Senere vil du kunne kjøpe ditt eget domene og til og med hoste det på din egen server hvis du ønsker det.
 
 ![Tutorial per creare un sito web WordPress gratuito](https://www.youtube.com/watch?v=cZzH4gj_kZY)
+<videoId>016dd7db-5804-4002-b71c-7c9131ce195c</videoId>
 
 ####
 
@@ -1483,6 +1493,7 @@ Hvis du ønsker å **ta opp på datamaskinen din, fungerer gratis programvare so
 Her er en kort veiledning som på 10 minutter presenterer de viktigste funksjonene du trenger å vite om hvordan du lager en podkast med Audacity.
 
 ![Tutorial per creare un podcast con Audacity](https://www.youtube.com/watch?v=z471_Ye6Y0I)
+<videoId>4de75f12-b526-4e51-acba-57bf2ee49b0d</videoId>
 
 Merk: Som nevnt tidligere kan det være relevant å **alltid oppbevare en lokal kopi på en harddisk av podkastene** du publiserer, i tilfelle Bitcoin en dag blir forbudt eller sensurert.
 
@@ -1814,6 +1825,7 @@ Endelig:
 I litt mindre detalj, i en 21 minutter lang video, ser det slik ut:
 
 ![Tutorial Comunità Bitcoin](https://www.youtube.com/watch?v=EHLAmHHuZd8)
+<videoId>73a96650-4765-4466-af4d-fdcca2f64d2a</videoId>
 
 Husk uansett at du ikke er alene, og at de eksisterende miljøene er der for å hjelpe deg**.
 

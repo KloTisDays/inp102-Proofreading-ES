@@ -1,7 +1,7 @@
 ---
 name: Ochrana osobních údajů v bitcoinech
 goal: Pochopení a zvládnutí zásad ochrany soukromí při používání Bitcoinu
-objectives: 
+objectives:
 
   - Definovat teoretické koncepty potřebné k pochopení problematiky ochrany soukromí
   - Identifikace a zmírnění rizik spojených se ztrátou důvěrnosti pro uživatele bitcoinů

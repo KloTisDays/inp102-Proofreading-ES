@@ -1,7 +1,7 @@
 ---
 name: Datenschutz bei Bitcoin
 goal: Verstehen und Beherrschen der Grundsätze des Datenschutzes bei der Verwendung von Bitcoin
-objectives: 
+objectives:
 
   - Definition der theoretischen Konzepte, die zum Verständnis von Datenschutzfragen erforderlich sind
   - Identifizierung und Abschwächung der mit dem Verlust der Vertraulichkeit für Bitcoin-Nutzer verbundenen Risiken

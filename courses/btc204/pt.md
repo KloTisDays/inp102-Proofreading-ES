@@ -1,7 +1,7 @@
 ---
 name: Privacidade na Bitcoin
 goal: Compreender e dominar os princípios de proteção da privacidade ao utilizar a Bitcoin
-objectives: 
+objectives:
 
   - Definir os conceitos teóricos necessários para compreender as questões de privacidade
   - Identificar e mitigar os riscos associados à perda de confidencialidade para os utilizadores de Bitcoin

@@ -602,7 +602,7 @@ Hvis du tar dette kurset i et klasserom, er det nåværende eksemplet og frøet 
 (3) Når du fortsetter den nye lommebokveiviseren, er du nå i seksjonen for å opprette BTC watch-only wallet. Her får vi muligheten til å sette lommebokens "Adresse type" BTCPay Server lar deg velge din foretrukne adressetype; per skrivetidspunktet for dette kurset, anbefales det fortsatt å bruke bech32-adresser. Lær mer i detalj om adresser i det første kapittelet av denne delen.
 
 - Segwit (bech32)
-- Native SegWit-adresser er adresser som starter med `bc1q`.  
+- Native SegWit-adresser er adresser som starter med `bc1q`.
   - Eksempel: `bc1qXXXXXXXXXXXXXXXXXXXXXX`
 - Legacy
   - Legacy-adresser er adresser som starter med tallet `1`.

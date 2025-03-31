@@ -110,7 +110,7 @@ Prima di iniziare, tuttavia, è essenziale anticipare il passo successivo: un po
 Tuttavia, è chiaro che se i membri della tua comunità devono guidare due ore per venire al tuo evento, pochi di loro faranno il viaggio.
 Ecco perché **la geolocalizzazione della tua comunità (e quindi, dei tuoi futuri meet-up) ha un impatto considerevole sul suo sviluppo**.
 
-#### 
+####
 Ecco alcuni pensieri che possono guidarti:
 1) **Crea e sviluppa la tua comunità in una città di medie o grandi dimensioni**. Questo ti permetterà di:
     * **trovare una sede** molto più facilmente per il tuo meet-up e/o i tuoi progetti (presentazioni, workshop, accettazione di Bitcoin come mezzo di pagamento, ecc.);
@@ -241,6 +241,7 @@ In breve, **le possibilità sono infinite e dipendono dalle proprie esigenze ma 
 ####
 Per guidarvi più nel dettaglio, offriamo di seguito un tutorial video non esaustivo che presenta alcune possibilità:
 ![Tutorial Canva](https://www.youtube.com/watch?v=sgloI_v-nAk)
+<videoId>e6264634-2a83-4b00-b812-4e0b623f7d4c</videoId>
 ####
 
 Ecco anche alcuni file pre-progettati, duplicabili e modificabili a vostra disposizione che usiamo con la nostra associazione, Bitcoin Lille:
@@ -304,7 +305,7 @@ A proposito,L'ultimo rendering è piuttosto bello
 
 Tuttavia, se si desidera un logo molto più semplice, ad esempio per un adesivo, si può quindi inserire su "copilota":
 - [ ] *Crea il logo per il "London Bitcoin Meetup" con uno stile britannico e semplificato* - [Link](https://copilot.microsoft.com/images/create/logo-for-27londres-bitcoin-meetup27-with-a-british-a/1-6612bb9451924859a6c34b350b3a6ebc?FORM=SYDBIC)
-      
+
 ![immagine](assets/fr/16.webp)
 
 Il secondo rendering è tipico e potrebbe fare al caso nostro!
@@ -344,6 +345,7 @@ Vedremo più avanti, ma **si raccomanda vivamente di scegliere "gruppo Telegram"
 ####
 Per i tutorial che seguiranno, utilizzeremo l'applicazione APK "Telegram+"; un'applicazione che consente una configurazione più avanzata di Telegram. Tuttavia, ciò non è necessario, poiché creare un gruppo o super-gruppo su Telegram può ora essere fatto molto facilmente su un telefono:
 ![Tutorial Telegram+](https://www.youtube.com/watch?v=Z5mE-LksBZw)
+<videoId>2fd7779c-1c8c-4bd5-8a0d-2be00343464c</videoId>
 
 ### Creare un Canale Telegram
 
@@ -354,9 +356,10 @@ Infatti, **un canale Telegram è solo una vetrina di informazioni postate dagli 
 
 ![immagine](assets/fr/18.webp)
 Tuttavia, è possibile aggiungere la capacità per i membri del canale di commentare ogni post dell'amministratore, ma ciò sarà fatto in discussioni separate; dividendo significativamente le comunicazioni. **Pertanto, la creazione di un canale Telegram generalmente non è consigliata per una comunità**.
-#### 
+####
 Tutorial per creare un canale Telegram:
 ![Tutorial Canale Telegram](https://www.youtube.com/watch?v=N5S7cgySV8U)
+<videoId>12e80598-2c37-4de8-a94b-0279b43cf387</videoId>
 
 ### Creare un Gruppo Telegram
 
@@ -372,9 +375,10 @@ Gli amministratori di questo canale potranno quindi:
 - creare un **link di invito personalizzato** (a condizione che il gruppo sia "pubblico" e non "privato", da definire nelle impostazioni. È anche molto pratico avere il proprio link di invito Telegram in stile: t.me/Bitcoin[CITTÀ]);
 - **aggiungere o rimuovere permessi, amministratori e membri**;
 - **Aggiungere una "foto del profilo"** al gruppo Telegram (ovvero il logo della tua comunità), **e cambiarne il nome**.
-#### 
+####
 Tutorial per creare un gruppo Telegram:
 ![Tutorial canale Telegram](https://www.youtube.com/watch?v=u1BuxEsmFuA)
+<videoId>07abf25a-2357-43dc-ad01-fc16e5bb293d</videoId>
 
 Una nota: come menzionato prima, il tutorial sopra è stato realizzato su un computer con l'APK "Telegram+". Tuttavia, ora è molto facile creare un gruppo Telegram su un telefono.
 Pertanto, non è più necessario scaricare "Telegram+" per eseguire questa operazione; a meno che non si voglia approfondire le impostazioni sulla privacy del proprio gruppo.
@@ -387,7 +391,7 @@ Per rimediare a ciò, possono essere applicate diverse soluzioni:
 1. **Fissare i messaggi importanti come amministratore**, così che tutti ne vengano notificati (premere una volta sul messaggio in questione con il dito, poi selezionare "Fissa");
 2. suggerire alla tua comunità di **usare un server Discord** con vari e diversi canali di comunicazione, che ognuno può silenziare se lo desidera;
 3. **creare un "superguppo" su Telegram**.
-#### 
+####
 Ma cos'è un supergruppo Telegram?
 
 È semplicemente **un gruppo Telegram in cui sono integrati diversi "argomenti"**. Così, può essere creato un argomento **"Informazioni Importanti"**, in cui verranno pubblicate solo informazioni importanti e informazioni associate agli eventi/incontri imminenti.
@@ -403,6 +407,7 @@ In generale, non esiste un numero specifico di membri al quale diventa rilevante
 
 Tutorial per creare un supergruppo Telegram:
 ![Tutorial supergruppo Telegram](https://www.youtube.com/watch?v=GWVqpjBtg-U)
+<videoId>b81ef6a9-2a98-4aa5-9601-00604b225a53</videoId>
 
 Nota: come menzionato in precedenza, il tutorial sopra è stato realizzato su un computer con l'APK "Telegram+". Tuttavia, ora è molto facile creare un supergruppo Telegram su un telefono.
 Per fare ciò, basta creare un gruppo Telegram; poi, nelle sue impostazioni, cliccare sul pulsante "Argomenti" per aggiungerne alcuni. Una volta validata la modifica, apparirà un elenco di argomenti; e potete modificarlo come desiderate.
@@ -424,9 +429,9 @@ Tuttavia, **dall'esperienza, è preferibile rimuovere ai membri i permessi di**:
 È anche **altamente raccomandato scrivere una descrizione del vostro incontro quando si crea il gruppo o supergruppo su Telegram**, poiché sarà visibile a chiunque desideri unirsi. Potrebbe essere, ad esempio:
 
 > Benvenuti sul Telegram di @Bitcoin[CITTÀ] 🔥
-> 
+>
 > Organizziamo un incontro ogni primo mercoledì del mese, al bar [NOME_DEL_BAR] a [CITTÀ] 🍻
-> 
+>
 > Per accedere ai nostri altri social network: [LINK_DESIDERATO] 🌐
 
 ![immagine](assets/fr/21.webp)
@@ -465,6 +470,7 @@ Numerose ulteriori opzioni sono altresì a tua disposizione. Tuttavia, un consig
 ####
 Tutorial per aggiungere un bot multifunzione a un gruppo o super-gruppo su Telegram:
 ![Tutorial bot Telegram multifunzione](https://www.youtube.com/watch?v=l72GZcEFDtU)
+<videoId>1e539496-d32e-4ec0-8236-6da4b93b7d5d</videoId>
 
 Piccola nota: come accennato prima, ora tutta questa procedura può essere eseguita anche su telefono.
 
@@ -479,6 +485,7 @@ Ovviamente, oltre a Telegram e Twitter, ciò richiede ancora più di tempo nella
 
 Per semplificarti le cose, **condividiamo un [server Discord pre-fatto, duplicabile e modificabile](https://discord.com/template/bDY4eXXJk2C8) che puoi personalizzare come desideri**:
 ![Tutorial server Discord duplicabile](https://www.youtube.com/watch?v=i3V6_359Ajw)
+<videoId>36cf649f-6563-40b9-8bb3-721a2efbc0f1</videoId>
 ####
 Così, quando ben costruito, un server Discord può essere una vera risorsa per la sua comunità. Infatti, molti Bitcoiner utilizzano già quotidianamente Discord (e non Telegram), e **permettere loro di seguire le conversazioni del gruppo Telegram direttamente all'interno del server Discord rappresenta un notevole risparmio di tempo**. E viceversa.
 Ecco perché è stato sviluppato un bot open-source chiamato [TediCross](https://github.com/TediCross/TediCross). Il suo obiettivo è semplice: trasferire automaticamente i messaggi da un canale di testo di Discord a un gruppo di Telegram (o un argomento in un super-gruppo di Telegram); e viceversa. Questo può quindi essere molto interessante da configurare.####
@@ -486,6 +493,7 @@ Tuttavia, è importante notare che la sua installazione non è molto semplice, c
 
 Con l'obiettivo di farti risparmiare tempo, ecco un tutorial su come aggiungere un bot multifunzione a un gruppo o super-gruppo di Telegram:
 ![Tutorial bot TediCross Discord - Telegram](https://www.youtube.com/watch?v=e4YAPG0ITF8)
+<videoId>e7d75514-3bbe-4c7f-a40e-96fdd71908fa</videoId>
 
 ## Considera altri canali di comunicazione, privati e più sicuri
 <chapterId>29d0aad6-0612-5dd0-bcef-7337eaf4fefc</chapterId>
@@ -571,6 +579,7 @@ Infine, sebbene il tuo nome utente "@Bitcoin[CITTÀ]" sia unico e ora ti apparte
 
 Tutorial per creare un account Twitter:
 ![Tutorial account Twitter](https://www.youtube.com/watch?v=pp3DDakV0bA)
+<videoId>bc2c3fc3-8ea6-4452-94c8-c619fd40ad82</videoId>
 
 ## Connessione con i meet-up vicini
 <chapterId>12a21c3b-235a-5292-8209-67bf60f61e49</chapterId>
@@ -588,7 +597,7 @@ Inoltre, in Francia, potrebbe essere anche rilevante **seguire le iniziative @Ko
 L'interesse nel seguirsi reciprocamente l'un l'altro è piuttosto semplice: fornirsi visibilità a vicenda. Infatti, più si è presenti sui network, più la gente parlerà di voi; e più la gente parla di voi, più è probabile che le persone verranno ai vostri eventi. Mettere "Mi piace" e ritwittare i post di altre comunità sui social network può essere altrettanto interessante.
 ####
 Parallelamente, è anche possibile **offrire agli organizzatori di meet-up e a coloro che hanno creato una comunità l'opportunità di incontrarsi in un momento prestabilito durante gli eventi fisici**. Questo può permettere di discutere delle sensazioni di tutti, parlare dell'evoluzione delle comunità presenti, condividere idee per progetti che hanno avuto successo; ma anche, offrirsi soluzioni quando necessario. Se desiderate potete poi essere condividere un rapporto scritto con gli organizzatori delle comunità del vostro paese che non erano presenti.
-  
+
 ## BTC Map
 <chapterId>365f43d4-7b2c-5961-a184-157b8c1a0116</chapterId>
 
@@ -603,7 +612,7 @@ Tra questi, troviamo in particolare:
 A seconda del paese, esistono anche iniziative uniche. Questo è particolarmente il caso **in Francia, con il sito web [bitcoin.fr](https://bitcoin.fr/events/categories/evenements/), che elenca le decine di eventi Bitcoin in Francia ogni mese**. Se non li hai ancora seguiti su Twitter o contattati per dare informazioni sulla tua comunità e/o eventi, ora è il momento! **Inoltre, con l'obiettivo di aiutarli a mantenere aggiornato questo calendario di eventi francese, sarebbe apprezzato se tutte le comunità Bitcoin francesi prendessero l'abitudine di:** * **menzionare @bitcoinpointfr su Twitter ad ogni nuovo annuncio di evento della loro comunità**;
 * **fissare l'annuncio di detto evento nel loro gruppo Telegram della comunità**.
 ![immagine](assets/fr/27.webp)
-#### 
+####
 È importante notare che altre piattaforme e applicazioni permettono anche di aumentare la visibilità. **[Meetup](https://www.meetup.com/)** è una di queste. Infatti, è un sito web (e un'applicazione per telefono) che permette la creazione di un evento; ma anche la ricerca di quelli vicini a te.
 Purtroppo, per poter creare incontri, bisogna spendere quasi 8€ al mese (che sono circa 90€ all'anno), che è costoso per una comunità che non è né strutturata né matura ancora. Tuttavia, Meetup è molto popolare in alcuni paesi, specialmente in Canada e negli Stati Uniti; il suo principale vantaggio è che consente una gestione integrata delle registrazioni agli incontri.
 
@@ -611,7 +620,7 @@ In parallelo, **[Orangepillapp](https://www.orangepillapp.com/)** è un'applicaz
 ####
 Sebbene permettano lo sviluppo della visibilità per la tua comunità e i tuoi eventi, queste due applicazioni tuttavia non sono consigliate al lancio della tua comunità, semplicemente perché sono a pagamento.
 **Iniziare con una lista su [btcmap.org](https://btcmap.org/), su [BitcoinerEvents](https://www.bitcoinerevents.com/); e per le comunità francesi, su [bitcoin.fr](https://bitcoin.fr) è quindi chiaramente sufficiente**.
-#### 
+####
 Congratulazioni! La tua **comunità è creata**, i tuoi **visual sono pronti**, i tuoi **obiettivi sono stabiliti**, i tuoi **canali di comunicazione sono stabiliti**, i tuoi **social network sono lanciati**, e la tua **strategia di visibilità è stabilita**.
 Una volta che un piccolo gruppo di bitcoiner si è unito a te, il passo successivo è imbarcarsi nell'entusiasmante avventura di un meet-up Bitcoin!
 
@@ -666,7 +675,7 @@ Questo secondo punto è molto importante. È uno dei motivi per cui, **in Franci
 In Germania, non esiste un giorno predefinito a livello nazionale; lo stesso vale per l'Italia.
 Tuttavia, è importante sottolineare che **avere tutti i meet-up nazionali nello stesso giorno crea un problema di centralizzazione**. Oltre alle preoccupazioni per la sicurezza, i bitcoiners che partecipano al meet-up nelle rispettive città non possono partecipare agli eventi Bitcoin delle comunità vicine. Pertanto, sta a te prendere una posizione. Per fare ciò, **interagire con il meet-up più vicino(i) può portare a una decisione pertinente**.
 
-#### 
+####
 Infine, quando la tua comunità cresce significativamente e i tuoi meet-up iniziano a riempirsi, è del tutto possibile proporre:
 * **un obiettivo specifico per ciascuno dei tuoi meet-up**;
 * o addirittura **un secondo evento nel mese**.
@@ -861,13 +870,13 @@ Prima di effettuare l'ordine, potrebbe essere rilevante considerare i seguenti p
 - **rifletti bene sulla dimensione desiderata**. Ad esempio, un adesivo circolare con un diametro di 8 cm è circa la dimensione del palmo di un adulto. Stai cercando questa dimensione, che è piuttosto significativa per la visibilità, o stai cercando qualcosa di più discreto (4 cm di diametro, per esempio)?
 - infine - e questo è un po' tecnico - se vuoi una stampa nero ricco (un "nero a quattro colori"), le proprietà di questo dovrebbero essere: 30% ciano, 30% magenta, 30% giallo e 100% nero. Nei casi in cui viene utilizzato solo il 100% di nero, il risultato sarà un nero alquanto grigiastro. Fortunatamente, le tipografie generalmente prestano attenzione a questo dettaglio. Quindi, non dovresti preoccupartene troppo.
 ![image](assets/fr/38.webp)
-#### 
+####
 A seconda della tua richiesta e del fornitore che scegli, aspettati di pagare **tra 100 e 250 euro per 1000 adesivi**. Puoi anche contattare [@Mill3sim3 su Twitter](https://x.com/Mill3sim3), un bitcoiner francese specializzato in marketing che può aiutarti a ottenere prezzi quasi il 30% più economici rispetto ai soliti siti online. Non esitare a contattarlo per questo.
 
 Tuttavia, vale la pena notare che 1000 adesivi è una quantità significativa. Pertanto, è chiaramente **preferibile, per cominciare, optare per l'acquisto di un centinaio di adesivi**; per essere sicuri di vendere questa scorta.
 Inoltre, una piccola nota: **se decidi di attaccare uno di questi adesivi per strada, a seconda del paese in cui ti trovi, ciò potrebbe essere proibito dalla legge**. Nel caso della Francia, ad esempio, è vietato attaccare adesivi per strada, eccetto che sui tabelloni pubblicitari presenti in ogni città. Questo significa che se uno dei tuoi adesivi viene attaccato senza cura (o piuttosto: ovunque, come nel mezzo di un cartello di stop), verrà rimosso rapidamente; e se contiene informazioni che possono essere ricondotte alla tua identità o a quella del tuo incontro, non è escluso che tu possa ricevere una multa. Quindi, fai attenzione e informa i tuoi membri.
 
-#### 
+####
 Parallelamente, se sei appassionato di concerti, bar o stadi, **considera di controllare se ci sono già adesivi attaccati prima di posizionare il tuo. Altrimenti, considera di chiedere a un dipendente se ciò è accettato**.
 Infatti, sarebbe un peccato se un commerciante sentisse parlare per la prima volta della tua comunità / incontro / associazione / Bitcoin perché hai sabotato la decorazione dei suoi bagni!
 
@@ -894,7 +903,7 @@ Ecco un esempio open-source, che puoi prendere e modificare come desideri:
 [Carta del Prestito dei Libri](https://www.canva.com/design/DAF7u1b5kRM/r2gEAlibe_jTIXIX-O9PMA/edit)
 
 ![image](assets/fr/40.webp)
-#### 
+####
 Parallelamente, ancora con l'idea di promuovere la lettura su Bitcoin, un'altra azione significativa può essere quella di **visitare le biblioteche comunali della città e verificare se hanno vari libri su Bitcoin**.
 Se sì, potrebbe essere interessante chiedere se saranno organizzati **tavoli rotondi** su questo argomento nei prossimi mesi, fornendo anche il contatto del meet-up della città. Se no, **proporre l'acquisto di diversi libri che hai selezionato in anticipo** può essere un'opzione. Il sito web dell'[editore Konsensus](https://konsensus.network/) può essere una fonte di ispirazione per questo.
 
@@ -917,7 +926,7 @@ Tra questi, troverai un [volantino completo e documentato](https://profedustream
 ![image](assets/fr/42.webp)
 
 Modificalo, adattalo e poi condividilo come preferisci. Tuttavia, ricorda di citare le tue fonti.
-#### 
+####
 Come accennato prima, **questi volantini possono essere collocati praticamente ovunque**: su una scrivania condivisa sul tuo posto di lavoro, su un tavolo durante un pasto in famiglia, in una biblioteca comunale, ecc.
 
 In Francia e in alcuni altri paesi, esistono anche **"scatole per libri"**.
@@ -1001,6 +1010,7 @@ Per semplificare questo compito di creazione, il tutorial qui sotto ti mostra in
 In seguito, sarai in grado di acquistare il tuo dominio e persino ospitarlo sul tuo server personale se lo desideri.
 
 ![Tutorial per creare un sito web WordPress gratuito](https://www.youtube.com/watch?v=cZzH4gj_kZY)
+<videoId>016dd7db-5804-4002-b71c-7c9131ce195c</videoId>
 ####
 Altre CMS o piattaforme permettono anche la creazione di siti web. Sebbene alcune siano più semplici grazie alla loro interfaccia user-friendly, i siti web risultanti sono anche molto meno personalizzabili.
 **WordPress sembra essere la scelta più rilevante per iniziare**. Inoltre, consente l'**integrazione di plug-in**, alcuni dei quali sono a pagamento ma di alta qualità, permettendo un ulteriore sviluppo del sito web; e ciò, senza necessità di saper scriverere codice.
@@ -1050,6 +1060,7 @@ Nel caso in cui desiderassi **registrare sul tuo computer, un software gratuito 
 
 Ecco un breve tutorial che presenta, in 10 minuti, le principali funzionalità da conoscere per fare un podcast con Audacity.
 ![Tutorial per creare un podcast con Audacity](https://www.youtube.com/watch?v=z471_Ye6Y0I)
+<videoId>4de75f12-b526-4e51-acba-57bf2ee49b0d</videoId>
 
 Nota: come menzionato in precedenza, nell'eventualità che, un giorno, Bitcoin fosse vietato o censurato, potrebbe essere rilevante **conservare sempre una copia locale su un disco rigido dei podcast** che pubblichi.
 
@@ -1285,6 +1296,7 @@ Infine:
 
 In modo leggermente meno dettagliato, in un video di 21 minuti, appare così:
 ![Tutorial Comunità Bitcoin](https://www.youtube.com/watch?v=EHLAmHHuZd8)
+<videoId>73a96650-4765-4466-af4d-fdcca2f64d2a</videoId>
 
 Ad ogni modo, **ricorda che non sei solo e che le comunità esistenti sono lì per aiutarti**.
 

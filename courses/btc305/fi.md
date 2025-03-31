@@ -71,6 +71,7 @@ Tämä on luokkahuoneharjoitus, joten jos otat tämän kurssin itse, et voi suor
 Harjoitus alkaa katsomalla johdanto "Miten Bitcoin ja lohkoketju toimivat" BBC:ltä.
 
 ![how bitcoin and the blockchain works](https://youtu.be/mhE_vvwAiRc)
+<videoId>da8f8092-bd84-4287-87db-4c6d53763e5e</videoId>
 
 Tähän harjoitukseen tarvitaan vähintään yhdeksän henkilön osallistuminen. Tämän harjoituksen tarkoituksena on fyysisesti saada käsitys siitä, miten Bitcoin toimii. Toimimalla kunkin roolin mukaisesti verkossa, saat interaktiivisen ja leikkisän tavan oppia. Tämä harjoitus ei sisällä Lightning Networkia.
 

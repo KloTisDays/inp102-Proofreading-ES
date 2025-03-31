@@ -1907,7 +1907,7 @@ See skriptimudel tutvustati Bitcoini esimeses versioonis Satoshi Nakamoto poolt.
 
 Nagu P2PK, tutvustati P2PKH skripti Bitcoini käivitamisel. Erinevalt eelkäijast lukustab see bitcoinid kasutades avaliku võtme räsi, mitte otse toorest avalikku võtit. _scriptSig_ peab seejärel esitama saaja aadressiga seotud avaliku võtme, samuti kehtiva allkirja. Selle mudeli aadressid algavad `1`-ga ja on kodeeritud _base58check_-is. See skript kuulub samuti "_Legacy_" standardi hulka.
 
-**P2SH (_Pay-to-Script-Hash_)**: 
+**P2SH (_Pay-to-Script-Hash_)**:
 
 2012.aastal BIP16-ga tutvustatud P2SH mudel võimaldab kasutada suvalise skripti räsi _scriptPubKey_-s. Seda räsitud skripti, mida nimetatakse "_redeemScript_-iks", sisaldavad tingimused vahendite vabastamiseks. UTXO kulutamiseks, mis on lukustatud P2SH-ga, on vajalik esitada _scriptSig_, mis sisaldab algset _redeemScript_-i ning vajalikke andmeid selle valideerimiseks. Seda mudelit kasutatakse märkimisväärselt vanade multisigide jaoks. P2SH-ga seotud aadressid algavad `3`-ga ja on kodeeritud _base58check_-is. See skript kuulub ka "_Legacy_" standardi alla.
 

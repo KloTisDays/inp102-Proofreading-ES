@@ -527,6 +527,7 @@ When currency rapidly loses its value, even the simplest transactions can become
 > Zimbabwe: "Store managers were also allowed to hire a temporary worker to replace the staff member who counted money all day. Of course, counting money in-store for administration and bank deposit was one thing, but the whole process had to be repeated at the bank during the deposit."
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
+<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
 
 Money counting technique from Uzbekistan
 

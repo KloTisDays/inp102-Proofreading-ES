@@ -985,7 +985,7 @@ Der bedeutendste Miner dieser Periode war ein deutscher Entwickler, der unter de
 ![ArtForz's Mining-Produktion zwischen August und Oktober 2010](assets/en/49.webp)
 ArtForz's Mining-Produktion zwischen August und Oktober 2010 (Quelle: Blackburn et al., "[Zusammenarbeit in einer anonymen Gruppe schützte Bitcoin während des Versagens der Dezentralisierung](https://arxiv.org/pdf/2206.02871)")
 
-Über die Wochen hinweg kam ArtForz dazu, einen signifikanten Teil der Rechenleistung des Netzwerks zu kontrollieren. Am 2. September gab der Miner puddinpop an, dass er "etwa 12 5770s mit seinem OpenCL-Client" nutzt und dass er "mehr als 1 Ghash/s" hat, was ihm "20% der Hashkapazität des Netzwerks" gibt. Am 23. September erklärte ArtForz, eine Hashrate von fast 2 GH/s zu halten, was immer noch 20% des Hashings darstellte. Am 3. Oktober gab theymos an, dass ArtForz "20 bis 30% der Rechenleistung des Netzwerks" hat. 
+Über die Wochen hinweg kam ArtForz dazu, einen signifikanten Teil der Rechenleistung des Netzwerks zu kontrollieren. Am 2. September gab der Miner puddinpop an, dass er "etwa 12 5770s mit seinem OpenCL-Client" nutzt und dass er "mehr als 1 Ghash/s" hat, was ihm "20% der Hashkapazität des Netzwerks" gibt. Am 23. September erklärte ArtForz, eine Hashrate von fast 2 GH/s zu halten, was immer noch 20% des Hashings darstellte. Am 3. Oktober gab theymos an, dass ArtForz "20 bis 30% der Rechenleistung des Netzwerks" hat.
 Diese Position wurde jedoch im Herbst schnell von anderen Personen herausgefordert, die ihre Systeme aktualisierten. In der Folge entfernte sich ArtForz allmählich von den Mining-Aktivitäten, um sich auf die Softwareentwicklung zu konzentrieren. Im August 2011 gab er an, weniger als 1% der Rechenleistung des Netzwerks zu haben.
 
 ### Spezialisierung im Mining
@@ -1164,7 +1164,7 @@ Diese Entwicklung der Situation intensiviert die Debatte. Eine Person ist besond
 
 Satoshi teilt Robert Hornings Ansicht nicht und lehnt die Idee ab, Bitcoin bei WikiLeaks zu bewerben. Wie seine Worte und Handlungen belegen, übt er große Vorsicht im Umgang mit staatlichen Autoritäten aus, die manchmal an [Paranoia](https://mmalmi.github.io/satoshi/#email-158) grenzt. Folglich reagiert er am 5. Dezember auf diese Begeisterung, indem er [scharf auf den Hauptförderer antwortet](https://bitcointalk.org/index.php?topic=1735.msg26999#msg26999):
 
-> "Nein, nicht 'bring es'. 
+> "Nein, nicht 'bring es'.
 >
 > Das Projekt muss schrittweise wachsen, damit die Software unterwegs gestärkt werden kann.
 >

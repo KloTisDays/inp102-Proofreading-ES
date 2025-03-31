@@ -137,7 +137,7 @@ $$
 
 Tedy odolnost proti druhému preobrazu je do jisté míry podobná odolnosti proti kolizím, kromě toho, že zde je útok obtížnější, protože útočník nemůže volně vybírat $m_1$.
 
-![CYP201](assets/fr/005.webp) 
+![CYP201](assets/fr/005.webp)
 
 ### Aplikace hašovacích funkcí v Bitcoinu
 

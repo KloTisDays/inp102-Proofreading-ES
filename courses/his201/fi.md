@@ -1162,6 +1162,7 @@ EFF otti aikansa ennen kuin alkoi hyväksyä julkisia lahjoituksia. Neuvotteluje
 Muutama päivä myöhemmin, bloggaaja jimbobway kirjoitti aiheesta [artikkelin](https://web.archive.org/web/20101117060233/http://www.bitcoinblogger.com/2010/11/bitcoin-gains-legal-protection-through.html), joka kiinnitti huomiota Bitcoiniin. Tämä artikkeli [jaettiin](https://news.ycombinator.com/item?id=1905522) HackerNewsissa. Se myös transkriboitiin videoksi BitcoinMedian toimesta käyttäen Xtranormalia:
 
 ![Video "Bitcoin ja EFF."](https://www.youtube.com/watch?v=AiGCuyRJe8s)
+<videoId>36625bb2-82f8-4662-9dfe-9c287812e479</videoId>
 
 Tämä on erittäin hyvä uutinen Bitcoinille, koska molemmat aloitteet jakavat yhteisiä arvoja. Lisäksi EFF on tunnettu tarjoamastaan oikeudellisesta suojasta yksityisyyden säilyttämisen ja datan jakamisen projekteille, kuten Tor ja BitTorrent. Satoshi Nakamoto itse on tietoinen tästä ja on erityisen tukeva järjestön toimille, kuten hänen [kommentissaan](https://mmalmi.github.io/satoshi/#email-254) näkyy, jonka hän osoitti Gavin Andresenille sähköpostissa 6. tammikuuta 2011:
 

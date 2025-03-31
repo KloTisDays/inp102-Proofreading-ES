@@ -505,6 +505,7 @@ Når valuta raskt mister sin verdi, kan selv de enkleste transaksjonene bli arbe
 > Zimbabwe: "Butikksjefer fikk også lov til å ansette en midlertidig arbeider for å erstatte den ansatte som telte penger hele dagen. Selvfølgelig, å telle penger i butikken for administrasjon og bankinnskudd var én ting, men hele prosessen måtte gjentas i banken under innskuddet."
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
+<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
 
 Teknikk for pengeregning fra Usbekistan
 
@@ -733,8 +734,8 @@ Den høyeste seddelverdien nådde 500 000, og den siste redenominasjonen i 1994 
 ![bilde](assets/chapitre-3.4/3.webp)
 
 Bolivia er et annet eksempel på et land som har gjennomgått perioder med akutt inflasjon, noe som krever valutaredenominasjoner. Her er en oppsummering av landets pengehistorie:
-Før sin uavhengighet i 1825 brukte Bolivia den spanske dollaren som sin valuta. Etter uavhengigheten introduserte landet den bolivianske Solen mellom 1827 og 1864, som erstattet den spanske dollaren. Det bør imidlertid bemerkes at de første sedlene i Bolivia kun dukket opp i 1864.  
-I 1864 ble den første "Boliviano" introdusert, med en vekslingsrate på 1 000 til 1 sammenlignet med den bolivianske Solen. Denne valutaen forble i omløp inntil den nådde en denominasjon på 10 000 Bolivianos.  
+Før sin uavhengighet i 1825 brukte Bolivia den spanske dollaren som sin valuta. Etter uavhengigheten introduserte landet den bolivianske Solen mellom 1827 og 1864, som erstattet den spanske dollaren. Det bør imidlertid bemerkes at de første sedlene i Bolivia kun dukket opp i 1864.
+I 1864 ble den første "Boliviano" introdusert, med en vekslingsrate på 1 000 til 1 sammenlignet med den bolivianske Solen. Denne valutaen forble i omløp inntil den nådde en denominasjon på 10 000 Bolivianos.
 Deretter endret Bolivia sin valuta til "Bolivianske Peso," som opplevde en så alvorlig hyperinflasjon at den til slutt nådde denominasjoner på opptil 10 millioner. Denne inflasjonsperioden nådde sitt høydepunkt i årene 1984-1985, med månedlige inflasjonsrater som ofte nærmet seg hyperinflasjonsterskelen på 50%. For å gi litt perspektiv, resulterer en konstant inflasjonsrate på 50% per måned over et helt år i en årlig inflasjonsrate på omtrent 12 800%. I 1985 nådde Bolivias årlige inflasjonsrate 11 749%, noe som indikerer at nesten hver måned var inflasjonen nær eller overgikk 50%-terskelen.
 
 Som respons på denne monetære krisen, i 1987, introduserte Bolivia en ny valuta, enkelt kalt "Boliviano," med en vekslingsrate på 1 million Bolivianske Pesos for 1 Boliviano. Denne versjonen av Boliviano er fortsatt i omløp i dag.
@@ -745,7 +746,7 @@ Det er en oversikt over Bolivias tumultfylte monetære historie, preget av perio
 
 ![bilde](assets/chapitre-3.4/4.webp)
 
-Peru presenterer et interessant tilfelle med hensyn til effektene av den vilkårlige 50%-regelen. Starter med sin monetære historie, brukte Peru spansk gull frem til det 19. århundre og erklærte sin uavhengighet i 1821. Den peruanske dollaren var i bruk fra 1822 til 1863. I 1863 ble den peruanske realen erstattet av soldi oro, med en rate på 10 til 1, og nådde en maksimal verdi på 50 000. I 1985 ble valutaen "Inti" introdusert med en konverteringsrate på 1000 til 1, og toppet på 5 millioner. I 1991 ble "SOL" lansert med en vekslingsrate på 1 million til 1, med sedler som varierte fra 10 til 200.  
+Peru presenterer et interessant tilfelle med hensyn til effektene av den vilkårlige 50%-regelen. Starter med sin monetære historie, brukte Peru spansk gull frem til det 19. århundre og erklærte sin uavhengighet i 1821. Den peruanske dollaren var i bruk fra 1822 til 1863. I 1863 ble den peruanske realen erstattet av soldi oro, med en rate på 10 til 1, og nådde en maksimal verdi på 50 000. I 1985 ble valutaen "Inti" introdusert med en konverteringsrate på 1000 til 1, og toppet på 5 millioner. I 1991 ble "SOL" lansert med en vekslingsrate på 1 million til 1, med sedler som varierte fra 10 til 200.
 Når man undersøker revalueringsperiodene, anses 1988 som et år med hyperinflasjon, spesielt i september. Juli-august 1990 så også en periode med hyperinflasjon. I 1988 var den årlige inflasjonsraten 667%, med en topp på 50% i september. I motsetning opplevde 1989 en inflasjonsrate på 3000% uten at noen måned oversteg 50%, så det ble ikke klassifisert som hyperinflasjon. I 1990 nådde inflasjonen en topp på 7481%. Det er klart at 50%-regelen kan være vilkårlig, ettersom 1988 ble ansett som et år med hyperinflasjon, i motsetning til 1989. Hvis denne regelen ble revurdert, kunne det være klokt å senke terskelen for å inkludere perioder som den Peru opplevde i 1989.
 
 > Forstå hva som skjer

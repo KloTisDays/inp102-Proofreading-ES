@@ -295,7 +295,7 @@ A pesar de estas opciones, la minería presenta desafíos significativos. La fra
 
 ### Bitcoins Virgenes
 
-La aspiración de poseer tu propio hashrate se presenta como un camino prometedor en el universo de la minería. Sin embargo, navegar en este ecosistema complejo requiere un enfoque prudente. El ámbito del cloud mining está marcado por un gran número de estafas, alimentadas por una falta de comprensión del minado por parte de muchos inversores. Las ofertas tentadoras, presentadas de diversas maneras, pueden fácilmente inducir a error a aquellos que no están suficientemente informados. 
+La aspiración de poseer tu propio hashrate se presenta como un camino prometedor en el universo de la minería. Sin embargo, navegar en este ecosistema complejo requiere un enfoque prudente. El ámbito del cloud mining está marcado por un gran número de estafas, alimentadas por una falta de comprensión del minado por parte de muchos inversores. Las ofertas tentadoras, presentadas de diversas maneras, pueden fácilmente inducir a error a aquellos que no están suficientemente informados.
 
 Por otro lado, poseer su propio equipo de minería ofrece ventajas considerables. Además de la satisfacción personal de contribuir activamente a la seguridad de la red Bitcoin y de ver las recompensas acumularse en su billetera, está el atractivo de los "bitcoins vírgenes". Estos son bitcoins recién minados, que nunca han sido gastados y que no tienen ninguna historia adjunta a ellos. Estos bitcoins a menudo son considerados valiosos porque nunca han sido "contaminados", ofreciendo cierta garantía contra el rechazo por parte de reguladores o grandes plataformas de intercambio.
 
@@ -344,7 +344,7 @@ Por una inversión de 1 kW de energía eléctrica, un radiador eléctrico produc
 
 Una computadora, o más generalmente una tarjeta electrónica, no consume energía para realizar cálculos, simplemente necesita que la energía circule en sus componentes para funcionar. El consumo de energía se debe a la resistencia eléctrica de los componentes, que produce pérdidas y genera calor, esto es lo que se conoce como el efecto Joule.
 
-Algunas empresas han tenido la idea de combinar las necesidades de potencia de cálculo y las necesidades de calefacción mediante radiadores/servidores. La idea es distribuir los servidores de una empresa en pequeñas unidades que podrían colocarse en viviendas u oficinas. Sin embargo, esta idea enfrenta varios problemas. Las necesidades de los servidores no están relacionadas con las necesidades de calefacción y las empresas no pueden utilizar las capacidades de cálculo de sus servidores de manera flexible. También existen limitaciones en el ancho de banda que los particulares pueden tener. 
+Algunas empresas han tenido la idea de combinar las necesidades de potencia de cálculo y las necesidades de calefacción mediante radiadores/servidores. La idea es distribuir los servidores de una empresa en pequeñas unidades que podrían colocarse en viviendas u oficinas. Sin embargo, esta idea enfrenta varios problemas. Las necesidades de los servidores no están relacionadas con las necesidades de calefacción y las empresas no pueden utilizar las capacidades de cálculo de sus servidores de manera flexible. También existen limitaciones en el ancho de banda que los particulares pueden tener.
 
 Todas estas limitaciones impiden a la empresa rentabilice estas costosas instalaciones ni brinde una oferta estable de servidores en línea sin tener centros de datos capaces de asumir el control cuando no se necesita calefacción.
 

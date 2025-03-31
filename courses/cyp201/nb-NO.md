@@ -2170,7 +2170,7 @@ $$
 Med:
 
 - $v$: versjonsnummeret til skriptet (standard `0xC0` for Taproot);
-- $sz$: størrelsen på skriptet kodet i _CompactSize_-formatet; 
+- $sz$: størrelsen på skriptet kodet i _CompactSize_-formatet;
 - $S$: skriptet.
 
 De forskjellige skript-hashene ($\text{h}_{\text{leaf}}$) sorteres først i leksikografisk rekkefølge. Deretter blir de konkatenert i par og sendt gjennom den merkede hash-funksjonen `TapBranch`. Denne prosessen gjentas iterativt for å bygge, steg for steg, Merkle-treet:

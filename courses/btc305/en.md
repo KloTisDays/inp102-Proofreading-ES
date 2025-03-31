@@ -71,6 +71,7 @@ This is classroom exercise so if you take this course yourself, you cannot perfo
 The exercise starts after watching the introduction “How Bitcoin and the blockchain works” by the BBC.
 
 ![how bitcoin and the blockchain works](https://youtu.be/mhE_vvwAiRc)
+<videoId>da8f8092-bd84-4287-87db-4c6d53763e5e</videoId>
 
 This exercise requires at least nine people to participate. This exercise intends to physically get an idea of how Bitcoin works. By playing each role in the network, you will have an interactive and playful way of learning. This exercise does not involve Lightning Network.
 

@@ -1,7 +1,7 @@
 ---
 name: Membangun dengan Elemen dan Jaringan Cair
 goal: Belajar menggunakan dan mengembangkan dengan platform blockchain sumber terbuka Elements dan fitur-fitur utamanya
-objectives: 
+objectives:
 
   - Memahami konsep dasar platform blockchain Elements dan sidechain Liquid.
   - Pelajari cara menyiapkan dan menjalankan node Elements untuk konfigurasi mandiri dan sidechain.
@@ -29,6 +29,7 @@ Bergabunglah bersama kami untuk meningkatkan keterampilan Anda, membuka potensi 
 <chapterId>a721398e-7040-4edd-be53-b485ea759fa9</chapterId>
 
 ![Video](https://youtu.be/gkQfnwYLyI0?si=H6cIPhgZaSAwHaHI)
+<videoId>1c25ec38-980b-4b97-ad86-ae8c86779eb7</videoId>
 
 Tujuan dari Elements Academy adalah untuk memperkenalkan dan menjelaskan konsep-konsep utama Elements, platform sumber terbuka yang menjadi dasar dari Liquid. Pada akhir kursus, Anda akan memiliki pemahaman yang baik tentang fitur utama Elements, seperti Transaksi Rahasia dan Aset yang Diterbitkan, dan proses yang terlibat dalam menjalankan Elements Core.
 
@@ -41,6 +42,7 @@ Setiap pertanyaan, permintaan informasi tambahan, atau pertanyaan mengenai jawab
 <chapterId>7a7f2712-5300-4a6d-b1ed-05eab731bc35</chapterId>
 
 ![Video](https://youtu.be/ns-JLGdkNig?si=fmWye_boRSvVF1Bt)
+<videoId>f5ea023e-0e0f-41bb-a0b2-1b391907f956</videoId>
 
 Elements adalah platform blockchain open source berkemampuan sidechain, yang menyediakan akses ke fitur-fitur canggih yang dikembangkan oleh anggota komunitas, seperti Transaksi Rahasia dan Aset yang Diterbitkan.
 
@@ -83,6 +85,7 @@ Elements menambahkan semua fitur ini di atas basis kode Bitcoin Core, memperluas
 <chapterId>05d88877-58b0-455b-9ae6-a72d19070525</chapterId>
 
 ![Video](https://youtu.be/v0lzmfH81AY?si=V-xDWfmDLKyBcdPs)
+<videoId>61b78765-4917-4aa4-b436-394a37a1092a</videoId>
 
 Elements menyediakan solusi teknis untuk masalah yang dihadapi pengguna blockchain setiap hari; latensi transaksi, kurangnya privasi, dan risiko terhadap fungibilitas.
 
@@ -144,6 +147,7 @@ Untuk mentransfer aset kembali ke mainchain, pengguna melakukan transaksi peg-ou
 <chapterId>cc806e5a-81ab-457b-9531-9f863120a019</chapterId>
 
 ![Video](https://youtu.be/Frr_OjTEPAM?si=iq5XonJyQk8S5OAu)
+<videoId>94babb5e-f64c-4a6c-bf28-38832c0ceacf</videoId>
 
 Karena Elements didasarkan pada basis kode Bitcoin, komponen-komponen yang membentuk jaringan yang berfungsi sangat mirip.
 
@@ -225,6 +229,7 @@ Hal ini akan memungkinkan kita untuk melakukan berbagai macam operasi seperti tr
 <chapterId>263b1c5b-59ed-49e7-b811-95c354f41eae</chapterId>
 
 ![Video](https://youtu.be/-by2xBtXQeE?si=7bLo_geGn3qh7MXN)
+<videoId>e2f80756-fffd-4de5-b61c-1583cf81da68</videoId>
 
 Pada bagian ini, Anda akan mempelajari cara menggunakan fitur Transaksi Rahasia di Elements.
 
@@ -337,6 +342,7 @@ Sekian untuk pelajaran kali ini; semoga berhasil dalam kuis dan sampai jumpa di 
 <chapterId>c33c7020-5975-457a-99db-4f8b90d1fa1c</chapterId>
 
 ![Video](https://youtu.be/XnY4WZUNSs4?si=dG8I5OoSh_0EBdvL)
+<videoId>8a7835e6-45ee-461a-ae0f-4fd0bc73921f</videoId>
 
 Pada bagian ini anda akan mempelajari bagaimana cara menggunakan fitur Issued Assets di Elements.
 
@@ -516,6 +522,7 @@ Pada bagian ini kita telah melihat bagaimana cara menerbitkan dan melabeli aset.
 <chapterId>78751b21-1dc8-4877-a406-e71bc80a95b0</chapterId>
 
 ![Video](https://youtu.be/5em79YHtYk0?si=rhponm6Hw9AB6RJp)
+<videoId>4d705c1c-d2c7-4847-9b03-91f348b135c2</videoId>
 
 Pada bagian ini Anda akan mempelajari cara menerbitkan lebih banyak aset yang sudah diterbitkan dan juga cara menghancurkan sejumlah aset yang sudah diterbitkan.
 
@@ -664,6 +671,7 @@ Pada bagian ini kita telah melihat bagaimana cara menerbitkan aset, bersama deng
 <chapterId>c47b217e-db14-4843-a66f-3e5f3a00a808</chapterId>
 
 ![Video](https://youtu.be/kxWX91fCnus?si=KItm_Am3_RrBcLBN)
+<videoId>90765b4b-cbe6-476a-9d3f-4bb9442a530e</videoId>
 
 Elements mendukung model penandatanganan federasi yang memungkinkan Anda untuk menentukan jumlah anggota Strong Federation yang harus menandatangani blok yang diusulkan untuk menghasilkan blok yang valid.
 
@@ -823,6 +831,7 @@ Setelah sejumlah penandatangan menandatangani blok yang diusulkan, blok tersebut
 <chapterId>432d7a65-255f-44a3-8b38-78508202cb37</chapterId>
 
 ![Video](https://youtu.be/egYzj4N8CB8?si=v7_-IXsjHPE-ARDe)
+<videoId>9c83d3a8-55f1-462f-84c3-160db2a72a83</videoId>
 
 Elements adalah sebuah platform blockchain open-source, tujuan umum yang juga dapat "dipasangkan" ke blockchain yang sudah ada, seperti Bitcoin. Ketika dipasangkan ke blockchain lain, Elements dikatakan beroperasi sebagai `sidechain`. Sidechain memungkinkan transfer aset dua arah dari satu rantai ke rantai lainnya. Menerapkan Elements sebagai sidechain memungkinkan Anda untuk mengatasi beberapa keterbatasan yang melekat pada blockchain utama, sambil mempertahankan tingkat keamanan yang baik yang disediakan oleh aset yang diamankan di blockchain utama.
 
@@ -1026,6 +1035,7 @@ Peg-out terjadi ketika node Elements memanggil perintah `sendtomainchain`, yang 
 <chapterId>50dff39b-2702-47d7-9c15-0b54b845e99f</chapterId>
 
 ![Video](https://youtu.be/u-3rV7DGtD0?si=G1__H0Uelf4sTUDM)
+<videoId>ce88c76b-1707-4fc0-9082-b875822fb742</videoId>
 
 Sejauh ini, kita telah melihat cara menjalankan Elements sebagai sidechain. Akan tetapi, ia juga dapat beroperasi sebagai solusi blockchain mandiri dengan aset asli bawaannya sendiri. Dalam pengaturan ini, blockchain Elements masih mempertahankan semua fitur implementasi sidechain, seperti Transaksi Rahasia dan Aset yang Diterbitkan, tetapi tidak memerlukan peg-in atau peg-out untuk menambah atau menghapus jumlah aset default dari sirkulasi.
 
@@ -1212,6 +1222,7 @@ Dengan menggunakan parameter di atas, Anda dapat mengoperasikan Elements sebagai
 <chapterId>7e2c916d-8114-424c-97f5-cbff9d73b8e3</chapterId>
 
 ![Video](https://youtu.be/CTMdamTZBBM?si=16LBcXvN4pBfC7lr)
+<videoId>3bdc6c60-49eb-4e9a-921f-e554c67cd797</videoId>
 
 Dalam kursus ini, kita telah mempelajari bahwa Elements adalah protokol jaringan sumber terbuka yang dapat diimplementasikan sebagai sidechain ke blockchain lain, atau sebagai solusi blockchain mandiri.
 

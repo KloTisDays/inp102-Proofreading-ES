@@ -70,6 +70,7 @@ Prêts à commencer cette aventure captivante ? Plongeons ensemble dans le monde
 <chapterId>36a82de7-87ee-5e7a-b69e-48fc30030447</chapterId>
 
 ![Qu'est-ce que le minage de bitcoin ?](https://www.youtube.com/watch?v=neEQzEQzmPQ)
+<videoId>4d5a378d-7f3f-43f0-97e2-668eb0a64777</videoId>
 
 ### Le Minage Expliqué : L'Analogie du Puzzle
 
@@ -119,6 +120,7 @@ En conclusion, l'industrie du minage de Bitcoin continue de s'adapter et de se d
 <chapterId>0896dfc1-c97e-5bec-9bf1-8c20b3388a2c</chapterId>
 
 ![Le minage de Bitcoin trop centralisé ? Risques et solutions](https://www.youtube.com/watch?v=xkiY8DgkcLQ)
+<videoId>1e2379c2-27d1-45f0-8e78-9c6020928313</videoId>
 
 ### Les Pools de Minage
 
@@ -172,6 +174,7 @@ La conclusion générale est que la décentralisation est cruciale pour la sécu
 <chapterId>7b9ee427-316a-54e3-a2d4-4ea97839a31b</chapterId>
 
 ![Chauffer son domicile en minant des bitcoins ?](https://www.youtube.com/watch?v=SQaK4_8M0kA)
+<videoId>d3a7d389-4887-4441-9233-36534351c53c</videoId>
 
 ### Le principe de Attakai
 
@@ -352,9 +355,9 @@ Un ordinateur, ou plus largement une carte électronique, ne consomme pas d’é
 
 Certaines entreprises ont eu l’idée de mutualiser les besoins en puissance de calcul et les besoins de chauffage grâce à des radiateurs/serveur. L’idée étant de distribuer les serveurs d’une entreprise en petites unités qui pourraient être placées dans des logements ou des bureaux. Cependant, cette idée rencontre plusieurs problèmes. La besoin des serveurs n’est pas liée au besoin de chauffage et les entreprises ne peuvent pas utiliser les capacités de calcul de leurs serveurs de façon flexible. Il existe aussi des limites à la bande passante que des particuliers peuvent posséder. Toutes ces contraintes ne permettent pas à l’entreprise de rentabiliser ces installations coûteuses ni de fournir une offre de serveur en ligne stable sans avoir des centres de données capables de prendre le relais quand le besoin de chauffage n’est pas présent.
 
-> La chaleur de votre ordinateur n’est pas gaspillée si vous devez chauffer chez vous. Si vous utilisez un chauffage électrique là où vous habitez, alors la chaleur de votre ordinateur n’est pas un gâchis. C’est le même prix si vous générer cette chaleur avec votre ordinateur.Si vous avez un autre système de chauffe moins cher que l’électrique alors le gaspillage est seulement dans la différence de coût. Si c’est l’été et que vous utilisez la climatisation alors c’est le double. La création de bitcoins devrait avoir lieu là où elle est moins chère. Peut-être que ce sera là où le climat est froid et là où le chauffage est électrique, où miner deviendra gratuit.  
->  
-> Satoshi Nakamoto – 8 août 2010  
+> La chaleur de votre ordinateur n’est pas gaspillée si vous devez chauffer chez vous. Si vous utilisez un chauffage électrique là où vous habitez, alors la chaleur de votre ordinateur n’est pas un gâchis. C’est le même prix si vous générer cette chaleur avec votre ordinateur.Si vous avez un autre système de chauffe moins cher que l’électrique alors le gaspillage est seulement dans la différence de coût. Si c’est l’été et que vous utilisez la climatisation alors c’est le double. La création de bitcoins devrait avoir lieu là où elle est moins chère. Peut-être que ce sera là où le climat est froid et là où le chauffage est électrique, où miner deviendra gratuit.
+>
+> Satoshi Nakamoto – 8 août 2010
 
 Le Bitcoin et sa preuve de travail se démarquent car ils ajustent automatiquement la difficulté du minage en fonction de la quantité de calcul effectué par l’ensemble du réseau, cette quantité s’appelle le hashrate et est exprimé en hash/seconde. Aujourd’hui il est estimé à 380 Exahash/seconde, soit 380 milliards de milliards de hash/seconde. Ce hashrate représente du travail et donc une quantité d’énergie dépensée. Plus le hashrate est élevé, plus la difficulté augmente, et inversement. Ainsi, on peut activer ou désactiver un mineur Bitcoin à n’importe quel moment sans incidence pour le réseau contrairement aux radiateurs/serveurs qui nécessitent de rester stables pour offrir leur service. Le mineur est récompensé pour sa participation, relativement à celle des autres, aussi petite soit-elle.
 
@@ -366,9 +369,9 @@ Ce qu’il est important de comprendre, c’est la manière dont le minage parti
 Plusieurs technologies déjà existantes ont été ingénieusement combinées pour donner vie au consensus de Nakamoto. Ce consensus permet de récompenser économiquement les acteurs honnêtes pour leur participation au fonctionnement du réseau Bitcoin, tout en décourageant les acteurs malhonnêtes. C’est l’un des points clés qui permet au réseau d’exister de façon durable.
 Les acteurs honnêtes, ceux qui effectuent du minage selon les règles, sont tous en concurrence les uns avec les autres pour obtenir la plus grande part possible de la récompense pour la production de nouveaux blocs. Cette incitation économique conduit naturellement à une forme de centralisation car des entreprises choisissent de se spécialiser dans cette activité lucrative en réduisant leurs coûts grâce aux économies d’échelle. Ces acteurs industriels ont une position avantageuse, pour l’achat, la maintenance de machines mais aussi pour la négociation de tarifs d’électricité de gros.
 
-> Au début, la plupart des utilisateurs exécuteraient des nœuds de réseau, mais à mesure que le réseau se développerait au-delà d’un certain point, il serait de plus en plus laissé aux spécialistes avec des fermes de serveurs de matériel spécialisé. Une batterie de serveurs n’aurait besoin que d’un seul nœud sur le réseau et le reste du LAN se connecte à ce nœud.  
->  
-> Satoshi Nakamoto – 2 novembre 2008  
+> Au début, la plupart des utilisateurs exécuteraient des nœuds de réseau, mais à mesure que le réseau se développerait au-delà d’un certain point, il serait de plus en plus laissé aux spécialistes avec des fermes de serveurs de matériel spécialisé. Une batterie de serveurs n’aurait besoin que d’un seul nœud sur le réseau et le reste du LAN se connecte à ce nœud.
+>
+> Satoshi Nakamoto – 2 novembre 2008
 
 Certaines entités détiennent un pourcentage considérable du hashrate total dans de grandes fermes de minage. On peut observer la récente vague de froid aux États-Unis où une partie importante du hashrate a été mise hors ligne pour permettre à l’énergie d’être redirigée vers les foyers ayant un besoin exceptionnel d’électricité. Pendant plusieurs jours, les mineurs ont été incités économiquement à éteindre leurs fermes et on peut donc voir cette météo exceptionnelle sur la courbe du hashrate de Bitcoin.
 
@@ -501,6 +504,7 @@ Liste du matériel et liens
 <chapterId>3cf487a4-21ef-5b24-83d5-789b811f740f</chapterId>
 
 ![Connecter un Antminer S9 à son réseau Wifi](https://www.youtube.com/watch?v=y4oYURBaPqg)
+<videoId>e2fd8650-277b-498a-b95f-aec8a11c4b89</videoId>
 
 Pour connecter votre ASIC en WIFI vous aurez besoin d’un appareil appelé bridge celui-ci permet de récupérer le signal WIFI de votre box et de le transmettre à un autre appareil en Ethernet.
 
@@ -555,6 +559,7 @@ Cette méthode peut être appliquée entre 2 minutes et 10 minutes après le dé
 <chapterId>38e8b1a8-8b1d-51ed-8b92-59d4ddb15184</chapterId>
 
 ![Installer Braiins OS+ sur son Antminer S9](https://www.youtube.com/watch?v=luqwlvzGsO4)
+<videoId>68ebdeb4-c6bb-4b8e-97cb-f03a70de136f</videoId>
 
 Le logiciel d'origine installé par Antminer, sur leur machines de minage est limité en fonctionnalité. C'est pourquoi dans ce guide nous allons installer un autre logiciel appelé BraiinsOS+. C'est un logiciel tiers qui est développé par la toute première pool de minage Bitcoin qui possède plus de fonctionnalités et qui permet par exemple de modifier la puissance de la machine.
 
@@ -582,7 +587,7 @@ Nous allons voir ici comment installer facilement Braiins OS+ directement sur la
 
 8. Cliquez sur Back puis l’onglet install, rentrez l’adresse IP précédemment trouvée puis cliquez sur “Start”.
 
-> Si l’installation ne fonctionne pas, il peut être nécessaire d’effectuer une réinitialisation puis essayer de nouveau (voir la section précédente).  
+> Si l’installation ne fonctionne pas, il peut être nécessaire d’effectuer une réinitialisation puis essayer de nouveau (voir la section précédente).
 
 ![image](assets/en/40.webp)
 
@@ -593,6 +598,7 @@ Nous allons voir ici comment installer facilement Braiins OS+ directement sur la
 <chapterId>36e432f2-85bc-52d0-a62a-009fc4c69338</chapterId>
 
 ![Configurer son Antminer S9 avec Braiins OS+](https://www.youtube.com/watch?v=dK0t8M8kLYg)
+<videoId>6a919e3a-b213-42a6-a875-637a054cdf91</videoId>
 
 Vous devrez vous connecter à votre ASIC en utilisant l’adresse IP locale de votre appareil sur votre réseau à travers un navigateur.
 
@@ -643,8 +649,9 @@ Sur cette première page vous pourrez observer les performances de votre machine
 <chapterId>0c6befa7-f3ef-5bcf-ae8d-0ad5e5d41d70</chapterId>
 
 ![Remplacer les ventilateurs pour réduire les nuisances sonores](https://www.youtube.com/watch?v=2CNGKZiveuc)
+<videoId>04d85733-8692-4c91-acc3-9dbdbd9b7a1f</videoId>
 
-> ATTENTION : Il est essentiel d’avoir préalablement installé Braiins OS+ sur votre mineur, ou tout autre logiciel ayant la capacité de réduire les performances de votre machine. Cette mesure est cruciale, car dans le but de réduire le bruit, nous allons installer des ventilateurs moins puissants, qui pourront dissiper moins de chaleur.  
+> ATTENTION : Il est essentiel d’avoir préalablement installé Braiins OS+ sur votre mineur, ou tout autre logiciel ayant la capacité de réduire les performances de votre machine. Cette mesure est cruciale, car dans le but de réduire le bruit, nous allons installer des ventilateurs moins puissants, qui pourront dissiper moins de chaleur.
 
 ![image](assets/en/46.webp)
 
@@ -653,7 +660,7 @@ Sur cette première page vous pourrez observer les performances de votre machine
 - 1 ventilateur Noctua NF-A6x25 PWM
 - Sucre d’électricien 2,5mm2
 
-> ATTENTION : Tout d’abord, avant de commencer, assurez-vous de bien avoir débranché votre mineur pour éviter tout risque d’électrocution.  
+> ATTENTION : Tout d’abord, avant de commencer, assurez-vous de bien avoir débranché votre mineur pour éviter tout risque d’électrocution.
 
 ![image](assets/en/47.webp)
 
@@ -702,7 +709,7 @@ Une fois le branchement effectué, il est temps de mettre en place le nouveau ve
 ![image](assets/en/61.webp)
 ![image](assets/en/62.webp)
 
-> Optionnel : Si vous êtes compétent en électricité, vous pouvez ajouter directement sur la sortie d’alimentation 12V un connecteur jack 5,5 mm femelle qui permettra d’alimenter directement le bridge Wi-Fi Vonet. Cependant, si vous n’êtes pas sûr de vos compétences en électricité, il est préférable d’utiliser le connecteur USB avec un chargeur de type smartphone pour éviter tout risque de court-circuit ou de dommage électrique.  
+> Optionnel : Si vous êtes compétent en électricité, vous pouvez ajouter directement sur la sortie d’alimentation 12V un connecteur jack 5,5 mm femelle qui permettra d’alimenter directement le bridge Wi-Fi Vonet. Cependant, si vous n’êtes pas sûr de vos compétences en électricité, il est préférable d’utiliser le connecteur USB avec un chargeur de type smartphone pour éviter tout risque de court-circuit ou de dommage électrique.
 
 ![image](assets/en/63.webp)
 
@@ -717,8 +724,9 @@ Enfin, remettez le couvercle du boîtier en place puis revissez les 6 vis sur le
 <chapterId>a29f60f1-3fa3-57fc-a630-9c97cec30e56</chapterId>
 
 ![Remplacer les ventilateurs pour réduire les nuisances sonores](https://www.youtube.com/watch?v=2CNGKZiveuc)
+<videoId>04d85733-8692-4c91-acc3-9dbdbd9b7a1f</videoId>
 
-> ATTENTION : Il est essentiel d’avoir préalablement installé Braiins OS+ sur votre mineur, ou tout autre logiciel ayant la capacité de réduire les performances de votre machine. Cette mesure est cruciale, car dans le but de réduire le bruit, nous allons installer des ventilateurs moins puissants, qui pourront dissiper moins de chaleur.  
+> ATTENTION : Il est essentiel d’avoir préalablement installé Braiins OS+ sur votre mineur, ou tout autre logiciel ayant la capacité de réduire les performances de votre machine. Cette mesure est cruciale, car dans le but de réduire le bruit, nous allons installer des ventilateurs moins puissants, qui pourront dissiper moins de chaleur.
 
 ![image](assets/en/46.webp)
 
@@ -728,7 +736,7 @@ Enfin, remettez le couvercle du boîtier en place puis revissez les 6 vis sur le
 - 2 ventilateurs Noctua NF-A14 iPPC-2000 PWM
 - 2 grilles de ventilateurs 140mm
 
-> ATTENTION : Tout d’abord, avant de commencer, assurez-vous de bien avoir débranché votre mineur pour éviter tout risque d’électrocution.  
+> ATTENTION : Tout d’abord, avant de commencer, assurez-vous de bien avoir débranché votre mineur pour éviter tout risque d’électrocution.
 
 1. Tout d’abord, débranchez les ventilateurs et dévissez-les.
 
@@ -777,6 +785,7 @@ Et voilà, bravo ! Vous venez de remplacer l’ensemble de la partie mécanique 
 <chapterId>b57a6105-0a53-5fe9-bad1-d6d9daf97c0d</chapterId>
 
 ![Rejoindre une pool de minage avec un Antminer S9](https://www.youtube.com/watch?v=wM-dRog6mls&t=166s)
+<videoId>c74d95f1-f149-46b8-a963-3d143e84c988</videoId>
 
 On peut imaginer une pool de minage comme une coopérative agricole. Les agriculteurs mettent en commun leur production pour réduire la variance de l’offre et de la demande et ainsi obtenir des revenus plus stables pour leur exploitation. Une pool de minage fonctionne de la même manière et la matière première mise en commun sont des hash. En effet, la découverte d’un seul hash valide permet la création d’un bloc et ainsi de remporter la coinbase ou la récompense aujourd’hui de 6,25 BTC plus les frais des transactions inclus dans le bloc. Si vous minez seul, vous ne serez récompensé que lorsque vous trouverez un bloc. Étant en compétition contre tous les autres mineurs de la planète, vous auriez donc très peu de chances de remporter ce grand loto et vous devriez malgré tout payer les frais associés à l’utilisation de votre mineur sans aucune garantie de réussite. Les pools de minage viennent répondre à cette problématique en mutualisant la puissance de calcul de plusieurs (milliers) de mineurs et en partageant la récompense de ces derniers en fonction du pourcentage de participation au hashrate de la pool lorsqu’un bloc a été trouvé. Pour visualiser vos chance de miner un block de miner un block seul vous pouvez utiliser cet outil. En rentrant les informations d’un Antminer S9 on voit que les chances de trouver un hash permettant la création d’un block sont de 1/24 777 849 chaque bloc ou de 1/ 172 068 par jour. Il faudrait en moyenne (avec un hashrate et une difficulté constante) 471 ans pour trouver un bloc.
 
@@ -811,6 +820,7 @@ Vous pouvez à présent retourner dans l’interface de Braiins OS+ afin de rent
 <chapterId>25380972-31c7-540d-80d8-17a06b171ca0</chapterId>
 
 ![Optimiser les performances de son Antminer S9 avec l'auto-tunning](https://www.youtube.com/watch?v=yh8U9Ay1i-E&t=277s)
+<videoId>c3526e8d-4529-43b7-8c8a-a01b8a16b1e7</videoId>
 
 L’overclocking et l’autotuning consiste tous les deux à ajuster les fréquences sur les cartes de hachage pour améliorer les performances de l’ASIC. La différence entre les deux réside dans la complexité de ces réglages de fréquence.
 

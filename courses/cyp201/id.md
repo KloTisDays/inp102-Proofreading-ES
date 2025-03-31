@@ -2180,7 +2180,7 @@ $$
 Dengan:
 
 - $v$: nomor versi skrip (default `0xC0` untuk Taproot);
-- $sz$: ukuran skrip yang dikodekan dalam format _CompactSize_; 
+- $sz$: ukuran skrip yang dikodekan dalam format _CompactSize_;
 - $S$: skripnya.
 
 Berbagai hash skrip ($\text{h}_{\text{leaf}}$) pertama-tama diurutkan dalam urutan leksikografis. Kemudian, mereka digabungkan secara berpasangan dan dilewati melalui fungsi hash bertag `TapBranch`. Proses ini diulang secara iteratif untuk membangun, langkah demi langkah, pohon Merkle:

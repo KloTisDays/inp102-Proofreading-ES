@@ -28,6 +28,7 @@ Join us to elevate your skills, unlock the full potential of Liquid and Elements
 <chapterId>a721398e-7040-4edd-be53-b485ea759fa9</chapterId>
 
 ![Video](https://youtu.be/gkQfnwYLyI0?si=H6cIPhgZaSAwHaHI)
+<videoId>1c25ec38-980b-4b97-ad86-ae8c86779eb7</videoId>
 
 The purpose of Elements Academy is to introduce and explain the key concepts of Elements, the open-source platform that Liquid is built on. By the end of the course, you should have a good understanding of the main features of Elements, such as Confidential Transactions and Issued Assets, and the processes involved in running Elements Core.
 
@@ -40,6 +41,7 @@ Any questions, requests for additional information or queries over the quiz answ
 <chapterId>7a7f2712-5300-4a6d-b1ed-05eab731bc35</chapterId>
 
 ![Video](https://youtu.be/ns-JLGdkNig?si=fmWye_boRSvVF1Bt)
+<videoId>f5ea023e-0e0f-41bb-a0b2-1b391907f956</videoId>
 
 Elements is an open source, sidechain-capable blockchain platform, providing access to powerful features developed by members of the community, such as Confidential Transactions and Issued Assets.
 
@@ -82,6 +84,7 @@ Elements adds all these features on top of the Bitcoin Core codebase, extending 
 <chapterId>05d88877-58b0-455b-9ae6-a72d19070525</chapterId>
 
 ![Video](https://youtu.be/v0lzmfH81AY?si=V-xDWfmDLKyBcdPs)
+<videoId>61b78765-4917-4aa4-b436-394a37a1092a</videoId>
 
 Elements provides a technical solution to problems blockchain users face daily; transaction latency, lack of privacy, and risk to fungibility.
 
@@ -146,6 +149,7 @@ In order to transfer assets back to the mainchain, a user makes a special peg-ou
 <chapterId>cc806e5a-81ab-457b-9531-9f863120a019</chapterId>
 
 ![Video](https://youtu.be/Frr_OjTEPAM?si=iq5XonJyQk8S5OAu)
+<videoId>94babb5e-f64c-4a6c-bf28-38832c0ceacf</videoId>
 
 As Elements is based upon the Bitcoin codebase, the components that make up a functioning network are very similar.
 
@@ -229,6 +233,7 @@ This will allows us to perform all manner of operations like transacting assets 
 <chapterId>263b1c5b-59ed-49e7-b811-95c354f41eae</chapterId>
 
 ![Video](https://youtu.be/-by2xBtXQeE?si=7bLo_geGn3qh7MXN)
+<videoId>e2f80756-fffd-4de5-b61c-1583cf81da68</videoId>
 
 In this section you will learn how to use the Confidential Transactions feature of Elements.
 
@@ -341,6 +346,7 @@ That's it for this lesson; good luck on the quiz and see you in the next one!
 <chapterId>c33c7020-5975-457a-99db-4f8b90d1fa1c</chapterId>
 
 ![Video](https://youtu.be/XnY4WZUNSs4?si=dG8I5OoSh_0EBdvL)
+<videoId>8a7835e6-45ee-461a-ae0f-4fd0bc73921f</videoId>
 
 In this section you will learn how to use the Issued Assets feature of Elements.
 
@@ -521,6 +527,7 @@ In this section we have seen how to issue and label assets. In the next section 
 <chapterId>78751b21-1dc8-4877-a406-e71bc80a95b0</chapterId>
 
 ![Video](https://youtu.be/5em79YHtYk0?si=rhponm6Hw9AB6RJp)
+<videoId>4d705c1c-d2c7-4847-9b03-91f348b135c2</videoId>
 
 In this section you will learn how to issue more of an already issued asset and also how to destroy a given amount of an issued asset.
 
@@ -671,6 +678,7 @@ In this section we have seen how to issue an asset, along with how to make use o
 <chapterId>c47b217e-db14-4843-a66f-3e5f3a00a808</chapterId>
 
 ![Video](https://youtu.be/kxWX91fCnus?si=KItm_Am3_RrBcLBN)
+<videoId>90765b4b-cbe6-476a-9d3f-4bb9442a530e</videoId>
 
 Elements supports a federated signing model which allows you to specify the number of Strong Federation members that must sign a proposed block in order to produce a valid block.
 
@@ -830,6 +838,7 @@ Once a threshold number of signatories have signed the proposed block it is comb
 <chapterId>432d7a65-255f-44a3-8b38-78508202cb37</chapterId>
 
 ![Video](https://youtu.be/egYzj4N8CB8?si=v7_-IXsjHPE-ARDe)
+<videoId>9c83d3a8-55f1-462f-84c3-160db2a72a83</videoId>
 
 Elements is an open-source, general purpose blockchain platform that can also be `pegged` to an existing blockchain, such as Bitcoin. When pegged to another blockchain, Elements is said to be operating as a `sidechain`. Sidechains enable the two-way transfer of assets from one chain to another. Implementing Elements as a sidechain allows you to work around some of the inherent limitations of the mainchain, while retaining a good degree of the security provided by assets secured on the mainchain.
 
@@ -1038,6 +1047,7 @@ A peg-out occurs when an Elements node calls the `sendtomainchain` command, whic
 <chapterId>50dff39b-2702-47d7-9c15-0b54b845e99f</chapterId>
 
 ![Video](https://youtu.be/u-3rV7DGtD0?si=G1__H0Uelf4sTUDM)
+<videoId>ce88c76b-1707-4fc0-9082-b875822fb742</videoId>
 
 So far, we have looked at how to run Elements as a sidechain. However, it can also operate as a standalone blockchain solution with its own default native asset. In this setup an Elements blockchain still retains all the features of a sidechain implementation, such as Confidential Transactions and Issued Assets, but does not need peg-in or peg-out to add or remove default asset amounts from circulation.
 
@@ -1228,6 +1238,7 @@ By using the above parameters you can operate Elements as a standalone blockchai
 <chapterId>7e2c916d-8114-424c-97f5-cbff9d73b8e3</chapterId>
 
 ![Video](https://youtu.be/CTMdamTZBBM?si=16LBcXvN4pBfC7lr)
+<videoId>3bdc6c60-49eb-4e9a-921f-e554c67cd797</videoId>
 
 In this course we have learned that Elements is an open-source network protocol that can be implemented as a sidechain to another blockchain, or as a standalone blockchain solution.
 

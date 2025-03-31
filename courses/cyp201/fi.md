@@ -2183,7 +2183,7 @@ $$
 Missä:
 
 - $v$: skriptin versionumero (oletusarvo `0xC0` Taprootille);
-- $sz$: skriptin koko, joka on koodattu _CompactSize_-muodossa; 
+- $sz$: skriptin koko, joka on koodattu _CompactSize_-muodossa;
 - $S$: skripti.
 
 Eri skriptien hajautukset ($\text{h}_{\text{leaf}}$) lajitellaan ensin leksikografiseen järjestykseen. Sen jälkeen ne yhdistetään pareittain ja syötetään merkityn hajautusfunktion `TapBranch` läpi. Tätä prosessia toistetaan iteratiivisesti rakentaaksemme askel askeleelta Merkle-puun:

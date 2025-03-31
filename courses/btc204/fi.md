@@ -1,7 +1,7 @@
 ---
 name: Bitcoinin yksityisyys
 goal: Ymmärtää ja hallita yksityisyyden suojan periaatteet Bitcoinia käytettäessä
-objectives: 
+objectives:
 
   - Määritellään teoreettiset käsitteet, joita tarvitaan yksityisyyden suojaan liittyvien kysymysten ymmärtämiseksi
   - Bitcoin-käyttäjien luottamuksellisuuden menettämiseen liittyvien riskien tunnistaminen ja lieventäminen
@@ -2831,7 +2831,7 @@ Adaptor-allekirjoitusten käyttö on erityisen mielenkiintoista tässä yhteydes
 
 ### Sovittimen allekirjoitukset
 
-Adaptiiviset allekirjoitukset ovat salausmenetelmä, jossa voimassa oleva allekirjoitus yhdistetään salaisen tiedon paljastamiseksi ylimääräiseen allekirjoitukseen, jota kutsutaan "adaptiiviseksi allekirjoitukseksi". Tämä mekanismi on suunniteltu siten, että kun tiedetään kaksi seuraavista kolmesta elementistä: voimassa oleva allekirjoitus, sovitinallekirjoitus ja salainen tieto, voidaan päätellä puuttuva kolmas elementti. 
+Adaptiiviset allekirjoitukset ovat salausmenetelmä, jossa voimassa oleva allekirjoitus yhdistetään salaisen tiedon paljastamiseksi ylimääräiseen allekirjoitukseen, jota kutsutaan "adaptiiviseksi allekirjoitukseksi". Tämä mekanismi on suunniteltu siten, että kun tiedetään kaksi seuraavista kolmesta elementistä: voimassa oleva allekirjoitus, sovitinallekirjoitus ja salainen tieto, voidaan päätellä puuttuva kolmas elementti.
 
 Kolikonvaihdossa Adaptor-allekirjoitusten käyttö mahdollistaa kahden arkaluonteisen tiedon samanaikaisen paljastamisen osallistujien välillä, jolloin keskinäistä luottamusta ei tarvita. Havainnollistetaan tätä prosessia esimerkillä, jossa Alice ja Bob haluavat vaihtaa kumpikin 1 BTC:n, mutta eivät luota toisiinsa. He käyttävät Adaptor-allekirjoituksia poistaakseen tarpeen luottaa toisiinsa tässä vaihdossa. Näin he tekevät sen:
 
@@ -2932,7 +2932,7 @@ Dandelionin ideana on parantaa transaktioiden reitityksen luottamuksellisuutta B
 
 Tämä yhteys Bitcoin-aktiviteetin ja IP-osoitteen välillä muodostaa huomattavan riskin käyttäjien luottamuksellisuudelle. Monet tahot pystyvät helposti yhdistämään IP-osoitteen henkilöllisyyteen. Näihin kuuluvat hallitukset ja Internet-palveluntarjoajat. Lisäksi nämä tiedot voivat tulla julkisesti saataville, esimerkiksi jos IP-osoite ja henkilötiedot vuotavat, kun verkkosivuston tietokantaan murtaudutaan.
 
-Klassisessa Bitcoin-toiminnassa käyttäjän lompakko-ohjelmistoonsa rakentamat transaktiot siirretään hänen henkilökohtaiseen solmuunsa. 
+Klassisessa Bitcoin-toiminnassa käyttäjän lompakko-ohjelmistoonsa rakentamat transaktiot siirretään hänen henkilökohtaiseen solmuunsa.
 
 ![BTC204](assets/fr/202.webp)
 

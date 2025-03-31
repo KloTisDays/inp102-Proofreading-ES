@@ -28,15 +28,15 @@ Le cours est issu d'un séminaire en direct organisé par Fulgur'Ventures et ens
 
 Bonjour à tous et bienvenue dans cette formation dédiée à RGB, un système de contrats intelligents validés côté client, fonctionnant sur Bitcoin et le Lightning Network. La structure de cette formation est pensée pour permettre une exploration approfondie de ce sujet complexe. Voici comment la formation est organisée :
 
-**Section 1 : Théorie**  
+**Section 1 : Théorie**
 
 La première section est dédiée aux concepts théoriques nécessaires pour comprendre les principes fondamentaux de la validation côté client et de RGB. Comme vous le découvrirez dans cette formation, RGB introduit une multitude de concepts techniques que l'on n'a pas l'habitude de voir sur Bitcoin. Vous trouverez donc également dans cette section un glossaire fournissant des définitions pour tous les termes spécifiques au protocole RGB.
 
-**Section 2 : Pratique**  
+**Section 2 : Pratique**
 
 La deuxième section portera sur l'application des concepts théoriques vus dans la section 1. Nous apprendrons à créer et manipuler des contrats RGB. Nous allons également voir comment programmer avec ces outils. Ces deux premières sections sont présentées par Maxim Orlovsky.
 
-**Section 3 : Applications**  
+**Section 3 : Applications**
 
 La dernière section est animée par d'autres intervenants qui présentent des applications concrètes basées sur RGB, afin de mettre en lumière des cas d'utilisation réels.
 
@@ -72,6 +72,7 @@ La version écrite de cette formation a été rédigée en s'appuyant sur 2 ress
 <chapterId>f52f8af5-5d7c-588b-b56d-99b97176204b</chapterId>
 
 ![video](https://youtu.be/AF2XbifPGXM)
+<videoId>64c7692c-983d-4e4a-9744-5cc7d87c70f1</videoId>
 
 
 RGB est un protocole conçu pour appliquer et faire respecter des droits numériques (sous forme de contrats et d’actifs) de manière évolutive et confidentielle, en s’appuyant sur les règles de consensus et les opérations de la blockchain Bitcoin. L’objectif de ce premier chapitre est de présenter les concepts et la terminologie de base autour du protocole RGB, en soulignant notamment ses liens étroits avec des concepts de base de l’informatique distribuée tels que la Client-side Validation et les Single-use Seals.
@@ -216,10 +217,10 @@ Concrètement, voici le déroulé d'une transition d'état sur RGB :
 
 La Client-side Validation présente ainsi deux bénéfices majeurs :
 
-- **La scalabilité :**  
+- **La scalabilité :**
 Les engagements (*commitments*) inclus dans la blockchain ont une taille réduite (de l’ordre de quelques dizaines d’octets). Cela permet de ne pas saturer l’espace dans les blocs, car seul le hash doit être inclus. Cela permet également de faire évoluer le protocole off-chain, car chaque utilisateur n’a à stocker que son fragment d’historique (son _stash_).
 
-- **La privacy :**  
+- **La privacy :**
 Les transactions en elles-mêmes (c’est-à-dire leur contenu détaillé) ne sont pas publiées on-chain. Seules leurs empreintes (*hash*) le sont. Ainsi, les montants, les adresses et la logique du contrat restent privés, et le receveur peut vérifier, en local, la validité de son shard en inspectant toutes les transitions antérieures. Il n’a aucune raison de diffuser ces données publiquement, sauf en cas de litige ou de preuve nécessaire.
 
 Dans un système comme RGB, plusieurs transitions d'état de différents contrats (ou différents actifs) peuvent être agrégées dans une même transaction Bitcoin via un seul _commitment_. Ce mécanisme établit un lien déterministe et horodaté entre la transaction on-chain et les données off-chain (les transitions validées côté client), et permet d’enregistrer simultanément plusieurs shards dans un même point d’ancrage, ce qui réduit encore plus le coût et l’empreinte on-chain.
@@ -371,6 +372,7 @@ Avant de plonger dans les détails plus techniques du deuxième chapitre, n'hés
 <chapterId>cc2fe85a-9cc7-5b8c-a00a-c0a867241061</chapterId>
 
 ![video](https://youtu.be/FS6PDprWl5Q)
+<videoId>7b14e637-3ca8-498f-8498-503005cb91b0</videoId>
 
 
 Dans ce chapitre, nous allons étudier la mise en application de la Client-side Validation et des Single-use Seals au sein de la blockchain Bitcoin. Nous allons présenter les principes majeurs de la **couche d'engagement** (layer 1) de RGB, en nous intéressant plus particulièrement au schémas **TxO2**, retenu par RGB pour définir et fermer un sceau dans le cadre d’une transaction Bitcoin. Ensuite, nous parlerons de deux points importants qui n’ont pas encore été traités en détail :
@@ -387,11 +389,11 @@ Comme vu dans le premier chapitre de la formation, les Single-use Seals sont un 
 
 Pour comprendre la logique, rappelons le principe de base : pour fermer un _single-use seal_, on dépense l’endroit scellé en y insérant le _commitment_ sur un message donné. Dans Bitcoin, cela peut se faire de différentes manières :
 
-- **Utiliser une clé publique ou une adresse**  
+- **Utiliser une clé publique ou une adresse**
 
 On peut décider qu’une clé publique ou une adresse spécifique est le _single-use seal_. Dès que cette clé ou cette adresse apparaît on-chain dans une transaction, cela signifie que le scellé est fermé avec un certain message.
 
-- **Utiliser un output de transaction Bitcoin**  
+- **Utiliser un output de transaction Bitcoin**
 
 Cela signifie que l’on définit un _single-use seal_ comme un _outpoint_ précis (un couple TXID + numéro d’output). Dès que cet _outpoint_ est dépensé, il s’agit de l’acte de fermeture du scellé.
 
@@ -464,7 +466,7 @@ Pour bien clarifier la structure, récapitulons le cheminement en deux transacti
 
 ![RGB-Bitcoin](assets/fr/033.webp)
 
-Nous appelons donc la seconde transaction la "_witness transaction_". 
+Nous appelons donc la seconde transaction la "_witness transaction_".
 
 Pour illustrer cela sous un autre angle, on peut représenter deux couches :
 - **La couche supérieure (blockchain, publique)** : tout le monde voit la transaction et sait qu’il y a un _outpoint_ dépensé ;
@@ -540,7 +542,7 @@ Très simple dans son fonctionnement, un `OP_RETURN` permet de stocker un hash o
 34-byte_Opret_Commitment =
  OP_RETURN   OP_PUSHBYTE_32   <mpc::Commitment>
 |_________| |______________| |_________________|
-  1-byte       1-byte         32 bytes                      
+  1-byte       1-byte         32 bytes
 ```
 
 ### Tapret
@@ -836,7 +838,7 @@ Chacun de ces champs intervient dans la procédure de validation, qu’il s’ag
 
 #### TxId
 
-Le champ `Txid` correspond à l’identifiant de 32 octets de la transaction Bitcoin qui contient l’engagement `Opret` ou `Tapret`.  
+Le champ `Txid` correspond à l’identifiant de 32 octets de la transaction Bitcoin qui contient l’engagement `Opret` ou `Tapret`.
 
 En théorie, il serait envisageable de retrouver ce `Txid` en retraçant la chaîne de transitions d'états qui pointent elles-mêmes vers chaque witness transaction, en suivant la logique des Single-use Seals. Cependant, pour faciliter et accélérer la vérification, ce `Txid` est tout simplement inclus dans l’Anchor, ce qui évite ainsi au validateur d’avoir à remonter tout l’historique off-chain.
 
@@ -891,6 +893,7 @@ Dans le chapitre suivant, nous étudierons la composante purement off-chain de R
 <chapterId>04a9569f-3563-5382-bf53-0c7069343ba0</chapterId>
 
 ![video](https://youtu.be/tmAVdyXGmj4)
+<videoId>be292911-b669-4d5d-b992-115f8cc9863d</videoId>
 
 Dans ce chapitre et le prochain, nous allons aborder la notion de **smart contract** au sein de l’environnement RGB et nous allons étudier les différentes manières dont ces contrats peuvent définir et faire évoluer leur état (*state*). Nous verrons pourquoi l’architecture RGB, en utilisant la séquence ordonnée de Single-use Seals, permet d’exécuter divers types de ***Contract Operations*** de manière scalable et sans passer par un registre centralisé. Nous verrons également le rôle fondamental de la ***Business Logic*** pour encadrer l’évolution de l’état contractuel.
 
@@ -898,7 +901,7 @@ Dans ce chapitre et le prochain, nous allons aborder la notion de **smart contra
 
 L’objectif de RGB est de proposer une infrastructure où l’on peut mettre en œuvre des smart contracts sur Bitcoin. Par "smart contract", on entend un accord entre plusieurs parties qui est automatiquement et informatiquement appliqué, sans intervention humaine pour faire respecter les clauses. En d’autres termes, la loi du contrat est exécutée par le logiciel, et non par un tiers de confiance.
 
-Cette automatisation soulève la question de la décentralisation : comment s’affranchir d’un registre centralisé (par exemple une plateforme ou une base de données centrale) pour gérer la propriété et l’exécution des contrats ? L’idée d’origine, reprise par RGB, consiste à renouer avec un mode de possession dit **"au porteur"** (*bearer instruments*). Dans la tradition historique, certains titres (obligations, actions, etc.) étaient émis au porteur, permettant à quiconque possédait physiquement le document de faire valoir ses droits.  
+Cette automatisation soulève la question de la décentralisation : comment s’affranchir d’un registre centralisé (par exemple une plateforme ou une base de données centrale) pour gérer la propriété et l’exécution des contrats ? L’idée d’origine, reprise par RGB, consiste à renouer avec un mode de possession dit **"au porteur"** (*bearer instruments*). Dans la tradition historique, certains titres (obligations, actions, etc.) étaient émis au porteur, permettant à quiconque possédait physiquement le document de faire valoir ses droits.
 
 ![RGB-Bitcoin](assets/fr/055.webp)
 
@@ -969,6 +972,7 @@ Dans le chapitre suivant, nous entrerons plus en détail dans la représentation
 <chapterId>78c44e88-50c4-5ec4-befe-456c1a9f080b</chapterId>
 
 ![video](https://youtu.be/lUTjeuM0oTA)
+<videoId>fa2a44f7-dac8-4a71-8aa9-567e4e6f970c</videoId>
 
 Dans ce chapitre, nous allons étudier le fonctionnement des opérations dans les contrats intelligents et des transitions d'état, toujours au sein du protocole RGB. Le but sera également de comprendre comment plusieurs participants coopèrent pour transférer la propriété d’un actif.
 
@@ -1007,7 +1011,7 @@ Si Bob est satisfait, il peut éventuellement donner son approbation (par exempl
 ![RGB-Bitcoin](assets/fr/061.webp)
 Le nouvel état référence désormais l'UTXO de Bob, ce qui confère à celui-ci la propriété que détenait précédemment Alice. La sortie Bitcoin où sont ancrées les données RGB devient la preuve irrévocable du transfert de propriété.
 
-Un exemple de DAG (*Directed Acyclic Graph*) minimal comprenant deux opérations de contrat (une **Genesis** puis un ***State Transition***) peut illustrer comment l’état RGB (couche *client-side*, en rouge) se relie à la blockchain Bitcoin (couche *Commitment*, en orange).  
+Un exemple de DAG (*Directed Acyclic Graph*) minimal comprenant deux opérations de contrat (une **Genesis** puis un ***State Transition***) peut illustrer comment l’état RGB (couche *client-side*, en rouge) se relie à la blockchain Bitcoin (couche *Commitment*, en orange).
 
 ![RGB-Bitcoin](assets/fr/062.webp)
 
@@ -1048,11 +1052,11 @@ L’*InputMap* est une structure de données qui répertorie, pour chaque entré
 
 ```txt
 InputMap =
-         N               input_0    OpId(input_0)    input_1    OpId(input_1)   ...    input_N-1  OpId(input_N-1)    
+         N               input_0    OpId(input_0)    input_1    OpId(input_1)   ...    input_N-1  OpId(input_N-1)
 |____________________| |_________||______________| |_________||______________|       |__________||_______________|
- 16-bit Little Endian   32-bit LE   32-byte hash                                         
+ 16-bit Little Endian   32-bit LE   32-byte hash
                        |_________________________| |_________________________|  ...  |___________________________|
-                               MapElement1                MapElement2                       MapElementN 
+                               MapElement1                MapElement2                       MapElementN
 ```
 
 - `N` est le nombre total d’entrées de la transaction qui se réfèrent à un `OpId`;
@@ -1106,9 +1110,9 @@ Maintenant, je vous propose d'examiner de manière détaillée chacun des élém
                +---------------------------------------------------------------------------------------------------------------------+
                |  Contract Operation                                                                                                 |
                |                                                                                                                     |
-               |  +-----+     +-----------------------+      +--------------------------------+      +---------+     +------------+  |                             
-               |  | Ffv |     | ContractId | SchemaId |      | TransitionType | ExtensionType |      | Testnet |     | AltLayers1 |  |                               
-               |  +-----+     +-----------------------+      +--------------------------------+      +---------+     +------------+  |     
+               |  +-----+     +-----------------------+      +--------------------------------+      +---------+     +------------+  |
+               |  | Ffv |     | ContractId | SchemaId |      | TransitionType | ExtensionType |      | Testnet |     | AltLayers1 |  |
+               |  +-----+     +-----------------------+      +--------------------------------+      +---------+     +------------+  |
                |                                                                                                                     |
                |  +-----------------------------------------------+  +------------------------------------------------------------+  |
                |  | Metadata                                      |  | Global State                                               |  |
@@ -1127,10 +1131,10 @@ Maintenant, je vous propose d'examiner de manière détaillée chacun des élém
 +------+       |  | | +----------+ +----------------+ +-------+ | |  | | +----------------+ +-------------+ +-----------------+ | |  |       +--------------+
 | OpId +--------------> PrevOpId | | AssignmentType | | Index | | |  | | | AssignmentType | | Owned State | | Seal Definition +--------------> Bitcoin UTXO |
 +------+       |  | | +----------+ + ---------------+ +-------+ | |  | | +----------------+ +-------------+ +-----------------+ | |  |       +--------------+
-               |  | +-------------------------------------------+ |  | +--------------------------------------------------------+ |  |         
-               |  |                                               |  |                                                            |  |         
-               |  | +-------------------------------------------+ |  | +--------------------------------------------------------+ |  |         
-               |  | | Input #2                                  | |  | | Assignment #2                                          | |  |         
+               |  | +-------------------------------------------+ |  | +--------------------------------------------------------+ |  |
+               |  |                                               |  |                                                            |  |
+               |  | +-------------------------------------------+ |  | +--------------------------------------------------------+ |  |
+               |  | | Input #2                                  | |  | | Assignment #2                                          | |  |
 +------+       |  | | +----------+ +----------------+ +-------+ | |  | | +----------------+ +-------------+ +-----------------+ | |  |       +--------------+
 | OpId +--------------> PrevOpId | | AssignmentType | | Index | | |  | | | AssignmentType | | Owned State | | Seal Definition +--------------> Bitcoin UTXO |
 +------+       |  | | +----------+ +----------------+ +-------+ | |  | | +----------------+ +-------------+ +-----------------+ | |  |       +--------------+
@@ -1142,15 +1146,15 @@ Maintenant, je vous propose d'examiner de manière détaillée chacun des élém
                |                                                                                                                     |
                |  +-----------------------------------------------+  +------------------------------------------------------------+  |
                |  | Redeems                                       |  | Valencies                                                  |  |
-               |  |                                               |  |                                                            |  |            
-               |  | +------------------------------+              |  |                                                            |  |   
-+------+       |  | | +----------+ +-------------+ |              |  |  +-------------+  +-------------+                          |  |            
-| OpId +--------------> PrevOpId | | ValencyType | |  ...   ...   |  |  | ValencyType |  | ValencyType |         ...              |  |    
-+------+       |  | | +----------+ +-------------+ |              |  |  +-------------+  +-------------+                          |  |    
-               |  | +------------------------------+              |  |                                                            |  |   
-               |  |                                               |  |                                                            |  |      
-               |  +-----------------------------------------------+  +------------------------------------------------------------+  |    
-               |                                                                                                                     |    
+               |  |                                               |  |                                                            |  |
+               |  | +------------------------------+              |  |                                                            |  |
++------+       |  | | +----------+ +-------------+ |              |  |  +-------------+  +-------------+                          |  |
+| OpId +--------------> PrevOpId | | ValencyType | |  ...   ...   |  |  | ValencyType |  | ValencyType |         ...              |  |
++------+       |  | | +----------+ +-------------+ |              |  |  +-------------+  +-------------+                          |  |
+               |  | +------------------------------+              |  |                                                            |  |
+               |  |                                               |  |                                                            |  |
+               |  +-----------------------------------------------+  +------------------------------------------------------------+  |
+               |                                                                                                                     |
                +---------------------------------------------------------------------------------------------------------------------+
 ```
 
@@ -1458,7 +1462,7 @@ En cas de besoin dans la formation, vous pouvez revenir sur ce petit glossaire d
 
 #### AluVM
 
-L’abréviation AluVM désigne "_Algorithmic logic unit Virtual Machine_", une machine virtuelle à registres, conçue pour la validation de smart contracts et le calcul distribué. Elle est utilisée (sans y être exclusivement réservée) dans le cadre de la validation des contrats RGB. Les scripts ou les opérations inscrites dans un contrat RGB peuvent ainsi être exécutés dans l’environnement AluVM.  
+L’abréviation AluVM désigne "_Algorithmic logic unit Virtual Machine_", une machine virtuelle à registres, conçue pour la validation de smart contracts et le calcul distribué. Elle est utilisée (sans y être exclusivement réservée) dans le cadre de la validation des contrats RGB. Les scripts ou les opérations inscrites dans un contrat RGB peuvent ainsi être exécutés dans l’environnement AluVM.
 Pour plus d’informations : [Site officiel d’AluVM](https://www.aluvm.org/)
 
 #### Anchor
@@ -1501,7 +1505,7 @@ Ce mécanisme comprend deux opérations principales :
 Un commitment doit respecter deux propriétés :
 - **Binding** : il doit être impossible de trouver deux messages différents produisant le même `C` :
 $$
-m' : \, | \, : m' \neq m \quad \text{and} \quad r' : \, | \, : r' \neq r \quad 
+m' : \, | \, : m' \neq m \quad \text{and} \quad r' : \, | \, : r' \neq r \quad
 $$
 Tels que :
 $$
@@ -1617,7 +1621,7 @@ Le terme Ownership renvoie à la capacité de contrôler et de dépenser un UTXO
 
 #### Partially Signed Bitcoin Transaction - PSBT
 
-Une PSBT (_Partially Signed Bitcoin Transaction_) est une transaction Bitcoin qui n’est pas encore complètement signée. Elle peut être partagée entre plusieurs entités, chacune pouvant y ajouter ou y vérifier certains éléments (signatures, scripts…), jusqu’à ce que la transaction soit jugée prête pour la diffusion on-chain.  
+Une PSBT (_Partially Signed Bitcoin Transaction_) est une transaction Bitcoin qui n’est pas encore complètement signée. Elle peut être partagée entre plusieurs entités, chacune pouvant y ajouter ou y vérifier certains éléments (signatures, scripts…), jusqu’à ce que la transaction soit jugée prête pour la diffusion on-chain.
 
 Pour plus d’informations : [BIP-0174](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki)
 
@@ -1667,7 +1671,7 @@ Le Stash est l’ensemble des données côté client qu’un utilisateur stocke 
 
 #### State Extension
 
-Une State Extension est une opération de contrat permettant de redéclencher des mises à jour de l’état via la rédemption de **Valencies** préalablement déclarées. Pour être effective, une State Extension doit ensuite être refermée par une State Transition (qui actualise l’état final du contrat).  
+Une State Extension est une opération de contrat permettant de redéclencher des mises à jour de l’état via la rédemption de **Valencies** préalablement déclarées. Pour être effective, une State Extension doit ensuite être refermée par une State Transition (qui actualise l’état final du contrat).
 
 #### State Transition
 
@@ -1704,6 +1708,7 @@ La Witness Transaction est la transaction Bitcoin qui ferme le Single-use Seal a
 <chapterId>8333ea5f-51c7-5dd5-b1d7-47d491e58e51</chapterId>
 
 ![video](https://youtu.be/Uo1UoxiImsI)
+<videoId>bc012288-ecbe-44f2-90f0-64b78733af25</videoId>
 
 Dans ce chapitre, nous allons aborder concrètement la manière dont un contrat RGB est défini et mis en place. Nous allons voir quels sont les composants d'un contrat RGB, quels sont leurs rôles et comment ils sont construits.
 
@@ -1826,7 +1831,7 @@ Le code ci-dessous montre la définition complète du Schema Rust. Nous allons l
 ```rust
 // ===== PART 1: Function Header and SubSchema =====
 fn nia_schema() -> SubSchema {
-    
+
     // definitions of libraries and variables
 
     // ===== PART 2: General Properties (ffv, subset_of, type_system) =====
@@ -1980,19 +1985,19 @@ Grâce à l’Interface, on peut par exemple écrire un code dans un wallet qui,
 
 Cette méthode dispose de nombreux avantages :
 
-- **Standardisation :**  
+- **Standardisation :**
 
 Un même type de contrat peut être pris en charge par une Interface standard, partagée entre plusieurs implémentations de wallets. Cela facilite la compatibilité et la réutilisation du code.
 
-- **Séparation claire entre le Schema et l’Interface :**  
+- **Séparation claire entre le Schema et l’Interface :**
 
 Dans la conception de RGB, le Schema (logique métier) et l’Interface (présentation et manipulation) sont deux entités indépendantes. Les développeurs qui écrivent la logique du contrat peuvent se concentrer sur le Schema, sans se soucier de l’ergonomie ou de la représentation des données, tandis qu’une autre équipe (ou la même, mais sur un autre temps) peut développer l’Interface.
 
-- **Évolution flexible :**  
+- **Évolution flexible :**
 
 L’Interface peut être modifiée ou complétée après l’émission de l’actif, sans avoir à changer le contrat lui-même. C’est une différence majeure avec certains systèmes de smart contracts on-chain où l’Interface (souvent mêlée au code d’exécution) est figée dans la blockchain.
 
-- **Possibilité de multi-interface**  
+- **Possibilité de multi-interface**
 
 Un même contrat pourrait être exposé par différentes Interfaces adaptées à des besoins distincts : une Interface simple pour l’utilisateur final, une autre plus avancée pour l’issuer qui doit gérer des opérations complexes de configuration. Le wallet pourra alors choisir quelle Interface importer, selon son usage.
 
@@ -2333,6 +2338,7 @@ Dans le chapitre suivant, nous allons étudier comment fonctionne le transfert d
 <chapterId>f043a307-d420-5752-b0d7-ebfd845802c0</chapterId>
 
 ![video](https://youtu.be/sVoKIi-1XbY)
+<videoId>e8043aff-1cb4-4e85-8576-b8745bae01a1</videoId>
 
 
 Dans ce chapitre, nous allons analyser le déroulement d'un transfert de contrat dans l’écosystème RGB. Pour l’illustrer, nous retrouvons Alice et Bob, nos protagonistes habituels, qui désirent échanger un actif RGB. Nous allons également montrer des extraits de commandes issus de l’outil en ligne de commande `rgb`, afin de voir comment cela fonctionne en pratique.
@@ -2456,13 +2462,13 @@ alice$ wallet sign —publish tx.psbt
 
 Une fois confirmée, cette transaction marque la conclusion du transfert. Bob devient le nouveau détenteur de l’actif : il possède désormais un Owned State pointant vers l’UTXO qu’il contrôle, prouvé par la présence de l’engagement dans la transaction.
 
-Pour résumer, voici le processus de transfert complet : 
+Pour résumer, voici le processus de transfert complet :
 
 ![RGB-Bitcoin](assets/fr/079.webp)
 
 ### Avantages des transferts RGB
 
-- **Confidentialité** : 
+- **Confidentialité** :
 
 Seuls Alice et Bob possèdent la totalité des données de la State Transition. Ils échangent ces informations en dehors de la blockchain, via des consignments. Les engagements cryptographiques dans la transaction Bitcoin ne révèlent pas le type d’actif ni le montant, ce qui garantie une confidentialité bien supérieure à celle des autres systèmes de tokens on-chain.
 
@@ -2470,7 +2476,7 @@ Seuls Alice et Bob possèdent la totalité des données de la State Transition. 
 
 Bob peut vérifier seul la cohérence du transfert en confrontant le *consignment* aux *anchors* dans la blockchain Bitcoin. Il n’a pas besoin d’une validation par un tiers. Alice n’a pas à publier l’historique complet sur la blockchain, ce qui allège la charge sur protocole de base et améliore la confidentialité.
 
-- **Atomicité simplifiée** : 
+- **Atomicité simplifiée** :
 
 Les échanges complexes (atomic swaps entre BTC et un actif RGB, par exemple) peuvent être réalisés au sein d’une même transaction, ce qui évite l’utilisation de scripts HTLC ou PTLC. Si l’accord n’est pas diffusé, chacun peut réutiliser ses UTXOs autrement.
 
@@ -2594,6 +2600,7 @@ Maintenant que nous avons étudié les principaux éléments liés à la program
 <chapterId>0e0a645c-0049-588d-8965-b8c536590cc9</chapterId>
 
 ![video](https://youtu.be/GRwS-NvWF3I)
+<videoId>76080e68-faa2-473f-b69e-1c543c268457</videoId>
 
 Dans ce chapitre, nous allons suivre pas à pas la rédaction d'un contrat, en utilisant l’outil en ligne de commande `rgb`. L’objectif est de montrer comment installer et manipuler la CLI, compiler un **Schema**, importer l’**Interface** et l’**Interface Implementation**, puis émettre (*issue*) un actif. Nous verrons également la logique sous-jacente, avec la compilation et la validation de l’état. À l’issue de ce chapitre, vous devriez être en mesure de reproduire la démarche et de créer vos propres contrats RGB.
 
@@ -2884,6 +2891,7 @@ Dans le prochain chapitre, nous aborderons plus en détail l'intégration de RGB
 <chapterId>0962980a-8f94-5d0f-9cd0-43d7f884a01d</chapterId>
 
 ![video](https://youtu.be/mqCupTlDbA0)
+<videoId>51d07a09-941d-43fe-9e24-6934382d7661</videoId>
 
 Dans ce chapitre, je vous propose d'examiner comment RGB peut être utilisé au sein du Lightning Network, afin d’intégrer et de déplacer des actifs RGB (tokens, NFT, etc.) via des canaux de paiement off-chain.
 
@@ -3026,6 +3034,7 @@ Compléments pour la prise en charge du protocole Bitcoin (transactions, dériva
 <chapterId>dc92a5e8-ed93-5a3f-bcd0-d433932842f4</chapterId>
 
 ![video](https://youtu.be/nbUtV8GOR_U)
+<videoId>bd9db370-1e28-4ed2-b8ef-3fbf7707b216</videoId>
 
 Cette dernière section de la formation provient de présentations effectuées par différents intervenants lors du bootcamp sur RGB. Elle comprend des témoignages et des réflexions concernant RGB et son écosystème, ainsi que des présentations d'outils et de projets basés sur le protocole. Ce premier chapitre est animé par Hunter Beast et les deux suivants le seront par Frederico Tenga.
 
@@ -3087,6 +3096,7 @@ Le wallet **Bitmask** s'inscrit dans cette démarche : côté blockchain, on ne 
 <chapterId>d4d80e07-5eac-5b29-a93a-123180e97047</chapterId>
 
 ![vidéo](https://youtu.be/5iAhsgCSL3U)
+<videoId>1616639a-5447-4e77-b308-9369bd89961b</videoId>
 
 Dans ce chapitre établi sur la présentation de Frederico Tenga, nous étudions un ensemble d’outils et de projets créés par l'équipe de Bitfinex dédiée à RGB, dans l’optique de favoriser l’émergence d’un écosystème riche et diversifié autour de ce protocole. L’équipe n’a pas, au départ, l’objectif de sortir un produit commercial précis ; elle s’emploie plutôt à mettre à disposition des briques logicielles, à contribuer au protocole RGB lui-même, et à proposer des références de mise en œuvre concrètes comme un wallet mobile (*Iris Wallet*) ou un nœud Lightning compatible RGB.
 
@@ -3187,6 +3197,7 @@ Dans le prochain chapitre, nous allons voir concrètement commet on peut lancer 
 <chapterId>ecaabe32-20ba-5f8c-8ca1-a3f095792958</chapterId>
 
 ![vidéo](https://youtu.be/piQQH4Q2nr0)
+<videoId>01467b5b-e3e3-4370-813d-c52fddaad42d</videoId>
 
 Dans ce dernier chapitre, Frederico Tenga vous guide étape par étape dans la mise en place d'un nœud Lightning RGB sur un environnement en Regtest, et vous montre comment y créer des tokens RGB. En lançant deux nœuds séparés, vous découvrirez également comment ouvrir un canal Lightning entre eux et y échanger des actifs RGB.
 
@@ -3241,15 +3252,15 @@ Au terme de cette commande, un exécutable `rgb-lightning-node` sera disponible 
 
 Pour fonctionner, le daemon `rgb-lightning-node` requiert la présence et la configuration de :
 
-- **Un nœud `bitcoind`**  
+- **Un nœud `bitcoind`**
 
 Chaque instance RLN aura besoin de communiquer avec `bitcoind` pour diffuser et surveiller ses transactions on-chain. L’authentification (login/password) et l’URL (host/port) devront être fournis au daemon.
 
-- **Un indexeur** (Electrum ou Esplora)  
+- **Un indexeur** (Electrum ou Esplora)
 
 Le daemon doit pouvoir lister et explorer les transactions on-chain, en particulier pour retrouver l’UTXO sur lequel un asset a été ancré. Vous devrez préciser l’URL de votre Electrum server ou Esplora.
 
-- **Un proxy RGB**  
+- **Un proxy RGB**
 
 Comme vu dans les chapitres précédents, le **serveur proxy** est un composant (optionnel, mais fortement recommandé) permettant de simplifier l’échange de *consignments* entre pairs Lightning. Là encore, une URL doit être spécifiée.
 
@@ -3257,7 +3268,7 @@ Les identifiants et URL sont renseignés au moment où l’on _unlock_ le daemon
 
 ### Lancement en Regtest
 
-Pour un usage simple, il y a un script `regtest.sh` qui démarre automatiquement, via Docker, un ensemble de services : `bitcoind`, `electrs` (indexer), `rgb-proxy-server`. 
+Pour un usage simple, il y a un script `regtest.sh` qui démarre automatiquement, via Docker, un ensemble de services : `bitcoind`, `electrs` (indexer), `rgb-proxy-server`.
 
 ![RGB-Bitcoin](assets/fr/100.webp)
 
@@ -3534,7 +3545,7 @@ Le projet demeure à un stade alpha. Il est donc fortement recommandé de se lim
 
 Les opportunités ouvertes par cette compatibilité LN-RGB sont considérables : stablecoins sur Lightning, DEX layer-2, transferts de tokens fongibles ou de NFT à très faible coût… Les chapitres précédents ont exposé l’architecture conceptuelle et la logique de validation. Désormais, vous possédez une vue pratique de la mise en route d’un tel nœud, pour vos futurs développements ou tests.
 
-# Conclusion 
+# Conclusion
 <partId>b0baebfc-d146-5938-849a-f835fafb386f</partId>
 
 
@@ -3542,6 +3553,6 @@ Les opportunités ouvertes par cette compatibilité LN-RGB sont considérables :
 <chapterId>0217e8b0-942a-5fee-bd91-9a866551eff3</chapterId>
 <isCourseReview>true</isCourseReview>
 
-## Conclusion 
+## Conclusion
 <chapterId>0309536d-c336-56a0-869e-a8395ed8d9ae</chapterId>
 <isCourseConclusion>true</isCourseConclusion>

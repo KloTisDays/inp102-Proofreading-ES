@@ -1,7 +1,7 @@
 ---
 name: Costruire con elementi e rete liquida
 goal: Imparare a utilizzare e sviluppare con la piattaforma blockchain open-source Elements e le sue caratteristiche principali
-objectives: 
+objectives:
 
   - Comprendere i concetti fondamentali della piattaforma blockchain Elements e delle sidechain Liquid.
   - Imparate a configurare ed eseguire i nodi Elements per le configurazioni standalone e sidechain.
@@ -29,6 +29,7 @@ Unisciti a noi per elevare le tue competenze, sbloccare il pieno potenziale di L
 <chapterId>a721398e-7040-4edd-be53-b485ea759fa9</chapterId>
 
 ![Video](https://youtu.be/gkQfnwYLyI0?si=H6cIPhgZaSAwHaHI)
+<videoId>1c25ec38-980b-4b97-ad86-ae8c86779eb7</videoId>
 
 Lo scopo di Elements Academy è quello di introdurre e spiegare i concetti chiave di Elements, la piattaforma open-source su cui è costruito Liquid. Alla fine del corso, si dovrebbe avere una buona comprensione delle caratteristiche principali di Elements, come le Transazioni riservate e le Attività emesse, e dei processi coinvolti nella gestione di Elements Core.
 
@@ -41,6 +42,7 @@ Eventuali domande, richieste di ulteriori informazioni o dubbi sulle risposte ai
 <chapterId>7a7f2712-5300-4a6d-b1ed-05eab731bc35</chapterId>
 
 ![Video](https://youtu.be/ns-JLGdkNig?si=fmWye_boRSvVF1Bt)
+<videoId>f5ea023e-0e0f-41bb-a0b2-1b391907f956</videoId>
 
 Elements è una piattaforma blockchain open source e compatibile con la sidechain, che consente di accedere a potenti funzionalità sviluppate dai membri della comunità, come le Transazioni riservate e gli Asset emessi.
 
@@ -83,6 +85,7 @@ Elements aggiunge tutte queste funzionalità alla base di codice di Bitcoin Core
 <chapterId>05d88877-58b0-455b-9ae6-a72d19070525</chapterId>
 
 ![Video](https://youtu.be/v0lzmfH81AY?si=V-xDWfmDLKyBcdPs)
+<videoId>61b78765-4917-4aa4-b436-394a37a1092a</videoId>
 
 Elements fornisce una soluzione tecnica ai problemi che gli utenti della blockchain devono affrontare quotidianamente: latenza delle transazioni, mancanza di privacy e rischio di fungibilità.
 
@@ -144,6 +147,7 @@ Per trasferire gli asset alla mainchain, un utente effettua una speciale transaz
 <chapterId>cc806e5a-81ab-457b-9531-9f863120a019</chapterId>
 
 ![Video](https://youtu.be/Frr_OjTEPAM?si=iq5XonJyQk8S5OAu)
+<videoId>94babb5e-f64c-4a6c-bf28-38832c0ceacf</videoId>
 
 Poiché Elements si basa sulla base di codice di Bitcoin, i componenti che costituiscono una rete funzionante sono molto simili.
 
@@ -225,6 +229,7 @@ Questo ci consentirà di eseguire ogni sorta di operazione, come la transazione 
 <chapterId>263b1c5b-59ed-49e7-b811-95c354f41eae</chapterId>
 
 ![Video](https://youtu.be/-by2xBtXQeE?si=7bLo_geGn3qh7MXN)
+<videoId>e2f80756-fffd-4de5-b61c-1583cf81da68</videoId>
 
 In questa sezione si spiega come utilizzare la funzione Transazioni riservate di Elements.
 
@@ -337,6 +342,7 @@ Per questa lezione è tutto; in bocca al lupo per il quiz e arrivederci alla pro
 <chapterId>c33c7020-5975-457a-99db-4f8b90d1fa1c</chapterId>
 
 ![Video](https://youtu.be/XnY4WZUNSs4?si=dG8I5OoSh_0EBdvL)
+<videoId>8a7835e6-45ee-461a-ae0f-4fd0bc73921f</videoId>
 
 In questa sezione si spiega come utilizzare la funzione Attività emesse di Elements.
 
@@ -516,6 +522,7 @@ In questa sezione abbiamo visto come emettere ed etichettare le attività. Nella
 <chapterId>78751b21-1dc8-4877-a406-e71bc80a95b0</chapterId>
 
 ![Video](https://youtu.be/5em79YHtYk0?si=rhponm6Hw9AB6RJp)
+<videoId>4d705c1c-d2c7-4847-9b03-91f348b135c2</videoId>
 
 In questa sezione imparerete come emettere una quantità maggiore di un'attività già emessa e come distruggere una determinata quantità di un'attività emessa.
 
@@ -664,6 +671,7 @@ In questa sezione abbiamo visto come emettere un asset e come utilizzare il toke
 <chapterId>c47b217e-db14-4843-a66f-3e5f3a00a808</chapterId>
 
 ![Video](https://youtu.be/kxWX91fCnus?si=KItm_Am3_RrBcLBN)
+<videoId>90765b4b-cbe6-476a-9d3f-4bb9442a530e</videoId>
 
 Elements supporta un modello di firma federata che consente di specificare il numero di membri della Strong Federation che devono firmare un blocco proposto per produrre un blocco valido.
 
@@ -823,6 +831,7 @@ Una volta che un numero soglia di firmatari ha firmato il blocco proposto, quest
 <chapterId>432d7a65-255f-44a3-8b38-78508202cb37</chapterId>
 
 ![Video](https://youtu.be/egYzj4N8CB8?si=v7_-IXsjHPE-ARDe)
+<videoId>9c83d3a8-55f1-462f-84c3-160db2a72a83</videoId>
 
 Elements è una piattaforma blockchain open-source di uso generale che può anche essere "agganciata" a una blockchain esistente, come Bitcoin. Quando è collegato a un'altra blockchain, si dice che Elements opera come una `sidechain`. Le sidechain consentono il trasferimento bidirezionale di beni da una catena all'altra. L'implementazione di Elements come sidechain consente di aggirare alcune delle limitazioni intrinseche della mainchain, pur mantenendo un buon grado di sicurezza fornito dagli asset protetti sulla mainchain.
 
@@ -1026,6 +1035,7 @@ Un peg-out si verifica quando un nodo Elements chiama il comando `sendtomainchai
 <chapterId>50dff39b-2702-47d7-9c15-0b54b845e99f</chapterId>
 
 ![Video](https://youtu.be/u-3rV7DGtD0?si=G1__H0Uelf4sTUDM)
+<videoId>ce88c76b-1707-4fc0-9082-b875822fb742</videoId>
 
 Finora abbiamo visto come far funzionare Elements come sidechain. Tuttavia, può anche funzionare come soluzione blockchain autonoma con un proprio asset nativo predefinito. In questa configurazione, una blockchain Elements mantiene tutte le caratteristiche di un'implementazione sidechain, come le transazioni riservate e gli asset emessi, ma non ha bisogno di peg-in o peg-out per aggiungere o rimuovere dalla circolazione gli asset predefiniti.
 
@@ -1212,6 +1222,7 @@ Utilizzando i parametri di cui sopra è possibile far funzionare Elements come u
 <chapterId>7e2c916d-8114-424c-97f5-cbff9d73b8e3</chapterId>
 
 ![Video](https://youtu.be/CTMdamTZBBM?si=16LBcXvN4pBfC7lr)
+<videoId>3bdc6c60-49eb-4e9a-921f-e554c67cd797</videoId>
 
 In questo corso abbiamo imparato che Elements è un protocollo di rete open-source che può essere implementato come sidechain di un'altra blockchain o come soluzione blockchain autonoma.
 

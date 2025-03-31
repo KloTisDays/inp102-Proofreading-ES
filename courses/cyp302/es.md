@@ -1,7 +1,7 @@
 ---
 name: Introducción a la criptografía formal
 goal: Una introducción en profundidad a la ciencia y la práctica de la criptografía.
-objectives: 
+objectives:
 
   - Explore los cifrados Beale y los métodos criptográficos modernos para comprender los conceptos básicos e históricos de la criptografía.
   - Profundice en la teoría de números, grupos y campos para dominar los conceptos matemáticos clave que subyacen a la criptografía.
@@ -2293,7 +2293,7 @@ No obstante, añadiendo un poco de complejidad inteligente, el problema RSA pued
 ## Reseñas & Valoraciones
 <chapterId>366d6fd0-ceb2-4299-bf37-8c6dfcb681d5</chapterId>
 <isCourseReview>true</isCourseReview>
- 
+
 ## Examen Final
 
 <chapterId>44882d2b-63cd-4fde-8485-f76f14d8b2fe</chapterId>

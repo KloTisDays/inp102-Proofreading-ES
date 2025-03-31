@@ -193,7 +193,7 @@ Quando vieni accolto nell'ambiente Demo, ti viene chiesto di 'Accedere' o 'Crear
 
 La creazione di account su BTCPay Server richiede stringhe di indirizzi Email validi; example@email.com sarebbe una stringa valida per l'Email.
 
-La password deve essere lunga almeno 8 caratteri, includendo lettere, numeri e caratteri. Dopo aver impostato la password, dovrai digitarla nuovamente per assicurarti che sia uguale a quella inserita la prima volta. 
+La password deve essere lunga almeno 8 caratteri, includendo lettere, numeri e caratteri. Dopo aver impostato la password, dovrai digitarla nuovamente per assicurarti che sia uguale a quella inserita la prima volta.
 Quando sia i campi Email che Password sono compilati correttamente, clicca sul pulsante "Crea Account". Questo salverà l'Email e la password sull'istanza del BTCPay Server dell'istruttore.
 ![image](assets/en/1.webp)
 
