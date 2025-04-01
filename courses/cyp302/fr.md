@@ -574,9 +574,6 @@ La raison de l’abandon de la distinction entre « aléatoire » et « uniforme
 
 <partId>d7245cc9-bb6d-5403-b3d5-9c703d9a2f81</partId>
 
-# Fondements mathématiques de la cryptographie 2
-<partId>d7245cc9-bb6d-5403-b3d5-9c703d9a2f81</partId>
-
 ## Qu'est-ce que la théorie des nombres ?
 <chapterId>c0051c34-fd5d-539c-93e2-5c6dfd4c3355</chapterId>
 
