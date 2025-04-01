@@ -203,11 +203,6 @@ Ainsi, l'idée de garder les communications secrètes en protégeant le canal de
 
 [7] Voir, par exemple, Olga Khazan, “The creepy, long-standing practice of undersea cable tapping”, *The Atlantic*, 16 juillet 2013 (disponible sur [The Atlantic](https://www.theatlantic.com/international/archive/2013/07/the-creepy-long-standing-practice-of-undersea-cable-tapping/277855/)).
 
-
-# Fondements mathématiques de la cryptographie 1
-
-<partId>1bf9f0aa-0f68-5493-83fb-2167238ff9de</partId>
-
 # Fondements Mathématiques de la Cryptographie 1
 <partId>1bf9f0aa-0f68-5493-83fb-2167238ff9de</partId>
 
