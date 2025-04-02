@@ -1,4 +1,5 @@
 ---
+
 name: Bitcoin kwa Biashara
 goal: Jifunze malipo na misingi ya hazina ili uingie kwenye kampuni yako kwenye Bitcoin
 objectives: 
@@ -15,7 +16,7 @@ Gundua uwezo wa kiutendaji wa Bitcoin na Lightning Network, na uchunguze jinsi, 
 
 Katika mwongozo huu wote, utajifunza jinsi ya kuelewa Bitcoin kama mtandao wa fedha wa kimataifa, wa kimataifa na wa asili wa mtandao. Kwa sifa zake za kipekee za kimsingi, **Bitcoin hutoa maboresho makubwa dhidi ya mitandao ya kawaida ya sarafu**. Utagundua ni kwa nini na jinsi ya kutumia Bitcoin kwa matumizi ya kawaida ya kifedha kama vile uhifadhi wa mtaji na mifumo ya malipo. Zaidi ya hayo, mwongozo huu utashughulikia kupata na kushikilia Bitcoin, ikijumuisha mahitaji yanayohusiana ya uhasibu na fedha, pamoja na kutekeleza masuluhisho rahisi au makubwa ya malipo ya Bitcoin.
 
-Iwe wewe ni **biashara ndogo au shirika kubwa**, kuunganisha Bitcoin katika shughuli zako za kila siku kunaweza kuifanya kampuni yako **istahimilivu, tija na shindani** zaidi. Kila kampuni inayotumia mtandao itakuwa kampuni inayolenga Bitcoin, na kozi hii inahakikisha kuwa umejitayarisha. Sehemu za mwanzo zinarejelea misingi ya uendeshaji wa Bitcoin, kwa hivyo hata kama wewe ni mwanzilishi, utapata ujuzi wa kimsingi unaohitajika ili kuendelea. Kujifunza misingi ya uvumbuzi wa Satoshi daima ni wazo zuri, iwe kabla au baada ya kupiga mbizi kwenye BIZ101.
+Iwe wewe ni **biashara ndogo au shirika kubwa**, kuunganisha Bitcoin katika shughuli zako za kila siku kunaweza kuifanya kampuni yako **istahimilivu, yenye tija na shindani** zaidi. Kila kampuni inayotumia mtandao itakuwa kampuni inayolenga Bitcoin, na kozi hii inahakikisha kuwa umejitayarisha. Sehemu za mwanzo zinarejelea misingi ya uendeshaji wa Bitcoin, kwa hivyo hata kama wewe ni mwanzilishi, utapata ujuzi wa kimsingi unaohitajika ili kuendelea. Kujifunza misingi ya uvumbuzi wa Satoshi daima ni wazo zuri, iwe kabla au baada ya kupiga mbizi kwenye BIZ101.
 
 +++
 # Utangulizi
@@ -63,22 +64,23 @@ Kwa kumalizia, sarafu ni mitandao iliyoundwa ili kuhamisha thamani kwa ufanisi. 
 Sarafu nzuri ina sifa kadhaa muhimu zinazoifanya iwe bora kwa kuwezesha thamani ya Exchange. Hapa kuna maelezo mafupi ya kila moja:
 
 
-- Salama**: Sarafu lazima ilindwe dhidi ya wizi au ufikiaji usioidhinishwa, ili kuhakikisha kuwa watumiaji wanaweza kuishikilia na kuihamisha kwa ujasiri. Usalama ni muhimu kwa kujenga imani katika mfumo.
-- Uthibitisho-Bandia**: Sarafu lazima iwe ngumu sana au isiwezekane kughushi. Hii inahakikisha kila kitengo ni halisi, hudumisha thamani yake, na kuzuia mfumuko wa bei unaosababishwa na vitengo bandia kuingia kwenye mzunguko. Kwa mfano, kihistoria, dhahabu imethaminiwa sio tu kwa uzuri na uhaba wake, lakini kwa sababu ni Hard sana kuzalisha. Tofauti na maelezo ya karatasi au maingizo ya digital, huwezi tu "kufanya" dhahabu-lazima kuchimbwa kutoka duniani. Uhaba huu wa asili na ugumu wa uzalishaji umesaidia dhahabu kudumisha hadhi yake kama hifadhi inayoaminika ya thamani na kigezo cha uhalisi.
-- Uhaba**: Sarafu nzuri lazima iwe na Supply au utoaji unaodhibitiwa. Uhaba huhakikisha kwamba thamani yake inahifadhiwa kwa muda, kuzuia uzalishaji wa kupita kiasi, ambao unaweza kuharibu uwezo wa ununuzi. Kwa mfano, makabila fulani ya Wenyeji wa Amerika yalitumia shanga kama aina ya sarafu. Hapo awali, shanga hizi zilikuwa Hard za kuzalisha, kudumisha uhaba wao na thamani. Hata hivyo, mara tu wafanyabiashara wa Ulaya walipoanza kuzalisha kwa wingi na kufurika sokoni kwa shanga, uhaba wao ulitoweka. Supply ilipopaa, shanga zilipoteza uwezo wao wa kununua, na kudhoofisha jukumu lao kama ghala la kuaminika la thamani.
-- Bila Ruhusa**: Hapo awali, sarafu kama vile sarafu za dhahabu na fedha mara nyingi zilitengenezwa na watu binafsi, serikali za mitaa au wafanyabiashara ambao walikuwa na uwezo wa kupata malighafi. Mfumo huu wakati mwingine ulifanya kazi chini ya makubaliano au leseni zilizotolewa na wafalme au watawala. Baada ya muda, wafalme na serikali waliweka mchakato huu katikati ili kupata udhibiti mkubwa juu ya utulivu wa kiuchumi, ushuru, na mfumo wa fedha. Mfano mmoja maarufu ni **thaler**, sarafu ya fedha iliyotengenezwa kwa mara ya kwanza mnamo 1518 katika **Joachimsthal Valley** (Jáchymov ya kisasa katika Jamhuri ya Cheki) na wachimba migodi na mamlaka za ndani. Jina "thaler" linatokana na neno la Kijerumani **"Thal"** linalomaanisha "bonde." Sarafu hizi, zinazojulikana kwa ubora wa juu wa fedha, zilisambazwa sana kote Ulaya. Baada ya muda, neno hilo lilibadilika kiisimu na kijiografia, na hatimaye kutoa jina "dola," ambalo lilikubaliwa nchini Marekani kwa sarafu yake.
+- **Salama**: Sarafu lazima ilindwe dhidi ya wizi au ufikiaji usioidhinishwa, ili kuhakikisha kuwa watumiaji wanaweza kuishikilia na kuihamisha kwa ujasiri. Usalama ni muhimu kwa kujenga imani katika mfumo.
+- **Uthibitisho-Bandia**: Sarafu lazima iwe ngumu sana au isiwezekane kughushi. Hii inahakikisha kila kitengo ni halisi, hudumisha thamani yake, na kuzuia mfumuko wa bei unaosababishwa na vitengo bandia kuingia kwenye mzunguko. Kwa mfano, kihistoria, dhahabu imethaminiwa sio tu kwa uzuri na uhaba wake, lakini kwa sababu ni Hard sana kuzalisha. Tofauti na maelezo ya karatasi au maingizo ya digital, huwezi tu "kufanya" dhahabu-lazima kuchimbwa kutoka duniani. Uhaba huu wa asili na ugumu wa uzalishaji umesaidia dhahabu kudumisha hadhi yake kama hifadhi inayoaminika ya thamani na kigezo cha uhalisi.
+- **Uhaba**: Sarafu nzuri lazima iwe na Supply au utoaji unaodhibitiwa. Uhaba huhakikisha kwamba thamani yake inahifadhiwa kwa muda, kuzuia uzalishaji wa kupita kiasi, ambao unaweza kuharibu uwezo wa ununuzi. Kwa mfano, makabila fulani ya Wenyeji wa Amerika yalitumia shanga kama aina ya sarafu. Hapo awali, shanga hizi zilikuwa Hard za kuzalisha, kudumisha uhaba wao na thamani. Hata hivyo, mara tu wafanyabiashara wa Ulaya walipoanza kuzalisha kwa wingi na kufurika sokoni kwa shanga, uhaba wao ulitoweka. Supply ilipopaa, shanga zilipoteza uwezo wao wa kununua, na kudhoofisha jukumu lao kama ghala la kuaminika la thamani.
+- **Bila Ruhusa**: Hapo awali, sarafu kama vile sarafu za dhahabu na fedha mara nyingi zilitengenezwa na watu binafsi, serikali za mitaa au wafanyabiashara ambao walikuwa na uwezo wa kupata malighafi. Mfumo huu wakati mwingine ulifanya kazi chini ya makubaliano au leseni zilizotolewa na wafalme au watawala. Baada ya muda, wafalme na serikali waliweka mchakato huu katikati ili kupata udhibiti mkubwa juu ya utulivu wa kiuchumi, ushuru, na mfumo wa fedha. Mfano mmoja maarufu ni **thaler**, sarafu ya fedha iliyotengenezwa kwa mara ya kwanza mnamo 1518 katika **Joachimsthal Valley** (Jáchymov ya kisasa katika Jamhuri ya Cheki) na wachimba migodi na mamlaka za ndani. Jina "thaler" linatokana na neno la Kijerumani **"Thal"** linalomaanisha "bonde." Sarafu hizi, zinazojulikana kwa ubora wa juu wa fedha, zilisambazwa sana kote Ulaya. Baada ya muda, neno hilo lilibadilika kiisimu na kijiografia, na hatimaye kutoa jina "dola," ambalo lilikubaliwa nchini Marekani kwa sarafu yake.
 
-Katika enzi ya kisasa, sarafu ziliidhinishwa kikamilifu chini ya mfumo wa utekaji nyara, ikimaanisha mashirika yaliyoidhinishwa tu-kama vile benki kuu au hazina-zinaweza sarafu za mint au kuchapisha noti. Watu binafsi hawaruhusiwi tena kisheria kuzalisha sarafu, kuhakikisha udhibiti wa kati juu ya utoaji wake na Supply.
+Katika zama za kisasa, sarafu ziliruhusiwa kikamilifu chini ya mfumo wa seigniorage, ikimaanisha mashirika yaliyoidhinishwa tu-kama vile benki kuu au hazina-zinaweza sarafu za mint au kuchapisha noti. Watu binafsi hawaruhusiwi tena kisheria kuzalisha sarafu,  kuhakikisha udhibiti wa kati juu ya utoaji na usambazaji wake.
 
-Leo, kanuni ya seigniorage inapingwa na Bitcoin cryptocurrency, ambayo inafanya kazi bila udhibiti wa kati. Bitcoin ni mfumo "usio na ruhusa" ambapo mtu yeyote anaweza kushiriki katika kutumia sarafu bila kuomba ruhusa, na, kupitia Mining, katika kuiunda. Ugatuaji huu wa madaraka unaondoa ukiritimba wa utoaji kutoka kwa serikali, na hivyo kuzua maswali kuhusu uwezekano wa kurudi kwa mifumo ya ushindani wa soko huria.
+Leo, kanuni ya seigniorage inapingwa na Bitcoin cryptocurrency, ambayo inafanya kazi bila udhibiti wa kati. Bitcoin ni "mfumo usio na ruhusa" ambapo mtu yeyote anaweza kushiriki katika kutumia sarafu bila kuomba ruhusa, na, kupitia Mining, katika kuiunda. Ugatuaji huu wa madaraka unaondoa ukiritimba wa utoaji kutoka kwa serikali, na hivyo kuzua maswali kuhusu uwezekano wa kurudi kwa mifumo ya ushindani wa soko huria.
 
 
-- Kitengo cha Akaunti**: Sarafu inapaswa kutoa kipimo cha kawaida cha kulinganisha thamani ya bidhaa na huduma. Hii hurahisisha biashara na kufanya bei kuwa wazi na thabiti katika shughuli zote za malipo.
-- Inadumu**: Sarafu lazima ihimili kuchakaa kwa wakati. Sarafu halisi, kama vile sarafu au noti, zinapaswa kuzuia uharibifu, huku sarafu za kidijitali zibaki zikiwa zimehifadhiwa kwa usalama bila hatari ya kupoteza data.
-- Inabebeka**: Sarafu lazima iwe rahisi kusafirisha na kutumia, kuwezesha biashara katika umbali. Hili linaweza kupatikana kupitia uwezo wa kubebeka (sarafu au noti nyepesi) au mifumo ya uhamishaji ya kidijitali.
-- Divisible**: Sarafu inapaswa kugawanywa katika vitengo vidogo ili kuwezesha miamala ya ukubwa tofauti. Unyumbufu huu huhakikisha kuwa ni wa vitendo kwa ununuzi mdogo na biashara ya kiwango kikubwa.
-- Fungible**: Vizio vyote vya sarafu lazima vibadilike na vyenye thamani sawa. Kwa mfano, muswada wa dola moja lazima uwe sawa na bili nyingine yoyote ya dola. Usawa huu unahakikisha usawa na urahisi katika shughuli.
-- Inatambulika**: Sarafu lazima itambulike na kuaminiwa kwa urahisi. Sarafu halisi hufanikisha hili kupitia miundo ya kipekee na vipengele vya usalama, ilhali sarafu za kidijitali zinaweza kutegemea itifaki za uthibitishaji. Hii inahakikisha kukubalika kwa kuenea na kupunguza hatari ya ulaghai.
+- **Kitengo cha Akaunti**: Sarafu inapaswa kutoa kipimo cha kawaida cha kulinganisha thamani ya bidhaa na huduma. Hii hurahisisha biashara na kufanya bei kuwa wazi na thabiti katika shughuli zote za malipo.
+- **Inadumu**: Sarafu lazima ihimili kuchakaa kwa wakati. Sarafu halisi, kama vile sarafu au noti, zinapaswa kuzuia uharibifu, huku sarafu za kidijitali zibaki zikiwa zimehifadhiwa kwa usalama bila hatari ya kupoteza data.
+- **Inabebeka**: Sarafu lazima iwe rahisi kusafirisha na kutumia, kuwezesha biashara katika umbali. Hili linaweza kupatikana kupitia uwezo wa kubebeka (sarafu au noti nyepesi) au mifumo ya uhamishaji ya kidijitali.
+- **Inaweza kugawanywa**: Sarafu inapaswa kugawanywa katika vitengo vidogo ili kuwezesha miamala ya ukubwa tofauti. Unyumbufu huu huhakikisha kuwa ni wa vitendo kwa ununuzi mdogo na biashara ya kiwango kikubwa.
+- **Yanayoweza kuvu**: Vizio vyote vya sarafu lazima vibadilike na vyenye thamani sawa. Kwa mfano, muswada wa dola moja lazima uwe sawa na bili nyingine yoyote ya dola. Usawa huu unahakikisha usawa na urahisi katika shughuli.
+- **Inatambulika**: Sarafu lazima itambulike na kuaminiwa kwa urahisi. Sarafu halisi hufanikisha hili kupitia miundo ya kipekee na vipengele vya usalama, ilhali sarafu za kidijitali zinaweza kutegemea itifaki za uthibitishaji. Hii inahakikisha kukubalika kwa kuenea na kupunguza hatari ya ulaghai.
+
 
 Sifa hizi hufanya sarafu kuwa ya vitendo, ya kuaminika, na yenye ufanisi kwa ajili ya kuwezesha biashara na kuhifadhi thamani katika uchumi.
 
@@ -131,11 +133,12 @@ Mifumo ya malipo ni mbinu na miundomsingi inayowezesha uhamishaji wa fedha kati 
 **Matumizi katika B2C na B2B:**
 
 
-- B2C (Biashara-kwa-Mtumiaji):**
+- **B2C (Biashara-kwa-Mtumiaji):**
     - Wateja mara nyingi hutumia pesa taslimu, kadi na pochi za kidijitali kwa ununuzi wa kila siku—kama vile mboga, ununuzi mtandaoni au huduma kama vile usafiri wa gari.
     - Kasi, urahisi, na ada za chini (kwa watumiaji) mara nyingi ni vipaumbele muhimu.
     - Malipo ya kielektroniki na ya simu ya mkononi yanazidi kuwa maarufu katika nafasi hii kwa sababu ya urahisi wa matumizi.
-- B2B (Biashara-kwa-Biashara):**
+- **B2B (Biashara-kwa-Biashara):**
+
     - Biashara kwa kawaida hutegemea uhamisho wa kielektroniki, hundi na mifumo ya ankara kwa ajili ya kulipa wasambazaji, kulipa bili kubwa au kushughulikia malipo ya mara kwa mara.
     - Mara nyingi huzingatia ufuatiliaji, uhifadhi wa hati na uwezo wa kushughulikia thamani kubwa zaidi za miamala.
     - Matumizi ya kadi yapo lakini huwa si ya kawaida kwa sababu ya ada ya juu na vikwazo vya ununuzi. Masuluhisho ya kidijitali kama vile mifumo ya malipo iliyojumuishwa yanaibuka ili kurahisisha na kuweka kiotomatiki michakato ya kupokewa/kulipwa.
@@ -156,45 +159,30 @@ Kwa ujumla, mchakato huu ni ngumu, unatumia wakati, na ni wa gharama kubwa kwa k
 
 ### Njia za Kulinganisha za Malipo
 
-| Njia ya Malipo | Idhini Inahitajika?           | Muda wa Kuidhinisha Muamala (Mwonekano wa Muamala) | Kasi ya Ulipaji (Fedha Zimetulia Kabisa) | Mwisho (Urahisi wa Kugeuza) | Idadi ya Waamuzi | Ada za Kawaida (kwa Anayelipwa) |
-
-| ------------------------------ | ------------------------------- | ---------------------------------------- | -------------------------------------------- | --------------------------------------- | ------------------------------ | --------------------------------- |
-
-| **Fedha** | Hapana | Papo Hapo (Exchange ya Kimwili) | Hapo Hapo (Hakuna Ucheleweshaji wa Suluhu) | Juu (Haibadilishwi Mara Imelipwa) | Hakuna | Hakuna |
-
-| **Cheki** | Ndiyo (Usafishaji wa Benki) | Kukubalika kwa Amana (Haijahakikishwa) | Siku Kadhaa (Angalia Mchakato wa Kusafisha) | Wastani (Unaweza Kuruka/Kuacha Kabla ya Kusafisha) | Benki | **Chini hadi Kati** (Ada za Benki) |
-
-| **Uhamisho wa Waya** | Ndiyo (Benki/Mtandao) | Uthibitisho Ndani ya Saa | Siku-Same au Siku Inayofuata (Ya Ndani) | Juu (Kawaida Haibadiliki Mara Inapotumwa) | Benki, Mitandao ya Malipo | **Wastani**(Isiyobadilika/Asilimia) |
-
-| **Kadi za Malipo** | Ndiyo (Uidhinishaji wa Mtoa Kadi) | Sekunde hadi Dakika (Msimbo wa Uidhinishaji) | Siku Chache (Interbank Settlement) | Wastani (Malipo Yanawezekana) | Mtoaji, Mpataji, Mtandao wa Kadi | **Inayoweza Kubadilika (1-3% ya Muamala)** |
-
-| **Pochi za Kidijitali/Malipo ya Simu** | Ndiyo (Mtoa Huduma/Benki ya Wallet) | Sekunde (Uthibitisho wa Papo hapo) | Kwa kawaida Siku 1-2 (Inategemea Chanzo cha Ufadhili) | Wastani (Rejesha/Mzozo Unawezekana) | Benki, Waendeshaji wa Wallet | **Chini hadi Kati (Inatofautiana)** |
+| Njia ya Malipo                | Inahitaji Idhini?               | Muda wa Kupitishwa kwa Muamala (Mtazamo wa Muuzaji) | Kasi ya Malipo (Fedha Zimekamilika)            | Ukamilifu (Urahisi wa Kubatilisha)       | Idadi ya Wanaohusika          | Ada za Kawaida (kwa Mpokeaji)     |
+| ----------------------------- | ------------------------------- | -------------------------------------------------- | ---------------------------------------------- | ---------------------------------------- | ----------------------------- | --------------------------------- |
+| **Fedha Taslimu**            | Hapana                          | Mara Moja (Kubadilishana Kimwili)                  | Mara Moja (Hakuna Ucheleweshaji)               | Juu (Haiwezi Kurudishwa Baada ya Kulipa) | Hakuna                        | Hakuna                            |
+| **Hundi**                    | Ndiyo (Benki Kuthibitisha)      | Kukubaliwa Wakati wa Kuweka (Sio Hakikisho)        | Siku Kadhaa (Mchakato wa Kuthibitisha Hundi)   | Wastani (Inaweza Kukataliwa Kabla)       | Benki                         | **Chini hadi Wastani** (Ada za Benki) |
+| **Uhawilishaji wa Fedha**    | Ndiyo (Benki/Mtandao)           | Uthibitisho Ndani ya Masaa                         | Siku Hiyo au Siku Inayofuata (Ndani ya Nchi)   | Juu (Kawaida Haiwezi Kubatilishwa)       | Benki, Mitandao ya Malipo     | **Wastani** (Kiasi Maalum/Asilimia) |
+| **Kadi za Malipo**           | Ndiyo (Idhini ya Mtoaji Kadi)   | Sekunde hadi Dakika (Msimbo wa Idhini)             | Siku Chache (Malipo Kati ya Benki)             | Wastani (Chargebacks Zinawezekana)       | Mtoaji, Mpokeaji, Mtandao wa Kadi | **Inabadilika (1-3% ya Muamala)** |
+| **Mikoba ya Dijitali/Malipo ya Simu** | Ndiyo (Mtoa Huduma/Benki) | Sekunde (Uthibitisho wa Haraka)                  | Kawaida Siku 1-2 (Kutegemea Chanzo cha Fedha)  | Wastani (Kurudisha/Mgogoro Unawezekana)  | Benki, Waendeshaji wa Mikoba  | **Chini hadi Wastani (Inatofautiana)** |
 
 ### Mapungufu ya suluhisho zilizopo
 
 Sekta ya malipo ya jadi inawakilisha uchumi wa kila mwaka wa takriban dola bilioni 2,200, takriban moja ya kumi ya Pato la Taifa la Marekani au sawa na Pato la Taifa la Ufaransa. Kwa sababu sarafu hufanya kazi kama mitandao iliyoidhinishwa, kuna ushindani mdogo, na kufanya "huduma" hii kuwa sawa na kodi inayotozwa kwa uchumi wenye tija. Mbali na mizigo ya gharama ambayo inaunda, kuna mapungufu mengine kadhaa, kama ilivyoainishwa hapa chini.
 
-| Kizuizi | Ufafanuzi | Athari |
+| Upungufu                           | Maelezo                                                                                                                                                                                                                              | Athari                                                                                                 |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| Ada za Juu za Kadi                 | Ada za ubadilishanaji (~0.3%), ada za mtandao (kiasi maalum au 0.3%-1%), usajili wa mitambo/PSP, na faida za benki (0.5%-1.7%) zinaongezeka kuwa gharama kubwa—kama "kodi" ya kimataifa kwenye sekta za uzalishaji, ikiwa trilioni. | Inapandisha gharama za wafanyabiashara, kupunguza faida na inaweza kusababisha kupanda kwa bei za bidhaa. |
+| Malipo ya Mwisho Polepole Sana     | Malipo ya fedha yanaweza kuchukua hadi siku 5, kupunguza mzunguko wa pesa na shughuli za kiuchumi kwa jumla.                                                                                                                         | Inachelewa ukwasi kwa wafanyabiashara na kupunguza kasi ya mzunguko wa uchumi.                        |
+| Ulaghai                            | Njia za biashara mtandaoni zinakabiliwa sana na ulaghai, kuchangia hasara kubwa (k.m., dola bilioni 28). Marejesho yanaweza kufikia ~dola bilioni 174 duniani kote ifikapo 2024. Kusimamia migogoro hii kunatumia muda na kusababisha msongo. | Gharama za uendeshaji zimeongezeka, hatua ngumu za kuzuia ulaghai, na kupungua kwa imani ya wateja.    |
+| Kuacha Bidhaa kwenye Kikapu        | Hatua za ziada za usalama (misimbo ya mara moja, uthibitishaji wa vipengele viwili chini ya PSD2) huleta ugumu wakati wa kulipa.                                                                                                     | Ugumu wa kulipa husababisha kuongezeka kwa kuacha bidhaa kwenye vikapu na kupoteza mauzo.             |
+| Viwango vya Juu vya Muamala        | Viwango vya chini vya matumizi kwenye kadi vinaweza kulazimisha wafanyabiashara na watumiaji katika bei isiyofaa au hali za ununuzi, kukatisha tamaa miamala ya thamani ndogo.                                                        | Kupungua kwa kuridhika kwa wateja na urahisi, inaweza kupunguza ununuzi wa ghafla au wa thamani ndogo. |
+| Idhini ya Awali Polepole           | Mifumo ya sasa haiwezi kushughulikia miamala kwa kasi ya milisekunde au kusaidia mtiririko wa malipo wa moja kwa moja, wakati halisi.                                                                                                | Inapunguza matumizi yanayohitaji malipo ya haraka au ya mtiririko, ikizuia ubunifu na upanuzi.        |
+| Haja ya Akaunti ya Benki/Kadi      | Upatikanaji wa njia hizi za malipo unahitaji akaunti ya benki au kadi iliyounganishwa, moja kwa moja ikiwatenga wale wasio na akaunti hizo.                                                                                          | Inapunguza ushirikishwaji wa kifedha, ikipunguza upatikanaji kwa watu wasio na benki.                 |
+| Kuunda Akaunti za Mtandaoni Mara kwa Mara | Watumiaji mara nyingi lazima waunde akaunti nyingi za mtandaoni, kusababisha uchovu, kupunguza urahisi, na kuongeza uwekaji wazi wa data ya kibinafsi.                                                                            | Inaharibu uzoefu wa mtumiaji, inaibua wasiwasi wa faragha, na inaongeza hatari ya uvujaji wa data.    |
+| Ada za Ubadilishaji wa Fedha za Kigeni | Ukosefu wa kipimo cha jumla cha akaunti hulazimisha ubadilishaji wa gharama ya fedha kwa miamala ya kimataifa.                                                                                                                      | Inaongeza gharama za ziada kwa biashara za kimataifa, ikifanya miamala ya kimataifa kuwa gharama zaidi. |
 
-| ------------------------------- | ----------------------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-
-| Ada ya Kadi ya Juu | Ada za ubadilishaji (~0.3%), ada za mtandao (zisizobadilika au 0.3% -1%), usajili wa terminal/PSP, na ukingo wa benki (0.5% -1.7%) huongeza hadi gharama kubwa—kama vile "kodi" ya kimataifa kwenye sekta za uzalishaji, inayofikia matrilioni ya dola.     | Huongeza gharama za wauzaji, kupunguza viwango vya juu na uwezekano wa kuongeza bei za watumiaji.                  |
-
-| Suluhu ya Mwisho ya Polepole sana | Ulipaji wa fedha unaweza kuchukua hadi siku 5, kupunguza kasi ya mtiririko wa fedha na shughuli za kiuchumi kwa ujumla.                                                                                                                                | Huchelewesha ukwasi kwa wafanyabiashara na kupunguza kasi ya mzunguko wa kiuchumi.                        |
-
-| Ulaghai | Vituo vya biashara ya mtandao vinalengwa sana na ulaghai, na hivyo kuchangia hasara kubwa (k.m., dola bilioni 28). Malipo yanaweza kufikia ~$174 bilioni duniani kote kufikia 2024. Kudhibiti mizozo hii kunatumia muda na kusababisha mkazo wa kiakili. | Kuongezeka kwa gharama za uendeshaji, hatua tata za kuzuia ulaghai, na kupungua kwa imani ya wateja.       |
-
-| Kutelekezwa kwa Mkokoteni | Hatua za ziada za usalama (misimbo ya mara moja, uthibitishaji wa vipengele viwili chini ya PSD2) huanzisha msuguano wakati wa kulipa.                                                                                                                   | Utata wa juu wa ulipaji husababisha kuongezeka kwa kuachwa kwa mikokoteni na kupoteza mauzo.                       |
-
-| Kiasi cha Chini cha Juu cha Muamala | Kiwango cha chini cha matumizi kwenye kadi kinaweza kuwalazimisha wafanyabiashara na watumiaji katika hali ngumu za bei au ununuzi, hivyo basi kukatisha shughuli za malipo ya bei ndogo.                                                                       | Kupungua kwa kuridhika kwa wateja na kubadilika, kunaweza kuzuia ununuzi wa msukumo au wa bei ya chini.  |
-
-| Uidhinishaji wa Mapema wa polepole | Mifumo ya sasa haiwezi kushughulikia miamala kwa kasi ya milisekunde au kuauni mtiririko wa malipo unaoendelea, wa wakati halisi.                                                                                                                   | Vikomo vya matumizi vinavyohitaji malipo ya papo hapo au ya kutiririsha, yanayozuia uvumbuzi na ukubwa. |
-
-| Haja ya Akaunti ya Benki/Kadi | Ufikiaji wa njia hizi za malipo unahitaji akaunti iliyounganishwa ya benki au kadi, bila kujumuisha zile zisizo na akaunti kama hizo kiotomatiki.                                                                                                       | Inapunguza ujumuishaji wa kifedha, kupunguza ufikiaji kwa watu ambao hawajaweka benki au wasio na benki.                 |
-
-| Uundaji wa Akaunti Mtandaoni unaorudiwa | Watumiaji mara nyingi lazima waunde akaunti nyingi mtandaoni, na kusababisha uchovu, kupunguza urahisi, na kuongezeka kwa ufichuzi wa data ya kibinafsi.                                                                                                | Hudhoofisha utumiaji, huongeza wasiwasi wa faragha, na huongeza hatari ya ukiukaji wa data.          |
-
-| Ada za Kigeni za Exchange (FX) | Ukosefu wa kitengo cha jumla cha akaunti hulazimisha ubadilishaji wa sarafu za gharama kubwa kwa miamala ya kuvuka mipaka.                                                                                                                              | Huongeza gharama za ziada kwa biashara ya kimataifa, na kufanya miamala ya kimataifa kuwa nafuu.             |
 
 Kama vile tulivyohama kutoka kwa kulipa kwa dakika kwa simu za sauti hadi kutumia karibu mawasiliano yasiyolipishwa ya msingi wa IP, kuibuka kwa mitandao iliyo wazi na bora kunaweza kufafanua upya malipo, kupunguza gharama na waamuzi, na kukuza miundo mipya ya biashara.
 
@@ -207,9 +195,9 @@ Kama vile tulivyohama kutoka kwa kulipa kwa dakika kwa simu za sauti hadi kutumi
 Bitcoin ni **mfumo wa sarafu ya kidijitali kati ya wenzao wa Exchange** (fedha za kielektroniki). Neno "Bitcoin" linamaanisha vipengele vifuatavyo:
 
 
-- Itifaki ya kompyuta** inayowezesha thamani ya Exchange kwenye mtandao bila wapatanishi, bila kuhitaji kibali, na kwa jina bandia. Inatumia kanuni za hali ya juu za kriptografia.
-- Mtandao halisi** wa mashine zilizounganishwa kwenye mtandao (nodi, wachimba migodi, n.k.) zinazoendeshwa na watu binafsi na biashara, zinazounda mfumo wa kugawanyika (bila mamlaka kuu au sehemu moja ya udhibiti).
-- Kitengo cha akaunti** ndani ya mfumo. Hakutakuwa na zaidi ya bitcoins milioni 21 kuwepo. Kila Bitcoin inaweza kugawanywa katika vitengo milioni 100 vinavyoitwa "satoshis," vinavyoitwa kwa heshima ya muundaji wake asiyejulikana.
+- **Itifaki ya kompyuta** inayowezesha thamani ya Exchange kwenye mtandao bila wapatanishi, bila kuhitaji kibali, na kwa jina bandia. Inatumia kanuni za hali ya juu za kriptografia.
+- **Mtandao halisi** wa mashine zilizounganishwa kwenye mtandao (nodi, wachimba migodi, n.k.) zinazoendeshwa na watu binafsi na biashara, zinazounda mfumo wa kugawanyika (bila mamlaka kuu au sehemu moja ya udhibiti).
+- **Kitengo cha akaunti** ndani ya mfumo. Hakutakuwa na zaidi ya bitcoins milioni 21 kuwepo. Kila Bitcoin inaweza kugawanywa katika vitengo milioni 100 vinavyoitwa "satoshis," vinavyoitwa kwa heshima ya muundaji wake asiyejulikana.
 
 Kwa pamoja wanafanya ya Bitcoin kuwa **rasilimali inayomilikiwa** na sarafu ya kidijitali **bila mtoaji**. Ownership inalindwa pekee kwa kushikilia **ufunguo wa siri wa faragha**, kutoa udhibiti kamili **bila wapatanishi au watu wengine wanaoaminika**. Inapohamishwa, Ownership **mwisho** ni mara moja: mmiliki mpya anaimiliki kikamilifu bila kutegemea mamlaka kuu kwa ulinzi au ubadilishaji. Miamala **haibadiliki**—ikirekodiwa kwenye Blockchain, haiwezi kubadilishwa au kufutwa.
 
@@ -229,27 +217,24 @@ Bitcoin inatupa changamoto ya kufikiria upya asili ya pesa yenyewe. Unaweza kuel
 
 **KITAMBULISHO CHA Bitcoin**
 
-
-- Umri:** Miaka 15 (Januari 3, 2009)
-- Thamani ya kila siku ya Exchange:** $10 bilioni (> CAC40)
-- Mtaji wa soko:** $1.8 trilioni (> Meta, Visa, Silver ; < Apple, Google, Gold)
-- Watumiaji:** ~100 hadi milioni 200 (1-2% ya idadi ya watu duniani)
-- Tete:** Kimsingi hakuna (1 Bitcoin = 1 Bitcoin), juu sana nje (katika ubadilishanaji wa sarafu ya fiat)
-- Utendaji:** Muamala wa kwanza kwa $0.0009; sasa $100,000 (x100 milioni)
-- Upatikanaji wa Mtandao (uptime):** 100% tangu 2013
-- Imetangazwa kuwa amekufa au kukosolewa:** Mara moja kwa mwezi
+- **Umri:** Miaka 15 (Januari 3, 2009)
+- **Thamani ya kila siku ya Exchange:** $10 bilioni (> CAC40)
+- **Mtaji wa soko:** $1.8 trilioni (> Meta, Visa, Silver ; < Apple, Google, Gold)
+- **Watumiaji:** ~100 hadi milioni 200 (1-2% ya idadi ya watu duniani)
+- **Tete:** Kimsingi hakuna (1 Bitcoin = 1 Bitcoin), juu sana nje (katika ubadilishanaji wa sarafu ya fiat)
+- **Utendaji:** Muamala wa kwanza kwa $0.0009; sasa $100,000 (x100 milioni)
+- **Upatikanaji wa Mtandao (uptime):** 100% tangu 2013
+- **Imetangazwa kuwa amekufa au kukosolewa:** Mara moja kwa mwezi
 
 **Ajabu ya Ushirikiano wa Kibinadamu:**
 
-
-- **chanzo-wazi** kabisa
-- Chombo cha kisheria:** Hakuna
-- Mkurugenzi Mtendaji:** Hakuna
-- Uwekezaji wa mtaji wa mradi:** Hakuna
-- Uuzaji:** Hakuna
-- R&D:** Inaendeshwa kwa kujitolea
-- Utawala:** Na watumiaji
-- Muundo bunifu wa kiuchumi:** Uundaji wa vitalu unafadhiliwa na ada za ununuzi (kulingana na mnada)
+- **Chombo cha kisheria:** Hakuna
+- **Mkurugenzi Mtendaji:** Hakuna
+- **Uwekezaji wa mtaji wa mradi:** Hakuna
+- **Uuzaji:** Hakuna
+- **R&D:** Inaendeshwa kwa kujitolea
+- **Utawala:** Na watumiaji
+- **Muundo bunifu wa kiuchumi:** Uundaji wa vitalu unafadhiliwa na ada za ununuzi (kulingana na mnada)
 
 Kwa habari zaidi juu ya Bitcoin, historia yake, jinsi inavyofanya kazi, na matumizi yake, ninapendekeza pia kufuata kozi hii nyingine ya kina:
 
@@ -258,16 +243,15 @@ https://planb.network/courses/2b7dc507-81e3-4b70-88e6-41ed44239966
 
 <chapterId>c095c7ad-5469-4c7b-9510-b6c0b86244e7</chapterId>
 
-**UMEME NI NINI?**
+**LIGHTNING NETWORK NINI?**
 
 Lightning Network ni **itifaki na mtandao** unaowezesha miamala ya Bitcoin yenye mwingiliano mdogo na Blockchain kuu ya Bitcoin. Hivi ndivyo inavyofanya kazi:
 
-
-- Usanidi wa awali:** Pesa zimefungwa (zimebanwa) kwenye Blockchain kuu ili kuanzisha njia ya malipo kati ya wahusika 2.
-- Mtandao wa malipo:** Mtandao wa njia za malipo kati ya wahusika mbalimbali huunda mtandao wa malipo (uelekezaji na muunganisho).
-- Shughuli za off-chain:** Miamala hufanyika kati ya wahusika lakini **haijachapishwa mara moja** kwenye Bitcoin kuu ya Blockchain (**"off-chain"**).
-- Malipo ya On-Chain:** **Salio la mwisho** la miamala ya kituo pekee ndilo linalochapishwa kwenye Bitcoin kuu Blockchain (**"On-Chain**"), kuruhusu miamala mingi kufanyika kwa sasa. Ufungaji huu wa malipo mengi hupunguza msongamano na hivyo kupunguza ada ikilinganishwa na kufanya miamala mingi ya On-Chain.
-- Kufungwa kwa kituo:** Mtumiaji anaweza kufunga chaneli yake wakati wowote na kudai tena Bitcoin yake kwa kuchapisha hali ya hivi punde ya malipo. Hii ndiyo kanuni ya miamala kuwa **"inayoweza kuchapishwa" wakati wowote lakini "haijachapishwa"** hadi itakapohitajika. Njia ya kutoka (kufungwa kwa idhaa) inaweza kuwa ya upande mmoja (iliyoamuliwa na mhusika yeyote kati ya 2 wakati wowote) au kuamuliwa pande zote (kusababisha ada za chini za On-Chain)
+- **Usanidi wa awali:** Pesa zimefungwa (zimebanwa) kwenye Blockchain kuu ili kuanzisha njia ya malipo kati ya wahusika 2.
+- **Mtandao wa malipo:** Mtandao wa njia za malipo kati ya wahusika mbalimbali huunda mtandao wa malipo (uelekezaji na muunganisho).
+- **Shughuli za off-chain:** Miamala hufanyika kati ya wahusika lakini **haijachapishwa mara moja** kwenye Bitcoin kuu ya Blockchain (**"off-chain"**).
+- **Malipo ya On-Chain:** **Salio la mwisho** la miamala ya kituo pekee ndilo linalochapishwa kwenye Bitcoin kuu Blockchain (**"On-Chain**"), kuruhusu miamala mingi kufanyika kwa sasa. Ufungaji huu wa malipo mengi hupunguza msongamano na hivyo kupunguza ada ikilinganishwa na kufanya miamala mingi ya On-Chain.
+- **Kufungwa kwa kituo:** Mtumiaji anaweza kufunga chaneli yake wakati wowote na kudai tena Bitcoin yake kwa kuchapisha hali ya hivi punde ya malipo. Hii ndiyo kanuni ya miamala kuwa **"inayoweza kuchapishwa" wakati wowote lakini "haijachapishwa"** hadi itakapohitajika. Njia ya kutoka (kufungwa kwa idhaa) inaweza kuwa ya upande mmoja (iliyoamuliwa na mhusika yeyote kati ya 2 wakati wowote) au kuamuliwa pande zote (kusababisha ada za chini za On-Chain)
 
 ![BIZ101](assets/en/04.webp)
 
@@ -277,53 +261,54 @@ Mbinu hii huepuka ucheleweshaji na utata wa kufanya kila shughuli moja kwa moja 
 
 Itifaki huunda **mtandao** wa mashine ambapo vituo vinaunda mfumo wa malipo wa wote. Nodi hizi zinaweza kuendeshwa kwa uhuru na watu binafsi au biashara, na kuifanya mtandao wazi kabisa.
 
-Lightning Network inawezesha thamani ya papo hapo Exchange kwa kasi ya mwanga. Ni kama itifaki ya barua pepe inayotumika kwa malipo: mtandao wa malipo wa kizazi kijacho. Inabadilisha kwa kiasi kikubwa jinsi "fedha" inavyosonga, na kuifanya kuwa ya bure na ya haraka kama utumaji wa data kwenye mtandao.
+Lightning network huwezesha ubadilishaji wa thamani papo hapo kwa kasi ya mwanga.Ni kama itifaki ya barua pepe inayotumika kwa malipo: mtandao wa malipo wa kizazi kijacho. Inabadilisha kwa kiasi kikubwa jinsi "fedha" inavyosonga, na kuifanya kuwa ya bure na ya haraka kama utumaji wa data kwenye mtandao.
+
 
 ![BIZ101](assets/en/12.webp)
 
 **Faida Muhimu:**
 
+- **Kasi:** Shughuli za papo hapo.
+- **Ada za chini:** Gharama za chini zaidi ikilinganishwa na mitandao ya benki ya kawaida.
+- **Urahisi wa kuasili:** Biashara zinaweza kuweka mipangilio haraka ili kukubali malipo ya umeme kwa kutumia programu mahiri tu au kitufe cha kulipa kwenye tovuti yao.
 
-- Kasi:** Shughuli za papo hapo.
-- Ada za chini:** Gharama za chini zaidi ikilinganishwa na mitandao ya benki ya kawaida.
-- Urahisi wa kuasili:** Biashara zinaweza kuweka mipangilio haraka ili kukubali malipo ya umeme kwa kutumia programu mahiri tu au kitufe cha kulipa kwenye tovuti yao.
-
-Miundombinu ya Umeme hupita mifumo ya kawaida ya malipo katika suala la kasi, gharama na ufanisi wa nishati. Kwa kuongezeka kwa uasili wa mfanyabiashara, kasi itaongezeka: ikiwa malipo yanaweza kupita mtandao uliofungwa wa benki, kwa nini uendelee kutoa asilimia kubwa ya mapato kwa wapatanishi wa leo?
+Miundombinu ya Lightning hupita mifumo ya kawaida ya malipo katika suala la kasi, gharama na ufanisi wa nishati. Kwa kuongezeka kwa uasili wa mfanyabiashara, kasi itaongezeka: ikiwa malipo yanaweza kupita mtandao uliofungwa wa benki, kwa nini uendelee kutoa asilimia kubwa ya mapato kwa wapatanishi wa leo?
 
 **Kesi za Matumizi Isiyo na Kikomo:**
 
-Maombi ya umeme yanaenea zaidi ya ada na kasi ya chini. Kwa kutoa reli ya malipo ya bure na ya papo hapo, inafungua fursa nyingi katika uchumi wote.
+Maombi ya Lightning yanaenea zaidi ya ada na kasi ya chini. Kwa kutoa reli ya malipo ya bure na ya papo hapo, inafungua fursa nyingi katika uchumi wote.
 
 **Kukuza Uwezo wa Bitcoin wa Exchange:**
 
-Umeme huongeza jukumu la Bitcoin kama "kati ya Exchange." Kwa kuongeza mzunguko na uhuru wa shughuli, inaimarisha kazi ya msingi ya fedha: kuwezesha ubadilishanaji wa kiuchumi na uundaji wa thamani kwa washiriki wote.
+Lightning huongeza jukumu la Bitcoin kama "kati ya Exchange." Kwa kuongeza mzunguko na uhuru wa shughuli, inaimarisha kazi ya msingi ya fedha: kuwezesha ubadilishanaji wa kiuchumi na uundaji wa thamani kwa washiriki wote.
 
-Kuinuka kwa siku zijazo kwa "uchumi wa mashine mahiri" kutahitaji mfumo wa malipo wa haraka sana, wa masafa ya juu, kiwango cha kiufundi kinachoweza kufikiwa na Umeme pekee. Hii itawezesha uundaji wa bidhaa na huduma zaidi. Kadiri Supply ya Bitcoin inavyosalia kuwa ndogo, uwezo wa kununua wa kila kitengo utaongezeka. Bitcoin na Umeme huimarika pamoja huku mitandao yao ikipanuka.
+Kuinuka kwa siku zijazo kwa "uchumi wa mashine mahiri" kutahitaji mfumo wa malipo wa haraka sana, wa masafa ya juu, kiwango cha kiufundi kinachoweza kufikiwa na Lightning pekee. Hii itawezesha uundaji wa bidhaa na huduma zaidi. Kadiri usambazaji wa Bitcoin unavyosalia kuwa ndogo, uwezo wa kununua wa kila kitengo utaongezeka. Bitcoin na Lightning huimarika pamoja huku mitandao yao ikipanuka.
 
-Umeme hutoa taswira ya siku zijazo ambapo biashara zote ambazo zimekuwa za mtandao pia zitakuwa za Bitcoin.
+Lightning hutoa taswira ya siku zijazo ambapo biashara zote ambazo zimekuwa za mtandao pia zitakuwa za Bitcoin.
 
-**Malipo ya Bitcoin kwa Umeme: Kesi ya Kawaida ya Utumiaji wa Muuzaji**
+**Malipo ya Bitcoin kwa Lightning: Kesi ya Kawaida ya Utumiaji wa Muuzaji**
+
 
 Lightning Network ni bora kwa malipo ya Bitcoin katika maduka ya kimwili au ya mtandaoni kutokana na kasi yake na mwisho wa malipo.
 
+- **Kasi:** Lightning (~500ms hadi sekunde chache) ni haraka sana kuliko mtandao mkuu wa Bitcoin, ambapo miamala inaweza kuchukua kama dakika 30 kuthibitisha. Kwa ununuzi mkubwa (zaidi ya $1,000), mtandao mkuu wa Bitcoin bado unaweza kupendelewa, kwani kasi sio muhimu sana. Hata hivyo, maelezo haya mara nyingi hufichwa kutoka kwa mtumiaji wa kawaida, kwani programu hushughulikia maamuzi haya chinichini.
+- **Mwisho:** Mara tu malipo yanapofanywa kwa Umeme, ni ya mwisho. Hakuna uwezekano wa kurudisha malipo kwa wahusika wengine au mizozo inayohusiana na ulaghai.
+- **Ada:** Ada za muamala kwenye Lightning Network ni ndogo na hulipwa na mtumiaji, si mfanyabiashara. Wauzaji hutozwa tu ada ikiwa baadaye watahitaji kuhamisha Bitcoin yao hadi mtandao au huduma nyingine.
 
-- Kasi:** Umeme (~500ms hadi sekunde chache) ni haraka sana kuliko mtandao mkuu wa Bitcoin, ambapo miamala inaweza kuchukua kama dakika 30 kuthibitisha. Kwa ununuzi mkubwa (zaidi ya $1,000), mtandao mkuu wa Bitcoin bado unaweza kupendelewa, kwani kasi sio muhimu sana. Hata hivyo, maelezo haya mara nyingi hufichwa kutoka kwa mtumiaji wa kawaida, kwani programu hushughulikia maamuzi haya chinichini.
-- Mwisho:** Mara tu malipo yanapofanywa kwa Umeme, ni ya mwisho. Hakuna uwezekano wa kurudisha malipo kwa wahusika wengine au mizozo inayohusiana na ulaghai.
-- Ada:** Ada za muamala kwenye Lightning Network ni ndogo na hulipwa na mtumiaji, si mfanyabiashara. Wauzaji hutozwa tu ada ikiwa baadaye watahitaji kuhamisha Bitcoin yao hadi mtandao au huduma nyingine.
-
-**KITAMBULISHO CHA UMEME**
+**KITAMBULISHO CHA LIGHTNING**
 
 
-- Uvumbuzi:** 2015
-- Uzinduzi:** 2016
-- Umri:** Miaka 7 (muamala wa kwanza: Desemba 28, 2017)
-- Uwezo wa kiufundi wa mtandao:** kwa kiwango kikubwa inaweza kushughulikia miamala ya papo hapo mara 1,000 zaidi ya mifumo ya kitamaduni.
-- Saizi za miamala:** Huanzia kubwa hadi mara 1,000 ndogo kuliko mifumo ya kitamaduni.
-- Kasi ya muamala:** Hadi mara 100 haraka zaidi.
-- Ada:** Hadi 90% chini.
-- Mwisho wa malipo:** Karibu-papo hapo (mara nyingi ~ milisekunde 500, wakati mwingine sekunde chache).
-- Matumizi ya nishati:** ~8% ya mfumo wa jadi wa fedha duniani.
-- Sifa:**
+- **Uvumbuzi:** 2015
+- **Uzinduzi:** 2016
+- **Umri:** Miaka 7 (muamala wa kwanza: Desemba 28, 2017)
+- **Uwezo wa kiufundi wa mtandao:** kwa kiwango kikubwa inaweza kushughulikia miamala ya papo hapo mara 1,000 zaidi ya mifumo ya kitamaduni.
+- **Saizi za miamala:** Huanzia kubwa hadi mara 1,000 ndogo kuliko mifumo ya kitamaduni.
+- **Kasi ya muamala:** Hadi mara 100 haraka zaidi.
+- **Ada:** Hadi 90% chini.
+- **Mwisho wa malipo:** Karibu-papo hapo (mara nyingi ~ milisekunde 500, wakati mwingine sekunde chache).
+- **Matumizi ya nishati:** ~8% ya mfumo wa jadi wa fedha duniani.
+- **Sifa:**
+
     - Rika-kwa-rika
     - Universal
     - Haina ruhusa
@@ -431,17 +416,15 @@ Bitcoin inatoa njia ya kukusanya na kuhifadhi mtaji kwa muda mrefu bila mmomonyo
 
 **Takwimu Muhimu za Shule ya Austria**
 
-
-- Carl Menger**: Mwanzilishi wa Shule ya Austrian, Menger alianzisha nadharia ya thamani ya kibinafsi, ambayo inasisitiza kwamba thamani ya bidhaa inategemea mapendekezo ya mtu binafsi badala ya gharama za uzalishaji.
-- Ludwig von Mises**: Msingi wa Shule ya Austria, Mises alianzisha prakseolojia (nadharia ya matendo ya binadamu) na kuandika _Human Action_, uhakiki wa kina wa ujamaa na mipango kuu.
-- Friedrich Hayek**: Mwanafunzi wa Mises, Hayek alishinda Tuzo ya Nobel ya Uchumi mwaka wa 1974 kwa kazi yake juu ya maarifa yaliyogatuliwa na kubadilika kwa soko. Katika kitabu chake _The Road to Serfdom_, alikosoa vikali udhibiti wa serikali kuu.
-- Murray Rothbard**: Mwanafunzi wa Mises na mtetezi shupavu wa uhuru, Rothbard alianzisha nadharia ya ubepari wa anarcho, akifikiria jamii isiyo na utaifa inayotawaliwa na mikataba ya hiari. Kitabu chake _Man, Economy, and State_ ni kazi ya kina katika uchumi wa Austria.
+- **Carl Menger**: Mwanzilishi wa Shule ya Austrian, Menger alianzisha nadharia ya thamani ya kibinafsi, ambayo inasisitiza kwamba thamani ya bidhaa inategemea mapendekezo ya mtu binafsi badala ya gharama za uzalishaji.
+- **Ludwig von Mises**: Msingi wa Shule ya Austria, Mises alianzisha prakseolojia (nadharia ya matendo ya binadamu) na kuandika _Human Action_, uhakiki wa kina wa ujamaa na mipango kuu.
+- **Friedrich Hayek**: Mwanafunzi wa Mises, Hayek alishinda Tuzo ya Nobel ya Uchumi mwaka wa 1974 kwa kazi yake juu ya maarifa yaliyogatuliwa na kubadilika kwa soko. Katika kitabu chake _The Road to Serfdom_, alikosoa vikali udhibiti wa serikali kuu.
+- **Murray Rothbard**: Mwanafunzi wa Mises na mtetezi shupavu wa uhuru, Rothbard alianzisha nadharia ya ubepari wa anarcho, akifikiria jamii isiyo na utaifa inayotawaliwa na mikataba ya hiari. Kitabu chake _Man, Economy, and State_ ni kazi ya kina katika uchumi wa Austria.
 
 **Wachumi Wengine Wenye Ushawishi**
 
-
-- Milton Friedman**: Ingawa hakuhusishwa moja kwa moja na Shule ya Austria, Friedman aliunga mkono mawazo mengi ya utetezi wa soko na huria. Sera yake ya ufadhili inatofautiana na mawazo ya Austria lakini inashiriki ukosoaji wao wa kuingilia serikali kupindukia katika uchumi.
-- Frédéric Bastiat**: Mwanauchumi Mfaransa wa karne ya 19, Bastiat alishawishi Shule ya Austria kwa kazi zake kuhusu biashara huria na matokeo yasiyoonekana ya sera za kiuchumi. Insha yake _Kinachoonekana na Kisichoonekana_ ni maandishi ya msingi ya uliberali wa kiuchumi.
+- **Milton Friedman**: Ingawa hakuhusishwa moja kwa moja na Shule ya Austria, Friedman aliunga mkono mawazo mengi ya utetezi wa soko na huria. Sera yake ya ufadhili inatofautiana na mawazo ya Austria lakini inashiriki ukosoaji wao wa kuingilia serikali kupindukia katika uchumi.
+- **Frédéric Bastiat**: Mwanauchumi Mfaransa wa karne ya 19, Bastiat alishawishi Shule ya Austria kwa kazi zake kuhusu biashara huria na matokeo yasiyoonekana ya sera za kiuchumi. Insha yake _Kinachoonekana na Kisichoonekana_ ni maandishi ya msingi ya uliberali wa kiuchumi.
 
 ![BIZ101](assets/en/06.webp)
 
@@ -456,6 +439,7 @@ Kwa habari zaidi juu ya mada hii:
 https://planb.network/courses/d955dd28-b7c6-4ba2-a123-d932e21d148f
 https://planb.network/courses/9d1bde6a-33e5-45dd-b7c0-94da72e45b11
 https://planb.network/courses/d07b092b-fa9a-4dd7-bf94-0453e479c7df
+
 ## Kushikilia Bitcoin kwenye hazina
 
 <chapterId>89622a40-d14f-4c37-a075-8e7e1731ec26</chapterId>
@@ -467,7 +451,8 @@ Hazina ni mahali ambapo mtu huweka vitu vya thamani. Kampuni yenye afya ina mtaj
 Kwa muda mrefu sana, kampuni zingine hutumia mali zisizo halali kama mali isiyohamishika bila kutambua hatari fulani:
 
 
-- Illiquidity katika tukio la mgogoro
+-Illiquidity  katika tukio la mgogoro
+
 - Hatimaye mapato ya chini mara tu ada zinapokatwa
 - Rejesho ambayo haipiti kasi ya mfumuko wa bei halisi, ile ya fedha Supply (~7% kwa mwaka, tazama hapa chini)
 - Hatari iliyofichwa kwamba mali isiyohamishika inapoteza sehemu ya utendakazi wake wa "akiba" kwa manufaa ya mali kama vile Bitcoin. Kama matokeo, inaweza kurudi karibu na "thamani ya matumizi" yake: kutoa makazi.
@@ -516,37 +501,24 @@ ETF za Bitcoin zinaongoza kwa tofauti kubwa katika suala la **kupitishwa kwa taa
 
 Bitcoin sasa inacheza katika "duka la thamani" **soko**. Inawakilisha tu kushuka kwa ndoo kwa kiwango: karibu dola bilioni 1,800 ikilinganishwa na dhahabu ya $ 18,000 bilioni au $ 500,000 ya mali isiyohamishika. Walakini, soko lake la takriban 0.1% linaipa nafasi kubwa ya ukuaji, haswa ikizingatiwa kuwa washindani wake wanatatizika kuvutia watumiaji wapya.
 
-| Ticker | Mtiririko wa 1D (M USD) | Mtiririko wa 1W (M USD) | Mtiririko wa 1M (M USD) | Mtiririko wa 3M (M USD) | Mtiririko wa YTD (M USD) |
 
+| Ticker  | Mtiririko wa 1D (M USD) | Mtiririko wa 1W (M USD) | Mtiririko wa 1M (M USD) | Mtiririko wa 3M (M USD) | Mtiririko wa YTD (M USD) |
 | ------- | --------------- | --------------- | --------------- | --------------- | ---------------- |
+| **Jumla** | +457.19         | +1,507.95       | +2,888.01       | +3,672.29       | **+20,262.94**   |
+| IBIT    | +393.40         | +750.91         | +1,536.47       | +3,821.37       | +22,460.44       |
+| FBTC    | +14.81          | +372.40         | +627.16         | +458.71         | +10,266.69       |
+| ARKB    | +11.51          | +163.26         | +295.92         | -3.88           | +2,647.32        |
+| BITB    | +12.93          | +146.50         | +263.30         | +97.46          | +2,262.69        |
+| HODL    | +5.75           | +38.77          | +94.54          | +100.39         | +682.03          |
+| BRRR    | +1.92           | +4.72           | +17.76          | +20.54          | +540.19          |
+| EZBC    | +11.79          | +17.53          | +39.29          | +47.48          | +439.45          |
+| BTC     | .00             | -3.13           | +36.59          | +419.18         | +419.18          |
+| BTCO    | +6.43           | +19.25          | +47.30          | +56.41          | +394.82          |
+| BTCW    | .00             | +2.84           | +6.04           | +146.69         | +217.47          |
+| YBIT    | -1.34           | -10.26          | +5.06           | +13.81          | +76.30           |
+| DEFI    | .00             | .00             | .00             | -2.03           | -1.79            |
+| GBTC    | .00             | +5.16           | -81.42          | -1503.84        | -20,141.85       |
 
-| **Jumla** | +457.19 | +1,507.95 | +2,888.01 | +3,672.29 | **+20,262.94** |
-
-| IBI | +393.40 | +750.91 | +1,536.47 | +3,821.37 | +22,460.44 |
-
-| FBTC | +14.81 | +372.40 | +627.16 | +458.71 | +10,266.69 |
-
-| ARKB | +11.51 | +163.26 | +295.92 | -3.88 | +2,647.32 |
-
-| BITB | +12.93 | +146.50 | +263.30 | +97.46 | +2,262.69 |
-
-| HODL | +5.75 | +38.77 | +94.54 | +100.39 | +682.03 |
-
-| BRRR | +1.92 | +4.72 | +17.76 | +20.54 | +540.19 |
-
-| EZBC | +11.79 | +17.53 | +39.29 | +47.48 | +439.45 |
-
-| BTC | .00 | -3.13 | +36.59 | +419.18 | +419.18 |
-
-| BTCO | +6.43 | +19.25 | +47.30 | +56.41 | +394.82 |
-
-| BTCW | .00 | +2.84 | +6.04 | +146.69 | +217.47 |
-
-| YBIT | -1.34 | -10.26 | +5.06 | +13.81 | +76.30 |
-
-| DEFI | .00 | .00 | .00 | -2.03 | -1.79 |
-
-| GBTC | .00 | +5.16 | -81.42 | -1503.84 | -20,141.85 |
 
 *Dola bilioni 20 katika miezi 10: ETF za Bitcoin ziliafikiwa chini ya mwaka mmoja kile ambacho ETF za dhahabu zilichukua miaka 5 kukamilisha. Chanzo: Uwekezaji wa Mfuko unapita kwa USD. Bloomberg Terminal, Bloomberg L.P., 2024.*
 
@@ -580,15 +552,14 @@ Tukumbuke kwamba mtaji wake wa chini kabisa wa soko, ikilinganishwa na mali nyin
 
 **Mchakato wa kufanya maamuzi** wa kuwekeza kwenye Bitcoin utaathiriwa pakubwa na nafasi yako ndani ya kampuni. Ikiwa wewe ni **mmiliki wa wengi, uko huru** kutenga fedha za ziada za hazina kulingana na uamuzi wako mwenyewe. Kinyume chake, ikiwa wewe ni mshirika au mbia ndani ya muundo wa pamoja wa kufanya maamuzi, utahitaji kupitia mashauri ya pamoja, ambayo yanaweza kutatiza mambo.
 
-Katika hali hii ya pili, kuoanisha mitazamo tofauti inakuwa muhimu, kwani kwa kiasi kikubwa **inategemea uelewa wa kila mdau kuhusu mali ya Bitcoin**. Kama msemo unavyosema: "Bitcoin ni kila kitu ambacho watu hawajui kuhusu kompyuta pamoja na kila kitu ambacho hawaelewi kuhusu pesa." Hata kama mshirika mmoja amefanya jitihada za kuelewa kikamilifu Bitcoin, kuwasilisha ujuzi huu kwa wengine kunaweza kuwa changamoto. Katika hali kama hizi, ** inashauriwa kuleta rasilimali ya nje ** ili kuepuka kuwa na wazo lililohusishwa kwa karibu sana na mtu mmoja, ambayo inaweza upinzani wa generate.
+Katika hali hii ya pili, kuoanisha mitazamo tofauti inakuwa muhimu, kwani kwa kiasi kikubwa **inategemea uelewa wa kila mdau kuhusu mali ya Bitcoin**. Kama msemo unavyosema: "Bitcoin ni kila kitu ambacho watu hawajui kuhusu kompyuta pamoja na kila kitu ambacho hawaelewi kuhusu pesa." Hata kama mshirika mmoja amefanya jitihada za kuelewa kikamilifu Bitcoin, kuwasilisha ujuzi huu kwa wengine kunaweza kuwa changamoto. Katika hali kama hizi, **inashauriwa kuleta rasilimali ya nje** ili kuepuka kuwa na wazo lililohusishwa kwa karibu sana na mtu mmoja, ambayo inaweza upinzani wa generate.
 
 Hivi sasa, hali ya mmiliki wengi anayefanya uamuzi ndiye mwakilishi zaidi kati ya kampuni zinazoshikilia Bitcoin. Hapa kuna mifano michache halisi:
 
-
-- Wataalamu wa kujitegemea**: Washauri, wahudumu wa afya, au wanasheria wanaowekeza sehemu ya hazina yao ya muda mrefu katika Bitcoin. Kwa ujumla, wataalamu hawa tayari wana akiba au akaunti za amana za muda na mapato kidogo.
-- Watendaji wa sekta ya teknolojia**: Mtendaji ambaye aliuza kampuni yao na kuwekeza sehemu ya mapato kutoka kwa kampuni yao ya kibinafsi hadi Bitcoin miaka michache iliyopita. Leo, wanafurahia hali nzuri ya kifedha na kuwekeza tena katika biashara mpya.
-- Wamiliki wa biashara ndogo sana** : Wajasiriamali katika huduma, kilimo, au tasnia ya ufundi ambao wameelewa uwezo wa Bitcoin na kuitengea sehemu ya hazina yao. Motisha yao kuu iko katika utofauti na uhuru unaotoa
-- Kampuni zinazouzwa hadharani** kama vile MicroStrategy zimeweka kielelezo kwa kubadilisha sehemu kubwa ya hazina yao ya shirika kuwa Bitcoin, kuonyesha mabadiliko ya kimataifa katika mikakati ya ugawaji wa mtaji wa shirika. Kufikia msimu wa 2024, kampuni zingine nyingi zilifuata mkondo huo, na kuhalalisha zaidi mwelekeo huu.
+- **Wataalamu wa kujitegemea**: Washauri, wahudumu wa afya, au wanasheria wanaowekeza sehemu ya hazina yao ya muda mrefu katika Bitcoin. Kwa ujumla, wataalamu hawa tayari wana akiba au akaunti za amana za muda na mapato kidogo.
+- **Watendaji wa sekta ya teknolojia**: Mtendaji ambaye aliuza kampuni yao na kuwekeza sehemu ya mapato kutoka kwa kampuni yao ya kibinafsi hadi Bitcoin miaka michache iliyopita. Leo, wanafurahia hali nzuri ya kifedha na kuwekeza tena katika biashara mpya.
+- **Wamiliki wa biashara ndogo sana** : Wajasiriamali katika huduma, kilimo, au tasnia ya ufundi ambao wameelewa uwezo wa Bitcoin na kuitengea sehemu ya hazina yao. Motisha yao kuu iko katika utofauti na uhuru unaotoa
+- **Kampuni zinazouzwa hadharani** kama vile MicroStrategy zimeweka kielelezo kwa kubadilisha sehemu kubwa ya hazina yao ya shirika kuwa Bitcoin, kuonyesha mabadiliko ya kimataifa katika mikakati ya ugawaji wa mtaji wa shirika. Kufikia msimu wa 2024, kampuni zingine nyingi zilifuata mkondo huo, na kuhalalisha zaidi mwelekeo huu.
 
 ### Ushuru wa Bitcoin unaoshikiliwa na wafanyabiashara
 
@@ -611,19 +582,17 @@ Kuna njia tatu za kupata Bitcoin:
 ![BIZ101](assets/en/09.webp)
 
 
-- Katika Exchange kwa bidhaa au huduma:**
+- **Katika Exchange kwa bidhaa au huduma:**
 
 Kwa kuwa Bitcoin hufanya kazi kama njia ya Exchange, inawezekana kuwazia uchumi wa mduara. Ingawa hii bado ni ya kawaida leo, biashara zaidi na zaidi zinaanza kukubali malipo ya Bitcoin—kwa nini si yako? (Angalia sura yetu inayofuata)
 
-
-- Mining Bitcoin:**
+- **Mining Bitcoin:**
 
 Hii inahusisha kupata zawadi kutokana na uendeshaji wa mashine za Mining. Kwa biashara zisizo maalum, hii inasalia kuwa ndogo. Unaweza kushiriki kupitia waamuzi ambao watakuuzia au kukukodisha komputa, mtandao na matengenezo. Ikiwa unamiliki mashine, unaweza kuzihesabu kama mali zinazoweza kupunguzwa thamani. Kwa kiwango kikubwa, utahitaji kuhesabu kwa uangalifu mapato ya uwekezaji kwa sababu soko lina ushindani mkubwa na linahitaji matarajio mazuri ya gharama, hasa umeme.
 
 Ili kupata maelezo zaidi kuhusu mbinu za Mining, unaweza [kupata sehemu ya "Mining" katika mafunzo yetu](https://planb.network/tutorials/Mining).
 
-
-- Kununua Bitcoin:**
+- **Kununua Bitcoin:**
 
 Hii ndiyo njia iliyozoeleka zaidi, inayofanywa kupitia ubadilishanaji kati ya wenzao au, kwa kawaida, kwenye majukwaa maalum ya biashara. Lakini wakati wa kupata Bitcoin kama mali ya hazina ya shirika, ni lazima kampuni zifuate viwango thabiti vya udhibiti na taratibu za Know-Your-Customer (KYC). Wanapoinunua kwenye mifumo maalum ya biashara, kwa kawaida biashara huhitajika kutoa maelezo ya kina ya kampuni, ikiwa ni pamoja na hati za utambulisho, taarifa za fedha na uthibitisho wa Address, ili kukidhi mahitaji ya KYC na ya kupinga ulanguzi wa pesa (AML).
 
@@ -669,13 +638,11 @@ Ufunguo huu wa kriptografia ni nambari kubwa sana ya nasibu. Ili kurahisisha mat
 
 Hii inasababisha suala la ulinzi: kushikilia Bitcoin kunamaanisha kushikilia funguo. Labda unazishikilia wewe mwenyewe, au unakabidhi jukumu hilo kwa mtu wa tatu. Pia kuna ufumbuzi wa kati. Wacha tuangalie hali zinazojulikana zaidi:
 
-
-- Kujitunza:**
+- **Kujitunza:**
 
 Hili ndilo chaguo linalopendekezwa na wapenzi wa kweli wa Bitcoin, kwani inalingana na muundo wa asili wa Bitcoin. Unafanya kama benki yako mwenyewe: hakuna hatari ya mtu mwingine kukulaghai, lakini una jukumu la kupata funguo. Una ufikiaji kamili wa pesa zako 24/7. Katika mazingira ya biashara, ikiwa watu wengi wanaweza kuhitaji kufanya miamala, utahitaji zana na taratibu zinazofaa ili kudhibiti ufikiaji na usalama.
 
-
-- Ulezi wa Mtu wa Tatu:**
+- **Ulezi wa Mtu wa Tatu:**
 
 Kwa mfano, Exchange au huduma ya ununuzi inaweza kukufungulia akaunti, kubadilisha sarafu yako ya jadi hadi Bitcoin, na kuishikilia kwa niaba yako kwa kutumia mifumo yao ya usalama. Huduma nyingi kama hizo hukuruhusu kuondoa bitcoins zako kwa Wallet ambapo wewe pekee unashikilia ufunguo. Mpaka ufanye hivyo, humiliki bitcoins kweli; unategemea ahadi yao ya kukulipa. Hii inahusisha kusawazisha hatari za usalama (zao dhidi ya yako) na hatari ya wenzao (zinaweza kushindwa au kutoweka). Baadhi ya biashara hupata hili kuwa linakubalika, ingawa halishauriwi kwa uhifadhi wa muda mrefu au kwa 100% ya mgao wako. Huduma za uhifadhi zinaweza pia kutoza ada za uhifadhi.
 
@@ -697,7 +664,7 @@ Ukichagua "karatasi Bitcoin," utageukia taasisi za fedha kama vile benki au maso
 Ukichagua kununua Bitcoin halisi kupitia soko (Exchange) au wakala, una aina kadhaa kuu:
 
 
-- Jukwaa Kubwa za Kimataifa au Nje:**
+- **Jukwaa Kubwa za Kimataifa au Nje:**
 
 Mifano ni pamoja na Kraken, Coinbase, au Binance, iliyotumiwa kihistoria na watu wengi. Wengine wamekumbana na masuala, na ni vigumu kutoa pendekezo wazi. Kipande cha ushauri: ikiwa unazitumia, usiondoke bitcoins zako huko kwa muda mrefu zaidi kuliko lazima.
 
@@ -714,13 +681,12 @@ Kwa mfano, nchini Ufaransa majukwaa kama Paymium (Exchange) au BullBitcoin (dala
 
 Zaidi ya ada na kasi ya utekelezaji—ambayo haijalishi sana ikiwa unafikiria muda mrefu (miaka kadhaa)—biashara inapaswa pia kuzingatia:
 
-
-- Mtumiaji Interface:** Je, jukwaa linafaa kwa watumiaji?
+- **kiolesura cha mtumiaji:** Je, jukwaa linafaa kwa watumiaji?
 - Vipengele vya Uhasibu:** Kwa uchache, uwezo wa kuhamisha historia ya muamala katika umbizo la .CSV.
-- Ulinzi na Usalama:** Je, jukwaa linashikilia bitcoins kwa niaba yako, au linahamisha Ownership kwako? Mipangilio yao ya usalama ni nini? Je, wana "kufuli za kujiondoa" au vikwazo vingine vya uondoaji?
-- Usaidizi kwa Wateja:** Ubora, usikivu, na usaidizi unaobinafsishwa, hasa unapoanza.
+- **Ulinzi na Usalama:** Je, jukwaa linashikilia bitcoins kwa niaba yako, au linahamisha Ownership kwako? Mipangilio yao ya usalama ni nini? Je, wana "kufuli za kujiondoa" au vikwazo vingine vya uondoaji?
+- **Usaidizi kwa Wateja:** Ubora, usikivu, na usaidizi unaobinafsishwa, hasa unapoanza.
 - Sifa na Maadili:** Uaminifu na maadili ya jukwaa.
-- Usaidizi kwa Ununuzi Unaorudiwa:** Ikiwa unapanga kukusanya Bitcoin baada ya muda na ununuzi ulioratibiwa.
+- **Usaidizi kwa Ununuzi Unaorudiwa:** Ikiwa unapanga kukusanya Bitcoin baada ya muda na ununuzi ulioratibiwa.
 
 # Masuluhisho ya malipo ya Bitcoin yaliyolengwa kwa kila biashara
 
@@ -740,33 +706,30 @@ Bitcoin ni miundombinu ya uaminifu, ambayo maombi yake ya kwanza ni kuondoa wapa
 
 Sasa, fikiria mtazamo wa biashara ya vitendo ambayo shughuli yake ya msingi haina uhusiano wowote na Bitcoin. Kwa nini ingechagua kukubali malipo ya Bitcoin?
 
-
-- Kujenga Hazina ya Bitcoin:**
+- **Kujenga Hazina ya Bitcoin:**
 
 Tazama nakala yetu ya awali juu ya kununua Bitcoin. Iwe ni kwa sababu ya kutiwa hatiani au kama mkakati wa utofauti, baadhi ya wataalamu huchagua kukubali malipo ya Bitcoin. Baadhi ya Wanabiashara wa Bitcoin wanasema kwamba kadiri kampuni inavyokuwa na mwelekeo mdogo wa kifedha—maana haina wakati wala zana za kujihusisha na ujanja changamano wa kifedha—**ndivyo inavyokuwa muhimu zaidi kwa biashara hiyo kulipwa kwa njia ngumu zaidi ya pesa inayopatikana**. Kwa kufanya hivyo, husawazisha uwanja, kuwezesha hata biashara ndogo ndogo, zinazobanwa na wakati kuhifadhi thamani bila kujihusisha na michezo ya kifedha.
 
-
-- Kufikia Demografia Mpya:**
+- **Kufikia Demografia Mpya:**
 
 Idadi ya watumiaji wa Bitcoin inakua, na wana uwezo mkubwa wa kununua. Kwa kawaida watavutia biashara zinazokubali sarafu zao. Zaidi ya hayo, kwa kuwa hii ni sarafu ya kwanza ya kimataifa, ya asili ya mtandao, unaweza pia kuvutia wateja wa kimataifa wanaopitia.
 
-
-- Kuongezeka kwa Mwonekano:**
+- **Kuongezeka kwa Mwonekano:**
 
 Kwa kuorodhesha biashara yako kwenye majukwaa kama vile BTCmap.org, kwa mfano. Ni biashara chache tu zinazokubali Bitcoin kwa sasa, kwa hivyo maneno ya mdomo hufanya kazi kwa faida yako. Pia hukuweka tofauti na washindani wako.
 
 
-- Ada za Chini:**
+- **Ada za Chini:**
 
 Malipo ya papo hapo ya Bitcoin hufanyika kupitia Lightning Network. ** Ada ni ndogo na hulipwa na mnunuzi **. Hakuna ada za mwisho za malipo, hakuna hitilafu za uidhinishaji wa malipo, na hakuna ulaghai. Kwa kulinganisha, sekta ya malipo (kadi, vituo, uhamisho, PSPs, n.k.) hugharimu takriban $2.2 trilioni kwa mwaka duniani kote. Ongeza kwenye malipo hayo na ulaghai, na kwa jumla, karibu moja ya kumi ya Pato la Taifa la Marekani "hupunguzwa" kutoka kwa biashara zenye tija duniani kote ili tu kuhamisha thamani. Bila kujali biashara yako, ada za kifedha ni mzigo ambao unapaswa kuboreshwa, na wakati mwingine, ada za juu zinaweza kukandamiza aina fulani za biashara.
 
+- **Uhuru na Kutokuwa na Ruhusa, 24/7:**
 
-- Uhuru na Kutokuwa na Ruhusa, 24/7:**
 
 Hakuna haja ya kuomba ruhusa ya kutumia Bitcoin. Mtu yeyote anaweza kushiriki katika uchumi ndani ya dakika chache kwa kutumia programu ya simu mahiri. Unaweza kutuma au kupokea malipo kutoka kwa mtu yeyote—mtu binafsi au biashara—wakati wowote, bila vikwazo vya kuratibu au ucheleweshaji.
 
+- **Tumia Mtandao wa Bitcoin kwa Manufaa Yake:**
 
-- Tumia Mtandao wa Bitcoin kwa Manufaa Yake:**
 
 Huhitajiki kuweka malipo yako katika fomu ya Bitcoin—hasa ikiwa unahitaji kulipa wasambazaji au kutuma VAT. Huduma fulani zinaweza kubadilisha malipo yote au sehemu ya malipo yako ya Bitcoin kuwa sarafu utakayochagua (k.m., euro hadi IBAN yako) kwa ada. Katika hali hii, manufaa ya kukubali Bitcoin yanaweza kuwa katika kuvutia watumiaji wapya au katika manufaa ya ndani ya Bitcoin (kama vile ada za chini, uendeshaji wa saa moja na usiku, na hakuna hatari ya ulaghai au malipo nyuma).
 
@@ -784,131 +747,74 @@ Ili kurahisisha mchakato wa kufanya maamuzi, tumefafanua wasifu nne tofauti za b
 
 #### Profaili 1 - Mwanzilishi
 
-| Sifa | Mwanzilishi |
-
-| ------------------------------- | ---------------------------------------------------------------- ---------------------------------------------------------------- |
-
-| **Hali ya Akili** | "kujaribu malipo yangu ya kwanza", "kuchukua kidokezo kwa maudhui yangu ya mtandaoni", "kulenga mapato madogo sana" |
-
-| **Marudio ya Muamala** | "muamala wa kwanza ili kujifunza", "kuchukua malipo mara moja baada ya muda" |
-
-| **Mifano ya Aina ya Biashara** | Uchumi bunifu (waundaji wa maudhui, blogu, makala, n.k.), vidokezo vya mara kwa mara, mauzo ya bidhaa za mtu mmoja mmoja, miungano, matukio ya mara moja |
-
-| **Aina ya Malipo** | Kwa ujumla senti chache kwa euro / dola chache; chini ya ~ euro 300/dola kwa kila bidhaa |
-
-| **Utata wa Mipangilio** | Hakuna |
-
-| **Mfano Suluhisho Linalopendekezwa** | Umeme wa ulinzi Wallet kama Wallet ya Satoshi au Wallet isiyo na kizuizi kama Phoenix |
-
-| **Mfanyabiashara Interface** | Rahisi Bitcoin Umeme Wallet: programu kwenye simu ya mkononi |
-
-| **Mteja Interface** | Msimbo wa malipo wa Bitcoin QR, umechanganuliwa kupitia nambari ya kibinafsi ya mteja Wallet |
-
-| **Ada** | Mteja hulipa ada za Bitcoin za Umeme pamoja na ada zozote zinazotumika za programu |
-
-| **Njia ya Kuuza Kifaa** | Programu ya simu mahiri isiyolipishwa au chaguo la kituo halisi (k.m. Bitcoinize) |
-
-| **Usimamizi na Majukumu** | Usimamizi wa programu moja; utofautishaji mdogo wa jukumu |
-
-| **Uhasibu wa Mauzo ya Nje** | Orodha msingi za historia ya miamala |
-
-| **API** | Hapana |
+| Sifa                            | Mwanzo                                                                                                                                       |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hali ya Akili**              | "kujaribu malipo yangu ya kwanza ya kimwili", "kupokea tip kwa maudhui yangu ya mtandaoni", "lengo la mapato madogo sana"                   |
+| **Mzunguko wa Miamala**        | "muamala wa kwanza ili kujifunza", "kupokea malipo mara moja kwa muda"                                                                      |
+| **Mifano ya Aina ya Biashara** | Uchumi wa ubunifu (waundaji wa maudhui, blogu, makala, n.k.), tip za mara kwa mara, mauzo ya mara moja ya bidhaa ana kwa ana, vyama, matukio ya mara moja |
+| **Aina ya Malipo**             | Kwa kawaida senti chache hadi euro/dola chache; chini ya ~euro/dola 300 kwa bidhaa                                                          |
+| **Ugumu wa Mipangilio**        | Hakuna                                                                                                                                       |
+| **Mfano wa Suluhisho Linalofaa** | Pochi ya Lightning ya uhifadhi kama Wallet of Satoshi au pochi isiyo na uhifadhi kama Phoenix                                                |
+| **Kiolesura cha Muuzaji**      | Pochi rahisi ya Bitcoin Lightning: programu kwenye simu ya mkononi                                                                           |
+| **Kiolesura cha Mteja**        | Msimbo wa malipo wa QR wa Bitcoin, unasomwa kupitia pochi ya kibinafsi ya mteja                                                             |
+| **Ada**                         | Mteja analipa ada za Bitcoin Lightning pamoja na ada zozote za programu zinazotumika                                                         |
+| **Kifaa cha Malipo**           | Programu ya bure ya simu janja au chaguo la kituo cha kimwili (k.m. Bitcoinize)                                                              |
+| **Usimamizi na Majukumu**      | Usimamizi wa programu moja; tofauti ndogo za majukumu                                                                                        |
+| **Hamisha za Uhasibu**         | Orodha za msingi za historia ya miamala                                                                                                      |
+| **API**                         | Hapana                                                                                                                                       |
 
 #### Profaili 2 - Muhimu
 
-| Sifa | Muhimu |
-
-| ------------------------------- | ---------------------------------------------------------------- ---------------------------------------------------------------- |
-
-| **Hali ya Akili** | "Ninakubali Bitcoin katika biashara yangu lakini sitarajii kiasi cha maana" |
-
-| **Marudio ya Muamala** | Shughuli chache kwa mwezi |
-
-| **Mifano ya Aina ya Biashara** | Baa, mikahawa, mauzo ya mara kwa mara ya bidhaa safi au zinazotoka moja kwa moja, maduka mengi chini ya mmiliki mmoja, uchumi wa ubunifu kwa wasanii |
-
-| **Aina ya Malipo** | Kwa ujumla kuanzia euro/dola chache hadi mia chache kwa kila kitu; chini ya ~ 300 kwa kila bidhaa na chini ya ~ 3,000 kwa mwezi |
-
-| **Utata wa Mipangilio** | Ndogo (programu ya simu) |
-
-| **Mfano Suluhisho Linalopendekezwa** | Uswisi Bitcoin Pay |
-
-| **Mfanyabiashara Interface** | Rahisi Bitcoin Umeme Wallet: programu kwenye simu ya mkononi; ankara rahisi na maelezo machache |
-
-| **Mteja Interface** | Msimbo wa malipo wa Bitcoin QR, umechanganuliwa kupitia nambari ya kibinafsi ya mteja Wallet |
-
-| **Ada** | Kwa kawaida <1% ya kutumwa kwa Bitcoin Address, na <1.5% kwa kugeuza kuwa fiat |
-
-| **Njia ya Kuuza Kifaa** | Programu ya simu mahiri isiyolipishwa au chaguo la kituo halisi (k.m. Bitcoinize) |
-
-| **Usimamizi na Majukumu** | Chaguo la jukumu la kuuza tu kwa wafanyikazi; dashibodi ya mtandaoni ya usimamizi |
-
-| **Uhasibu wa Mauzo ya Nje** | Usafirishaji wa CSV na maelezo kamili ya muamala |
-
-| **API** | Ndiyo |
+| Sifa                            | Muhimu                                                                                                                                        |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hali ya Akili**              | "Ninakubali Bitcoin katika biashara yangu lakini sitarajii kiasi kikubwa cha maana"                                                           |
+| **Mzunguko wa Miamala**        | Miamala michache kwa mwezi                                                                                                                    |
+| **Mifano ya Aina ya Biashara** | Baa, mikahawa, mauzo ya mara kwa mara ya bidhaa safi au zinazotoka moja kwa moja, maduka kadhaa chini ya mmiliki mmoja, uchumi wa ubunifu kwa wasanii |
+| **Aina ya Malipo**             | Kwa kawaida kuanzia euro/dola chache hadi mamia chache kwa bidhaa; chini ya ~300 kwa bidhaa na chini ya ~3,000 kwa mwezi                      |
+| **Ugumu wa Mipangilio**        | Mdogo (programu ya mkononi)                                                                                                                   |
+| **Mfano wa Suluhisho Linalofaa** | Swiss Bitcoin Pay                                                                                                                             |
+| **Kiolesura cha Muuzaji**      | Pochi rahisi ya Bitcoin Lightning: programu kwenye simu ya mkononi; ankara rahisi zenye maelezo machache                                       |
+| **Kiolesura cha Mteja**        | Msimbo wa malipo wa QR wa Bitcoin, unasomwa kupitia pochi ya kibinafsi ya mteja                                                              |
+| **Ada**                         | Kwa kawaida <1% kwa kutuma kwa anwani ya Bitcoin, na <1.5% kwa kubadilisha kuwa fiat                                                          |
+| **Kifaa cha Malipo**           | Programu ya bure ya simu janja au chaguo la kituo cha kimwili (k.m. Bitcoinize)                                                               |
+| **Usimamizi na Majukumu**      | Chaguo la jukumu la kuuza-tu kwa wafanyakazi; dashibodi ya mtandaoni kwa utawala                                                              |
+| **Hamisha za Uhasibu**         | Hamisha ya CSV ikiwa na maelezo kamili ya miamala                                                                                             |
+| **API**                         | Ndiyo                                                                                                                                         |
 
 #### Profaili 3 - Mtaalamu
 
-| Sifa | Mtaalamu |
-
-| ------------------------------- | --------------------------------------------------------------------- --------------------------------------------------------------------- |
-
-| **Hali ya Akili** | - Njia ya malipo kama nyingine yoyote kwa biashara yangu ya kielektroniki - Au usimamizi wa pamoja wa kikundi cha biashara kilicho tayari kwa viwango vya juu |
-
-| **Marudio ya Muamala** | Shughuli nyingi kwa siku |
-
-| **Mifano ya Aina ya Biashara** | Tovuti za biashara ya mtandaoni zenye kiasi cha wastani, soko ndogo, vikundi vya maduka halisi (k.m., Bofya na Kusanya), shughuli za SME |
-
-| **Aina ya Malipo** | Kwa ujumla kuanzia euro/dola chache hadi mia chache; hakuna kikomo cha ukubwa wa malipo uliowekwa; chini ya 250,000 kwa mwaka |
-
-| **Utata wa Mipangilio** | Nyepesi ili kuangaziwa kikamilifu (upangishaji wa ndani au wa wingu), mara nyingi huhitaji mbele ya duka la e-commerce |
-
-| **Mfano Suluhisho Linalopendekezwa** | Seva ya Malipo ya BTC kwa biashara ya mtandaoni na/au mazingira halisi; ZapRite, Musqet au PayWithFlash kwa malipo, Be-BOP kwa duka la kielektroniki lililojumuishwa |
-
-| **Mfanyabiashara Interface** | Tovuti (ya rununu na kompyuta ya mezani) iliyo na uhariri wa Invoice, chaguzi za rukwama za ununuzi, na uundaji wa vitufe vya malipo; ankara otomatiki na ushirikiano wa e-commerce |
-
-| **Mteja Interface** | Msimbo wa malipo wa Bitcoin QR, umechanganuliwa kupitia nambari ya kibinafsi ya mteja Wallet |
-
-| **Ada** | Mchanganyiko wa mazingira ya asili bila malipo na ada zinazolipishwa za upangishaji wa Umeme/huduma; ada za mwisho ni pamoja na ada za umeme za Bitcoin na <1.5% ya ada za ubadilishaji |
-
-| **Njia ya Kuuza Kifaa** | Duka la tovuti, onyesho halisi la hiari (k.m. iPad inayoonyesha tovuti au terminal ya Bitcoin) |
-
-| **Usimamizi na Majukumu** | Duka lililoangaziwa kikamilifu na majukumu mengi ya msimamizi; wafanyakazi na wateja huingiliana na mfumo |
-
-| **Uhasibu wa Mauzo ya Nje** | Usafirishaji wa CSV na maelezo kamili ya muamala |
-
-| **API** | Ndiyo |
-
+| Sifa                            | Mtaalamu                                                                                                                                                    |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hali ya Akili**              | - Njia ya malipo kama nyingine yoyote kwa biashara yangu ya mtandaoni - Au usimamizi wa pamoja kwa kikundi cha biashara zinazotayari kwa kiasi kikubwa      |
+| **Mzunguko wa Miamala**        | Miamala kadhaa kwa siku                                                                                                                                     |
+| **Mifano ya Aina ya Biashara** | Tovuti za biashara mtandaoni zenye kiasi wastani, masoko madogo, vikundi vya maduka ya kimwili (k.m., Click & Collect), shughuli za SME                     |
+| **Aina ya Malipo**             | Kwa kawaida kuanzia euro/dola chache hadi mamia chache; hakuna kikomo cha ukubwa wa malipo; chini ya 250,000 kwa mwaka                                      |
+| **Ugumu wa Mipangilio**        | Rahisi hadi yenye vipengele vyote (uhifadhi wa mtaa au wingu), mara nyingi inahitaji wajihi ya biashara mtandaoni                                           |
+| **Mfano wa Suluhisho Linalofaa** | BTC Pay Server kwa biashara mtandaoni na/au mazingira ya kimwili; ZapRite, Musqet au PayWithFlash kwa malipo, Be-BOP kwa duka la mtandaoni la jumuishi      |
+| **Kiolesura cha Muuzaji**      | Tovuti (simu na kompyuta) ikiwa na uhariri wa ankara, chaguo za kikapu cha ununuzi, na uundaji wa kitufe cha malipo; ankara otomatiki na ujumuishaji wa biashara mtandaoni |
+| **Kiolesura cha Mteja**        | Msimbo wa malipo wa QR wa Bitcoin, unasomwa kupitia pochi ya kibinafsi ya mteja                                                                             |
+| **Ada**                         | Mchanganyiko wa backend ya chanzo wazi ya bure na ada za malipo za Lightning/huduma; ada za front-end ni pamoja na ada za Bitcoin Lightning na <1.5% ada za ubadilishaji |
+| **Kifaa cha Malipo**           | Duka la tovuti, onyesho la kimwili la hiari (k.m. iPad inayoonyesha tovuti au kituo cha Bitcoin)                                                             |
+| **Usimamizi na Majukumu**      | Duka lililojaa vipengele vyote na majukumu mengi ya utawala; wafanyakazi na wateja wanahusiana na mfumo                                                      |
+| **Hamisha za Uhasibu**         | Hamisha ya CSV ikiwa na maelezo kamili ya miamala                                                                                                            |
+| **API**                         | Ndiyo                                                                                                                                                        |
 #### Profaili 4 - Biashara
 
-| Sifa | Biashara |
-
-| ------------------------------- | ----------------------------------------------------------------- ----------------------------------------------------------------- |
-
-| **Hali ya Akili** | - Mbinu ya kimkakati ya malipo ya biashara - Pamoja na maendeleo fulani ya kuunganishwa kwenye jukwaa la huduma kulingana na vipimo maalum |
-
-| **Marudio ya Muamala** | Uamala usio na kikomo, wa masafa ya juu |
-
-| **Mifano ya Aina ya Biashara** | Biashara za ukubwa wa kati, kampuni za huduma za IT, mashirika makubwa, soko kuu |
-
-| **Aina ya Malipo** | Ukubwa wowote au kiasi |
-
-| **Utata wa Mipangilio** | Kati hadi juu, kulingana na uchaguzi wa usanifu |
-
-| **Mfano Suluhisho Linalopendekezwa** | Usanifu au upangaji maalum wa suluhu zinazopangishwa na SaaS, zinazoweza kutumia huduma za wengine za LSP (*Mtoa Huduma ya Umeme*) |
-
-| **Mfanyabiashara Interface** | Miingiliano iliyobinafsishwa kikamilifu ya mbele na ya nyuma iliyojumuishwa kikamilifu katika mtiririko wa kazi na michakato ya biashara |
-
-| **Mteja Interface** | Kuanzia msimbo wa malipo wa Bitcoin QR hadi UI maalum kabisa na/au muunganisho wa API |
-
-| **Ada** | Mchanganyiko wa maendeleo ya ndani na ada za mtu wa tatu; mteja hulipa ada za Umeme za Bitcoin pamoja na ada zozote za miamala kutoka kwa watoa huduma |
-
-| **Njia ya Kuuza Kifaa** | Suluhisho zilizoundwa maalum kulingana na mazingira ya biashara |
-
-| **Usimamizi na Majukumu** | Majukumu yaliyobinafsishwa kikamilifu katika mauzo, utawala, wapendaji, uhasibu, na fedha |
-
-| **Uhasibu wa Mauzo ya Nje** | Usafirishaji wa uhasibu uliobinafsishwa kikamilifu |
-
-| **API** | Ndiyo |
+| Sifa                            | Biashara                                                                                                                                                    |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hali ya Akili**              | - Njia ya malipo kama nyingine yoyote kwa biashara yangu ya mtandaoni - Au usimamizi wa pamoja kwa kikundi cha biashara zinazotayari kwa kiasi kikubwa      |
+| **Mzunguko wa Miamala**        | Miamala kadhaa kwa siku                                                                                                                                     |
+| **Mifano ya Aina ya Biashara** | Tovuti za biashara mtandaoni zenye kiasi wastani, masoko madogo, vikundi vya maduka ya kimwili (k.m., Click & Collect), shughuli za SME                     |
+| **Aina ya Malipo**             | Kwa kawaida kuanzia euro/dola chache hadi mamia chache; hakuna kikomo cha ukubwa wa malipo; chini ya 250,000 kwa mwaka                                      |
+| **Ugumu wa Mipangilio**        | Rahisi hadi yenye vipengele vyote (uhifadhi wa mtaa au wingu), mara nyingi inahitaji wajihi ya biashara mtandaoni                                           |
+| **Mfano wa Suluhisho Linalofaa** | BTC Pay Server kwa biashara mtandaoni na/au mazingira ya kimwili; ZapRite, Musqet au PayWithFlash kwa malipo, Be-BOP kwa duka la mtandaoni la jumuishi      |
+| **Kiolesura cha Muuzaji**      | Tovuti (simu na kompyuta) ikiwa na uhariri wa ankara, chaguo za kikapu cha ununuzi, na uundaji wa kitufe cha malipo; ankara otomatiki na ujumuishaji wa biashara mtandaoni |
+| **Kiolesura cha Mteja**        | Msimbo wa malipo wa QR wa Bitcoin, unasomwa kupitia pochi ya kibinafsi ya mteja                                                                             |
+| **Ada**                         | Mchanganyiko wa backend ya chanzo wazi ya bure na ada za malipo za Lightning/huduma; ada za front-end ni pamoja na ada za Bitcoin Lightning na <1.5% ada za ubadilishaji |
+| **Kifaa cha Malipo**           | Duka la tovuti, onyesho la kimwili la hiari (k.m. iPad inayoonyesha tovuti au kituo cha Bitcoin)                                                             |
+| **Usimamizi na Majukumu**      | Duka lililojaa vipengele vyote na majukumu mengi ya utawala; wafanyakazi na wateja wanahusiana na mfumo                                                      |
+| **Hamisha za Uhasibu**         | Hamisha ya CSV ikiwa na maelezo kamili ya miamala                                                                                                            |
+| **API**                         | Ndiyo                                                                                                                                                        |
 
 Katika sura zifuatazo, tutaeleza kwa kina kila wasifu wa biashara na masuluhisho yanayolenga kila moja yao.
 
@@ -921,7 +827,12 @@ Wasifu wa Starter umeundwa kwa ajili ya biashara, watayarishi na watu binafsi am
 ![BIZ101-profiles](assets/en/18.webp)
 
 Mojawapo ya vipengele muhimu vya wasifu huu ni kuzingatia malipo ya kiwango cha chini ambacho mara chache huzidi euro mia chache au dola kwa mwezi. Kiwango hiki cha kawaida kinaifanya kuwa chaguo bora kwa mtu yeyote anayetaka kujaribu soko na Bitcoin, bila ugumu uliopo katika usambazaji wa kiwango cha juu. Zaidi ya hayo, inaruhusu kujifunza kwa vitendo mara moja; kwa kuwa kuna shinikizo chache za uendeshaji na vigingi vidogo vya fedha, makosa yanaweza kuzuiwa, na masomo hujifunza haraka. Kuanzia wasanii ambao huuza ufundi uliotengenezwa kwa mikono katika maonyesho ya wikendi hadi vikundi visivyo vya faida ambavyo vinakubali michango ya mara moja, watumiaji katika kitengo hiki mara nyingi husisitiza ufikivu na urahisi wa kutumia juu ya utendakazi wa hali ya juu.
-
+# Défini par Alice, validé ou accepté par Bob
+seal <- Define()
+# Fermeture du sceau par Alice avec le message
+witness <- Close(seal, message)
+# Vérification par Bob
+bool <- Verify(seal, witness, message)
 Mipangilio miwili ya kawaida ya Wallet kwa wasifu wa Starter inahusisha kuamua kati ya suluhu za ulezi na zisizo za ulezi. Wallet ya ulinzi (kama vile Wallet ya Satoshi au Blink) huruhusu huduma ya watu wengine kudhibiti funguo za faragha na uendeshaji wa nyuma, na hivyo kupunguza majukumu ya kiufundi kwa mtumiaji. Mpangilio huu unawavutia sana wale wanaothamini urahisi zaidi na wanaotaka kuabiri kwa urahisi iwezekanavyo. Kwa upande mwingine, pochi za umeme zisizo na kizuizi (kama vile Phoenix au Breez) huweka funguo za faragha na udhibiti kamili mikononi mwa mmiliki wa biashara, hivyo kutoa uhuru na faragha zaidi katika Exchange kwa juhudi zaidi za awali. Vyovyote vile, violesura vya kisasa kwa kawaida vinafaa mtumiaji hivi kwamba mtu yeyote anaweza kushughulikia kazi muhimu (kutengeneza msimbo wa QR, kuweka kiasi cha malipo, na kuthibitisha miamala) ndani ya dakika chache.
 
 ![BIZ101-profiles](assets/en/19.webp)
@@ -947,10 +858,12 @@ https://planb.network/tutorials/wallet/mobile/Bitkit-Wallet-a7224674-85c4-4045-9
 https://planb.network/tutorials/wallet/mobile/breez-46a6867b-c74b-45e7-869c-10a4e0263c06
 https://planb.network/tutorials/wallet/mobile/blixt-04b319cf-8cbe-4027-b26f-840571f2244f
 https://planb.network/tutorials/wallet/mobile/zeus-3e89603c-501d-439c-8691-d4a0d0de459b
+
 **Pochi za LN za uhifadhi:**
 
 https://planb.network/tutorials/wallet/mobile/wallet-of-satoshi-c4792842-b046-44f9-a6f1-351191b7cc2b
 https://planb.network/tutorials/wallet/mobile/blink-7ea5f5a4-e728-4ff9-b3f9-cf20aa6fc2bd
+
 ## Muhimu
 
 <chapterId>89be421f-f7df-4bcc-a9e4-df96e39ef249</chapterId>
@@ -963,13 +876,13 @@ Mapendekezo ya teknolojia katika sehemu hii mara nyingi hutegemea **Swiss Bitcoi
 
 ![BIZ101-profiles](assets/en/21.webp)
 
-Malipo yanaweza kutolewa kwa Bitcoin hadi Address mahususi au kubadilishwa kuwa sarafu ya fiat na kuwekwa kwenye akaunti ya benki kila siku. Bitcoin Pay ya Uswisi huendesha mchakato kiotomatiki, kushughulikia malipo ya Bitcoin na Lightning Network bila uingiliaji wa kibinafsi. Pesa zinashikiliwa kwa muda usiozidi saa 24 kabla ya uhamisho. Ingawa si chini ya ulinzi kamili kama Seva ya BTCPay, inasawazisha urahisi na usalama, na haihitaji KYC.
+Malipo yanaweza kutolewa kwa Bitcoin hadi Anwani mahususi au kubadilishwa kuwa sarafu ya fiat na kuwekwa kwenye akaunti ya benki kila siku. Bitcoin Pay ya Uswisi huendesha mchakato kiotomatiki, kushughulikia malipo ya Bitcoin na Lightning Network bila uingiliaji wa kibinafsi. Pesa zinashikiliwa kwa muda usiozidi saa 24 kabla ya uhamisho. Ingawa si chini ya ulinzi kamili kama Seva ya BTCPay, inasawazisha urahisi na usalama, na haihitaji KYC.
 
 ![BIZ101-profiles](assets/en/22.webp)
 
 Ada ni shindani: 0.21% kwa mwaka wa kwanza, kisha 1% kwa malipo ya Bitcoin na 1.5% kwa malipo ya ubadilishaji wa fiat, ikijumuisha gharama za shughuli za Bitcoin. Bitcoin Pay ya Uswisi inatoa msingi wa kati kati ya suluhu za ulezi kama vile Open Node na mifumo changamano inayojiendesha kama vile Seva ya BTCPay, inayotanguliza unyenyekevu, usalama na uhuru wa kifedha.
 
-Aina hii ya usanidi huwezesha biashara za kibinafsi kutumia ankara za malipo za generate kwa haraka, kuwasilisha misimbo ya QR kwa wateja wao, na kukubali miamala ya Lightning au On-Chain bila msuguano mdogo. Wafanyakazi wanahitaji tu mwelekeo mfupi wa kushughulikia malipo haya, huku wasimamizi wanaweza kuingia kwenye dashibodi ya mtandaoni ili kuoanisha mauzo ya kila siku na kufikia ripoti za msingi. Upatikanaji wa kiweko cha kiutawala kilichoratibiwa pia husaidia makampuni madogo kufuatilia mapato ya fiat na crypto kutoka kwa Interface moja, na hivyo kupunguza mkanganyiko na kupunguza muda unaotumika kwenye uwekaji hesabu kwa mikono.
+Aina hii ya usanidi huwezesha biashara za kibinafsi kutumia ankara za malipo za generate kwa haraka, kuwasilisha misimbo ya QR kwa wateja wao, na kukubali miamala ya Lightning au On-Chain bila msuguano mdogo. Wafanyakazi wanahitaji tu mwelekeo mfupi wa kushughulikia malipo haya, huku wasimamizi wanaweza kuingia kwenye dashibodi ya mtandaoni ili kuoanisha mauzo ya kila siku na kufikia ripoti za msingi. Upatikanaji wa kiweko cha kiutawala kilichoratibiwa pia husaidia makampuni madogo kufuatilia mapato ya fiat na crypto kutoka kwa kiolesura kimoja, na hivyo kupunguza mkanganyiko na kupunguza muda unaotumika kwenye uwekaji hesabu kwa mikono.
 
 ![BIZ101-profiles](assets/en/23.webp)
 
@@ -1031,7 +944,6 @@ https://planb.network/courses/6fc12131-e464-4515-9d3f-9255365d5fa1
 
 Wasifu wa Enterprise unasimama katika kilele cha utekelezaji wa malipo wa Bitcoin, iliyoundwa mahususi kwa mashirika makubwa, soko kuu, na biashara zilizoanzishwa ambazo zinahitaji suluhu zilizobinafsishwa kikamilifu. Tofauti na uwekaji wa kiwango kidogo au cha kati, shughuli za kiwango cha Biashara huunganisha malipo ya Bitcoin katika mpangilio mpana wa utiririshaji kazi na mifumo, kuanzia vifaa vya kuuza kwenye tovuti hadi mbele ya maduka ya e-commerce, majukwaa ya uhasibu ya nyuma ya ofisi, na mifumo ya kisasa ya ERP.
 
-Katika kipimo hiki, lengo kuu si kukubali Bitcoin tu, bali kufanya hivyo kwa njia ambayo **inalingana kikamilifu na michakato ya msingi ya shirika**. Mpangilio huu unaweza kuhitaji uundaji wa programu maalum, iwe suluhu ni ya kawaida kabisa au imeratibiwa kupitia miundombinu inayotegemea SaaS inayoungwa mkono na wahusika wengine *Watoa Huduma za Umeme* (LSPs). LSP kama hizo zinaweza kushughulikia viwango vya juu vya malipo na usanidi changamano wa mtandao unaozidi uwezo wa zana za kawaida zaidi za nje ya kisanduku. Usanifu unaotokana kwa hiyo unajumuisha masuala mengi ya kiufundi na biashara, kutoka kwa miunganisho inayoendeshwa na API hadi uwezo wa juu wa usimamizi wa hazina.
 
 Katika muktadha wa biashara, ugumu wa kiutendaji hutamkwa haswa. Shirika kubwa linaweza kuhitaji kushughulikia idara nyingi (mauzo, uuzaji, wafadhili, fedha, na uhasibu) kila moja ikiwa na majukumu mahususi na mahitaji ya data. Katika hali hii, mfumo wa malipo wa Bitcoin ni lazima utoe usimamizi wa majukumu ya haraka sana, kuruhusu kila idara kufikia kwa usahihi kazi zinazohusika na majukumu yao huku ikihifadhi udhibiti mkali wa usalama na uadilifu wa data. Muhimu pia ni uwezo wa kubinafsisha mtiririko wa kazi: kwa mfano, malipo yanayoingia yanaweza kuanzisha masasisho katika mifumo ya orodha, kutuma arifa za kiotomatiki kwa wasimamizi wa mauzo, na kusasisha maingizo ya Ledger kwa timu ya fedha, yote hayo kwa wakati halisi. Vifaa vya kuuza vyenyewe kwa kawaida vimeundwa kulingana na mazingira ya biashara, na violesura maalum vya programu vinavyolingana na mahitaji ya chapa na uendeshaji wa kampuni.
 
@@ -1057,9 +969,9 @@ Mojawapo ya faida kuu za Bitcoin ni uwezo wa kuhamisha pesa upendavyo, na kuifan
 
 Ikiwa unaanza mwanzo—hakuna duka, hakuna programu ya usimamizi wa bidhaa, na hakuna mfumo wa kuuza bidhaa (POS)—una chaguo kadhaa:
 
+- **Utumiaji nje:** Unaweza kutengeneza tovuti kutoka nje yenye chaguo za ununuzi na kisha kuongeza uwezo wa malipo wa Bitcoin pamoja na suluhu za kawaida za dukani.
+- **Masuluhisho Rahisi:** Vinginevyo, unaweza kutumia mifumo kama vile Accessing.app kufanya hivyo mwenyewe. Faida kuu ni pamoja na:
 
-- Utumiaji nje:** Unaweza kutengeneza tovuti kutoka nje yenye chaguo za ununuzi na kisha kuongeza uwezo wa malipo wa Bitcoin pamoja na suluhu za kawaida za dukani.
-- Masuluhisho Rahisi:** Vinginevyo, unaweza kutumia mifumo kama vile Accessing.app kufanya hivyo mwenyewe. Faida kuu ni pamoja na:
     - Kuanzisha duka mkondoni au halisi kwa haraka na kwa bei nafuu.
     - Inafaa kwa biashara za msimu, hafla, mikahawa, au maduka ya rejareja.
     - Kufafanua na kudhibiti bidhaa kwa mauzo ya kimwili na mtandaoni.
@@ -1076,11 +988,11 @@ Ingawa Lightning Network inatoa ufanisi wa hali ya juu na ada za chini, kupitish
 
 Miundombinu mipya hufaulu kwa sababu ni bora zaidi, na watumiaji wa mapema hujiunga kwa sababu wanapata manufaa yanayoonekana. Hapa kuna uchunguzi kuhusu Lightning Network mnamo 2024:
 
+- **Miamala ya haraka sana:** Miamala mara nyingi huwa karibu papo hapo (<500ms) na ina kiwango cha chini sana cha kutofaulu.
+- **Utaalamu wa Mtandao:** Wachezaji wakubwa zaidi wanahakikisha kuwa wanapata pesa kwenye mtandao, huku watu binafsi kwa kiasi kikubwa wameacha kuelekeza malipo na sasa wengi wao wanaendesha "nodi za makali."
+- **Uzoefu Ulioboreshwa wa Mtumiaji:** Programu za rununu kwa watumiaji binafsi zimeboreshwa kwa kiasi kikubwa. Vipengele kama vile kuunganisha, ankara tuli za Bolt12, na malipo ya uthibitishaji sifuri (0-conf) vinapatikana kwa wingi, hivyo basi kufanya mwingiliano kuwa suluhu. Masuala ya mwingiliano (k.m., kufunga kwa nguvu) sio jambo kuu tena.
+- **Nodi Iliyoimarishwa na Usimamizi wa Idhaa:** Suluhu za kibinafsi na za kitaalamu zimeendelea. Kwa mfano, Seva ya Malipo ya BTC sasa inaauni programu-jalizi nyingi za kuunganishwa na watoa huduma wengine (PSP, njia panda za kuwasha/kuzima, n.k.). Watoa huduma wapya wa miundombinu, kama vile LightSpark na Alby Hub, pia wanaingia katika uzalishaji.
 
-- Miamala ya haraka sana:** Miamala mara nyingi huwa karibu papo hapo (<500ms) na ina kiwango cha chini sana cha kutofaulu.
-- Utaalamu wa Mtandao:** Wachezaji wakubwa zaidi wanahakikisha kuwa wanapata pesa kwenye mtandao, huku watu binafsi kwa kiasi kikubwa wameacha kuelekeza malipo na sasa wengi wao wanaendesha "nodi za makali."
-- Uzoefu Ulioboreshwa wa Mtumiaji:** Programu za rununu kwa watumiaji binafsi zimeboreshwa kwa kiasi kikubwa. Vipengele kama vile kuunganisha, ankara tuli za Bolt12, na malipo ya uthibitishaji sifuri (0-conf) vinapatikana kwa wingi, hivyo basi kufanya mwingiliano kuwa suluhu. Masuala ya mwingiliano (k.m., kufunga kwa nguvu) sio jambo kuu tena.
-- Nodi Iliyoimarishwa na Usimamizi wa Idhaa:** Suluhu za kibinafsi na za kitaalamu zimeendelea. Kwa mfano, Seva ya Malipo ya BTC sasa inaauni programu-jalizi nyingi za kuunganishwa na watoa huduma wengine (PSP, njia panda za kuwasha/kuzima, n.k.). Watoa huduma wapya wa miundombinu, kama vile LightSpark na Alby Hub, pia wanaingia katika uzalishaji.
 - Ukuaji wa Kuasili kwa Wafanyabiashara:** Wauzaji kama BitRefill wanaripoti ongezeko la malipo ya Bitcoin kati ya watumiaji wao wanaofanya kazi, na mabadiliko ya wazi kuelekea Bitcoin juu ya Umeme. Zaidi ya hayo, ada za chini kabisa za Umeme hufanya iwe chaguo linalopendelewa kwa malipo madogo (wastani wa €32 kwa kila ununuzi).
 
 ![BIZ101-profiles](assets/en/30.webp)
@@ -1089,7 +1001,9 @@ Miundombinu mipya hufaulu kwa sababu ni bora zaidi, na watumiaji wa mapema hujiu
 
 
 - Vipimo vya Mtandao:** Jumla ya idadi ya chaneli na Bitcoin zilizofungwa kwenye Umeme bado ni thabiti, zikiwa na takriban nodi 20,000, 5,200 BTC, na chaneli 60,000. Hata hivyo, hii inaonyesha sehemu tu ya mtandao na inaonyesha mzunguko kati ya washiriki, na watu wachache na wataalamu zaidi wanashiriki.
-- Umeme kama Daraja Kati ya Mitandao:** Ufanisi na upatikanaji wa Lightning Network tayari umeiweka kama daraja la mitandao mingine iliyounganishwa (k.m., FediMint, Liquid, n.k.).
+
+- **Umeme kama Daraja Kati ya Mitandao:** Ufanisi na upatikanaji wa Lightning Network tayari umeiweka kama daraja la mitandao mingine iliyounganishwa (k.m., FediMint, Liquid, n.k.).
+
 
 **Kurudi kwa Wallet**
 
@@ -1119,9 +1033,9 @@ Ulimwenguni, Bitcoin mara nyingi huainishwa si kama sarafu bali kama mali ya kid
 
 Kipengele kingine cha uhasibu wa Bitcoin ni kutofautisha kati ya aina mbili za faida ya mtaji:
 
+- **Mafanikio/Hasara Iliyofichika:** Manufaa au hasara ambayo haijatekelezwa kulingana na thamani ya Bitcoin iliyopatikana mwishoni mwa kipindi cha uhasibu.
 
-- Mafanikio/Hasara Iliyofichika:** Manufaa au hasara ambayo haijatekelezwa kulingana na thamani ya Bitcoin iliyopatikana mwishoni mwa kipindi cha uhasibu.
-- Mafanikio/Hasara Ufanisi:** Manufaa au hasara iliyopatikana wakati Bitcoin inauzwa au kubadilishwa katika mwaka wa fedha.
+- **Mafanikio/Hasara Ufanisi:** Manufaa au hasara iliyopatikana wakati Bitcoin inauzwa au kubadilishwa katika mwaka wa fedha.
 
 Hesabu hizi hutegemea sana iwapo Bitcoin inashikiliwa kwa uwekezaji wa muda mrefu au matumizi ya muda mfupi ya uendeshaji. Zaidi ya hayo, biashara lazima zioanishe taratibu zao za uhasibu na miundo ya kodi ya eneo lako, kwani kanuni hutofautiana sana kulingana na nchi.
 
@@ -1171,10 +1085,9 @@ Matibabu ya kisheria na uhasibu ya Bitcoin hutofautiana sana kati ya watu binafs
 
 Kwa biashara Bitcoin inaweza kuainishwa chini ya akaunti mbalimbali kulingana na matumizi yake yaliyokusudiwa:
 
-
-- Rasilimali Zisizohamishika:** Kwa Bitcoin iliyodumu kwa muda mrefu kama uwekezaji wa kimkakati.
-- Hisa:** Kwa Bitcoin inayotumika katika michakato ya uzalishaji (kesi ya utumiaji nadra, kwa mfano hii ni kesi kwa wafanyabiashara wa kitaalamu).
-- Hesabu za Pesa au Hazina:** Kwa Bitcoin inayomilikiwa kama mali ya Liquid, haswa kwa miamala ya uendeshaji au usimamizi wa hazina wa muda mfupi.
+- **Rasilimali Zisizohamishika:** Kwa Bitcoin iliyodumu kwa muda mrefu kama uwekezaji wa kimkakati.
+- **Hisa:** Kwa Bitcoin inayotumika katika michakato ya uzalishaji (kesi ya utumiaji nadra, kwa mfano hii ni kesi kwa wafanyabiashara wa kitaalamu).
+- **Hesabu za Pesa au Hazina:** Kwa Bitcoin inayomilikiwa kama mali ya Liquid, haswa kwa miamala ya uendeshaji au usimamizi wa hazina wa muda mfupi.
 
 Uchaguzi wa uainishaji hutegemea shughuli na mkakati wa kampuni, na athari kwa ripoti ya kifedha na majukumu ya ushuru. Angalia kanuni za eneo lako kila wakati, kwani uainishaji huu unaweza kutofautiana kulingana na nchi.
 
@@ -1184,17 +1097,16 @@ Utambuzi wa kisheria na matibabu ya Bitcoin hutofautiana kulingana na mamlaka. B
 
 Katika nchi nyingi, Bitcoin imeainishwa kama mali ya kidijitali, na matibabu yake yanasimamiwa na viwango vya jumla vya uhasibu. Biashara lazima zitoe akaunti kwa miamala ya Bitcoin kama ifuatavyo:
 
-
-- Kurekodi Faida/Hasara za Mtaji:** Biashara lazima zihesabu faida au hasara zilizopatikana katika matokeo yao ya kifedha.
-- Uthamini wa Manufaa/Hasara Iliyofichika:** Mafanikio au hasara ambayo haijafikiwa lazima iripotiwe mara kwa mara lakini huenda isiathiri moja kwa moja mapato yanayotozwa kodi.
-- Kuzingatia Viwango vya Uhasibu:** Biashara lazima ziunganishe miamala ya Bitcoin katika mbinu za kawaida za uwekaji hesabu, ili kuhakikisha uwazi na usahihi.
+- **Kurekodi Faida/Hasara za Mtaji:** Biashara lazima zihesabu faida au hasara zilizopatikana katika matokeo yao ya kifedha.
+- **Uthamini wa Manufaa/Hasara Iliyofichika:** Mafanikio au hasara ambayo haijafikiwa lazima iripotiwe mara kwa mara lakini huenda isiathiri moja kwa moja mapato yanayotozwa kodi.
+- **Kuzingatia Viwango vya Uhasibu:** Biashara lazima ziunganishe miamala ya Bitcoin katika mbinu za kawaida za uwekaji hesabu, ili kuhakikisha uwazi na usahihi.
 
 Mbinu ya uhasibu ya Bitcoin inatofautiana kulingana na jiografia:
 
 
-- Marekani:** IRS inaainisha Bitcoin kama **mali, sawa na hisa, bondi au mali isiyohamishika**. Uainishaji huu unamaanisha kuwa muamala wowote unaohusisha sarafu ya crypto, kama vile kupata, kuuza, kufanya biashara au hata kuitumia kufanya ununuzi, inaweza kuunda tukio linalotozwa kodi na faida itatozwa kodi ya faida kubwa.
-- Umoja wa Ulaya:** Nchi wanachama kwa ujumla huchukulia Bitcoin kama mali ya kubahatisha badala ya sarafu inayofanya kazi. Kwa hivyo faida mara nyingi inategemea ushuru wa faida.
-- Asia:** Nchi kama Singapore na Japani zimepitisha mifumo ya udhibiti inayoendelea, ikishughulikia shughuli za Bitcoin vyema katika miktadha mahususi. Lakini Bitcoin kwa ujumla huhesabiwa kuwa **mali zisizoshikika**, na hupimwa kwa thamani ya haki katika tarehe ya kuripoti, kwa mabadiliko yanayotambuliwa katika faida au hasara.
+- **Marekani:** IRS inaainisha Bitcoin kama **mali, sawa na hisa, bondi au mali isiyohamishika**. Uainishaji huu unamaanisha kuwa muamala wowote unaohusisha sarafu ya crypto, kama vile kupata, kuuza, kufanya biashara au hata kuitumia kufanya ununuzi, inaweza kuunda tukio linalotozwa kodi na faida itatozwa kodi ya faida kubwa.
+- **Umoja wa Ulaya:** Nchi wanachama kwa ujumla huchukulia Bitcoin kama mali ya kubahatisha badala ya sarafu inayofanya kazi. Kwa hivyo faida mara nyingi inategemea ushuru wa faida.
+- **Asia:** Nchi kama Singapore na Japani zimepitisha mifumo ya udhibiti inayoendelea, ikishughulikia shughuli za Bitcoin vyema katika miktadha mahususi. Lakini Bitcoin kwa ujumla huhesabiwa kuwa **mali zisizoshikika**, na hupimwa kwa thamani ya haki katika tarehe ya kuripoti, kwa mabadiliko yanayotambuliwa katika faida au hasara.
 
 Ni muhimu kuelewa kanuni katika nchi yako ya uendeshaji na kurekebisha desturi zako za uhasibu ipasavyo.
 
@@ -1202,10 +1114,9 @@ Ni muhimu kuelewa kanuni katika nchi yako ya uendeshaji na kurekebisha desturi z
 
 Kasi ya haraka ya uvumbuzi wa cryptocurrency mara nyingi hupita mifumo ya udhibiti. Tangu kutambuliwa kwa Bitcoin kama rasilimali ya kidijitali, kanuni za kimataifa zimeona masasisho yanayoongezeka, lakini mapungufu yanabaki:
 
-
-- Ukosefu wa Sheria:** Kesi chache za kisheria zimefafanua mazoea mahususi ya uhasibu, na hivyo kuacha nafasi ya kufasiriwa.
-- Mijadala Inayoendelea:** Masuala kama vile malipo ya kodi ya hasara iliyofichika bado hayajatatuliwa katika maeneo mengi ya mamlaka.
-- Utata wa Mipaka:** Kampuni zinazofanya kazi kimataifa zinakabiliwa na changamoto za kupatanisha viwango tofauti vya uhasibu vya kitaifa.
+- **Ukosefu wa Sheria:** Kesi chache za kisheria zimefafanua mazoea mahususi ya uhasibu, na hivyo kuacha nafasi ya kufasiriwa.
+- **Mijadala Inayoendelea:** Masuala kama vile malipo ya kodi ya hasara iliyofichika bado hayajatatuliwa katika maeneo mengi ya mamlaka.
+- **Utata wa Mipaka:** Kampuni zinazofanya kazi kimataifa zinakabiliwa na changamoto za kupatanisha viwango tofauti vya uhasibu vya kitaifa.
 
 Licha ya changamoto hizi, misimamo makini ya nchi nyingi hutoa msingi thabiti kwa biashara kujumuisha Bitcoin katika shughuli zao. Usasisho unaoendelea na upatanisho wa kimataifa utakuwa muhimu kwa matatizo yanayojitokeza ya Address katika uhasibu wa sarafu ya crypto.
 
@@ -1213,10 +1124,9 @@ Licha ya changamoto hizi, misimamo makini ya nchi nyingi hutoa msingi thabiti kw
 
 Uainishaji wa Bitcoin katika taarifa za fedha hutofautiana kulingana na mamlaka na inategemea matumizi yake yaliyokusudiwa ndani ya biashara. Kwa ujumla, Bitcoin inachukuliwa kuwa mali ya kidijitali, sawa na hesabu, uwekezaji au sarafu, lakini ikiwa na sifa za kipekee zinazoathiri uhasibu wake.
 
-
-- Mali Dijitali au Mali Zisizogusika**: Mamlaka nyingi, ikiwa ni pamoja na Ufaransa na Umoja wa Ulaya, huainisha Bitcoin kama kipengee cha dijitali au kisichoshikika badala ya zabuni halali. Uainishaji huu unahitaji biashara kuwajibika kwa Bitcoin tofauti na sarafu ya fiat.
-- Malipo**: Ikiwa shughuli kuu ya biashara inahusisha kufanya biashara ya Bitcoin, kama vile ubadilishanaji wa fedha taslimu au madalali, Bitcoin inaainishwa kama orodha ya bidhaa. Katika kesi hii, hesabu hufuata viwango vya uhasibu vya hesabu.
-- Uwekezaji wa Kifedha**: Kampuni zinazomiliki Bitcoin kama mali ya muda mrefu zinaweza kuainisha kama uwekezaji wa kifedha. Kwa mfano, nchini Marekani, biashara zinaweza kuchangia Bitcoin chini ya miongozo ya Bodi ya Viwango vya Uhasibu (FASB), kwa kutambua hitilafu wakati thamani za soko zinapungua.
+- **Mali Dijitali au Mali Zisizogusika**: Mamlaka nyingi, ikiwa ni pamoja na Ufaransa na Umoja wa Ulaya, huainisha Bitcoin kama kipengee cha dijitali au kisichoshikika badala ya zabuni halali. Uainishaji huu unahitaji biashara kuwajibika kwa Bitcoin tofauti na sarafu ya fiat.
+- **Malipo**: Ikiwa shughuli kuu ya biashara inahusisha kufanya biashara ya Bitcoin, kama vile ubadilishanaji wa fedha taslimu au madalali, Bitcoin inaainishwa kama orodha ya bidhaa. Katika kesi hii, hesabu hufuata viwango vya uhasibu vya hesabu.
+- **Uwekezaji wa Kifedha**: Kampuni zinazomiliki Bitcoin kama mali ya muda mrefu zinaweza kuainisha kama uwekezaji wa kifedha. Kwa mfano, nchini Marekani, biashara zinaweza kuchangia Bitcoin chini ya miongozo ya Bodi ya Viwango vya Uhasibu (FASB), kwa kutambua hitilafu wakati thamani za soko zinapungua.
 
 **Madhara ya Uainishaji:**
 
@@ -1229,8 +1139,8 @@ Uainishaji wa Bitcoin katika taarifa za fedha hutofautiana kulingana na mamlaka 
 Mbinu za uthamini ni mbinu za uhasibu zinazotumiwa kuamua msingi wa gharama ya Bitcoin, ambayo ni muhimu kwa kuhesabu kwa usahihi faida au hasara wakati wa shughuli za malipo. Kwa ujumla, ni vyema **kudumisha thamani iliyosasishwa kila mara ya gharama za sasa za umiliki wa Bitcoin** katika mfumo wa uhasibu. Hii inahakikisha uwazi, utiifu wa kanuni za kodi, na kuzuia kurudi nyuma wakati hesabu zinahitajika kufanywa.
 
 
-- First In, First Out (FIFO)**: Kawaida katika maeneo ya mamlaka kama vile Australia na India, njia hii inathamini Bitcoin kulingana na gharama ya awali ya kupata. Hii inaweza kuwa **tata kabisa** kwani inaweza kuhitaji kufuatilia kila sehemu ya Bitcoin kando mauzo yanapotokea.
-- Gharama ya Wastani Iliyopimwa (WAC)**: Hupendekezwa mara nyingi kwa miamala ya kiwango cha juu kutokana na **usahili** wake, kama inavyoonekana katika nchi kama Marekani.
+- **First In, First Out (FIFO)**: Kawaida katika maeneo ya mamlaka kama vile Australia na India, njia hii inathamini Bitcoin kulingana na gharama ya awali ya kupata. Hii inaweza kuwa **tata kabisa** kwani inaweza kuhitaji kufuatilia kila sehemu ya Bitcoin kando mauzo yanapotokea.
+- **Gharama ya Wastani Iliyopimwa (WAC)**: Hupendekezwa mara nyingi kwa miamala ya kiwango cha juu kutokana na **usahili** wake, kama inavyoonekana katika nchi kama Marekani.
 
 Inapendekezwa sana kudumisha gharama za kina za ufuatiliaji wa kitabu cha kazi cha Bitcoin **kuanzia kampuni inapoanza kununua Bitcoin au kuikubali kama malipo** ili kuhakikisha utunzaji sahihi na uliopangwa wa rekodi. Uzingatio huo pekee unapaswa kuwa wa akili wakati wa kuchagua suluhisho la programu ya kukubali malipo ya Bitcoin au kununua Bitcoin.
 
@@ -1247,12 +1157,11 @@ Biashara lazima zihakikishe kuwa zana zozote za **Malipo** wanazotumia zinatoa u
 
 ### Changamoto
 
-
-- Tete**: Bei ya Bitcoin inabadilikabadilika sana, na hivyo kusababisha matatizo katika kuthamini mali na kutabiri matokeo ya kifedha ya siku zijazo.
-- Uchunguzi wa Udhibiti**: Katika nchi kama vile Uchina, hali yenye vikwazo ya Bitcoin inadhibiti matumizi yake kama mali ya hazina.
-- Kutokuwa na uhakika wa Kidhibiti** : Mandhari ya udhibiti inayobadilika ya Bitcoin mara nyingi huacha biashara katika hali ya kutatanisha. Kwa mfano, mabadiliko katika sera za kodi, kama vile India au Marekani, yanaweza kuathiri mbinu za uhasibu mara moja.
-- Hatari za Usimamizi Mbaya** : Uainishaji usiofaa au kushindwa kufuatilia miamala ya Bitcoin kunaweza kusababisha masuala ya kufuata, adhabu au uharibifu wa sifa.
-- Hatari za Kustahiki**: Kudumisha sehemu kubwa ya hazina ya kampuni katika Bitcoin huweka biashara katika hasara inayoweza kutokea kutokana na kushuka kwa bei. Hili linaweza kuwa na madhara makubwa, hasa ikiwa matone kama hayo yatatokea wakati malipo kwa wasambazaji, wafanyakazi, au kodi yanapotakiwa. Zaidi ya hayo, mmiliki wa kampuni anaweza kuwajibishwa, jambo ambalo linaweza kusababisha faini au masuala mengine ya kisheria, kama vile mashtaka ya matumizi mabaya ya mali ya kampuni.
+- **Tete**: Bei ya Bitcoin inabadilikabadilika sana, na hivyo kusababisha matatizo katika kuthamini mali na kutabiri matokeo ya kifedha ya siku zijazo.
+- **Uchunguzi wa Udhibiti**: Katika nchi kama vile Uchina, hali yenye vikwazo ya Bitcoin inadhibiti matumizi yake kama mali ya hazina.
+- **Kutokuwa na uhakika wa Kidhibiti** : Mandhari ya udhibiti inayobadilika ya Bitcoin mara nyingi huacha biashara katika hali ya kutatanisha. Kwa mfano, mabadiliko katika sera za kodi, kama vile India au Marekani, yanaweza kuathiri mbinu za uhasibu mara moja.
+- **Hatari za Usimamizi Mbaya** : Uainishaji usiofaa au kushindwa kufuatilia miamala ya Bitcoin kunaweza kusababisha masuala ya kufuata, adhabu au uharibifu wa sifa.
+- **Hatari za Kustahiki**: Kudumisha sehemu kubwa ya hazina ya kampuni katika Bitcoin huweka biashara katika hasara inayoweza kutokea kutokana na kushuka kwa bei. Hili linaweza kuwa na madhara makubwa, hasa ikiwa matone kama hayo yatatokea wakati malipo kwa wasambazaji, wafanyakazi, au kodi yanapotakiwa. Zaidi ya hayo, mmiliki wa kampuni anaweza kuwajibishwa, jambo ambalo linaweza kusababisha faini au masuala mengine ya kisheria, kama vile mashtaka ya matumizi mabaya ya mali ya kampuni.
 
 ## Zana za Uhasibu na Programu
 
@@ -1272,10 +1181,11 @@ Mara nyingi ni kijalizo cha busara kwa mashirika makubwa yenye pochi na mali nyi
 
 Hata hivyo, faili rahisi ya `.csv` iliyo na historia ya muamala mara nyingi inatosha kwa biashara nyingi ndogo. Lengo ni kuandika, kwa kila malipo, tarehe, kiasi, thamani inayolingana katika euro/dola, na anwani husika za Bitcoin. Idadi kubwa ya suluhu za malipo za Bitcoin (BTC Pay Server, Swiss Bitcoin Pay, n.k.) au mifumo ya Exchange (Bitfinex, Kraken, Coinbase, n.k.) tayari inatoa utaratibu wa kusafirisha historia za miamala. Kwa kutoa faili hii kwa mhasibu, itawezekana kurahisisha uwekaji data na kutofautisha wazi mtiririko unaoingia na unaotoka kuhusiana na Bitcoin.
 
-Kwa wale wanaojilinda wenyewe Bitcoin yao, kudhibiti UTXOs (*Matokeo ya Muamala Usiotumika*) ni hatua muhimu. Uwekaji lebo sahihi wa UTXO husaidia kufuatilia asili ya kila kipande cha BTC, kutofautisha miamala inayohusiana na shughuli za kitaaluma na ile ya gharama za kibinafsi, na kuwezesha ufuatiliaji kwa madhumuni ya kisheria au ya kodi. Programu nzuri zaidi ya Bitcoin Wallet hukuruhusu kuagiza Wallet yako ukitumia faili yako ya chelezo (au xpub yako, kulingana na usanidi wako) na uweke lebo UTXO kulingana na asili au lengwa. Ili kukusaidia, hapa kuna mafunzo kamili yaliyowekwa kwa mazoezi haya:
+Kwa wale wanaojilinda wenyewe Bitcoin yao, kudhibiti UTXOs (*unspent cryptocurrency*) ni hatua muhimu. Uwekaji lebo sahihi wa UTXO husaidia kufuatilia asili ya kila kipande cha BTC, kutofautisha miamala inayohusiana na shughuli za kitaaluma na ile ya gharama za kibinafsi, na kuwezesha ufuatiliaji kwa madhumcuni ya kisheria au ya kodi. Programu nzuri zaidi ya Bitcoin Wallet hukuruhusu kuagiza Wallet yako ukitumia faili yako ya chelezo (au xpub yako, kulingana na usanidi wako) na uweke lebo UTXO kulingana na asili au lengwa. Ili kukusaidia, hapa kuna mafunzo kamili yaliyowekwa kwa mazoezi haya:
 
 https://planb.network/tutorials/privacy/on-chain/utxo-labelling-d997f80f-8a96-45b5-8a4e-a3e1b7788c52
-Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, inawezekana **kutatua Invoice katika Bitcoin**. Jambo kuu ni kuandika vizuri shughuli. Ikiwa unalipa kutoka kwa ulinzi wa kibinafsi wa Wallet, ni vyema kwa generate muamala unaobainisha nambari ya Invoice na madhumuni ya malipo katika lebo zako. Iwapo ungependa kusuluhisha Invoice kupitia Exchange, utakuwa pia na chaguo la kuhamisha risiti au historia ya muamala ili kujumuisha katika rekodi zako za uhasibu. Uwazi huu utarahisisha ufuatiliaji na kuripoti shughuli zako zote za BTC.
+Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, inawezekana **kutatua ankara katika Bitcoin**. Jambo kuu ni kuandika vizuri shughuli. Ikiwa unalipa kutoka kwa ulinzi wa kibinafsi wa Wallet, ni vyema kwa kuzalisha muamala unaobainisha nambari ya Iankara na madhumuni ya malipo katika lebo zako. Iwapo ungependa kusuluhisha Ankara kupitia Exchange, utakuwa pia na chaguo la kuhamisha risiti au historia ya muamala ili kujumuisha katika rekodi zako za uhasibu. Uwazi huu utarahisisha ufuatiliaji na kuripoti shughuli zako zote za BTC.
+
 
 ## Mifano ya vitendo ya uhasibu ya Bitcoin
 
@@ -1288,22 +1198,22 @@ Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, ina
 **Mfano**:
 
 
-- Kiwango cha ubadilishaji cha Bitcoin**: 1 Bitcoin = €40,000.
-- Muamala wa 1**: Mteja hununua keki nyingi kwa €20.
+- **Kiwango cha ubadilishaji cha Bitcoin**: 1 Bitcoin = €40,000.
+- **Muamala wa 1**: Mteja hununua keki nyingi kwa €20.
     - Bitcoin sawa: (20 / 40,000) = 0.0005 Bitcoin = Satoshi 50,000.
     - Ada ya ubadilishaji: 1.5% (€20 × 0.015) = €0.30.
     - Jumla iliyopokelewa: €20 - €0.30 = €19.70.
-- Muamala wa 2**: Mteja hununua kahawa kwa €5.
+- **Muamala wa 2**: Mteja hununua kahawa kwa €5.
+
     - Bitcoin sawa: (5 / 40,000) = 0.000125 Bitcoin = 12,500 Satoshis.
     - Ada ya ubadilishaji: 1.5% (€5 × 0.015) = €0.075.
     - Jumla iliyopokelewa: €5 - €0.075 = €4.93.
 
 **Muhtasari wa Miamala**:
 
-
-- Jumla ya Mauzo**: €25.
-- Ada ya Jumla**: €0.375.
-- Euro Net Zimepokelewa**: €24.625.
+- **Jumla ya Mauzo**: €25.
+- **Ada ya Jumla**: €0.375.
+- **Euro Net Zimepokelewa**: €24.625.
 
 **Madhara ya Uhasibu**:
 
@@ -1318,9 +1228,9 @@ Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, ina
 
 **Mfano**:
 
+- **Kiwango cha ubadilishaji cha Bitcoin**: 1 Bitcoin = €40,000.
+- **Muamala kutoka kwa mteja**: Mteja hununua maandazi kwa €50.
 
-- Kiwango cha ubadilishaji cha Bitcoin**: 1 Bitcoin = €40,000.
-- Muamala kutoka kwa mteja**: Mteja hununua maandazi kwa €50.
     - Bitcoin sawa: (50 / 40,000) = 0.00125 Bitcoin = 125,000 Satoshis.
     - Uongofu (50%): €25 yenye thamani ya Bitcoin = 0.000625 Bitcoin = 62,500 Satoshi.
         - Ada ya ubadilishaji: 1.5% (€25 × 0.015) = €0.375.
@@ -1329,11 +1239,10 @@ Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, ina
 
 **Muhtasari**:
 
-
-- Jumla ya Mauzo**: €50.
-- Ada**: €0.375.
-- Euro Net Zimepokelewa**: €24.625.
-- Bitcoin Imebakia**: Satoshi 62,500.
+- **Jumla ya Mauzo**: €50.
+- **Ada**: €0.375.
+- **Euro Net Zimepokelewa**: €24.625.
+- **Bitcoin Imebakia**: Satoshi 62,500.
 
 **Madhara ya Uhasibu**:
 
@@ -1349,21 +1258,21 @@ Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, ina
 
 **Mfano**:
 
-
-- Kiwango cha ubadilishaji cha Bitcoin kwa Malipo**: 1 Bitcoin = €30,000.
-- Muamala kutoka kwa mteja**: Mteja hulipia huduma zenye thamani ya €3,000.
+- **Kiwango cha ubadilishaji cha Bitcoin kwa Malipo**: 1 Bitcoin = €30,000.
+- **Muamala kutoka kwa mteja**: Mteja hulipia huduma zenye thamani ya €3,000.
     - Bitcoin sawa: (3,000 / 30,000) = 0.1 Bitcoin = Satoshi 10,000,000.
-- Uthamini wa Mwisho wa Mwaka**:
+- **Uthamini wa Mwisho wa Mwaka**:
+
     - Kiwango cha ubadilishaji cha Bitcoin Mwishoni mwa Mwaka: 1 Bitcoin = €35,000.
     - Tathmini ya Bitcoin Holding: 0.1 Bitcoin × €35,000 = €3,500.
     - Faida Isiyowezekana: €3,500 - €3,000 = €500.
 
 **Muhtasari**:
 
+- **Jumla ya Mapato Yanayotambuliwa**: €3,000.
+- **Bitcoin Holding**: 0.1 Bitcoin yenye thamani ya €3,500 kwenye salio.
+- **Faida Isiyowezekana**: €500 iliyofichuliwa katika noti za fedha lakini haijatambuliwa kama mapato.
 
-- Jumla ya Mapato Yanayotambuliwa**: €3,000.
-- Bitcoin Holding**: 0.1 Bitcoin yenye thamani ya €3,500 kwenye salio.
-- Faida Isiyowezekana**: €500 iliyofichuliwa katika noti za fedha lakini haijatambuliwa kama mapato.
 
 **Madhara ya Uhasibu**:
 
@@ -1378,17 +1287,19 @@ Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, ina
 
 **Mfano**:
 
+- **Bitcoin Ununuzi kutoka kwa wateja**:
 
-- Bitcoin Ununuzi kutoka kwa wateja**:
     - Nunua 1: €2,000 kwa €20,000/BTC = 0.1 Bitcoin = 10,000,000 Satoshis.
     - Nunua 2: €3,000 kwa €25,000/BTC = 0.12 Bitcoin = 12,000,000 Satoshis.
     - Ununuzi wa 3: €5,000 kwa €30,000/BTC = 0.1667 Bitcoin = 16,670,000 Satoshis.
     - Jumla ya Bitcoin Iliyofanyika**: 0.3867 Bitcoin = 38,670,000 Satoshis.
-- Uthamini wa Mwisho wa Mwaka**:
+
+- **Uthamini wa Mwisho wa Mwaka**:
     - Bei ya Bitcoin Mwishoni mwa Mwaka: €40,000/BTC.
     - Jumla ya Thamani: 0.3867 Bitcoin × €40,000 = €15,468.
     - Faida Isiyowezekana: €15,468 - €10,000 (gharama ya jumla) = €5,468.
-- Uuzaji wa 50% ya Bitcoin**:
+- **Uuzaji wa 50% ya Bitcoin**:
+
     - Bitcoin Inauzwa: 0.19335 Bitcoin.
     - Mapato ya Mauzo: 0.19335 Bitcoin × €40,000 = €7,734.
     - Msingi wa Gharama (Wastani wa Uzito):
@@ -1399,10 +1310,10 @@ Hatimaye, kama wewe ni mfanyabiashara mdogo au biashara iliyoanzishwa zaidi, ina
 
 **Muhtasari**:
 
+- **Bitcoin Imesalia**: 0.19335 Bitcoin yenye thamani ya €7,734 (kwa €40,000/BTC).
+- **Faida Iliyopatikana**: €2,735 iliyojumuishwa katika taarifa ya mapato.
+- **Faida Isiyowezekana**: €5,468 iliyofichuliwa katika noti za fedha (ikiwa ni pamoja na thamani isiyofikiwa ya Bitcoin iliyosalia).
 
-- Bitcoin Imesalia**: 0.19335 Bitcoin yenye thamani ya €7,734 (kwa €40,000/BTC).
-- Faida Iliyopatikana**: €2,735 iliyojumuishwa katika taarifa ya mapato.
-- Faida Isiyowezekana**: €5,468 iliyofichuliwa katika noti za fedha (ikiwa ni pamoja na thamani isiyofikiwa ya Bitcoin iliyosalia).
 
 **Madhara ya Uhasibu**:
 
