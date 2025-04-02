@@ -1133,6 +1133,8 @@ Eine schrittweise Strategie beinhaltet wiederkehrende Käufe, d. h. den Kauf kle
 
 **Vorsicht vor UTXOs**: Denken Sie daran, Ihre UTXOs von Zeit zu Zeit in Ihren Geldbörsen zu konsolidieren. Diese Praxis ist wichtig, um Ihre Bitcoins effektiv zu verwalten und unnötige Gebühren bei Transaktionen zu vermeiden.
 
+Ein [UTXO](https://planb.network/resources/glossary/utxo#:~:text=UTXO) (Unspent Transaction Output) ist ein Ausgang einer Transaktion, der noch nicht ausgegeben wurde, was bedeutet, dass er nicht als Eingabe für eine neue Transaktion verwendet wurde. Die Konsolidierung von UTXOs bedeutet, mehrere kleine UTXOs zu einem größeren zusammenzufassen, um das "Gewicht" der Transaktion zu verringern und somit niedrigere Gebühren zu zahlen.
+
 - Spontankauf
 
 Eine Sofortlösung könnte ein Spontankauf sein, der genutzt wird, um sofort mit Bitcoin in Kontakt zu kommen. Ob Sie während eines Börsencrashs kaufen oder einen Bonus nutzen - die Entscheidung liegt bei Ihnen. Sie müssen nur den Mut aufbringen und auf den Kauf-Knopf drücken.

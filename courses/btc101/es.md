@@ -1133,6 +1133,8 @@ Una estrategia gradual implica compras recurrentes, es decir, comprar pequeñas 
 
 **Cuidado con los UTXOs**: Recuerda consolidar tus UTXOs en tus carteras de vez en cuando. Esta práctica es esencial para gestionar eficazmente tus bitcoins y evitar comisiones innecesarias durante las transacciones.
 
+Un [UTXO](https://planb.network/resources/glossary/utxo#:~:text=UTXO) (Unspent Transaction Output) es una salida de una transacción que aún no ha sido gastada, lo que significa que no se ha utilizado como entrada para una nueva transacción. Consolidar UTXOs significa combinar varios UTXOs pequeños en uno más grande, con el fin de disminuir el "peso" de la transacción y, por lo tanto, pagar tarifas más bajas.
+
 - Compra espontánea
 
 Una solución inmediata podría ser una compra espontánea, que se utiliza para exponerse inmediatamente al bitcoin. Ya sea comprando durante una caída o aprovechando una bonificación, la decisión es suya. Tendrá que armarse de valor y pulsar el botón de compra.

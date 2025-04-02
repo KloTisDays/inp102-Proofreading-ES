@@ -1169,6 +1169,8 @@ Une stratégie graduelle implique des achats récurrents, c'est-à-dire l'achat 
 
 **Attention aux UTXO** : N'oubliez pas de consolider vos UTXO dans vos portefeuilles de temps en temps. Cette pratique est essentielle pour gérer efficacement vos bitcoins et éviter les frais inutiles lors des transactions.
 
+Un [UTXO](https://planb.network/resources/glossary/utxo#:~:text=UTXO) (Unspent Transaction Output) est une sortie d'une transaction qui n'a pas encore été dépensée, ce qui signifie qu'elle n'a pas été utilisée comme entrée pour une nouvelle transaction. La consolidation des UTXO consiste à combiner plusieurs petits UTXO en un plus grand, afin de réduire le "poids" de la transaction et ainsi de payer des frais moins élevés.
+
 - Achat spontané
 
 L'achat spontané, qui permet de se familiariser immédiatement avec le bitcoin, peut être une solution "tout-en-un". Qu'il s'agisse d'acheter pendant un krach ou de profiter d'un bonus, la décision vous appartient. Il vous faudra prendre votre courage à deux mains et appuyer sur le bouton d'achat.

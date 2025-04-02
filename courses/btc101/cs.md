@@ -1133,6 +1133,8 @@ Postupná strategie zahrnuje opakované nákupy, což znamená nákup malých mn
 
 **Pozor na UTXO**: Nezapomeňte čas od času konsolidovat své UTXO v peněženkách. Tento postup je nezbytný pro efektivní správu vašich bitcoinů a vyhnutí se zbytečným poplatkům při transakcích.
 
+[UTXO](https://planb.network/resources/glossary/utxo#:~:text=UTXO) (Unspent Transaction Output) je výstup transakce, který dosud nebyl utracen, což znamená, že nebyl použit jako vstup pro novou transakci. Konsolidace UTXO znamená sloučení několika malých UTXO do jednoho většího, aby se snížila "hmotnost" transakce a tím se platily nižší poplatky.
+
 - Spontánní nákup
 
 Řešením najednou může být spontánní nákup, který slouží k okamžitému seznámení s bitcoiny. Ať už jde o nákup během krachu, nebo o využití bonusu, rozhodnutí je na vás. Budete muset sebrat odvahu a stisknout tlačítko buy-button.

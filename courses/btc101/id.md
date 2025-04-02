@@ -1132,6 +1132,8 @@ Strategi bertahap melibatkan pembelian berulang, yang berarti membeli sejumlah k
 
 **Waspadalah terhadap UTXO**: Ingatlah untuk menggabungkan UTXO Anda di dompet Anda dari waktu ke waktu. Praktik ini sangat penting untuk mengelola bitcoin Anda secara efektif dan menghindari biaya yang tidak perlu selama transaksi.
 
+[UTXO](https://planb.network/resources/glossary/utxo#:~:text=UTXO) (Unspent Transaction Output) adalah keluaran dari sebuah transaksi yang belum dibelanjakan, yang berarti bahwa itu tidak digunakan sebagai input untuk transaksi baru. Mengkonsolidasikan UTXO berarti menggabungkan beberapa UTXO kecil menjadi satu yang lebih besar, untuk mengurangi "berat" transaksi dan dengan demikian membayar biaya yang lebih rendah.
+
 - Pembelian spontan
 
 Solusi sekaligus bisa berupa pembelian spontan, yang digunakan untuk segera mendapatkan eksposur ke bitcoin. Entah itu membeli saat harga jatuh atau memanfaatkan bonus, keputusan ada di tangan Anda. Anda harus mengumpulkan keberanian dan menekan tombol beli.
