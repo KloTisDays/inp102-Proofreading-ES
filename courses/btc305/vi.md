@@ -72,7 +72,7 @@ BTCPay Server Foundation, đã cho phép Alekos và Bas viết khóa học này,
 Bài tập bắt đầu sau khi xem xong video giới thiệu "Làm thế nào Bitcoin và blockchain hoạt động" của BBC.
 
 ![how bitcoin and the blockchain works](https://youtu.be/mhE_vvwAiRc)
-<videoId>da8f8092-bd84-4287-87db-4c6d53763e5e</videoId>
+:::video id=da8f8092-bd84-4287-87db-4c6d53763e5e:::
 
 Bài tập này yêu cầu ít nhất chín người tham gia. Mục đích của bài tập này là để hiểu trực quan về cách hoạt động của Bitcoin. Bằng cách nhập vào từng vai những thành phần tham gia vào mạng lưới, bạn sẽ có một cách học tương tác và vui vẻ. Bài tập này không liên quan đến Lightning Network.
 

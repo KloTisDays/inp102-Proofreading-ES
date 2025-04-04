@@ -58,19 +58,19 @@ objectives:
 <professorId>e7e63d59-ea19-4960-9446-61bd4dcc98f0</professorId>
 
 ![video](https://www.youtube.com/watch?v=aZYhDXE_Gas)
-<videoId>90b7647a-3072-449a-9308-c4de5b31e6b9</videoId>
+:::video id=90b7647a-3072-449a-9308-c4de5b31e6b9:::
 
 ## Введение в Rust (2/7)
 <chapterId>918ca359-c123-5414-af01-253016670f3a</chapterId>
 
 ![video](https://youtu.be/Xm8eCv4LQPc)
-<videoId>b36a6daa-0d20-4845-955d-85609c59073c</videoId>
+:::video id=b36a6daa-0d20-4845-955d-85609c59073c:::
 
 ## Введение в Rust (3/7)
 <chapterId>0278ed13-68b6-59e1-97c5-f8dde505549b</chapterId>
 
 ![video](https://youtu.be/R8NeHvHT0uc)
-<videoId>4edc57df-84dd-4d42-8ffa-08be94039412</videoId>
+:::video id=4edc57df-84dd-4d42-8ffa-08be94039412:::
 
 ## Введение в Rust (4/7)
 <chapterId>915e523a-8fbd-5789-ab42-99b56a2a16c3</chapterId>

@@ -24,7 +24,7 @@ Viel Spaß!
 <chapterId>dcf2d37e-b32a-5eb8-aaa3-41ac92475ba9</chapterId>
 
 ![Video](https://youtu.be/4VuI9we_XYM)
-<videoId>304d9ec6-1b69-4792-ac15-f7743e5a5d55</videoId>
+:::video id=304d9ec6-1b69-4792-ac15-f7743e5a5d55:::
 
 Filippo und Mario geben eine Einführung in CUBO+, um den umfassenden Lernprozess einzuleiten. Sie besprechen die Struktur der Kurse, die Lernziele und wie diese die Studierenden im Bereich der Bitcoin-Entwicklung stärken werden.
 
@@ -85,7 +85,7 @@ Entzauberung von Blockchains und Shitcoins sowie Entzauberung von Mythen und Mis
 ### Installation von Bitcoin Core
 
 ![Video](https://youtu.be/fIUU2sRCEj0)
-<videoId>5f528977-2175-4898-b4e6-f1f9e3f0bd58</videoId>
+:::video id=5f528977-2175-4898-b4e6-f1f9e3f0bd58:::
 
 In der ersten Vorlesung des vierten Moduls haben wir die Architektur von Bitcoin erkundet und die Installation eines Bitcoin Core-Knotens behandelt.
 
@@ -116,7 +116,7 @@ Hallo Leute, hier ist der Link zur letzten Vorlesung der Vorbereitungszeit über
 <chapterId>0b97af0c-015a-54e3-a7f0-0f62ceb96c07</chapterId>
 
 ![Video](https://youtu.be/2f_rK74MB3U)
-<videoId>1de0a1f9-6183-4ff2-8be4-729b97f63fa3</videoId>
+:::video id=1de0a1f9-6183-4ff2-8be4-729b97f63fa3:::
 
 Peter Todd geht auf die einzigartigen Sicherheitsaspekte von Bitcoin ein und zeigt Entwicklern, wie sie eine Sicherheitsorientierung entwickeln können. Der Vortrag zielt darauf ab, eine solide Grundlage für die Erkennung und Abwehr potenzieller Bedrohungen in der Bitcoin-Entwicklung zu schaffen, basierend auf einer praktischen Übung zur Darstellung des Bedrohungsmodells von Software für die Zeitstempelung von Wahlen.
 
@@ -124,7 +124,7 @@ Peter Todd geht auf die einzigartigen Sicherheitsaspekte von Bitcoin ein und zei
 <chapterId>2c59d609-f1ef-53f4-9575-df62e4d066e9</chapterId>
 
 ![Video](https://youtu.be/ln-FYziKqNY)
-<videoId>c24923c6-2172-42e9-b47d-dc9c5b7c7f52</videoId>
+:::video id=c24923c6-2172-42e9-b47d-dc9c5b7c7f52:::
 
 Die Verwendung von Freier und Open-Source-Software (FLOSS) ist entscheidend für das Bitcoin-Ökosystem. Peter Todd untersucht die Bedeutung von FLOSS für Bitcoin, beleuchtet die Geschichte von FLOSS und untersucht, wie Github uns ermöglicht, gemeinsam Open-Source-Software wie Bitcoin zu entwickeln.
 
@@ -132,7 +132,7 @@ Die Verwendung von Freier und Open-Source-Software (FLOSS) ist entscheidend für
 <chapterId>71867dd2-912c-55ad-b59c-9dbca8a39469</chapterId>
 
 ![Video](https://youtu.be/QcK-Cl8B9QU)
-<videoId>96d9db6a-037b-418b-bcf7-b22fd530ede1</videoId>
+:::video id=96d9db6a-037b-418b-bcf7-b22fd530ede1:::
 
 Adam Gibson führt die Teilnehmer aus mathematischer Sicht in die kryptographischen Grundlagen von Bitcoin ein. Die Sitzung behandelt die wesentlichen kryptographischen Funktionen, die in Bitcoin vorhanden sind, wie Hashes und ihre Sicherheit, Merkle-Bäume, Identitätsprotokolle und Signaturen, diskrete Logarithmen und elliptische Kurven.
 
@@ -140,7 +140,7 @@ Adam Gibson führt die Teilnehmer aus mathematischer Sicht in die kryptographisc
 <chapterId>a30ec3e7-b290-5145-a9a9-042224ab20d2</chapterId>
 
 ![Video](https://youtu.be/g_BcT5YkZUQ)
-<videoId>33d74afa-53b0-4f7d-a2d3-51e6fddc2c7a</videoId>
+:::video id=33d74afa-53b0-4f7d-a2d3-51e6fddc2c7a:::
 
 Peter Todd diskutiert das Governance-Modell von Bitcoin und gibt Einblicke, wie Entscheidungen in der Bitcoin-Community getroffen werden und wie dieser dezentrale Ansatz die Entwicklung und Stabilität des Protokolls beeinflusst. Insbesondere untersucht er, wie verschiedene Arten von Änderungen zu Soft- oder Hard-Forks führen können, den Unterschied in der Governance zwischen Politikänderungen und Konsensregeln und das politische Spiel der Änderungen in Bitcoin.
 
@@ -151,7 +151,7 @@ Peter Todd diskutiert das Governance-Modell von Bitcoin und gibt Einblicke, wie 
 <chapterId>75ea1d88-ee6f-5f98-af90-e4758c55e606</chapterId>
 
 ![Video](https://youtu.be/hGS8Cuj5Zb4)
-<videoId>8a245e2f-c364-4288-8607-d5676cee968e</videoId>
+:::video id=8a245e2f-c364-4288-8607-d5676cee968e:::
 
 Adam Gibson erklärt die verschiedenen Komponenten eines Bitcoin-Knotens. Das Kapitel konzentriert sich auf die Rolle, die jede Komponente bei der Aufrechterhaltung der Funktionalität und Integrität des Netzwerks spielt. Insbesondere wird er darauf eingehen, warum wir einen Bitcoin-Knoten betreiben sollten, was ein Bitcoin-Knoten tut und wie die verschiedenen Komponenten eines Bitcoin-Knotens funktionieren.
 
@@ -159,14 +159,14 @@ Adam Gibson erklärt die verschiedenen Komponenten eines Bitcoin-Knotens. Das Ka
 <chapterId>5ed314b1-8293-567d-bf03-730e8c9c774b</chapterId>
 
 ![video](https://youtu.be/okvV9hqDOtM)
-<videoId>88a6150b-e84e-4eb6-be43-6ae275c8d904</videoId>
+:::video id=88a6150b-e84e-4eb6-be43-6ae275c8d904:::
 
 Alekos Filini präsentiert einen detaillierten Blick auf die Datenstrukturen von Bitcoin. Dabei wird die Organisation der Daten innerhalb der Blockchain und wie sie die Robustheit und Effizienz des Netzwerks ermöglicht, behandelt.
 ## Bitcoin L1 Software Stack
 <chapterId>96d64781-fc27-5209-88d8-2acf00d05ea8</chapterId>
 
 ![Video](https://youtu.be/xOdz9GEiShM)
-<videoId>50e72140-7201-4e9c-ab5c-8c9f2d291609</videoId>
+:::video id=50e72140-7201-4e9c-ab5c-8c9f2d291609:::
 
 Daniela Brozzoni bietet einen umfassenden Überblick über den Bitcoin Layer 1 Software Stack und erklärt die Schichten, die das Fundament des Bitcoin-Protokolls bilden (d.h. Bitcoin-Knoten und Bitcoin-Wallets) und wie man Bitcoin-Software erstellt. Dabei wird eine Einführung in Bitcoin-Bibliotheken gegeben und auf das Bitcoin Development Kit (BDK) eingegangen.
 
@@ -177,7 +177,7 @@ Daniela Brozzoni bietet einen umfassenden Überblick über den Bitcoin Layer 1 S
 <chapterId>a0b11c6e-c0ff-5e65-b809-b2ab9a2fc37b</chapterId>
 
 ![Video](https://youtu.be/VtpbCspK5T4)
-<videoId>85e182ec-fc06-4802-a048-c7254b8dec8f</videoId>
+:::video id=85e182ec-fc06-4802-a048-c7254b8dec8f:::
 
 Gabriel Comte bietet eine historische Perspektive auf die Entwicklung von Zahlungskanälen, die für das Lightning Network grundlegend sind. Dieses Kapitel untersucht die Entwicklung von Zahlungskanälen und ihre Bedeutung für die Skalierung von Bitcoin-Transaktionen, angefangen von Satoshi's Zahlungskanälen bis hin zu bidirektionalen Zahlungskanallösungen wie Duplex Micropayment Channels oder Lightning-Zahlungskanälen.
 
@@ -185,7 +185,7 @@ Gabriel Comte bietet eine historische Perspektive auf die Entwicklung von Zahlun
 <chapterId>28be7b31-e6b2-5eea-a5ed-62ce0a154b6e</chapterId>
 
 ![Video](https://youtu.be/5OUgGHH6jPY)
-<videoId>a381f41c-426c-4eb7-9511-1f3fb2e45beb</videoId>
+:::video id=a381f41c-426c-4eb7-9511-1f3fb2e45beb:::
 
 Gabriel Comte erzählt die Geschichte des Atomic Routing und beschreibt verschiedene Techniken, die die Grundlage für die Routing-Schicht des Lightning Network bilden, wie das Hub-and-Spokes-Modell, das Ripple-Modell und Hashed TimeLocked Contracts (HTLCs). Diese Geschichte hat es ermöglicht, sichere, vertrauenslose Transaktionen über das Lightning Network durchzuführen.
 
@@ -193,7 +193,7 @@ Gabriel Comte erzählt die Geschichte des Atomic Routing und beschreibt verschie
 <chapterId>ba4b09ae-81de-53f2-8c15-316f037aaea9</chapterId>
 
 ![Video](https://youtu.be/1aIuKBkPlkg)
-<videoId>42e502b3-0520-4e15-bbe2-dc7949a6b1b9</videoId>
+:::video id=42e502b3-0520-4e15-bbe2-dc7949a6b1b9:::
 
 asi0 überprüft BOLT, die Basis der Lightning-Technologie, und erklärt die Spezifikationen, die jede Implementierung des Lightning Network einhalten muss. Dabei wird ein erster detaillierter Einblick in die verschiedenen Schichten des Lightning Network gegeben.
 
@@ -201,7 +201,7 @@ asi0 überprüft BOLT, die Basis der Lightning-Technologie, und erklärt die Spe
 <chapterId>a2ad8db4-aea2-5231-927c-616c53db31bf</chapterId>
 
 ![Video](https://youtu.be/a0Q_5dzpqKw)
-<videoId>8a4dde3f-b951-4aed-8a21-108822d3d9c9</videoId>
+:::video id=8a4dde3f-b951-4aed-8a21-108822d3d9c9:::
 
 asi0 stellt die wichtigsten Lightning Network (LN) Clients vor und analysiert ihre Funktionen und Stärken anhand einer 2x2-Matrix, die das Maß an Verwahrung und Liquiditätsmanagement bewertet, das der Benutzer bei LN-Clients hat.
 
@@ -219,7 +219,7 @@ asi0 behandelt die praktischen Herausforderungen bei der Arbeit mit dem Lightnin
 <chapterId>c06763dd-bb26-5fec-8ac4-3e446e9517cd</chapterId>
 
 ![Video](https://youtu.be/VXMON_nD650)
-<videoId>e53652a2-389d-44e3-b6b2-27ba28454432</videoId>
+:::video id=e53652a2-389d-44e3-b6b2-27ba28454432:::
 
 Gabriel Comte spekuliert über die zukünftige Entwicklung des Lightning Network und untersucht potenzielle Entwicklungen - wie dual-funded channels eltoo, BOLT 12, PTLCs, Watchtowers und LSP-Standards - und wie sie die Landschaft der Bitcoin-Transaktionen verändern könnten.
 
@@ -227,7 +227,7 @@ Gabriel Comte spekuliert über die zukünftige Entwicklung des Lightning Network
 <chapterId>f4d147bb-f146-5b36-a994-b9b70da83744</chapterId>
 
 ![Video](https://youtu.be/KqBfPaXqU2U)
-<videoId>156be144-9ede-49fa-ab7c-3cde52af5ede</videoId>
+:::video id=156be144-9ede-49fa-ab7c-3cde52af5ede:::
 
 Alekos Filini untersucht die auf dem Lightning Network aufbauenden Protokolle und erklärt, wie sie zur Skalierbarkeit und Funktionalität von Bitcoin beitragen.
 
@@ -238,7 +238,7 @@ Alekos Filini untersucht die auf dem Lightning Network aufbauenden Protokolle un
 <chapterId>a4eacfc3-7b37-5fa3-abd1-b1fc48b645f0</chapterId>
 
 ![Video](https://youtu.be/W3Ra0cdG02I)
-<videoId>d9b7a64e-e16e-4d0d-aa18-5ed2a55411c2</videoId>
+:::video id=d9b7a64e-e16e-4d0d-aa18-5ed2a55411c2:::
 
 Ajelex konzentriert sich auf den geschäftlichen Aspekt des Bitcoin-Minings und untersucht Strategien zur Aufrechterhaltung der Rentabilität in einem wettbewerbsintensiven Markt. Die Diskussion umfasst eine Analyse der Betriebskosten, Effizienzmaßnahmen und der wirtschaftlichen Treiber der Bergbauindustrie.
 
@@ -246,7 +246,7 @@ Ajelex konzentriert sich auf den geschäftlichen Aspekt des Bitcoin-Minings und 
 <chapterId>f109f64f-9b73-5fbf-8870-5d34d5b69df8</chapterId>
 
 ![Video](https://youtu.be/VFjccozVwc8)
-<videoId>98c178c4-2d09-4636-ab3e-15d423ca4709</videoId>
+:::video id=98c178c4-2d09-4636-ab3e-15d423ca4709:::
 
 Adam Gibson gibt Einblick in Joinmarket und erläutert, wie diese CoinJoin-Implementierung die Privatsphäre und Fungibilität von Bitcoin verbessert. Er diskutiert, wie Joinmarket gemeinschaftliche, vertrauenslose und anonyme Transaktionen innerhalb des Bitcoin-Ökosystems ermöglicht. Dann zeigt er in einem zweiten Teil, wie man Joinmarket in Signet ausführt.
 
@@ -256,21 +256,21 @@ Adam Gibson gibt Einblick in Joinmarket und erläutert, wie diese CoinJoin-Imple
 ### Groupe 1 Hackathon - Das Satoshi-Erbe
 
 ![Video](https://youtu.be/NiaahH57N1w)
-<videoId>b11194c6-3279-4b7c-a3f8-7cf3344ca7ef</videoId>
+:::video id=b11194c6-3279-4b7c-a3f8-7cf3344ca7ef:::
 
 Die Gruppe The Satoshi Legacy präsentiert ihre Arbeit am Aufbau eines Lightning-E-Commerce mit Shopify, React JS und Hydrogen sowie dem IBEX-Zahlungsgateway.
 
 ### Groupe 2 Hackathon - Honey Badger
 
 ![Video](https://youtu.be/dds0-SV8ltE)
-<videoId>9692e51a-2a58-4c7a-8ebb-d6127d2e72d2</videoId>
+:::video id=9692e51a-2a58-4c7a-8ebb-d6127d2e72d2:::
 
 Die Gruppe Honey Badger präsentiert ihre Lösung für einen Blog mit integrierten Lightning-basierten Mikrozahlungen unter Verwendung von LnBits, Next.js, Node.js und Hydrogen.
 
 ### Groupe 3 Hackathon
 
 ![Video](https://youtu.be/2YjrrDMGU9c)
-<videoId>1f456bd9-b96c-4a37-83ee-550799f61356</videoId>
+:::video id=1f456bd9-b96c-4a37-83ee-550799f61356:::
 
 Die dritte Gruppe präsentiert ein Lightning Network Node Dashboard über eine angepasste API, LND, vue.js, node.js und Bootstrap.
 
@@ -278,14 +278,14 @@ Die dritte Gruppe präsentiert ein Lightning Network Node Dashboard über eine a
 ### Groupe 4 Hackathon - Satoshi Fellowship
 
 ![Video](https://youtu.be/mxLKiHa0mes#)
-<videoId>8ba9bd08-c32b-4adc-8f12-afc233813e2b</videoId>
+:::video id=8ba9bd08-c32b-4adc-8f12-afc233813e2b:::
 
 Die Gruppe Satoshi Fellowship präsentiert eine LN-Gaming-App mit LnBits und MongoDB, Poetry, Node.js.
 
 ### Groupe 5 Hackathon - Lighting Walker
 
 ![Video](https://youtu.be/IiY5PmkGNVo)
-<videoId>45c24e7d-95f9-4ce6-9218-2ed9ec14a297</videoId>
+:::video id=45c24e7d-95f9-4ce6-9218-2ed9ec14a297:::
 
 Die Gruppe Lightning Walker präsentiert ihre Lösung für den Remittenzdienst unter Verwendung von MySQL, JavaScript und der ZDB-API.
 

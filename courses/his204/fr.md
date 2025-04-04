@@ -24,7 +24,7 @@ Enfin, l’État doit autoriser la libre circulation des marchandises — ce pou
 <chapterId>6a5fd101-6dfd-5d77-96c7-9e1aa4a19758</chapterId>
 
 ![](https://youtu.be/tCivmh-SdsA?si=X6NEIManI0BBI0q9)
-<videoId>53440c00-b4f7-48bb-9401-de47e0c5eecc</videoId>
+:::video id=53440c00-b4f7-48bb-9401-de47e0c5eecc:::
 
 À l’abord du XVIIIe siècle, l’état de la France est des plus préoccupants. Les populations agricoles produisent à peine le nécessaire et sont lourdement imposées.
 
@@ -79,7 +79,7 @@ Tels sont donc les quatre principes que le pouvoir suit depuis plusieurs décenn
 <chapterId>ee9c1e0e-96cc-5026-a5e2-963d68122786</chapterId>
 
 ![](https://youtu.be/s_5A_2eKfjE?si=UAS4AFr4dQnwuV-q)
-<videoId>0678068f-280b-4d96-a68e-cdea5d49ff29</videoId>
+:::video id=0678068f-280b-4d96-a68e-cdea5d49ff29:::
 
 Aujourd’hui que la pression fiscale continue de croître dans notre pays, au risque d’étouffer les forces économiques nationales, des voix s’élèvent pour réclamer un changement. Consciemment ou inconsciemment, c’est sur le travail d’économistes français, qui, depuis le XVIIe siècle, ont critiqué la fiscalité française, toujours chaotique, toujours despotique, toujours excessive, que se fondent communément ces projets de réforme.
 
@@ -125,7 +125,7 @@ Peu avant sa mort, son idée fut suivie par les ministres de Louis XIV. Seulemen
 <chapterId>200149c6-b5fc-566e-ab0e-bafb1c3fed3c</chapterId>
 
 ![](https://youtu.be/XLqLEvkwdGI?si=qJ8-U46odbRf50l_)
-<videoId>707461f5-73b2-4613-bd5e-18b438e2432e</videoId>
+:::video id=707461f5-73b2-4613-bd5e-18b438e2432e:::
 
 Rares sont les économistes français du passé qui, dans leur propre pays, jouissent aujourd’hui d’une célébrité à la mesure de leurs talents. Boisguilbert ne fait pas exception.
 
@@ -164,7 +164,7 @@ Boisguilbert en veut aux "bonnes âmes", comme il dit, qui souhaitent le bonheur
 <chapterId>bc206d41-6a64-5688-a489-40fcfa0e5397</chapterId>
 
 ![](https://youtu.be/tWYjsOXGpis?si=kjKYCZ4Bfc_Hdflv)
-<videoId>a119c71c-3da2-42df-9d4f-e386136e7644</videoId>
+:::video id=a119c71c-3da2-42df-9d4f-e386136e7644:::
 
 Auteur de l’Essai sur la nature du commerce en général (écrit vers 1730, et publié en 1755), Richard Cantillon est considéré comme l’un des pionniers de la science économique moderne. Dans son Histoire de la pensée économique, l’économie Murray Rothbard qualifiera Cantillon de fondateur de la science économique moderne.
 
@@ -207,7 +207,7 @@ Parmi ces cinq grandes idées de son Essai, la plus importante est certainement 
 <chapterId>13478fe2-4c12-593c-a410-54c2cfb7ef7f</chapterId>
 
 ![](https://youtu.be/eqzCQ2xaY84?si=fcxQlMhQrYCLlrCJ)
-<videoId>76713637-91b3-4169-992e-77d70fc0c985</videoId>
+:::video id=76713637-91b3-4169-992e-77d70fc0c985:::
 
 De tous les auteurs que nous avons sélectionné pour rejoindre le panthéon des penseurs français du laissez-faire au XVIIIe siècle, l’abbé de Saint-Pierre est sans aucun doute le plus méconnu.
 
@@ -254,7 +254,7 @@ Il a aussi mis l’accent, avant Vincent de Gournay, sur les vertus du travail e
 <chapterId>e9960ab4-72ec-5afd-8e97-bf89c83b62bc</chapterId>
 
 ![](https://youtu.be/KhJOwZ4Nbqc?si=LbfmpVZHkYOzJxxf)
-<videoId>b6243afe-9b2f-4895-ae14-0791ca272f83</videoId>
+:::video id=b6243afe-9b2f-4895-ae14-0791ca272f83:::
 
 Le marquis d’Argenson est un fondateur oublié de la doctrine du laissez-faire.
 
@@ -299,7 +299,7 @@ Sur la question du commerce des subsistances, d’Argenson n’avait pas d’aut
 <chapterId>e8ae40dc-7450-552f-9ddc-9e02936cf425</chapterId>
 
 ![](https://youtu.be/jlYOVaEdCTs?si=yNWr60F3uaFgFCNo)
-<videoId>de76a63b-7a79-4608-aff6-6fc5915b4c90</videoId>
+:::video id=de76a63b-7a79-4608-aff6-6fc5915b4c90:::
 
 Vincent de Gournay est l’un des premiers représentants du laissez-faire en France et l’un de ses premiers défenseurs dans l’administration publique et dans les cercles intellectuels. Il mérite, à ce titre, une mention plus que conséquente dans l’histoire des idées, mention qui lui est encore rarement faite. J’ai essayé pour ma part de signaler ses mérites dans un récent livre.
 

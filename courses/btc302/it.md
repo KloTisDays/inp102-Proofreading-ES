@@ -241,7 +241,7 @@ In breve, **le possibilità sono infinite e dipendono dalle proprie esigenze ma 
 ####
 Per guidarvi più nel dettaglio, offriamo di seguito un tutorial video non esaustivo che presenta alcune possibilità:
 ![Tutorial Canva](https://www.youtube.com/watch?v=sgloI_v-nAk)
-<videoId>e6264634-2a83-4b00-b812-4e0b623f7d4c</videoId>
+:::video id=e6264634-2a83-4b00-b812-4e0b623f7d4c:::
 ####
 
 Ecco anche alcuni file pre-progettati, duplicabili e modificabili a vostra disposizione che usiamo con la nostra associazione, Bitcoin Lille:
@@ -345,7 +345,7 @@ Vedremo più avanti, ma **si raccomanda vivamente di scegliere "gruppo Telegram"
 ####
 Per i tutorial che seguiranno, utilizzeremo l'applicazione APK "Telegram+"; un'applicazione che consente una configurazione più avanzata di Telegram. Tuttavia, ciò non è necessario, poiché creare un gruppo o super-gruppo su Telegram può ora essere fatto molto facilmente su un telefono:
 ![Tutorial Telegram+](https://www.youtube.com/watch?v=Z5mE-LksBZw)
-<videoId>2fd7779c-1c8c-4bd5-8a0d-2be00343464c</videoId>
+:::video id=2fd7779c-1c8c-4bd5-8a0d-2be00343464c:::
 
 ### Creare un Canale Telegram
 
@@ -359,7 +359,7 @@ Tuttavia, è possibile aggiungere la capacità per i membri del canale di commen
 ####
 Tutorial per creare un canale Telegram:
 ![Tutorial Canale Telegram](https://www.youtube.com/watch?v=N5S7cgySV8U)
-<videoId>12e80598-2c37-4de8-a94b-0279b43cf387</videoId>
+:::video id=12e80598-2c37-4de8-a94b-0279b43cf387:::
 
 ### Creare un Gruppo Telegram
 
@@ -378,7 +378,7 @@ Gli amministratori di questo canale potranno quindi:
 ####
 Tutorial per creare un gruppo Telegram:
 ![Tutorial canale Telegram](https://www.youtube.com/watch?v=u1BuxEsmFuA)
-<videoId>07abf25a-2357-43dc-ad01-fc16e5bb293d</videoId>
+:::video id=07abf25a-2357-43dc-ad01-fc16e5bb293d:::
 
 Una nota: come menzionato prima, il tutorial sopra è stato realizzato su un computer con l'APK "Telegram+". Tuttavia, ora è molto facile creare un gruppo Telegram su un telefono.
 Pertanto, non è più necessario scaricare "Telegram+" per eseguire questa operazione; a meno che non si voglia approfondire le impostazioni sulla privacy del proprio gruppo.
@@ -407,7 +407,7 @@ In generale, non esiste un numero specifico di membri al quale diventa rilevante
 
 Tutorial per creare un supergruppo Telegram:
 ![Tutorial supergruppo Telegram](https://www.youtube.com/watch?v=GWVqpjBtg-U)
-<videoId>b81ef6a9-2a98-4aa5-9601-00604b225a53</videoId>
+:::video id=b81ef6a9-2a98-4aa5-9601-00604b225a53:::
 
 Nota: come menzionato in precedenza, il tutorial sopra è stato realizzato su un computer con l'APK "Telegram+". Tuttavia, ora è molto facile creare un supergruppo Telegram su un telefono.
 Per fare ciò, basta creare un gruppo Telegram; poi, nelle sue impostazioni, cliccare sul pulsante "Argomenti" per aggiungerne alcuni. Una volta validata la modifica, apparirà un elenco di argomenti; e potete modificarlo come desiderate.
@@ -470,7 +470,7 @@ Numerose ulteriori opzioni sono altresì a tua disposizione. Tuttavia, un consig
 ####
 Tutorial per aggiungere un bot multifunzione a un gruppo o super-gruppo su Telegram:
 ![Tutorial bot Telegram multifunzione](https://www.youtube.com/watch?v=l72GZcEFDtU)
-<videoId>1e539496-d32e-4ec0-8236-6da4b93b7d5d</videoId>
+:::video id=1e539496-d32e-4ec0-8236-6da4b93b7d5d:::
 
 Piccola nota: come accennato prima, ora tutta questa procedura può essere eseguita anche su telefono.
 
@@ -485,7 +485,7 @@ Ovviamente, oltre a Telegram e Twitter, ciò richiede ancora più di tempo nella
 
 Per semplificarti le cose, **condividiamo un [server Discord pre-fatto, duplicabile e modificabile](https://discord.com/template/bDY4eXXJk2C8) che puoi personalizzare come desideri**:
 ![Tutorial server Discord duplicabile](https://www.youtube.com/watch?v=i3V6_359Ajw)
-<videoId>36cf649f-6563-40b9-8bb3-721a2efbc0f1</videoId>
+:::video id=36cf649f-6563-40b9-8bb3-721a2efbc0f1:::
 ####
 Così, quando ben costruito, un server Discord può essere una vera risorsa per la sua comunità. Infatti, molti Bitcoiner utilizzano già quotidianamente Discord (e non Telegram), e **permettere loro di seguire le conversazioni del gruppo Telegram direttamente all'interno del server Discord rappresenta un notevole risparmio di tempo**. E viceversa.
 Ecco perché è stato sviluppato un bot open-source chiamato [TediCross](https://github.com/TediCross/TediCross). Il suo obiettivo è semplice: trasferire automaticamente i messaggi da un canale di testo di Discord a un gruppo di Telegram (o un argomento in un super-gruppo di Telegram); e viceversa. Questo può quindi essere molto interessante da configurare.####
@@ -493,7 +493,7 @@ Tuttavia, è importante notare che la sua installazione non è molto semplice, c
 
 Con l'obiettivo di farti risparmiare tempo, ecco un tutorial su come aggiungere un bot multifunzione a un gruppo o super-gruppo di Telegram:
 ![Tutorial bot TediCross Discord - Telegram](https://www.youtube.com/watch?v=e4YAPG0ITF8)
-<videoId>e7d75514-3bbe-4c7f-a40e-96fdd71908fa</videoId>
+:::video id=e7d75514-3bbe-4c7f-a40e-96fdd71908fa:::
 
 ## Considera altri canali di comunicazione, privati e più sicuri
 <chapterId>29d0aad6-0612-5dd0-bcef-7337eaf4fefc</chapterId>
@@ -579,7 +579,7 @@ Infine, sebbene il tuo nome utente "@Bitcoin[CITTÀ]" sia unico e ora ti apparte
 
 Tutorial per creare un account Twitter:
 ![Tutorial account Twitter](https://www.youtube.com/watch?v=pp3DDakV0bA)
-<videoId>bc2c3fc3-8ea6-4452-94c8-c619fd40ad82</videoId>
+:::video id=bc2c3fc3-8ea6-4452-94c8-c619fd40ad82:::
 
 ## Connessione con i meet-up vicini
 <chapterId>12a21c3b-235a-5292-8209-67bf60f61e49</chapterId>
@@ -1010,7 +1010,7 @@ Per semplificare questo compito di creazione, il tutorial qui sotto ti mostra in
 In seguito, sarai in grado di acquistare il tuo dominio e persino ospitarlo sul tuo server personale se lo desideri.
 
 ![Tutorial per creare un sito web WordPress gratuito](https://www.youtube.com/watch?v=cZzH4gj_kZY)
-<videoId>016dd7db-5804-4002-b71c-7c9131ce195c</videoId>
+:::video id=016dd7db-5804-4002-b71c-7c9131ce195c:::
 ####
 Altre CMS o piattaforme permettono anche la creazione di siti web. Sebbene alcune siano più semplici grazie alla loro interfaccia user-friendly, i siti web risultanti sono anche molto meno personalizzabili.
 **WordPress sembra essere la scelta più rilevante per iniziare**. Inoltre, consente l'**integrazione di plug-in**, alcuni dei quali sono a pagamento ma di alta qualità, permettendo un ulteriore sviluppo del sito web; e ciò, senza necessità di saper scriverere codice.
@@ -1060,7 +1060,7 @@ Nel caso in cui desiderassi **registrare sul tuo computer, un software gratuito 
 
 Ecco un breve tutorial che presenta, in 10 minuti, le principali funzionalità da conoscere per fare un podcast con Audacity.
 ![Tutorial per creare un podcast con Audacity](https://www.youtube.com/watch?v=z471_Ye6Y0I)
-<videoId>4de75f12-b526-4e51-acba-57bf2ee49b0d</videoId>
+:::video id=4de75f12-b526-4e51-acba-57bf2ee49b0d:::
 
 Nota: come menzionato in precedenza, nell'eventualità che, un giorno, Bitcoin fosse vietato o censurato, potrebbe essere rilevante **conservare sempre una copia locale su un disco rigido dei podcast** che pubblichi.
 
@@ -1296,7 +1296,7 @@ Infine:
 
 In modo leggermente meno dettagliato, in un video di 21 minuti, appare così:
 ![Tutorial Comunità Bitcoin](https://www.youtube.com/watch?v=EHLAmHHuZd8)
-<videoId>73a96650-4765-4466-af4d-fdcca2f64d2a</videoId>
+:::video id=73a96650-4765-4466-af4d-fdcca2f64d2a:::
 
 Ad ogni modo, **ricorda che non sei solo e che le comunità esistenti sono lì per aiutarti**.
 

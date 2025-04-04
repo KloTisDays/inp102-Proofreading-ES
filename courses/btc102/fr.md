@@ -165,7 +165,7 @@ Gardez toujours à l'esprit que tout le monde ne sera pas nécessairement transp
 <chapterId>f0873bf2-6a6f-5485-bb7a-d84be14f404d</chapterId>
 
 ![sécurité en ligne](https://youtu.be/d9Ccy17yWB0)
-<videoId>a7cb8227-a871-4dc1-b72e-d445d9794ef5</videoId>
+:::video id=a7cb8227-a871-4dc1-b72e-d445d9794ef5:::
 
 Outre les arnaques en crypto-monnaie et autour de la finance, la première raison de perdre des bitcoins est liée à une mauvaise gestion de sa sécurité en ligne. Il arrive souvent que les gens utilisent le même mot de passe pour toutes leurs comptes, oublient de mettre à jour leur ordinateur et négligent de sauvegarder régulièrement leurs données. Si vous vous sentez concerné par ces pratiques, ne vous inquiétez pas, il est toujours possible d'améliorer vos habitudes de sécurité en ligne. Voici quelques mesures de base à mettre en place :
 

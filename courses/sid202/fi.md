@@ -29,7 +29,7 @@ Tule mukaan kehittämään taitojasi, vapauttamaan Liquidin ja Elementsin koko p
 <chapterId>a721398e-7040-4edd-be53-b485ea759fa9</chapterId>
 
 ![Video](https://youtu.be/gkQfnwYLyI0?si=H6cIPhgZaSAwHaHI)
-<videoId>1c25ec38-980b-4b97-ad86-ae8c86779eb7</videoId>
+:::video id=1c25ec38-980b-4b97-ad86-ae8c86779eb7:::
 
 Elements Academyn tarkoituksena on esitellä ja selittää Liquidin perustana olevan avoimen lähdekoodin Elements-alustan keskeiset käsitteet. Kurssin loppuun mennessä sinulla pitäisi olla hyvä käsitys Elementsin tärkeimmistä ominaisuuksista, kuten Confidential Transactions ja Issued Assets, sekä Elements Coren käyttämiseen liittyvistä prosesseista.
 
@@ -42,7 +42,7 @@ Kaikki kysymykset, lisätietopyynnöt tai kyselyiden vastauksia koskevat kysymyk
 <chapterId>7a7f2712-5300-4a6d-b1ed-05eab731bc35</chapterId>
 
 ![Video](https://youtu.be/ns-JLGdkNig?si=fmWye_boRSvVF1Bt)
-<videoId>f5ea023e-0e0f-41bb-a0b2-1b391907f956</videoId>
+:::video id=f5ea023e-0e0f-41bb-a0b2-1b391907f956:::
 
 Elements on avoimen lähdekoodin, sivuketjuihin soveltuva lohkoketjualusta, joka tarjoaa pääsyn yhteisön jäsenten kehittämiin tehokkaisiin ominaisuuksiin, kuten luottamuksellisiin transaktioihin ja liikkeeseen laskettuihin varoihin.
 
@@ -85,7 +85,7 @@ Elements lisää kaikki nämä ominaisuudet Bitcoin Core -koodipohjan päälle, 
 <chapterId>05d88877-58b0-455b-9ae6-a72d19070525</chapterId>
 
 ![Video](https://youtu.be/v0lzmfH81AY?si=V-xDWfmDLKyBcdPs)
-<videoId>61b78765-4917-4aa4-b436-394a37a1092a</videoId>
+:::video id=61b78765-4917-4aa4-b436-394a37a1092a:::
 
 Elements tarjoaa teknisen ratkaisun ongelmiin, joita lohkoketjun käyttäjät kohtaavat päivittäin: transaktioiden viive, yksityisyyden puute ja korvaavuuden riski.
 
@@ -147,7 +147,7 @@ Siirtääkseen varoja takaisin pääketjuun käyttäjä tekee erityisen peg-out-
 <chapterId>cc806e5a-81ab-457b-9531-9f863120a019</chapterId>
 
 ![Video](https://youtu.be/Frr_OjTEPAM?si=iq5XonJyQk8S5OAu)
-<videoId>94babb5e-f64c-4a6c-bf28-38832c0ceacf</videoId>
+:::video id=94babb5e-f64c-4a6c-bf28-38832c0ceacf:::
 
 Koska Elements perustuu Bitcoinin koodipohjaan, toimivan verkon osatekijät ovat hyvin samankaltaisia.
 
@@ -229,7 +229,7 @@ Tämän avulla voimme suorittaa kaikenlaisia toimintoja, kuten omaisuuserien vä
 <chapterId>263b1c5b-59ed-49e7-b811-95c354f41eae</chapterId>
 
 ![Video](https://youtu.be/-by2xBtXQeE?si=7bLo_geGn3qh7MXN)
-<videoId>e2f80756-fffd-4de5-b61c-1583cf81da68</videoId>
+:::video id=e2f80756-fffd-4de5-b61c-1583cf81da68:::
 
 Tässä osiossa opit käyttämään Elements-ohjelman Luottamukselliset tapahtumat -ominaisuutta.
 
@@ -342,7 +342,7 @@ Siinä kaikki tältä oppitunnilta; onnea tietokilpailuun ja nähdään seuraava
 <chapterId>c33c7020-5975-457a-99db-4f8b90d1fa1c</chapterId>
 
 ![Video](https://youtu.be/XnY4WZUNSs4?si=dG8I5OoSh_0EBdvL)
-<videoId>8a7835e6-45ee-461a-ae0f-4fd0bc73921f</videoId>
+:::video id=8a7835e6-45ee-461a-ae0f-4fd0bc73921f:::
 
 Tässä osiossa opit käyttämään Elements-ohjelman Issued Assets -ominaisuutta.
 
@@ -522,7 +522,7 @@ Tässä jaksossa olemme nähneet, miten omaisuuseriä annetaan ja merkitään. S
 <chapterId>78751b21-1dc8-4877-a406-e71bc80a95b0</chapterId>
 
 ![Video](https://youtu.be/5em79YHtYk0?si=rhponm6Hw9AB6RJp)
-<videoId>4d705c1c-d2c7-4847-9b03-91f348b135c2</videoId>
+:::video id=4d705c1c-d2c7-4847-9b03-91f348b135c2:::
 
 Tässä osiossa opit, miten voit laskea liikkeelle lisää jo liikkeelle laskettua omaisuuserää ja miten voit tuhota tietyn määrän liikkeelle laskettua omaisuuserää.
 
@@ -671,7 +671,7 @@ Tässä osiossa olemme nähneet, miten omaisuuserä lasketaan liikkeeseen ja mit
 <chapterId>c47b217e-db14-4843-a66f-3e5f3a00a808</chapterId>
 
 ![Video](https://youtu.be/kxWX91fCnus?si=KItm_Am3_RrBcLBN)
-<videoId>90765b4b-cbe6-476a-9d3f-4bb9442a530e</videoId>
+:::video id=90765b4b-cbe6-476a-9d3f-4bb9442a530e:::
 
 Elements tukee federoitua allekirjoitusmallia, jonka avulla voit määrittää niiden vahvan federaation jäsenten määrän, joiden on allekirjoitettava ehdotettu lohko, jotta lohko olisi kelvollinen.
 
@@ -831,7 +831,7 @@ Kun tietty määrä allekirjoittajia on allekirjoittanut ehdotetun lohkon, se yh
 <chapterId>432d7a65-255f-44a3-8b38-78508202cb37</chapterId>
 
 ![Video](https://youtu.be/egYzj4N8CB8?si=v7_-IXsjHPE-ARDe)
-<videoId>9c83d3a8-55f1-462f-84c3-160db2a72a83</videoId>
+:::video id=9c83d3a8-55f1-462f-84c3-160db2a72a83:::
 
 Elements on avoimen lähdekoodin yleiskäyttöinen lohkoketjualusta, joka voidaan myös "liittää" olemassa olevaan lohkoketjuun, kuten Bitcoiniin. Kun Elements on liitetty toiseen lohkoketjuun, sen sanotaan toimivan "sivuketjuna". Sivuketjut mahdollistavat varojen kaksisuuntaisen siirron ketjusta toiseen. Kun Elements toteutetaan sivuketjuna, voit kiertää joitakin pääketjun luontaisia rajoituksia ja säilyttää samalla pääketjussa suojattujen varojen tarjoaman turvallisuuden.
 
@@ -1035,7 +1035,7 @@ Peg-out tapahtuu, kun Elements-solmu kutsuu komentoa `sendtomainchain`, joka ott
 <chapterId>50dff39b-2702-47d7-9c15-0b54b845e99f</chapterId>
 
 ![Video](https://youtu.be/u-3rV7DGtD0?si=G1__H0Uelf4sTUDM)
-<videoId>ce88c76b-1707-4fc0-9082-b875822fb742</videoId>
+:::video id=ce88c76b-1707-4fc0-9082-b875822fb742:::
 
 Tähän mennessä olemme tarkastelleet, miten Elementsia voidaan käyttää sivuketjuna. Se voi kuitenkin toimia myös itsenäisenä lohkoketjuratkaisuna, jolla on oma oletusarvoinen natiivi omaisuuserä. Tässä kokoonpanossa Elements-lohkoketju säilyttää edelleen kaikki sivuketjutoteutuksen ominaisuudet, kuten luottamukselliset transaktiot ja liikkeeseen lasketut omaisuuserät, mutta se ei tarvitse peg-in- tai peg-out-toimintoa oletusomaisuuserien määrän lisäämiseksi tai poistamiseksi kierrosta.
 
@@ -1222,7 +1222,7 @@ Käyttämällä edellä mainittuja parametreja voit käyttää Elementsia itsen�
 <chapterId>7e2c916d-8114-424c-97f5-cbff9d73b8e3</chapterId>
 
 ![Video](https://youtu.be/CTMdamTZBBM?si=16LBcXvN4pBfC7lr)
-<videoId>3bdc6c60-49eb-4e9a-921f-e554c67cd797</videoId>
+:::video id=3bdc6c60-49eb-4e9a-921f-e554c67cd797:::
 
 Tällä kurssilla olemme oppineet, että Elements on avoimen lähdekoodin verkkoprotokolla, joka voidaan toteuttaa toisen lohkoketjun sivuketjuna tai itsenäisenä lohkoketjuratkaisuna.
 

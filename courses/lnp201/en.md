@@ -30,7 +30,7 @@ Enjoy your discovery!
 <chapterId>df6230ae-ff35-56ea-8651-8e65580730a8</chapterId>
 
 ![video en](https://youtu.be/QDQ8NG0l3hk)
-<videoId>66ea3e9c-907a-4879-a5e6-96b4234dece3</videoId>
+:::video id=66ea3e9c-907a-4879-a5e6-96b4234dece3:::
 
 Welcome to the LNP201 course, which aims to explain the technical functioning of the Lightning Network.
 
@@ -88,7 +88,7 @@ This is the end of this first chapter, where we have laid the groundwork for the
 <chapterId>0cfb7e6b-96f0-508b-9210-90bc1e28649d</chapterId>
 
 ![video en](https://youtu.be/U9l5IVriCss)
-<videoId>0be13609-6f63-4f2f-a575-952852407a9a</videoId>
+:::video id=0be13609-6f63-4f2f-a575-952852407a9a:::
 
 This chapter is a bit special since it will not be directly dedicated to Lightning, but to Bitcoin. Indeed, the Lightning Network is a layer on top of Bitcoin. It is therefore essential to understand certain fundamental concepts of Bitcoin to properly grasp the functioning of Lightning in the subsequent chapters. In this chapter, we will review the basics of Bitcoin receiving addresses, UTXOs, as well as the functioning of Bitcoin transactions.
 
@@ -155,7 +155,7 @@ This chapter on Bitcoin has allowed us to review some essential notions for what
 <chapterId>96243eb0-f6b5-5b68-af1f-fffa0cc16bfe</chapterId>
 
 ![video en](https://youtu.be/Ty80WuN5X-g)
-<videoId>b91d84b5-d5c9-414a-bd14-91de04f1abcf</videoId>
+:::video id=b91d84b5-d5c9-414a-bd14-91de04f1abcf:::
 
 In this chapter, we will see more precisely how to open a payment channel on the Lightning Network and understand the link between this operation and the underlying Bitcoin system.
 
@@ -220,7 +220,7 @@ In the next chapter, we will explore the technical workings of a Lightning trans
 <chapterId>7d3fd135-129d-5c5a-b306-d5f2f1e63340</chapterId>
 
 ![video en](https://youtu.be/dzPMGiR_JSE)
-<videoId>0823da8c-1208-4fbe-9e5c-cf6c14ef04a0</videoId>
+:::video id=0823da8c-1208-4fbe-9e5c-cf6c14ef04a0:::
 
 In this chapter, we will discover the technical functioning of a transaction within a channel on the Lightning Network, that is, when funds are moved from one side of the channel to the other.
 
@@ -278,7 +278,7 @@ However, this system has a potential flaw, which we will address in the next cha
 
 <chapterId>f2f61e5b-badb-5947-9a81-7aa530b44e59</chapterId>
 ![video en](https://youtu.be/veCs39uVFUk)
-<videoId>25aef9a3-2026-4be1-91c7-50ba049915a3</videoId>
+:::video id=25aef9a3-2026-4be1-91c7-50ba049915a3:::
 In this chapter, we will delve deeper into how transactions work on the Lightning Network by discussing the mechanisms in place to protect against cheating, ensuring that each party adheres to the rules within a channel.
 
 ### Reminder: Commitment Transactions
@@ -358,7 +358,7 @@ At this point in the training, you now know how Lightning channels are opened an
 <chapterId>29a72223-2249-5400-96f0-3756b1629bc2</chapterId>
 
 ![video en](https://youtu.be/zmAa2fj_V7w)
-<videoId>74ca5255-bde5-4b8e-825b-18173ae7f8c9</videoId>
+:::video id=74ca5255-bde5-4b8e-825b-18173ae7f8c9:::
 
 In this chapter, we will discuss **closing a channel** on the Lightning Network, which is done through a Bitcoin transaction, just like opening a channel. After seeing how transactions within a channel work, it is now time to see how to close a channel and recover the funds on the Bitcoin blockchain.
 
@@ -447,7 +447,7 @@ In the upcoming chapters, we will explore the Lightning Network from a broader p
 <chapterId>45a7252c-fa4f-554b-b8bb-47449532918e</chapterId>
 
 ![video en](https://youtu.be/44oBdNdXtEQ)
-<videoId>da749c6b-959f-4b74-841e-c9767bbed860</videoId>
+:::video id=da749c6b-959f-4b74-841e-c9767bbed860:::
 
 In this chapter, we will explore how payments on the Lightning Network can reach a recipient even if they are not directly connected by a payment channel. Lightning is, indeed, a **network of payment channels**, which allows funds to be sent to a distant node through the channels of other participants. We will discover how payments are routed across the network, how liquidity moves between channels, and how transaction fees are calculated.
 
@@ -565,7 +565,7 @@ In this chapter, we explored payment routing on the Lightning Network. But a que
 <chapterId>4369b85a-1365-55d8-99e1-509088210116</chapterId>
 
 ![video en](https://youtu.be/jI4nM297aHA)
-<videoId>334112c3-d6d8-4903-ba49-ba9210715d32</videoId>
+:::video id=334112c3-d6d8-4903-ba49-ba9210715d32:::
 
 In this chapter, we will discover how Lightning allows payments to transit through intermediary nodes without needing to trust them, thanks to **HTLC** (_Hashed Time-Locked Contracts_). These smart contracts ensure that each intermediary node will only receive the funds from its channel if it forwards the payment to the final recipient, otherwise, the payment will not be validated.
 
@@ -686,7 +686,7 @@ In the next chapter, we will discover how a node issuing a Lightning transaction
 <chapterId>7e2ae959-c2a1-512e-b5d6-8fd962e819da</chapterId>
 
 ![video en](https://youtu.be/CqetCElRjUQ)
-<videoId>32d36d6f-456e-46a3-a9e5-8118ed4ddc7c</videoId>
+:::video id=32d36d6f-456e-46a3-a9e5-8118ed4ddc7c:::
 
 In the previous chapters, we saw how to use other nodes' channels to route payments and reach a node without being directly connected to it via a channel. We also discussed how to ensure the security of the transfer without trusting the intermediary nodes. In this chapter, we will focus on finding the best possible route to reach a target node.
 
@@ -775,7 +775,7 @@ In the following chapter, we will specifically study the functioning of invoices
 
 <chapterId>e34c7ecd-2327-52e3-b61e-c837d9e5e8b0</chapterId>
 ![video en](https://youtu.be/XANzf1Qqp9I)
-<videoId>14ce277a-5b64-4c78-94d2-38b0b43face4</videoId>
+:::video id=14ce277a-5b64-4c78-94d2-38b0b43face4:::
 
 In this chapter, we will take a closer look at the operation of Lightning **invoices**, that is, payment requests sent by the recipient node to the sender node. The goal is to understand how to pay and receive payments on Lightning. We will also discuss 2 alternatives to classic invoices: LNURL and Keysend.
 
@@ -889,7 +889,7 @@ In the following chapter, we will see how a node operator can manage liquidity i
 <chapterId>cc76d0c4-d958-57f5-84bf-177e21393f48</chapterId>
 
 ![video en](https://youtu.be/MIbej28La7Y)
-<videoId>f9d30891-e701-4ff3-a640-3121878b652b</videoId>
+:::video id=f9d30891-e701-4ff3-a640-3121878b652b:::
 
 In this chapter, we will explore strategies for effectively managing liquidity on the Lightning Network. Liquidity management varies depending on the type of user and context. We will look at the main principles and existing techniques to better understand how to optimize this management.
 
@@ -962,7 +962,7 @@ In the next chapter, I propose to review the most important concepts of this tra
 <chapterId>a65a571c-561b-5e1c-87bf-494644653c22</chapterId>
 
 ![video en](https://youtu.be/coaskEGRjiU)
-<videoId>9efec630-5c76-4aa1-882b-3f5241eb90e7</videoId>
+:::video id=9efec630-5c76-4aa1-882b-3f5241eb90e7:::
 
 In this final chapter marking the end of the LNP201 training, I propose to revisit the important concepts we have covered together.
 

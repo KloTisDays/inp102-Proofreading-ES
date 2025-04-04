@@ -79,7 +79,7 @@ Selle koolituskursuse kirjaliku versiooni koostamisel kasutati 2 peamist allikat
 <chapterId>f52f8af5-5d7c-588b-b56d-99b97176204b</chapterId>
 
 ![video](https://youtu.be/AF2XbifPGXM)
-<videoId>64c7692c-983d-4e4a-9744-5cc7d87c70f1</videoId>
+:::video id=64c7692c-983d-4e4a-9744-5cc7d87c70f1:::
 
 RGB on protokoll, mis on loodud digitaalsete õiguste (lepingute ja varade kujul) kohaldamiseks ja jõustamiseks skaleeritaval ja konfidentsiaalsel viisil, mis põhineb Bitcoini plokiahela konsensusreeglitel ja toimingutel. Käesoleva esimese peatüki eesmärk on tutvustada RGB-protokolliga seotud põhimõisteid ja terminoloogiat, rõhutades eelkõige selle tihedat seost selliste põhiliste hajutatud arvutuskontseptsioonide nagu kliendipoolne valideerimine ja ühekordsed pitsatid.
 
@@ -424,7 +424,7 @@ Enne teise peatüki tehnilistesse üksikasjadesse sukeldumist lugege julgelt uue
 <chapterId>cc2fe85a-9cc7-5b8c-a00a-c0a867241061</chapterId>
 
 ![video](https://youtu.be/FS6PDprWl5Q)
-<videoId>7b14e637-3ca8-498f-8498-503005cb91b0</videoId>
+:::video id=7b14e637-3ca8-498f-8498-503005cb91b0:::
 
 Selles peatükis vaatleme kliendipoolse valideerimise ja ühekordselt kasutatavate pitserite rakendamist Bitcoini plokiahelas. Tutvustame RGB **commitment layer** (1. kiht) peamisi põhimõtteid, keskendudes eelkõige **TxO2** skeemile, mida RGB kasutab pitseri defineerimiseks ja sulgemiseks Bitcoini tehingus. Seejärel arutame kahte olulist punkti, mida ei ole veel üksikasjalikult käsitletud:
 
@@ -1012,7 +1012,7 @@ Järgmises peatükis vaatleme RGB puhtalt ahelavälise komponendi, nimelt leping
 <chapterId>04a9569f-3563-5382-bf53-0c7069343ba0</chapterId>
 
 ![video](https://youtu.be/tmAVdyXGmj4)
-<videoId>be292911-b669-4d5d-b992-115f8cc9863d</videoId>
+:::video id=be292911-b669-4d5d-b992-115f8cc9863d:::
 
 Selles ja järgmises peatükis vaatleme RGB-keskkonna raames mõistet **armas leping** ja uurime erinevaid viise, kuidas need lepingud saavad määratleda ja arendada oma *seisundit*. Me näeme, miks RGB arhitektuur, kasutades ühekordsete pitserite järjestatud jada, võimaldab erinevaid ***sõlmimisoperatsioone*** skaleeritaval viisil ja ilma tsentraliseeritud registri kaudu käimata teostada. Samuti vaatleme ***Business Logic*** fundamentaalset rolli lepingu staatuse arengu kujundamisel.
 
@@ -1105,7 +1105,7 @@ Järgmises peatükis käsitleme üksikasjalikumalt nende ***seisundite*** ja ***
 <chapterId>78c44e88-50c4-5ec4-befe-456c1a9f080b</chapterId>
 
 ![video](https://youtu.be/lUTjeuM0oTA)
-<videoId>fa2a44f7-dac8-4a71-8aa9-567e4e6f970c</videoId>
+:::video id=fa2a44f7-dac8-4a71-8aa9-567e4e6f970c:::
 
 Selles peatükis vaatleme, kuidas toimivad operatsioonid nutikontraktides ja olekute üleminekud, jällegi RGB-protokollis. Eesmärk on ka mõista, kuidas mitu osalejat teevad koostööd vara omandiõiguse üleandmiseks.
 
@@ -1929,7 +1929,7 @@ Tunnistaja tehing on Bitcoini tehing, mis sulgeb ühekordselt kasutatava pitseri
 <chapterId>8333ea5f-51c7-5dd5-b1d7-47d491e58e51</chapterId>
 
 ![video](https://youtu.be/Uo1UoxiImsI)
-<videoId>bc012288-ecbe-44f2-90f0-64b78733af25</videoId>
+:::video id=bc012288-ecbe-44f2-90f0-64b78733af25:::
 
 Selles peatükis vaatleme lähemalt, kuidas RGB-lepingut defineeritakse ja rakendatakse. Me näeme, millised on RGB-lepingu komponendid, milline on nende roll ja kuidas nad on üles ehitatud.
 
@@ -2618,7 +2618,7 @@ Järgmises peatükis vaatleme, kuidas lepingu ülekandmine toimib ja kuidas RGB-
 <chapterId>f043a307-d420-5752-b0d7-ebfd845802c0</chapterId>
 
 ![video](https://youtu.be/sVoKIi-1XbY)
-<videoId>e8043aff-1cb4-4e85-8576-b8745bae01a1</videoId>
+:::video id=e8043aff-1cb4-4e85-8576-b8745bae01a1:::
 
 Selles peatükis analüüsime lepingu üleandmise protsessi RGB ökosüsteemis. Selle illustreerimiseks vaatleme Alice'i ja Bobi, meie tavalisi peategelasi, kes soovivad vahetada RGB vara. Näitame ka mõned käsu väljavõtted käsurea tööriistast `rgb`, et näha, kuidas see praktikas töötab.
 
@@ -2913,7 +2913,7 @@ Nüüd, kui me oleme vaadanud RGB-programmeerimise põhielemente, tutvustan teil
 <chapterId>0e0a645c-0049-588d-8965-b8c536590cc9</chapterId>
 
 ![video](https://youtu.be/GRwS-NvWF3I)
-<videoId>76080e68-faa2-473f-b69e-1c543c268457</videoId>
+:::video id=76080e68-faa2-473f-b69e-1c543c268457:::
 
 Selles peatükis läheneme lepingu kirjutamisele samm-sammult, kasutades käsurea tööriista `rgb`. Eesmärk on näidata, kuidas paigaldada ja manipuleerida CLI-d, koostada **Skeem**, importida **Interface** ja **Interface Implementation**, seejärel väljastada (*väljastada*) vara. Samuti vaatleme aluseks olevat loogikat, sealhulgas kompileerimist ja oleku valideerimist. Selle peatüki lõpuks peaksite olema võimelised seda protsessi reprodutseerima ja looma oma RGB-lepinguid.
 
@@ -3213,7 +3213,7 @@ Järgmises peatükis vaatleme lähemalt RGB integreerimist Lightning-võrku.
 <chapterId>0962980a-8f94-5d0f-9cd0-43d7f884a01d</chapterId>
 
 ![video](https://youtu.be/mqCupTlDbA0)
-<videoId>51d07a09-941d-43fe-9e24-6934382d7661</videoId>
+:::video id=51d07a09-941d-43fe-9e24-6934382d7661:::
 
 Käesolevas peatükis teen ettepaneku uurida, kuidas RGB-d saab kasutada Lightning Networkis, et integreerida ja liigutada RGB varasid (märgid, NFT-d jne) ahelavälise maksekanali kaudu.
 
@@ -3369,7 +3369,7 @@ Bitcoini protokolli (tehingud, ümbersõidud jne) toetavad lisaseadmed.
 <chapterId>dc92a5e8-ed93-5a3f-bcd0-d433932842f4</chapterId>
 
 ![video](https://youtu.be/nbUtV8GOR_U)
-<videoId>bd9db370-1e28-4ed2-b8ef-3fbf7707b216</videoId>
+:::video id=bd9db370-1e28-4ed2-b8ef-3fbf7707b216:::
 
 See kursuse viimane osa põhineb erinevate RGB bootcamp'i esinejate ettekannetel. See sisaldab RGB ja selle ökosüsteemi kohta käivaid iseloomustusi ja mõtisklusi, samuti protokollile tuginevate vahendite ja projektide tutvustusi. Seda esimest peatükki modereerib Hunter Beast ja kahte järgmist Frederico Tenga.
 
@@ -3436,7 +3436,7 @@ Kogu protsess näitab, kuidas RGB ökosüsteemi saab kasutusele võtta ja lõppk
 <chapterId>d4d80e07-5eac-5b29-a93a-123180e97047</chapterId>
 
 ![vidéo](https://youtu.be/5iAhsgCSL3U)
-<videoId>1616639a-5447-4e77-b308-9369bd89961b</videoId>
+:::video id=1616639a-5447-4e77-b308-9369bd89961b:::
 
 Selles peatükis, mis põhineb Frederico Tenga ettekandel, vaatleme Bitfinexi meeskonna poolt loodud RGB-le pühendatud vahendeid ja projekte, mille eesmärk on edendada selle protokolli ümber rikkaliku ja mitmekesise ökosüsteemi tekkimist. Meeskonna esialgne eesmärk ei ole välja anda konkreetset kaubanduslikku toodet, vaid pigem pakkuda tarkvara ehitusplokke, aidata kaasa RGB-protokollile endale ja pakkuda välja konkreetseid rakendusviiteid, näiteks mobiilne rahakott (*Iris Wallet*) või RGB-ga ühilduv Lightning-sõlm.
 
@@ -3551,7 +3551,7 @@ Järgmises peatükis vaatleme lähemalt, kuidas RGB Lightning-sõlme käivitada.
 <chapterId>ecaabe32-20ba-5f8c-8ca1-a3f095792958</chapterId>
 
 ![vidéo](https://youtu.be/piQQH4Q2nr0)
-<videoId>01467b5b-e3e3-4370-813d-c52fddaad42d</videoId>
+:::video id=01467b5b-e3e3-4370-813d-c52fddaad42d:::
 
 Selles viimases peatükis viib teid Frederico Tenga samm-sammult läbi Lightning RGB-sõlme seadistamise Regtest-keskkonnas ja näitab, kuidas luua RGB-märke. Käivitades kaks eraldi sõlme, avastate ka, kuidas avada nende vahel Lightning-kanal ja vahetada RGB-vara.
 

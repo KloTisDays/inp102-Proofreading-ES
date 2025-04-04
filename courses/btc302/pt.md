@@ -334,7 +334,7 @@ Em suma, **as possibilidades são infinitas e dependem das suas necessidades, ma
 Para o guiar mais detalhadamente, oferecemos abaixo um tutorial em vídeo não exaustivo que apresenta algumas possibilidades:
 
 ![Tutorial Canva](https://www.youtube.com/watch?v=sgloI_v-nAk)
-<videoId>e6264634-2a83-4b00-b812-4e0b623f7d4c</videoId>
+:::video id=e6264634-2a83-4b00-b812-4e0b623f7d4c:::
 
 ####
 
@@ -482,7 +482,7 @@ Veremos mais tarde, mas **é altamente recomendável que escolha "Grupo de teleg
 Para os tutoriais que se seguem, utilizaremos a aplicação APK "Telegram+"; uma aplicação que permite uma configuração mais avançada do Telegram. No entanto, isso não é necessário, pois a criação de um grupo ou supergrupo no Telegram pode agora ser feita muito facilmente num telefone:
 
 ![Tutorial Telegram+](https://www.youtube.com/watch?v=Z5mE-LksBZw)
-<videoId>2fd7779c-1c8c-4bd5-8a0d-2be00343464c</videoId>
+:::video id=2fd7779c-1c8c-4bd5-8a0d-2be00343464c:::
 
 ### Criar um canal de telegrama
 
@@ -501,7 +501,7 @@ No entanto, é possível adicionar a capacidade de os membros do canal comentare
 Tutorial para criar um canal Telegram:
 
 ![Tutorial Canale Telegram](https://www.youtube.com/watch?v=N5S7cgySV8U)
-<videoId>12e80598-2c37-4de8-a94b-0279b43cf387</videoId>
+:::video id=12e80598-2c37-4de8-a94b-0279b43cf387:::
 
 ### Criar um grupo do Telegram
 
@@ -526,7 +526,7 @@ Os administradores deste canal poderão então:
 Tutorial para criar um grupo no Telegram:
 
 ![Tutorial canale Telegram](https://www.youtube.com/watch?v=u1BuxEsmFuA)
-<videoId>07abf25a-2357-43dc-ad01-fc16e5bb293d</videoId>
+:::video id=07abf25a-2357-43dc-ad01-fc16e5bb293d:::
 
 Uma nota: como mencionado anteriormente, o tutorial acima foi feito num computador com o APK "Telegram+". No entanto, agora é muito fácil criar um grupo do Telegram num telefone.
 
@@ -567,7 +567,7 @@ Em geral, não há um número específico de membros a partir do qual se torna r
 Tutorial para criar um supergrupo no Telegram:
 
 ![Tutorial supergruppo Telegram](https://www.youtube.com/watch?v=GWVqpjBtg-U)
-<videoId>b81ef6a9-2a98-4aa5-9601-00604b225a53</videoId>
+:::video id=b81ef6a9-2a98-4aa5-9601-00604b225a53:::
 
 Nota: Como mencionado acima, o tutorial acima foi feito num computador com o APK "Telegram+". No entanto, agora é muito fácil criar um supergrupo do Telegram num telemóvel.
 
@@ -646,7 +646,7 @@ Existem também numerosas opções adicionais à sua disposição. No entanto, u
 Tutorial para adicionar um bot multifuncional a um grupo ou supergrupo no Telegram:
 
 ![Tutorial bot Telegram multifunzione](https://www.youtube.com/watch?v=l72GZcEFDtU)
-<videoId>1e539496-d32e-4ec0-8236-6da4b93b7d5d</videoId>
+:::video id=1e539496-d32e-4ec0-8236-6da4b93b7d5d:::
 
 Pequena nota: como mencionado anteriormente, agora todo este procedimento pode ser efectuado através do telemóvel.
 
@@ -665,7 +665,7 @@ Obviamente, para além do Telegram e do Twitter, isto requer ainda mais tempo de
 Para te facilitar as coisas, **partilhamos um [servidor Discord pré-fabricado, duplicável e editável] (https://discord.com/template/bDY4eXXJk2C8) que podes personalizar como quiseres**:
 
 ![Tutorial server Discord duplicabile](https://www.youtube.com/watch?v=i3V6_359Ajw)
-<videoId>36cf649f-6563-40b9-8bb3-721a2efbc0f1</videoId>
+:::video id=36cf649f-6563-40b9-8bb3-721a2efbc0f1:::
 
 ####
 
@@ -678,7 +678,7 @@ No entanto, é importante referir que a sua instalação não é muito fácil, q
 Com o objetivo de poupar tempo, aqui está um tutorial sobre como adicionar um bot multifuncional a um grupo ou supergrupo do Telegram:
 
 ![Tutorial bot TediCross Discord - Telegram](https://www.youtube.com/watch?v=e4YAPG0ITF8)
-<videoId>e7d75514-3bbe-4c7f-a40e-96fdd71908fa</videoId>
+:::video id=e7d75514-3bbe-4c7f-a40e-96fdd71908fa:::
 
 ## Considerar outros canais de comunicação, privados e mais seguros
 
@@ -793,7 +793,7 @@ Finalmente, embora o seu nome de utilizador "@Bitcoin[CIDADE]" seja único e ago
 Tutorial para criar uma conta no Twitter:
 
 ![Tutorial account Twitter](https://www.youtube.com/watch?v=pp3DDakV0bA)
-<videoId>bc2c3fc3-8ea6-4452-94c8-c619fd40ad82</videoId>
+:::video id=bc2c3fc3-8ea6-4452-94c8-c619fd40ad82:::
 
 ## Ligação a encontros próximos
 
@@ -1422,7 +1422,7 @@ Para simplificar esta tarefa de criação, o tutorial abaixo mostra-lhe em meia 
 Mais tarde, poderá adquirir o seu próprio domínio e até alojá-lo no seu próprio servidor, se assim o desejar.
 
 ![Tutorial per creare un sito web WordPress gratuito](https://www.youtube.com/watch?v=cZzH4gj_kZY)
-<videoId>016dd7db-5804-4002-b71c-7c9131ce195c</videoId>
+:::video id=016dd7db-5804-4002-b71c-7c9131ce195c:::
 
 ####
 
@@ -1493,7 +1493,7 @@ No caso de querer **gravar no seu computador, um software gratuito como o ["Auda
 Aqui está um pequeno tutorial que apresenta, em 10 minutos, as principais caraterísticas que precisa de saber sobre como fazer um podcast com o Audacity.
 
 ![Tutorial per creare un podcast con Audacity](https://www.youtube.com/watch?v=z471_Ye6Y0I)
-<videoId>4de75f12-b526-4e51-acba-57bf2ee49b0d</videoId>
+:::video id=4de75f12-b526-4e51-acba-57bf2ee49b0d:::
 
 Nota: Como mencionado anteriormente, no caso de, um dia, a Bitcoin ser proibida ou censurada, pode ser relevante **manter sempre uma cópia local num disco rígido dos podcasts** que publica.
 
@@ -1825,7 +1825,7 @@ Finalmente:
 Com um pouco menos de pormenor, num vídeo de 21 minutos, tem o seguinte aspeto:
 
 ![Tutorial Comunità Bitcoin](https://www.youtube.com/watch?v=EHLAmHHuZd8)
-<videoId>73a96650-4765-4466-af4d-fdcca2f64d2a</videoId>
+:::video id=73a96650-4765-4466-af4d-fdcca2f64d2a:::
 
 Em todo o caso, **lembra-te que não estás sozinho e que as comunidades existentes estão lá para te ajudar**.
 

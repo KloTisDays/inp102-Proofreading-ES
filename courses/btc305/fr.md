@@ -71,7 +71,7 @@ Ceci est un exercice en classe donc si vous suivez ce cours vous-même, vous ne 
 L'exercice commence après avoir regardé l'introduction "Comment fonctionnent Bitcoin et la blockchain" par la BBC.
 
 ![how bitcoin and the blockchain works](https://youtu.be/mhE_vvwAiRc)
-<videoId>da8f8092-bd84-4287-87db-4c6d53763e5e</videoId>
+:::video id=da8f8092-bd84-4287-87db-4c6d53763e5e:::
 
 Cet exercice nécessite la participation d'au moins neuf personnes. Cet exercice a pour but de se faire une idée physique du fonctionnement de Bitcoin. En jouant chaque rôle dans le réseau, vous aurez une manière interactive et ludique d'apprendre. Cet exercice n'implique pas le Lightning Network.
 

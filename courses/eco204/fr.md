@@ -64,7 +64,7 @@ Bonne chance !
 <chapterId>b2cbc915-c4ec-52b5-860c-0958f58c91e4</chapterId>
 
 ![video ](https://youtu.be/Hg8L_PIs008)
-<videoId>05addc9f-4982-4300-bfd8-37c877419abe</videoId>
+:::video id=05addc9f-4982-4300-bfd8-37c877419abe:::
 
 ### Les définitions de l’inflation
 
@@ -241,7 +241,7 @@ En concluant, cette étude sur la dévaluation monétaire ouvre la porte à une 
 <chapterId>b438fe09-375e-5bb2-9196-7dd687b9f98c</chapterId>
 
 ![ Video](https://youtu.be/hHk5oV8HsNQ)
-<videoId>a5ffe276-d610-4773-9901-50a43649ecd5</videoId>
+:::video id=a5ffe276-d610-4773-9901-50a43649ecd5:::
 
 ### L’inflation n’est pas un phénomène multifactoriel
 
@@ -442,7 +442,7 @@ Merci pour votre attention la prochaine session sera entièrement dédiée à d�
 <chapterId>d2a71a2e-5f36-58d9-993c-d431f4aa07fd</chapterId>
 
 ![video provisoire 3.1 ](https://youtu.be/Pd-dWA-FrfY)
-<videoId>eac29352-1479-4e54-a82f-aa114b80517b</videoId>
+:::video id=eac29352-1479-4e54-a82f-aa114b80517b:::
 
 ### Les définitions de l’hyperinflation
 
@@ -529,7 +529,7 @@ Il est à noter que certaines périodes historiques d'inflation élevée ne figu
 <chapterId>11eef458-aab8-5c63-8523-264d0ba69f5d</chapterId>
 
 ![Video](https://youtu.be/yYeEyT0CKE4)
-<videoId>19200e30-5105-47ba-864d-e37283f17e87</videoId>
+:::video id=19200e30-5105-47ba-864d-e37283f17e87:::
 
 ### Deux époques, deux catastrophes
 
@@ -584,7 +584,7 @@ Lorsque la monnaie perd rapidement de sa valeur, même les transactions les plus
 > Zimbabwe: “Les responsables de magasin étaient également autorisés à employer un travailleur occasionnel pour remplacer le membre du personnel qui comptait de l'argent toute la journée. Bien sûr, compter l'argent en magasin pour l'administration et le dépôt en banque était une chose, mais tout le processus devait être répété à la banque lors du dépôt.”
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
-<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
+:::video id=363ad60c-f515-45ec-b3e3-b5ebb72ecd13:::
 
 Money counting technique from Uzbekistan
 
@@ -719,7 +719,7 @@ C'est ce qui complète cette vidéo au sujet des similitudes des expériences v�
 <chapterId>643f279c-d89f-5600-a2e2-b1bbbba0ab69</chapterId>
 
 ![Video](https://youtu.be/qoHAN4Nj2pE)
-<videoId>d3d096cf-d908-4bb5-96eb-46e6f7310aad</videoId>
+:::video id=d3d096cf-d908-4bb5-96eb-46e6f7310aad:::
 
 Dans ce chapitre, nous explorerons les différences et parallèles entre les périodes d'hyperinflation passées et contemporaines, agrémentés d'anecdotes et de comparaisons pertinentes pour aujourd'hui.
 
@@ -833,7 +833,7 @@ Aujourd'hui, face à la baisse du pouvoir d'épargne, l'investissement prend le 
 <chapterId>918eafd7-409d-5205-ad52-a52e63b23a64</chapterId>
 
 ![Video](https://youtu.be/MnAFWQKdYAM)
-<videoId>e7eaeb32-5701-4cd6-843c-f183166639a4</videoId>
+:::video id=e7eaeb32-5701-4cd6-843c-f183166639a4:::
 
 Nous allons regarder ensemble différentes périodes de rédénomination dans des pays d'Amérique latine.
 
@@ -949,7 +949,7 @@ En conclusion, l'hyperinflation n'est qu'un aspect des défis économiques. La h
 <chapterId>e3484a31-a851-5f92-8af5-00eddae67db1</chapterId>
 
 ![video](https://youtu.be/o7Gz8q_PfoE)
-<videoId>0ce8b8db-2999-4397-8eac-0d7d7ee0b1cc</videoId>
+:::video id=0ce8b8db-2999-4397-8eac-0d7d7ee0b1cc:::
 
 ### Comment mettre fin à l’inflation modérée et la haute inflation
 
@@ -1004,7 +1004,7 @@ L'essentiel à retenir est que pour sortir de l'hyperinflation, il existe plusie
 <chapterId>f3ffbb47-3aeb-54bd-80a9-adccb0f419e2</chapterId>
 
 ![video](https://youtu.be/h1uwR3Yge1M)
-<videoId>bf5d4730-3913-4a41-ab55-aede6495397f</videoId>
+:::video id=bf5d4730-3913-4a41-ab55-aede6495397f:::
 
 Le lien vers la collection scannée est disponible dans le Bitcoin Educational Toolkit, accessible depuis la section Ressources de la plateforme.
 
@@ -1017,7 +1017,7 @@ Le lien vers la collection scannée est disponible dans le Bitcoin Educational T
 <chapterId>0455ffe3-9d45-5a67-ac96-3f815dc507a1</chapterId>
 
 ![video](https://youtu.be/cEon5lVtKZE)
-<videoId>3e8223c0-3b72-460e-a97d-2fbd393235af</videoId>
+:::video id=3e8223c0-3b72-460e-a97d-2fbd393235af:::
 
 Transcripte:
 

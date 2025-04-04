@@ -71,7 +71,7 @@ See on klassiruumi harjutus, nii et kui võtate seda kursust ise, ei saa te seda
 Harjutus algab pärast BBC tutvustuse "Kuidas Bitcoin ja plokiahel töötavad" vaatamist.
 
 ![how bitcoin and the blockchain works](https://youtu.be/mhE_vvwAiRc)
-<videoId>da8f8092-bd84-4287-87db-4c6d53763e5e</videoId>
+:::video id=da8f8092-bd84-4287-87db-4c6d53763e5e:::
 
 Selles harjutuses on vaja vähemalt üheksa inimese osalemist. Harjutuse eesmärk on füüsiliselt saada ettekujutus sellest, kuidas Bitcoin töötab. Iga võrgus osaleja rolli mängides saate interaktiivse ja lõbusa õppimiskogemuse. See harjutus ei hõlma Lightning Network'i.
 
@@ -653,7 +653,7 @@ Sellel kursusel puudutame seemnefraasi hoidmist riistvaralises rahakotis. Juhend
 Selles näites kasutame BTCPay Serveri hoidlat ja Blockstream Jade riistvaralist rahakotti.
 Samuti võite jälgida videojuhendit riistvaralise rahakoti ühendamise kohta.
 ![BTCPay Server - Kuidas ühendada oma riistvaralist rahakotti BTCPay hoidlaga.](https://youtu.be/s4qbGxef43A)
-<videoId>18ad7ba9-1849-4d28-8071-77a09a3295f2</videoId>
+:::video id=18ad7ba9-1849-4d28-8071-77a09a3295f2:::
 
 Laadige alla BTCPay Serveri hoidla: https://github.com/btcpayserver/BTCPayServer.Vault/releases
 

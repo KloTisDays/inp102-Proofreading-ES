@@ -79,7 +79,7 @@ Tämän kurssin kirjallinen versio laadittiin käyttäen kahta päälähdettä:
 <chapterId>f52f8af5-5d7c-588b-b56d-99b97176204b</chapterId>
 
 ![video](https://youtu.be/AF2XbifPGXM)
-<videoId>64c7692c-983d-4e4a-9744-5cc7d87c70f1</videoId>
+:::video id=64c7692c-983d-4e4a-9744-5cc7d87c70f1:::
 
 RGB on protokolla, joka on suunniteltu digitaalisten oikeuksien (sopimusten ja omaisuuden muodossa) soveltamiseen ja täytäntöönpanoon skaalautuvalla ja luottamuksellisella tavalla Bitcoin-lohkoketjun konsensussääntöjen ja toimintojen perusteella. Tämän ensimmäisen luvun tavoitteena on esitellä RGB-protokollaan liittyviä peruskäsitteitä ja terminologiaa ja korostaa erityisesti sen läheisiä yhteyksiä hajautetun tietojenkäsittelyn peruskäsitteisiin, kuten asiakaspuolen validointiin ja kertakäyttöisiin sinetteihin.
 
@@ -424,7 +424,7 @@ Ennen kuin sukellat toisen luvun teknisempiin yksityiskohtiin, lue uudelleen kes
 <chapterId>cc2fe85a-9cc7-5b8c-a00a-c0a867241061</chapterId>
 
 ![video](https://youtu.be/FS6PDprWl5Q)
-<videoId>7b14e637-3ca8-498f-8498-503005cb91b0</videoId>
+:::video id=7b14e637-3ca8-498f-8498-503005cb91b0:::
 
 Tässä luvussa tarkastelemme asiakaspuolen validoinnin ja kertakäyttöisten sinettien toteuttamista Bitcoin-lohkoketjussa. Esittelemme RGB:n **sitoumuskerroksen** (kerros 1) pääperiaatteet ja keskitymme erityisesti **TxO2**-järjestelmään, jota RGB käyttää sinetin määrittelemiseen ja sulkemiseen Bitcoin-transaktiossa. Seuraavaksi käsittelemme kahta tärkeää seikkaa, joita ei ole vielä käsitelty yksityiskohtaisesti:
 
@@ -1013,7 +1013,7 @@ Seuraavassa luvussa tarkastelemme RGB:n puhtaasti ketjun ulkopuolista komponentt
 <chapterId>04a9569f-3563-5382-bf53-0c7069343ba0</chapterId>
 
 ![video](https://youtu.be/tmAVdyXGmj4)
-<videoId>be292911-b669-4d5d-b992-115f8cc9863d</videoId>
+:::video id=be292911-b669-4d5d-b992-115f8cc9863d:::
 
 Tässä ja seuraavassa luvussa tarkastelemme **älykkään sopimuksen** käsitettä RGB-ympäristössä ja tutkimme eri tapoja, joilla nämä sopimukset voivat määritellä ja kehittää *tilaansa*. Näemme, miksi RGB-arkkitehtuuri, jossa käytetään kertakäyttöisten sinettien järjestettyä järjestystä, mahdollistaa erityyppisten ***Sopimusoperaatioiden*** suorittamisen skaalautuvalla tavalla ja ilman keskitettyä rekisteriä. Tarkastelemme myös ***liiketoimintalogiikan*** perustavaa laatua olevaa roolia sopimustilan kehityksen kehystämisessä.
 
@@ -1106,7 +1106,7 @@ Seuraavassa luvussa käsittelemme yksityiskohtaisemmin näiden ***tilojen*** ja 
 <chapterId>78c44e88-50c4-5ec4-befe-456c1a9f080b</chapterId>
 
 ![video](https://youtu.be/lUTjeuM0oTA)
-<videoId>fa2a44f7-dac8-4a71-8aa9-567e4e6f970c</videoId>
+:::video id=fa2a44f7-dac8-4a71-8aa9-567e4e6f970c:::
 
 Tässä luvussa tarkastelemme, miten älykkäiden sopimusten operaatiot ja tilasiirtymät toimivat RGB-protokollassa. Tavoitteena on myös ymmärtää, miten useat osallistujat tekevät yhteistyötä omaisuuserän omistusoikeuden siirtämiseksi.
 
@@ -1930,7 +1930,7 @@ Todistajatransaktio on Bitcoin-transaktio, joka sulkee kertakäyttöisen sinetin
 <chapterId>8333ea5f-51c7-5dd5-b1d7-47d491e58e51</chapterId>
 
 ![video](https://youtu.be/Uo1UoxiImsI)
-<videoId>bc012288-ecbe-44f2-90f0-64b78733af25</videoId>
+:::video id=bc012288-ecbe-44f2-90f0-64b78733af25:::
 
 Tässä luvussa tarkastelemme tarkemmin, miten RGB-sopimus määritellään ja toteutetaan. Näemme, mitkä ovat RGB-sopimuksen komponentit, mitkä ovat niiden roolit ja miten ne rakennetaan.
 
@@ -2619,7 +2619,7 @@ Seuraavassa luvussa tarkastellaan, miten sopimuksen siirto toimii ja miten RGB-l
 <chapterId>f043a307-d420-5752-b0d7-ebfd845802c0</chapterId>
 
 ![video](https://youtu.be/sVoKIi-1XbY)
-<videoId>e8043aff-1cb4-4e85-8576-b8745bae01a1</videoId>
+:::video id=e8043aff-1cb4-4e85-8576-b8745bae01a1:::
 
 Tässä luvussa analysoimme sopimuksen siirtoprosessia RGB-ekosysteemissä. Tätä havainnollistetaan tarkastelemalla Alicea ja Bobia, tavallisia päähenkilöitämme, jotka haluavat vaihtaa RGB-varoja. Näytämme myös joitakin komentoesimerkkejä `rgb`-komentorivityökalusta, jotta näemme, miten se toimii käytännössä.
 
@@ -2914,7 +2914,7 @@ Nyt kun olemme tarkastelleet RGB-ohjelmoinnin tärkeimpiä elementtejä, käyn s
 <chapterId>0e0a645c-0049-588d-8965-b8c536590cc9</chapterId>
 
 ![video](https://youtu.be/GRwS-NvWF3I)
-<videoId>76080e68-faa2-473f-b69e-1c543c268457</videoId>
+:::video id=76080e68-faa2-473f-b69e-1c543c268457:::
 
 Tässä luvussa lähestymme sopimuksen kirjoittamista askel askeleelta käyttäen komentorivityökalua `rgb`. Tarkoituksena on näyttää, miten CLI asennetaan ja miten sitä käsitellään, käännetään **Skeema**, tuodaan **Käyttöliittymä** ja **Käyttöliittymän toteutus** ja sitten annetaan (*annetaan*) omaisuuserä. Tarkastelemme myös taustalla olevaa logiikkaa, mukaan lukien kääntäminen ja tilan validointi. Tämän luvun lopussa sinun pitäisi pystyä toistamaan prosessi ja luomaan omat RGB-sopimuksesi.
 
@@ -3214,7 +3214,7 @@ Seuraavassa luvussa tarkastelemme tarkemmin RGB:n integroimista Lightning-verkko
 <chapterId>0962980a-8f94-5d0f-9cd0-43d7f884a01d</chapterId>
 
 ![video](https://youtu.be/mqCupTlDbA0)
-<videoId>51d07a09-941d-43fe-9e24-6934382d7661</videoId>
+:::video id=51d07a09-941d-43fe-9e24-6934382d7661:::
 
 Tässä luvussa ehdotan, että tarkastelen, miten RGB:tä voidaan käyttää Lightning-verkossa RGB-varojen (tokenit, NFT:t jne.) integroimiseksi ja siirtämiseksi ketjun ulkopuolisten maksukanavien kautta.
 
@@ -3370,7 +3370,7 @@ Avoimen lähdekoodin deterministiseen kehitykseen liittyvä ekosysteemi.
 <chapterId>dc92a5e8-ed93-5a3f-bcd0-d433932842f4</chapterId>
 
 ![video](https://youtu.be/nbUtV8GOR_U)
-<videoId>bd9db370-1e28-4ed2-b8ef-3fbf7707b216</videoId>
+:::video id=bd9db370-1e28-4ed2-b8ef-3fbf7707b216:::
 
 Tämä kurssin viimeinen osio perustuu eri puhujien RGB-bootcampissa pitämiin esityksiin. Siihen sisältyy todistuksia ja pohdintoja RGB:stä ja sen ekosysteemistä sekä esityksiä protokollaan perustuvista työkaluista ja projekteista. Tämän ensimmäisen luvun moderoi Hunter Beast ja kaksi seuraavaa Frederico Tenga.
 
@@ -3437,7 +3437,7 @@ Koko prosessi osoittaa, miten RGB-ekosysteemi voidaan ottaa käyttöön ja saatt
 <chapterId>d4d80e07-5eac-5b29-a93a-123180e97047</chapterId>
 
 ![vidéo](https://youtu.be/5iAhsgCSL3U)
-<videoId>1616639a-5447-4e77-b308-9369bd89961b</videoId>
+:::video id=1616639a-5447-4e77-b308-9369bd89961b:::
 
 Tässä luvussa, joka perustuu Frederico Tengan esitykseen, tarkastelemme Bitfinexin tiimin luomia työkaluja ja hankkeita, jotka on omistettu RGB:lle ja joiden tarkoituksena on edistää rikkaan ja monipuolisen ekosysteemin syntymistä tämän protokollan ympärille. Tiimin alkuperäisenä tavoitteena ei ole julkaista tiettyä kaupallista tuotetta, vaan pikemminkin tarjota ohjelmistojen rakennuspalikoita, edistää itse RGB-protokollaa ja ehdottaa konkreettisia toteutusvaihtoehtoja, kuten mobiililompakkoa (*Iris Wallet*) tai RGB-yhteensopivaa Lightning-solmua.
 
@@ -3552,7 +3552,7 @@ Seuraavassa luvussa tarkastelemme tarkemmin RGB Lightning -solmun käynnistämis
 <chapterId>ecaabe32-20ba-5f8c-8ca1-a3f095792958</chapterId>
 
 ![vidéo](https://youtu.be/piQQH4Q2nr0)
-<videoId>01467b5b-e3e3-4370-813d-c52fddaad42d</videoId>
+:::video id=01467b5b-e3e3-4370-813d-c52fddaad42d:::
 
 Tässä viimeisessä luvussa Frederico Tenga opastaa sinua vaihe vaiheelta Lightning RGB -solmun perustamisessa Regtest-ympäristöön ja näyttää, miten RGB-tunnuksia luodaan siihen. Käynnistämällä kaksi erillistä solmua saat myös selville, miten voit avata Lightning-kanavan niiden välille ja vaihtaa RGB-varoja.
 

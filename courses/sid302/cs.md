@@ -41,7 +41,7 @@ Tato cesta je strukturována tak, aby vyhovovala účastníkům s různou úrovn
 <chapterId>4bca9c70-d54d-4e9a-b2db-17c3a6fa655b</chapterId>
 
 ![Video](https://youtu.be/QCyWXVWkcAM)
-<videoId>3cc7ea99-b139-44e0-b7b9-2753bdf766e5</videoId>
+:::video id=3cc7ea99-b139-44e0-b7b9-2753bdf766e5:::
 
 Pablo představuje architekturu sítě Liquid Network a zdůrazňuje její roli federativního sidechainu k Bitcoinu. Věnuje se klíčovým vlastnostem, jako jsou důvěrné transakce, model federace a její funkce jako pískoviště pro inovace. Účastníci získají přehled o tom, jak Liquid doplňuje Bitcoin tím, že nabízí rychlejší a soukromější transakce.
 
@@ -50,7 +50,7 @@ Pablo představuje architekturu sítě Liquid Network a zdůrazňuje její roli 
 <chapterId>1e9cfbed-108e-4067-afb9-4cf950cb43d3</chapterId>
 
 ![Video](https://youtu.be/9Yu0dPAJSek)
-<videoId>8c92a54a-2221-4b80-bad7-90aa1bdb180c</videoId>
+:::video id=8c92a54a-2221-4b80-bad7-90aa1bdb180c:::
 
 James představuje software Elements a jeho integraci se sítí Liquid Network. Tato část obsahuje praktického průvodce spuštěním uzlu Liquid, lokální konfigurací systému Elements a správou transakcí pomocí příkazů CLI a RPC.
 
@@ -59,7 +59,7 @@ James představuje software Elements a jeho integraci se sítí Liquid Network. 
 <chapterId>3ff2df4a-8995-4d5e-9b8a-cd114880e666</chapterId>
 
 ![Video](https://youtu.be/zFvv0bn4ZWY)
-<videoId>3c4dc753-80d3-4ef9-b3bd-bb36f2f83376</videoId>
+:::video id=3c4dc753-80d3-4ef9-b3bd-bb36f2f83376:::
 
 Michael se zabývá tím, jak vícevrstvé technologie, včetně Liquidu, Lightningu a Bitcoinu, zvyšují efektivitu a spolehlivost transakcí. Mezi klíčová témata patří HTLC pro bezpečné transakce napříč vrstvami a pokročilé skriptovací funkce, které optimalizují ekosystém Bitcoinu.
 
@@ -68,7 +68,7 @@ Michael se zabývá tím, jak vícevrstvé technologie, včetně Liquidu, Lightn
 <chapterId>1968db03-2364-46c0-9670-9e9844289ca1</chapterId>
 
 ![Video](https://youtu.be/6wNeHQBlhA4)
-<videoId>194a21d9-c695-4c23-96cc-805dbf65ac27</videoId>
+:::video id=194a21d9-c695-4c23-96cc-805dbf65ac27:::
 
 Bozza se zabývá federativní strukturou sítě Liquid Network a jejími technickými prvky. Témata zahrnují inovace testované v síti Liquid, jako jsou podpisy Schnorr a skriptování Simplicity, a kompromisy spojené s používáním řešení druhé vrstvy.
 
@@ -77,7 +77,7 @@ Bozza se zabývá federativní strukturou sítě Liquid Network a jejími techni
 <chapterId>5f4c0e50-b435-4b6c-b8b7-c55cc1a35431</chapterId>
 
 ![Video](https://youtu.be/IAdOxZyx7-Y)
-<videoId>e0b0519f-a72a-4b28-b171-ed7cd7b50c34</videoId>
+:::video id=e0b0519f-a72a-4b28-b171-ed7cd7b50c34:::
 
 Chase upozorňuje na ekosystém Liquid a jeho využití na kapitálových trzích. Hovoří o tokenizaci, komunitních zdrojích a nástrojích jako Sid Swap a Stokr pro správu aktiv, jakož i o rostoucím využití Liquidu v podnikatelském prostředí.
 
@@ -86,7 +86,7 @@ Chase upozorňuje na ekosystém Liquid a jeho využití na kapitálových trzíc
 <chapterId>4f21a0a7-0dc0-44cf-8a3a-d9e2f8a3f05f</chapterId>
 
 ![Video](https://youtu.be/AnMiD9amSUg)
-<videoId>a4d85d98-1136-4a9d-95e0-8a460e04e83c</videoId>
+:::video id=a4d85d98-1136-4a9d-95e0-8a460e04e83c:::
 
 Nardo poskytuje přehled o Blockstream AMP, platformě pro správu digitálních aktiv na platformě Liquid. Zkoumá architekturu AMP, její schopnost řídit převody aktiv a její praktické využití pro vývojáře. Upozorňuje také na výzvy a budoucí vylepšení AMP.
 
@@ -101,7 +101,7 @@ Nardo poskytuje přehled o Blockstream AMP, platformě pro správu digitálních
 <chapterId>fb77442c-3d1e-427e-b2f5-16668ce4c643</chapterId>
 
 ![Video](https://youtu.be/ucc3a-udbgo)
-<videoId>4df51e5a-e95b-4bad-875f-1a1e147b2772</videoId>
+:::video id=4df51e5a-e95b-4bad-875f-1a1e147b2772:::
 
 Antonio představuje Breeze, open-source SDK určené pro decentralizované transakce v síti Liquid Network. Věnuje se jeho funkcím, včetně podpory vícejazyčných vazeb a bezpečných transakčních procesů, a zároveň zdůrazňuje jeho cíl zjednodušit finanční technologie pro vývojáře
 

@@ -153,7 +153,7 @@ Adam Gibson analisa os vários componentes de um nó Bitcoin. O capítulo se con
 <chapterId>5ed314b1-8293-567d-bf03-730e8c9c774b</chapterId>
 
 ![video](https://youtu.be/okvV9hqDOtM)
-<videoId>88a6150b-e84e-4eb6-be43-6ae275c8d904</videoId>
+:::video id=88a6150b-e84e-4eb6-be43-6ae275c8d904:::
 
 Alekos Filini apresenta uma análise detalhada das estruturas de dados do Bitcoin. Isso abrange a organização dos dados dentro do blockchain e como isso permite a robustez e eficiência da rede.
 ## Pilha de Software Bitcoin L1

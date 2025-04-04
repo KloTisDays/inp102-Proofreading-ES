@@ -485,7 +485,7 @@ Cuando la moneda pierde rápidamente su valor, incluso las transacciones más si
 > Zimbabwe: "También se permitía a los encargados de las tiendas contratar a un trabajador ocasional para reemplazar al miembro del personal que contaba dinero todo el día. Por supuesto, contar el dinero en la tienda para la administración y el depósito en el banco era una cosa, pero todo el proceso tenía que repetirse en el banco al hacer el depósito".
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
-<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
+:::video id=363ad60c-f515-45ec-b3e3-b5ebb72ecd13:::
 
 Técnica de conteo de dinero de Uzbekistán
 

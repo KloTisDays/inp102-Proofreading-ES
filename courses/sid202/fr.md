@@ -29,7 +29,7 @@ Rejoignez-nous pour améliorer vos compétences, libérer le plein potentiel de 
 <chapterId>a721398e-7040-4edd-be53-b485ea759fa9</chapterId>
 
 ![Video](https://youtu.be/gkQfnwYLyI0?si=H6cIPhgZaSAwHaHI)
-<videoId>1c25ec38-980b-4b97-ad86-ae8c86779eb7</videoId>
+:::video id=1c25ec38-980b-4b97-ad86-ae8c86779eb7:::
 
 L'objectif de l'Académie Elements est de présenter et d'expliquer les concepts clés d'Elements, la plateforme open-source sur laquelle Liquid est construit. À la fin du cours, vous devriez avoir une bonne compréhension des principales caractéristiques d'Elements, telles que les transactions confidentielles et les actifs émis, ainsi que des processus impliqués dans le fonctionnement d'Elements Core.
 
@@ -42,7 +42,7 @@ Toute question, demande d'information complémentaire ou interrogation sur les r
 <chapterId>7a7f2712-5300-4a6d-b1ed-05eab731bc35</chapterId>
 
 ![Video](https://youtu.be/ns-JLGdkNig?si=fmWye_boRSvVF1Bt)
-<videoId>f5ea023e-0e0f-41bb-a0b2-1b391907f956</videoId>
+:::video id=f5ea023e-0e0f-41bb-a0b2-1b391907f956:::
 
 Elements est une plateforme blockchain open source, compatible avec la sidechain, qui donne accès à de puissantes fonctionnalités développées par les membres de la communauté, telles que les transactions confidentielles et les actifs émis.
 
@@ -85,7 +85,7 @@ Elements ajoute toutes ces fonctionnalités à la base de code Bitcoin Core, ét
 <chapterId>05d88877-58b0-455b-9ae6-a72d19070525</chapterId>
 
 ![Video](https://youtu.be/v0lzmfH81AY?si=V-xDWfmDLKyBcdPs)
-<videoId>61b78765-4917-4aa4-b436-394a37a1092a</videoId>
+:::video id=61b78765-4917-4aa4-b436-394a37a1092a:::
 
 Elements apporte une solution technique aux problèmes auxquels les utilisateurs de la blockchain sont confrontés quotidiennement : latence des transactions, manque de confidentialité et risque de fongibilité.
 
@@ -147,7 +147,7 @@ Afin de transférer des actifs vers la chaîne principale, un utilisateur effect
 <chapterId>cc806e5a-81ab-457b-9531-9f863120a019</chapterId>
 
 ![Video](https://youtu.be/Frr_OjTEPAM?si=iq5XonJyQk8S5OAu)
-<videoId>94babb5e-f64c-4a6c-bf28-38832c0ceacf</videoId>
+:::video id=94babb5e-f64c-4a6c-bf28-38832c0ceacf:::
 
 Comme Elements est basé sur la base de code de Bitcoin, les éléments qui constituent un réseau fonctionnel sont très similaires.
 
@@ -229,7 +229,7 @@ Cela nous permettra d'effectuer toutes sortes d'opérations telles que la transa
 <chapterId>263b1c5b-59ed-49e7-b811-95c354f41eae</chapterId>
 
 ![Video](https://youtu.be/-by2xBtXQeE?si=7bLo_geGn3qh7MXN)
-<videoId>e2f80756-fffd-4de5-b61c-1583cf81da68</videoId>
+:::video id=e2f80756-fffd-4de5-b61c-1583cf81da68:::
 
 Dans cette section, vous apprendrez à utiliser la fonction Transactions confidentielles d'Elements.
 
@@ -342,7 +342,7 @@ C'est tout pour cette leçon ; bonne chance pour le quiz et à la prochaine !
 <chapterId>c33c7020-5975-457a-99db-4f8b90d1fa1c</chapterId>
 
 ![Video](https://youtu.be/XnY4WZUNSs4?si=dG8I5OoSh_0EBdvL)
-<videoId>8a7835e6-45ee-461a-ae0f-4fd0bc73921f</videoId>
+:::video id=8a7835e6-45ee-461a-ae0f-4fd0bc73921f:::
 
 Dans cette section, vous apprendrez à utiliser la fonction "Issued Assets" d'Elements.
 
@@ -522,7 +522,7 @@ Dans cette section, nous avons vu comment émettre et étiqueter des actifs. Dan
 <chapterId>78751b21-1dc8-4877-a406-e71bc80a95b0</chapterId>
 
 ![Video](https://youtu.be/5em79YHtYk0?si=rhponm6Hw9AB6RJp)
-<videoId>4d705c1c-d2c7-4847-9b03-91f348b135c2</videoId>
+:::video id=4d705c1c-d2c7-4847-9b03-91f348b135c2:::
 
 Dans cette section, vous apprendrez comment émettre davantage d'un actif déjà émis et comment détruire une quantité donnée d'un actif émis.
 
@@ -671,7 +671,7 @@ Dans cette section, nous avons vu comment émettre un actif et comment utiliser 
 <chapterId>c47b217e-db14-4843-a66f-3e5f3a00a808</chapterId>
 
 ![Video](https://youtu.be/kxWX91fCnus?si=KItm_Am3_RrBcLBN)
-<videoId>90765b4b-cbe6-476a-9d3f-4bb9442a530e</videoId>
+:::video id=90765b4b-cbe6-476a-9d3f-4bb9442a530e:::
 
 Elements prend en charge un modèle de signature fédérée qui vous permet de spécifier le nombre de membres de la fédération forte qui doivent signer un bloc proposé afin de produire un bloc valide.
 
@@ -831,7 +831,7 @@ Une fois qu'un nombre seuil de signataires a signé le bloc proposé, celui-ci e
 <chapterId>432d7a65-255f-44a3-8b38-78508202cb37</chapterId>
 
 ![Video](https://youtu.be/egYzj4N8CB8?si=v7_-IXsjHPE-ARDe)
-<videoId>9c83d3a8-55f1-462f-84c3-160db2a72a83</videoId>
+:::video id=9c83d3a8-55f1-462f-84c3-160db2a72a83:::
 
 Elements est une plateforme blockchain open-source à usage général qui peut également être "rattachée" à une blockchain existante, telle que Bitcoin. Lorsqu'il est rattaché à une autre blockchain, on dit qu'Elements fonctionne comme une "sidechain". Les sidechains permettent le transfert bidirectionnel d'actifs d'une chaîne à l'autre. La mise en œuvre d'Elements en tant que sidechain vous permet de contourner certaines des limites inhérentes à la chaîne principale, tout en conservant un bon niveau de sécurité fourni par les actifs sécurisés sur la chaîne principale.
 
@@ -1035,7 +1035,7 @@ Un peg-out se produit lorsqu'un nœud Elements appelle la commande `sendtomainch
 <chapterId>50dff39b-2702-47d7-9c15-0b54b845e99f</chapterId>
 
 ![Video](https://youtu.be/u-3rV7DGtD0?si=G1__H0Uelf4sTUDM)
-<videoId>ce88c76b-1707-4fc0-9082-b875822fb742</videoId>
+:::video id=ce88c76b-1707-4fc0-9082-b875822fb742:::
 
 Jusqu'à présent, nous avons vu comment faire fonctionner Elements en tant que sidechain. Cependant, il peut également fonctionner comme une solution blockchain autonome avec son propre actif natif par défaut. Dans cette configuration, une blockchain Elements conserve toutes les caractéristiques d'une implémentation sidechain, telles que les transactions confidentielles et les actifs émis, mais n'a pas besoin de peg-in ou peg-out pour ajouter ou supprimer des montants d'actifs par défaut de la circulation.
 
@@ -1222,7 +1222,7 @@ En utilisant les paramètres ci-dessus, vous pouvez faire fonctionner Elements c
 <chapterId>7e2c916d-8114-424c-97f5-cbff9d73b8e3</chapterId>
 
 ![Video](https://youtu.be/CTMdamTZBBM?si=16LBcXvN4pBfC7lr)
-<videoId>3bdc6c60-49eb-4e9a-921f-e554c67cd797</videoId>
+:::video id=3bdc6c60-49eb-4e9a-921f-e554c67cd797:::
 
 Dans ce cours, nous avons appris qu'Elements est un protocole de réseau open-source qui peut être mis en œuvre en tant que sidechain d'une autre blockchain, ou en tant que solution blockchain autonome.
 

@@ -41,7 +41,7 @@ See reis on üles ehitatud nii, et see sobiks erineva tasemega osalejatele, pakk
 <chapterId>4bca9c70-d54d-4e9a-b2db-17c3a6fa655b</chapterId>
 
 ![Video](https://youtu.be/QCyWXVWkcAM)
-<videoId>3cc7ea99-b139-44e0-b7b9-2753bdf766e5</videoId>
+:::video id=3cc7ea99-b139-44e0-b7b9-2753bdf766e5:::
 
 Pablo tutvustab Liquid Networki arhitektuuri, rõhutades selle rolli Bitcoini kõrvalahela föderatsioonina. Käsitletakse selliseid põhiomadusi nagu konfidentsiaalsed tehingud, föderatsioonimudel ja selle funktsioon uuenduste liivakastina. Osalejad saavad ülevaate sellest, kuidas Liquid täiendab Bitcoini, pakkudes kiiremaid ja privaatsemaid tehinguid.
 
@@ -50,7 +50,7 @@ Pablo tutvustab Liquid Networki arhitektuuri, rõhutades selle rolli Bitcoini k�
 <chapterId>1e9cfbed-108e-4067-afb9-4cf950cb43d3</chapterId>
 
 ![Video](https://youtu.be/9Yu0dPAJSek)
-<videoId>8c92a54a-2221-4b80-bad7-90aa1bdb180c</videoId>
+:::video id=8c92a54a-2221-4b80-bad7-90aa1bdb180c:::
 
 James tutvustab Elements tarkvara ja selle integreerimist Liquid Networkiga. See sessioon sisaldab praktilist juhendit Liquid-sõlme käivitamiseks, Elements'i lokaalseks konfigureerimiseks ja tehingute haldamiseks CLI ja RPC käskude abil.
 
@@ -59,7 +59,7 @@ James tutvustab Elements tarkvara ja selle integreerimist Liquid Networkiga. See
 <chapterId>3ff2df4a-8995-4d5e-9b8a-cd114880e666</chapterId>
 
 ![Video](https://youtu.be/zFvv0bn4ZWY)
-<videoId>3c4dc753-80d3-4ef9-b3bd-bb36f2f83376</videoId>
+:::video id=3c4dc753-80d3-4ef9-b3bd-bb36f2f83376:::
 
 Michael arutab, kuidas mitmekihilised tehnoloogiad, sealhulgas Liquid, Lightning ja Bitcoin, parandavad tehingute tõhusust ja usaldusväärsust. Peamised teemad hõlmavad HTLC-d turvaliste kihtideüleste tehingute jaoks ja täiustatud skriptimisfunktsioone, mis optimeerivad Bitcoini ökosüsteemi.
 
@@ -68,7 +68,7 @@ Michael arutab, kuidas mitmekihilised tehnoloogiad, sealhulgas Liquid, Lightning
 <chapterId>1968db03-2364-46c0-9670-9e9844289ca1</chapterId>
 
 ![Video](https://youtu.be/6wNeHQBlhA4)
-<videoId>194a21d9-c695-4c23-96cc-805dbf65ac27</videoId>
+:::video id=194a21d9-c695-4c23-96cc-805dbf65ac27:::
 
 Bozza hõlmab Liquid Networki föderatiivset struktuuri ja selle tehnilisi komponente. Teemad hõlmavad Liquidis katsetatud uuendusi, nagu Schnorri allkirjad ja Simplicity scripting, ning teise kihi lahenduste kasutamisega seotud kompromissid.
 
@@ -77,7 +77,7 @@ Bozza hõlmab Liquid Networki föderatiivset struktuuri ja selle tehnilisi kompo
 <chapterId>5f4c0e50-b435-4b6c-b8b7-c55cc1a35431</chapterId>
 
 ![Video](https://youtu.be/IAdOxZyx7-Y)
-<videoId>e0b0519f-a72a-4b28-b171-ed7cd7b50c34</videoId>
+:::video id=e0b0519f-a72a-4b28-b171-ed7cd7b50c34:::
 
 Chase toob esile Liquid'i ökosüsteemi ja selle rakendused kapitaliturgudel. Ta arutab tokeniseerimist, kogukonna ressursse ja selliseid vahendeid nagu Sid Swap ja Stokr varahalduse jaoks, samuti Liquid'i kasvavat kasutuselevõttu ärikeskkondades.
 
@@ -86,7 +86,7 @@ Chase toob esile Liquid'i ökosüsteemi ja selle rakendused kapitaliturgudel. Ta
 <chapterId>4f21a0a7-0dc0-44cf-8a3a-d9e2f8a3f05f</chapterId>
 
 ![Video](https://youtu.be/AnMiD9amSUg)
-<videoId>a4d85d98-1136-4a9d-95e0-8a460e04e83c</videoId>
+:::video id=a4d85d98-1136-4a9d-95e0-8a460e04e83c:::
 
 Nardo annab ülevaate Blockstream AMP, platvormi digitaalse vara haldamiseks Liquid. Ta uurib AMP arhitektuuri, selle võimet kontrollida varade ülekandeid ja selle praktilisi rakendusi arendajatele. Samuti tuuakse esile AMP väljakutseid ja tulevasi täiustusi.
 
@@ -101,7 +101,7 @@ Nardo annab ülevaate Blockstream AMP, platvormi digitaalse vara haldamiseks Liq
 <chapterId>fb77442c-3d1e-427e-b2f5-16668ce4c643</chapterId>
 
 ![Video](https://youtu.be/ucc3a-udbgo)
-<videoId>4df51e5a-e95b-4bad-875f-1a1e147b2772</videoId>
+:::video id=4df51e5a-e95b-4bad-875f-1a1e147b2772:::
 
 Antonio tutvustab Breeze'i, avatud lähtekoodiga SDK-d, mis on mõeldud detsentraliseeritud tehingute tegemiseks Liquid Networkis. Ta käsitleb selle funktsioone, sealhulgas toetust mitmekeelsetele sidumistele ja turvalistele tehinguprotsessidele, rõhutades samas selle eesmärki lihtsustada finantstehnoloogiat arendajate jaoks
 

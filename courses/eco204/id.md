@@ -504,7 +504,7 @@ Ketika mata uang cepat kehilangan nilainya, bahkan transaksi paling sederhana pu
 > Zimbabwe: "Manajer toko juga diizinkan untuk mempekerjakan pekerja sementara untuk menggantikan anggota staf yang menghitung uang sepanjang hari. Tentu saja, menghitung uang di toko untuk administrasi dan setoran bank adalah satu hal, tetapi seluruh proses harus diulang di bank selama setoran."
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
-<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
+:::video id=363ad60c-f515-45ec-b3e3-b5ebb72ecd13:::
 
 Teknik menghitung uang dari Uzbekistan
 

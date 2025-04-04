@@ -505,7 +505,7 @@ Når valuta raskt mister sin verdi, kan selv de enkleste transaksjonene bli arbe
 > Zimbabwe: "Butikksjefer fikk også lov til å ansette en midlertidig arbeider for å erstatte den ansatte som telte penger hele dagen. Selvfølgelig, å telle penger i butikken for administrasjon og bankinnskudd var én ting, men hele prosessen måtte gjentas i banken under innskuddet."
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
-<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
+:::video id=363ad60c-f515-45ec-b3e3-b5ebb72ecd13:::
 
 Teknikk for pengeregning fra Usbekistan
 

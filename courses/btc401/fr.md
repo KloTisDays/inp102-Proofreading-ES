@@ -154,7 +154,7 @@ Adam Gibson décrit les différents composants d'un nœud Bitcoin. Le chapitre s
 <chapterId>5ed314b1-8293-567d-bf03-730e8c9c774b</chapterId>
 
 ![video](https://youtu.be/okvV9hqDOtM)
-<videoId>88a6150b-e84e-4eb6-be43-6ae275c8d904</videoId>
+:::video id=88a6150b-e84e-4eb6-be43-6ae275c8d904:::
 
 Alekos Filini présente un aperçu approfondi des structures de données de Bitcoin. Cela couvre l'organisation des données au sein de la blockchain et comment cela permet la robustesse et l'efficacité du réseau.
 

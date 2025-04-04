@@ -505,7 +505,7 @@ Když měna rychle ztrácí svou hodnotu, i ty nejjednodušší transakce se moh
 > Zimbabwe: "Manažeři obchodů také mohli najmout dočasného pracovníka, který nahradil zaměstnance, který celý den počítal peníze. Samozřejmě, počítání peněz v obchodě pro účely správy a vkladu do banky bylo jedna věc, ale celý proces musel být opakován v bance během vkladu."
 
 ![video](https://www.youtube.com/watch?v=OMwkb5rpm_w&t=20s)
-<videoId>363ad60c-f515-45ec-b3e3-b5ebb72ecd13</videoId>
+:::video id=363ad60c-f515-45ec-b3e3-b5ebb72ecd13:::
 
 Technika počítání peněz z Uzbekistánu
 
