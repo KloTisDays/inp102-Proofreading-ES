@@ -1,0 +1,9 @@
+question: "curl -X POST /issueassetnia" RLN पर क्या कर सकता है?
+answer: एक नया फंजिबल, नॉन-इन्फ्लेशनरी RGB एसेट बनाएं
+wrong_answers:
+  - एक नया नॉन-फंजिबल RGB एसेट बनाएं
+  - एक नया फंजिबल इन्फ्लेशनरी RGB एसेट बनाएं
+  - एक नया सेमी-फंगिबल RGB एसेट बनाएं
+explanation: |
+  "/issueassetnia" कमांड का इस्तेमाल एक नया RGB NIA ("नॉन-इन्फ्लेटेबल एसेट") टोकन जारी करने के लिए किया जाता है।
+reviewed: false

@@ -1,0 +1,11 @@
+question: Satoshi नाकामोतो ने Bitcoin व्हाइट पेपर में किस इलेक्ट्रॉनिक मनी कॉन्सेप्ट का स्पष्ट रूप से उल्लेख किया था?
+answer: बी-मनी (वेई डाई)  
+
+(Note: "b-money" is a term coined by Wei Dai, referring to an early conceptual proposal for an anonymous, distributed electronic cash system. The translation provided is a direct transliteration of the term and the name into Hindi, maintaining the original intent.)
+wrong_answers:
+  - बिट गोल्ड (निक स्जाबो)
+  - आरपीओडब्ल्यू (हाल फिन्नी)
+  - ई-कैश (डेविड चॉम)
+explanation: |
+  यह पहला संदर्भ था। इसे Satoshi ने अगस्त 2008 में वेई दाई के साथ अपने वार्तालाप के बाद जोड़ा था।
+reviewed: false

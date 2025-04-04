@@ -1,0 +1,18 @@
+question: The quote "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" in the first Bitcoin block is significant because it is the headline from The Times newspaper that was embedded in the genesis block (the very first block) of the Bitcoin blockchain by its creator, Satoshi Nakamoto. Here's why it's important:
+
+1. **Timestamp and Proof**: It serves as a timestamp, proving that the Bitcoin blockchain was created on or after January 3, 2009. This is crucial for establishing the blockchain's immutability and history.
+
+2. **Political Context**: The headline refers to the 2008-2009 financial crisis, where governments bailed out failing banks. Satoshi likely included this to highlight the flaws in the traditional financial system—centralization, trust in institutions, and reckless banking practices—which Bitcoin aimed to fix.
+
+3. **Bitcoin’s Purpose**: It symbolizes Bitcoin’s mission as an alternative, decentralized financial system that doesn’t rely on banks or government bailouts. The genesis block itself is sometimes called the "Block of Hope" in contrast to the failing system.
+
+4. **Hidden Message**: Some interpret it as Satoshi’s critique of centralized finance and a nod to Bitcoin’s role in enabling financial sovereignty.
+
+The inclusion of this real-world event ties Bitcoin’s creation directly to a pivotal moment in economic history, reinforcing its philosophy.
+answer: यह हमारी वित्तीय प्रणाली की नुकसान को सामाजिक बनाने की क्षमता को उजागर करता है।
+wrong_answers:
+  - यह Satoshi का द टाइम्स अखबार के लिए सराहना दर्शाता है
+  - यह एक बढ़िया उदाहरण देता है कि कैसे बेलआउट्स ने हमारे समाज को फायदा पहुँचाया है
+  - यह हमें Bitcoin की क्षमता दिखाता है कि वह Blockchain में मैसेज स्टोर कर सकता है।
+  This is a reference to a Times newspaper [article](https: //www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h) reflecting Satoshi’s
+reviewed: true

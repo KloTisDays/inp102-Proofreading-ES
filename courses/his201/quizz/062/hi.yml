@@ -1,0 +1,8 @@
+question: कोऑपरेटिव मेंबर का Hash रेट पार्शियल Proof of Work के जरिए एस्टीमेट करने में क्या शामिल होता है?
+answer: हैशर द्वारा नेटवर्क डिफिकल्टी से कम डिग्री वाले वर्क प्रूफ्स प्राप्त करना
+wrong_answers:
+  - हैशर द्वारा बनाए गए हर ब्लॉक Hash के पहले बाइट सहित स्टैम्प की छाप को पुनः प्राप्त करना
+  - हर महीने हैशर का बिजली का बिल निकालना
+  - कम कठिनाई वाले नेटवर्क पर बनाए गए काम के सबूतों को पुनः प्राप्त करना, जैसे कि BitDNS
+  This simple method was proposed by ribuck, Nils Schneider, and Gavin Andresen [on the forum](https: //bitcointalk.org/index.php?topic=1458.msg16951#msg16951) on October 14, 2010. ()
+reviewed: false

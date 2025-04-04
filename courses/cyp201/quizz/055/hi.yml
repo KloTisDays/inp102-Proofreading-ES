@@ -1,0 +1,8 @@
+question: HMAC-SHA512 फंक्शन के आउटपुट को seed पर लागू करने पर कितने भागों में बांटा जाता है?
+answer: 256 बिट के दो हिस्से
+wrong_answers:
+  - एक ही भाग 512 बिट्स का
+  - 170 बिट्स के तीन हिस्से
+  - 128 बिट के चार हिस्से
+  The output of HMAC-SHA512 is divided into two parts: the master private key (256 bits) and the master chain code (256 bits).
+reviewed: false

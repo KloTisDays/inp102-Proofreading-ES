@@ -1,0 +1,14 @@
+question: P2PK (Pay-to-Public-Key) और P2PKH (Pay-to-Public-Key-Hash) में मुख्य अंतर यह है:
+
+1. **P2PK** में सीधे public key पर पैसे भेजे जाते हैं, जबकि  
+2. **P2PKH** में public key का hash (RIPEMD160(SHA256(pubkey))) इस्तेमाल होता है।
+
+P2PKH ज्यादा सुरक्षित माना जाता है क्योंकि यह quantum computing attacks से बचाव करता है और आमतौर पर Bitcoin में इसी का इस्तेमाल होता है। P2PK आमतौर पर coinbase transactions में देखने को मिलता है।
+answer: P2PK सीधे raw public key का इस्तेमाल करता है, जबकि P2PKH public key के Hash का उपयोग करता है।
+wrong_answers:
+  - P2PK, SegWit के साथ कंपैटिबल है, जबकि P2PKH नहीं है।
+  - P2PK में Schnorr सिग्नेचर का इस्तेमाल होता है, जबकि P2PKH में ECDSA सिग्नेचर का इस्तेमाल होता है।
+  - P2PK मल्टीसिग्स के लिए है, जबकि P2PKH सिंपल स्क्रिप्ट्स के लिए है।
+explanation: |
+  P2PK फंड्स को एक कच्चे (raw) पब्लिक की के साथ लॉक करता है, जबकि P2PKH पब्लिक की का Hash इस्तेमाल करता है।
+reviewed: false

@@ -1,0 +1,9 @@
+question: seed को Mnemonic वाक्यांश से निकालने के लिए कौन सा फंक्शन इस्तेमाल होता है?
+answer: PBKDF2 with HMAC-SHA512 (हिंदी में: PBKDF2 के साथ HMAC-SHA512)
+wrong_answers:
+  - अकेला SHA256
+  - डबल SHA256
+  - एईएस-256 (एडवांस्ड एन्क्रिप्शन स्टैंडर्ड-256)
+explanation: |
+  seed को PBKDF2 फंक्शन का इस्तेमाल करके बनाया जाता है, जिसमें HMAC-SHA512 और 2048 इटरेशन्स होते हैं, Mnemonic फ्रेज़ और passphrase से।
+reviewed: false

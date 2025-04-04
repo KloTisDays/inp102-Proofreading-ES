@@ -1,0 +1,8 @@
+question: वह व्यक्ति कौन है जिसने नवंबर 2008 में व्हाइट पेपर के प्रकाशन पर सकारात्मक प्रतिक्रिया दी?
+answer: हाल फिन्नी
+wrong_answers:
+  - जेम्स ए. डोनाल्ड
+  - जॉन आर. लेविन
+  - रे डिलिंजर
+  On November 7, he wrote to the list that Bitcoin [seemed] to be a very promising idea. The others were more skeptical. (https: //www.metzdowd.com/pipermail/cryptography/2008-November/014827.html)
+reviewed: false

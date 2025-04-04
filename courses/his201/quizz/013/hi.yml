@@ -1,0 +1,13 @@
+question: Satoshi नाकामोटो ने Bitcoin व्हाइट पेपर में सर्टिफाइड टाइमस्टैम्पिंग पर काम करने वाले निम्नलिखित शोधकर्ताओं का हवाला दिया था:
+
+1. स्टुअर्ट हबर (Stuart Haber)  
+2. डब्ल्यू. स्कॉट स्टोर्नेट्टा (W. Scott Stornetta)  
+
+ये शोधकर्ता डिजिटल टाइमस्टैम्पिंग और ब्लॉकचेन तकनीक की नींव रखने में अहम भूमिका निभाने के लिए जाने जाते हैं।
+answer: स्टुअर्ट हैबर और स्कॉट स्टोर्नेट्टा
+wrong_answers:
+  - लेस्ली लैम्पोर्ट, रॉबर्ट शॉस्टैक, और मार्शल पीज़
+  - सिंथिया ड्वोर्क और मोनी नोर
+  - रोनाल्ड रिवेस्ट और आदी शामिर
+  Three papers by Haber and Stornetta from the 90s were cited in the white paper. They are known for creating [the first timestamped blockchain](https: //www.vice.com/en/article/j5nzx4/what-was-the-first-blockchain), published in the New York Times starting in 1992.
+reviewed: false

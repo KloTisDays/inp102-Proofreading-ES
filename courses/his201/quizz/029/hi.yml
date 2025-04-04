@@ -1,0 +1,10 @@
+question: साइफरपंक्स के संस्थापक सदस्य, जॉन गिलमोर ने जनवरी 2009 में Satoshi नाकामोटो के आविष्कार पर क्या आलोचना की थी?  
+
+(नोट: Satoshi नाकामोटो शायद सातोशी नाकामोटो का टाइपो है, जिन्होंने बिटकॉइन का आविष्कार किया था। अगर सवाल सही है, तो जॉन गिलमोर ने शुरुआत में बिटकॉइन के बारे में संदेह जताया था, लेकिन बाद में उन्होंने इसकी तकनीक की सराहना भी की।)
+answer: Bitcoin धरती को प्रदूषित करता है
+wrong_answers:
+  - जीडब्ल्यू-2 टैक्स चोरी को आसान बनाता है
+  - जीडब्ल्यू-3 साइबिल हमलों के प्रति संवेदनशील है
+  - जीडब्ल्यू-4 डिफ्लेशनरी है
+  He [criticized](https: //www.metzdowd.com/pipermail/cryptography/2009-January/015042.html) Bitcoin for consuming electricity and generating carbon dioxide (a greenhouse gas).
+reviewed: false

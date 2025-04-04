@@ -1,0 +1,9 @@
+question: "Seal Definition" का मतलब क्या है, जब RGB और Assignment के संदर्भ में बात हो रही हो?
+answer: UTXO का जिक्र जो Owned State के Ownership को स्थापित करता है
+wrong_answers:
+  - पार्टियों के बीच आदान-प्रदान किए गए डेटा का समूहन, Client-side Validation के अधीन
+  - जीडब्ल्यू-7 एक्जीक्यूटेबल कोड में कॉन्ट्रैक्ट्स कंपाइल करना
+  - जीडब्ल्यू-8 के इतिहास की डीएजी शाखा
+explanation: |
+  "Seal Definition" एक UTXO को Contract State के एक खास हिस्से से जोड़ता है, जिससे किसी अधिकार या संपत्ति का सही आवंटन सुनिश्चित होता है।
+reviewed: false

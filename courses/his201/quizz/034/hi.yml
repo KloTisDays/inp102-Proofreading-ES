@@ -1,0 +1,8 @@
+question: किसने अक्टूबर 2009 में Bitcoin और डॉलर के बीच पहली Exchange सेवा स्थापित की?
+answer: न्यू लिबर्टी स्टैंडर्ड
+wrong_answers:
+  - सिरियस-एम
+  - डॉलर
+  - धूम्रपान बहुत ज्यादा करते हो
+  This service was rudimentary: exchanges were negotiated via email, and payments were made through PayPal. The exchange rate was based on the mining costs of NewLibertyStandard himself.
+reviewed: false

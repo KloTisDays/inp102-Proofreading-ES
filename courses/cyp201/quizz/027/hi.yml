@@ -1,0 +1,11 @@
+question: SegWit ने ECDSA सिग्नेचर में कौन सी कमजोरी को ठीक किया?  
+
+(Note: "SegWit" is retained as a proper noun, and "ECDSA" remains in its technical acronym form since it's widely recognized in cybersecurity contexts. The translation maintains the original query's intent while adapting it to colloquial Hindi.)
+answer: "लचीलापन"
+wrong_answers:
+  - बैच सत्यापन (Batch Verification)
+  - एकत्रीकरण की कमी
+  - सिग्नेचर का बहुत बड़ा आकार
+explanation: |
+  SegWit ने ECDSA सिग्नेचर्स की मैलिएबिलिटी को ठीक किया, जिससे Lightning Network जैसे उपयोग संभव हो पाए।
+reviewed: false

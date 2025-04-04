@@ -1,0 +1,8 @@
+question: 2004 में रयान फगर द्वारा डिज़ाइन किए गए डिस्ट्रिब्यूटेड क्रेडिट प्रोटोकॉल का नाम क्या था, जिसका जीडब्ल्यू-0 नाकामोटो ने अपने लेखन में कई बार जिक्र किया था?
+answer: रिपल
+wrong_answers:
+  - लहरें
+  - सुनामी
+  - फूल जाना
+  In 2009, Satoshi [wrote](https: //diyhpl.us/~bryan/irc/bitcoin-satoshi/p2presearch-again/p2pfoundation.net/backups/p2p_research-archives/2009-February/001362.html) that Ripple \[was\] unique in that it spread trust rather than concentrating it.
+reviewed: false

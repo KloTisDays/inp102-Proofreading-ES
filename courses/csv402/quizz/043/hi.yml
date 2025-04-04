@@ -1,0 +1,9 @@
+question: "RGB State Transition" का मतलब Lightning Network के संदर्भ में क्या है?
+answer: Commitment लेनदेन में RGB एसेट एलोकेशन अपडेट किया गया
+wrong_answers:
+  - Multisig का नया स्टेट 2/2 ऑनचेन
+  - अपडेटेड RGB एसेट एलोकेशन फंडिंग ट्रांजैक्शन में इंटीग्रेट कर दिया गया है
+  - जीडब्ल्यू-7 वैलिडेशन स्क्रिप्ट को जीडब्ल्यू-8 से बदल दिया गया
+explanation: |
+  RGB State Transition अपडेट्स Commitment ट्रांजैक्शन्स का इस्तेमाल करके चैनल में RGB एसेट्स के डिस्ट्रीब्यूशन को अपडेट करता है।
+reviewed: false

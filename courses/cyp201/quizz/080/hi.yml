@@ -1,0 +1,11 @@
+question: SegWit v0 पतों को दर्शाने के लिए कौन सी एन्कोडिंग का उपयोग किया जाता है?
+answer: बेच32
+wrong_answers:
+  - बेस58चेक
+  - "बेच32म" 
+
+(Note: Since "bech32m" appears to be a technical term or code, possibly related to cryptocurrency addresses like Bech32 encoding, I've kept it as is with the Hindi script spelling. In Hindi, it would be pronounced similarly but written in Devanagari as shown above.)
+  - बेस64
+explanation: |
+  SegWit v0 पतों को, जैसे कि P2WPKH और P2WSH के लिए, SegWit के साथ पेश किए गए bech32 एन्कोडिंग का उपयोग करते हैं।
+reviewed: false
