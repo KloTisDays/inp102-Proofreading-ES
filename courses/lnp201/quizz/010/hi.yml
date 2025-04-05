@@ -1,0 +1,13 @@
+question: लाइटनिंग चैनल खोलने का पहला कदम क्या है दो प्रतिभागियों के बीच?
+answer: Exchange संदेश जिनमें रकम और सार्वजनिक कुंजियाँ शामिल हैं
+wrong_answers:
+  - Blockchain पर तुरंत एक जमा लेनदेन प्रकाशित करें
+  - Here’s the translation in Colloquial Hindi:
+
+"बिना पहले Exchange के, एक 2/2 मल्टीसिग्नेचर Address बनाओ"  
+
+(Note: "Address" and "Exchange" are kept as-is since they appear to be technical terms/abbreviations.)
+  - पब्लिक कीज़ के Exchange से पहले वितरण लेनदेन पर हस्ताक्षर करें
+explanation: |
+  एक चैनल का शुरुआत Exchange मैसेजेस के साथ होता है, जहां दोनों पार्टियां अपने कमिट करने वाले अमाउंट्स और अपने पब्लिक कीज शेयर करते हैं।
+reviewed: false

@@ -1,0 +1,7 @@
+question: निम्नलिखित जवाबों में से कौन सा आपके खुद के नोड का उपयोग करने का फायदा नहीं दर्शाता है?
+answer: लेन-देन शुल्क कम करना।
+wrong_answers:
+  - सहमति में भाग लेना।
+  - तीसरे पक्षों से स्वतंत्र होना।
+  - ट्रांजैक्शन सेंसरशिप का विरोध करने में सक्षम होना।
+  Here's why having your own node is crucial for fully sovereign use of Bitcoin: Censorship resistance; Your transactions cannot be blocked by anyone; Independence from third parti- language; es You no longer depend on any external service to verify blockchain data; Active participation; You have the ability to set your own validation rules and directly participate in the consensus; Contribution to the network; By running a node, you help to strengthen and distribute the Bitcoin network; Technical education; Managing a full node is an excellent way to deepen your technical knowledge about Bitcoin.

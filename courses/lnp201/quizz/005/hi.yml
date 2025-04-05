@@ -1,0 +1,57 @@
+question: Bitcoin सिस्टम में प्राइवेट की का मुख्य रोल क्या है?
+answer: स्क्रिप्ट को पूरा करने के लिए लेन-देन पर हस्ताक्षर करें
+wrong_answers:
+  - बिटकॉइन प्राप्त करने के लिए एक पहचानकर्ता के रूप में काम करता है
+  - Blockchain पर पैसे सुरक्षित रखें
+  - बिटकॉइन को सुरक्षित रखने के लिए लॉकिंग स्क्रिप्ट बनाने के लिए, आप निम्नलिखित तरीके अपना सकते हैं:
+
+### 1. **P2PKH (Pay-to-Public-Key-Hash)**  
+   - सबसे आम लॉकिंग स्क्रिप्ट, जो पब्लिक की के हैश का इस्तेमाल करती है।  
+   ```script
+   OP_DUP OP_HASH160 <PublicKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+   ```
+
+### 2. **P2SH (Pay-to-Script-Hash)**  
+   - कॉम्प्लेक्स स्क्रिप्ट को हैश करके लॉक करता है।  
+   ```script
+   OP_HASH160 <ScriptHash> OP_EQUAL
+   ```
+
+### 3. **मल्टीसिग (Multi-Signature)**  
+   - एक से ज्यादा सिग्नेचर की जरूरत होती है (जैसे 2-of-3)।  
+   ```script
+   <RequiredSignatures> <PublicKey1> <PublicKey2> <PublicKey3> <TotalKeys> OP_CHECKMULTISIG
+   ```
+
+### 4. **टाइम-लॉक्ड स्क्रिप्ट (CLTV - CheckLockTimeVerify)**  
+   - एक निश्चित समय या ब्लॉक हाइट तक बिटकॉइन को लॉक करता है।  
+   ```script
+   <LockTime> OP_CHECKLOCKTIMEVERIFY OP_DROP
+   ```
+
+### 5. **हैश-लॉक (HTLC - Hash Time-Locked Contract)**  
+   - कंडीशनल पेमेंट के लिए, जैसे लाइटनिंग नेटवर्क में।  
+   ```script
+   OP_HASH160 <SecretHash> OP_EQUALVERIFY OP_IF
+   <RecipientPublicKey> OP_CHECKSIG
+   OP_ELSE
+   <Timeout> OP_CHECKSEQUENCEVERIFY OP_DROP
+   <SenderPublicKey> OP_CHECKSIG
+   OP_ENDIF
+   ```
+
+### 6. **OP_RETURN (डेटा स्टोरेज)**  
+   - बिटकॉइन ब्लॉकचेन में डेटा स्टोर करने के लिए (सिक्योरिटी के लिए नहीं)।  
+   ```script
+   OP_RETURN <Data>
+   ```
+
+### सावधानियाँ:  
+- स्क्रिप्ट को टेस्टनेट पर जाँच लें।  
+- गलत स्क्रिप्ट से फंड लॉस हो सकता है।  
+- एक्सपर्ट की सलाह लें अगर पक्का नहीं है।  
+
+अगर किसी खास स्क्रिप्ट पर मदद चाहिए, तो बताएँ!
+explanation: |
+  प्राइवेट की का इस्तेमाल ट्रांजैक्शन्स पर साइन करने के लिए होता है ताकि स्क्रिप्ट पूरी हो और बिटकॉइन्स अनलॉक हो जाएं।
+reviewed: false

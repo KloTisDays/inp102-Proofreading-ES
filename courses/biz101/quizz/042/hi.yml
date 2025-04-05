@@ -1,0 +1,11 @@
+question: ज्यादातर जगहों पर, Bitcoin के साथ काम करते समय टैक्स लगने की स्थिति कब पैदा होती है?  
+
+(Note: "Bitcoin" seems to be a technical/financial term - if it's a product code, legal term, or abbreviation, it's kept as-is since translations may not apply. Let me know if you'd like it adapted differently.)
+answer: Bitcoin को बेचना, ट्रेड करना या पेमेंट के तौर पर इस्तेमाल करना अक्सर टैक्सेबल इवेंट को ट्रिगर करता है।
+wrong_answers:
+  - बस Bitcoin को बिना किसी लेन-देन के अनिश्चित काल तक रखना।
+  - अपने Bitcoin, Wallet या चाबियों का बैकअप लेना।
+  - Bitcoin का ऑनलाइन दाम देख रहा हूँ।
+explanation: |
+  आमतौर पर, टैक्स लगने वाली घटना तब होती है जब कोई व्यवसाय अपने Bitcoin को बेचता है या इस्तेमाल करता है, सिर्फ रखने से नहीं। हर बार Bitcoin को सामान, सेवाओं या फिएट करेंसी के बदले बेचने (Exchange) से टैक्स योग्य लाभ या नुकसान (generate) हो सकता है।
+reviewed: false

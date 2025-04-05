@@ -1,0 +1,8 @@
+question: PayJoin लेन-देन में इनपुट्स में कितने प्रतिभागी होते हैं?
+answer: २
+wrong_answers:
+  - 1
+  - तीन
+  - ०
+  There are 2 participants: the payer and the recipient of the payment.
+reviewed: false

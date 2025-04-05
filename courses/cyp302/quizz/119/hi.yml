@@ -1,0 +1,18 @@
+question: AES encryption in ECB mode (Electronic Codebook) is not recommended for secure use because:
+
+1. **Lack of Diffusion**: ECB encrypts identical plaintext blocks into identical ciphertext blocks. This means patterns in the plaintext remain visible in the ciphertext, making it vulnerable to analysis.
+
+2. **No Randomization**: Since ECB does not use an initialization vector (IV) or any chaining mechanism, the same plaintext will always produce the same ciphertext, which can lead to security weaknesses.
+
+3. **Vulnerable to Attacks**: Attackers can identify repeated blocks and potentially deduce information or manipulate data without decrypting it (e.g., replay attacks or block shuffling).
+
+4. **Not Suitable for Large Data**: For large or structured data (like images or files), ECB can expose significant patterns, making encryption ineffective.
+
+For secure encryption, modes like **CBC (Cipher Block Chaining)**, **GCM (Galois/Counter Mode)**, or other authenticated modes are preferred as they introduce randomness and better security properties.
+answer: इससे निश्चित एन्क्रिप्शन होता है
+wrong_answers:
+  - इसे 128 बिट से ज़्यादा की चाबी चाहिए
+  - यह ज़्यादातर आधुनिक एप्लिकेशन्स के लिए बहुत धीमा है
+  - यह टेक्स्ट को 128-बिट ब्लॉक्स में बाँटने की अनुमति नहीं देता
+explanation: |
+  ECB मोड की सिफारिश नहीं की जाती है क्योंकि यह निर्धारित एन्क्रिप्शन पैदा करता है, जिसका मतलब है कि समान प्लेनटेक्स्ट ब्लॉक समान सिफरटेक्स्ट ब्लॉक देते हैं। इसका फायदा उठाकर प्लेनटेक्स्ट के बारे में जानकारी का अंदाजा लगाया जा सकता है।

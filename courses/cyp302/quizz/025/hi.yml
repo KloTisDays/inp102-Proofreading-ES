@@ -1,0 +1,8 @@
+question: 0110 और 1101 का XOR ऑपरेशन करने पर रिजल्ट होगा: 1011
+answer: १०११
+wrong_answers:
+  - 0111
+  - ००००
+  - ११०१
+  By applying XOR bit by bit: 0 XOR 1 = 1, 1 XOR 1 = 0, 1 XOR 0 = 1, 0 XOR 1 = 1, thus the result is 1011.
+reviewed: false

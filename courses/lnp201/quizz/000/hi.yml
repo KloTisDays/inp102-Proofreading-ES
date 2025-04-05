@@ -1,0 +1,13 @@
+question: Lightning Network का मुख्य लक्ष्य क्या है?
+answer: Bitcoin की स्केलेबिलिटी को बेहतर बनाने के लिए ताकि तेज़ और कम लागत वाले भुगतान सक्षम हो सकें
+wrong_answers:
+  - Bitcoin और Blockchain पर लेन-देन शुल्क हटाएं
+  - Here’s a colloquial Hindi translation of your request:
+
+"हाई-वैल्यू पेमेंट्स के लिए Bitcoin का एक विकल्प बनाएं"  
+
+Let me know if you'd like any adjustments!
+  - अलग-अलग क्रिप्टोकरेंसी के बीच आसान लेन-देन करें
+explanation: |
+  Lightning Network का मकसद है Bitcoin की स्केलेबिलिटी को बेहतर बनाना, off-chain पेमेंट चैनल्स के जरिए तेज और सस्ते ट्रांजैक्शन्स को मुमकिन बनाकर।
+reviewed: false

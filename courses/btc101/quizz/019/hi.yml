@@ -1,0 +1,8 @@
+question: पैसे के तीन मुख्य काम क्या हैं?
+answer: मूल्य का भंडार, विनिमय का माध्यम (Exchange), लेखा की इकाई।
+wrong_answers:
+  - मूल्य का भंडार, विनिमय का माध्यम (Exchange), उत्पादन का साधन।
+  - मूल्य का भंडार, उत्पादन का साधन, लेखा इकाई।
+  - Exchange का माध्यम, उत्पादन के साधन, लेखांकन की इकाई।
+  According to Aristotle, money serves three functions: it is
+reviewed: true

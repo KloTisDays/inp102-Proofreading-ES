@@ -1,0 +1,11 @@
+question: CoinJoin द्वारा सिक्के के पिछले लेन-देन के विश्लेषण से सुरक्षा को क्या कहते हैं?  
+
+(Note: "CoinJoin" is retained as-is since it appears to be a technical term/model name.)
+answer: रेट्रोस्पेक्टिव आनोनसेट।
+wrong_answers:
+  - संभावित अनॉनसेट।
+  - ट्रेसबिलिटी रेजिस्टेंस।
+  - समयिक गोपनीयता।
+explanation: |
+वर्तमान से अतीत की ओर विश्लेषण से सुरक्षा को ही "रेट्रोस्पेक्टिव अनॉनसेट" कहा जाता है।
+reviewed: false

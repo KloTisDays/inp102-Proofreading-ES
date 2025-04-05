@@ -1,0 +1,20 @@
+question: एक authenticated encryption scheme अकेला communication session में क्यों insufficient होता है?  
+
+वजह यह है कि:  
+1. **Replay Attacks**: कोई attacker पुराने encrypted messages को फिर से send कर सकता है, और receiver को पता नहीं चलेगा कि यह नया message नहीं है।  
+2. **No Session Management**: अगर long-term keys का इस्तेमाल हो रहा है, तो अगर एक बार key compromise हो जाए, तो पुराने सारे messages भी decrypt हो सकते हैं।  
+3. **Lack of Forward Secrecy**: अगर future में key leak हो जाए, तो past के सारे communications भी unsafe हो जाते हैं।  
+
+इसलिए, additional security measures जैसे:  
+- **Unique Session Keys** (हर session के लिए अलग keys)  
+- **Message Sequence Numbers** (duplicate या out-of-order messages को detect करने के लिए)  
+- **Perfect Forward Secrecy (PFS)** (temporary keys का use)  
+जरूरी होते हैं।
+answer: यह गारंटी नहीं देता कि संदेश सत्र के समय भेजने वाले ने भेजा था।
+wrong_answers:
+  - यह बहुत छोटी चाबियों का इस्तेमाल करता है।
+  - यह सेशन के समय भेजे गए मैसेज को एन्क्रिप्ट नहीं करता है।
+  - यह सत्र के समय भेजने वाले की प्रमाणीकरण की अनुमति नहीं देता है।
+explanation: |
+  एक प्रमाणित एन्क्रिप्शन स्कीम, बिना पहचानकर्ता और अनुक्रम संख्या जैसे संकेतकों के जोड़े, रीप्ले, पुनर्व्यवस्था और रिफ्लेक्शन जैसे हमलों से सुरक्षा नहीं करती है।
+reviewed: false

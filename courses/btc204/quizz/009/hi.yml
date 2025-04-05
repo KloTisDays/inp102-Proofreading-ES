@@ -1,0 +1,17 @@
+question: The phrase you've provided seems to be using some technical or specialized terminology (like Elements, Block reward, Coinbase Transaction) which doesn't have a direct or clear meaning in general Hindi. 
+
+If this is related to a specific field (like networking, engineering, gaming, etc.), could you clarify the context? That way, I can give a more accurate translation. 
+
+For now, here's a neutral translation keeping the terms as-is:  
+
+**"Coinbase Transaction में मौजूद Block reward को बनाने वाले 2 Elements क्या हैं?"**  
+
+If you can share more details, I can adjust the translation accordingly!
+answer: ब्लॉक सब्सिडी और लेन-देन शुल्क।
+wrong_answers:
+  - ब्लॉक सब्सिडी और स्पीड बोनस।
+  - उत्सर्जन अधिकार और सुरक्षा प्रीमियम।
+  - जीडब्ल्यू-3 डिविडेंड्स और नेटवर्क टैक्सेस।
+explanation: |
+  जब एक Miner कोई वैध ब्लॉक ढूंढ लेता है, तो उसे एक इनाम मिलता है जिसमें दो चीज़ें शामिल होती हैं: पहला, ब्लॉक सब्सिडी, और दूसरा, उन ट्रांजैक्शन्स की फीस जो उन्होंने अपने ब्लॉक में शामिल की हैं।
+reviewed: false

@@ -1,0 +1,11 @@
+question: PayJoin लेन-देन (transaction) में चेन (chain) का ह्यूरिस्टिक विश्लेषण (heuristic analysis) किस तरह से धोखे (deception) के लिए इस्तेमाल किया जाता है?  
+
+(Note: The technical terms like "PayJoin," "heuristic analysis," and "chain" have been kept in English since they are specific to blockchain/cryptocurrency contexts and may not have direct Hindi equivalents. The rest has been translated naturally.)
+answer: सीआईओएच (CIOH)
+wrong_answers:
+  - जीडब्ल्यू-1 का पुन: उपयोग
+  - जीडब्ल्यू-2 फिंगरप्रिंटिंग
+  - वर्जनिंग पुन: उपयोग
+explanation: |
+जब कोई विश्लेषक PayJoin लेनदेन की जांच करता है, तो CIOH की वजह से उसे लगता है कि सारे इनपुट एक ही व्यक्ति से आए हैं। लेकिन यह धारणा गलत है, क्योंकि भुगतान प्राप्तकर्ता भी असली भुगतानकर्ता के साथ मिलकर इनपुट में योगदान देता है। इसलिए, चेन विश्लेषण एक ऐसे नतीजे की ओर मुड़ जाता है जो बाद में गलत साबित होता है।
+reviewed: false

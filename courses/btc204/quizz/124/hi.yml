@@ -1,0 +1,9 @@
+question: कौन सा विकल्प Bitcoin Core कॉन्फ़िगरेशन फ़ाइल में P2P ट्रांसपोर्ट V2 को चालू या बंद करने की अनुमति देता है?
+answer: v2transport=
+wrong_answers:
+  - p2penable=
+  - नेटवर्कv2
+  - enablev2=
+explanation: |
+P2P V2 ट्रांसपोर्ट को कोर नोड के कॉन्फिगरेशन फाइल में v2transport= ऑप्शन के साथ मॉडिफाइड किया जा सकता है।
+reviewed: false

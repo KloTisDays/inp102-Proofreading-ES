@@ -1,0 +1,11 @@
+question: एक चक्रीय समूह में, वह तत्व जो घातांकन (exponentiation) के द्वारा अन्य सभी तत्वों को उत्पन्न कर सकता है, उसे क्या कहते हैं?  
+
+**जनक (Generator)**
+answer: एक जनरेटर
+wrong_answers:
+  - एक गुणक
+  - एक सह-अभाज्य
+  - उल्टा
+explanation: |
+  एक जनरेटर (generator) एक चक्रीय समूह (cyclic group) का एक तत्व होता है जो घातांक (exponentiation) के माध्यम से समूह के अन्य सभी Elements उत्पन्न कर सकता है।
+reviewed: false

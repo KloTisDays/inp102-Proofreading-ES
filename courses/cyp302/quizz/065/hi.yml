@@ -1,0 +1,8 @@
+question: एक सिमेट्रिक एन्क्रिप्शन स्कीम के तीन जरूरी कॉम्पोनेंट्स क्या हैं?
+answer: एक कुंजी जनरेशन एल्गोरिदम, एक एन्क्रिप्शन एल्गोरिदम, और एक डिक्रिप्शन एल्गोरिदम
+wrong_answers:
+  - एक हैशिंग एल्गोरिदम, एक पब्लिक की, और एक वेरिफिकेशन एल्गोरिदम
+  - एक पब्लिक की, एक प्राइवेट की, और एक डिक्रिप्शन एल्गोरिदम
+  - एक एन्क्रिप्शन एल्गोरिदम, एक पब्लिक की, और एक प्राइवेट की
+  A symmetric encryption scheme consists of three elements: a key generation algorithm, an encryption algorithm, and a decryption algorithm. They all use the same key.
+reviewed: false

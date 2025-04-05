@@ -1,0 +1,11 @@
+question: स्टोनवॉल x2 ट्रांजैक्शन में कोलैबोरेटर की भूमिका क्या है?
+answer: "Bitcoin de kar shak paida karo"  
+
+(Note: The translation maintains the informal tone while conveying the essence of "provide bitcoins to add doubt." "De" (give) and "shak paida karo" (create doubt) keep it colloquial.)
+wrong_answers:
+  - ट्रांजैक्शन कोऑर्डिनेटर की तरह काम करो
+  - भुगतान राशि प्राप्त करें
+  - भुगतान की रकम भेजें
+explanation: |
+स्टोनवॉल x2 लेनदेन में सहयोगी बिटकॉइन्स देता है ताकि लेनदेन के विश्लेषण में शक पैदा हो, जबकि अंत में उनके पैसे पूरी तरह वापस मिल जाते हैं (उनके लिए यह एक न्यूट्रल एक्शन है, Mining फीस को छोड़कर)।
+reviewed: false

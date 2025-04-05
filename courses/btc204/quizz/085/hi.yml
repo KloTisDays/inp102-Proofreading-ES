@@ -1,0 +1,33 @@
+question: JoinMarket एक Bitcoin privacy टूल है जो CoinJoin transactions को facilitate करने के लिए specific user matching model का उपयोग करता है। यहाँ बताया गया है कि यह कैसे काम करता है:
+
+1. **Maker-Taker Model**:  
+   JoinMarket एक **Maker-Taker model** पर काम करता है, जहाँ:  
+   - **Makers** liquidity provide करते हैं (अपने coins को CoinJoin में शामिल करने के लिए offer करते हैं)  
+   - **Takers** उन Makers को select करते हैं जिनके साथ वे transaction करना चाहते हैं  
+
+2. **Order Book System**:  
+   - Makers अपनी offers (बिड्स) एक public order book में publish करते हैं, जिसमें fees और minimum/maximum amounts specify होते हैं।  
+   - Takers इन offers को scan करके अपनी privacy needs के हिसाब से best deals चुनते हैं।  
+
+3. **Direct Peer-to-Peer (P2P) Matching**:  
+   - कोई central server नहीं होता – Takers सीधे Makers के साथ communicate करते हैं (IRC या नए Jam protocol के ज़रिए)।  
+   - Transactions कोई third party के बिना directly Bitcoin network पर broadcast होते हैं।  
+
+4. **Incentive Structure**:  
+   - Makers को Takers द्वारा paid fees मिलती हैं (यह उन्हें liquidity provide करने के लिए encourage करता है)।  
+   - Takers अपनी privacy improve करने के लिए low cost में CoinJoin कर पाते हैं।  
+
+**Why This Model?**  
+- **Decentralized** (कोई single point of failure नहीं)  
+- **Flexible** (Users अपनी needs के हिसाब से parameters set कर सकते हैं)  
+- **Profit for Makers, Cheap for Takers** (Sustainable ecosystem बनाता है)  
+
+क्या आपको JoinMarket के technical implementation के बारे में और details चाहिए?
+answer: जीडब्ल्यू-0 बाज़ार बनाने वालों और लेने वालों के बीच।
+wrong_answers:
+  - एक सर्वर जो प्रतिभागियों को बेतरतीब ढंग से आवंटित करता है।
+  - डच नीलामी पर आधारित विनिमय।
+  - एक मध्यस्थता सेवा जो प्रतिभागियों को मैन्युअली चुनती है।
+explanation: |
+JoinMarket P2P और Exchange मार्केट पर काम करता है, जहां कुछ यूजर्स, जिन्हें मेकर्स कहा जाता है, अपने बिटकॉइन्स को मिक्सिंग के लिए ऑफर करते हैं, जबकि दूसरे यूजर्स, जिन्हें टेकर्स कहा जाता है, फीस के बदले Exchange में कॉइनजॉइन करने के लिए इन फंड्स का इस्तेमाल करते हैं।
+reviewed: false

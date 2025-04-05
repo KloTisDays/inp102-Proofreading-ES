@@ -1,0 +1,8 @@
+question: सिक्के चुनने से जुड़े 2 प्राइवेसी रिस्क क्या हैं?
+answer: सीआईओएच और प्राप्तकर्ता द्वारा इनपुट्स / पहचान के बीच की कड़ी।
+wrong_answers:
+  - आईपी जीडब्ल्यू-0 ट्रैकिंग और गतिविधि सहसंबंध।
+  - समय-संबंधी ट्रैकिंग और Address का पुन: उपयोग।
+  - जीडब्ल्यू-2 का पुन: उपयोग और बाहरी पर्यवेक्षक द्वारा इनपुट / पहचान के बीच का संबंध।
+  Two risks need to be considered when selecting coins: the possibility for the payment recipient to link a part of your identity to the UTXOs used as inputs and the ability of an external observer to establish links between all the UTXOs consumed as inputs (CIOH).
+reviewed: false

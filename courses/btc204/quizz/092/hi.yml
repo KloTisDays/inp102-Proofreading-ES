@@ -1,0 +1,11 @@
+question: UTXOs जो Whirlpool या CoinJoin पूल में प्रवेश नहीं कर सकते, उनके लिए इस्तेमाल किए जाने वाले अकाउंट का नाम क्या है?
+answer: "डॉक्सिक अकाउंट बदलो।"  
+
+(Note: "Doxxic" seems like a typo or a specific term. If it's meant to be "toxic," the translation would be: "टॉक्सिक अकाउंट बदलो।")
+wrong_answers:
+  - पोस्टमिक्स अकाउंट।
+  - प्रीमिक्स खाता।
+  - जमा खाता।
+explanation: |
+जो बदलाव पूल में शामिल नहीं हो सका, उसे "डॉक्सिक चेंज अकाउंट" में अलग कर दिया गया है, ताकि Wallet में मौजूद दूसरे UTXOs से सख्त अलगाव सुनिश्चित किया जा सके।
+reviewed: false

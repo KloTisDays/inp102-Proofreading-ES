@@ -1,0 +1,8 @@
+question: एक MAC स्कीम में तीन बेसिक स्टेप्स क्या हैं?
+answer: कुंजी उत्पन्न करना, टैग उत्पन्न करना, सत्यापन
+wrong_answers:
+  - एन्क्रिप्शन, डिक्रिप्शन, ट्रांसमिशन
+  - सार्वजनिक कुंजी जनरेशन, निजी कुंजी एन्क्रिप्शन, वैलिडेशन
+  - संदेश हैशिंग, टैग एन्क्रिप्शन, टैग वितरण
+  A MAC scheme consists of three main steps: generating a secret key, producing a tag for the message, and verifying that the received message and its tag match.
+reviewed: false

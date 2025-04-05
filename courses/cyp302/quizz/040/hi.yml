@@ -1,0 +1,28 @@
+question: एक सेट \( S \) जिसमें एक बाइनरी ऑपरेशन (जैसे \( * \)) हो, उसे ग्रुप (group) कहलाने के लिए निम्नलिखित बेसिक शर्तें पूरी करनी चाहिए:
+
+1. **संवरक (Closure)**:  
+   \( S \) में किन्हीं दो एलिमेंट्स \( a \) और \( b \) के लिए, \( a * b \) भी \( S \) में होना चाहिए।  
+   यानी, \( \forall a, b \in S, \, a * b \in S \).
+
+2. **साहचर्यता (Associativity)**:  
+   ऑपरेशन \( * \) साहचर्य होना चाहिए, यानी:  
+   \( \forall a, b, c \in S, \, (a * b) * c = a * (b * c) \).
+
+3. **तत्समक अवयव (Identity Element)**:  
+   \( S \) में एक एलिमेंट \( e \) होना चाहिए जैसे कि किसी भी \( a \in S \) के लिए:  
+   \( a * e = e * a = a \).  
+   \( e \) को तत्समक अवयव (identity element) कहते हैं।
+
+4. **प्रतिलोम अवयव (Inverse Element)**:  
+   हर एलिमेंट \( a \in S \) के लिए, एक एलिमेंट \( a^{-1} \in S \) होना चाहिए जैसे कि:  
+   \( a * a^{-1} = a^{-1} * a = e \).  
+   \( a^{-1} \) को \( a \) का प्रतिलोम (inverse) कहते हैं।
+
+अगर \( S \) ये चारों शर्तें पूरी करता है, तो \( (S, *) \) एक ग्रुप कहलाता है।
+answer: बंद होने की शर्त
+wrong_answers:
+  - कम्यूटेटिविटी कंडीशन
+  - सममिति की शर्त
+  - वितरण की शर्त
+  A set S with a binary operation must satisfy several conditions to form a group, and the first is the closure condition: the operation between two elements of S must yield an element of S.
+reviewed: false

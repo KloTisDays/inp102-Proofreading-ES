@@ -1,0 +1,8 @@
+question: Whirlpool में रीमिक्स क्या खास है जो दूसरे CoinJoin वर्जन में नहीं मिलता?
+answer: वे बिल्कुल मुफ़्त हैं।
+wrong_answers:
+  - उन्हें सिर्फ Mining फीस भरनी पड़ेगी।
+  - वे एक यूज़र के लिए सिर्फ़ एक ही हैं।
+  - उन्हें सिर्फ सर्विस फीस चुकानी पड़ती है।
+  Whirlpool remixes are 100% free: no additional service fees or mining fees are required.
+reviewed: false
