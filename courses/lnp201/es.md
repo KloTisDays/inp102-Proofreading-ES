@@ -11,6 +11,8 @@ objectives:
 
 # Un Viaje hacia la Segunda Capa de Bitcoin 
 
+Un viaje a la segunda capa de Bitcoin. Adéntrese en el núcleo de la red Lightning, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que aborda el funcionamiento técnico de la Lightning . El curso ofrece una explicación detallada de los principios y los mecanismos de esta red de segunda capa, diseñada para garantizar pagos rápidos, económicos y escalables en Bitcoin.
+
 Gracias a su red de canales de pago, la Lightning Network permite transacciones rápidas y seguras, sin registrar cada intercambio en la blockchain de Bitcoin. A lo largo de los capítulos, aprenderás cómo funciona la apertura, gestión y cierre de canales, cómo se enrutan los pagos a través de nodos intermediarios de manera segura, mientras se minimiza la necesidad de confianza, y cómo gestionar la liquidez. Descubrirás qué son las transacciones de compromiso, los HTLCs, las llaves de revocación, los mecanismos de sanción, el enrutamiento cebolla y las facturas.
 
 Ya seas un principiante en Bitcoin o un usuario experimentado, este curso proporcionará información valiosa para entender y usar la Red Lightning. Aunque cubriremos algunos fundamentos del funcionamiento de Bitcoin en las primeras partes, es esencial dominar los conceptos básicos de la invención de Satoshi antes de sumergirse en LNP201.
