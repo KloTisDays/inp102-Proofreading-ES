@@ -9,7 +9,7 @@ objectives:
   - Entender los usos teóricos de la Red Lightning.
 ---
 
-# Un Viaje hacia la Segunda Capa de Bitcoin aaaaaaaaaaaaaa
+# Un Viaje hacia la Segunda Capa de Bitcoin aaaaaaaaaaaaaa bbbbbbbbbbb
 
 Sumérgete en el corazón de la Red Lightning, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico sobre el funcionamiento técnico de Lightning. Revela los fundamentos y mecanismos de esta red de segunda capa, diseñada para hacer que los pagos de Bitcoin sean rápidos, económicos y escalables.
 
