@@ -9,13 +9,11 @@ objectives:
   - Entender los usos teóricos de la Red Lightning.
 ---
 
-# Un Viaje hacia la Segunda Capa de Bitcoin holas
+# Un Viaje hacia la Segunda Capa de Bitcoin 
 
-Sumérgete en el corazón de la Red Lightning, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico sobre el funcionamiento técnico de Lightning. Revela los fundamentos y mecanismos de esta red de segunda capa, diseñada para hacer que los pagos de Bitcoin sean rápidos, económicos y escalables.
+Gracias a su red de canales de pago, la Lightning Network permite transacciones rápidas y seguras, sin registrar cada intercambio en la blockchain de Bitcoin. A lo largo de los capítulos, aprenderás cómo funciona la apertura, gestión y cierre de canales, cómo se enrutan los pagos a través de nodos intermediarios de manera segura, mientras se minimiza la necesidad de confianza, y cómo gestionar la liquidez. Descubrirás qué son las transacciones de compromiso, los HTLCs, las llaves de revocación, los mecanismos de sanción, el enrutamiento cebolla y las facturas.
 
-Gracias a su red de canales de pago, Lightning permite transacciones rápidas y seguras sin registrar cada intercambio en la blockchain de Bitcoin. A lo largo de los capítulos, aprenderás cómo funciona la apertura, gestión y cierre de canales, cómo se enrutan los pagos a través de nodos intermediarios de manera segura mientras se minimiza la necesidad de confianza, y cómo gestionar la liquidez. Descubrirás qué son las transacciones de compromiso, los HTLCs, las llaves de revocación, los mecanismos de castigo, el enrutamiento cebolla y las facturas.
-
-Ya seas un principiante en Bitcoin o un usuario más experimentado, este curso proporcionará información valiosa para entender y usar la Red Lightning. Aunque cubriremos algunos fundamentos del funcionamiento de Bitcoin en las primeras partes, es esencial dominar los conceptos básicos de la invención de Satoshi antes de sumergirse en LNP201.
+Ya seas un principiante en Bitcoin o un usuario experimentado, este curso proporcionará información valiosa para entender y usar la Red Lightning. Aunque cubriremos algunos fundamentos del funcionamiento de Bitcoin en las primeras partes, es esencial dominar los conceptos básicos de la invención de Satoshi antes de sumergirse en LNP201.
 
 ¡Disfruta tu descubrimiento!
 
