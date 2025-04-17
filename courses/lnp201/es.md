@@ -29,24 +29,24 @@ Ya seas un principiante en Bitcoin o un usuario experimentado, este curso propor
 
 ¡Bienvenido al curso LNP201!
 
-Este curso tiene como objetivo proporcionarte una comprensión técnica profunda de la Lightning Network, una red de capa secundaria diseñada para realizar transacciones en bitcoins de manera rápida y, a menudo, con costos más bajos. Descubrirás progresivamente los conceptos fundamentales que rigen este sistema, desde la apertura de canales de pago hasta las técnicas de enrutamiento y la gestión de la liquidez.
+Esta formación está diseñada para proporcionarte un profundo conocimiento técnico de la Lightning Network, una red superpuesta diseñada para facilitar transacciones de Bitcoin rápidas y de bajo coste. Progresivamente, descubrirás los conceptos fundamentales que rigen este sistema: desde la apertura de canales de pago, hasta las técnicas de enrutamiento y la gestión de la liquidez.
 
-**Sección 1: Los fundamentos**  
-Comenzaremos con una introducción general a la Lightning Network, estableciendo las bases esenciales sobre Bitcoin, sus direcciones, los UTXOs y el funcionamiento de las transacciones. Este repaso de los fundamentos es esencial para comprender cómo la Lightning Network se basa en los mecanismos de la cadena de bloques principal para operar de manera segura.
+**Sección 1: Los Fundamentos** 
+Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, sus direcciones, UTXOs y cómo funcionan las transacciones. Este repaso básico es necesario para entender que la Lightning Network se basa en sus mecanismos subyacentes de "la cadena de bloques" (blockchain) para operar de forma segura.
 
-**Sección 2: Apertura y cierre de canales**  
-En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las transacciones de compromiso, el papel de las claves de revocación para la seguridad, y cómo los canales pueden cerrarse de manera colaborativa o unilateral. Cada paso se explicará de manera precisa y técnica para que comprendas todas sus sutilezas.
+**Sección 2: Apertura y cierre de canales** 
+En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las transacciones de compromiso (*commitment transactions*), el papel de las claves de revocación (*Revokation key*) para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
 
-**Sección 3: Una red de liquidez**  
-La Lightning Network no se limita a canales individuales; es una verdadera red de pagos. Veremos cómo las transacciones pueden ser encaminadas a través de nodos intermedios mediante HTLCs. Esta parte también te introducirá a los desafíos de la liquidez entrante y saliente.
+**Sección 3: Una red de liquidez**
+La Lightning Network no se limita a los canales individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones pueden enrutarse a través de nodos intermediarios/intermedios, utilizando HTLC. Esta sección también aborda los retos de la gestión de la liquidez entrante y saliente en los canales de pago.
 
-**Sección 4: Herramientas de la Lightning Network**  
-Esta sección presenta las herramientas prácticas de la Lightning Network, como *Invoices*, *LNURL* y *Keysend*. También aprenderás a gestionar la liquidez de tus canales, un aspecto importante para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones en Lightning.
+**Sección 4: Herramientas de la Lightning Network**
+En esta sección se presentan las herramientas prácticas de la Lightning Network, como Invoices (facturas), LNURL y Keysend. También aprenderás a gestionar la liquidez de tus canales de pago. Esto es un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de sus transacciones en Lightning.
 
-**Sección 5: Ir más allá**  
-Finalmente, concluiremos el curso recapitulando los conceptos tratados y abriendo el camino hacia temas más avanzados para aquellos que deseen profundizar sus conocimientos sobre la Lightning Network.
+**Sección 5: Ir más allá** 
+Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos, que deseen profundizar en sus conocimientos sobre la Lightning Network.
 
-¿Listo para descubrir los mecanismos técnicos de la Lightning Network? ¡Vamos allá!
+¿Listo para descubrir el funcionamiento técnico de la Lightning Network? ¡Vamos a ello!
 
 # Los Fundamentos
 
@@ -58,14 +58,13 @@ Finalmente, concluiremos el curso recapitulando los conceptos tratados y abriend
 
 :::video id=62831f54-0ee7-403b-b0e3-67084c2ef6ea:::
 
+La Lightning Network es una red de canales de pago construida sobre el protocolo Bitcoin, que permite transacciones rápidas y de bajo coste. Permite crear canales de pago entre participantes, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la cadena de bloques. De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo valor.
 
-La Red Lightning es una red de canales de pago construida sobre el protocolo de Bitcoin, con el objetivo de habilitar transacciones rápidas y de bajo costo. Permite la creación de canales de pago entre participantes, dentro de los cuales las transacciones pueden realizarse casi instantáneamente y con comisiones mínimas, sin necesidad de registrar cada transacción individualmente en la blockchain. Así, la Red Lightning busca mejorar la escalabilidad de Bitcoin y hacerlo utilizable para pagos de bajo valor.
-
-Antes de explorar el aspecto de "red", es importante entender el concepto de un **canal de pago** en Lightning, cómo funciona y sus especificidades. Este es el tema de este primer capítulo.
+Antes de abordar el aspecto «red» ("network"), es fundamental comprender el concepto de **canal de pago** ("payment channel") en Lightning, su funcionamiento y sus particularidades. Este es el tema de este primer capítulo.
 
 ### El Concepto de Canal de Pago
 
-Un canal de pago permite a dos partes, aquí **Alice** y **Bob**, intercambiar fondos a través de la Red Lightning. Cada protagonista tiene un nodo, simbolizado por un círculo, y el canal entre ellos está representado por un segmento de línea.
+### Un canal de pago permite a dos partes, en este caso **Alice** y **Bob**, intercambiar fondos a través de la Lightning Network. Cada participante del pago tiene un nodo, simbolizado por un círculo, y el canal entre ellos está representado por la línea que los conecta.
 
 ![LNP201](assets/en/01.webp)
 
