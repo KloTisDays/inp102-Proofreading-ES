@@ -94,35 +94,36 @@ Esta representación puede ser útil para imaginar el equilibrio de fondos en un
 
 ### Las Reglas Fundamentales de un Canal de Pago
 
-El primer punto a recordar es que la **capacidad del canal** es fija. Es algo así como el diámetro de una tubería: determina la cantidad máxima de fondos que se pueden enviar a través del canal de una sola vez.
-Tomemos un ejemplo: si Alice tiene 130,000 satoshis en su lado, solo puede enviar un máximo de 130,000 satoshis a Bob en una sola transacción. Sin embargo, Bob puede luego enviar estos fondos de vuelta a Alice, ya sea parcial o totalmente.
+Lo primero que hay que hay que tener en cuenta es que la capacidad del canal es fija. Es como el diámetro de una tubería: determina la cantidad máxima de dinero que puede enviarse a través del canal en un momento dado.
+Pongamos un ejemplo: si Alice dispone de 130.000 satoshis, solamente puede enviar 130.000 satoshis a Bob en una única transacción. Sin embargo, Bob puede devolverle una parte o la totalidad de este dinero.
 
-Lo importante que hay que entender es que la capacidad fija del canal limita la cantidad máxima de una sola transacción, pero no el número total de transacciones posibles, ni el volumen total de fondos intercambiados dentro del canal.
+Es importante entender que la capacidad fija del canal, limita el importe máximo de una única transacción, pero no el número total de transacciones posibles ni el volumen total de fondos intercambiados dentro del canal.
 
-**¿Qué debes recordar de este capítulo?**
+**¿Qué deberías extraer del contenido de este capítulo?**
 
 - La capacidad de un canal es fija y determina la cantidad máxima que se puede enviar en una sola transacción.
-- Los fondos en un canal se distribuyen entre los dos participantes, y cada uno solo puede enviar al otro los fondos que poseen en su lado.
-- La Red Lightning permite así el intercambio rápido y eficiente de fondos, respetando las limitaciones impuestas por la capacidad de los canales.
+- Los fondos de un canal se reparten entre los dos participantes, y cada uno solamente puede enviar al otro los fondos de los que dispone.
+- De este modo, la Lightning Network permite intercambiar fondos de forma rápida y eficaz, respetando los límites impuestos por la capacidad de los canales.
 
-Este es el final de este primer capítulo, donde hemos sentado las bases para la Red Lightning. En los próximos capítulos, veremos cómo abrir un canal y profundizaremos en los conceptos discutidos aquí.
+Con esto concluye el primer capítulo, en el que hemos sentado las bases de la Lightning Network. En los siguientes capítulos veremos cómo abrir un canal y profundizaremos en los conceptos aquí tratados.
 
 ## Bitcoin, Direcciones, UTXO y Transacciones
 
 <chapterId>0cfb7e6b-96f0-508b-9210-90bc1e28649d</chapterId>
 
 :::video id=e516e004-3977-45e2-8f50-aa582061b7fa:::
-Este capítulo es un poco especial ya que no estará dedicado directamente a Lightning, sino a Bitcoin. De hecho, la Red Lightning es una capa sobre Bitcoin. Por lo tanto, es esencial entender ciertos conceptos fundamentales de Bitcoin para comprender adecuadamente el funcionamiento de Lightning en los capítulos subsiguientes. En este capítulo, revisaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXOs, así como el funcionamiento de las transacciones de Bitcoin.
+Este capítulo es un poco especial, porque no está dedicado directamente a la Lightning Network, sino a Bitcoin.
+De hecho, la Lightning Network es una capa que se superpone a Bitcoin. Por lo tanto, es importante comprender algunos conceptos básicos de Bitcoin para ir entendiendo correctamente cómo funciona la Lightning Network en los siguientes capítulos. En este capítulo, repasaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXO y el funcionamiento de las transacciones de Bitcoin.
 
 ### Direcciones de Bitcoin, Claves Privadas y Claves Públicas
 
-Una dirección de Bitcoin es una serie de caracteres derivados de una **clave pública**, que a su vez se calcula a partir de una **clave privada**. Como seguramente sabes, se utiliza para bloquear bitcoins, lo cual equivale a recibirlos en nuestra billetera.
+Una dirección Bitcoin es una cadena de caracteres derivada de una **clave pública**, que a su vez se calcula, a partir de una **clave privada**. Como sabes, se utiliza para bloquear Bitcoins, lo que equivale a recibirlos en nuestro monedero.
 
-La clave privada es un elemento secreto que **nunca debe ser compartido**, mientras que la clave pública y la dirección pueden ser compartidas sin riesgo de seguridad (su divulgación solo representa un riesgo para tu privacidad). Aquí hay una representación común que adoptaremos a lo largo de este entrenamiento:
+La clave privada es un elemento secreto que **nunca debe compartirse**, mientras que la clave pública y la dirección pueden compartirse, sin que suponga ningún riesgo para la seguridad (su divulgación solo representa un riesgo para tu privacidad). A continuación, se muestra una representación común, que utilizaremos a lo largo de esta formación:
 
-- Las **claves privadas** serán representadas **verticalmente**.
-- Las **claves públicas** serán representadas **horizontalmente**.
-- Su color indica quién las posee (Alice en naranja y Bob en negro...).
+- Las **claves privadas** se muestran **verticalmente**.
+- Las **claves públicas** se muestran **horizontalmente**.
+- Su color indica a quién pertenecen (Alice en color naranja y, Bob, en color negro).
 
 ### Transacciones de Bitcoin: Enviar Fondos y Scripts
 
