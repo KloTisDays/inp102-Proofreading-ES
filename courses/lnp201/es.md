@@ -125,26 +125,28 @@ La clave privada es un elemento secreto que **nunca debe compartirse**, mientras
 - Las **claves públicas** se muestran **horizontalmente**.
 - Su color indica a quién pertenecen (Alice en color naranja y, Bob, en color negro).
 
-### Transacciones de Bitcoin: Enviar Fondos y Scripts
+### Transacciones de Bitcoin: Envio de dinero y Scripts
 
-En Bitcoin, una transacción implica enviar fondos de una dirección a otra. Tomemos el ejemplo de Alice enviando 0.002 Bitcoin a Bob. Alice usa la clave privada asociada con su dirección para **firmar** la transacción, demostrando así que efectivamente puede gastar esos fondos. Pero, ¿qué sucede exactamente detrás de esta transacción? Los fondos en una dirección de Bitcoin están bloqueados por un **script**, una especie de mini-programa que impone ciertas condiciones para gastar los fondos.
+En Bitcoin, una transacción implica el envío de dinero de una dirección a otra. Tomemos el ejemplo de Alice enviando 0.002 Bitcoin a Bob. Alice utiliza la clave privada asociada a su dirección para **firmar** la transacción, lo que muestra que puede gastar esos fondos. Pero, ¿qué ocurre exactamente detrás de esta transacción? Los fondos de una dirección Bitcoin están bloqueados por un **script**, es decir, un miniprograma, que impone ciertas condiciones para el gasto de los fondos.
 
-El script más común requiere una firma con la clave privada asociada a la dirección. Cuando Alice firma una transacción con su clave privada, ella **desbloquea el script** que bloquea los fondos, y estos pueden entonces ser transferidos. La transferencia de fondos implica añadir un nuevo script a estos fondos, estipulando que para gastarlos esta vez, se requerirá la firma de la clave privada de **Bob**.
+El script más común requiere una firma con la clave privada de la dirección. Cuando Alice firma una transacción con su clave privada, **desbloquea el script**, el cual bloquea los fondos, que ahora pueden transferirse. Transferir los fondos implica añadir un nuevo script a esos fondos, especificando que se requiere la firma de la clave privada de **Bob** para gastarlos.
+
 
 ![LNP201](assets/en/05.webp)
 
-### UTXOs: Salidas de Transacción No Gastadas
+### UTXOs: Unspent Transaction Outputs: "Salidas de Transacción No Gastadas" 
 
-En Bitcoin, lo que realmente intercambiamos no son directamente bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que significa "salidas de transacción no gastadas".
 
-Un UTXO es una pieza de bitcoin que puede ser de cualquier valor, por ejemplo, **2,000 bitcoins**, **8 bitcoins**, o incluso **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, se deben satisfacer las condiciones del script, a menudo una firma con la clave privada correspondiente a una dirección de recepción dada.
+En Bitcoin, lo que realmente intercambiamos no son Bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que significa "salidas de transacciones no gastadas".
 
-Los UTXOs no pueden dividirse. Cada vez que se utilizan para gastar la cantidad en bitcoins que representan, debe hacerse en su totalidad. Es un poco como un billete de banco: si tienes un billete de €10 y le debes al panadero €5, no puedes simplemente cortar el billete por la mitad. Tienes que darle el billete de €10, y él te dará €5 de cambio. ¡Este es exactamente el mismo principio para los UTXOs en Bitcoin! Por ejemplo, cuando Alice desbloquea un script con su clave privada, desbloquea el UTXO completo. Si desea enviar solo una parte de los fondos representados por este UTXO a Bob, puede "fragmentarlo" en varios más pequeños. Luego enviará 0.0015 BTC a Bob y enviará el resto, 0.0005 BTC, a una **dirección de cambio**.
+Un UTXO es una pieza de Bitcoin que puede ser de cualquier valor, por ejemplo **2,000 bitcoins**, **8 bitcoins**, o incluso **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, debes cumplir las condiciones del script, a menudo es una firma con la clave privada, correspondiente a una dirección de destinatario determinada.
 
-Aquí hay un ejemplo de una transacción con 2 salidas:
+Los UTXO no pueden dividirse. Cada vez que se utilizan para gastar la cantidad de Bitcoin que representan, debe hacerse en su totalidad. Es un poco como un billete: si tienes un billete de 10€ y le debes 5€ al panadero, no puedes cortar el billete por la mitad. Tienes que darle el billete de 10€ y él te dará 5€ de cambio. Este es exactamente el mismo principio para los UTXOs en Bitcoin. Por ejemplo, si Alice desbloquea un script con su clave privada, desbloquea todo el UTXO. Si sólo quiere enviar parte de los fondos representados por este UTXO a Bob, puede «fragmentarlo» en varios más pequeños. Entonces enviará 0.0015 BTC a Bob y el resto, 0.0005 BTC, a una **"dirección de cambio"** (change address).
 
-- Un UTXO de 0.0015 BTC para Bob, bloqueado por un script que requiere la firma de la clave privada de Bob.
-- Un UTXO de 0.0005 BTC para Alice, bloqueado por un script que requiere su propia firma.
+Este es un ejemplo de una transacción con 2 salidas: 
+
+- Un UTXO de 0.0015 BTC para Bob, bloqueado por un script, que requiere la firma con la clave privada de Bob.
+- Un UTXO de 0.0005 BTC para Alice, bloqueado por un script, que requiere su propia firma.
 
 ![LNP201](assets/en/06.webp)
 
@@ -154,20 +156,20 @@ Además de las direcciones simples generadas a partir de una única clave públi
 
 ![LNP201](assets/en/07.webp)
 
-Para gastar los fondos bloqueados con esta dirección multi-firma 2/2, es necesario firmar con las dos claves privadas asociadas a las claves públicas.
+Para gastar los fondos asociados a esta dirección multifirma 2/2 (peer-to-peer), es necesario firmar con las dos claves privadas, asociadas a las claves públicas.
 
 ![LNP201](assets/en/08.webp)
 
-Este tipo de dirección es precisamente la representación en la blockchain de Bitcoin de los canales de pago en la Red Lightning.
+Este tipo de dirección es la representación de los canales de pago de la Lightning Network en la blockchain de Bitcoin.
 
-**¿Qué debes recordar de este capítulo?**
+**¿Qué deberías extraer del contenido de este capítulo?** 
 
-- Una **dirección de Bitcoin** se deriva de una clave pública, que a su vez se deriva de una clave privada.
-- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar estos fondos, uno debe satisfacer el script, lo que generalmente implica proporcionar una firma con la clave privada correspondiente.
-- Los **UTXOs** son porciones de bitcoins bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más nuevos a cambio.
-- Las **direcciones multi-firma 2/2** requieren la firma de dos claves privadas para gastar los fondos. Estas direcciones específicas se utilizan en el contexto de Lightning para crear canales de pago.
+- Una **dirección Bitcoin** se deriva de una clave pública, que a su vez se deriva de una clave privada.
+- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar esos fondos, debes cumplir el script, lo que, normalmente, implica proporcionar una firma con la correspondiente clave privada. 
+- Los **UTXOs** son piezas de Bitcoin, las cuales están bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más UTXOs nuevos a cambio.
+- **2/2 direcciones multi-firma** (peer-to-peer) requieren la firma de dos claves privadas para poder gastar fondos. Estas direcciones especiales se utilizan en el contexto de la tecnología Lightning para crear canales de pago.
 
-Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciales para lo que sigue. En el próximo capítulo, descubriremos específicamente cómo funciona la apertura de canales en la Red Lightning.
+Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esenciales para lo que viene a continuación. En el próximo capítulo, veremos de forma específica cómo funciona la apertura de canales en la Lightning Network.
 
 # Apertura y Cierre de Canales
 
@@ -192,35 +194,36 @@ Como vimos en el primer capítulo, un **canal de pago** en Lightning puede compa
 Es crucial distinguir claramente los diferentes niveles de intercambio en la Red Lightning:
 
 - **Comunicaciones entre pares (protocolo Lightning)**: Estos son los mensajes que los nodos de Lightning se envían entre sí para comunicarse. Representaremos estos mensajes con líneas negras punteadas en nuestros diagramas.
-- **Canales de pago (protocolo Lightning)**: Estos son los caminos para intercambiar fondos en Lightning, que representaremos con líneas negras sólidas.
-- **Transacciones de Bitcoin (protocolo Bitcoin)**: Estas son las transacciones realizadas en la cadena, que representaremos con líneas naranjas.
+- **Canales de pago (protocolo Lightning)**: vías de intercambio de fondos en la Lightning Network, que representaremos con líneas negras continuas.
+- **Transacciones de Bitcoin (protocolo Bitcoin)**: son las transacciones realizadas en la cadena de bloques, que representaremos con líneas naranjas.
 
 ![LNP201](assets/en/10.webp)
-Es importante señalar que un nodo Lightning puede comunicarse a través del protocolo P2P sin abrir un canal, pero para intercambiar fondos, es necesario un canal.
 
-### Pasos para Abrir un Canal Lightning
+Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero para intercambiar fondos es necesario un canal.
 
-- **Intercambio de mensajes**: Alice quiere abrir un canal con Bob. Ella le envía un mensaje que contiene la cantidad que quiere depositar en el canal (130,000 sats) y su clave pública. Bob responde compartiendo su propia clave pública.
+### Pasos para abrir un canal Lightning
+
+- **Intercambio de mensajes**: Alice quiere establecer un canal con Bob. Alice le envía un mensaje con la cantidad que quiere depositar en el canal (130,000 sats) y su clave pública. Bob responde con su propia clave pública.
 
 ![LNP201](assets/en/11.webp)
 
-- **Creación de la dirección de multifirma**: Con estas dos claves públicas, Alice crea una **dirección de multifirma 2/2**, lo que significa que los fondos que luego se depositen en esta dirección requerirán ambas firmas (de Alice y Bob) para ser gastados.
+- **Creación de la dirección multi-firma**: Alice usa estas dos claves públicas para crear una dirección multi-firma, lo que significa que, cualquier fondo depositado en esta dirección, requiere las firmas de Alice y Bob para gastarse.
 
 ![LNP201](assets/en/12.webp)
 
-- **Transacción de depósito**: Alice prepara una transacción de Bitcoin para depositar fondos en esta dirección de multifirma. Por ejemplo, puede decidir enviar **130,000 satoshis** a esta dirección de multifirma. Esta transacción está **construida pero aún no publicada** en la blockchain.
+- **Transacción de depósito**: Alice prepara una transacción de Bitcoin para depositar fondos en esta dirección multi-firma. Por ejemplo, puede decidir enviar **130,000 satoshis** a esta dirección multifirma: Esta transacción está **construida, pero aún no se ha publicado** en la cadena de bloques (blockchain).
 
 ![LNP201](assets/en/13.webp)
 
-- **Transacción de retiro**: Antes de publicar la transacción de depósito, Alice construye una transacción de retiro para poder recuperar sus fondos en caso de un problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, sus sats quedarán bloqueados en una dirección de multifirma 2/2 que requiere ambas firmas, la de ella y la de Bob, para ser desbloqueados. Alice se protege contra este riesgo de pérdida construyendo la transacción de retiro que le permite recuperar sus fondos.
-
+- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats se bloquearán en una dirección multifirma 2/2 y únicamente podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
+  
 ![LNP201](assets/en/14.webp)
 
-- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y le pide que firme la transacción de retiro. Una vez obtenida la firma de Bob en la transacción de retiro, Alice tiene la seguridad de poder recuperar sus fondos en cualquier momento, ya que ahora solo se necesita su propia firma para desbloquear la multifirma.
+- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de fondos. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, Alice ya tiene la seguridad de poder recuperar sus fondos cuando quiera, ya que ahora sólo es necesaria su propia firma para desbloquear la dirección multi-firma.
 
 ![LNP201](assets/en/15.webp)
 
-- **Publicación de la transacción de depósito**: Una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la blockchain de Bitcoin, abriendo oficialmente el canal Lightning entre los dos usuarios.
+- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la cadena de bloques de Bitcoin, abriendo oficialmente el canal de pago Lightning, entre ambos usuarios.
 
 ![LNP201](assets/en/16.webp)
 
@@ -228,15 +231,18 @@ Es importante señalar que un nodo Lightning puede comunicarse a través del pro
 
 El canal se considera abierto una vez que la transacción de depósito se incluye en un bloque de Bitcoin y ha alcanzado una cierta profundidad de confirmaciones (número de bloques siguientes).
 
-**¿Qué debes recordar de este capítulo?**
+¿Cuándo se considera que el canal está abierto?
 
-- Abrir un canal comienza con el intercambio de **mensajes** entre las dos partes (intercambio de cantidades y claves públicas).
-- Un canal se forma creando una **dirección de multifirma 2/2** y depositando fondos en ella a través de una transacción de Bitcoin.
-- La persona que abre el canal se asegura de poder **recuperar sus fondos** a través de una transacción de retiro firmada por la otra parte antes de publicar la transacción de depósito.
+El canal se considera abierto, cuando la transacción de depósito se registra en un bloque de la blockchain de Bitcoin y esta transacción ha acumulado el número de confirmaciones necesarias (número de bloques siguientes), para verificar la validez de la operación en el canal de pagos.
 
-En el próximo capítulo, exploraremos el funcionamiento técnico de una transacción Lightning dentro de un canal.
+**¿Qué debemos recordar de este capítulo?** 
+- La apertura de un canal comienza con el intercambio de **mensajes** entre las dos partes (intercambio de importes y claves públicas).
+— Un canal se crea con la creación de una dirección **multi-firma 2/2 ** y el depósito de fondos en esta dirección, a través de una transacción de Bitcoin.
+- La persona que abre el canal se asegura de que puede **recuperar sus fondos**, mediante una transacción de retirada firmada por la otra parte, antes de publicar la transacción de depósito.
 
-## Transacción de Compromiso
+En el próximo capítulo, exploraremos el funcionamiento técnico de una transacción Lightning dentro de un canal de pagos.
+
+## Transacción de Compromiso (Commitment Transaction)
 
 <chapterId>7d3fd135-129d-5c5a-b306-d5f2f1e63340</chapterId>
 
