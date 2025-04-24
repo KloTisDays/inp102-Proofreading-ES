@@ -162,18 +162,19 @@ Este tipo de dirección es la representación de los canales de pago de la Light
 
 **¿Qué debes extraer del contenido de este capítulo?** 
 
-- Una **dirección Bitcoin** se deriva de una clave pública, que, a su vez, se deriva de una clave privada.
-- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar esos fondos, debes cumplir el script, lo que, normalmente, implica proporcionar una firma con la correspondiente clave privada. 
-- Los **UTXOs** son piezas de Bitcoin, las cuales están bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más UTXOs nuevos a cambio.
-- **2/2 direcciones multi-firma** (peer-to-peer) requieren la firma de dos claves privadas para poder gastar fondos. Estas direcciones especiales se utilizan en el contexto de la tecnología Lightning para crear canales de pago.
+- Una **dirección Bitcoin** se deriva de una clave pública, que a su vez, se deriva de una clave privada.
+- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar esos fondos, debes cumplir las condiciones, que marca el script, que, normalmente, implica proporcionar una firma con la correspondiente clave privada. 
+- Los **UTXOs** son piezas de Bitcoin, las cuales están bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y después, crear uno o más nuevos UTXOs a cambio.
+- **2/2 direcciones multi-firma** (peer-to-peer) se requiere de la firma de dos claves privadas, para poder gastar los fondos.
 
-Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esenciales para lo que viene a continuación. En el próximo capítulo, veremos cómo funciona la apertura de canales en la Lightning Network detalladamente.
+Estas direcciones especiales se utilizan en el contexto de la tecnología Lightning para abrir canales de pagos.
+Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esenciales, que nos serán útiles para lo que aprenderemos a continuación. En el próximo capítulo, veremos cómo funciona la apertura de canales en la Lightning Network en detalle. 
 
 # Apertura y Cierre de Canales
 
 <partId>900b5b6b-ccd0-5b2f-9424-4b191d0e935d</partId>
 
-## Apertura de Canal
+## Apertura de un canal de pagos
 
 <chapterId>96243eb0-f6b5-5b68-af1f-fffa0cc16bfe</chapterId>
 
@@ -202,7 +203,7 @@ Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2
 ### Pasos para abrir un canal de pagos Lightning
 
 - **Intercambio de mensajes**: Alice quiere establecer un canal de pago con Bob. Alice le envía un mensaje con la cantidad, que quiere depositar en el canal (130.000 sats) y su clave pública. Bob responde con su propia clave pública.
-
+  
 ![LNP201](assets/en/11.webp)
 
 - **Creación de la dirección multi-firma**: Alice usa estas dos claves públicas para crear una dirección multi-firma, lo que significa que, cualquier fondo depositado en esta dirección, requiere las firmas de Alice y Bob para gastarse.
@@ -213,16 +214,16 @@ Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2
 
 ![LNP201](assets/en/13.webp)
 
-- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats se bloquearán en una dirección multifirma 2/2 y, únicamente, podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
+- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats se bloquearán en una dirección multifirma 2/2 y, únicamente, podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar su liquidez.
   
 ![LNP201](assets/en/14.webp)
 
-- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de fondos. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, Alice ya tiene la seguridad de poder recuperar sus fondos cuando quiera, ya que ahora sólo es necesaria su propia firma para desbloquear la dirección multi-firma.
+- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de liquidez. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, Alice ya tiene la seguridad de poder recuperar sus fondos cuando quiera, ya que ahora sólo es necesaria su propia firma, para desbloquear la dirección multi-firma.
 
 ![LNP201](assets/en/15.webp)
 
-- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la cadena de bloques de Bitcoin, abriendo el canal de pago Lightning, entre ambos usuarios, oficialmente.
-
+- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la cadena de bloques (blockchain) de Bitcoin, abriendo el canal de pago Lightning, entre ambos usuarios, oficialmente.
+  
 ![LNP201](assets/en/16.webp)
 
 ### ¿Cuándo se considera abierto el canal?
@@ -245,8 +246,8 @@ En el próximo capítulo, exploraremos el funcionamiento técnico de una transac
 <chapterId>7d3fd135-129d-5c5a-b306-d5f2f1e63340</chapterId>
 
 :::video id=ec8a9259-cf0e-4142-af74-d08a867e3842:::
-
-En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal en la Red Lightning, es decir, cuando los fondos se mueven de un lado del canal al otro.
+ 
+En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal de pagos en la Lightning Network, es decir, cuando los fondos se mueven de un extremo del canal al otro lado.
 
 ### Recordatorio del ciclo de vida del canal
 
@@ -255,7 +256,7 @@ Como se ha visto anteriormente, un canal Lightning comienza con una **apertura**
 
 ### El estado inicial del canal
 
-En el momento de abrir el canal, Alice depositó **130,000 satoshis** en la dirección de multisignatura del canal. Así, en el estado inicial, todos los fondos están del lado de Alice. Antes de abrir el canal, Alice también hizo que Bob firmara una **transacción de retiro**, lo que le permitiría recuperar sus fondos si deseaba cerrar el canal.
+En el momento de abrir el canal, Alice depositó **130,000 satoshis** en la dirección de multi-firma del canal. Así, en el estado inicial, todos los fondos están del lado de Alice. Antes de abrir el canal, Alice también hizo que Bob firmara una **transacción de retiro**, lo que le permitiría recuperar sus fondos si deseaba cerrar el canal.
 
 ![LNP201](assets/en/18.webp)
 
