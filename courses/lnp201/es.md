@@ -58,68 +58,67 @@ Por último, concluiremos la formación con un repaso de los conceptos tratados 
 
 :::video id=62831f54-0ee7-403b-b0e3-67084c2ef6ea:::
 
-La Lightning Network es una red de canales de pago construida sobre el protocolo Bitcoin, que permite transacciones rápidas y de bajo coste. Permite crear canales de pago entre participantes, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la cadena de bloques. De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo valor.
+La Lightning Network es una red de canales de pagos, construida sobre el protocolo Bitcoin, que permite transacciones rápidas y a bajo coste. Permite crear canales de pago entre participantes, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la cadena de bloques (blockchain). De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo valor.
 
 Antes de abordar el aspecto «red» ("network"), es fundamental comprender el concepto de **canal de pago** ("payment channel") en Lightning, su funcionamiento y sus particularidades. Este es el tema de este primer capítulo.
 
 ### El Concepto de Canal de Pago
 
-### Un canal de pago permite a dos partes, en este caso **Alice** y **Bob**, intercambiar fondos a través de la Lightning Network. Cada participante del pago tiene un nodo, simbolizado por un círculo, y el canal entre ellos está representado por la línea que los conecta.
+### Un canal de pago permite a dos partes, en este caso **Alice** y **Bob**, intercambiar fondos a través de la Lightning Network. Cada parte tiene un nodo, simbolizado por un círculo, y el canal de pago, entre ellos, está representado por un segmento, que los conecta.
 
 ![LNP201](assets/en/01.webp)
 
-En nuestro ejemplo, Alice tiene 100,000 satoshis de su lado del canal, y Bob tiene 30,000, para un total de 130,000 satoshis, lo que constituye la **capacidad del canal**.
+En nuestro ejemplo, Alice tiene 100,000 satoshis en su extremo del canal de pago y Bob tiene 30.000, por lo que el total es de 130.000 satoshis, y ésta es es la **capacidad total del canal**.
 
 **Pero, ¿qué es un satoshi?**
 
-El **satoshi** (o "sat") es una unidad de cuenta en Bitcoin. Similar a un centavo para el euro, un satoshi es simplemente una fracción de Bitcoin. Un satoshi equivale a **0.00000001 Bitcoin**, o una centésima millonésima parte de un Bitcoin. Usar el satoshi se vuelve cada vez más práctico a medida que el valor de Bitcoin aumenta.
+El **satoshi** (o «sat») es una unidad de cuenta de Bitcoin. Al igual que un céntimo de euro, un satoshi es simplemente, una fracción de un Bitcoin. Un satoshi equivale a **0.00000001 Bitcoin**, es decir, la cienmillonésima parte de un Bitcoin. A medida que aumente el valor de Bitcoin, el uso de satoshis se volverá más práctico.
 
-### La Asignación de Fondos en el Canal
-
-Regresemos al canal de pago. El concepto clave aquí es el "**lado del canal**". Cada participante tiene fondos en su lado del canal: Alice 100,000 satoshis y Bob 30,000. Como hemos visto, la suma de estos fondos representa la capacidad total del canal, una cifra establecida cuando se abre.
+### La distribución de fondos en el canal de pagos
+Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis y Bob, 30.000. Como hemos visto, la suma de estos fondos representa la capacidad total del canal; es un número establecido cuando se abre.
 
 ![LNP201](assets/en/02.webp)
 
-Tomemos un ejemplo de una transacción de Lightning. Si Alice quiere enviar 40,000 satoshis a Bob, esto es posible porque ella tiene suficientes fondos (100,000 satoshis). Después de esta transacción, Alice tendrá 60,000 satoshis en su lado y Bob 70,000.
+Pongamos un ejemplo de transacción Lightning: Si Alice quiere enviar 40,000 satoshis a Bob, puede hacerlo, porque tiene fondos suficientes (100,000 satoshis). Tras esta transacción, Alice tendrá 60,000 satoshis y Bob tendrá 70,000.
 
 ![LNP201](assets/en/03.webp)
 
-La **capacidad del canal**, en 130,000 satoshis, permanece constante. Lo que cambia es la asignación de fondos. Este sistema no permite enviar más fondos de los que uno posee. Por ejemplo, si Bob quisiera enviar de vuelta 80,000 satoshis a Alice, no podría, porque solo tiene 70,000.
+La **capacidad del canal** se mantiene constante en 130,000 satoshis. Lo que cambia es la distribución de los fondos. Este sistema no permite enviar más fondos de los que se tienen. Por ejemplo, si Bob quisiera enviar 80,000 satoshis a Alice, no podrá, porque únicamente tiene 70,000.
 
-Otra manera de imaginar la asignación de fondos es pensar en un **deslizador** que indica dónde están los fondos en el canal. Inicialmente, con 100,000 satoshis para Alice y 30,000 para Bob, el deslizador está lógicamente en el lado de Alice. Después de la transacción de 40,000 satoshis, el deslizador se moverá ligeramente hacia el lado de Bob, quien ahora tiene 70,000 satoshis.
+Otra manera de imaginar la asignación de fondos es pensar en un **deslizador** que indica dónde están los fondos en el canal. Inicialmente, con 100,000 satoshis para Alice y 30,000 para Bob, el deslizador está lógicamente en el extremo de Alice. Después de la transacción de 40,000 satoshis, el deslizador se moverá ligeramente hacia el lado de Bob, quien ahora tiene 70,000 satoshis.
 
 ![LNP201](assets/en/04.webp)
 
-Esta representación puede ser útil para imaginar el equilibrio de fondos en un canal.
+Esta representación puede ser útil para visualizar la distribución de fondos de un canal de pagos.
 
-### Las Reglas Fundamentales de un Canal de Pago
+### Las reglas fundamentales de un canal de pago
 
-Lo primero que hay que hay que tener en cuenta es que la capacidad del canal es fija. Es como el diámetro de una tubería: determina la cantidad máxima de dinero que puede enviarse a través del canal en un momento dado.
+Lo primero que hay que hay que tener en cuenta es, que la capacidad del canal es fija. Es como el diámetro de una tubería: determina la cantidad máxima de dinero que puede enviarse a través del canal en un momento dado.
 Pongamos un ejemplo: si Alice dispone de 130.000 satoshis, solamente puede enviar 130.000 satoshis a Bob en una única transacción. Sin embargo, Bob puede devolverle una parte o la totalidad de este dinero.
 
-Es importante entender que la capacidad fija del canal, limita el importe máximo de una única transacción, pero no el número total de transacciones posibles ni el volumen total de fondos intercambiados dentro del canal.
+Es importante entender que la capacidad fija del canal limita el importe máximo de una única transacción, pero no el número total de transacciones posibles ni el volumen total de fondos intercambiados dentro del canal.
 
 **¿Qué deberías extraer del contenido de este capítulo?**
 
 - La capacidad de un canal es fija y determina la cantidad máxima que se puede enviar en una sola transacción.
-- Los fondos de un canal se reparten entre los dos participantes, y cada uno solamente puede enviar al otro los fondos de los que dispone.
-- De este modo, la Lightning Network permite intercambiar fondos de forma rápida y eficaz, respetando los límites impuestos por la capacidad de los canales.
-
-Con esto concluye el primer capítulo, en el que hemos sentado las bases de la Lightning Network. En los siguientes capítulos veremos cómo abrir un canal y profundizaremos en los conceptos aquí tratados.
+- Los fondos de un canal se reparten entre los dos participantes, y cada uno únicamente puede enviar al otro los fondos de los que dispone.
+De este modo, la Lightning Network permite intercambiar fondos de forma rápida y eficaz, respetando los límites impuestos por la capacidad de los canales.
+Con esto concluye el primer capítulo, en el que hemos sentado las bases de la Lightning Network. En los siguientes capítulos, veremos cómo abrir un canal y profundizaremos en los conceptos aquí tratados.
 
 ## Bitcoin, Direcciones, UTXO y Transacciones
 
 <chapterId>0cfb7e6b-96f0-508b-9210-90bc1e28649d</chapterId>
 
 :::video id=e516e004-3977-45e2-8f50-aa582061b7fa:::
+
 Este capítulo es un poco especial, porque no está dedicado directamente a la Lightning Network, sino a Bitcoin.
-De hecho, la Lightning Network es una capa que se superpone a Bitcoin. Por lo tanto, es importante comprender algunos conceptos básicos de Bitcoin para ir entendiendo correctamente cómo funciona la Lightning Network en los siguientes capítulos. En este capítulo, repasaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXO y el funcionamiento de las transacciones de Bitcoin.
+De hecho, la Lightning Network es una capa, que se superpone a Bitcoin. Por lo tanto, es importante comprender algunos conceptos básicos de Bitcoin, para ir entendiendo correctamente cómo funciona la Lightning Network en los siguientes capítulos. En este capítulo, repasaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXO y el funcionamiento de las transacciones de Bitcoin.
 
-### Direcciones de Bitcoin, Claves Privadas y Claves Públicas
+### Direcciones Bitcoin, claves públicas y privadas
 
-Una dirección Bitcoin es una cadena de caracteres derivada de una **clave pública**, que a su vez se calcula, a partir de una **clave privada**. Como sabes, se utiliza para bloquear Bitcoins, lo que equivale a recibirlos en nuestro monedero.
+Una dirección Bitcoin es una cadena de caracteres derivada de una **clave pública**, que ,a su vez, se calcula a partir de una **clave privada**. Como sabes, se utiliza para bloquear Bitcoins, lo que equivale a recibirlos en nuestro monedero.
 
-La clave privada es un elemento secreto que **nunca debe compartirse**, mientras que la clave pública y la dirección pueden compartirse, sin que suponga ningún riesgo para la seguridad (su divulgación solo representa un riesgo para tu privacidad). A continuación, se muestra una representación común, que utilizaremos a lo largo de esta formación:
+La clave privada es un elemento secreto que **nunca debe compartirse**, mientras que la clave pública y la dirección pueden compartirse, sin que suponga ningún riesgo para la seguridad (su divulgación sólo representa un riesgo para tu privacidad). A continuación, se muestra una representación común, que utilizaremos a lo largo de esta formación:
 
 - Las **claves privadas** se muestran **verticalmente**.
 - Las **claves públicas** se muestran **horizontalmente**.
