@@ -251,51 +251,53 @@ En este capítulo, descubriremos el funcionamiento técnico de una transacción 
 
 ### Recordatorio del ciclo de vida del canal
 
-Como se ha visto anteriormente, un canal Lightning comienza con una **apertura** a través de una transacción de Bitcoin. El canal puede ser **cerrado** en cualquier momento, también a través de una transacción de Bitcoin. Entre estos dos momentos, se pueden realizar un número casi infinito de transacciones dentro del canal, sin pasar por la blockchain de Bitcoin. Veamos qué sucede durante una transacción en el canal.
+Como hemos visto anteriormente, la **apertura** de un canal de pago Lightning comienza a través de transacción de Bitcoin. El canal se puede **cerrar** cuando se desee. Cerramos el canal también a través de una transacción de Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal, sin tener que registrarlas en la blockchain de Bitcoin. Veamos qué es lo que ocurre durante una transacción en el canal de pagos.
+
 ![LNP201](assets/en/17.webp)
 
 ### El estado inicial del canal
 
-En el momento de abrir el canal, Alice depositó **130,000 satoshis** en la dirección de multi-firma del canal. Así, en el estado inicial, todos los fondos están del lado de Alice. Antes de abrir el canal, Alice también hizo que Bob firmara una **transacción de retiro**, lo que le permitiría recuperar sus fondos si deseaba cerrar el canal.
+En el momento de abrir el canal, Alice depositó **130,000 satoshis** en la dirección de multi-firma del canal. Así, en el estado inicial, todos los fondos están del lado de Alice. Antes de abrir el canal, Alice también hizo que Bob firmara una **transacción de retiro**, lo que permitiría a Alice recuperar sus fondos, en el caso de que si quisiera cerrar el canal.
 
 ![LNP201](assets/en/18.webp)
 
-### Transacciones no publicadas: Las Transacciones de Compromiso
+### Transacciones no publicadas: Las Transacciones de Compromiso (Commitment Transactions)
 
-Cuando Alice realiza una transacción en el canal para enviar fondos a Bob, se crea una nueva transacción de Bitcoin para reflejar este cambio en la distribución de fondos. Esta transacción, llamada **transacción de compromiso**, no se publica en la blockchain pero representa el nuevo estado del canal tras la transacción Lightning.
+Cuando Alice realiza una transacción en el canal de pago para enviar fondos a Bob, se crea una nueva transacción de Bitcoin, la cual refleja este cambio en la distribución de fondos. Esta transacción, llamada transacción de compromiso, no se publica en la blockchain, pero representa el nuevo estado del canal, tras la transacción Lightning.
 
-Tomemos un ejemplo con Alice enviando 30,000 satoshis a Bob:
+Tomemos un ejemplo en el que Alice envía 30,000 satoshis a Bob:
 
 - **Inicialmente**: Alice tiene 130,000 satoshis.
-- **Después de la transacción**: Alice tiene 100,000 satoshis, y Bob 30,000 satoshis.
-  Para validar esta transferencia, Alice y Bob crean una nueva **transacción de Bitcoin no publicada** que enviaría **100,000 satoshis a Alice** y **30,000 satoshis a Bob** desde la dirección de multisignatura. Ambas partes construyen esta transacción de forma independiente, pero con los mismos datos (cantidades y direcciones). Una vez construida, cada uno firma la transacción e intercambia su firma con el otro. Esto permite que cualquiera de las partes publique la transacción en cualquier momento si es necesario para recuperar su parte del canal en la blockchain principal de Bitcoin.
+- **Después de la transacción**: Alice tiene 100,000 satoshis y Bob tiene 30,000 satoshis..
+
+Para validar esta transferencia, Alice y Bob crean una nueva **transacción Bitcoin no publicada**, por la que se envían **100,000 satoshis a Alice** y **30,000 satoshis a Bob** , desde la dirección multi-firma. Ambas partes construyen esta transacción de forma independiente, pero con los mismos datos (cantidades y direcciones). Una vez creada, cada parte firma la transacción e intercambia su firma con la otra parte. Esto permite a cualquiera de los dos, publicar la transacción en cualquier momento, para así reclamar su parte de los fondos del canal, en la blockchain principal de Bitcoin.
+
   ![LNP201](assets/en/19.webp)
 
-### Proceso de Transferencia: La Factura
+### El proceso de transferencia: la factura
 
-Cuando Bob quiere recibir fondos, envía a Alice una **_factura_** por 30,000 satoshis. Alice procede entonces a pagar esta factura iniciando la transferencia dentro del canal. Como hemos visto, este proceso se basa en la creación y firma de una nueva **transacción de compromiso**.
-
-Cada transacción de compromiso representa la nueva distribución de fondos en el canal después de la transferencia. En este ejemplo, después de la transacción, Bob tiene 30,000 satoshis y Alice tiene 100,000 satoshis. Si cualquiera de los dos participantes decidiera publicar esta transacción de compromiso en la blockchain, resultaría en el cierre del canal y los fondos se distribuirían de acuerdo con esta última distribución.
+Cuando Bob quiere recibir dinero, envía a Alice una **factura_** por 30,000 satoshis. Alice paga esta factura, lo que inicia la transferencia dentro del canal. Como hemos visto, este proceso se basa en la creación y firma de una nueva **transacción de compromiso**.
+Cada transacción de compromiso representa la distribución de fondos en el canal de pagos, tras la transferencia. En este ejemplo, después de la transacción, Bob tiene 30,000 satoshis y Alice tiene 100,000 satoshis. Si uno de los dos participantes decide publicar esta transacción de compromiso en la cadena de bloques (blockchain), el canal se cerrará y los fondos se distribuirán, según la distribución final.
 
 ![LNP201](assets/en/20.webp)
 
-### Nuevo Estado Después de una Segunda Transacción
+### Nuevo estado después de una segunda transacción
 
-Tomemos otro ejemplo: después de la primera transacción donde Alice envió 30,000 satoshis a Bob, Bob decide enviar **10,000 satoshis de vuelta a Alice**. Esto crea un nuevo estado del canal. La nueva **transacción de compromiso** representará esta distribución actualizada:
+Tomemos otro ejemplo: después de la primera transacción en la que Alice envió 30,000 satoshis a Bob, éste decide enviar **10,000 satoshis a Alice de vuelta**. Esto crea un nuevo estado del canal de pagos. La nueva transacción de compromiso reflejará así la distribución actualizada: 
 
-- **Alice** ahora tiene **110,000 satoshis**.
-- **Bob** tiene **20,000 satoshis**.
-
+- **Alice** tiene **110,000 satoshis** ahora.
+- Bob tiene **20,000 satoshis**.
+  
 ![LNP201](assets/en/21.webp)
 
-Nuevamente, esta transacción no se publica en la blockchain pero puede serlo en cualquier momento en caso de que el canal se cierre.
-
+Esta transacción no se publica en la blockchain, pero puede publicarse en cualquier momento, si se cierra el canal.
 En resumen, cuando se transfieren fondos dentro de un canal Lightning:
 
-- Alice y Bob crean una nueva **transacción de compromiso**, que refleja la nueva distribución de fondos. - Esta transacción de Bitcoin es **firmada** por ambas partes, pero **no publicada** en la blockchain de Bitcoin mientras el canal permanezca abierto.
-- Las transacciones de compromiso aseguran que cada participante pueda recuperar sus fondos en cualquier momento en la blockchain de Bitcoin publicando la última transacción firmada.
+- Alice y Bob crean una nueva **transacción de compromiso** que refleja la nueva distribución de fondos.
+- Esta transacción Bitcoin es **firmada** por ambas partes, pero **no publicada** en la blockchain de Bitcoin, mientras el canal permanezca abierto.
+- Las transacciones de compromiso garantizan que cada participante pueda recuperar sus fondos en cualquier momento, publicando la última transacción firmada en la blockchain de Bitcoin.
 
-Sin embargo, este sistema tiene un posible defecto, el cual abordaremos en el próximo capítulo. Veremos cómo cada participante puede protegerse contra un intento de engaño por parte de la otra parte.
+Sin embargo, este sistema tiene un fallo potencial, que abordaremos en el próximo capítulo. Veremos cómo cada participante puede protegerse de un intento de estafa por la parte contraria.
 
 ## Revocation Key
 
