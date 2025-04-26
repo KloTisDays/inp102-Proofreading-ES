@@ -345,34 +345,36 @@ Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lig
 - Alice y Bob tienen una nueva transacción de compromiso, donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
 - Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la clave de revocación, si uno de ellos intenta estafar fondos, publicando una transacción del estado anterior en los mempools del nodo Bitcoin. De hecho, para penalizar a la otra parte, es necesario tener los dos secretos y la transacción de compromiso del otro participante, que incluye la entrada firmada. Sin esta transacción, la clave de revocación por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones a la espera de confirmación) o de transacciones confirmadas en la blockchain durante el timelock. Así, demostraríamos que la otra parte está intentando hacer trampas, ya sea intencionadamente o no.
 
-Tomemos un ejemplo para entender bien este proceso:
+Para entender bien este proceso, pongamos un ejemplo:
 
-- **Estado Inicial**: Alice tiene **100,000 satoshis**, Bob **30,000 satoshis**.
+- **Estado inicial**: Alice tiene **100,000 satoshis** y Bob, **30,000 sathosis**.
 
 ![LNP201](assets/en/26.webp)
 
-- Bob quiere recibir 40,000 satoshis de Alice a través de su canal de Lightning. Para hacer esto:
-   - Él le envía una factura junto con su secreto para la llave de revocación de su transacción de compromiso anterior.
-   - En respuesta, Alice proporciona su firma para la nueva transacción de compromiso de Bob, así como su secreto para la llave de revocación de su transacción anterior.
-   - Finalmente, Bob envía su firma para la nueva transacción de compromiso de Alice.
-   - Estos intercambios permiten a Alice enviar **40,000 satoshis** a Bob en Lightning a través de su canal, y las nuevas transacciones de compromiso ahora reflejan esta nueva distribución de fondos.
+- Bob quiere recibir 40,000 satoshis de Alice a través de su canal Lightning. Para ello:
+   - Bob envía una factura a Alice junto con su clave secreta de revocación para su transacción de compromiso anterior.
+- En respuesta, Alice proporciona su firma para la nueva transacción de compromiso de Bob, así como su clave secreta de revocación para su transacción anterior.
+- Por último, Bob envía su firma para la nueva transacción de compromiso de Alice.
+   - Estos intercambios permiten a Alice enviar **40,000 satoshis** a Bob a través de su canal Lightning, y las nuevas transacciones de compromiso reflejan esta distribución actualizada de fondos.
 
 ![LNP201](assets/en/27.webp)
 
-- Si Alice intenta publicar la antigua transacción de compromiso donde aún poseía **100,000 satoshis**, Bob, habiendo obtenido la llave de revocación, puede recuperar inmediatamente los fondos usando esta llave, mientras que Alice está bloqueada por el timelock.
+- Si Alice intenta publicar la transacción antigua, en la que todavía tenía **100,000 sathosis**, Bob puede recuperar los fondos inmediatamente, usando la clave de revocación. Mientras tanto, Alice está bloqueada por el timelock (bloqueo temporal).
 
 ![LNP201](assets/en/28.webp)
 
-Incluso si, en este caso, Bob no tiene interés económico en intentar engañar, si lo hace de todos modos, Alice también se beneficia de la protección simétrica que le ofrece las mismas garantías.
+En este caso, Bob no tiene motivaciones económicas para intentar estafar a Alice, pero si fuera así, Alice también se beneficiaría de esta protección simétrica, que ofrece a Alice las mismas garantías que a Bob.
 
-**¿Qué debes recordar de este capítulo?**
+**¿Qué debes extraer del contenido de este capítulo?**
 
-Las **transacciones de compromiso** en la Red Lightning incluyen mecanismos de seguridad que reducen tanto el riesgo de engaño como los incentivos para hacerlo. Antes de firmar una nueva transacción de compromiso, Alice y Bob intercambian sus respectivos **secretos** para las transacciones de compromiso anteriores. Si Alice intenta publicar una transacción de compromiso antigua, Bob puede usar la **llave de revocación** para recuperar todos los fondos antes de que Alice pueda (porque está bloqueada por el timelock), lo que la castiga por intentar engañar.
+Las **transacciones de compromiso** de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. Antes de firmar una nueva transacción de compromiso, Alice y Bob intercambian los **secretos** de las transacciones de compromiso anteriores. En el caso hipotético, en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar realizar una acción fraudulenta. 
 
-Este sistema de seguridad asegura que los participantes se adhieran a las reglas de la Red Lightning, y no puedan beneficiarse de publicar transacciones de compromiso antiguas.
-En este punto del entrenamiento, ya sabes cómo se abren los canales Lightning y cómo funcionan las transacciones dentro de estos canales. En el próximo capítulo, descubriremos las diferentes maneras de cerrar un canal y recuperar tus bitcoins en la blockchain principal.
+Este sistema de seguridad garantiza que los participantes cumplan con las normas de la red Lightning y que no puedan beneficiarse de la publicación de transacciones de compromiso antiguas. 
+Ya hemos aprendido cómo Las transacciones de compromiso de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. En el contexto de las transacciones de compromiso, se establece un intercambio de secretos entre Alice y Bob antes de proceder con una nueva transacción. En el caso hipotético en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la clave de revocación para recuperar todos los fondos antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar realizar una acción fraudulenta.
+Este sistema de seguridad garantiza que los participantes cumplan con las normas de la red Lightning y que no puedan beneficiarse de la publicación de transacciones de compromiso antiguas.
+En este punto, se espera que el sujeto haya desarrollado la capacidad de comprender el proceso de apertura de los canales Lightning y la operatividad de las transacciones, que tienen lugar en dichos canales de pago. En el siguiente capítulo, se abordarán las diversas técnicas para cerrar un canal de pagos y recuperar los Bitcoins en la blockchain.
 
-## Cierre de Canal
+## Cierre de un canal
 
 <chapterId>29a72223-2249-5400-96f0-3756b1629bc2</chapterId>
 
@@ -380,24 +382,23 @@ En este punto del entrenamiento, ya sabes cómo se abren los canales Lightning y
 
 En este capítulo, discutiremos **cerrar un canal** en la Red Lightning, lo cual se hace a través de una transacción de Bitcoin, justo como al abrir un canal. Después de ver cómo funcionan las transacciones dentro de un canal, ahora es momento de ver cómo cerrar un canal y recuperar los fondos en la blockchain de Bitcoin.
 
-### Recordatorio del ciclo de vida del canal
-
-El **ciclo de vida de un canal** comienza con su **apertura**, a través de una transacción de Bitcoin, luego se realizan transacciones Lightning dentro de él, y finalmente, cuando las partes desean recuperar sus fondos, el canal se **cierra** mediante una segunda transacción de Bitcoin. Las transacciones intermedias realizadas en Lightning están representadas por **transacciones de compromiso** no publicadas.
+## Recordatorio sobre el ciclo de vida de un canal de pagos
+El **ciclo de vida de un canal** comienza con su **apertura**, mediante una transacción de Bitcoin. A continuación, se realizan otras transacciones Lightning en este canal de pagos. Cuando los participantes desean recuperar sus fondos, el canal de pagos **se cierra**, mediante una segunda transacción Bitcoin. Las transacciones realizadas en la Lightning Network están representadas por **transacciones de compromiso no publicadas**.
 
 ![LNP201](assets/en/29.webp)
 
 ### Los tres tipos de cierre de canal
 
-Hay tres maneras principales de cerrar este canal, que pueden llamarse **el bueno, el malo y el tramposo** (inspirado por Andreas Antonopoulos en _Mastering the Lightning Network_):
+Hay tres modos principales para cerrar el canal de pagos.
+Estos tres modos los podemos llamar **El Bueno, El Bruto y El Ausente** (inspirado en el libro Mastering the Lightning Network de Andreas Antonopoulos).
 
-- **El Bueno**: el **cierre cooperativo**, donde Alice y Bob acuerdan cerrar el canal.
-- **El Malo**: el **cierre forzado**, donde una de las partes decide cerrar el canal honestamente, pero sin el acuerdo de la otra.
-- **El Feo**: el **cierre con trampa**, donde una de las partes intenta robar fondos publicando una transacción de compromiso antigua (cualquiera excepto la última, que refleja la distribución justa y actual de los fondos).
+- **El Bueno** (The Good): **cierre coperativo**, en el que Amice y Bob acuerdan el cierre del canal.
+- **El Bruto** (The Bad): **cierre forzado**, en el que uno de los participantes decide cerrar el canal honestamente, pero sin que la contraparte esté de acuerdo con ello.
+- **El Ausente**: *- **cierre con estafa**, en el que una de las dos partes intenta robar fondos, publicando unna transacción de compromiso antigua, en lugar de la última transacción realizada, (que es la que refleja la distribución real y justa de sus fondos), si no otra, (que, normalmente, tiene más liquidez, que en la última transacción).
+Por ejemplo,
 
-Tomemos un ejemplo:
-
-- Alice posee **100,000 satoshis** y Bob **30,000 satoshis**.
-- Esta distribución se refleja en **2 transacciones de compromiso** (una por usuario) que no se publican, pero podrían serlo en caso de cierre del canal.
+- Supongamos que Alice posee **100.000 satoshis** y Bob posee **30.000 satoshis**.
+- Esta distribución de fondos se refleja en dos transacciones de compromiso (una por usuario), que no se publican, pero que podrían publicarse en caso de cierre del canal.
 
 ![LNP201](assets/en/30.webp)
 
