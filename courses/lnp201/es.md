@@ -404,42 +404,41 @@ Por ejemplo,
 
 ### El Bueno: el cierre cooperativo
 
-En un **cierre cooperativo**, Alice y Bob acuerdan cerrar el canal. Así es como sucede:
+En un **cierre cooperativo**, Alice y Bob acuerdan cerrar el canal. A continuación se explica detalladamente el proceso:
 
-- Alice envía un mensaje a Bob a través del protocolo de comunicación Lightning para proponer cerrar el canal.
-- Bob está de acuerdo, y ambas partes no realizan más transacciones en el canal.
-
+- Alice ha propuesto a Bob cerrar el canal, a través del protocolo de comunicación Lightning.
+- Bob está de acuerdo, y las dos partes proceden a concluir sus transacciones en el canal.
+  
 ![LNP201](assets/en/31.webp)
 
-- Alice y Bob negocian juntos las tarifas de la **transacción de cierre**. Estas tarifas generalmente se calculan basadas en el mercado de tarifas de Bitcoin en el momento del cierre. Es importante notar que **siempre es la persona que abrió el canal** (Alice en nuestro ejemplo) quien paga las tarifas de cierre.
-- Ellos construyen una nueva **transacción de cierre**. Esta transacción se parece a una transacción de compromiso, pero sin bloqueos de tiempo o mecanismos de revocación, ya que ambas partes están cooperando y no hay riesgo de trampa. Esta transacción de cierre cooperativo es, por lo tanto, diferente de las transacciones de compromiso.
-   Por ejemplo, si Alice posee **100,000 satoshis** y Bob **30,000 satoshis**, la transacción de cierre enviará **100,000 satoshis** a la dirección de Alice y **30,000 satoshis** a la dirección de Bob, sin restricciones de timelock. Una vez que esta transacción es firmada por ambas partes, es publicada por Alice. Una vez que la transacción es confirmada en la blockchain de Bitcoin, el canal Lightning será oficialmente cerrado.
+- Alice y Bob negocian juntos las comisiones de la **transacción de cierre**. Estas comisiones se calculan, generalmente, en base al mercado de comisiones de Bitcoin en el momento del cierre. Es importante tener en cuenta que **el individuo que inició la transacción** (en nuestro ejemplo, Alice) es responsable de las comisiones de cierre.
+- Se construye una nueva **transacción de cierre**. Esta transacción se asemeja a una transacción de compromiso, sin embargo, carece de la inclusión de timelocks o mecanismos de revocación, debido a la naturaleza colaborativa de ambas partes y a la ausencia de cualquier riesgo de actividad fraudulenta. Esta transacción de cierre cooperativo es, por tanto, distinta de las transacciones de compromiso.
+   Por ejemplo, si Alice posee **100,000 satoshis** y Bob posee **30,000 satoshis**, la transacción de cierre enviará **100,000 satoshis** a la dirección de Alice y **30,000 satoshis** a la dirección de Bob, sin límite de tiempo. Una vez que esta transacción es firmada por ambas partes, es publicada por Alice. Una vez confirmada la transacción en la blockchain de Bitcoin, el canal Lightning se cierra oficialmente.
    ![LNP201](assets/en/32.webp)
 
-El **cierre cooperativo** es el método preferido de cierre porque es rápido (sin timelock) y las tarifas de la transacción se ajustan de acuerdo con las condiciones actuales del mercado de Bitcoin. Esto evita pagar demasiado poco, lo que podría arriesgar el bloqueo de la transacción en los mempools, o pagar en exceso innecesariamente, lo que lleva a una pérdida financiera innecesaria para los participantes.
+El **cierre cooperativo** es el método preferido de cierre porque es rápido (sin bloqueo de tiempo) (Timelock) y las tarifas de transacción se ajustan, de acuerdo con las condiciones actuales del mercado Bitcoin. Este enfoque garantiza que el importe del pago se ajuste adecuadamente al valor de la transacción, mitigando así el riesgo de rechazo de transacciones dentro de los mempools. Además, evita que se produzcan pérdidas financieras excesivas para todas las partes implicadas.
 
-### Lo malo: el cierre forzado
-
-Cuando el nodo de Alice envía un mensaje al de Bob pidiendo un cierre cooperativo, si él no responde (por ejemplo, debido a una caída de internet o un problema técnico), Alice puede proceder con un **cierre forzado** publicando la **última transacción de compromiso firmada**.
-En este caso, Alice simplemente publicará la última transacción de compromiso, que refleja el estado del canal en el momento en que tuvo lugar la última transacción de Lightning con la distribución correcta de fondos.
+### El Malo: el cierre forzoso
+Entre las desventajas del sistema está el cierre forzado.
+Si el nodo de Alice envía un mensaje al nodo de Bob, solicitando un cierre cooperativo y éste no responde (por ejemplo, debido a un corte de Internet o a un problema técnico), Alice puede proceder a un cierre forzado, publicando la última transacción de compromiso firmada.
+En este caso, Alice simplemente publicará la última transacción de compromiso, que refleja el estado del canal en el momento en que tuvo lugar la última transacción Lightning con la distribución correcta de los fondos.
 
 ![LNP201](assets/en/33.webp)
 
-Esta transacción incluye un **timelock** para los fondos de Alice, haciendo el cierre más lento.
+Esta transacción incluye un **timelock** para los fondos de Alice, lo que provocará un cierre más lento.
 
 ![LNP201](assets/en/34.webp)
 
-Además, las tarifas de la transacción de compromiso pueden ser inadecuadas en el momento del cierre, ya que se establecieron cuando se creó la transacción, a veces varios meses antes. Generalmente, los clientes de Lightning sobreestiman las tarifas para evitar problemas futuros, pero esto puede llevar a tarifas excesivas, o por el contrario demasiado bajas.
+Tenga en cuenta que las comisiones asociadas a la operación de compromiso pueden no ser adecuadas en el momento del cierre, ya que se determinan en el momento de la creación de la operación, que puede ser varios meses antes. Es práctica común entre los clientes de Lightning sobrestimar las comisiones con vistas a evitar problemas futuros, pero esto puede dar lugar a comisiones excesivas o, por el contrario, demasiado bajas.
 
-En resumen, el **cierre forzado** es una opción de último recurso cuando el par ya no responde. Es más lento y menos económico que un cierre cooperativo. Por lo tanto, se debe evitar tanto como sea posible.
+En resumen, la opción del **cierre forzoso** es un último recurso cuando el compañero ya no responde. En general, se considera que un cierre cooperativo es a la vez más rápido y más económico. Por lo tanto, es aconsejable evitar el cierre forzoso en la medida de lo posible.
 
-### La trampa: el engaño
+### La Estafa: el engaño
 
-Finalmente, un cierre con **engaño** ocurre cuando una de las partes intenta publicar una transacción de compromiso antigua, a menudo donde tenían más fondos de los que deberían. Por ejemplo, Alice podría publicar una transacción antigua donde poseía **120,000 satoshis**, mientras que en realidad ahora solo posee **100,000**.
-
+El acto de **estafar**  implica que una de las partes intenta publicar una vieja transacción de compromiso, a menudo en la que poseía más fondos de los que debería. Por ejemplo, Alice podría publicar una transacción antigua en la que poseía **120,000 satoshis**, pero en realidad solo posee **100,000 satoshis** en la actualidad.
 ![LNP201](assets/en/35.webp)
 
-Bob, para prevenir este engaño, monitorea la blockchain de Bitcoin y su mempool para asegurarse de que Alice no publique una transacción antigua. Si Bob detecta un intento de engaño, puede usar la **llave de revocación** para recuperar los fondos de Alice y castigarla tomando la totalidad de los fondos del canal. Dado que Alice está bloqueada por el timelock en su salida, Bob tiene tiempo para gastarlo sin un timelock de su lado para recuperar la suma completa en una dirección que posee.
+Para prevenir cualquier caso de engaño, Bob es responsable de monitorizar la cadena de bloques de Bitcoin y su mempool. Así se asegura que Alice no publique una transacción antigua. En caso de detectar un intento de engaño, Bob puede utilizar la **clave de revocación** para recuperar los fondos del canal de Alice. Como Alice está bloqueada por el timelock en su salida, Bob tiene tiempo de gastarl los fondos (Bob no está bloqueado por el timelock) para recuperar toda la suma en una dirección de su propiedad.
 
 ![LNP201](assets/en/36.webp)
 
