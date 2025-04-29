@@ -327,7 +327,7 @@ Peor aún, Alice podría publicar la primera transacción de retirada, la anteri
 
 ![LNP201](assets/en/24.webp)
 
-### Solución: Clave de revocación y Timelock (“candado de tiempo”)
+### Solución: Clave de revocación (Revokation Key) y Timelock (“candado de tiempo”)
 Para evitar este tipo de trampas por parte de Alice, la Lightning Network añade **mecanismos de seguridad** a las transacciones de compromiso:
 
 - **Timelock**: Cada transacción de compromiso contiene un timelock ("candado de tiempo") para los fondos de Alice. El timelock es una característica de los contratos inteligentes, que establece una condición temporal a cumplir, para que una transacción se incluya en un bloque. Esto significa que, si Alice publica una de las transacciones de compromiso, no podrá recuperar sus fondos, hasta que hayan transcurrido un número de bloques determinado. Este tiempo de espera comienza cuando se confirma la transacción de compromiso. Su duración suele ser proporcional al tamaño del canal, aunque este tiempo de espera también puede configurarse manualmente.
@@ -343,7 +343,7 @@ Veamos el funcionamiento de este mecanismo en su conjunto.
 ### Proceso de actualización de transacciones
 Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, ya han intercambiado por adelantado sus respectivos **secretos** para la transacción de compromiso anterior (que quedará obsoleta y podría servir para estafar al otro). Por eso, en el nuevo estado del canal:
 - Alice y Bob tienen una nueva transacción de compromiso, donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
-- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la clave de revocación, si uno de ellos intenta estafar fondos, publicando una transacción del estado anterior en los mempools del nodo Bitcoin. De hecho, para penalizar a la otra parte, es necesario tener los dos secretos y la transacción de compromiso del otro participante, que incluye la entrada firmada. Sin esta transacción, la clave de revocación por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones a la espera de confirmación) o de transacciones confirmadas en la blockchain durante el timelock. Así, demostraríamos que la otra parte está intentando hacer trampas, ya sea intencionadamente o no.
+- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la clave de revocación, si uno de ellos intenta estafar fondos, publicando una transacción del estado anterior en los mempools del nodo Bitcoin. De hecho, para penalizar a la otra parte, es necesario tener los dos secretos y la transacción de compromiso del otro participante, que incluye la entrada firmada. Sin esta transacción, la clave de revocación por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones a la espera de confirmación) o de transacciones confirmadas en la blockchain de Bitcoin durante el timelock. Así, demostraríamos que la otra parte está intentando hacer trampas, ya sea intencionadamente o no.
 
 Para entender bien este proceso, pongamos un ejemplo:
 
@@ -367,12 +367,12 @@ En este caso, Bob no tiene motivaciones económicas para intentar estafar a Alic
 
 **¿Qué debes extraer del contenido de este capítulo?**
 
-Las **transacciones de compromiso** de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. Antes de firmar una nueva transacción de compromiso, Alice y Bob intercambian los **secretos** de las transacciones de compromiso anteriores. En el caso hipotético, en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar realizar una acción fraudulenta. 
+Las **transacciones de compromiso** de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. Antes de firmar una nueva transacción de compromiso, Alice y Bob intercambian los **secretos** de las transacciones de compromiso anteriores. En el caso hipotético, en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar estafar a Bob. 
 
 Este sistema de seguridad garantiza que los participantes cumplan con las normas de la red Lightning y que no puedan beneficiarse de la publicación de transacciones de compromiso antiguas. 
-Ya hemos aprendido cómo Las transacciones de compromiso de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. En el contexto de las transacciones de compromiso, se establece un intercambio de secretos entre Alice y Bob antes de proceder con una nueva transacción. En el caso hipotético en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la clave de revocación para recuperar todos los fondos antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar realizar una acción fraudulenta.
+Ya hemos aprendido cómo las transacciones de compromiso de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. En el contexto de las transacciones de compromiso, se establece un intercambio de secretos entre Alice y Bob, antes de proceder con una nueva transacción. En el caso hipotético en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la clave de revocación para recuperar todos los fondos antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar realizar una acción fraudulenta.
 Este sistema de seguridad garantiza que los participantes cumplan con las normas de la red Lightning y que no puedan beneficiarse de la publicación de transacciones de compromiso antiguas.
-En este punto, se espera que el sujeto haya desarrollado la capacidad de comprender el proceso de apertura de los canales Lightning y la operatividad de las transacciones, que tienen lugar en dichos canales de pago. En el siguiente capítulo, se abordarán las diversas técnicas para cerrar un canal de pagos y recuperar los Bitcoins en la blockchain.
+En este punto, se espera que el alumno haya desarrollado la capacidad de comprender el proceso de apertura de los canales Lightning y la operatividad de las transacciones, que tienen lugar en dichos canales de pago. En el siguiente capítulo, se abordarán las diversas técnicas para cerrar un canal de pagos y recuperar los Bitcoins en la blockchain.
 
 ## Cierre de un canal
 
@@ -392,7 +392,7 @@ El **ciclo de vida de un canal** comienza con su **apertura**, mediante una tran
 Hay tres modos principales para cerrar el canal de pagos.
 Estos tres modos los podemos llamar **El Bueno, El Bruto y El Ausente** (inspirado en el libro Mastering the Lightning Network de Andreas Antonopoulos).
 
-- **El Bueno** (The Good): **cierre coperativo**, en el que Amice y Bob acuerdan el cierre del canal.
+- **El Bueno** (The Good): **cierre coperativo**, en el que Alice y Bob acuerdan el cierre del canal.
 - **El Bruto** (The Bad): **cierre forzado**, en el que uno de los participantes decide cerrar el canal honestamente, pero sin que la contraparte esté de acuerdo con ello.
 - **El Ausente**: *- **cierre con estafa**, en el que una de las dos partes intenta robar fondos, publicando unna transacción de compromiso antigua, en lugar de la última transacción realizada, (que es la que refleja la distribución real y justa de sus fondos), si no otra, (que, normalmente, tiene más liquidez, que en la última transacción).
 Por ejemplo,
@@ -413,7 +413,8 @@ En un **cierre cooperativo**, Alice y Bob acuerdan cerrar el canal. A continuaci
 
 - Alice y Bob negocian juntos las comisiones de la **transacción de cierre**. Estas comisiones se calculan, generalmente, en base al mercado de comisiones de Bitcoin en el momento del cierre. Es importante tener en cuenta que **el individuo que inició la transacción** (en nuestro ejemplo, Alice) es responsable de las comisiones de cierre.
 - Se construye una nueva **transacción de cierre**. Esta transacción se asemeja a una transacción de compromiso, sin embargo, carece de la inclusión de timelocks o mecanismos de revocación, debido a la naturaleza colaborativa de ambas partes y a la ausencia de cualquier riesgo de actividad fraudulenta. Esta transacción de cierre cooperativo es, por tanto, distinta de las transacciones de compromiso.
-   Por ejemplo, si Alice posee **100,000 satoshis** y Bob posee **30,000 satoshis**, la transacción de cierre enviará **100,000 satoshis** a la dirección de Alice y **30,000 satoshis** a la dirección de Bob, sin límite de tiempo. Una vez que esta transacción es firmada por ambas partes, es publicada por Alice. Una vez confirmada la transacción en la blockchain de Bitcoin, el canal Lightning se cierra oficialmente.
+   Por ejemplo, si Alice posee **100,000 satoshis** y Bob posee **30,000 satoshis**, la transacción de cierre enviará **100,000 satoshis** a la dirección de Alice y, **30,000 satoshis** a la dirección de Bob, sin límite de tiempo. Una vez que esta transacción es firmada por ambas partes, es publicada por Alice. Una vez confirmada la transacción en la blockchain de Bitcoin, el canal Lightning se cierra oficialmente.
+  
    ![LNP201](assets/en/32.webp)
 
 El **cierre cooperativo** es el método preferido de cierre porque es rápido (sin bloqueo de tiempo) (Timelock) y las tarifas de transacción se ajustan, de acuerdo con las condiciones actuales del mercado Bitcoin. Este enfoque garantiza que el importe del pago se ajuste adecuadamente al valor de la transacción, mitigando así el riesgo de rechazo de transacciones dentro de los mempools. Además, evita que se produzcan pérdidas financieras excesivas para todas las partes implicadas.
@@ -438,19 +439,19 @@ En resumen, la opción del **cierre forzoso** es un último recurso cuando el co
 El acto de **estafar**  implica que una de las partes intenta publicar una vieja transacción de compromiso, a menudo en la que poseía más fondos de los que debería. Por ejemplo, Alice podría publicar una transacción antigua en la que poseía **120,000 satoshis**, pero en realidad solo posee **100,000 satoshis** en la actualidad.
 ![LNP201](assets/en/35.webp)
 
-Para prevenir cualquier caso de engaño, Bob es responsable de monitorizar la cadena de bloques de Bitcoin y su mempool. Así se asegura que Alice no publique una transacción antigua. En caso de detectar un intento de engaño, Bob puede utilizar la **clave de revocación** para recuperar los fondos del canal de Alice. Como Alice está bloqueada por el timelock en su salida, Bob tiene tiempo de gastarl los fondos (Bob no está bloqueado por el timelock) para recuperar toda la suma en una dirección de su propiedad.
+Para prevenir cualquier caso de engaño, Bob es responsable de monitorizar la cadena de bloques de Bitcoin (blockchain) y su mempool. Así se asegura que Alice no publique una transacción antigua. En caso de detectar un intento de engaño, Bob puede utilizar la **clave de revocación** para recuperar los fondos del canal de Alice. Como Alice está bloqueada por el timelock en su salida de fondos, Bob tiene tiempo de gastar los fondos (Bob no está bloqueado por el timelock) para recuperar toda la suma en una dirección de su propiedad.
 
 ![LNP201](assets/en/36.webp)
 
-Obviamente, el engaño puede tener éxito potencialmente si Bob no actúa dentro del tiempo impuesto por el timelock en la salida de Alice. En este caso, la salida de Alice se desbloquea, permitiéndole consumirla para crear una nueva salida a una dirección que controla.
+Obviamente, el engaño puede tener éxito potencial, si Bob no actúa dentro del tiempo impuesto por el timelock en la salida de fondos de Alice. En este caso, la salida de Alice se desbloquea, permitiéndole consumirla para crear una nueva salida de liquidez a su dirección. 
 
-**¿Qué debes llevar de este capítulo?**
+**¿Qué debes extraer del contenido de este capítulo?**
 
 Hay tres maneras de cerrar un canal:
 
 - **Cierre Cooperativo**: Rápido y menos costoso, donde ambas partes acuerdan cerrar el canal y publicar una transacción de cierre a medida.
 - **Cierre Forzado**: Menos deseable, ya que se basa en publicar una transacción de compromiso, con tarifas potencialmente inadecuadas y un timelock, lo que ralentiza el cierre.
-- **Hacer trampa**: Si una de las partes intenta robar fondos publicando una transacción antigua, la otra puede usar la llave de revocación para castigar esta trampa.
+- **Hacer trampa**: Si una de las partes intenta robar fondos publicando una transacción antigua, la otra puede usar la llave de revocación (Revokation key) para penalizar este intento de estafa.
    En los próximos capítulos, exploraremos la Red Lightning desde una perspectiva más amplia, enfocándonos en cómo opera su red.
 
 # Una Red de Liquidez
@@ -463,22 +464,22 @@ Hay tres maneras de cerrar un canal:
 
 :::video id=52ad2fd7-0459-4635-8785-793fc5fff28e:::
 
-En este capítulo, exploraremos cómo los pagos en la Red Lightning pueden llegar a un destinatario incluso si no están conectados directamente por un canal de pago. Lightning es, de hecho, una **red de canales de pago**, que permite enviar fondos a un nodo distante a través de los canales de otros participantes. Descubriremos cómo se enrutan los pagos a través de la red, cómo se mueve la liquidez entre canales y cómo se calculan las tarifas de transacción.
+En este capítulo, exploraremos cómo los pagos en la Red Lightning pueden llegar a un destinatario, incluso si no están conectados directamente por un canal de pago. Lightning es, de hecho, una **red de canales de pago**, que permite enviar fondos a un nodo distante a través de los canales de otros participantes intermedios. Descubriremos cómo se enrutan los pagos a través de la red, cómo se mueve la liquidez entre canales y cómo se calculan las tarifas de transacción.
 
 ### La Red de Canales de Pago
 
-En la Red Lightning, una transacción corresponde a una transferencia de fondos entre dos nodos. Como se vio en capítulos anteriores, es necesario abrir un canal con alguien para realizar transacciones Lightning. Este canal permite realizar un número casi infinito de transacciones fuera de la cadena antes de cerrarlo para reclamar el saldo en la cadena. Sin embargo, este método tiene la desventaja de requerir un canal directo con la otra persona para recibir o enviar fondos, lo que implica una transacción de apertura y una transacción de cierre para cada canal. Si planeo hacer un gran número de pagos con esta persona, abrir y cerrar un canal se vuelve rentable. Por el contrario, si solo necesito realizar unas pocas transacciones Lightning, abrir un canal directo no es ventajoso, ya que me costaría 2 transacciones en la cadena por un número limitado de transacciones fuera de la cadena. Este caso podría ocurrir, por ejemplo, cuando se desea pagar con Lightning en un comercio sin planear volver.
+En la Red Lightning, una transacción corresponde a una transferencia de fondos entre dos nodos. Como se vio en capítulos anteriores, es necesario abrir un canal con alguien para realizar transacciones Lightning. Este canal permite realizar un número casi infinito de transacciones fuera de la cadena antes de cerrarlo para reclamar el saldo en la cadena. Sin embargo, este método tiene la desventaja de requerir un canal directo con la otra persona para recibir o enviar fondos, lo que implica una transacción de apertura y una transacción de cierre para cada canal. Si planeo hacer un gran número de pagos con esta persona, abrir y cerrar un canal se vuelve rentable. Por el contrario, si solo necesito realizar unas pocas transacciones Lightning, abrir un canal directo no es ventajoso, ya que me costaría 2 transacciones en la cadena por un número limitado de transacciones fuera de la cadena. Esto podría ocurrir, por ejemplo, cuando se desea pagar con Lightning en un comercio sin planear volver.
 
-Para resolver este problema, la Red Lightning permite enrutar un pago a través de varios canales y nodos intermediarios, lo que permite realizar una transacción sin un canal directo con la otra persona.
+Para resolver este problema, la Red Lightning permite enrutar un pago a través de varios canales y nodos intermedios, lo que permite realizar una transacción sin un canal de pago directo con la otra persona.
 
 Por ejemplo, imagina que:
 
-- **Alice** (en naranja) tiene un canal con **Suzie** (en gris) con **100,000 satoshis** de su lado y **30,000 satoshis** del lado de Suzie.
-- **Suzie** tiene un canal con **Bob** en el que posee **250,000 satoshis** y donde Bob no tiene satoshis.
+- **Alice** (en color naranja) tiene un canal con **Suzie** (en color gris) con **100,000 satoshis** en el extremo de Alice y **30,000 satoshis** en el extremo de Suzie.
+- **Suzie** tiene un canal con **Bob**, en el que posee **250,000 satoshis**, y Bob no tiene satoshis en el canal.
 
 ![LNP201](assets/en/37.webp)
 
-Si Alice quiere enviar fondos a Bob sin abrir un canal directo con él, tendrá que pasar por Suzie, y cada canal necesitará ajustar la liquidez de cada lado. **Los satoshis enviados permanecen dentro de sus respectivos canales**; en realidad no "cruzan" los canales, pero la transferencia se realiza mediante un ajuste de la liquidez interna en cada canal.
+Si Alice quiere enviar fondos a Bob, sin abrir un canal directo con él, tendrá que pasar por Suzie, y cada canal necesitará ajustar la liquidez de cada extremo. **Los satoshis enviados permanecen dentro de sus respectivos canales**; en realidad, no "cruzan" los canales, pero la transferencia se realiza mediante un ajuste de la liquidez interna en cada canal.
 
 Supongamos que Alice quiere enviar **50,000 satoshis** a Bob:
 
@@ -486,20 +487,20 @@ Supongamos que Alice quiere enviar **50,000 satoshis** a Bob:
 - **Suzie** replica esta transferencia enviando 50,000 satoshis a **Bob** en su canal.
 
 ![LNP201](assets/en/38.webp)
-Así, el pago se enruta a Bob mediante un movimiento de liquidez en cada canal. Al final de la operación, Alice termina con 50,000 sats. De hecho, ha transferido 50,000 sats ya que inicialmente tenía 100,000. Bob, por su parte, termina con 50,000 sats adicionales. Para Suzie (el nodo intermedio), esta operación es neutral: inicialmente, tenía 30,000 sats en su canal con Alice y 250,000 sats en su canal con Bob, un total de 280,000 sats. Después de la operación, mantiene 80,000 sats en su canal con Alice y 200,000 sats en su canal con Bob, que es la misma suma que al inicio.
-Esta transferencia está así limitada por la **liquidez disponible** en la dirección de la transferencia.
+Así, el pago se enruta a Bob mediante un movimiento de liquidez en cada canal. Al final de la operación, Alice termina con 50,000 sats. De hecho, ha transferido 50,000 sats, ya que inicialmente tenía 100,000. Bob, por su parte, termina con 50,000 sats adicionales. Para Suzie (el nodo intermedio), esta operación es neutral: inicialmente, tenía 30,000 sats en su canal con Alice y 250,000 sats en su canal con Bob, un total de 280,000 sats. Después de la operación, mantiene 80,000 sats en su canal con Alice y 200,000 sats en su canal con Bob, que es la misma suma de fondos que al inicio.
+Esta transferencia está limitada por la **liquidez disponible** en la dirección de la transferencia.
 
 ### Cálculo de la Ruta y Límites de Liquidez
 
 Tomemos un ejemplo teórico de otra red con:
 
-- **130,000 satoshis** del lado de Alice (en naranja) en su canal con **Suzie** (en gris).
-- **90,000 satoshis** del lado de **Suzie** y **200,000 satoshis** del lado de **Carol** (en rosa).
-- **150,000 satoshis** del lado de **Carol** y **100,000 satoshis** del lado de **Bob**.
+- **130,000 satoshis** del lado de Alice (en color naranja) en su canal con **Suzie** (en color gris).
+- **90,000 satoshis** en el extremo de **Suzie** y **200,000 satoshis** en el extremo de **Carol** (en rosa).
+- **150,000 satoshis** en el extremo de **Carol** y **100,000 satoshis** en el extremo de **Bob**.
 
 ![LNP201](assets/en/39.webp)
 
-El máximo que Alice puede enviar a Bob en esta configuración es **90,000 satoshis**, ya que está limitada por la menor liquidez disponible en el canal de **Suzie a Carol**. En la dirección opuesta (de Bob a Alice), no es posible ningún pago porque el lado de **Suzie** en el canal con **Alice** no contiene satoshis. Por lo tanto, no hay **ruta** utilizable para una transferencia en esta dirección.
+El máximo que Alice puede enviar a Bob en esta configuración es **90,000 satoshis**, ya que está limitada por la menor liquidez disponible en el canal de **Suzie a Carol**. En la dirección opuesta (de Bob a Alice), no es posible ningún pago, porque el extremo de **Suzie** , en el canal con **Alice**, no contiene satoshis. Por lo tanto, no existe una **ruta**, que se pueda utilizar, para una transferencia en esta dirección.
 Alice envía **40,000 satoshis** a Bob a través de los canales:
 
 - Alice transfiere 40,000 satoshis a su canal con Suzie.
@@ -508,21 +509,21 @@ Alice envía **40,000 satoshis** a Bob a través de los canales:
 
 ![LNP201](assets/en/40.webp)
 
-Los **satoshis enviados** en cada canal **permanecen en el canal**, así que los satoshis enviados por Carol a Bob no son los mismos que los enviados por Alice a Suzie. La transferencia se realiza solo ajustando la liquidez dentro de cada canal. Además, la capacidad total de los canales permanece sin cambios.
+Los **satoshis enviados** en cada canal **permanecen en el canal**, así que los satoshis enviados por Carol a Bob no son los mismos que los enviados por Alice a Suzie. La transferencia se realiza solo ajustando la liquidez dentro de cada canal. Además, la capacidad total de los canales de pago permanece igual, sin cambios.
 
 ![LNP201](assets/en/41.webp)
 
-Como en el ejemplo anterior, después de la transacción, el nodo fuente (Alice) tiene 40,000 satoshis menos. Los nodos intermedios (Suzie y Carol) retienen la misma cantidad total, haciendo la operación neutral para ellos. Finalmente, el nodo destino (Bob) recibe 40,000 satoshis adicionales.
+Como en el ejemplo anterior, después de la transacción, el nodo origen/fuente (Alice) tiene 40,000 satoshis menos. Los nodos intermedios (Suzie y Carol) retienen la misma cantidad total, haciendo la operación neutral para ellas. Finalmente, el nodo destino (Bob) recibe 40,000 satoshis adicionales.
 
-El papel de los nodos intermedios es, por lo tanto, muy importante en el funcionamiento de la Lightning Network. Facilitan las transferencias ofreciendo múltiples caminos para los pagos. Para incentivar a estos nodos a proporcionar su liquidez y participar en el enrutamiento de pagos, se les pagan **tarifas de enrutamiento**.
+El papel de los nodos intermedios es, por lo tanto, muy importante en el funcionamiento de la Lightning Network. Facilitan las transferencias, ofreciendo múltiples rutas para los pagos. Para incentivar a estos nodos a proporcionar su liquidez y participar en el enrutamiento de pagos, se les pagan **comisiones de enrutamiento**.
 
-### Tarifas de Enrutamiento
+### Comisiones por enrutamiento
 
-Los nodos intermedios aplican tarifas para permitir que los pagos pasen a través de sus canales. Estas tarifas son establecidas por **cada nodo para cada canal**. Las tarifas consisten en 2 elementos:
+Los nodos intermedios aplican comisiones para permitir que los pagos pasen a través de sus canales. Estas comisiones son establecidas por **cada nodo para cada canal**. Las comisiones consisten en 2 elementos:
 
-- "**Tarifa base**": una cantidad fija por canal, a menudo **1 sat** por defecto, pero personalizable.
+- "**Tarifa base**": una cantidad fija por canal, a menudo **1 sat** por defecto, pero esta tarifa base es personalizable.
 - "**Tarifa variable**": un porcentaje del monto transferido, calculado en **partes por millón (ppm)**. Por defecto, es **1 ppm** (1 sat por millón de satoshis transferidos), pero también puede ajustarse.
-   Las tarifas también varían dependiendo de la dirección de la transferencia. Por ejemplo, para una transferencia de Alice a Suzie, se aplican las tarifas de Alice. Por el contrario, de Suzie a Alice, se utilizan las tarifas de Suzie.
+   Las tarifas también varían dependiendo de la dirección de la transferencia. Por ejemplo, para una transferencia de Alice a Suzie, se aplican las tarifas de Alice. Por el contrario, de Suzie a Alice, se fijan las tarifas de Suzie.
 
 Por ejemplo, para un canal entre Alice y Suzie, podríamos tener:
 
@@ -533,14 +534,14 @@ Por ejemplo, para un canal entre Alice y Suzie, podríamos tener:
 
 Para entender mejor cómo funcionan las tarifas, estudiemos la misma Red Lightning que antes, pero ahora con las siguientes tarifas de enrutamiento:
 
-- Canal **Alice - Suzie**: tarifa base de 1 satoshi y 1 ppm para Alice.
+- Canal **Alice - Suzie**: tarifa base de 1 satoshi y 1 ppm (partes por millón) para Alice.
 - Canal **Suzie - Carol**: tarifa base de 0 satoshi y 200 ppm para Suzie.
 - Canal **Carol - Bob**: tarifa base de 1 satoshi y 1 ppm para Suzie 2.
   ![LNP201](assets/en/43.webp)
 
 Para el mismo pago de **40,000 satoshis** a Bob, Alice tendrá que enviar un poco más, ya que cada nodo intermediario deducirá sus tarifas:
 
-- **Carol** deduce 1.04 satoshis en el canal con Bob:
+- **Carol** descuenta 1.04 satoshis en el canal con Bob:
   $$ f*{\text{Carol-Bob}} = \text{tarifa base} + \left(\frac{\text{ppm} \times \text{monto}}{10^6}\right) $$
   $$ f*{\text{Carol-Bob}} = 1 + \frac{1 \times 40000}{10^6} = 1 + 0.04 = 1.04 \text{ sats} $$
 
@@ -548,49 +549,49 @@ Para el mismo pago de **40,000 satoshis** a Bob, Alice tendrá que enviar un poc
   $$ f*{\text{Suzie-Carol}} = \text{tarifa base} + \left(\frac{\text{ppm} \times \text{monto}}{10^6}\right) $$
   $$ f*{\text{Suzie-Carol}} = 0 + \frac{200 \times 40001.04}{10^6} = 0 + 8.0002 \approx 8 \text{ sats} $$
 
-Las tarifas totales para este pago en este camino son, por lo tanto, **9.04 satoshis**. Así, Alice debe enviar **40,009.04 satoshis** para que Bob reciba exactamente **40,000 satoshis**.
+Las tarifas totales para este pago en este camino son, por lo tanto, **9.04 satoshis**. Así, Alice debe enviar **40,009.04 satoshis**, para que Bob reciba exactamente **40,000 satoshis**.
 
 ![LNP201](assets/en/44.webp)
 
-La liquidez se actualiza por lo tanto:
+La liquidez se actualiza por tanto de la siguiente manera:
 
 ![LNP201](assets/en/45.webp)
 
-### Enrutamiento Cebolla
+### Enrutamiento Cebolla (Onion Routing)
 
-Para enrutar un pago del emisor al receptor, la Red Lightning utiliza un método llamado "**enrutamiento cebolla**". A diferencia del enrutamiento de datos clásicos, donde cada enrutador decide la dirección de los datos basándose en su destino, el enrutamiento cebolla funciona de manera diferente:
+Para enrutar un pago del emisor al receptor, la Red Lightning utiliza un método llamado "**enrutamiento cebolla**" (onion Routing). A diferencia del enrutamiento de datos clásicos, donde cada enrutador decide la dirección de los datos, basándose en su destino, el enrutamiento cebolla funciona de un modo distinto:
 
 - **El nodo emisor calcula toda la ruta**: Alice, por ejemplo, determina que su pago debe pasar por Suzie y Carol antes de llegar a Bob.
-- **Cada nodo intermediario solo conoce a su vecino inmediato**: Suzie solo sabe que recibió fondos de Alice y que debe transferirlos a Carol. Sin embargo, Suzie no sabe si Alice es el nodo fuente o un nodo intermediario, y tampoco sabe si Carol es el nodo receptor o simplemente otro nodo intermediario. Este principio también se aplica a Carol y todos los demás nodos en el camino. El enrutamiento de cebolla (onion routing) preserva así la confidencialidad de las transacciones al enmascarar la identidad del remitente y del destinatario final. Para asegurar que el nodo transmisor pueda calcular una ruta completa hasta el destinatario en el enrutamiento de cebolla, debe mantener un **gráfico de red** para conocer su topología y determinar posibles rutas.
-  **¿Qué debes llevar contigo de este capítulo?**
+- **Cada nodo intermedio solamente conoce a su vecino inmediato**: Suzie solo sabe que recibió fondos de Alice y que debe transferirlos a Carol. Sin embargo, Suzie no sabe si Alice es el nodo fuente o un nodo intermedio, y tampoco sabe si Carol es el nodo receptor o , simplemente, otro nodo intermedio. Este principio también se aplica a Carol y a todos los demás nodos en la ruta. El enrutamiento de cebolla (Onion Routing) preserva la confidencialidad de las transacciones, al enmascarar la identidad del remitente y del destinatario final. Para asegurar que el nodo transmisor pueda calcular una ruta completa hasta el destinatario en el Onion Routing, debe mantener un **gráfico de red** para conocer la topología de la red para determinar las posibles rutas.
+  **¿Qué debes extraer del contenido de este capítulo?**
 
-- En Lightning, los pagos pueden ser enrutados entre nodos indirectamente conectados a través de canales intermediarios. Cada uno de estos nodos intermediarios facilita la retransmisión de liquidez.
-- Los nodos intermediarios reciben una comisión por su servicio, consistente en tarifas fijas y variables.
-- El enrutamiento de cebolla permite al nodo transmisor calcular la ruta completa sin que los nodos intermediarios conozcan la fuente o el destino final.
+- En Lightning, los pagos pueden ser enrutados entre nodos indirectamente conectados, a través de canales intermedios. Cada uno de estos nodos intermedios facilita la transmisión de liquidez.
+- Los nodos intermedios reciben una comisión por su servicio, consistente en tarifas fijas y variables.
+- El Onion Routing permite al nodo transmisor calcular la ruta completa, sin que los nodos intermedios conozcan la fuente/origen o el receptor final.
 
-En este capítulo, exploramos el enrutamiento de pagos en la Red Lightning. Pero surge una pregunta: ¿qué impide que los nodos intermediarios acepten un pago entrante sin reenviarlo al siguiente destino, con el objetivo de interceptar la transacción? Este es precisamente el papel de los HTLCs que estudiaremos en el siguiente capítulo.
+En este capítulo, exploramos el enrutamiento de pagos en la Red Lightning. Surge una pregunta: ¿qué impide que los nodos intermedios acepten un pago entrante, sin reenviarlo al siguiente destino, con el objetivo de interceptar la transacción? Este es precisamente el papel de los HTLCs que estudiaremos en el siguiente capítulo.
 
-## HTLC – Contrato de Tiempo Bloqueado con Hash
+## HTLC – Contrato bloqueado con tiempo y con un hash
 
 <chapterId>4369b85a-1365-55d8-99e1-509088210116</chapterId>
 
 :::video id=4e2361e0-e859-4459-bef5-79b2fbb03574:::
 
-En este capítulo, descubriremos cómo Lightning permite que los pagos transiten a través de nodos intermediarios sin necesidad de confiar en ellos, gracias a los **HTLC** (_Hashed Time-Locked Contracts_ o Contratos de Tiempo Bloqueado con Hash). Estos contratos inteligentes aseguran que cada nodo intermediario solo recibirá los fondos de su canal si reenvía el pago al destinatario final, de lo contrario, el pago no será validado.
+En este capítulo, descubriremos cómo Lightning permite que los pagos transiten a través de nodos intermedios, sin necesidad de confiar en ellos, gracias a los **HTLC** (_Hashed Time-Locked Contracts_ o Contratos bloqueados con tiempo y con un hash). Estos contratos inteligentes aseguran que cada nodo intermedio únicamente recibirá los fondos de su canal, si reenvía el pago al destinatario final, de lo contrario, el pago no será validado.
 
-El problema que surge para el enrutamiento de pagos es, por lo tanto, la confianza necesaria en los nodos intermediarios, y entre los propios nodos intermediarios. Para ilustrar esto, revisemos nuestro ejemplo simplificado de la red Lightning con 3 nodos y 2 canales:
+El problema que surge para el enrutamiento de pagos es, por lo tanto, la confianza necesaria en los nodos intermedios, y que haya confianza también entre los propios nodos intermedios. Para ilustrar esto, revisemos nuestro ejemplo simplificado de la red Lightning con 3 nodos y 2 canales:
 
 - Alice tiene un canal con Suzie.
 - Suzie tiene un canal con Bob.
 
-Alice quiere enviar 40,000 sats a Bob pero no tiene un canal directo con él y no desea abrir uno. Busca una ruta y decide pasar por el nodo de Suzie.
+Alice quiere enviar 40,000 sats a Bob, pero no existe un canal directo con Bob, y Alice no quiere abrir un canal de pagos. Alice busca una ruta y decide que la transacción se lleve por la vía, que pasa por el nodo de Suzie.
 
 ![LNP201](assets/en/46.webp)
 
-Si Alice envía ingenuamente 40,000 satoshis a Suzie esperando que Suzie transfiera esta suma a Bob, Suzie podría quedarse con los fondos para sí misma y no transmitir nada a Bob.
+Si Alice envía ingenuamente 40,000 satoshis a Suzie, esperando que Suzie transfiera esta suma a Bob, Suzie podría quedarse con los fondos y no enviarlos a Bob.
 
 ![LNP201](assets/en/47.webp)
-Para evitar esta situación, en Lightning, usamos HTLCs (Contratos de Tiempo Bloqueado con Hash), que hacen el pago al nodo intermediario condicional, lo que significa que Suzie debe cumplir ciertas condiciones para acceder a los fondos de Alice y transferirlos a Bob.
+Para evitar esta situación, en Lightning, usamos HTLCs (Contratos bloqueados con tiempo y con Hash), que hacen el pago al nodo intermediario condicional, esto es, Suzie debe cumplir ciertas condiciones para acceder a los fondos de Alice y transferirlos a Bob.
 
 ### Cómo Funcionan los HTLCs
 
