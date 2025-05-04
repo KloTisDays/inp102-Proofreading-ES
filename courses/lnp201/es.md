@@ -226,10 +226,6 @@ Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2
   
 ![LNP201](assets/en/16.webp)
 
-### ¿Cuándo se considera abierto el canal?
-
-El canal se considera abierto una vez que la transacción de depósito se incluye en un bloque de Bitcoin y ha alcanzado una cierta profundidad de confirmaciones (número de bloques siguientes).
-
 ### ¿Cuándo se considera que el canal está abierto?
 
 El canal se considera abierto, cuando la transacción de depósito se registra en un bloque de la blockchain de Bitcoin y esta transacción ha acumulado el número de confirmaciones necesarias (número de bloques siguientes), para verificar la validez de la operación en el canal de pagos.
@@ -443,22 +439,21 @@ Para prevenir cualquier caso de engaño, Bob es responsable de monitorizar la ca
 
 ![LNP201](assets/en/36.webp)
 
-Obviamente, el engaño puede tener éxito potencial, si Bob no actúa dentro del tiempo impuesto por el timelock en la salida de fondos de Alice. En este caso, la salida de Alice se desbloquea, permitiéndole consumirla para crear una nueva salida de liquidez a su dirección. 
+Si Bob no actúa dentro del tiempo permitido por el bloqueo de tiempo en la salida de Alice, el engaño podría funcionar. En este caso, la salida de Alice está desbloqueada, por lo que puede usarla para crear una nueva salida hacia una dirección que ella controle.
 
-**¿Qué debes extraer del contenido de este capítulo?**
+**¿Qué es lo más importante que puedes sacar de este capítulo?
 
-Hay tres maneras de cerrar un canal:
-
-- **Cierre Cooperativo**: Rápido y menos costoso, donde ambas partes acuerdan cerrar el canal y publicar una transacción de cierre a medida.
-- **Cierre Forzado**: Menos deseable, ya que se basa en publicar una transacción de compromiso, con tarifas potencialmente inadecuadas y un timelock, lo que ralentiza el cierre.
-- **Hacer trampa**: Si una de las partes intenta robar fondos publicando una transacción antigua, la otra puede usar la llave de revocación (Revokation key) para penalizar este intento de estafa.
-   En los próximos capítulos, exploraremos la Red Lightning desde una perspectiva más amplia, enfocándonos en cómo opera su red.
+Hay tres maneras de cerrar un canal.
+- **Cierre cooperativo**: es rápido y barato, y ambas partes acuerdan cerrar el canal y publicar una transacción especial de cierre.
+- **Cierre forzado**: no es tan bueno, ya que hay que publicar una transacción de compromiso, que puede tener comisiones inadecuadas y un bloqueo temporal. Esto puede ralentizar el cierre.
+- **Cierre engañoso**: si alguien intenta robar fondos, publicando una transacción antigua, el otro puede utilizar la clave de revocación (Revokation Key) para impedirlo.
+  En los próximos capítulos veremos la Lightning Network más detalladamente, centrándonos en la forma de operar de esta red.
 
 # Una Red de Liquidez
 
 <partId>a873f1cb-751f-5f4a-9ed7-25092bfdef11</partId>
 
-## Red Lightning
+## Red Lightning (Lightning Network)
 
 <chapterId>45a7252c-fa4f-554b-b8bb-47449532918e</chapterId>
 
@@ -468,27 +463,30 @@ En este capítulo, exploraremos cómo los pagos en la Red Lightning pueden llega
 
 ### La Red de Canales de Pago
 
-En la Red Lightning, una transacción corresponde a una transferencia de fondos entre dos nodos. Como se vio en capítulos anteriores, es necesario abrir un canal con alguien para realizar transacciones Lightning. Este canal permite realizar un número casi infinito de transacciones fuera de la cadena antes de cerrarlo para reclamar el saldo en la cadena. Sin embargo, este método tiene la desventaja de requerir un canal directo con la otra persona para recibir o enviar fondos, lo que implica una transacción de apertura y una transacción de cierre para cada canal. Si planeo hacer un gran número de pagos con esta persona, abrir y cerrar un canal se vuelve rentable. Por el contrario, si solo necesito realizar unas pocas transacciones Lightning, abrir un canal directo no es ventajoso, ya que me costaría 2 transacciones en la cadena por un número limitado de transacciones fuera de la cadena. Esto podría ocurrir, por ejemplo, cuando se desea pagar con Lightning en un comercio sin planear volver.
+### La red de canales de pago
 
-Para resolver este problema, la Red Lightning permite enrutar un pago a través de varios canales y nodos intermedios, lo que permite realizar una transacción sin un canal de pago directo con la otra persona.
+En la Lightning Network, una transacción consiste en transferir fondos entre dos nodos. Como se ha visto en capítulos anteriores, para realizar transacciones Lightning es necesario abrir un canal de pago con alguien. Este canal permite realizar un número casi infinito de transacciones fuera de la cadena antes de que se cierre para reestablecer el saldo en la cadena. Sin embargo, este método tiene el inconveniente de que requiere un canal directo con la otra persona para recibir o enviar fondos, lo que implica una transacción de apertura y otra de cierre para cada canal. Si tengo previsto realizar un gran número de pagos con este participante, abrir y cerrar un canal resulta costoso. Por el contrario, si solo necesito realizar unas pocas transacciones Lightning, abrir un canal directo no es ventajoso, ya que me costaría dos transacciones en la cadena por un número limitado de transacciones fuera de ella. Este podría ser el caso, por ejemplo, si se quiere utilizar Lightning para pagar a un comerciante sin tener previsto volver al comercio.
 
-Por ejemplo, imagina que:
+Para resolver este problema, la red Lightning permite enrutar un pago a través de múltiples canales y nodos intermedios, lo que permite realizar una transacción sin un canal directo con el otro participante.
 
-- **Alice** (en color naranja) tiene un canal con **Suzie** (en color gris) con **100,000 satoshis** en el extremo de Alice y **30,000 satoshis** en el extremo de Suzie.
-- **Suzie** tiene un canal con **Bob**, en el que posee **250,000 satoshis**, y Bob no tiene satoshis en el canal.
+Imagina, por ejemplo:
+
+- **Alice** (en naranja) tiene un canal con **Suzie** (en gris) con **100,000 satoshis** en su lado y **30,000 satoshis** en el lado de Suzie.
+- **Suzie** tiene un canal con Bob en el que ella tiene **250,000 satoshis** y Bob, no tiene satoshis.
 
 ![LNP201](assets/en/37.webp)
 
-Si Alice quiere enviar fondos a Bob, sin abrir un canal directo con él, tendrá que pasar por Suzie, y cada canal necesitará ajustar la liquidez de cada extremo. **Los satoshis enviados permanecen dentro de sus respectivos canales**; en realidad, no "cruzan" los canales, pero la transferencia se realiza mediante un ajuste de la liquidez interna en cada canal.
-
-Supongamos que Alice quiere enviar **50,000 satoshis** a Bob:
-
-- **Alice** envía 50,000 satoshis a **Suzie** en su canal común.
-- **Suzie** replica esta transferencia enviando 50,000 satoshis a **Bob** en su canal.
-
+Si Alicia quiere enviar dinero a Bob sin abrir un canal de pago directo con él, tendrá que pasar por Suzie y, cada canal tendrá que ajustar la liquidez en cada extremo. **Los satoshis enviados permanecen dentro de sus respectivos canales**; en realidad, no «cruzan» los canales, sino que la transferencia se realiza ajustando la liquidez interna de cada canal.
+Supongamos que Alicia desea enviar **50.000 satoshis** a Bob:
+- **Alice** envía 50.000 satoshis a **Suzie** en su canal compartido.
+- Suzie replica esta transferencia enviando 50,000 satoshis al canal de **Bob** .
+  
 ![LNP201](assets/en/38.webp)
-Así, el pago se enruta a Bob mediante un movimiento de liquidez en cada canal. Al final de la operación, Alice termina con 50,000 sats. De hecho, ha transferido 50,000 sats, ya que inicialmente tenía 100,000. Bob, por su parte, termina con 50,000 sats adicionales. Para Suzie (el nodo intermedio), esta operación es neutral: inicialmente, tenía 30,000 sats en su canal con Alice y 250,000 sats en su canal con Bob, un total de 280,000 sats. Después de la operación, mantiene 80,000 sats en su canal con Alice y 200,000 sats en su canal con Bob, que es la misma suma de fondos que al inicio.
-Esta transferencia está limitada por la **liquidez disponible** en la dirección de la transferencia.
+
+El pago se dirige hacia Bob a través de un movimiento de liquidez en cada canal. Al final de la operación, Alice dispone de 50,000 sats. En realidad, ha transferido 50 000 sats, ya que empezó con 100 000. Bob, por su parte, acaba con 50,000 sats más.
+Para Suzie (el nodo intermedio), esta operación es neutra: empezó con 30,000 sats en su canal con Alice y,  250,000 sats en su canal con Bob, lo que suma un total de 280,000 sats. Tras la transacción, Suzie tiene 80,000 sats en su canal con Alice, y 200,000 sats en su canal con Bob, que son las mismas cifras que al principio.
+
+Por tanto, esta transferencia está limitada por la **liquidez disponible** en el momento de la transferencia.
 
 ### Cálculo de la Ruta y Límites de Liquidez
 
