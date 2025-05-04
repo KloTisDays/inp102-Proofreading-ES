@@ -488,49 +488,49 @@ Para Suzie (el nodo intermedio), esta operación es neutra: empezó con 30,000 s
 
 Por tanto, esta transferencia está limitada por la **liquidez disponible** en el momento de la transferencia.
 
-### Cálculo de la Ruta y Límites de Liquidez
+### Direccionamiento de rutas y límites de liquidez
 
-Tomemos un ejemplo teórico de otra red con:
+Tomemos un ejemplo teórico de otra red en la que hay:
 
 - **130,000 satoshis** del lado de Alice (en color naranja) en su canal con **Suzie** (en color gris).
-- **90,000 satoshis** en el extremo de **Suzie** y **200,000 satoshis** en el extremo de **Carol** (en rosa).
+- **90,000 satoshis** en el extremo de **Suzie** y **200,000 satoshis** en el extremo de **Carol** (en color rosa).
 - **150,000 satoshis** en el extremo de **Carol** y **100,000 satoshis** en el extremo de **Bob**.
 
 ![LNP201](assets/en/39.webp)
 
-El máximo que Alice puede enviar a Bob en esta configuración es **90,000 satoshis**, ya que está limitada por la menor liquidez disponible en el canal de **Suzie a Carol**. En la dirección opuesta (de Bob a Alice), no es posible ningún pago, porque el extremo de **Suzie** , en el canal con **Alice**, no contiene satoshis. Por lo tanto, no existe una **ruta**, que se pueda utilizar, para una transferencia en esta dirección.
-Alice envía **40,000 satoshis** a Bob a través de los canales:
+Con esta configuración, el máximo que Alice puede enviar a Bob  es **90,000 satoshis**, ya que está limitada por la cantidad de liquidez mínima disponible en el canal de **Suzie a Carol**. En la dirección opuesta (de Bob a Alice), no es posible ningún pago, porque el extremo de **Suzie**, en el canal de pago que le une con **Alice**, no hay satoshis. Por lo tanto, no existe una **ruta** en condiciones operativas para una transacción a esta dirección.
+Alice envía **40,000 satoshis** a Bob a través de estos canales de pago:
 
-- Alice transfiere 40,000 satoshis a su canal con Suzie.
+- Alice transfiere 40,000 satoshis a su canal común con Suzie.
 - Suzie transfiere 40,000 satoshis a Carol en su canal compartido.
-- Carol finalmente transfiere 40,000 satoshis a Bob.
+- Por último, Carol transfiere 40,000 satoshis a Bob.
 
 ![LNP201](assets/en/40.webp)
 
-Los **satoshis enviados** en cada canal **permanecen en el canal**, así que los satoshis enviados por Carol a Bob no son los mismos que los enviados por Alice a Suzie. La transferencia se realiza solo ajustando la liquidez dentro de cada canal. Además, la capacidad total de los canales de pago permanece igual, sin cambios.
+Los **satoshis enviados** hacia cada canal de pago **permanecen en el canal**, por lo que los satoshis enviados por Carol a Bob no son los mismos, que los enviados por Alice a Suzie. La transferencia se realiza ajustando la liquidez dentro de cada canal. Además, la capacidad total de los canales de pago permanece sin cambios.
 
 ![LNP201](assets/en/41.webp)
 
 Como en el ejemplo anterior, después de la transacción, el nodo origen/fuente (Alice) tiene 40,000 satoshis menos. Los nodos intermedios (Suzie y Carol) retienen la misma cantidad total, haciendo la operación neutral para ellas. Finalmente, el nodo destino (Bob) recibe 40,000 satoshis adicionales.
 
-El papel de los nodos intermedios es, por lo tanto, muy importante en el funcionamiento de la Lightning Network. Facilitan las transferencias, ofreciendo múltiples rutas para los pagos. Para incentivar a estos nodos a proporcionar su liquidez y participar en el enrutamiento de pagos, se les pagan **comisiones de enrutamiento**.
+El papel de los nodos intermedios es, por tanto, muy importante en el funcionamiento de la Lightning Network. Los nodos intermedios facilitan las transferencias, ofreciendo múltiples rutas para los pagos. Para incentivar a estos nodos a proporcionar su liquidez y participar en la tarea del enrutamiento de pagos, se les abona **honorarios por enrutamiento**.
 
 ### Comisiones por enrutamiento
 
-Los nodos intermedios aplican comisiones para permitir que los pagos pasen a través de sus canales. Estas comisiones son establecidas por **cada nodo para cada canal**. Las comisiones consisten en 2 elementos:
+Los nodos intermedios aplican comisiones para permitir que los pagos pasen a través de sus canales. Estas comisiones son fijadas por **cada nodo para cada canal**. Las comisiones consisten en 2 elementos:
 
-- "**Tarifa base**": una cantidad fija por canal, a menudo **1 sat** por defecto, pero esta tarifa base es personalizable.
+- "**Tarifa de base**": una cantidad fija por canal, normalmente es **1 sat** por defecto, pero esta tarifa de base es personalizable.
 - "**Tarifa variable**": un porcentaje del monto transferido, calculado en **partes por millón (ppm)**. Por defecto, es **1 ppm** (1 sat por millón de satoshis transferidos), pero también puede ajustarse.
-   Las tarifas también varían dependiendo de la dirección de la transferencia. Por ejemplo, para una transferencia de Alice a Suzie, se aplican las tarifas de Alice. Por el contrario, de Suzie a Alice, se fijan las tarifas de Suzie.
+   Las tarifas por transferencia realizada varían dependiendo de la dirección a la que se realice la transferencia. Por ejemplo, para una transferencia de Alice a Suzie, se aplican las tarifas de Alice. Inversamente, de Suzie a Alice, se fijan las tarifas de Suzie.
 
 Por ejemplo, para un canal entre Alice y Suzie, podríamos tener:
 
-- **Alice**: tarifa base de 1 sat y 1 ppm para tarifas variables.
-- **Suzie**: tarifa base de 0.5 sat y 10 ppm para tarifas variables.
+- **Alice**: tarifa de base de 1 sat y 1 ppm por las tarifas variables.
+- **Suzie**: tarifa de base de 0.5 sat y 10 ppm por las tarifas variables.
 
 ![LNP201](assets/en/42.webp)
 
-Para entender mejor cómo funcionan las tarifas, estudiemos la misma Red Lightning que antes, pero ahora con las siguientes tarifas de enrutamiento:
+Para entender mejor cómo funcionan las tarifas, analicemos la misma Lightning Network que antes, pero ahora con las siguientes honorarios de enrutamiento:
 
 - Canal **Alice - Suzie**: tarifa base de 1 satoshi y 1 ppm (partes por millón) para Alice.
 - Canal **Suzie - Carol**: tarifa base de 0 satoshi y 200 ppm para Suzie.
@@ -543,31 +543,31 @@ Para el mismo pago de **40,000 satoshis** a Bob, Alice tendrá que enviar un poc
   $$ f*{\text{Carol-Bob}} = \text{tarifa base} + \left(\frac{\text{ppm} \times \text{monto}}{10^6}\right) $$
   $$ f*{\text{Carol-Bob}} = 1 + \frac{1 \times 40000}{10^6} = 1 + 0.04 = 1.04 \text{ sats} $$
 
-- **Suzie** deduce 8 satoshis en tarifas en el canal con Carol:
+- **Suzie** deduce 8 satoshis como honorarios en el canal con Carol:
   $$ f*{\text{Suzie-Carol}} = \text{tarifa base} + \left(\frac{\text{ppm} \times \text{monto}}{10^6}\right) $$
   $$ f*{\text{Suzie-Carol}} = 0 + \frac{200 \times 40001.04}{10^6} = 0 + 8.0002 \approx 8 \text{ sats} $$
 
-Las tarifas totales para este pago en este camino son, por lo tanto, **9.04 satoshis**. Así, Alice debe enviar **40,009.04 satoshis**, para que Bob reciba exactamente **40,000 satoshis**.
+Las comisiones totales para este pago en esascienden a **9.04 satoshis**. Así, Alice debe enviar **40,009.04 satoshis**, para que Bob reciba exactamente **40,000 satoshis**.
 
 ![LNP201](assets/en/44.webp)
 
-La liquidez se actualiza por tanto de la siguiente manera:
+por lo tanto, la liquidez queda actualizada de la siguiente manera:
 
 ![LNP201](assets/en/45.webp)
 
 ### Enrutamiento Cebolla (Onion Routing)
 
-Para enrutar un pago del emisor al receptor, la Red Lightning utiliza un método llamado "**enrutamiento cebolla**" (onion Routing). A diferencia del enrutamiento de datos clásicos, donde cada enrutador decide la dirección de los datos, basándose en su destino, el enrutamiento cebolla funciona de un modo distinto:
+Para enrutar un pago del emisor al receptor, la Lightning Network utiliza un método llamado "**enrutamiento cebolla**" (onion Routing), a diferencia del enrutamiento de datos clásicos, en el que cada enrutador decide la dirección de los datos, basándose en su destino. El enrutamiento cebolla funciona de un modo distinto:
 
 - **El nodo emisor calcula toda la ruta**: Alice, por ejemplo, determina que su pago debe pasar por Suzie y Carol antes de llegar a Bob.
-- **Cada nodo intermedio solamente conoce a su vecino inmediato**: Suzie solo sabe que recibió fondos de Alice y que debe transferirlos a Carol. Sin embargo, Suzie no sabe si Alice es el nodo fuente o un nodo intermedio, y tampoco sabe si Carol es el nodo receptor o , simplemente, otro nodo intermedio. Este principio también se aplica a Carol y a todos los demás nodos en la ruta. El enrutamiento de cebolla (Onion Routing) preserva la confidencialidad de las transacciones, al enmascarar la identidad del remitente y del destinatario final. Para asegurar que el nodo transmisor pueda calcular una ruta completa hasta el destinatario en el Onion Routing, debe mantener un **gráfico de red** para conocer la topología de la red para determinar las posibles rutas.
-  **¿Qué debes extraer del contenido de este capítulo?**
+- **Cada nodo intermedio solamente conoce a su vecino inmediato**: Suzie sólo sabe que recibió fondos de Alice y que ella debe transferírselos a Carol. Sin embargo, Suzie no sabe si Alice es el nodo fuente o un nodo intermedio, y tampoco sabe si Carol es el nodo receptor o es, simplemente, otro nodo intermedio (mediador). Este principio también se aplica a Carol y a todos los demás nodos de la ruta. El enrutamiento cebolla (Onion Routing) preserva el anonimato de las transacciones, al enmascarar la identidad del remitente y del receptor final. Asegurar que el nodo transmisor pueda calcular una ruta completa hasta el receptor final en el Onion Routing, el nodo transmisor debe mantener un **gráfico de red** para saber la topología de la red y, así determinar las posibles rutas.
+  **¿Qué debes recordar del contenido de este capítulo?**
 
-- En Lightning, los pagos pueden ser enrutados entre nodos indirectamente conectados, a través de canales intermedios. Cada uno de estos nodos intermedios facilita la transmisión de liquidez.
-- Los nodos intermedios reciben una comisión por su servicio, consistente en tarifas fijas y variables.
-- El Onion Routing permite al nodo transmisor calcular la ruta completa, sin que los nodos intermedios conozcan la fuente/origen o el receptor final.
+- En la Lightning Network, los pagos pueden enrutarse entre nodos conectados indirectamente, a través de canales intermedios. Cada uno de estos nodos intermedios facilita la transmisión de liquidez.
+- Los nodos intermedios son remunerados con una comisión por su actividad, consistente en tarifas fijas y tarifas variables.
+- El Onion Routing permite al nodo transmisor calcular el itinerario de la ruta completa, sin que los nodos intermedios distingan la fuente/origen o el receptor final en la ruta.
 
-En este capítulo, exploramos el enrutamiento de pagos en la Red Lightning. Surge una pregunta: ¿qué impide que los nodos intermedios acepten un pago entrante, sin reenviarlo al siguiente destino, con el objetivo de interceptar la transacción? Este es precisamente el papel de los HTLCs que estudiaremos en el siguiente capítulo.
+En este capítulo, hemos explorado el enrutamiento de pagos en la Lightning Network y surge una pregunta: ¿qué obstáculos encuentran los nodos intermedios acepten un pago entrante, sin reenviarlo al siguiente destino; con el objetivo de interceptar la transacción? Éste es, precisamente, el papel de los HTLCs que estudiaremos en el siguiente capítulo.
 
 ## HTLC – Contrato bloqueado con tiempo y con un hash
 
