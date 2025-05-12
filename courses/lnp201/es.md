@@ -567,53 +567,53 @@ Para enrutar un pago del emisor al receptor, la Lightning Network utiliza un mé
 
 En este capítulo, hemos explorado el enrutamiento de pagos en la Lightning Network y surge una pregunta: ¿qué obstáculos encuentran los nodos intermedios acepten un pago entrante, sin reenviarlo al siguiente destino; con el objetivo de interceptar la transacción? Éste es, precisamente, el papel de los HTLCs que estudiaremos en el siguiente capítulo.
 
-## HTLC – Contrato bloqueado con tiempo y con un hash
+## HTLC – Hashed Time Locked Contract ("Contrato bloqueado por tiempo y por una función hash")
 
 <chapterId>4369b85a-1365-55d8-99e1-509088210116</chapterId>
 
 :::video id=4e2361e0-e859-4459-bef5-79b2fbb03574:::
 
-En este capítulo, descubriremos cómo Lightning permite que los pagos transiten a través de nodos intermedios, sin necesidad de confiar en ellos, gracias a los **HTLC** (_Hashed Time-Locked Contracts_ o Contratos bloqueados con tiempo y con un hash). Estos contratos inteligentes aseguran que cada nodo intermedio únicamente recibirá los fondos de su canal, si reenvía el pago al destinatario final, de lo contrario, el pago no será validado.
+En este capítulo, descubriremos cómo Lightning permite el tránsito de los pagos a través de nodos intermedios, sin necesidad de depositar ciega confianza en ellos, gracias a los **HTLC** (_Hashed Time-Locked Contracts_ o Contratos bloqueados por tiempo y por una función hash). Estos contratos inteligentes aseguran que cada nodo intermedio únicamente reciba los fondos en su canal de pago, si cumple la condición de reenvíar el pago al destinatario final. De lo contrario, el pago no será validado.
 
-El problema que surge para el enrutamiento de pagos es, por lo tanto, la confianza necesaria en los nodos intermedios, y que haya confianza también entre los propios nodos intermedios. Para ilustrar esto, revisemos nuestro ejemplo simplificado de la red Lightning con 3 nodos y 2 canales:
+El problema que surge para el enrutamiento de pagos es, por tanto, depositar la confianza necesaria en los nodos intermedios, y que los propios nodos intermedios confíen también entre ellos. Para ilustrar esto, revisemos nuestro ejemplo de la Lightning Network con 3 nodos y 2 canales:
 
 - Alice tiene un canal con Suzie.
 - Suzie tiene un canal con Bob.
 
-Alice quiere enviar 40,000 sats a Bob, pero no existe un canal directo con Bob, y Alice no quiere abrir un canal de pagos. Alice busca una ruta y decide que la transacción se lleve por la vía, que pasa por el nodo de Suzie.
+Alice quiere enviar 40,000 sats a Bob, pero no existe un canal directo con Bob, y Alice no quiere abrir un canal de pagos. Alice busca una ruta y decide que la transacción se lleve por la vía que pasa por el nodo de Suzie.
 
 ![LNP201](assets/en/46.webp)
 
-Si Alice envía ingenuamente 40,000 satoshis a Suzie, esperando que Suzie transfiera esta suma a Bob, Suzie podría quedarse con los fondos y no enviarlos a Bob.
+Si Alice envía ingenuamente 40,000 satoshis a Suzie, esperando que Suzie transfiera esta suma a Bob, Suzie podría quedarse con los fondos y no reenviárselos a Bob.
 
 ![LNP201](assets/en/47.webp)
-Para evitar esta situación, en Lightning, usamos HTLCs (Contratos bloqueados con tiempo y con Hash), que hacen el pago al nodo intermediario condicional, esto es, Suzie debe cumplir ciertas condiciones para acceder a los fondos de Alice y transferirlos a Bob.
+Para evitar esta situación, en Lightning Network, usamos HTLCs (Contratos bloqueados por tiempo y por una función hash), que hacen el pago al nodo intermediario condicional, esto es, Suzie debe cumplir ciertas condiciones y requisitos para acceder a los fondos de Alice y para transferírselos a Bob.
 
 ### Cómo Funcionan los HTLCs
 
-Un HTLC es un contrato especial basado en dos principios:
+Un HTLC es un contrato inteligente basado en dos principios:
 
 - **Condición de acceso**: El destinatario debe revelar un secreto para desbloquear el pago que le corresponde.
-- **Expiración**: Si el pago no se completa totalmente dentro de un período definido, se cancela y los fondos regresan al remitente.
+- **Expiración/ Caducidad del contrato**: Si el pago no se completa en su totalidad dentro de un período definido, el pago se cancela y los fondos regresan al remitente.
 
 Así es como funciona este proceso en nuestro ejemplo con Alice, Suzie y Bob:
 
 ![LNP201](assets/en/48.webp)
-**Creando el secreto**: Bob genera un secreto aleatorio denotado como _s_ (la preimagen), y calcula su hash denotado como _r_ con la función hash denotada como _h_. Tenemos:
+**Creación del secreto**: Bob genera un secreto aleatorio nombrado como _s_ (imagen previa), y calcula su función hash nombrado como _r_ con la función hash nombrada como _h_. El resultado es:
 
 $$
 r = h(s)
 $$
 
-Usar una función hash hace imposible encontrar _s_ con solo _h(s)_, pero si se proporciona _s_, es fácil verificar que corresponde a _h(s)_.
+Usando una función hash se hace imposible encontrar _s_ conociendo solo _h(s)_, pero si sabemos _s_, es fácil despejar el valor de la funciónhash _h(s)_ en el secreto.
 
 ![LNP201](assets/en/49.webp)
 
-**Enviando la solicitud de pago**: Bob envía una **factura** a Alice solicitando un pago. Esta factura incluye notablemente el hash _r_.
+**Enviando la solicitud de pago**: Bob envía una **factura** a Alice solicitando un pago. Esta factura incluye la función hash _r_, en particular.
 
 ![LNP201](assets/en/50.webp)
 
-**Enviando el pago condicional**: Alice envía un HTLC de 40,000 satoshis a Suzie. La condición para que Suzie reciba estos fondos es que ella proporcione a Alice un secreto _s'_ que satisfaga la siguiente ecuación:
+**Enviando el pago sujeto a condición**: Alice envía un HTLC de 40,000 satoshis a Suzie. La condición para que Suzie reciba estos fondos es que ella proporcione a Alice un secreto nombrado _s'_ que resuelva la siguiente ecuación:
 
 $$
 h(s') = r
@@ -621,7 +621,7 @@ $$
 
 ![LNP201](assets/en/51.webp)
 
-**Transfiriendo el HTLC al destinatario final**: Suzie, para obtener los 40,000 satoshis de Alice, debe transferir un HTLC similar de 40,000 satoshis a Bob, quien tiene la misma condición, es decir, que debe proporcionar a Suzie un secreto _s'_ que satisfaga la ecuación:
+**Traspasar el HTLC al destinatario final**: Suzie, para obtener los 40,000 satoshis de Alice, debe traspasar un HTLC semejante de 40,000 satoshis a Bob, quien tiene la misma condición, esto es, que debe revelar el secreto (nombrado _s'_) a Suzie y que éste satisfaga la ecuación a continuación:
 
 $$
 h(s') = r
@@ -629,14 +629,13 @@ $$
 
 ![LNP201](assets/en/52.webp)
 
-**Validación por el secreto _s_**: Bob proporciona _s_ a Suzie para recibir los 40,000 satoshis prometidos en el HTLC. Con este secreto, Suzie puede entonces desbloquear el HTLC de Alice y obtener los 40,000 satoshis de Alice. El pago es entonces correctamente dirigido a Bob.
+**Validación del pago mediante el valor del secreto, que llamamos _s_**: Bob proporciona el valor de la función hash _s_ a Suzie para recibir los 40,000 satoshis que garantiza el HTLC. Con este secreto, Suzie puede entonces desbloquear el HTLC de Alice y obtener los 40,000 satoshis de Alice. En ese momento, el pago es enrutado correctamente hasta Bob.
 
 ![LNP201](assets/en/53.webp)
-Este proceso evita que Suzie se quede con los fondos de Alice sin completar la transferencia a Bob, ya que debe enviar el pago a Bob para obtener el secreto _s_ y así desbloquear el HTLC de Alice. La operación permanece igual incluso si la ruta incluye varios nodos intermediarios: simplemente se trata de repetir los pasos de Suzie para cada nodo intermediario. Cada nodo está protegido por las condiciones de los HTLCs, porque desbloquear el último HTLC por el destinatario desencadena automáticamente el desbloqueo de todos los demás HTLCs en cascada.
+Este proceso evita que Suzie se quede con los fondos de Alice sin completar la transferencia a Bob. Ya que Suzie debe enviar el pago a Bob para obtener el secreto _s_ y así desbloquear el HTLC de Alice. La operación permanece igual que antes, incluso si la ruta incluye varios nodos intermedios: simplemente, es cuestión de repetir los pasos que ha seguido Suzie para cada nodo intermedio. Cada nodo está protegido por las condiciones que requieren los HTLCs, porque desbloquear el último HTLC por el destinatario pone automáticamente en funcionamiento el desbloqueo en cascada de todos los demás HTCL.
 
-### Expiración y gestión de HTLCs en caso de problemas
-
-Si durante el proceso de pago, uno de los nodos intermediarios, o el nodo destinatario, deja de responder, especialmente en caso de un corte de internet o de energía, entonces el pago no puede completarse, porque el secreto necesario para desbloquear los HTLCs no se transmite. Tomando nuestro ejemplo con Alice, Suzie y Bob, este problema ocurre, por ejemplo, si Bob no transmite el secreto _s_ a Suzie. En este caso, todos los HTLCs aguas arriba del camino están bloqueados, y los fondos que aseguran también.
+### Caducidad de los contratos HTCL y su gestión de problemas:
+Si durante el proceso de pago, uno de los nodos intermedios, o el nodo del destinatario, deja de responder, (especialmente en caso de un corte de Internet o de energía), entonces el pago no puede completarse, porque el secreto necesario para desbloquear los HTLCs no se llega a transmitir. Tomando nuestro ejemplo de Alice, Suzie y Bob, este problema ocurre si, por ejemplo, Bob no transmite el secreto _s_ a Suzie. En este caso, todos los HTLCs de la ruta están bloqueados, y los fondos que aseguran los HTCL, también.
 
 ![LNP201](assets/en/54.webp)
 
