@@ -383,7 +383,7 @@ El **ciclo de vida de un canal** comienza con su **apertura**, mediante una tran
 
 ![LNP201](assets/en/29.webp)
 
-### Los tres tipos de cierre de canal
+### Los tres tipos de cierre del canal de pagos
 
 Hay tres modos principales para cerrar el canal de pagos.
 Estos tres modos los podemos llamar **El Bueno, El Bruto y El Ausente** (inspirado en el libro "Mastering the Lightning Network" de Andreas Antonopoulos).
@@ -441,7 +441,7 @@ Para prevenir cualquier caso de engaño, Bob es responsable de monitorizar la ca
 
 Si Bob no actúa dentro del tiempo permitido por el bloqueo de tiempo en la salida de Alice, el engaño podría funcionar. En este caso, la salida de Alice está desbloqueada, por lo que puede usarla para crear una nueva salida hacia una dirección que ella controle.
 
-**¿Qué es lo más importante que puedes sacar de este capítulo?
+**¿Qué es lo más importante de este capítulo?
 
 Hay tres maneras de cerrar un canal.
 - **Cierre cooperativo**: es rápido y barato, y ambas partes acuerdan cerrar el canal de pago y publicar una transacción especial de cierre.
@@ -461,7 +461,7 @@ Hay tres maneras de cerrar un canal.
 
 En este capítulo, exploraremos cómo los pagos en la Lightning Network pueden llegar a un destinatario, incluso, si no están conectados directamente por un canal de pago. Lightning es, de hecho, una **red de canales de pago**, que permite enviar fondos a un nodo distante, a través de los canales de pago de otros participantes intermedios. Descubriremos cómo se enrutan los pagos a través de la red, cómo se mueve la liquidez entre canales y cómo se calculan las tarifas de transacción.
 
-### La Red de canales de pago
+### La red de canales de pagos
 
 En la Lightning Network, una transacción consiste en transferir fondos entre dos nodos. Como se ha visto en capítulos anteriores, para realizar transacciones Lightning es necesario abrir un canal de pago con alguien. Este canal permite realizar un número casi infinito de transacciones fuera de la cadena antes de que se cierre para reestablecer el saldo en la cadena. Sin embargo, este método tiene el inconveniente de que requiere un canal directo con la otra persona para recibir o enviar fondos, lo que implica una transacción de apertura y otra de cierre para cada canal. Si tengo previsto realizar un gran número de pagos con este participante, abrir y cerrar un canal resulta costoso. Por el contrario, si solo necesito realizar unas pocas transacciones Lightning, abrir un canal directo no es ventajoso, ya que me costaría dos transacciones en la cadena por un número limitado de transacciones fuera de ella. Este podría ser el caso, por ejemplo, si se quiere utilizar Lightning para pagar a un comerciante, sin tener previsto volver al comercio.
 
@@ -634,42 +634,44 @@ $$
 ![LNP201](assets/en/53.webp)
 Este proceso evita que Suzie se quede con los fondos de Alice sin completar la transferencia a Bob. Ya que Suzie debe enviar el pago a Bob para obtener el secreto _s_ y así desbloquear el HTLC de Alice. La operación permanece igual que antes, incluso si la ruta incluye varios nodos intermedios: simplemente, es cuestión de repetir los pasos que ha seguido Suzie para cada nodo intermedio. Cada nodo está protegido por las condiciones que requieren los HTLCs, porque desbloquear el último HTLC por el destinatario pone automáticamente en funcionamiento el desbloqueo en cascada de todos los demás HTCL.
 
-### Caducidad de los contratos HTCL y su gestión de problemas:
+### Caducidad de los contratos HTCL y la gestión de problemas:
 Si durante el proceso de pago, uno de los nodos intermedios, o el nodo del destinatario, deja de responder, (especialmente en caso de un corte de Internet o de energía), entonces el pago no puede completarse, porque el secreto necesario para desbloquear los HTLCs no se llega a transmitir. Tomando nuestro ejemplo de Alice, Suzie y Bob, este problema ocurre si, por ejemplo, Bob no transmite el secreto _s_ a Suzie. En este caso, todos los HTLCs de la ruta están bloqueados, y los fondos que aseguran los HTCL, también.
 
 ![LNP201](assets/en/54.webp)
 
-Para evitar esto, los HTLCs en Lightning Network tienen una caducidad, la cual permite la expiración del HTLC si la operación no se completa después de determinado tiempo. La caducidad del HTCL sigue un orden específico ya que empieza primero con el HTLC más cercano al nodo destinatario, y luego se mueve progresivamente hacia la entidad emisora de la transacción. En nuestro ejemplo, si Bob nunca entrega el secreto _s_ a Suzie, esto provocaría que el HTLC de Suzie a Bob caducase.
+Para evitar esto, los HTLCs en Lightning Network tienen una caducidad, la cual permite la expiración del HTLC si la operación no se completa después de determinado tiempo. La caducidad del HTCL sigue un orden específico, ya que empieza por el HTLC más cercano al nodo destinatario, y luego se mueve, progresivamente, hacia la entidad emisora de la transacción. En nuestro ejemplo, si Bob nunca entrega el secreto _s_ a Suzie, esto provocaría la expiración del HTLC de Suzie a Bob.
 
 ![LNP201](assets/en/55.webp)
 
-Luego, el HTLC de Alice hasta Suzie.
+El HTLC de Alice hasta Suzie:
 ![LNP201](assets/en/56.webp)
-Si el orden de expiración se invirtiera, Alice recuperaría su pago antes de que Suzie pudiera protegerse de un posible engaño. De hecho, si Bob regresa para reclamar su HTLC mientras que el de Alice ya ha expirado, Suzie estaría en desventaja. Este orden de expiración de HTLCs en cascada asegura que ningún nodo intermediario sufra pérdidas injustas. El orden de expiración en cascada de los HTCLs securiza los nodos intermedios para que no sufran pérdidas injustas.
+Si el orden de expiración se invirtiera, Alice recuperaría su pago antes de que Suzie pudiera protegerse de un posible engaño. De hecho, si Bob regresa para reclamar su HTLC, mientras que el de Alice ya ha expirado, Suzie estaría en desventaja. El orden de expiración en cascada de los HTCLs securiza los nodos intermedios para que no sufran pérdidas injustas.
 
 ### Representación de HTLCs en las "transacciones de compromiso" (Commitment Transactions)
 
-Las transacciones de compromiso representan los HTLCs de tal modo que, éstos imponen las condiciones que imponen en la Lightning Network y éstas pueden transferidas a la tecnología de Bitcoin durante la vida útil de un HTLC, en el caso de un cierre forzado del canal. Como recordatorio, las transacciones de compromiso representan el estado actual del canal de pagos entre los dos usuarios y permiten un cierre forzado unilateral en caso de problemas. Con cada nuevo estado del canal, se crean 2 transacciones de compromiso: una transacción para cada parte. Revisemos nuestro ejemplo de Alice, Suzie y Bob, pero examinemos más de cerca qué sucede a nivel en el canal entre Alice y Suzie en el momento de creación de un HTLC.
+Las transacciones de compromiso representan los HTLCs de tal modo que, éstos imponen sus mismas condiciones, que se imponen en la Lightning Network. Estas condiciones a cumplir pueden ser transferidas a la tecnología Bitcoin durante la vida útil de un HTLC, en el caso de un cierre forzado del canal. Como recordatorio, las transacciones de compromiso indican el estado actual del canal de pagos entre los dos usuarios y permiten un cierre forzado unilateral en caso de problemas. Con cada nuevo estado del canal, se crean 2 transacciones de compromiso: una transacción para cada parte. Revisemos nuestro ejemplo de Alice, Suzie y Bob, pero examinemos más de cerca qué sucede en el canal entre Alice y Suzie en el momento de creación de un HTLC.
+
 ![LNP201](assets/en/57.webp)
 
-Antes del inicio del pago de 40,000 sats entre Alice y Bob, Alice tiene 100,000 sats en su canal con Suzie, mientras que Suzie tiene 30,000 sats. Sus transacciones de compromiso serían las siguientes:
+Antes del inicio del pago de 40,000 sats entre Alice y Bob, Alice tiene 100,000 sats en su canal de pagos con Suzie, mientras que Suzie tiene 30,000 sats. Sus transacciones de compromiso serían las siguientes:
 
 ![LNP201](assets/en/58.webp)
 
-Alice acaba de recibir la factura de Bob, que contiene principalmente _r_, la función hash del secreto.De este modo, Alice puede crear un HTLC de 40,000 satoshis con Suzie. Este HTLC está representado en las últimas transacciones de compromiso como una salida con nombre: "**_HTLC Out_**" en el extremo de Alice, mientras que los fondos que salen, entran en el extremo de Suzie, y llevan el nombre: "**_HTLC In_**" .
+Alice acaba de recibir la factura de Bob, que indica específicamente _r_, la función hash del secreto. De este modo, Alice puede crear un HTLC de 40,000 satoshis con Suzie. Este HTLC está representado en las últimas transacciones de compromiso como una salida con nombre: "**_HTLC Out_**" en el extremo de Alice, mientras que los fondos que salen, entran en el extremo de Suzie, y llevan el nombre: "**_HTLC In_**".
 
 ![LNP201](assets/en/59.webp)
 
-Estas salidas asociadas con el HTLC comparten exactamente las mismas condiciones, a saber:
+Estas salidas asociadas con el HTLC comparten exactamente las mismas condiciones a cumplir:
+- Si Suzie puede proporcionar el valor _s_ del secreto, podrá desbloquear de inmediato la salida, y transferirla a su propia dirección bajo su control.
+- Si Suzie no tiene en su poder el valor _s_ del secreto, no puede desbloquear la salida y, Alice podrá desbloquearla después de transcurrido el tiempo fijado por el timelock para, a continuación, enviarla a su propia dirección. De esta manera, el timelock (“candado de tiempo”) concede a Suzie un tiempo de reacción, si ésta obtiene el valor _s_.
 
-- Si Suzie proporcionar los datos del secreto _s_, podrá desbloquear de inmediato la salida, y transferirla a su propia dirección, bajo su control.
-- Si Suzie no aporta información del secreto _s_ para la solución de la ecuación, no podrá desbloquear la salida, y Alice podrá desbloquearla después de transcurrido el tiempo fijado por el Timelock para, a continuación, enviarla a su propia dirección. El timelock. De esta manera, el Timelock concede a Suzie un tiempo de reacción, si ésta obtiene el valor _s_.
+Estas condiciones aplican solamente si el canal se cierra (es decir, cuando una transacción de compromiso haya sido publicada en la “cadena de bloques”), mientras el HTLC sigue activo todavía en la Lightning Network. Esto significa que el pago entre Alice y Bob aún no se ha completado, y los HTLCs no han expirado aún. Gracias a estas condiciones, Suzie puede recuperar los 40,000 satoshis del HTLC que se le deben por por haber aportado la información del valor _s_. Alice recupera los fondos después de la expiración del timelock, porque si Suzie no conoce _s_, significa que no ha transferido los 40,000 satoshis a Bob, y, por lo tanto, los fondos de Alice no le son debidos.
 
-Estas condiciones aplican solo si el canal se cierra (es decir, una transacción de compromiso se publica en la cadena), mientras el HTLC todavía está activo en la Lightning Network, lo que significa que el pago entre Alice y Bob aún no se ha finalizado, y los HTLCs aún no han expirado. Gracias a estas condiciones, Suzie puede recuperar los 40,000 satoshis del HTLC que se le deben por aportar la información de _s_. De lo contrario, Alice recupera los fondos después de la expiración del timelock, porque si Suzie no conoce _s_, significa que no ha transferido los 40,000 satoshis a Bob, y por lo tanto, los fondos de Alice no le son debidos.
+Además, si el canal de pagos se cierra mientras que varios HTLCs están pendientes, en el canal de pago habrá tantas salidas adicionales como número de HTLCs haya en curso.
+Si el canal de pago no está cerrado, a continuación de que el pago haya expirado o cuando el pago se haya completado correctamente en la Lightning Network, se crearán nuevas transacciones de compromiso para el registro del nuevo estado del canal de pago: En su estado no habrá ningún HTLC pendiente. Es decir, el canal de pagos es estable en este momento. Por tanto, las salidas relacionadas con los HTLCs pueden ser eliminadas, de las transacciones de compromiso. 
 
-Además, si el canal de pagos se cierra mientras que varios HTLCs están pendientes, habrá tantas salidas adicionales como número de HTLCs en curso.
-Si el canal de pago no se ha cerrado, a continuación de la expiración o cuando el pago se haya completado correctamente en la Lightning Network, se crearán nuevas transacciones de compromiso para el registro del nuevo estado del canal de pago: En su estado no habrá ningún HTLC pendiente. Las salidas relacionadas con los HTLCs pueden ser eliminadas, por lo tanto,  de las transacciones de compromiso.
 ![LNP201](assets/en/60.webp)
+
 Finalmente, en el caso de un cierre cooperativo del canal mientras un HTLC está activo, Alice y Suzie dejan de aceptar nuevos pagos y esperan la resolución o expiración de los HTLCs en curso. Esto les permite publicar una transacción de cierre más ligera, sin las salidas relacionadas con los HTLCs, reduciendo así las comisiones y evitando la espera por un posible bloqueo de tiempo.
 
 **¿Qué debes recordar de este capítulo?**
