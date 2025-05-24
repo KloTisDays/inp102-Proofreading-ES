@@ -672,53 +672,53 @@ Si el canal de pago no está cerrado, a continuación de que el pago haya expira
 
 ![LNP201](assets/en/60.webp)
 
-Finalmente, en el caso de un cierre cooperativo del canal mientras un HTLC está activo, Alice y Suzie dejan de aceptar nuevos pagos y esperan la resolución o expiración de los HTLCs en curso. Esto les permite publicar una transacción de cierre más ligera, sin las salidas relacionadas con los HTLCs, reduciendo así las comisiones y evitando la espera por un posible bloqueo de tiempo.
+Para terminar, en el caso de un cierre cooperativo del canal de pagos, mientras un HTLC está activo, Alice y Suzie cortan la admisión de nuevos pagos y esperan la solución o expiración/vencimiento de los HTLCs en curso. Esto les permite a Alice y Suzie publicar una transacción de cierre a velocidad del rayo, sin tener que publicar las salidas relacionadas con los HTLCs. Así consiguen reducir el importe de las comisiones y evitan la posible espera ocasionada por un "bloqueo de tiempo" (timelock).
 
 **¿Qué debes recordar de este capítulo?**
 
-Los HTLCs permiten el enrutamiento de pagos a través de Lightning mediante múltiples nodos sin necesidad de confiar en ellos. Aquí están los puntos clave a recordar:
+Los HTLCs permiten el enrutamiento de pagos, a través de múltiples nodos seguros. Éstos son los puntos clave a recordar:
 
-- Los HTLCs aseguran la seguridad de los pagos mediante un secreto (preimagen) y un tiempo de expiración.
-- La resolución o expiración de los HTLCs sigue un orden específico: luego desde el destino hacia la fuente, para proteger a cada nodo.
-- Mientras un HTLC no se resuelve ni expira, se mantiene como una salida en las transacciones de compromiso más recientes.
+- Los HTLCs securizan los pagos mediante un secreto (imagen previa) y un tiempo límite de expiración.
+- La expiración de los contratos inteligentes HTLCs sigue un orden específico: este orden empieza en el destino y va en dirección al origen, para proteger a cada nodo intermedio.
+- Los HTCLs que no hayan sido resueltos ni tampoco áquellos cuyo tiempo no haya expirado todavía, se guardan como salidas con las últimas transacciones de compromiso.
 
-En el próximo capítulo, descubriremos cómo un nodo que emite una transacción Lightning encuentra y selecciona rutas para que su pago alcance al nodo receptor.
+En el próximo capítulo, descubriremos cómo un nodo emisor, que inicia una transacción en la Lightning Network puede encontrar y seleccionar rutas/vías para que su transacción de pago llegue al nodo receptor.
 
-## Encontrando tu Camino
+## Encuentra la ruta más eficiente y rápida para el enrutamiento de pagos.
 
 <chapterId>7e2ae959-c2a1-512e-b5d6-8fd962e819da</chapterId>
 
 :::video id=e84ce4ec-d766-42dc-a58b-277af115b0e2:::
 
-En los capítulos anteriores, vimos cómo usar los canales de otros nodos para enrutamiento de pagos y alcanzar un nodo sin estar directamente conectado a él a través de un canal. También discutimos cómo asegurar la seguridad de la transferencia sin confiar en los nodos intermediarios. En este capítulo, nos centraremos en encontrar la mejor ruta posible para alcanzar un nodo objetivo.
+En los capítulos anteriores,entendimos el método para aprovechar los canales de pagos de otros nodos para el enrutamiento de pagos y poder alcanzar otro nodo sin estar conectado directamente a él a través de un canal de pagos. Anteriormente, también abordamos cómo garantizar la seguridad de la transferencia, sin que sea necesario confiar en los nodos intermedios. En este capítulo, nos centraremos en encontrar la ruta más eficiente y rápida disponible para llegar un nodo objetivo (destino).
 
-### El Problema del Enrutamiento en Lightning
+### Desafío del enrutamiento en la Lightning Network (Decisiones de enrutamiento)
 
-Como hemos visto, en Lightning, es el nodo que envía el pago el que debe calcular la ruta completa hasta el destinatario, porque utilizamos un sistema de enrutamiento tipo cebolla. Los nodos intermediarios no conocen ni el punto de origen ni el destino final. Solo saben de dónde viene el pago y a qué nodo deben transferirlo a continuación. Esto significa que el nodo emisor debe mantener una topología local dinámica de la red, con los nodos Lightning existentes y los canales entre cada uno, teniendo en cuenta aperturas, cierres y actualizaciones de estado.
+Como hemos visto, en Lightning Network, el nodo que envía el pago es el que debe calcular la ruta completa hasta el destinatario final, porque utilizamos un sistema de enrutamiento tipo cebolla (Onion Routing). Los nodos intermediarios no conocen ni el punto de origen, ni tampoco el destino final. Solamente conocen de qué nodo viene el pago y a qué nodo deben transferirlo a continuación. Esto significa que, el nodo emisor del pago se encarga de mantener la topología local dinámica de la red: los nodos Lightning existentes y los canales entre cada uno y debe tener en cuenta la apertura y cierre de pagos, así como las actualizaciones periódicas de la información del estado de los canales de pago. Buscará la ruta  óptima a través de la Lightning Network.
 
 ![LNP201](assets/en/61.webp)
-Incluso con esta topología de la Red Lightning, hay información esencial para el enrutamiento que permanece inaccesible para el nodo emisor, que es la distribución exacta de liquidez en los canales en cualquier momento dado. De hecho, cada canal solo muestra su **capacidad total**, pero la distribución interna de fondos solo es conocida por los dos nodos participantes. Esto plantea desafíos para un enrutamiento eficiente, ya que el éxito del pago depende notablemente de si su cantidad es menor que la liquidez más baja en la ruta elegida. Sin embargo, las liquideces no son todas visibles para el nodo emisor.
+En la topología de la Lightning Network hay un dato esencial para el enrutamiento, que es inaccesible para el nodo emisor. Este dato es la distribución exacta de liquidez/ distribución del saldo en los canales de pago. Cada canal de pago únicamente muestra su **capacidad total**, pero solamente los dos nodos participantes tienen conocimiento de la distribución de los fondos. Esto plantea el reto de conseguir un enrutamiento con eficiencia energética, ya que el éxito del pago depende, sobre todo, de si el importe es inferior a la liquidez más baja de la ruta/vía elegida. Sin embargo, el monto de todos los fondos son desconocidos para el nodo emisor/origen.
 ![LNP201](assets/en/62.webp)
 
-### Actualización del Mapa de la Red
+### Actualización del mapa de red de la Lightning Network
 
-Para mantener su mapa de la red actualizado, los nodos intercambian regularmente mensajes a través de un algoritmo llamado "**_gossip_**" (chismorreo). Este es un algoritmo distribuido utilizado para difundir información de manera epidémica a todos los nodos en la red, lo que permite el intercambio y sincronización del estado global de los canales en unos pocos ciclos de comunicación. Cada nodo propaga información a uno o más vecinos elegidos al azar o no, estos, a su vez, propagan la información a otros vecinos y así sucesivamente hasta que se logra un estado sincronizado a nivel global.
+Para mantener su mapa de red actualizado, los nodos intercambian periódicamente mensajes a través de un algoritmo llamado "**_gossip_**" (chismorreo). Este es un algoritmo distribuido utilizado para transmitir la información como lo haría una epidemia o una plaga: es decir, transmite la información entre los nodos (enlaces) de la red, de forma simultánea, lo que permite intercambiar y sincronizar el estado general de los canales de pago entre la red. Este intercambio de información entre los nodos se consigue así, con tan sólo unos pocos ciclos de comunicación. Cada nodo propaga información a uno o más vecinos elegidos al azar o no, éstos, a su vez, propagan la información a otros vecinos y, así, sucesivamente hasta que se logra un estado sincronizado general.
 
-Los 2 mensajes principales intercambiados entre los nodos Lightning son los siguientes:
+Los 2 mensajes principales, que se intercambian entre los nodos Lightning, son los siguientes:
 
-- "**Anuncios de Canal**": mensajes que señalan la apertura de un nuevo canal.
-- "**Actualizaciones de Canal**": mensajes de actualización sobre el estado de un canal, particularmente sobre la evolución de las comisiones (pero no sobre la distribución de la liquidez).
-  Los nodos de Lightning también monitorean la blockchain de Bitcoin para detectar transacciones de cierre de canal. El canal cerrado se elimina entonces del mapa ya que no puede ser utilizado para enrutar nuestros pagos.
+- "**Avisos de nuevo canal**": mensajes que nos indican la apertura de un nuevo canal de pagos.
+- "**Actualización de estado del canal**": mensajes que informan acerca de una actualización del estado de un canal de pagos, alertan, especialmente sobre la evolución de las comisiones (pero no facilitan datos sobre la distribución de la liquidez).
+  Los nodos de la Lightning Network también monitorean la blockchain de Bitcoin para detectar transacciones de cierre de canales de pago. El canal cerrado se elimina del mapa de red, dado que éste no puede utilizarse para enrutar nuestros pagos.
 
-### Enrutando un Pago
+### Enrutamiento de un pago
 
-Tomemos el ejemplo de una pequeña Red Lightning con 7 nodos: Alice, Bob, 1, 2, 3, 4 y 5. Imagina que Alice quiere enviar un pago a Bob pero debe pasar por nodos intermediarios.
+Tomemos el ejemplo de una pequeña Red Lightning con 7 nodos enlazados: Alice, Bob, 1, 2, 3, 4 y 5. Imagina que Alice quiere enviar una transacción de pago a Bob, pero ésta debe pasar por nodos intermedios, que intermedian en la transacción de pago.
 
 ![LNP201](assets/en/63.webp)
 
-Aquí está la distribución actual de fondos en estos canales:
+Ésta es la distribución de fondos actual en los canales de pago anteriores:
 
-- **Canal entre Alice y 1**: 250,000 sats del lado de Alice, 80,000 del lado de 1 (capacidad total de 330,000 sats).
+- **Canal entre Alice y 1**: 250,000 sats del lado de Alice, 80,000 del lado de 1 (con capacidad total de 330,000 sats).
 - **Canal entre 1 y 2**: 300,000 sats del lado de 1, 200,000 del lado de 2 (capacidad total de 500,000 sats).
 - **Canal entre 2 y 3**: 50,000 sats del lado de 2, 60,000 del lado de 3 (capacidad total de 110,000 sats).
 - **Canal entre 2 y 5**: 90,000 sats del lado de 2, 160,000 del lado de 5 (capacidad total de 250,000 sats).
@@ -729,43 +729,43 @@ Aquí está la distribución actual de fondos en estos canales:
 
 ![LNP201](assets/en/64.webp)
 
-Para hacer un pago de 100,000 sats de Alice a Bob, las opciones de enrutamiento están limitadas por la liquidez disponible en cada canal. La ruta óptima para Alice, basada en las distribuciones de liquidez conocidas, podría ser la secuencia `Alice → 1 → 2 → 4 → 5 → Bob`:
+Para hacer un pago de 100,000 sats de Alice a Bob, las opciones de enrutamiento de pago en la Lightning Network están limitadas por la liquidez disponible en cada canal de pago. La ruta idónea para Alice, se basa en las distribuciones de liquidez conocidas en esos canales. La secuencia puede ser representada de la siguiente manera: `Alice → 1 → 2 → 4 → 5 → Bob`:
 
 ![LNP201](assets/en/65.webp)
 
-Pero dado que Alice no conoce la distribución exacta de fondos en cada canal, debe estimar la ruta óptima de manera probabilística, teniendo en cuenta los siguientes criterios:
+Dado que Alice no conoce la distribución exacta de fondos en cada canal, Alice tiene que estimar la ruta óptima de manera probabilística, teniendo en cuenta los siguientes criterios/parámetros:
 
-- **Probabilidad de éxito**: un canal con una mayor capacidad total es más probable que contenga suficiente liquidez. Por ejemplo, el canal entre el nodo 2 y el nodo 3 tiene una capacidad total de 110,000 sats, por lo que es improbable encontrar 100,000 sats o más del lado del nodo 2, aunque sigue siendo posible.
-- **Comisiones de transacción**: al elegir la mejor ruta, el nodo emisor también considera las comisiones aplicadas por cada nodo intermedio y busca minimizar el costo total de enrutamiento.
-- **Expiración de HTLCs**: para evitar pagos bloqueados, el tiempo de expiración de los HTLCs también es un parámetro a considerar.
-- **Número de nodos intermedios**: finalmente, de manera más general, el nodo emisor buscará encontrar una ruta con el menor número posible de nodos para reducir el riesgo de fallo y limitar las comisiones de transacción de Lightning.
-  Al analizar estos criterios, el nodo emisor puede probar las rutas más probables e intentar optimizarlas. En nuestro ejemplo, Alice podría clasificar las mejores rutas de la siguiente manera:
+- **Probabilidad de éxito**: un canal de pago con una mayor capacidad total tiene más probabilidades de que contenga suficiente liquidez. Por ejemplo, el canal entre el nodo 2 y el nodo 3 tiene una capacidad total de 110,000 sats, por lo que es improbable encontrar 100,000 sats o más del extremo opuesto (nodo 2), aunque sigue existiendo alguna posibilidad.
+- **Comisiones por transacción**: para elegir la mejor ruta, el nodo emisor también tiene en cuenta las comisiones, que aplican a cada nodo intermedio y, busca minimizar los costes totales, que conllevan el enrutamiento.
+- **Tiempo de expiración de los HTLCs**: para prevenir los pagos bloqueados, hay un parámetro que también se debe contemplar y éste es: el tiempo de expiración de los HTLCs.
+- **Número de nodos intermedios**: de manera más general, el nodo emisor buscará encontrar una ruta con el menor número posible de nodos para reducir el riesgo de fallo y limitar las comisiones por transacción realizada en la Lightning Network.
+  Al analizar estos factores, el nodo emisor puede poner a prueba las rutas más viables e intentar optimizarlas. En nuestro ejemplo, las rutas óptimas pueden clasificarse de la siguiente manera:
 
-- `Alice → 1 → 2 → 5 → Bob`, porque es la ruta más corta con la mayor capacidad.
-- `Alice → 1 → 2 → 4 → 5 → Bob`, porque esta ruta ofrece buenas capacidades, aunque es más larga que la primera.
-- `Alice → 1 → 2 → 3 → Bob`, porque esta ruta incluye el canal `2 → 3`, que tiene una capacidad muy limitada, pero sigue siendo potencialmente utilizable.
+- `Alice → 1 → 2 → 5 → Bob`, porque es la ruta más corta con la mayor capacidad de liquidez.
+- `Alice → 1 → 2 → 4 → 5 → Bob`, porque esta ruta tiene buena capacidad, aunque es más larga que la primera.
+- `Alice → 1 → 2 → 3 → Bob`, porque esta ruta incluye el canal de transmisión `2 → 3`, el cual tiene una capacidad muy limitada. No obstante, es un canal potencialmente utilizable.
 
-### Ejecución del Pago
+### Realizar un pago Lightning
 
-Alice decide probar su primera ruta (`Alice → 1 → 2 → 5 → Bob`). Por lo tanto, envía un HTLC de 100,000 sats al nodo 1. Este nodo verifica que tiene suficiente liquidez con el nodo 2 y continúa la transmisión. El nodo 2 luego recibe el HTLC del nodo 1, pero se da cuenta de que no tiene suficiente liquidez en su canal con el nodo 5 para enrutar un pago de 100,000 sats. Entonces envía un mensaje de error de vuelta al nodo 1, quien lo transmite a Alice. Esta ruta ha fallado.
+Alice decide poner a prueba su primera ruta (`Alice → 1 → 2 → 5 → Bob`). Por lo tanto, envía un HTLC de 100,000 sats al nodo 1. Este nodo comprueba que tiene suficiente liquidez con el nodo 2 y luego continúa la transmisión. El nodo 2 recibe, por tanto, el HTLC del nodo 1, pero éste se da cuenta de que no tiene suficiente liquidez en su canal  para enrutar un pago de 100,000 sats con el nodo 5. Envíua un mensaje de error de vuelta al nodo 1, que lo transmite a Alice: La ruta ha fallado.
 
 ![LNP201](assets/en/66.webp)
 
-Alice luego intenta enrutar su pago usando su segunda ruta (`Alice → 1 → 2 → 4 → 5 → Bob`). Envía un HTLC de 100,000 sats al nodo 1, quien lo transmite al nodo 2, luego al nodo 4, al nodo 5 y finalmente a Bob. Esta vez, la liquidez es suficiente y la ruta es funcional. Cada nodo desbloquea su HTLC en cascada usando el preimagen proporcionado por Bob (el secreto _s_), lo que permite que el pago de Alice a Bob se finalice con éxito.
+Alice intenta entonces utilizar su segunda ruta para realizar el pago (`Alice → 1 → 2 → 4 → 5 → Bob`). Envía un HTLC de 100,000 sats al nodo 1, el cual lo transmite al nodo 2, luego al nodo 4, al nodo 5 y, por último, a Bob. En esta ocasión, hay suficiente liquidez, la ruta funciona. Cada nodo se desbloquea en cascada, utilizando la imagen previa proporcionada por Bob, la cual es el secreto _s_. Esto último es lo que completa con éxito el pago de Alice a Bob.
 
 ![LNP201](assets/en/67.webp)
 
-La búsqueda de una ruta se lleva a cabo de la siguiente manera: el nodo emisor comienza por identificar las mejores rutas posibles, luego intenta pagos sucesivamente hasta encontrar una ruta funcional.
+La búsqueda de una ruta idónea para efectuar con éxito el pago se lleva a cabo de la siguiente manera: el nodo emisor comienza por identificar las mejores rutas de direccionamiento, a continuación, intenta pagos de forma sucesiva, hasta encontrar una ruta funcional.
 
-Vale la pena mencionar que Bob puede proporcionar a Alice información en la **factura** para facilitar el enrutamiento. Por ejemplo, puede indicar canales cercanos con suficiente liquidez o revelar la existencia de canales privados. Estas indicaciones permiten a Alice evitar rutas con pocas posibilidades de éxito y primero intentar los caminos recomendados por Bob.
+Cabe señalar que Bob puede proporcionar información en la **factura** a Alice, para facilitar el enrutamiento de la transacción. Por ejemplo, el nodo emisor puede especificar canales de pagos cercanos con suficiente liquidez o revelar la existencia de canales privados. Estos indicios permiten a Alice evitar rutas con menos probabilidades de éxito e, intentar, en primer lugar, las rutas recomendadas por Bob.
 
-**¿Qué debes recordar de este capítulo?**
+**¿Qué debes recordar del contenido de este capítulo?**
 
-- Los nodos mantienen un mapa de la topología de la red a través de anuncios y monitoreando el cierre de canales en la blockchain de Bitcoin.
+- Los nodos mantienen un mapa de la topología de la red, a través de avisos y, monitoreando el cierre de canales en la blockchain de Bitcoin.
 - La búsqueda de una ruta óptima para un pago sigue siendo probabilística y depende de muchos criterios.
-- Bob puede proporcionar indicaciones en la **factura** para guiar el enrutamiento de Alice y ahorrarle probar rutas poco probables.
+- Bob puede proporcionar indicaciones en la **factura** para guiar el enrutamiento de Alice y ahorrarle probar rutascon bajas probabilidades de éxito de pago.
 
-En el siguiente capítulo, estudiaremos específicamente el funcionamiento de las facturas, además de algunas otras herramientas utilizadas en la Red Lightning.
+En el próximo capítulo, estudiaremos en detalle el uso y propósito de las facturas, es decir, aprenderemos cómo atender un pago y otras herramientas, utilizadas en la Lightning Network.
 
 # Las Herramientas de la Red Lightning
 
