@@ -702,52 +702,52 @@ En la topología de la Lightning Network hay un dato esencial para el enrutamien
 
 ### Actualización del mapa de red de la Lightning Network
 
-Para mantener su mapa de red actualizado, los nodos intercambian periódicamente mensajes a través de un algoritmo llamado "**_gossip_**" (chismorreo). Este es un algoritmo distribuido utilizado para transmitir la información como lo haría una epidemia o una plaga: es decir, transmite la información entre los nodos (enlaces) de la red, de forma simultánea, lo que permite intercambiar y sincronizar el estado general de los canales de pago entre la red. Este intercambio de información entre los nodos se consigue así, con tan sólo unos pocos ciclos de comunicación. Cada nodo propaga información a uno o más vecinos elegidos al azar o no, éstos, a su vez, propagan la información a otros vecinos y, así, sucesivamente hasta que se logra un estado sincronizado general.
+Para mantener el mapa de red actualizado, los nodos de enrutado en la Lightning Network intercambian información en mensajes frecuentes. Para que esta actualización funcione, se utiliza un algoritmo llamado “cotilleo” (“gossip”). “Gossip” es un algoritmo distribuido, utilizado para transmitir la información como lo haría una epidemia o una plaga: es decir, transmite la información entre los nodos (enlaces) de la red de forma simultánea, lo que permite el tránsito de comunicaciones y sincronización del estado global actual a través de los canales. Este intercambio de mensajes entre los nodos se consigue en unos pocos ciclos de comunicaciones. Cada nodo intercambia el mensaje a uno o más nodos vecinos elegidos al azar o no. Éstos, a su vez, transmiten esta información  a otros nodos vecinos y, así sucesivamente, hasta que se alcanza un estado sincronizado entre todos los nodos, a nivel global.
 
-Los 2 mensajes principales, que se intercambian entre los nodos Lightning, son los siguientes:
+Los 2 mensajes principales que se intercambian entre los nodos de la Lightning Network son:
 
-- "**Avisos de nuevo canal**": mensajes que nos indican la apertura de un nuevo canal de pagos.
-- "**Actualización de estado del canal**": mensajes que informan acerca de una actualización del estado de un canal de pagos, alertan, especialmente sobre la evolución de las comisiones (pero no facilitan datos sobre la distribución de la liquidez).
-  Los nodos de la Lightning Network también monitorean la blockchain de Bitcoin para detectar transacciones de cierre de canales de pago. El canal cerrado se elimina del mapa de red, dado que éste no puede utilizarse para enrutar nuestros pagos.
-
+- "**Notificaciones de canales**": son mensajes que nos anuncian e indican la apertura de un nuevo canal.
+- "**Actualizaciones  de los canales**": son mensajes que indican una actualización del estado de un canal. Informan, especialmente, acerca de la evolución de las comisiones, pero no facilitan datos de la distribución de la liquidez. Los nodos de la Lightning Network también monitorizan la blockchain de Bitcoin para encontrar transacciones de cierre de canal. El canal cerrado se elimina del mapa, dado que éste ya no puede utilizarse para el enrutamiento de los pagos.
+  
 ### Enrutamiento de un pago
 
-Tomemos el ejemplo de una pequeña Red Lightning con 7 nodos enlazados: Alice, Bob, 1, 2, 3, 4 y 5. Imagina que Alice quiere enviar una transacción de pago a Bob, pero ésta debe pasar por nodos intermedios, que intermedian en la transacción de pago.
+Tomemos el ejemplo de una pequeña Lightning Network con 7 nodos enlazados: Alice, Bob, 1, 2, 3, 4 y 5. Imagina que Alice quiere enviar una transacción de pago a Bob, pero ésta tiene que transmitirse a través de nodos que intermedian en la transacción de pago.
 
 ![LNP201](assets/en/63.webp)
 
 Ésta es la distribución de fondos actual en los canales de pago anteriores:
 
-- **Canal entre Alice y 1**: 250,000 sats del lado de Alice, 80,000 del lado de 1 (con capacidad total de 330,000 sats).
-- **Canal entre 1 y 2**: 300,000 sats del lado de 1, 200,000 del lado de 2 (capacidad total de 500,000 sats).
-- **Canal entre 2 y 3**: 50,000 sats del lado de 2, 60,000 del lado de 3 (capacidad total de 110,000 sats).
-- **Canal entre 2 y 5**: 90,000 sats del lado de 2, 160,000 del lado de 5 (capacidad total de 250,000 sats).
-- **Canal entre 2 y 4**: 180,000 sats del lado de 2, 110,000 del lado de 4 (capacidad total de 290,000 sats).
-- **Canal entre 4 y 5**: 200,000 sats del lado de 4, 10,000 del lado de 5 (capacidad total de 210,000 sats).
-- **Canal entre 3 y Bob**: 50,000 sats del lado de 3, 250,000 del lado de Bob (capacidad total de 300,000 sats).
-- **Canal entre 5 y Bob**: 260,000 sats del lado de 5, 100,000 del lado de Bob (capacidad total de 360,000 sats).
+Esta es la distribución de fondos actual en los canales de pago anteriores:
+- **Canal entre Alice y 1**: 250,000 satoshis en el extremo de Alice y 80,000 satoshis en el extremo de 1 (con una capacidad total de 330,000 satoshis).
+- ** Canal entre 1 y 2**: 300,000 satoshis en el extremo de 1 y, 200,000 satoshis  en el extremo de 2 (con una capacidad de liquidez total de 500,000 satoshis).
+- **Canal entre 2 y 3**: 50,000 satoshis en el extremo de 2 y 60,000 en el extremo de 3 (con una capacidad de liquidez total de 110,000 satoshis).
+- **Canal entre 2 y 5**: 90,000 satoshis en el extremo de 2 y 160,000 satoshis en el extremo de 5 (con una capacidad total de 250,000 satoshis).
+- ** Canal entre 2 y 4**: 180,000 satoshis en el extremo de 2 y 110,000 satoshis en el extremo de 4 (con una capacidad total de 290,000 satoshis).
+- ** Canal entre 4 y 5**: 200,000 satoshis en el extremo de 4 y 10,000 satoshis en el extremo de 5 (capacidad de liquidez total de 210,000 satoshis).
+- **Canal entre 3 y Bob**: 50,000 sats en el extremo de 3 y 250,000 satoshis en el extremo de Bob (con una capacidad total de 300,000 satoshis).
+- **Channel between 5 and Bob**: 260,000 satoshis en el extremo de 5 y 100,000 satoshis en el extremo de Bob (capacidad de liquidez total de 360,000 satoshis).
 
 ![LNP201](assets/en/64.webp)
 
-Para hacer un pago de 100,000 sats de Alice a Bob, las opciones de enrutamiento de pago en la Lightning Network están limitadas por la liquidez disponible en cada canal de pago. La ruta idónea para Alice, se basa en las distribuciones de liquidez conocidas en esos canales. La secuencia puede ser representada de la siguiente manera: `Alice → 1 → 2 → 4 → 5 → Bob`:
+Para realizar un pago de 100,000 satoshis de Alice hasta Bob, las opciones de enrutamientos del pago en la Lightning Network están limitadas por la liquidez disponible en cada canal de pago. La ruta idónea para Alice, se basa en las distribuciones de liquidez conocidas en esos canales. La secuencia puede ser representada de la siguiente forma:
 
 ![LNP201](assets/en/65.webp)
 
-Dado que Alice no conoce la distribución exacta de fondos en cada canal, Alice tiene que estimar la ruta óptima de manera probabilística, teniendo en cuenta los siguientes criterios/parámetros:
+Dado que Alice no es conocedora la posición de balance de la liquidez en cada canal, Alice tiene que estimar la ruta idónea de manera probabilística, teniendo en cuenta los criterios de enrutamiento que vienen a continuación:
 
-- **Probabilidad de éxito**: un canal de pago con una mayor capacidad total tiene más probabilidades de que contenga suficiente liquidez. Por ejemplo, el canal entre el nodo 2 y el nodo 3 tiene una capacidad total de 110,000 sats, por lo que es improbable encontrar 100,000 sats o más del extremo opuesto (nodo 2), aunque sigue existiendo alguna posibilidad.
-- **Comisiones por transacción**: para elegir la mejor ruta, el nodo emisor también tiene en cuenta las comisiones, que aplican a cada nodo intermedio y, busca minimizar los costes totales, que conllevan el enrutamiento.
-- **Tiempo de expiración de los HTLCs**: para prevenir los pagos bloqueados, hay un parámetro que también se debe contemplar y éste es: el tiempo de expiración de los HTLCs.
-- **Número de nodos intermedios**: de manera más general, el nodo emisor buscará encontrar una ruta con el menor número posible de nodos para reducir el riesgo de fallo y limitar las comisiones por transacción realizada en la Lightning Network.
-  Al analizar estos factores, el nodo emisor puede poner a prueba las rutas más viables e intentar optimizarlas. En nuestro ejemplo, las rutas óptimas pueden clasificarse de la siguiente manera:
+- **Probabilidad de éxito del pago**: Un canal de pagos con una posición de balance de liquidez tiene más probabilidades de contener suficiente liquidez. Por ejemplo, el canal entre el nodo 2 y el nodo 3 tiene una posición de balance de 110.000 satoshis, por lo que es improbable encontrar 100.000 satoshis o más, del lado opuesto (nodo 2), aunque sigue siendo viable.
+- **Comisiones por el servicio de enrutamiento en cada transacción**: Para elegir la mejor ruta, el nodo emisor también tiene en cuenta las comisiones por enrutamiento, que aplican a cada nodo intermedio (enrutador) y busca minimizar al máximo los costes globales, que conlleva el enrutamiento.
+- **Finalización de la vigencia de los HTLCs**:  para prevenir los pagos bloqueados, hay un parámetro que también se tiene que contemplar y éste es el tiempo de expiración de los HTCLs.
+- **Número de nodos enrutadores intermediarios**: De manera más general, el nodo emisor busca encontrar una ruta con el menor número posible de nodos para reducir el riesgo de fallo y delimitar las comisiones de enrutamiento por transacción realizada en la Lightning Network. 
+  Analizando estos criterios, el nodo emisor puede poner a prueba las rutas más probables para intentar optimizar al máximo la ruta del pago. En nuestro ejemplo, Alice podría clasificar las rutas más efectivas de la siguiente manera:
 
 - `Alice → 1 → 2 → 5 → Bob`, porque es la ruta más corta con la mayor capacidad de liquidez.
-- `Alice → 1 → 2 → 4 → 5 → Bob`, porque esta ruta tiene buena capacidad, aunque es más larga que la primera.
-- `Alice → 1 → 2 → 3 → Bob`, porque esta ruta incluye el canal de transmisión `2 → 3`, el cual tiene una capacidad muy limitada. No obstante, es un canal potencialmente utilizable.
+- `Alice → 1 → 2 → 4 → 5 → Bob`, porque esta ruta ofrece buena capacidad de liquidez, aunque es una ruta más larga que la primera. 
+- `Alice → 1 → 2 → 3 → Bob`, porque esta ruta incluye el canal de transmisión de liquidez `2 → 3`, el cual tiene una capacidad muy limitada. No obstante, es un canal de pago potencialmente utilizable. 
 
-### Realizar un pago Lightning
+### Realizar un pago a través de la Lightning Network de Bitcoin
 
-Alice decide poner a prueba su primera ruta (`Alice → 1 → 2 → 5 → Bob`). Por lo tanto, envía un HTLC de 100,000 sats al nodo 1. Este nodo comprueba que tiene suficiente liquidez con el nodo 2 y luego continúa la transmisión. El nodo 2 recibe, por tanto, el HTLC del nodo 1, pero éste se da cuenta de que no tiene suficiente liquidez en su canal  para enrutar un pago de 100,000 sats con el nodo 5. Envíua un mensaje de error de vuelta al nodo 1, que lo transmite a Alice: La ruta ha fallado.
+Alice decide probar su primera ruta (`Alice → 1 → 2 → 4 → 5 → Bob`), por lo tanto, envía un HTCL de 100.000 satoshis al nodo 1. Este nodo revisa que tiene suficiente liquidez con el nodo 2 y continúa la transmisión. El nodo 2 recibe el HTCL del nodo 1, pero éste se da cuenta de que no tiene fondos suficientes en su canal de pago con el nodo 5 para enrutar un pago de 100.000 satoshis. A continuación, el nodo 2 envía un mensaje de error, contestando al nodo 1. El nodo 1 transmite este mensaje a Alice. Esta opción de ruta ha fallado.
 
 ![LNP201](assets/en/66.webp)
 
