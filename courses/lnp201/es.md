@@ -182,9 +182,9 @@ Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esencial
 
 En este capítulo, veremos cómo abrir un canal de pagos en la Lightning Network y analizaremos el vínculo entre la apertura del canal de pago y el sistema subyacente de Bitcoin.
 
-### Canales de pago Lightning
+### Canales de pago en la Lightning Network de Bitcoin
 
-Como vimos en el primer capítulo, un **canal de pago** en Lightning puede compararse con un "tubo" para intercambiar fondos entre dos participantes (**Alice** y **Bob**, en nuestros ejemplos). La capacidad de este canal corresponde a la suma de los fondos disponibles de cada extremo. En nuestro ejemplo, Alice tiene **100,000 satoshis** y Bob tiene **30,000 satoshis**, lo que suma una **capacidad total** de **130,000 satoshis**.
+Como vimos en el primer capítulo, un **canal de pago** en la Lightning Network puede compararse con una "tubería" para intercambiar fondos entre dos participantes (**Alice** y **Bob**, en nuestros ejemplos). La capacidad de este canal corresponde a la suma de los fondos disponibles de cada extremo. En nuestro ejemplo, Alice tiene **100,000 satoshis** y Bob tiene **30,000 satoshis**, lo que suma una **capacidad total** de **130,000 satoshis**.
 
 ![LNP201](assets/en/09.webp)
 
@@ -198,9 +198,9 @@ Es crucial distinguir claramente los diferentes niveles de intercambio en la Lig
 
 ![LNP201](assets/en/10.webp)
 
-Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero para intercambiar fondos es necesario un canal.
+Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero para intercambiar fondos es necesario un canal de pagos.
 
-### Pasos para abrir un canal de pagos Lightning
+### Pasos para abrir un canal de pagos en la Lightning Network
 
 - **Intercambio de mensajes**: Alice quiere establecer un canal de pago con Bob. Alice le envía un mensaje con la cantidad, que quiere depositar en el canal (130.000 sats) y su clave pública. Bob responde con su propia clave pública.
   
@@ -245,9 +245,9 @@ En el próximo capítulo, exploraremos el funcionamiento técnico de una transac
  
 En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal de pagos en la Lightning Network, es decir, cuando los fondos se mueven de un extremo del canal al otro lado.
 
-### Recordatorio del ciclo de vida del canal de pago
+### Recordatorio: El ciclo de vida del canal de pagos
 
-Como hemos visto anteriormente, la **apertura** de un canal de pago Lightning comienza a través de transacción de Bitcoin. El canal se puede **cerrar** cuando se desee. Cerramos el canal también a través de una transacción de Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal, sin tener que registrarlas en la blockchain de Bitcoin. Veamos qué es lo que ocurre durante una transacción en el canal de pagos.
+Como hemos visto anteriormente, la **apertura** de un canal de pagos en la Lightning Network comienza a través de una transacción de Bitcoin. El canal se puede **cerrar** cuando se desee. Cerramos el canal también a través de una transacción de Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que registrarlas en la blockchain de Bitcoin. Veamos qué es lo que ocurre durante una transacción en un canal de pagos.
 
 ![LNP201](assets/en/17.webp)
 
@@ -311,7 +311,7 @@ Pongamos un ejemplo sencillo:
   
 ![LNP201](assets/en/22.webp)
 
-En cualquier momento ambas partes pueden publicar la **última transacción de compromiso firmada** para cerrar el canal y recuperar sus fondos.
+En cualquier momento, ambas partes pueden publicar la **última transacción de compromiso firmada** para cerrar el canal y recuperar sus fondos.
 
 ### La falla en el proceso: Estafar a la contraparte, publicando una transacción antigua.
 
@@ -337,6 +337,7 @@ Gracias a estos dos mecanismos combinados, Bob tiene tiempo de detectar el inten
 Veamos el funcionamiento de este mecanismo en su conjunto.
 
 ### Proceso de actualización de transacciones
+
 Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, ya han intercambiado por adelantado sus respectivos **secretos** para la transacción de compromiso anterior (que quedará obsoleta y podría servir para estafar al otro). Por eso, en el nuevo estado del canal:
 - Alice y Bob tienen una nueva transacción de compromiso, donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
 - Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la clave de revocación, si uno de ellos intenta estafar fondos, publicando una transacción del estado anterior en los mempools del nodo Bitcoin. De hecho, para penalizar a la otra parte, es necesario tener los dos secretos y la transacción de compromiso del otro participante, que incluye la entrada firmada. Sin esta transacción, la clave de revocación por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones a la espera de confirmación) o de transacciones confirmadas en la blockchain de Bitcoin durante el timelock. Así, demostraríamos que la otra parte está intentando hacer trampas, ya sea intencionadamente o no.
@@ -378,7 +379,7 @@ En este punto, se espera que el alumno haya desarrollado la capacidad de compren
 
 En este capítulo, discutiremos **cerrar un canal** en la Lightning network, lo cual se hace a través de una transacción de Bitcoin, justo como al abrir un canal. Después de ver cómo funcionan las transacciones dentro de un canal, ahora es momento de ver cómo cerrar un canal y recuperar los fondos en la blockchain de Bitcoin.
 
-## Recordatorio sobre el ciclo de vida de un canal de pagos
+## Recordatorio: El ciclo de vida de un canal de pagos
 El **ciclo de vida de un canal** comienza con su **apertura**, mediante una transacción de Bitcoin. A continuación, se realizan otras transacciones Lightning en este canal de pagos. Cuando los participantes desean recuperar sus fondos, el canal de pagos **se cierra**, mediante una segunda transacción Bitcoin. Las transacciones realizadas en la Lightning Network están representadas por **transacciones de compromiso no publicadas**.
 
 ![LNP201](assets/en/29.webp)
@@ -684,7 +685,7 @@ Los HTLCs permiten el enrutamiento de pagos, a través de múltiples nodos segur
 
 En el próximo capítulo, descubriremos cómo un nodo emisor, que inicia una transacción en la Lightning Network puede encontrar y seleccionar rutas/vías para que su transacción de pago llegue al nodo receptor.
 
-## Encuentra la ruta más eficiente y rápida para el enrutamiento de pagos.
+## Encuentra la ruta más eficiente y rápida para el enrutamiento de un pago.
 
 <chapterId>7e2ae959-c2a1-512e-b5d6-8fd962e819da</chapterId>
 
@@ -692,7 +693,7 @@ En el próximo capítulo, descubriremos cómo un nodo emisor, que inicia una tra
 
 En los capítulos anteriores,entendimos el método para aprovechar los canales de pagos de otros nodos para el enrutamiento de pagos y poder alcanzar otro nodo sin estar conectado directamente a él a través de un canal de pagos. Anteriormente, también abordamos cómo garantizar la seguridad de la transferencia, sin que sea necesario confiar en los nodos intermedios. En este capítulo, nos centraremos en encontrar la ruta más eficiente y rápida disponible para llegar un nodo objetivo (destino).
 
-### Desafío del enrutamiento en la Lightning Network (Decisiones de enrutamiento)
+### El desafío del enrutamiento en la Lightning Network (Decisiones de enrutamiento)
 
 Como hemos visto, en Lightning Network, el nodo que envía el pago es el que debe calcular la ruta completa hasta el destinatario final, porque utilizamos un sistema de enrutamiento tipo cebolla (Onion Routing). Los nodos intermediarios no conocen ni el punto de origen, ni tampoco el destino final. Solamente conocen de qué nodo viene el pago y a qué nodo deben transferirlo a continuación. Esto significa que, el nodo emisor del pago se encarga de mantener la topología local dinámica de la red: los nodos Lightning existentes y los canales entre cada uno y debe tener en cuenta la apertura y cierre de pagos, así como las actualizaciones periódicas de la información del estado de los canales de pago. Buscará la ruta  óptima a través de la Lightning Network.
 
