@@ -11,9 +11,9 @@ objectives:
 
 # Un Viaje hacia la Segunda Capa de Bitcoin 
 
-Adéntrese en el corazón de la Lightning Network, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network. Desvela los fundamentos y mecanismos de esta red de segunda capa, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
+Adéntrese en el corazón de la Lightning Network, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network. Desvela los fundamentos y mecanismos de esta red de segunda capa/nivel, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
 
-Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos  la gestión de la liquidez. Descubrirás la utilidad de las «transacciones de compromiso» (Commitment transactions), los HTLC, las «claves de revocación» (Revokation key), los mecanismos de castigo, el «enrutamiento cebolla» (Onion Routing) y las facturas.
+Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras, sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos  la gestión de la liquidez. Descubrirás la utilidad de las «transacciones de compromiso» (Commitment transactions), los HTLC, las «claves de revocación» (Revokation key), los mecanismos de penalización, el «enrutamiento cebolla» (Onion Routing) y las facturas.
 
 Tanto si eres un principiante como si ya eres un usuario experimentado de Bitcoin, este curso te proporcionará información valiosa sobre cómo entender y utilizar la Lightning Network. Aunque cubriremos algunos de los fundamentos sobre el funcionamiento de Bitcoin en las primeras etapas, es esencial tener una comprensión sólida de la invención de Satoshi antes de profundizar en LNP201.
 
@@ -29,22 +29,22 @@ Tanto si eres un principiante como si ya eres un usuario experimentado de Bitcoi
 
 ¡Bienvenido al curso LNP201!
 
-Este curso te proporcionará un amplio conocimiento técnico de la Lightning Network, que es una red superpuesta, que facilita transacciones de Bitcoin rápidas y, a menudo, a bajo coste. A lo largo del curso, irás descubriendo los conceptos fundamentales que rigen el sistema: la apertura de canales de pago, las técnicas de enrutamiento y la gestión de la liquidez.
+Este curso te proporcionará un amplio conocimiento técnico de la Lightning Network, que es una capa superpuesta, que facilita transacciones de Bitcoin rápidas y, a menudo, a bajo coste. A lo largo del curso, irás descubriendo los conceptos fundamentales que rigen el sistema: la apertura de canales de pago, las técnicas de enrutamiento y la gestión de la liquidez.
 
 **Sección 1: Los Fundamentos** 
-Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, las direcciones, los UTXOs y el funcionamiento de las transacciones. Este repaso básico es necesario para entender que, la Lightning Network se basa en sus mecanismos subyacentes en "la cadena de bloques" (blockchain) para operar de forma segura.
+Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, las direcciones, los UTXOs y el funcionamiento de las transacciones. Este repaso básico es necesario para entender que, la Lightning Network se basa en sus mecanismos subyacentes en "la cadena de bloques" (blockchain) de Bitcoin para operar de forma segura.
 
 **Sección 2: Apertura y cierre de canales** 
-En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Red Lightning. Aprenderás cómo se crean las transacciones de compromiso (*commitment transactions*), el papel que tienen las claves de revocación (*Revokation key*) para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
+En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las transacciones de compromiso (*commitment transactions*), el papel que tienen las claves de revocación (*Revokation key*) para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
 
 **Sección 3: Una red de liquidez**
 La Lightning Network no se limita a los canales de pago individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones pueden enrutarse/direccionarse, a través de nodos intermediarios/intermedios, utilizando los HTLC. Esta sección también aborda los retos de la gestión de la liquidez entrante y saliente en los canales de pago.
 
 **Sección 4: Herramientas de la Lightning Network**
-En esta sección se presentan las herramientas prácticas de la Lightning Network, como son:  las facturas (Invoices), las LNURL y la “clave de revocación” (Keysend). También trataremos la gestión de la liquidez de tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones, con la tecnología Lightning.
+En esta sección se presentan las herramientas prácticas de la Lightning Network, como son:  las facturas (Invoices), las LNURL y la “clave de revocación” (Keysend). También trataremos la gestión de la liquidez de tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones con la tecnología Lightning.
 
 **Sección 5: Ve más allá** 
-Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos, que deseen profundizar en sus conocimientos sobre la Lightning Network.
+Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos que deseen profundizar en sus conocimientos sobre la Lightning Network.
 
 ¿Listo para descubrir el funcionamiento técnico de la Lightning Network? ¡Vamos a ello!
 
@@ -52,17 +52,17 @@ Por último, concluiremos la formación con un repaso de los conceptos tratados 
 
 <partId>32647d62-102b-509f-a3ba-ad1d6a4345f1</partId>
 
-## Entendiendo la Red Lightning
+## Entendiendo la Lightning Network
 
 <chapterId>df6230ae-ff35-56ea-8651-8e65580730a8</chapterId>
 
 :::video id=62831f54-0ee7-403b-b0e3-67084c2ef6ea:::
 
-La Lightning Network es una red de canales de pagos, construida sobre el protocolo Bitcoin, que permite transacciones rápidas y a bajo coste. Permite crear canales de pago entre participantes, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la cadena de bloques (blockchain). De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo valor.
+La Lightning Network es una red de canales de pagos, construida sobre el protocolo Bitcoin, que permite transacciones rápidas y a bajo coste. Permite crear canales de pago entre participantes, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la cadena de bloques de Bitcoin (blockchain). De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo importe.
 
 Antes de abordar el aspecto «red» ("network"), es fundamental comprender el concepto de **canal de pago** ("payment channel") en Lightning, su funcionamiento y sus particularidades. Este es el tema de este primer capítulo.
 
-### El Concepto de Canal de Pago
+### El Concepto de un canal de pagos
 
 ### Un canal de pago permite a dos partes, en este caso **Alice** y **Bob**, intercambiar fondos a través de la Lightning Network. Cada parte tiene un nodo, simbolizado por un círculo, y el canal de pago, entre ellos, está representado por un segmento, que los conecta.
 
@@ -75,11 +75,11 @@ En nuestro ejemplo, Alice tiene 100,000 satoshis en su extremo del canal de pago
 El **satoshi** (o «sat») es una unidad de cuenta de Bitcoin. Al igual que un céntimo de euro, un satoshi es simplemente, una fracción de un Bitcoin. Un satoshi equivale a **0.00000001 Bitcoin**, es decir, la cienmillonésima parte de un Bitcoin. A medida que aumente el valor de Bitcoin, el uso de satoshis se volverá más práctico.
 
 ### La distribución de fondos en el canal de pagos
-Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis (sats) y Bob, 30.000 satoshis (sats). Como hemos visto, la suma de estos fondos representa la capacidad total del canal; es un número establecido cuando se abre el canal de pago.
+Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis (sats) y Bob, 30.000 satoshis (sats). Como hemos visto, la suma de estos fondos representa la capacidad total del canal; es un número fijo cuando se abre el canal de pago.
 
 ![LNP201](assets/en/02.webp)
 
-Pongamos un ejemplo de transacción Lightning: Si Alice quiere enviar 40,000 satoshis a Bob, puede hacerlo, porque tiene fondos suficientes (100,000 satoshis). Tras esta transacción, Alice tendrá 60,000 satoshis y Bob tendrá 70,000.
+Pongamos un ejemplo de transacción Lightning: Si Alice quiere enviar 40,000 satoshis a Bob, puede hacerlo, porque tiene fondos suficientes (100,000 satoshis). Tras esta transacción, Alice tendrá 60,000 satoshis y Bob tendrá 70,000 sats.
 
 ![LNP201](assets/en/03.webp)
 
@@ -93,8 +93,8 @@ Esta representación puede ser útil para visualizar la distribución de fondos 
 
 ### Las reglas fundamentales de un canal de pagos
 
-Lo primero que hay que hay que tener en cuenta es, que la capacidad del canal es fija. Es como el diámetro de una tubería: determina la cantidad máxima de dinero que puede enviarse a través del canal en un momento dado.
-Pongamos un ejemplo: si Alice dispone de 130.000 satoshis, solamente puede enviar 130.000 satoshis a Bob en una única transacción. Sin embargo, Bob puede devolverle una parte o la totalidad de este dinero.
+Lo primero que hay que hay que tener en cuenta es, que la capacidad del canal es fija. Es como el diámetro de una tubería: determina la cantidad máxima de dinero que puede enviarse a través del canal de pago en un momento dado.
+Pongamos un ejemplo: si Alice dispone de 130.000 satoshis, solamente puede enviar 130.000 satoshis a Bob en una única transacción. Sin embargo, Bob puede devolverle una parte o la totalidad de estos fondos.
 
 Es importante entender que la capacidad fija del canal limita el importe máximo de una única transacción, pero no el número total de transacciones posibles ni el volumen total de fondos intercambiados dentro del canal.
 
@@ -135,7 +135,7 @@ El script más común requiere una firma con la clave privada de la dirección. 
 
 ### UTXOs: Unspent Transaction Outputs: "Salidas de Transacción No Gastadas" 
 
-En Bitcoin, lo que realmente intercambiamos no son Bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que significa literalmente "salidas de transacciones no gastadas".
+En Bitcoin, lo que realmente intercambiamos no son Bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que significa literalmente, "salidas de transacciones no gastadas".
 
 Un UTXO es una pieza de Bitcoin que puede ser de cualquier valor, por ejemplo **2,000 Bitcoins**, **8 Bitcoins**, o incluso **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, debes cumplir las condiciones del script, a menudo es una firma con la clave privada, correspondiente a una dirección de destinatario determinada.
 
@@ -160,7 +160,7 @@ Para gastar los fondos asociados a esta dirección multifirma 2/2 (peer-to-peer)
 
 Este tipo de dirección es la representación de los canales de pago de la Lightning Network en la blockchain ("cadena de bloques") de Bitcoin.
 
-**¿Qué debes extraer del contenido de este capítulo?** 
+**¿Qué debes recordar del contenido de este capítulo?** 
 
 - Una **dirección Bitcoin** se deriva de una clave pública, que a su vez, se deriva de una clave privada.
 - Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar esos fondos, debes cumplir las condiciones, que marca el script, que, normalmente, implica proporcionar una firma con la correspondiente clave privada. 
@@ -168,7 +168,7 @@ Este tipo de dirección es la representación de los canales de pago de la Light
 - **2/2 direcciones multi-firma** (peer-to-peer) se requiere de la firma de dos claves privadas, para poder gastar los fondos.
 
 Estas direcciones especiales se utilizan en el contexto de la tecnología Lightning para abrir canales de pagos.
-Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esenciales, que nos serán útiles para lo que aprenderemos a continuación. En el próximo capítulo, veremos cómo funciona la apertura de canales en la Lightning Network en detalle. 
+Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esenciales, que nos serán útiles para lo que aprenderemos a continuación. En el próximo capítulo, veremos detalladamente cómo funciona la apertura de canales en la Lightning Network.
 
 # Apertura y Cierre de Canales
 
@@ -214,11 +214,11 @@ Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2
 
 ![LNP201](assets/en/13.webp)
 
-- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats se bloquearán en una dirección multifirma 2/2 y, únicamente, podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar su liquidez.
+- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats se bloquearán en una dirección multifirma 2/2 y, únicamente, podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
   
 ![LNP201](assets/en/14.webp)
 
-- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de liquidez. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, Alice ya tiene la seguridad de poder recuperar sus fondos cuando quiera, ya que ahora sólo es necesaria su propia firma, para desbloquear la dirección multi-firma.
+- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de liquidez. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, ella ya tiene la seguridad de poder recuperar sus fondos cuando quiera, ya que ahora sólo es necesaria su propia firma para desbloquear la dirección multi-firma.
 
 ![LNP201](assets/en/15.webp)
 
@@ -232,7 +232,7 @@ El canal se considera abierto, cuando la transacción de depósito se registra e
 
 **¿Qué debo recordar de este capítulo?** 
 - La apertura de un canal comienza con el intercambio de **mensajes** entre las dos partes (intercambio de importes y claves públicas).
-— Un canal se crea con la creación de una dirección **multi-firma 2/2 ** y el depósito de fondos en esta dirección, a través de una transacción de Bitcoin.
+— Un canal se crea con la creación de una dirección **multi-firma 2/2 ** y el depósito de fondos en esta dirección a través de una transacción de Bitcoin.
 - La persona que abre el canal se asegura de que puede **recuperar sus fondos**, mediante una transacción de retirada firmada por la otra parte, antes de publicar la transacción de depósito.
 
 En el próximo capítulo, exploraremos el funcionamiento técnico de una transacción Lightning dentro de un canal de pagos.
@@ -243,11 +243,11 @@ En el próximo capítulo, exploraremos el funcionamiento técnico de una transac
 
 :::video id=ec8a9259-cf0e-4142-af74-d08a867e3842:::
  
-En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal de pagos en la Lightning Network, es decir, cuando los fondos se mueven de un extremo del canal al otro lado.
+En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal de pagos en la Lightning Network, es decir, cuando los fondos se mueven de un extremo del canal al otro lado del canal de pago.
 
 ### Recordatorio: El ciclo de vida del canal de pagos
 
-Como hemos visto anteriormente, la **apertura** de un canal de pagos en la Lightning Network comienza a través de una transacción de Bitcoin. El canal se puede **cerrar** cuando se desee. Cerramos el canal también a través de una transacción de Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que registrarlas en la blockchain de Bitcoin. Veamos qué es lo que ocurre durante una transacción en un canal de pagos.
+Como hemos visto anteriormente, la **apertura** de un canal de pagos en la Lightning Network comienza a través de una transacción de Bitcoin. El canal se puede **cerrar** cuando se desee. También cerramos el canal a través de una transacción de Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que registrarlas en la blockchain de Bitcoin. Veamos qué es lo que ocurre durante una transacción en un canal de pagos.
 
 ![LNP201](assets/en/17.webp)
 
@@ -273,7 +273,7 @@ Para validar esta transferencia, Alice y Bob crean una nueva **transacción Bitc
 ### El proceso de transferencia: la factura
 
 Cuando Bob quiere recibir dinero, envía a Alice una **factura_** por 30,000 satoshis. Alice paga esta factura, lo que inicia la transferencia dentro del canal. Como hemos visto, este proceso se basa en la creación y firma de una nueva **transacción de compromiso**.
-Cada transacción de compromiso representa la distribución de fondos en el canal de pagos, tras la transferencia. En este ejemplo, después de la transacción, Bob tiene 30,000 satoshis y Alice tiene 100,000 satoshis. Si uno de los dos participantes decide publicar esta transacción de compromiso en la cadena de bloques (blockchain), el canal se cerrará y los fondos se distribuirán, según la distribución final.
+Cada transacción de compromiso representa la distribución de fondos en el canal de pagos tras la transferencia. En este ejemplo, después de la transacción, Bob tiene 30,000 satoshis y Alice tiene 100,000 satoshis. Si uno de los dos participantes decide publicar esta transacción de compromiso en la cadena de bloques (blockchain), el canal se cerrará y los fondos se distribuirán, según la distribución final.
 
 ![LNP201](assets/en/20.webp)
 
@@ -293,7 +293,7 @@ En resumen, cuando se transfieren fondos dentro de un canal de pago Lightning:
 - Esta transacción Bitcoin es **firmada** por ambas partes, pero **no publicada** en la blockchain de Bitcoin, mientras el canal permanezca abierto.
 - Las transacciones de compromiso garantizan que cada participante pueda recuperar sus fondos en cualquier momento, publicando la última transacción firmada en la blockchain de Bitcoin.
 
-Sin embargo, este sistema tiene una falla potencial, que abordaremos en el próximo capítulo. Veremos cómo cada participante puede protegerse de un intento de estafa, que venga de la otra parte.
+Sin embargo, este sistema tiene una falla potencial, que abordaremos en el próximo capítulo. Veremos cómo cada participante puede protegerse de un intento de estafa que venga de la otra parte.
 
 ## Revocation Key ("llave de revocación")
 
@@ -315,11 +315,11 @@ En cualquier momento, ambas partes pueden publicar la **última transacción de 
 
 ### La falla en el proceso: Estafar a la contraparte, publicando una transacción antigua.
 
-Si una de las partes decide **estafar**, publicando una transacción de compromiso antigua, surge un potencial problema.  Por ejemplo, Alice podría publicar una transacción de compromiso antigua en la que dispusiera de **100.000 satoshis**, cuando, en realidad, sólo tenía **60.000** satoshis. Así, podría robar **40.000 satoshis**  a Bob. 
+Si una de las partes decide **estafar**, publicando una transacción de compromiso antigua, surge un potencial problema.  Por ejemplo, Alice podría publicar una transacción de compromiso antigua con una posición de balance más favorable con **100.000 satoshis**, cuando, en realidad, sólo tiene **60.000** satoshis. Así, podría robar **40.000 satoshis** a Bob. 
 
 ![LNP201](assets/en/23.webp)
 
-Peor aún, Alice podría publicar la primera transacción de retirada, la anterior a la apertura del canal, en la que tenía **130,000 satoshis**, y robar, así, la totalidad de fondos del canal. 
+Peor aún, Alice podría publicar la primera transacción de retirada, la anterior a la apertura del canal, en la que tenía **130,000 satoshis**, y estafar, así, la totalidad de fondos del canal a Bob. 
 
 ![LNP201](assets/en/24.webp)
 
@@ -340,7 +340,7 @@ Veamos el funcionamiento de este mecanismo en su conjunto.
 
 Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, ya han intercambiado por adelantado sus respectivos **secretos** para la transacción de compromiso anterior (que quedará obsoleta y podría servir para estafar al otro). Por eso, en el nuevo estado del canal:
 - Alice y Bob tienen una nueva transacción de compromiso, donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
-- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la clave de revocación, si uno de ellos intenta estafar fondos, publicando una transacción del estado anterior en los mempools del nodo Bitcoin. De hecho, para penalizar a la otra parte, es necesario tener los dos secretos y la transacción de compromiso del otro participante, que incluye la entrada firmada. Sin esta transacción, la clave de revocación por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones a la espera de confirmación) o de transacciones confirmadas en la blockchain de Bitcoin durante el timelock. Así, demostraríamos que la otra parte está intentando hacer trampas, ya sea intencionadamente o no.
+- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la clave de revocación, si uno de ellos intenta estafar fondos, publicando una transacción del estado anterior en los mempools del nodo Bitcoin. De hecho, para penalizar a la otra parte ("penalty transaction" o "justice transaction"), es necesario tener los dos secretos y la transacción de compromiso del otro participante, que incluye la entrada firmada. Sin esta transacción, la clave de revocación por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones pendientes de registrar en la "blockchain" de Bitcoin) o de transacciones confirmadas en la blockchain de Bitcoin durante el timelock. Así, demostraríamos que la otra parte está intentando llevar a cabo un ataque malicioso, ya sea intencionadamente o no.
 
 Para entender bien este proceso, pongamos un ejemplo:
 
@@ -352,7 +352,7 @@ Para entender bien este proceso, pongamos un ejemplo:
    - Bob envía una factura a Alice, junto con su clave secreta de revocación para su transacción de compromiso anterior.
 - En respuesta, Alice proporciona su firma para la nueva transacción de compromiso de Bob, así como su clave secreta de revocación, para su transacción anterior.
 - Por último, Bob envía su firma para la nueva transacción de compromiso de Alice.
-   - Estos intercambios permiten a Alice enviar **40,000 satoshis** a Bob a través de su canal de pago Lightning, y las nuevas transacciones de compromiso reflejan esta distribución actualizada de fondos.
+   - Estos intercambios permiten a Alice enviar **40,000 satoshis** a Bob, a través de su canal de pago Lightning, y las nuevas transacciones de compromiso reflejan esta distribución actualizada de fondos.
 
 ![LNP201](assets/en/27.webp)
 
@@ -360,16 +360,16 @@ Para entender bien este proceso, pongamos un ejemplo:
 
 ![LNP201](assets/en/28.webp)
 
-En este caso, Bob no tiene motivaciones económicas para intentar estafar a Alice, pero si fuera así, Alice también se beneficiaría de esta protección simétrica, que ofrece a Alice las mismas garantías que a Bob.
+En este caso, Bob no tiene motivaciones económicas para intentar estafar a Alice, pero si fuera así, Alice también se beneficiaría de esta protección simétrica, que ofrece las mismas garantías a Alice que a Bob.
 
 **¿Qué debes extraer del contenido de este capítulo?**
 
-Las **transacciones de compromiso** (Commitments Transactions) de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y minimizan el incentivo para llevarlas a cabo. Antes de firmar una nueva transacción de compromiso, Alice y Bob intercambian los **secretos** de las transacciones de compromiso anteriores. En el caso hipotético, en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar estafarle. 
+Las **transacciones de compromiso** ("Commitments Transactions") de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y minimizan el incentivo para llevarlas a cabo. Antes de firmar una nueva transacción de compromiso, Alice y Bob intercambian los **secretos** de las transacciones de compromiso anteriores. En el caso hipotético, en el que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice complete la operación, lo que resultaría en una penalización por parte de Bob hacia Alice por intentar realizar una operación fraudulenta. 
 
-Este sistema de seguridad garantiza que los participantes cumplan con las normas de la Lightning Network y que no puedan beneficiarse de la publicación de transacciones de compromiso antiguas. 
-Ya hemos aprendido cómo las transacciones de compromiso de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. En el contexto de las transacciones de compromiso, se establece un intercambio de secretos entre Alice y Bob, antes de proceder con una nueva transacción. En el caso hipotético de que Alice intente publicar una transacción de compromiso antigua, Bob podría utilizar la clave de revocación para recuperar todos los fondos antes de que Alice complete la operación, lo que resultaría en una sanción por parte de Bob hacia Alice por intentar realizar una acción fraudulenta.
-Este sistema de seguridad garantiza que los participantes cumplan con las normas del funcionamiento de la Lightning Network y que no puedan beneficiarse de la publicación de transacciones de compromiso antiguas.
-En este punto, se espera que el alumno haya desarrollado la capacidad de comprender el proceso de apertura de los canales de pago en la Lightning Network y la operatividad de las transacciones, que tienen lugar en dichos canales de pago. En el siguiente capítulo, se abordarán las diversas técnicas para cerrar un canal de pagos y recuperar los Bitcoins en la blockchain.
+Este sistema de seguridad garantiza que los participantes cumplan con las normas de la Lightning Network y que no puedan beneficiarse de la publicación de "transacciones de compromiso" antiguas. 
+Ya hemos aprendido cómo las "transacciones de compromiso" de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. En el contexto de las transacciones de compromiso, se establece un intercambio de secretos entre Alice y Bob, antes de proceder con una nueva transacción. 
+
+En este punto, se espera que el alumno haya desarrollado la capacidad de comprender el proceso de apertura de los canales de pago en la Lightning Network y el funcionamiento de las transacciones, que tienen lugar en dichos canales de pago. En el siguiente capítulo, se abordarán las diversas técnicas para cerrar un canal de pagos y recuperar los Bitcoins en la blockchain.
 
 ## Cierre de un canal de pago
 
@@ -377,7 +377,7 @@ En este punto, se espera que el alumno haya desarrollado la capacidad de compren
 
 :::video id=e3bfae93-85f5-4996-9dbc-5185ff0b4d0f:::
 
-En este capítulo, discutiremos **cerrar un canal** en la Lightning network, lo cual se hace a través de una transacción de Bitcoin, justo como al abrir un canal. Después de ver cómo funcionan las transacciones dentro de un canal, ahora es momento de ver cómo cerrar un canal y recuperar los fondos en la blockchain de Bitcoin.
+En este capítulo, discutiremos **cerrar un canal** en la Lightning Network, lo cual se hace a través de una transacción de Bitcoin, justo como al abrir un canal. Después de ver cómo funcionan las transacciones dentro de un canal, ahora es momento de ver cómo cerrar un canal y recuperar los fondos en la blockchain de Bitcoin.
 
 ## Recordatorio: El ciclo de vida de un canal de pagos
 El **ciclo de vida de un canal** comienza con su **apertura**, mediante una transacción de Bitcoin. A continuación, se realizan otras transacciones Lightning en este canal de pagos. Cuando los participantes desean recuperar sus fondos, el canal de pagos **se cierra**, mediante una segunda transacción Bitcoin. Las transacciones realizadas en la Lightning Network están representadas por **transacciones de compromiso no publicadas**.
