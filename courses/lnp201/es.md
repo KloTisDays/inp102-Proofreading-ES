@@ -752,23 +752,23 @@ Alice decide probar su primera ruta (`Alice → 1 → 2 → 4 → 5 → Bob`), p
 
 ![LNP201](assets/en/66.webp)
 
-Alice intenta entonces utilizar su segunda ruta para realizar el pago (`Alice → 1 → 2 → 4 → 5 → Bob`). Envía un HTLC de 100,000 sats al nodo 1, el cual lo transmite al nodo 2, luego al nodo 4, al nodo 5 y, por último, a Bob. En esta ocasión, hay suficiente liquidez, la ruta funciona. Cada nodo se desbloquea en cascada, utilizando la imagen previa proporcionada por Bob, la cual es el secreto _s_. Esto último es lo que completa con éxito el pago de Alice a Bob.
+Alice trata de utilizar su segunda ruta para realizar el pago: (`Alice → 1 → 2 → 4 → 5 → Bob`). Alice envía un HTCL de 100,000 satoshis al nodo 1, el cual lo transmite al nodo 2, luego pasa al nodo 4, después al nodo 5 y, por último, llega a Bob. En esta ocasión, hay suficiente liquidez, la ruta funciona. Cada nodo desbloquea en cascada su HTCL, usando la imagen proporcionada por Bob, la cual es el secreto _s₎ este último proceso es lo que permite completar con éxito el pago de Alice a Bob. 
 
 ![LNP201](assets/en/67.webp)
 
-La búsqueda de una ruta idónea para efectuar con éxito el pago se lleva a cabo de la siguiente manera: el nodo emisor comienza por identificar las mejores rutas de direccionamiento, a continuación, intenta pagos de forma sucesiva, hasta encontrar una ruta funcional.
+La lógica de enrutamiento de pagos, que es la búsqueda de una ruta óptima se lleva a cabo como sigue: el nodo emisor comienza por identificar las mejores rutas de direccionamiento, a continuación y después intenta hacer los pagos de manera sucesiva, hasta que encuentra una ruta operativa.
 
-Cabe señalar que Bob puede proporcionar información en la **factura** a Alice, para facilitar el enrutamiento de la transacción. Por ejemplo, el nodo emisor puede especificar canales de pagos cercanos con suficiente liquidez o revelar la existencia de canales privados. Estos indicios permiten a Alice evitar rutas con menos probabilidades de éxito e, intentar, en primer lugar, las rutas recomendadas por Bob.
+Cabe señalar que Bob puede proporcionar información a Alice en la factura para facilitar el enrutamiento de la transacción. Por ejemplo, el nodo emisor puede precisar, especificar los canales de pago ubicados cerca de él con suficiente capacidad de liquidez o revelar la existencia de canales privados. Estos indicios permiten evitar rutas con menos probabilidades de éxito, e intentar, en primer lugar, las rutas recomendadas por Bob.
 
 **¿Qué debes recordar del contenido de este capítulo?**
 
-- Los nodos mantienen un mapa de la topología de la red, a través de avisos y, monitoreando el cierre de canales en la blockchain de Bitcoin.
-- La búsqueda de una ruta óptima para un pago sigue siendo probabilística y depende de muchos criterios.
-- Bob puede proporcionar indicaciones en la **factura** para guiar el enrutamiento de Alice y ahorrarle probar rutascon bajas probabilidades de éxito de pago.
+- Los nodos mantienen un mapa topológico de la Lightning Network, a través de avisos y el monitoreo del cierre de canales en la blockchain de Bitcoin.
+- La búsqueda de una ruta óptima (lógica de enrutamiento de pagos) para un pago es probabilística y depende de muchos criterios.
+- Bob puede sugerir información adicional en la factura para ayudar a Alice a optimizar la ruta de pago y ahorrarle el tiempo probando otras rutas con bajas probabilidades de éxito de pago.
 
-En el próximo capítulo, estudiaremos en detalle el uso y propósito de las facturas, es decir, aprenderemos cómo atender un pago y otras herramientas, utilizadas en la Lightning Network.
+En el próximo capítulo, estudiaremos el uso y propósito de las facturas, es decir, aprenderemos cómo atender un pago, además de otras herramientas, utilizadas en la Lightning Network.
 
-# Las Herramientas de la Red Lightning
+# Las herramientas de la Lightning Network
 
 <partId>74d6c334-ec5d-55d9-8598-f05694703bf6</partId>
 
@@ -776,87 +776,88 @@ En el próximo capítulo, estudiaremos en detalle el uso y propósito de las fac
 
 <chapterId>e34c7ecd-2327-52e3-b61e-c837d9e5e8b0</chapterId>
 :::video id=b4707c4e-6b63-496e-9ac8-e748a8c3be94:::
-En este capítulo, vamos a examinar más de cerca el funcionamiento de las **facturas** de Lightning, es decir, solicitudes de pago enviadas por el nodo receptor al nodo emisor. El objetivo es entender cómo pagar y recibir pagos en Lightning. También discutiremos 2 alternativas a las facturas clásicas: LNURL y Keysend.
+En este capítulo, vamos a examinar más de cerca cómo funcionan las facturas en la Lightning Network, es decir, cómo las solicitudes de pago enviadas por el nodo receptor se transmiten hasta el nodo emisor. El objetivo es entender cómo pagar y recibir pagos en la Lightning Network. También discutiremos 2 alternativas a las facturas típicas, que son: LNURL y Keysend.
 ![LNP201](assets/en/68.webp)
 
-### La Estructura de las Facturas de Lightning
+### Estructura de las facturas en la Lightning Network
 
-Como se explicó en el capítulo sobre HTLCs, cada pago comienza con la generación de una **factura** por parte del receptor. Esta factura se transmite luego al pagador (a través de un código QR o copiando y pegando) para iniciar el pago. Una factura consta de dos partes principales:
+Como explicamos en el capítulo que trata de los HTCL´s , el proceso de pago comienza con la creación de una factura por parte del receptor. Para iniciar el pago el beneficiario transmite una factura al pagador por medio de un QR o copiando y pegando. Podemos dividir la factura en 2 partes:
 
-- **La Parte Legible por Humanos**: esta sección contiene metadatos claramente visibles para mejorar la experiencia del usuario.
-- **El Payload**: esta sección incluye información destinada a que las máquinas procesen el pago.
+- Primero, encontramos la **parte legible por el ser humano**: para mejorar la experiencia de usuario, esta parte contiene metadatos claramente visible para el usuario.
+- La parte del **Payload**: esta sección incluye información para la realización de un pago, es la carga útil. Es la parte esencial de datos que se transmiten dentro de la transmisión del pago. Esta parte va destinada a las máquinas, que procesan el pago.
 
-La estructura típica de una factura comienza con un identificador `ln` por "Lightning", seguido de `bc` por Bitcoin, luego la cantidad de la factura. Un separador `1` distingue la parte legible por humanos de la parte de datos (payload).
+La típica estructura de una factura comienza con un identificador `ln` que significa “Lightning”, sigue de `bc` para Bitcoin, y, a continuación, se indica el importe de la factura. Un separador `1` distingue la parte legible por seres humanos de la otra parte de datos (payload).
 
-Tomemos la siguiente factura como ejemplo:
+La siguiente factura ilustra un ejemplo de la estructura típica de una factura Lightning:
 
 ```invoice
 lnbc100u1p0x7x7dpp5l7r9y50wrzz0lwnsqgxdks50lxtwkl0mhd9lslr4rcgdtt2n6lssp5l3pkhdx0cmc9gfsqvw5xjhph84my2frzjqxqyz5vq9qsp5k4mkzv5jd8u5n89d2yc50x7ptkl0zprx0dfjh3km7g0x98g70hsqq7sqqqgqqyqqqqlgqqvnv2k5ehwnylq3rhpd9g2y0sq9ujyxsqqypjqqyqqqqqqqqqqqsqqqqq9qsq3vql5f6e45xztgj7y6xw6ghrcz3vmh8msrz8myvhsarxg42ce9yyn53lgnryx0m6qqld8fql
 ```
 
-Ya podemos dividirla en 2 partes. Primero, está la Parte Legible por Humanos:
+Podemos dividirla en 2 secciones diferenciadas. Primero, está la parte legible por humanos:
 
 ```invoice
 lnbc100u
 ```
 
-Luego, la parte destinada al payload:
+Luego encontramos la sección diseñada para el payload (que es el conjunto de datos transmitidos útiles, que se obtienen de excluir cabeceras, metadatos, información de control y otros datos que son enviados para facilitar la entrega del mensaje): 
 
 ```invoice
 
 p0x7x7dpp5l7r9y50wrzz0lwnsqgxdks50lxtwkl0mhd9lslr4rcgdtt2n6lssp5l3pkhdx0cmc9gfsqvw5xjhph84my2frzjqxqyz5vq9qsp5k4mkzv5jd8u5n89d2yc50x7ptkl0zprx0dfjh3km7g0x98g70hsqq7sqqqgqqyqqqqlgqqvnv2k5ehwnylq3rhpd9g2y0sq9ujyxsqqypjqqyqqqqqqqqqqqsqqqqq9qsq3vql5f6e45xztgj7y6xw6ghrcz3vmh8msrz8myvhsarxg42ce9yyn53lgnryx0m6qqld8fql
 ```
 
-Las dos partes están separadas por un `1`. Este separador fue elegido en lugar de un carácter especial para permitir el copiado y pegado fácil de toda la factura con doble clic.
+Las 2 partes están separadas por un 1. Para facilitar la tarea de copiar y pegar toda la factura haciendo doble click, se ha elegido un separador (1), en lugar de un caracter especial.
+
 En la primera parte, podemos ver que:
 
-- `ln` indica que es una transacción Lightning.
-- `bc` indica que la red Lightning está en la blockchain de Bitcoin (y no en la testnet o en Litecoin).
-- `100u` indica la cantidad de la factura, expresada en **microbitcoins** (`u` significando "micro"), que aquí equivale a 10,000 sats.
+- `ln` indica que se trata de una transacción Lightning.
+- `bc` señala que la Lightning Network se encuentra en la blockchain de Bitcoin ( y no en la “testnet” o en “Litecoin”)
+- `100u` indica el importe a facturar y se expresa en **microbitcoins** (`u` significa "micro"), que equivale  a 10,000 satoshis.
 
-Para designar la cantidad de pago, se expresa en subunidades de bitcoin. Aquí están las unidades utilizadas:
+El importe a pagar en los micropagos se expresa en subunidades de Bitcoin:
 
-- **Millibitcoin (denotado `m`):** Representa una milésima parte de un bitcoin.
+- **Millibitcoin (indicado como `m`):** Representa una milésima parte de un bitcoin.
 
   $$
   1 \, \text{mBTC} = 10^{-3} \, \text{BTC} = 10^5 \, \text{satoshis}
   $$
 
-- **Microbitcoin (denotado `u`):** También a veces llamado "bit", representa una millonésima parte de un bitcoin.
+- **Microbitcoin (indicado como `u`):** También llamado "bit", representa una millonésima parte de un bitcoin.
 
   $$
   1 \, \mu\text{BTC} = 10^{-6} \, \text{BTC} = 100 \, \text{satoshis}
   $$
 
-- **Nanobitcoin (denotado `n`):** Representa una milmillonésima parte de un bitcoin.
+- **Nanobitcoin (indicado como `n`):** Representa una milmillonésima parte de un bitcoin.
 
   $$
   1 \, \text{nBTC} = 10^{-9} \, \text{BTC} = 0.1 \, \text{satoshis}
   $$
 
-- **Picobitcoin (denotado `p`):** Representa una billonésima parte de un bitcoin.
+- **Picobitcoin (indicado como `p`):** Representa una billonésima parte de un bitcoin. 
   $$
   1 \, \text{pBTC} = 10^{-12} \, \text{BTC} = 0.0001 \, \text{satoshis}
   $$
 
-### El Cuerpo de una Factura
+### Cuerpo de una factura Lightning
 
-El cuerpo de una factura incluye varias piezas de información necesarias para procesar el pago:
+El “payload” incluye los datos necesarios para transmitir el pago, es la carga útil de datos:
 
-- **La marca de tiempo:** El momento de la creación de la factura, expresado en Timestamp Unix (el número de segundos que han transcurrido desde el 1 de enero de 1970).
-- **Hashing el Secreto**: Como vimos en la sección sobre HTLCs, el nodo receptor debe proporcionar al nodo emisor el hash de la preimagen. Esto se utiliza en HTLCs para asegurar la transacción. Nos referimos a ello como "_r_".
-- **El Secreto de Pago**: Otro secreto es generado por el receptor, pero esta vez se transmite al nodo emisor. Se utiliza en el enrutamiento de cebolla para evitar que los nodos intermedios adivinen si el próximo nodo es el destinatario final o no. Esto mantiene así una forma de confidencialidad para el destinatario con respecto al último nodo intermedio en la ruta.
-- **La Clave Pública del Destinatario**: Indica al pagador el identificador de la persona a ser pagada.
-- **La Duración de Expiración**: El tiempo máximo para que la factura sea pagada (1 hora por defecto).
-- **Indicaciones de Enrutamiento**: Información adicional proporcionada por el receptor para ayudar al emisor a optimizar la ruta de pago.
-- **La Firma**: Garantiza la integridad de la factura autenticando toda la información.
+- **El timestamp (la marca de tiempo)**: El “timestamp” es la primera parte del “payload” (parte de datos). El timestamp es el momento de la creación de la factura, expresado en Timestamp Unix (el número de segundos que han transcurrido desde el 1 de enero de 1970).
+- **Hashing/Revisando el secreto**: Como vimos en la sección de  HTCL, el nodo receptor tiene que proporcionar el hash de un número (que llamamos “preimage”) y computar su hash para  transmitirlo al nodo emisor.  Esto se utiliza en HTCLs para securizar la transacción. Nos referimos a ello como "_r_". 
+- **El secreto en el pago**: El receptor crea otro secreto, pero ahora se transmite al nodo emisor. Se utiliza en el “enrutamiento cebolla” (Onion routing) para evitar que los nodos enrutadores intermedios adivinen si el siguiente nodo es el destinatario final o no. Cada nodo solamente puede ver la información del nodo anterior o del siguiente. Los nodos intermedios no son capaces de identificar la ruta completa o el receptor final que va a recibir el pago. Son rutas ciegas que esconden información para los participantes de la transacción. De este modo, se mantine una forma de privacidad  para el destinatario sin revelar su identidad, respecto al último nodo intermedio de la ruta. Se esconde la parte final del recorrido de una transacción.
+- **La clave pública del destinatario**: Indicar al pagador el identificador de la persona a ser pagada.
+- **Duración del tiempo de vencimiento**: Es el tiempo máximo para pagar la factura (se ha establecido una hora por defecto).
+- **Routing Hints/Indicaciones para el enrutamiento a través de la red**: Es la información adicional facilitada por el destinatario final para yudar al remitente a optimizar la ruta de pago.
+- **The Recipient's Public Key** (“clave pública del receptor”): garantiza la integridad de la factura, verificando toda la información. La firma se verifica, usando la clave pública, la cual se facilita en la factura.
+- **Firma**:  Garantiza la integridad de la factura al verificar toda la información. La firma se verifica, usando la clave pública, la cual se facilita en la factura.
+A continuación, las facturas se codifican en **bech32** que tiene el mismo formato que las direcciones SegWit de Bitcoin (formato que empieza con `bc1`).
 
-Las facturas se codifican entonces en **bech32**, el mismo formato que para las direcciones SegWit de Bitcoin (formato que comienza con `bc1`).
+### LNURL: Retiro de liquidez 
 
-### LNURL Retiro
-
-En una transacción tradicional, como una compra en tienda, se genera una factura por el monto total a pagar. Una vez que se presenta la factura (en forma de código QR o cadena de caracteres), el cliente puede escanearla y finalizar la transacción. El pago sigue entonces el proceso tradicional que estudiamos en la sección anterior. Sin embargo, este proceso a veces puede ser muy engorroso para la experiencia del usuario, ya que requiere que el receptor envíe información al emisor a través de la factura.
-Para ciertas situaciones, como retirar bitcoins de un servicio en línea, el proceso tradicional es demasiado engorroso. En tales casos, la solución de retiro **LNURL** simplifica este proceso al mostrar un código QR que la billetera del destinatario escanea para crear automáticamente la factura. El servicio luego paga la factura, y el usuario simplemente ve un retiro instantáneo.
+En una transacción tradicional, como una compra en una tienda, la factura refleja el importe total a pagar. Una vez que se presenta la factura (en forma de QR o cadena de caracteres), el cliente puede escanear el QR y completar la transacción. El pago sigue el proceso tradicional que estudiamos en la sección anterior. Sin embargo, este proceso puede resultar engorroso para el usuario, ya que debe el receptor debe enviarle la información en la factura al emisor.
+Para ciertas situaciones, como retirar bitcoins de un servicio online, el proceso tradicional es demasiado engorroso. Por eso, en tales casos, la solución de retiro de bitcoins **LNURL** simplifica este proceso al mostrar un código QR en el display que se escanea en la billetera del destinatario, con el objetivo de crear la factura automáticamente. Después, el servicio online pagará la factura y el usuario simplemente ve un retiro instantáneo.
 
 ![LNP201](assets/en/69.webp)
 
