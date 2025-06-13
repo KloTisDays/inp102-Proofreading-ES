@@ -861,27 +861,29 @@ Para ciertas situaciones, como retirar bitcoins de un servicio online, el proces
 
 ![LNP201](assets/en/69.webp)
 
-LNURL es un protocolo de comunicación que especifica un conjunto de funcionalidades diseñadas para simplificar las interacciones entre nodos Lightning y clientes, así como aplicaciones de terceros. El retiro LNURL, como acabamos de ver, es solo un ejemplo entre otras funcionalidades.
-Este protocolo se basa en HTTP y permite la creación de enlaces para varias operaciones, como una solicitud de pago, una solicitud de retiro u otras funcionalidades que mejoran la experiencia del usuario. Cada LNURL es una URL codificada en bech32 con el prefijo lnurl, que, una vez escaneada, desencadena una serie de acciones automáticas en la billetera Lightning.
-Por ejemplo, la característica LNURL-withdraw (LUD-03) permite retirar fondos de un servicio escaneando un código QR, sin la necesidad de generar manualmente una factura. De manera similar, LNURL-auth (LUD-04) permite iniciar sesión en servicios en línea usando una clave privada en la billetera Lightning en lugar de una contraseña.
+LNURL es un protocolo de comunicación que especifica un conjunto de funcionalidades diseñadas para simplificar las interacciones entre nodos Lightning y clientes, así como con aplicaciones de terceros. Un LNURL es un procedimiento estándar para las interacciones entre un pagador y un beneficiario Lightning. El retiro de liquidez LNURL es, únicamente, un ejemplo entre otras funcionalidades.
+Este protocolo se basa en HTTP y permite crear links para varias operaciones, como: una solicitud de pago, un solicitud de retiro de liquidez, junto con otras características, las cuales mejoran la experiencia de usuario. Cada LNURL es una URL codificada en bech32 con el prefijo lnurl , que, una vez es escaneada, desencadena una serie de acciones automáticas en el monedero electrónico (Lightning wallet).
+El uso más común de LNURL es iniciar una retirada de liquidez o crear links que contienen el estado de los pagos.
+Por ejemplo, la característica LNURL-withdraw (LUD-03) permite retirar fondos de un servicio, escaneando un QR, sin la necesidad de generar una factura manualmente. LNURL-auth (LUD-04) te permite iniciar sesión en servicios online, usando la clave privada del monedero electrónico (wallet), en lugar de usar una contraseña.
 
-### Enviando un Pago Lightning sin una Factura: Keysend
+### Envío de un pago Lightning sin crear una factura: Keysend 
 
-Otro caso interesante es la transferencia de fondos sin haber recibido una factura de antemano, conocido como "**Keysend**". Este protocolo permite enviar fondos agregando una preimagen en los datos del pago encriptado, accesible solo por el destinatario. Esta preimagen permite al destinatario desbloquear el HTLC, recuperando así los fondos sin haber generado una factura de antemano.
+Keysend es una función característica dentro de la Lightning Network que permite a los usuarios mandar pagos a la clave pública de otro nodo directamente, sin requerir una factura.
+Es interesante es la transferencia de fondos , sin haber recibido una factura previamente y es lo que conocemos como “Keysend”. Este protocolo permite enviar fondos, añadiendo una PREIMAGE en los datos de pago cifrado, accesible solamente por el destinatario de los fondos. Esta PREIMAGE desbloquea el HTCL del destinatario, recuperando así los fondos, sin haber generado una factura de antemano.
 
-Para simplificar, en este protocolo, es el emisor quien genera el secreto utilizado en los HTLCs, en lugar del destinatario. Prácticamente, esto permite al emisor realizar un pago sin haber tenido que interactuar con el destinatario de antemano.
+Para simplificar, en este protocolo, es el emisor, quien genera el secreto utilizado en los HTCL´s, en lugar del destinatario. En la práctica, esto permite al remitente efectuar el pago sin haber tenido que interactuar prácticamente con el destinatario final previamente. 
 
 ![LNP201](assets/en/70.webp)
 
 **¿Qué debes recordar de este capítulo?**
 
-- Una **Factura Lightning** es una solicitud de pago que consta de una parte legible por humanos y una parte de datos de máquina.
-- La factura está codificada en **bech32**, con un separador `1` para facilitar la copia y una parte de datos que contiene toda la información necesaria para procesar el pago.
-- Existen otros procesos de pago en Lightning, notablemente **LNURL-Withdraw** para facilitar retiros, y **Keysend** para transferencias directas sin factura.
+- Una factura Lightning es una solicitud de pago, que consta de una parte legible por el ser humano y una parte de datos (información) dirigidos a la máquina.
+- La factura está codificada en **bech32**, con un separador `1` para facilitar su copia y, otra parte de datos, que contiene toda la información necesaria para el proceso del pago.
+- Existen otros procesos de pago en Lightning, en particular, **LNURL-Withdraw** para facilitar el retiro de fondos, y también para el **Keysend**, usado para las transferencias directas sin factura.
 
-En el siguiente capítulo, veremos cómo un operador de nodo puede gestionar la liquidez en sus canales, para nunca estar bloqueado y siempre poder enviar y recibir pagos en la Red Lightning.
+En el siguiente capítulo, analizaremos cómo un operador de nodos puede gestionar la liquidez en sus canales, y no ser bloqueado y poder enviar y recibir pagos a través de la Lightning Network.
 
-## Gestionando Tu Liquidez
+## Gestión o manejo de liquidez
 
 <chapterId>cc76d0c4-d958-57f5-84bf-177e21393f48</chapterId>
 
