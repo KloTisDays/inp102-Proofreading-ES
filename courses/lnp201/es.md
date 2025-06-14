@@ -11,7 +11,7 @@ objectives:
 
 # Un Viaje hacia la Segunda Capa de Bitcoin 
 
-Adéntrese en el corazón de la Lightning Network, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network. Desvela los fundamentos y mecanismos de esta red de segunda capa/nivel, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
+Adéntrese en el corazón de la Lightning Network, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network (LN). Desvela los fundamentos y mecanismos de esta red de segunda capa/nivel, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
 
 Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras, sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos  la gestión de la liquidez. Descubrirás la utilidad de las «transacciones de compromiso» (Commitment transactions), los HTLC, las «claves de revocación» (Revokation key), los mecanismos de penalización, el «enrutamiento cebolla» (Onion Routing) y las facturas.
 
@@ -846,7 +846,7 @@ El “payload” incluye los datos necesarios para transmitir el pago, es la car
 
 - **El timestamp (la marca de tiempo)**: El “timestamp” es la primera parte del “payload” (parte de datos). El timestamp es el momento de la creación de la factura, expresado en Timestamp Unix (el número de segundos que han transcurrido desde el 1 de enero de 1970).
 - **Hashing/Revisando el secreto**: Como vimos en la sección de  HTCL, el nodo receptor tiene que proporcionar el hash de un número (que llamamos “preimage”) y computar su hash para  transmitirlo al nodo emisor.  Esto se utiliza en HTCLs para securizar la transacción. Nos referimos a ello como "_r_". 
-- **El secreto en el pago**: El receptor crea otro secreto, pero ahora se transmite al nodo emisor. Se utiliza en el “enrutamiento cebolla” (Onion routing) para evitar que los nodos enrutadores intermedios adivinen si el siguiente nodo es el destinatario final o no. Cada nodo solamente puede ver la información del nodo anterior o del siguiente. Los nodos intermedios no son capaces de identificar la ruta completa o el receptor final que va a recibir el pago. Son rutas ciegas que esconden información para los participantes de la transacción. De este modo, se mantine una forma de privacidad  para el destinatario sin revelar su identidad, respecto al último nodo intermedio de la ruta. Se esconde la parte final del recorrido de una transacción.
+- **El secreto (pago)**: El receptor crea otro secreto, pero ahora se transmite al nodo emisor. Se utiliza en el “enrutamiento cebolla” (Onion routing) para evitar que los nodos enrutadores intermedios adivinen si el siguiente nodo es el destinatario final o no. Cada nodo solamente puede ver la información del nodo anterior o del siguiente. Los nodos intermedios no son capaces de identificar la ruta completa o el receptor final que va a recibir el pago. Son rutas ciegas que esconden información para los participantes de la transacción. De este modo, se mantine una forma de privacidad  para el destinatario sin revelar su identidad, respecto al último nodo intermedio de la ruta. Se esconde la parte final del recorrido de una transacción.
 - **La clave pública del destinatario**: Indicar al pagador el identificador de la persona a ser pagada.
 - **Duración del tiempo de vencimiento**: Es el tiempo máximo para pagar la factura (se ha establecido una hora por defecto).
 - **Routing Hints/Indicaciones para el enrutamiento a través de la red**: Es la información adicional facilitada por el destinatario final para yudar al remitente a optimizar la ruta de pago.
@@ -883,37 +883,37 @@ Para simplificar, en este protocolo, es el emisor, quien genera el secreto utili
 
 En el siguiente capítulo, analizaremos cómo un operador de nodos puede gestionar la liquidez en sus canales, y no ser bloqueado y poder enviar y recibir pagos a través de la Lightning Network.
 
-## Gestión o manejo de liquidez
+## Manejo de liquidez
 
 <chapterId>cc76d0c4-d958-57f5-84bf-177e21393f48</chapterId>
 
 :::video id=a2ee69ae-e1e9-46f5-b95a-91e8c1a0aee6:::
 
-En este capítulo, exploraremos estrategias para gestionar efectivamente la liquidez en la Red Lightning. La gestión de la liquidez varía dependiendo del tipo de usuario y contexto. Veremos los principios principales y las técnicas existentes para entender mejor cómo optimizar esta gestión.
+En este capítulo, vamos a explorar las estrategias y técnicas efectivas para el manejo óptimo de liquidez en la Lightning Network. El manejo de liquidez varía, dependiendo del tipo de usuario y del contexto. Veamos los principios fundamentales y las técnicas de optimización para el manejo de liquidez.
 
-### Necesidades de Liquidez
+### Necesidades específicas de liquidez
 
-Existen tres perfiles principales de usuarios en Lightning, cada uno con necesidades específicas de liquidez:
+Existen tres perfiles de usuarios en la Lightning Network (LN), cada uno con unas necesidades determinadas de liquidez:
 
-- **El Pagador**: Es quien realiza pagos. Necesitan liquidez saliente para poder transferir fondos a otros usuarios. Por ejemplo, esto podría ser un consumidor.
-- **El Vendedor (o Beneficiario)**: Es quien recibe pagos. Necesitan liquidez entrante para poder aceptar pagos en su nodo. Por ejemplo, esto podría ser un negocio o una tienda en línea.
-- **El Enrutador**: Un nodo intermediario, a menudo especializado en el enrutamiento de pagos, que debe optimizar su liquidez en cada canal para enrutador tantos pagos como sea posible y ganar comisiones.
+- **El pagador**: Es quien realiza el pago. Necesita liquidez de salida para poder transferir fondos a otros usuarios. Por ejemplo, podría tratarse del caso de un consumidor.
+- **El vendedor (Receptor del pago)**: Es quien recibe el pago. Necesita liquidez entrante para poder aceptar pagos en su nodo. Éste podría ser, por ejemplo, un negocio o tienda en línea.
+- **Enrutador**: Es un nodo intermediario, cuya función es el enrutado. A menudo, el enrutador está  especializado en el direccionamiento de pagos. Este nodo enrutador tiene que optimizar su liquidez en el canal de pago y, aprovecha para enrutar el mayor número posible de pagos y, así, ganar comisiones.
 
-Estos perfiles obviamente no son fijos; un usuario puede cambiar entre pagador y beneficiario dependiendo de las transacciones. Por ejemplo, Bob podría recibir su salario en Lightning de su empleador, colocándolo en la posición de un "vendedor" que requiere liquidez entrante. Posteriormente, si quiere usar su salario para comprar comida, se convierte en un "pagador" y debe entonces tener liquidez saliente.
+Estos 3 perfiles de usuario de la LN no son fijos, obviamente. Un usuario puede alternar entre pagador y receptor del pago, dependiendo de las transacciones. Por ejemplo, Bob podría cobrar su salario de su empresa, lo que le coloca en la posición de “vendedor” y, en este caso, necesitaría liquidez de entrada. Si luego Bob quiere utilizar su sueldo para comprar comida, Bob se convierte en “pagador”, por lo que necesita liquidez de salida.
 
-Para entender mejor, tomemos el ejemplo de una red simple compuesta por tres nodos: el comprador (Alice), el enrutador (Suzie) y el vendedor (Bob).
+Para clarificar esto, tomemos el ejemplo de una red simple compuesta por tres nodos: el comprador (Alice), el enrutador (Suzie) y el vendedor (Bob).
 
 ![LNP201](assets/en/71.webp)
 
-Imagina que el comprador quiere enviar 30,000 sats al vendedor y que el pago pasa por el nodo del enrutador. Cada parte debe entonces tener una cantidad mínima de liquidez en la dirección del pago:
+Imagina que el comprador quiere enviar 30,000 sats al vendedor y que el pago pasa por el nodo enrutador. Cada parte debe tener una cantidad mínima de liquidez en la dirección del pago:
 
-- El pagador debe tener al menos 30,000 satoshis de su lado del canal con el enrutador.
-- El vendedor debe tener un canal donde 30,000 satoshis estén del lado opuesto para poder recibirlos.
-- El enrutador debe tener 30,000 satoshis del lado del pagador en su canal, y también 30,000 satoshis de su lado en el canal con el vendedor, para poder enrutador el pago.
+- El pagador debe tener, al menos, 30,000 satoshis en su extremo del canal de pagos que le une con el nodo enrutador.
+- El vendedor debe tener un canal, en el que haya 30,000 satoshis para poder recibir el pago.
+- El (nodo) enrutador debe contener 30,000 satoshis en el extremo del canal del pagador, y también debe tener 30,000 sats en su extremo del canal que le une con el vendedor para poder llevar a cabo el enrutamiento del pago.
 
 ![LNP201](assets/en/72.webp)
 
-### Estrategias de Gestión de Liquidez
+### Estrategias para el manejo de liquidez de los canales
 
 Los pagadores deben asegurarse de mantener suficiente liquidez de su lado de los canales para garantizar la liquidez saliente. Esto resulta ser relativamente simple, ya que es suficiente abrir nuevos canales Lightning para tener esta liquidez. De hecho, los fondos iniciales bloqueados en el multisig on-chain están completamente del lado del pagador en el canal Lightning al inicio. La capacidad de pago está así asegurada mientras se abran canales con fondos suficientes. Cuando la liquidez saliente se agota, es suficiente abrir nuevos canales.
 Por otro lado, para el vendedor, la tarea es más compleja. Para poder recibir pagos, deben tener liquidez del lado opuesto de sus canales. Por lo tanto, abrir un canal no es suficiente: también deben realizar un pago en este canal para mover la liquidez al otro lado antes de que puedan recibir pagos ellos mismos. Para ciertos perfiles de usuarios de Lightning, como los comerciantes, existe una clara desproporción entre lo que su nodo envía y lo que recibe, ya que el objetivo de un negocio es principalmente recaudar más de lo que gasta, con el fin de generar una ganancia. Afortunadamente, para estos usuarios con necesidades específicas de liquidez entrante, existen varias soluciones:
