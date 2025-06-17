@@ -136,11 +136,12 @@ El script más común y corriente requiere una firma con la clave privada de la 
 
 ### UTXOs: Unspent Transaction Outputs: "Salidas de Transacción No Gastadas" 
 
-En Bitcoin, lo que realmente intercambiamos no son Bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que significa literalmente, "salidas de transacciones no gastadas".
+### UTXOs: "Salidas de Transacciones No Gastadas"
 
-Un UTXO es una pieza de Bitcoin que puede ser de cualquier valor, por ejemplo **2,000 Bitcoins**, **8 Bitcoins**, o incluso **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, debes cumplir las condiciones del script, a menudo es una firma con la clave privada, correspondiente a una dirección de destinatario determinada.
+En Bitcoin, lo que realmente intercambiamos no son directamente Bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que, en español, se puede traducir como "salida de transacción no gastada".
+Un UTXO es un término que se refiere a las unidades de Bitcoin, que no han sido gastadas en transacciones anteriores y pueden ser de cualquier valor, por ejemplo, **2,000 bitcoins**, **8 bitcoins**, o, incluso, **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, se deben satisfacer las condiciones del script, que, a menudo, es una firma con la clave privada correspondiente a una dirección de recepción dada.
 
-Los UTXO no pueden dividirse. Cada vez que se utilizan para gastar la cantidad de Bitcoin que representan, debe hacerse en su totalidad. Es un poco como un billete: si tienes un billete de 10€ y le debes 5€ al panadero, no puedes cortar el billete por la mitad. Tienes que darle el billete de 10€ y él te dará 5€ de cambio. Este es exactamente el mismo principio para los UTXOs en Bitcoin. Por ejemplo, si Alice desbloquea un script con su clave privada, desbloquea todo el UTXO. Si solamente quiere enviar parte de los fondos representados por este UTXO a Bob, puede «fragmentarlo» en varios más pequeños. Entonces enviará 0.0015 BTC a Bob y el resto, 0.0005 BTC, a una **"dirección de cambio"** (change address).
+Los UTXOs no pueden dividirse. Cada vez que se utilizan para gastar la cantidad en Bitcoins que representan, debe hacerse en su totalidad. Es un poco como un billete de banco (dinero en efectivo): si tienes un billete de €10 y le debes al panadero €5, no puedes simplemente cortar el billete por la mitad. Tienes que darle el billete de €10, y él te dará €5 de cambio. ¡Este es exactamente el mismo principio para los UTXOs en Bitcoin! Por ejemplo, cuando Alice desbloquea un script con su clave privada, desbloquea el UTXO completo. Si desea enviar solo una parte de los fondos representados por este UTXO a Bob, puede "fragmentarlo" en varios más pequeños. Luego enviará 0.0015 BTC a Bob y enviará el resto, 0.0005 BTC, a una **dirección de cambio**.
 
 Este es un ejemplo de una transacción con 2 salidas: 
 
