@@ -891,127 +891,132 @@ En el siguiente capítulo, analizaremos cómo un operador de nodos puede gestion
 
 En este capítulo, vamos a explorar las estrategias y técnicas efectivas para el manejo óptimo de liquidez en la Lightning Network. El manejo de liquidez varía, dependiendo del tipo de usuario y del contexto. Veamos los principios fundamentales y las técnicas de optimización para el manejo de liquidez.
 
-### Necesidades específicas de liquidez
+### Necesidad específicas de liquidez, según el tipo de usuario Lightning
 
-Existen tres perfiles de usuarios en la Lightning Network (LN), cada uno con unas necesidades determinadas de liquidez:
+Existen tres perfiles de usuarios en la Lightning Network (LN), cada uno con unas necesidades específicas de liquidez:
 
-- **El pagador**: Es quien realiza el pago. Necesita liquidez de salida para poder transferir fondos a otros usuarios. Por ejemplo, podría tratarse del caso de un consumidor.
-- **El vendedor (Receptor del pago)**: Es quien recibe el pago. Necesita liquidez entrante para poder aceptar pagos en su nodo. Éste podría ser, por ejemplo, un negocio o tienda en línea.
-- **Enrutador**: Es un nodo intermediario, cuya función es el enrutado. A menudo, el enrutador está  especializado en el direccionamiento de pagos. Este nodo enrutador tiene que optimizar su liquidez en el canal de pago y, aprovecha para enrutar el mayor número posible de pagos y, así, ganar comisiones.
+- **El pagador**: Es quien realiza el pago. Necesita liquidez de salida para poder transferir fondos a otros usuarios. Podría ser el caso de un consumidor, por ejemplo.
+- **El vendedor (Beneficiario del pago)**: Es quien recibe el pago, principalmente. Necesita liquidez entrante para poder aceptar pagos en su nodo. El receptor suele ser un vendedor, que ofrece un servicio de tienda en línea.
+- **Enrutador**: Es un nodo enrutador intermedio, especializado en el direccionamiento de pagos. Este nodo intermediario busca optimizar su liquidez en cada canal, aprovechando sus canales de pago y direccionando así el mayor número posible de pagos, con el objetivo de cobrar las correspondientes comisiones.
 
-Estos 3 perfiles de usuario de la LN no son fijos, obviamente. Un usuario puede alternar entre pagador y receptor del pago, dependiendo de las transacciones. Por ejemplo, Bob podría cobrar su salario de su empresa, lo que le coloca en la posición de “vendedor” y, en este caso, necesitaría liquidez de entrada. Si luego Bob quiere utilizar su sueldo para comprar comida, Bob se convierte en “pagador”, por lo que necesita liquidez de salida.
+Estos 3 perfiles de usuario de la LN no son fijos, obviamente. Un usuario puede alternar entre pagador y receptor del pago, dependiendo de las transacciones. Por ejemplo, Bob podría cobrar el salario de su empleador en la LN, lo que le coloca en la posición de “vendedor” y, en este caso, necesitaría liquidez de entrada. Si luego Bob quiere utilizar su sueldo para comprar comida, Bob se convierte en “pagador”, por lo que necesita liquidez de salida.
 
 Para clarificar esto, tomemos el ejemplo de una red simple compuesta por tres nodos: el comprador (Alice), el enrutador (Suzie) y el vendedor (Bob).
 
 ![LNP201](assets/en/71.webp)
 
-Imagina que el comprador quiere enviar 30,000 sats al vendedor y que el pago pasa por el nodo enrutador. Cada parte debe tener una cantidad mínima de liquidez en la dirección del pago:
-
+Imagina que el comprador quiere enviar 30,000 satoshis al vendedor y que el pago pasa por el nodo enrutador intermedio. Cada parte debe tener una cantidad mínima de liquidez en la dirección del pago:
 - El pagador debe tener, al menos, 30,000 satoshis en su extremo del canal de pagos que le une con el nodo enrutador.
-- El vendedor debe tener un canal, en el que haya 30,000 satoshis para poder recibir el pago.
-- El (nodo) enrutador debe contener 30,000 satoshis en el extremo del canal del pagador, y también debe tener 30,000 sats en su extremo del canal que le une con el vendedor para poder llevar a cabo el enrutamiento del pago.
+- El vendedor debe tener un canal, en el que haya 30,000 satoshis en el extremo opuesto, para poder recibir el pago.
+- El (nodo) enrutador debe disponer de 30,000 satoshis en el extremo del canal del pagador, y también debe tener 30,000 sats en su extremo del canal que le une con el vendedor, para poder llevar a cabo el enrutamiento del pago.
 
 ![LNP201](assets/en/72.webp)
 
 ### Estrategias para el manejo de liquidez de los canales
 
-Los pagadores deben asegurarse de mantener suficiente liquidez de su lado de los canales para garantizar la liquidez saliente. Esto resulta ser relativamente simple, ya que es suficiente abrir nuevos canales Lightning para tener esta liquidez. De hecho, los fondos iniciales bloqueados en el multisig on-chain están completamente del lado del pagador en el canal Lightning al inicio. La capacidad de pago está así asegurada mientras se abran canales con fondos suficientes. Cuando la liquidez saliente se agota, es suficiente abrir nuevos canales.
-Por otro lado, para el vendedor, la tarea es más compleja. Para poder recibir pagos, deben tener liquidez del lado opuesto de sus canales. Por lo tanto, abrir un canal no es suficiente: también deben realizar un pago en este canal para mover la liquidez al otro lado antes de que puedan recibir pagos ellos mismos. Para ciertos perfiles de usuarios de Lightning, como los comerciantes, existe una clara desproporción entre lo que su nodo envía y lo que recibe, ya que el objetivo de un negocio es principalmente recaudar más de lo que gasta, con el fin de generar una ganancia. Afortunadamente, para estos usuarios con necesidades específicas de liquidez entrante, existen varias soluciones:
+Los pagadores tienen que asegurarse de mantener suficiente liquidez del extremo de sus canales para garantizar la liquidez saliente. El pagador necesitará más liquidez saliente, porque envia más fondos. Conseguir esto, resulta relativamente sencillo, ya que basta con abrir nuevos canales Lightning para disponer de esa liquidez. Al inicio, el total de los fondos iniciales, que están bloqueados (es decir, no están disponibles para su retirada) en el multisig on-chain. Todos los fondos iniciales están, en efecto, en el extremo del canal del pagador. Por consiguiente, la capacidad de pago está asegurada, siempre y cuando, los canales de pago estén abiertos y dispongan de fondos suficientes. Cuando la liquidez saliente se agota, es suficiente con abrir nuevos canales.
+Para la otra parte, para el vendedor, es una tarea más compleja. Para poder recibir pagos, debe tener liquidez (capacidad de pago) en el extremo opuesto de sus canales. Por lo tanto, no es suficiente con la  la simple apertura de un canal, sino que también se debe realizar un pago a través de este canal para poder mover la liquidez al extremo opuesto. Esto se debe llevar a cabo para poder recibir un pago. Es evidente que un subconjunto específico de perfiles de usuario Lightning, como los comerciantes, muestra una marcada disparidad entre la cantidad de valor transferida a y desde sus respectivos nodos. Esto es atribuible, principalmente, al objetivo empresarial fundamental de generar beneficios, lo que requiere la acumulación de ingresos superiores a los gastos. Afortunadamente, existen varias soluciones para estos usuarios con necesidades específicas de liquidez entrante:
 
-- **Atraer canales**: El comerciante se beneficia de una ventaja debido al volumen de pagos entrantes esperados en su nodo. Teniendo esto en cuenta, pueden intentar atraer a nodos enrutadores que buscan ingresos de las comisiones por transacción y que podrían abrir canales hacia ellos, esperando enrutador sus pagos y cobrar las comisiones asociadas.
-- **Movimiento de liquidez**: El vendedor también puede abrir un canal y transferir parte de los fondos al lado opuesto realizando pagos ficticios a otro nodo, el cual devolverá el dinero de otra manera. Veremos en la próxima parte cómo llevar a cabo esta operación.
-- **Apertura triangular**: Existen plataformas para nodos que desean abrir canales de manera colaborativa, permitiendo a cada uno beneficiarse de liquidez entrante y saliente inmediata. Por ejemplo, [LightningNetwork+](https://lightningnetwork.plus/) ofrece este servicio. Si Alice, Bob y Suzie quieren abrir un canal con 100,000 sats, pueden acordarlo en esta plataforma para que Alice abra un canal hacia Bob, Bob hacia Suzie y Suzie hacia Alice. De esta manera, cada uno tiene 100,000 sats de liquidez saliente y 100,000 sats de liquidez entrante, habiendo bloqueado solo 100,000 sats.
+- **Atraer canales hacia su nodo**: El comerciante se beneficia de una ventaja y es que, éste tiene previsto un gran volumen de pagos entrantes en su nodo. Teniendo esto en cuenta, los comerciantes pueden atraer más canales hasta sus nodos. Esto es óptimo para los nodos, que buscan ingresos del cobro de comisiones por transacción realizada. Estos nodos pueden abrir canales hasta los nodos del comerciante, con la finalidad de cobrar las comisiones asociadas en cada transacción.
+- **Movimientos de liquidez**: El vendedor también puede abrir un canal y transferir parte de los fondos al extremo opuesto, realizando pagos ficticios a otro nodo, el cual le devolverá esta liquidez de otro modo. A continuación, veremos cómo llevar a cabo esta operación.
+- **Apertura triangular / Triangular opening**:  Existen plataformas pensadas para esos nodos, que desean abrir canales de manera colaborativa (entre ellos), permitiendo a todas las partes (cada uno de los nodos) beneficiarse de liquidez entrante y saliente inmediata. Por ejemplo, [LightningNetwork+](https://lightningnetwork.plus/) ofrece herramientas para brindar este servicio. Si Alice, Bob y Suzie quieren abrir un canal con 100,000 satoshis pueden hacerlo en esta plataforma: Alice abre un canal hasta Bob, Bob hasta Suzie y ésta hasta Alice. Así, cada uno tiene 100,000 sats de liquidez saliente y 100,000 sats de liquidez entrante. Y solamente quedan bloqueados 100,000 sats. Esta “apertura triangular” (Triangular opening) aumenta la eficiencia, la seguridad y la rentabilidad de los nodos.
 
 ![LNP201](assets/en/73.webp)
 
-- **Comprar canales**: También existen servicios para alquilar canales de Lightning para obtener liquidez entrante, como [Bitrefill Thor](https://www.bitrefill.com/thor-lightning-network-channels/) o [Lightning Labs Pool](https://lightning.engineering/pool/). Por ejemplo, Alice puede comprar un canal de un millón de satoshis hacia su nodo para poder recibir pagos.
+- **Adquisición de canales**: La adquisición de canales puede abordarse de varias maneras. Existen servicios que faciltan el alquiler de canales Lightning para recibir liquidez entrante. Algunos ejemplos de estos servicios son [Bitrefill Thor](https://www.bitrefill.com/thor-lightning-network-channels/) o [Lightning Labs Pool](https://lightning.engineering/pool/). Para ilustrar este punto, consideremos el caso de Alice, quien abre un canal de pago específico hasta su nodo enrutador con un valor de 1 millón de satoshis para poder recibir transacciones de pago.
 
 ![LNP201](assets/en/74.webp)
 
-Finalmente, para los routers, cuyo objetivo es maximizar el número de pagos procesados y las comisiones recogidas, deben:
+Por último, para los enrutadores, cuyo propósito es optimizar el número de pagos procesados y las comisiones recaudadas, resulta imperativo:
 
-- Abrir canales bien financiados con nodos estratégicos.
-- Ajustar regularmente la distribución de fondos en los canales según las necesidades de la red.
+- Establecer canales de pago con una financiación sólida y nodos estratégicos.
+- Asimismo, es preciso ajustar periódicamente la distribución de fondos en los canales de pago, en función de las necesidades de la red.
 
-### El Servicio Loop Out
+### El servicio Loop Out 
 
-El servicio [Loop Out](https://lightning.engineering/loop/), ofrecido por Lightning Labs, permite mover la liquidez al lado opuesto del canal mientras se recuperan los fondos en la blockchain de Bitcoin. Por ejemplo, Alice envía 1 millón de satoshis a través de Lightning a un nodo loop, el cual luego le devuelve esos fondos en bitcoins en cadena. Esto equilibra su canal con 1 millón de satoshis en cada lado, optimizando su capacidad para recibir pagos.
+El servicio [Loop Out](https://lightning.engineering/loop/), ofrecido por Lightning Labs, facilita la transferencia de liquidez al extremo opuesto del canal y, conjuntamente, se da la reclamación de fondos en la blockchain de Bitcoin sin tener que cerrar los canales. A modo ilustrativo, diremos que Alice transmite un millón de satoshis a través de la LN a un nodo loop (“nodo bucle”). En respuesta, este nodo redistribuye los sats a Alice en forma de bitcoins, los cuales se transfieren a la blockchain de Bitcoin directamente. Este procedimiento equilibra su canal de pagos con 1 millón de satoshis en cada extremo, optimizando así su capacidad para recibir pagos.
+
+Esta característica propia del proceso  Loop Out es especialmente útil para el propietario del canal de pagos, ya que consigue así un balance/equilibrio en sus canales de pago. Las transacciones Loop Out están limitadas a un máximo de 1 millón de satoshis en cada extremo. Aumentan, de este modo, la capacidad de recepción de pagos y posibilita pagar facturas, pudiendo mantener los canales abiertos.
 
 ![LNP201](assets/en/75.webp)
 
-Por lo tanto, este servicio permite la liquidez entrante mientras se recuperan los bitcoins en cadena, lo que ayuda a limitar la inmovilización de efectivo necesaria para aceptar pagos con Lightning.
+En consecuencia, el presente servicio facilita la entrada de liquidez, al tiempo que recupera los bitcoins de los usuarios de la blockchain de Bitcoin., lo que contribuye a mitigar la necesidad de disponer de reservas excesivas de liquidez (bloqueadas) para aceptar pagos a través de la Lightning Network (LN). Loop Out es un servicio útil que ofrece flexibilidad al usuario para mantener los canales abiertos y para una mejor gestión de la liquidez entrante y saliente en la LN.
+Este servicio “Loop Out” también puede ser útil para los usuarios que deseen:
+- Gestionar la capacidad para que los canales puedan utilizarse indefinidamente para recibir más fondos.
+- Enviar fondos en cadena a comerciantes o servicios que aún no están habilitados para Lightning.
+- Reequilibrar el balance de liquidez en los canales de enrutado, con el objetivo de poder enrutar/direccionar pagos en cualquier dirección.
 
-**¿Qué debes recordar de este capítulo?**
+**¿Qué ideas principales deberías extraer de este capítulo?**
 
-- Para enviar pagos en Lightning, debes tener suficiente liquidez de tu lado en tus canales. Para aumentar esta capacidad de envío, simplemente abre nuevos canales.
-- Para recibir pagos, necesitas tener liquidez del lado opuesto en tus canales. Aumentar esta capacidad de recepción es más complejo, ya que requiere que otros abran canales hacia ti, o hacer pagos (ficticios o reales) para mover la liquidez al otro lado.
-- Mantener la liquidez donde se desea puede ser aún más desafiante dependiendo del uso de los canales. Por eso existen herramientas y servicios para ayudar a equilibrar los canales según se desee.
+- Para facilitar la transmisión de pagos a través de la LN, es esencial disponer de liquidez suficiente en nuestros canales. Una mayor capacidad de envío de pagos de logra, simplemente, abriendo nuevos canales.
+  A la inversa, para recibir pagos es necesario disponer de liquidez en tus propios canales. El aumento de esta capacidad de recepción de pagos es un proceso más complicado, ya que requiere establecer canales dirigidos al receptor o bien, realizar pagos (ficticios o reales) para facilitar la transferencia de liquidez al extremo contrario del canal de pagos.
+- Mantener esta liquidez en los canales deseados puede plantear importantes retos, los cuales dependen de la utilización de dichos canales. Para hacer frente a estos retos, se han desarrollado una serie de herramientas y servicios que ayudan a mantener un balance equilibrado entre dichos canales, según se desee.
 
-En el próximo capítulo, propongo revisar los conceptos más importantes de esta formación.
+En el próximo capítulo, se presenta una revisión exhaustiva de los conceptos fundamentales, en los que se basa este curso formativo.
 
-# Ir Más Allá
+# Ir Más Allá/ Profundizar en el contenido formativo
 
 <partId>6bbf107d-a224-5916-9f0c-2b4d30dd0b17</partId>
 
-## Resumen de la formación
+## Conclusiones del curso
 
 
 <chapterId>a65a571c-561b-5e1c-87bf-494644653c22</chapterId>
 
 :::video id=102fd1db-1730-4f18-8f16-4c31b4431ba0:::
-En este capítulo final que marca el fin del entrenamiento LNP201, propongo revisar los conceptos importantes que hemos cubierto juntos.
-El objetivo de este entrenamiento era proporcionarte una comprensión comprensiva y técnica de la Red Lightning. Descubrimos cómo la Red Lightning depende de la blockchain de Bitcoin para realizar transacciones fuera de la cadena, mientras retiene las características fundamentales de Bitcoin, notablemente la ausencia de la necesidad de confiar en otros nodos.
+En este capítulo final, que marca la culminación del programa del curso formativo LNP201, el objetivo principal es volver a examinar los conceptos fundamentales, tratados a lo largo del curso.
+El objetivo de este curso es proporcionar a los participantes una comprensión técnica completa de la Lightning NetworK (LN). Hemos aprendido que la LN se basa en la blockchain (“cadena de bloques”) de Bitcoin para realizar transacciones “off-chain” (“fuera de la cadena”), conservando, al mismo tiempo, las características fundamentales de la tecnología Bitcoin, como es la desaparición de la necesidad de confianza ciega en otros nodos.
 
-### Canales de Pago
+### Canales de pago
 
-En los capítulos iniciales, exploramos cómo dos partes, al abrir un canal de pago, pueden realizar transacciones fuera de la blockchain de Bitcoin. Aquí están los pasos cubiertos:
+En los capítulos iniciales de este curso se aborda la exploración de cómo dos pares involucrados pueden llevar a cabo transacciones al margen de la blockchain de Bitcoin, mediante la implementación de un canal de pagos. Estos son los pasos que hemos seguido:
 
-- **Apertura del Canal**: La creación del canal se realiza a través de una transacción de Bitcoin que bloquea los fondos en una dirección multisignatura 2/2. Este depósito representa el canal Lightning en la blockchain.
+- **Apertura de un canal**: La apertura del canal de pagos se realiza a través de una transacción Bitcoin, que bloquea los fondos en una dirección 2/2 multi-firma (peer-to-peer), donde se requieren dos firmas para autorizar cualquier transacción. . Este depósito representa el canal de pagos Lightning en la blockchain de Bitcoin.
 
-![LNP201](assets/en/76.webp) 2. **Transacciones en el Canal**: En este canal, entonces es posible llevar a cabo numerosas transacciones sin tener que publicarlas en la blockchain. Cada transacción Lightning crea un nuevo estado del canal reflejado en una transacción de compromiso.
+![LNP201](assets/en/76.webp) 2. - **Transacciones en el canal de pagos**: En este canal de pagos, es posible ejecutar un elevado número de transacciones, sin necesidad de publicarlas en la blockchain de Bitcoin. Cada proceso de  transacción Lightning crea un nuevo estado del canal, lo que se refleja en una “transacción de compromiso” (Commitment Transaction).
 ![LNP201](assets/en/77.webp)
 
-- **Aseguramiento y Cierre**: Los participantes se comprometen con el nuevo estado del canal intercambiando llaves de revocación para asegurar los fondos y prevenir cualquier engaño. Ambas partes pueden cerrar el canal cooperativamente haciendo una nueva transacción en la blockchain de Bitcoin, o como último recurso a través de un cierre forzado. Esta última opción, aunque menos eficiente porque es más larga y a veces mal evaluada en términos de comisiones, aún permite la recuperación de fondos. En caso de engaño, la víctima puede castigar al tramposo recuperando todos los fondos del canal en la blockchain.
+-  **Aseguramiento/salvaguarda y cierre**: Los participantes reafirman el nuevo estado del canal, intercambiando «llaves de revocación» (revokation keys). Éstas sirven para asegurar los fondos . Este procedimiento se ha implementado para salvaguardar los fondos y prevenir cualquier forma de engaño. El cierre del canal de pagos puede lograrse, mediante una transacción de cierre cooperativo en la blockchain de Bitcoin o, como último recurso, mediante un cierre forzoso. Esta última opción, si bien es menos eficiente, debido a su duración y a que está mal valorada en términos de comisiones, sigue permitiendo la recuperación de fondos. En el caso hipotético de que se diera una estafa, la víctima podría penalizar al culpable (“penalty transaction” o “justice transaction”) y recuperar la totalidad de los fondos del canal de pagos en la “cadena de bloques” (blockchain) de Bitcoin.
 
 ![LNP201](assets/en/78.webp)
 
 ### La Red de Canales
 
-Después de estudiar canales aislados, extendimos nuestro análisis a la red de canales:
+Tras estudiar los canales de forma aislada, vamos a proceder a ampliar el análisis a toda la red de canales de pago para abarcarla de forma global.
 
-- **Enrutamiento**: Cuando dos partes no están conectadas directamente por un canal, la red permite el enrutamiento a través de nodos intermediarios. Los pagos entonces transitan de un nodo a otro.
+- **Routing/ Enrutamiento**: En los canales en los que dos pares no están conectados directamente por un canal, la LN (Lightning Network) permite el enrutamiento/ direccionamiento, a través de nodos intermedios, los cuales actúan como intermediarios del pago: Los pagos transitan así de un nodo a otro. 
 
 ![LNP201](assets/en/79.webp)
 
-- **HTLCs**: Los pagos que transitan a través de nodos intermediarios están asegurados por "_Hash Time-Locked Contracts_" (HTLC), que permiten que los fondos estén bloqueados hasta que el pago se complete de extremo a extremo.
+- **HTLCs (Hashed Timelock Contracts)**: Los pagos que transitan a través de los nodos enrutadores intermediarios están asegurados por HTLCs (Hashed Timelock Contracts), los cuales permiten que los fondos queden bloqueados, hasta que el pago se complete de extremo a extremo.
 
 ![LNP201](assets/en/80.webp)
 
-- **Enrutamiento Onion**: Para asegurar la confidencialidad del pago, el enrutamiento onion enmascara el destino final a los nodos intermediarios. El nodo emisor debe, por lo tanto, calcular toda la ruta, pero en ausencia de información completa sobre la liquidez de los canales, procede a través de pruebas sucesivas para enrutamiento del pago.
+- **Onion Routing (“Enrutamiento cebolla”)**: El enrutamiento “Onion Routing” enmascara el destino final ante los nodos enrutadores intermedios para garantizar la confidencialidad del pago. Por tanto, el emisor debe calcular la ruta completa hasta el destinatario o nodo final. Sin embargo, debido a la falta de información completa acerca de la liquidez de los canales de pago (la posición de balance), el nodo emisor procede a realizar pruebas sucesivas de ruta para conseguir un transporte eficiente y efectivo del pago, a través de la red, aprovechando la máxima potencia disponible. Las sugerencias de ruta son la información adicional, facilitada para el destinatario final, para ayudar al remitente a optimizar la ruta de pago.
 
 ![LNP201](assets/en/81.webp)
 
-### Gestión de Liquidez
+### Estrategias para la gestión del manejo de liquidez
 
-Hemos visto que la gestión de liquidez es un desafío en Lightning para asegurar el flujo suave de pagos. Enviar pagos es relativamente simple: solo requiere abrir un canal. Sin embargo, recibir pagos requiere tener liquidez en el lado opuesto de los canales propios. Aquí algunas estrategias discutidas:
+Hemos visto que, las estrategias para el manejo de liquidez constituyen un reto a la hora de conseguir que las transacciones de pago sean simples y fluidas en Lightning. El proceso de envío de pagos es relativamente sencillo: solamente se requiere la apertura de un canal de pagos. Sin embargo, el proceso de recepción de pagos requiere mantener suficiente liquidez en el extremo opuesto de nuestro canal. Estas son algunas de las estrategias para el manejo de liquidez, que hemos visto anteriormente:
 
-- **Atraer Canales**: Alentando a otros nodos a abrir canales hacia uno mismo, un usuario obtiene liquidez entrante.
+- **Atraer más canales de pago**: Si alentamos a otros nodos a establecer canales de pago dirigidos hacia nuestro nodo, podemos recabar más liquidez entrante.
 
-- **Mover Liquidez**: Enviando pagos a otros canales, la liquidez se mueve al lado opuesto.
+- **Liquidez en movimiento/ Moviendo la liquidez**: Al mandar pagos al otro canal, la liquidez se mueve al extremo opuesto.
 
 ![LNP201](assets/en/82.webp)
 
-- **Usar Servicios como Loop y Pool**: Estos servicios permiten reequilibrar o comprar canales con liquidez en el lado opuesto.
+- **Utilizar servicios, como son: Loop and Pool**: Estos servicios permiten hacer el balance de los canales de pagos o alquilar canales con liquidez disponible en el extremo opuesto. 
   ![LNP201](assets/en/83.webp)
-- **Aperturas Colaborativas**: También hay plataformas disponibles para conectarse para realizar aperturas triangulares y tener liquidez entrante.
-
+- **Apertura colaborativa**: También hay plataformas disponibles para conectarse y poner en marcha aperturas triangulares y conseguir así liquidez entrante.
+- 
 ![LNP201](assets/en/84.webp)
 
-# Sección final
+# Capítulo final
 
 <partId>b8715c1c-7ae2-49b7-94c7-35bf85346ad3</partId>
 
-## Reseñas & Valoraciones
+## Reseñas y valoraciones
 
 <chapterId>38814c99-eb7b-5772-af49-4386ee2ce9b0</chapterId>
 <isCourseReview>true</isCourseReview>
