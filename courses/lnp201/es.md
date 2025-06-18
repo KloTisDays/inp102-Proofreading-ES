@@ -138,39 +138,45 @@ El script más común y corriente requiere una firma con la clave privada de la 
 
 ### UTXOs: "Salidas de Transacciones No Gastadas"
 
-En Bitcoin, lo que realmente intercambiamos no son directamente Bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_), que, en español, se puede traducir como "salida de transacción no gastada".
-Un UTXO es un término que se refiere a las unidades de Bitcoin, que no han sido gastadas en transacciones anteriores y pueden ser de cualquier valor, por ejemplo, **2,000 bitcoins**, **8 bitcoins**, o, incluso, **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, se deben satisfacer las condiciones del script, que, a menudo, es una firma con la clave privada correspondiente a una dirección de recepción dada.
+En Bitcoin, lo que realmente intercambiamos no son directamente bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_). El acrónimo UTXO significa "Unspent Transaction Output", que, en español, se puede traducir como "Salida de Transacción No Gastada".
 
-Los UTXOs no pueden dividirse. Cada vez que se utilizan para gastar la cantidad en Bitcoins que representan, debe hacerse en su totalidad. Es un poco como un billete de banco (dinero en efectivo): si tienes un billete de €10 y le debes al panadero €5, no puedes simplemente cortar el billete por la mitad. Tienes que darle el billete de €10, y él te dará €5 de cambio. ¡Este es exactamente el mismo principio para los UTXOs en Bitcoin! Por ejemplo, cuando Alice desbloquea un script con su clave privada, desbloquea el UTXO completo. Si desea enviar solo una parte de los fondos representados por este UTXO a Bob, puede "fragmentarlo" en varios más pequeños. Luego enviará 0.0015 BTC a Bob y enviará el resto, 0.0005 BTC, a una **dirección de cambio**.
+Un UTXO es una pieza de Bitcoin que puede tener cualquier valor, por ejemplo, **2,000 bitcoins**, **8 bitcoins**, o **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, debemos cumplir las condiciones del script, que es una firma con la clave privada de una dirección de recepción determinada.
 
-Este es un ejemplo de una transacción con 2 salidas: 
+Los UTXOs no pueden dividirse. Cada vez que se utilizan los UTXOs para gastar la cantidad en Bitcoins que representan, debe utilizarse la suma del UTXO en su totalidad. Puede compararse con un billete de banco: si tienes un billete de €10 y le debes €5 al panadero, no puedes cortar el billete por la mitad. Tienes que darle el billete de €10, y él te dará €5 de cambio. ¡Este es exactamente el mismo principio para los UTXOs en Bitcoin! Por ejemplo, cuando Alice desbloquea un script con su clave privada, el UTXO completo se desbloquea. Si desea enviar solo una parte de los fondos representados por este UTXO a Bob, puede "fragmentarlo" en varios UTXOs más pequeños. Alice va a enviar 0.0015 BTC a Bob y el resto, 0.0005 BTC, lo va a enviar a una **dirección de cambio** (Change Address). 
+Esta dirección de cambio (Change Address) se refiere a una dirección, donde se reciben los fondos restantes de una transacción, en la que los fondos son mayores que el valor total del UTXO seleccionado.
 
-- Un UTXO de 0.0015 BTC para Bob, bloqueado por un script, que requiere la firma con la clave privada de Bob.
+Este término (UTXOs) se refiere a las unidades de Bitcoin, que no han sido gastadas en transacciones anteriores y se crean durante las transacciones y sirven como un medio para rastrear la propiedad y prevenir el doble gasto. Al rastrear las UTXOs, la red de Bitcoin puede verificar la autenticidad de las transacciones y, prevenir el doble gasto sin depender de terceros.  
+Las UTXOs son un componente clave para la seguridad y la confianza en la red descentralizada de Bitcoin. El modelo UTXO no requiere un tercero de confianza para verificar las transacciones. Lo que lo hace resistente a la censura, ya que no hay una autoridad central que pueda impedir que se envíen transacciones.  
+
+Este es un ejemplo de una transacción con 2 salidas:
+
+- Un UTXO de 0.0015 BTC para Bob, bloqueado por un script, que requiere la firma de la clave privada de Bob.
 - Un UTXO de 0.0005 BTC para Alice, bloqueado por un script, que requiere su propia firma.
-
+  
 ![LNP201](assets/en/06.webp)
 
-### Direcciones Multi-firma
+### Direcciones Multi-firma: (Multi-signature Address)
 
-Además de las direcciones simples,que se generan a partir de una única clave pública, también es posible crear **direcciones multi-firma**, a partir de múltiples claves públicas. Un caso particularmente interesante para la Lightning Network es la **dirección multi-firma 2/2** (peer-to-peer), generada a partir de dos claves públicas:
+Además de las direcciones simples generadas a partir de una única clave pública, es posible crear **direcciones multi-firma** (multisig), a partir de varias claves públicas. Un caso particularmente interesante de la Lightning Network es la **dirección multi-firma 2/2** (peer-to-peer), generada a partir de dos claves públicas:
 
 ![LNP201](assets/en/07.webp)
 
-Para gastar los fondos asociados a esta dirección multifirma 2/2 (peer-to-peer), es necesario firmar con las dos claves privadas, asociadas a las claves públicas.
+Para gastar los fondos bloqueados con esta dirección multi-firma 2/2 (peer-to-peer), es necesario firmar con las dos claves privadas asociadas a las claves públicas.
+
+La **dirección multi-firma 2/2** (Multi-signature Address) sirve para securizar las transacciones entre pares. Es decir, ambos pares deben firmar cualquier transacción para que ésta se valide. La dirección multi-firma (2-of-2 multisig address) requiere las dos firmas de las dos claves públicas seleccionadas para poder gastar los fondos, y esto asegura que ninguna de los dos pares pueda mover los fondos de forma unilateral. 
 
 ![LNP201](assets/en/08.webp)
 
-Este tipo de dirección es la representación de los canales de pago de la Lightning Network en la blockchain ("cadena de bloques") de Bitcoin.
+Este tipo de dirección es, precisamente, la representación de los canales de pago en la Lightning Network en la blockchain de Bitcoin.
 
-**¿Qué debes recordar del contenido de este capítulo?** 
+**¿Cuáles son los puntos principales de este capítulo?** 
 
-- Una **dirección Bitcoin** se deriva de una clave pública, que a su vez, se deriva de una clave privada.
-- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar esos fondos, debes cumplir las condiciones, que marca el script, que, normalmente, implica proporcionar una firma con la correspondiente clave privada. 
-- Los **UTXOs** son piezas de Bitcoin, las cuales están bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y después, crear uno o más nuevos UTXOs a cambio.
-- **2/2 direcciones multi-firma** (peer-to-peer) se requiere de la firma de dos claves privadas, para poder gastar los fondos.
+- Una **dirección de Bitcoin** se deriva de una clave pública, que a su vez, deriva de una clave privada.
+- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar estos fondos, uno debe cumplir las condiciones del script: Esto consiste en proveer una firma con su clave privada correspondiente.
+- Los **UTXOs** son unidades de Bitcoin bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más nuevos UTXOs nuevos a cambio.
+- Las **direcciones multi-firma 2/2** requieren la firma de dos claves privadas para gastar los fondos. Estas direcciones específicas se utilizan para crear canales de pago en la Lightning Network.
 
-Estas direcciones especiales se utilizan en el contexto de la tecnología Lightning para abrir canales de pagos.
-Este capítulo sobre Bitcoin nos ha permitido repasar algunos conceptos esenciales, que nos serán útiles para lo que aprenderemos a continuación. En el próximo capítulo, veremos detalladamente cómo funciona la apertura de canales en la Lightning Network.
+Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciales para entender lo que sigue. En el próximo capítulo, analizaremos cómo funciona la apertura de canales de pago en la Lightning Network en específico.
 
 # Apertura y Cierre de Canales
 
