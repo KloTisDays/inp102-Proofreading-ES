@@ -161,9 +161,9 @@ Además de las direcciones simples generadas a partir de una única clave públi
 
 ![LNP201](assets/en/07.webp)
 
-Para gastar los fondos bloqueados con esta dirección multi-firma 2/2 (peer-to-peer), es necesario firmar con las dos claves privadas asociadas a las claves públicas.
+Para gastar los fondos bloqueados con esta dirección multi-firma 2/2 (peer-to-peer), es necesario firmar con las dos claves privadas, asociadas a las claves públicas.
 
-La **dirección multi-firma 2/2** (Multi-signature Address) sirve para securizar las transacciones entre pares. Es decir, ambos pares deben firmar cualquier transacción para que ésta se valide. La dirección multi-firma (2-of-2 multisig address) requiere las dos firmas de las dos claves públicas seleccionadas para poder gastar los fondos, y esto asegura que ninguna de los dos pares pueda mover los fondos de forma unilateral. 
+La **dirección multi-firma 2/2** (Multi-signature Address) sirve para securizar las transacciones entre pares. Es decir, ambos pares deben firmar cualquier transacción para que ésta se valide. La dirección multi-firma (2-of-2 multisig address) requiere las dos firmas de las dos claves públicas seleccionadas para poder gastar los fondos, y esto asegura que, ninguna de los dos pares pueda mover los fondos de forma unilateral. 
 
 ![LNP201](assets/en/08.webp)
 
@@ -172,11 +172,11 @@ Este tipo de dirección es, precisamente, la representación de los canales de p
 **¿Cuáles son los puntos principales de este capítulo?** 
 
 - Una **dirección de Bitcoin** se deriva de una clave pública, que a su vez, deriva de una clave privada.
-- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar estos fondos, uno debe cumplir las condiciones del script: Esto consiste en proveer una firma con su clave privada correspondiente.
-- Los **UTXOs** son unidades de Bitcoin bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más nuevos UTXOs nuevos a cambio.
-- Las **direcciones multi-firma 2/2** requieren la firma de dos claves privadas para gastar los fondos. Estas direcciones específicas se utilizan para crear canales de pago en la Lightning Network.
+- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar estos fondos, uno debe cumplir las condiciones del script: Esto consiste en proveer una firma válida con su clave privada correspondiente.
+- Los **UTXOs** son unidades de Bitcoin bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más UTXOs nuevos a cambio.
+- Las **direcciones multi-firma 2/2** requieren la firma de dos claves privadas para gastar los fondos. En la Lightning Network, estas direcciones específicas se utilizan para crear canales de pago. 
 
-Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciales para entender lo que sigue. En el próximo capítulo, analizaremos cómo funciona la apertura de canales de pago en la Lightning Network en específico.
+Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciales para entender lo que sigue. En el próximo capítulo, analizaremos cómo funciona la apertura de canales de pago en la Lightning Network. 
 
 # Apertura y Cierre de Canales
 
@@ -188,62 +188,62 @@ Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciale
 
 :::video id=0dd90e82-4d29-4d27-bcdf-42988ced4b16:::
 
-En este capítulo, veremos cómo abrir un canal de pagos en la Lightning Network y analizaremos el vínculo entre la apertura del canal de pago y el sistema subyacente de Bitcoin.
+En este capítulo, veremos cómo abrir un canal de pagos en la Lightning Network y analizaremos cómo enlazan la apertura del canal de pagos y el sistema subyacente de Bitcoin.
 
 ### Canales de pago en la Lightning Network de Bitcoin
 
-Como vimos en el primer capítulo, un **canal de pago** en la Lightning Network puede compararse con una "tubería" para intercambiar fondos entre dos participantes (**Alice** y **Bob**, en nuestros ejemplos). La capacidad de este canal corresponde a la suma de los fondos disponibles de cada extremo. En nuestro ejemplo, Alice tiene **100,000 satoshis** y Bob tiene **30,000 satoshis**, lo que suma una **capacidad total** de **130,000 satoshis**.
+Como vimos en el primer capítulo, un **canal de pago** en la Lightning Network puede compararse con una "tubería" por la que  se transmiten fondos entre dos pares (**Alice** y **Bob**, en nuestros ejemplos). La capacidad de este canal corresponde a la suma de los fondos disponibles en cada extremo. En nuestro ejemplo, Alice tiene **100,000 satoshis** y Bob tiene **30,000 satoshis**, lo que suma una **capacidad total** de **130,000 satoshis**.
 
 ![LNP201](assets/en/09.webp)
 
 ### Niveles de Intercambio de Información
 
-Es crucial distinguir claramente los diferentes niveles de intercambio en la Lightning Network:
+Es crucial distinguir de forma clara los diferentes niveles de intercambio de información en la Lightning Network:
 
-- **Comunicaciones entre pares (protocolo Lightning)**: Estos son los mensajes, que los nodos de Lightning se envían entre sí para comunicarse. En nuestros diagramas, representaremos estos mensajes con líneas negras punteadas .
-- **Canales de pago (protocolo Lightning)**: vías de intercambio de fondos en la Lightning Network, que representaremos con líneas negras continuas.
-- **Transacciones de Bitcoin (protocolo Bitcoin)**: son las transacciones realizadas en la cadena de bloques (blockchain) y las representaremos con líneas en color naranja.
+- **Comunicaciones entre pares (Peer-to-peer) (protocolo Lightning)**: Estos son los mensajes, que los nodos de Lightning se envían entre sí para comunicarse. En nuestros diagramas, representaremos estos mensajes con líneas negras punteadas .
+- **Canales de pago (protocolo Lightning)**: son rutas de intercambio de fondos en la Lightning Network, que representaremos con líneas negras continuas.
+- **Transacciones Bitcoin (protocolo Bitcoin)**: son las transacciones realizadas en la cadena de bloques (blockchain), (onchain) y las representaremos con líneas en color naranja.
 
 ![LNP201](assets/en/10.webp)
 
-Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero para intercambiar fondos es necesario un canal de pagos.
+Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero para intercambiar fondos, es necesario abrir un canal de pagos.
 
 ### Pasos para abrir un canal de pagos en la Lightning Network
 
-- **Intercambio de mensajes**: Alice quiere establecer un canal de pago con Bob. Alice le envía un mensaje con la cantidad, que quiere depositar en el canal (130.000 sats) y su clave pública. Bob responde con su propia clave pública.
+- **Intercambio de mensajes**: Alice quiere establecer un canal de pago con Bob. Alice le envía un mensaje a Bob con la cantidad, que quiere depositar en el canal (130.000 sats), así como su clave pública. Bob responde enviando su clave pública.
   
 ![LNP201](assets/en/11.webp)
 
-- **Creación de la dirección multi-firma**: Alice usa estas dos claves públicas para crear una dirección multi-firma, lo que significa que, cualquier fondo depositado en esta dirección, requiere las firmas de Alice y Bob para gastarse.
+- **Creación de la dirección multi-firma**: Alice usa estas dos claves públicas para crear una dirección multi-firma, lo que significa que, cualquier fondo depositado en esta dirección posteriormente, requerirá ambas firmas (Alice y Bob), para poder gastar los fondos.
 
 ![LNP201](assets/en/12.webp)
 
-- **Transacción de depósito**: Alice prepara una transacción de Bitcoin para depositar fondos en esta dirección multi-firma. Por ejemplo, puede decidir enviar **130,000 satoshis** a esta dirección multifirma: esta transacción está **construida, pero aún no se ha publicado** en la cadena de bloques (blockchain).
+- **Transacción de depósito de fondos**: Alice prepara una transacción de Bitcoin para depositar fondos en esta dirección multi-firma. Alice decide enviar **130,000 satoshis** a esta dirección multifirma.
+Esta transacción está **construida, pero no se ha publicado todavía** en la "cadena de bloques" (blockchain).
 
 ![LNP201](assets/en/13.webp)
 
-- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats se bloquearán en una dirección multifirma 2/2 y, únicamente, podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
+- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats serán bloqueados en una dirección multifirma 2/2 y, estos fondos solamente podrán desbloquearse con su firma y con la de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
   
 ![LNP201](assets/en/14.webp)
 
-- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de liquidez. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, ella ya tiene la seguridad de poder recuperar sus fondos cuando quiera, ya que ahora sólo es necesaria su propia firma para desbloquear la dirección multi-firma.
+- **Firma de Bob**: Alice envía la transacción de depósito a Bob como prueba y, le pide que firme la transacción de retiro de liquidez. Cuando Alice obtiene la firma de Bob en la transacción de retiro de fondos, ella ya tiene la seguridad de poder recuperar sus fondos cuando quiera, porque ahora únicamente es necesaria su propia firma para desbloquear sus fondos de la dirección multi-firma.
 
 ![LNP201](assets/en/15.webp)
 
-- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la cadena de bloques (blockchain) de Bitcoin, abriendo el canal de pago Lightning, entre ambos usuarios, oficialmente.
+- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la cadena de bloques (blockchain) de Bitcoin, abriendo oficialmente el canal de pago Lightning, entre ambos usuarios.
   
 ![LNP201](assets/en/16.webp)
 
 ### ¿Cuándo se considera que el canal está abierto?
 
-El canal se considera abierto, cuando la transacción de depósito se registra en un bloque de la blockchain de Bitcoin y esta transacción ha acumulado el número de confirmaciones necesarias (número de bloques siguientes), para verificar la validez de la operación en el canal de pagos.
+El canal se considera abierto, cuando la transacción de depósito se incluye en un bloque de la blockchain de Bitcoin. Esta transacción tiene que acumular el número de confirmaciones necesarias (número de bloques siguientes), para verificar la validez de la operación en el canal de pagos Lightning.
 
 **¿Qué debo recordar de este capítulo?** 
-- La apertura de un canal comienza con el intercambio de **mensajes** entre las dos partes (intercambio de importes y claves públicas).
-— Un canal se crea con la creación de una dirección **multi-firma 2/2 ** y el depósito de fondos en esta dirección a través de una transacción de Bitcoin.
-- La persona que abre el canal se asegura de que puede **recuperar sus fondos**, mediante una transacción de retirada firmada por la otra parte, antes de publicar la transacción de depósito.
-
-En el próximo capítulo, exploraremos el funcionamiento técnico de una transacción Lightning dentro de un canal de pagos.
+- La apertura de un canal comienza con el intercambio de **mensajes** entre los dos pares (intercambio de importes y claves públicas).
+— Un canal se forma con la creación de una dirección **multi-firma 2/2 ** y el depósito de fondos en esta dirección, mediante una transacción de Bitcoin.
+- La persona que abre el canal de pagos asegura la **recuperación de sus fondos**, mediante una transacción de retirada, firmada por la otra parte antes de publicar la transacción de depósito.
+En el próximo capítulo, exploraremos el funcionamiento técnico de una transacción Lightning, que ocurre en un canal de pagos.
 
 ## "Transacción de Compromiso" (Commitment Transaction)
 
@@ -251,57 +251,59 @@ En el próximo capítulo, exploraremos el funcionamiento técnico de una transac
 
 :::video id=ec8a9259-cf0e-4142-af74-d08a867e3842:::
  
-En este capítulo, descubriremos el funcionamiento técnico de una transacción dentro de un canal de pagos en la Lightning Network, es decir, cuando los fondos se mueven de un extremo del canal al otro lado del canal de pago.
+En este capítulo, descubriremos el funcionamiento técnico del envío de una transacción de fondos en un canal de pagos de la Lightning Network, esto es, cuando los fondos transitan de un extremo al otro en el canal de pagos.
 
-### Recordatorio: El ciclo de vida del canal de pagos
+### El ciclo de vida del canal de pagos
 
-Como hemos visto anteriormente, la **apertura** de un canal de pagos en la Lightning Network comienza a través de una transacción de Bitcoin. El canal se puede **cerrar** cuando se desee. También cerramos el canal a través de una transacción de Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que registrarlas en la blockchain de Bitcoin. Veamos qué es lo que ocurre durante una transacción en un canal de pagos.
+Como hemos visto anteriormente, la **apertura** de un canal de pagos comienza a través de una transacción de Bitcoin en la Lightning Network. El canal se puede **cerrar** cuando se desee. El canal se cierra también a través de una transacción Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que pasar por la blockchain de Bitcoin. Veamos qué ocurre dentro de un canal de pagos durante una transacción .
 
 ![LNP201](assets/en/17.webp)
 
-### El estado inicial del canal de pago
+### El estado inicial del canal de pagos
 
-En el momento de abrir el canal, Alice depositó **130,000 satoshis** en la dirección de multi-firma del canal. Así, en el estado inicial, todos los fondos están del lado de Alice. Antes de abrir el canal, Alice también hizo que Bob firmara una **transacción de retiro**, lo que permitiría a Alice recuperar sus fondos, en el caso de que si quisiera cerrar el canal.
+En el momento de abrir el canal, Alice depositó **130,000 satoshis** en la dirección multi-firma del canal. Así, en el estado inicial, todos los fondos están en el extremo de Alice. Antes de abrir el canal, Bob firmó una **transacción de retiro**, lo que permitirá a Alice recuperar sus fondos, en caso de que ella quisiera cerrar el canal.
 
 ![LNP201](assets/en/18.webp)
 
-### Transacciones no publicadas: Las Transacciones de Compromiso (Commitment Transactions)
+### Transacciones no publicadas: Transacciones de Compromiso (Commitment Transactions)
 
-Cuando Alice realiza una transacción en el canal de pago para enviar fondos a Bob, se crea una nueva transacción de Bitcoin, la cual refleja este cambio en la distribución de fondos. Esta transacción, llamada transacción de compromiso, no se publica en la blockchain, pero representa el nuevo estado del canal, tras la transacción Lightning.
+Cuando Alice realiza una transacción en el canal para enviar fondos a Bob, se crea una nueva transacción Bitcoin para que ésta refleje el cambio en la distribución de fondos del canal. Esta transacción, llamada "transacción de compromiso" (Commitment Transaction), no se publica en la blockchain de Bitcoin, pero representa el nuevo estado del canal, que resulta tras la transacción Lightning.
 
 Tomemos un ejemplo en el que Alice envía 30,000 satoshis a Bob:
 
 - **Inicialmente**: Alice tiene 130,000 satoshis.
 - **Después de la transacción**: Alice tiene 100,000 satoshis y Bob tiene 30,000 satoshis.
 
-Para validar esta transferencia, Alice y Bob crean una nueva **transacción Bitcoin no publicada**, por la que se envían **100,000 satoshis a Alice** y **30,000 satoshis a Bob** , desde la dirección multi-firma. Ambas partes construyen esta transacción de forma independiente, pero con los mismos datos (cantidades y direcciones). Una vez creada, cada parte firma la transacción e intercambia su firma con la otra parte. Esto permite a cualquiera de los dos, publicar la transacción en cualquier momento, para así reclamar su parte de los fondos del canal, en la blockchain principal de Bitcoin.
+Para validar esta transferencia, Alice y Bob crean una nueva **transacción Bitcoin no publicada**, por la que se envían **100,000 satoshis a Alice** y **30,000 satoshis a Bob**. Para validar esta transacción, Alice y Bob crean una **transacción no publicada** nueva que enviará **100,000 satoshis a Alice** y **30,000 satoshis a Bob** desde una "dirección multi-firma". Ambos crean esta transacción de forma independiente, pero ambos incluyen los mismos datos: (cantidades y direcciones). Una vez creada la "transacción de compromiso" (Commitment Transaction), cada par firma la transacción e intercambia su firma con el otro par. Esto permite a cualquiera de los dos participantes publicar la transacción en la blockchain de Bitcoin en cualquier momento, si fuese necesario reclamar su parte de los fondos en el canal de pagos de la blockchain principal de Bitcoin.
 
   ![LNP201](assets/en/19.webp)
 
-### El proceso de transferencia: la factura
+### El proceso de transferencia de fondos: La factura
 
-Cuando Bob quiere recibir dinero, envía a Alice una **factura_** por 30,000 satoshis. Alice paga esta factura, lo que inicia la transferencia dentro del canal. Como hemos visto, este proceso se basa en la creación y firma de una nueva **transacción de compromiso**.
-Cada transacción de compromiso representa la distribución de fondos en el canal de pagos tras la transferencia. En este ejemplo, después de la transacción, Bob tiene 30,000 satoshis y Alice tiene 100,000 satoshis. Si uno de los dos participantes decide publicar esta transacción de compromiso en la cadena de bloques (blockchain), el canal se cerrará y los fondos se distribuirán, según la distribución final.
+Cuando Bob quiere recibir fondos, envía una **factura_** de 30,000 satoshis a Alice . Alice procede a pagar esta factura, comenzando así la transferencia de liquidez dentro del canal de pagos. Como hemos visto, este proceso se basa en la creación y firma de una nueva **transacción de compromiso** (Commitment Transaction).
+
+Cada "transacción de compromiso" representa la nueva distribución de los fondos del canal de pagos después de la transferencia de fondos. En este ejemplo, Bob tiene 30,000 satoshis y Alice tiene 100,000 satoshis, después de la transacción de fondos. Si alguno de los dos participantes decide publicar esta "transacción de compromiso" en la "cadena de bloques" (blockchain), resultaría en el cierre del canal y los fondos se distribuirán, conforme a esta última distribución.
 
 ![LNP201](assets/en/20.webp)
 
-### Nuevo estado después de una segunda transacción
+### Nuevo estado después de una segunda transacción de fondos
 
-Tomemos otro ejemplo: después de la primera transacción en la que Alice envió 30,000 satoshis a Bob, éste decide enviar **10,000 satoshis a Alice de vuelta**. Esto crea un nuevo estado del canal de pagos. La nueva transacción de compromiso reflejará así la distribución actualizada: 
+Tomemos otro ejemplo: después de la primera transacción, en la que Alice envia 30,000 satoshis a Bob y Bob decide enviar **10,000 satoshis de vuelta a Alice**. Esto origina un nuevo estado de la distribución de los fondos en el canal de pagos. La nueva "transacción de compromiso" (Commitment Transaction) reflejará esta distribución actualizada, que sigue a continuación: 
 
-- **Alice** tiene **110,000 satoshis** ahora.
+- **Alice** tiene ahora **110,000 satoshis**. 
 - **Bob** tiene **20,000 satoshis**.
   
 ![LNP201](assets/en/21.webp)
 
-Esta transacción no se publica en la blockchain, pero puede publicarse en cualquier momento, si se cierra el canal.
-En resumen, cuando se transfieren fondos dentro de un canal de pago Lightning:
+El registro de esta transacción no se incluye en la "cadena de bloques" (blockchain) de Bitcoin, pero puede publicarse en cualquier momento, en caso de cierre del canal.
 
-- Alice y Bob crean una nueva **transacción de compromiso** que refleja la nueva distribución de fondos.
-- Esta transacción Bitcoin es **firmada** por ambas partes, pero **no publicada** en la blockchain de Bitcoin, mientras el canal permanezca abierto.
-- Las transacciones de compromiso garantizan que cada participante pueda recuperar sus fondos en cualquier momento, publicando la última transacción firmada en la blockchain de Bitcoin.
+En resumen, cuando se transfieren fondos dentro de un canal Lightning:
 
-Sin embargo, este sistema tiene una falla potencial, que abordaremos en el próximo capítulo. Veremos cómo cada participante puede protegerse de un intento de estafa que venga de la otra parte.
+- Alice y Bob crean una nueva **transacción de compromiso** (Commitment Transaction), que refleja la nueva distribución de fondos.
+- Esta transacción Bitcoin es **firmada** por ambos pares, pero es una **transacción que no es publicada** en la blockchain de Bitcoin, mientras el canal permanezca abierto.
+- Las "transacciones de compromiso" garantizan que cada participante pueda recuperar sus fondos en cualquier momento en la blockchain de Bitcoin, publicando la última transacción que fue firmada .
+
+Sin embargo, este sistema tiene una falla potencial, que discutiremos en el próximo capítulo. Veremos cómo cada participante puede protegerse contra un intento de estafa por la otra parte.
 
 ## Revocation Key ("llave de revocación")
 
