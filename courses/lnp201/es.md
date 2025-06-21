@@ -351,7 +351,8 @@ Veamos ahora el funcionamiento de este mecanismo:
 
 ### Proceso de actualización de las transacciones
 
-Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, ya han intercambiado por adelantado sus respectivos **secretos** para la "transacción de compromiso" anterior (que quedará obsoleta y podría servir para estafar al otro). Esto significa que en el nuevo estado del canal:
+Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, han intercambiado previamente sus respectivos **secretos** para la anterior "transacción de compromiso" (Commitment Transaction), la cual quedará obsoleta y podría servir para estafar a la contraparte. Esto significa que en el nuevo estado del canal:
+
 - Alice y Bob tienen una nueva "transacción de compromiso", donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
 - Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la "clave de revocación" (Revokation Key"), si uno de ellos intenta estafar fondos, publicando una transacción que refleja el estado anterior en los mempools de nodos Bitcoin. De hecho, para penalizar a la otra parte ("penalty transaction" o "justice transaction"), es necesario tener los dos secretos y, además, la "transacción de compromiso" (Commitment Transaction) del otro par, la cual incluye la entrada de fondos firmada. Sin esta "transacción de compromiso", la "clave de revocación" (Revokation Key") por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones pendientes de registrar en la "blockchain" de Bitcoin) o de transacciones confirmadas en la blockchain de Bitcoin durante el Timelock. Así, demostraríamos que la otra parte está intentando llevar a cabo un engaño malicioso, ya sea intencionadamente, o no.
 
