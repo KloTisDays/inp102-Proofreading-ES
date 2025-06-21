@@ -286,73 +286,74 @@ Cada "transacción de compromiso" representa la nueva distribución de los fondo
 
 ![LNP201](assets/en/20.webp)
 
-### Nuevo estado del canal de pagos después de una segunda transacción de fondos
+### Nuevo estado de la distribución de los fondos en un canal de pagos, después de una segunda transacción
 
-Tomemos otro ejemplo: después de la primera transacción, en la que Alice envia 30,000 satoshis a Bob y Bob decide enviar **10,000 satoshis de vuelta a Alice**. Esto crea un nuevo estado de la distribución de los fondos en el canal de pagos. La nueva "transacción de compromiso" (Commitment Transaction) reflejará esta distribución global actualizada, que sigue a continuación: 
+Tomemos otro ejemplo: después de la primera transacción (en la que Alice envía 30,000 satoshis a Bob), Bob va a enviar **10,000 satoshis de vuelta a Alice**. Esto crea un nuevo estado de la distribución de los fondos en el canal de pagos. La nueva "transacción de compromiso" (Commitment Transaction) reflejará esta distribución global actualizada del canal, que sigue a continuación: 
 
 - **Alice** tiene ahora **110,000 satoshis**. 
 - **Bob** tiene **20,000 satoshis**.
   
 ![LNP201](assets/en/21.webp)
 
-El registro de esta transacción no se incluye en la "cadena de bloques" (blockchain) de Bitcoin, pero puede publicarse en cualquier momento, en caso de cierre del canal.
+El registro de esta transacción no se publica en la "cadena de bloques" (blockchain) de Bitcoin, pero puede registrarse en cualquier momento en el caso de cierre del canal.
 
-En resumen, cuando se transfieren fondos dentro de un canal Lightning:
+Resumiendo, cuando se transfieren fondos dentro de un canal de pagos en la Lightning Network:
 
-- Alice y Bob crean una nueva **transacción de compromiso** (Commitment Transaction), que refleja la nueva distribución de fondos.
-- Esta transacción Bitcoin es **firmada** por ambos pares, pero es una **transacción que no es publicada** en la blockchain de Bitcoin, mientras el canal permanezca abierto.
-- Las "transacciones de compromiso" (Commitment Transactions) garantizan que cada participante pueda recuperar sus fondos en cualquier momento en la blockchain de Bitcoin, publicando la última transacción que fue firmada .
+- Alice y Bob crean una nueva **transacción de compromiso** (Commitment Transaction), que refleja la nueva distribución de los fondos en el canal de pagos.
+- Esta transacción Bitcoin es **firmada** por ambos pares, pero es una **transacción que no se ha publicadado** en la blockchain de Bitcoin, mientras el canal permanezca abierto.
+- Las "transacciones de compromiso" (Commitment Transactions) garantizan que cada par pueda recuperar sus fondos en cualquier momento en la blockchain de Bitcoin, publicando la última transacción que fue firmada .
 
-Sin embargo, este sistema tiene una falla potencial, que discutiremos en el próximo capítulo. Veremos cómo cada participante puede protegerse contra un intento de estafa por la otra parte.
+Sin embargo, este sistema tiene una falla potencial, que discutiremos en el próximo capítulo. Veremos cómo cada participante puede protegerse contra un intento de estafa que venga de su contraparte.
 
-## Revocation Key ("llave de revocación")
+## Revocation Key ("clave/llave de revocación")
 
 <chapterId>f2f61e5b-badb-5947-9a81-7aa530b44e59</chapterId>
 :::video id=387747fe-bcda-499d-b247-d5c82bb6dcd7:::
-En este capítulo, exploraremos en profundidad el funcionamiento de las transacciones en la Lightning Network y describiremos los mecanismos de protección contra estafas y de garantía de cumplimiento de las reglas por parte de todos los participantes en un canal de pagos.  
+En este capítulo, exploraremos en profundidad el funcionamiento de las transacciones en la Lightning Network y describiremos los mecanismos de protección contra estafas y los mecanismos que garantizan el cumplimiento de las reglas por parte de todos los participantes en un canal de pagos.  
 
-### Recordatorio: Transacciones de compromiso (Commitment Transactions)
-Las transacciones en Lightning se basan en **transacciones de compromiso** (Commitment Transactions) no publicadas. Estas transacciones de compromiso reflejan la distribución de fondos en el canal de pagos. Cuando se realiza una nueva transacción en la Lightning Network, se crea una nueva transacción de compromiso (Commitment Transaction), que es firmada por ambos pares para reflejar el nuevo estado global del canal.
+### Recordatorio: "Transacciones de compromiso" (Commitment Transactions)
+
+Las transacciones en Lightning se basan en **transacciones de compromiso** (Commitment Transactions) no publicadas en la blockchain de Bitcoin. Estas "transacciones de compromiso" reflejan la distribución de los fondos dentro del canal de pagos. Cuando se realiza una nueva transacción en la Lightning Network, se crea una nueva "transacción de compromiso" (Commitment Transaction), que es un acuerdo con las firmas de ambos pares y que tiene como objetivo reflejar el nuevo estado global de la distribución de los fondos dentro del canal Lightning.
 
 Pongamos un ejemplo sencillo: 
 
-- **Estado inicial**: Alice tiene **100,000 satoshis**, Bob tiene **30,000 satoshis**.
-- **Después de una transacción**: en la que Alice envía **40,000 satoshis** a Bob, la nueva "transacción de compromiso" (Commitment Transaction) refleja la distribución de los fondos de la siguiente manera:
+- **Estado inicial del canal**: Alice tiene **100,000 satoshis**, y Bob dispone de **30,000 satoshis**.
+- Después de una transacción: en la que Alice envía **40,000 satoshis** a Bob, la nueva "transacción de compromiso" (Commitment Transaction) refleja la distribución de los fondos de la siguiente manera:
 - Alicia: **60,000 satoshis**
 - Bob: **70,000 satoshis**.
   
 ![LNP201](assets/en/22.webp)
 
-En cualquier momento, ambas partes pueden publicar la **última transacción de compromiso firmada** para cerrar el canal de pagos y recuperar sus fondos.
+Ambas partes pueden publicar, en cualquier momento, la **última transacción de compromiso firmada** para cerrar el canal de pagos y recuperar sus fondos.
 
 ### La falla en el proceso: Estafar a la contraparte, publicando una transacción antigua.
 
-Si una de las partes decide **estafar**, publicando una transacción de compromiso antigua, surge un potencial problema.  Por ejemplo, Alice podría publicar una transacción de compromiso antigua con una posición de balance más favorable con **100.000 satoshis**, cuando, en realidad, sólo tiene **60.000** satoshis. Así, podría robar **40.000 satoshis** a Bob. 
+Si una de las partes decide **estafar**, publicando una "transacción de compromiso" (Commitment Transaction) antigua, surge un potencial problema.  Por ejemplo, Alice podría publicar una "transacción de compromiso" antigua con una posición de balance más favorable a la real de **100.000 satoshis**, ya que, en realidad, sólo dispone de **60.000** satoshis. Así, podría robar **40.000 satoshis** a Bob. 
 
 ![LNP201](assets/en/23.webp)
 
-Peor aún, Alice podría publicar la primera transacción de retirada, la anterior a la apertura del canal, en la que tenía **130,000 satoshis** y, así, estafar la totalidad de fondos a Bob que hay en el canal de pagos.  
+Peor aún, Alice podría publicar la primera transacción de retirada (la anterior a la apertura del canal), en la que disponía de **130,000 satoshis** y, así, estafar la totalidad de los fondos, que hay en el canal de pagos, a Bob .  
 
 ![LNP201](assets/en/24.webp)
 
-### Solución: Clave de revocación (Revokation Key) y Timelock (“candado de tiempo”)
+### Solución:  Revokation Key ("clave/ llave de revocación") y Timelock (“candado de tiempo”)
 
-Para evitar este tipo de trampas por parte de Alice, la Lightning Network se han añadido **mecanismos de seguridad** en las transacciones de compromiso:
+Para evitar este tipo de trampas por parte de Alice, se han añadido **mecanismos de seguridad** en las "transacciones de compromiso" (Commitment Transactions) de la Lightning Network:
 
-- **Timelock**: Cada transacción de compromiso contiene un timelock ("candado de tiempo") para los fondos de Alice. El Timelock es una característica de los contratos inteligentes, que establece una condición temporal a cumplir, para que una transacción se incluya en un bloque. Esto significa que, si Alice publica una de las transacciones de compromiso, no podrá recuperar sus fondos, hasta que hayan transcurrido un número de bloques determinado. Este tiempo de espera comienza cuando se confirma la transacción de compromiso. Su duración suele ser proporcional al tamaño del canal, aunque este tiempo de espera también puede configurarse manualmente.
+- **Timelock**: Cada "transacción de compromiso" (Commitment Transaction) contiene un Timelock ("candado de tiempo") para los fondos de Alice. El Timelock es una característica de los contratos inteligentes, que establece una requisito de tiempo a cumplir, para que una transacción se llegue a incluir en un bloque de la blockchain de Bitcoin. Esto significa: si Alice publica una de las "transacciones de compromiso" (Commitment Transaction) en la blockchain de Bitcoin, tendrá que esperar a que hayan transcurrido un número de bloques determinado para poder recuperar sus fondos. Este tiempo de espera comienza cuando se confirma la "transacción de compromiso" (Commitment Transaction). Su duración suele ser proporcional a la capacidad del canal, aunque este tiempo de espera también puede configurarse manualmente.
   
 - **Clave de revocación** (Revocation Key):
-El dinero de Alice también puede ser gastado directamente por Bob, si éste dispone de la clave de revocación. Esta clave está compuesta por un secreto, que controla Alice y, otro, que controla Bob. Tenga en cuenta que, este secreto es diferente para cada "transacción de compromiso". Gracias a estos dos mecanismos combinados, Bob tiene tiempo de detectar el intento de estafa de Alice y puede penalizarla, recuperando su salida de liquidez con la clave de revocación, lo que para Bob significa recuperar todos los fondos del canal de pagos. La nueva "transacción de compromiso" (Commitment Transaction) es la siguiente:
+Los fondos de Alice también pueden ser gastados por Bob directamente, si éste dispone de la "clave de revocación" (Revocation Key). Esta clave/llave está compuesta por un secreto, que controla Alice y, otro secreto, que controla Bob. Tenga en cuenta que, este secreto es diferente para cada "transacción de compromiso" (Commitment Transaction). Gracias a la combinación de estos dos mecanismos, Bob tiene tiempo de detectar el intento de estafa de Alice y puede penalizarle, recuperando su salida de liquidez con la "clave/llave de revocación" (Revocation Key). Esto significa que Bob puede recuperar todos los fondos del canal de pagos. Esta nueva "transacción de compromiso" (Commitment Transaction) la representamos así:
 
 ![LNP201](assets/en/25.webp)
 
-Veamos el funcionamiento de este mecanismo:
+Veamos ahora el funcionamiento de este mecanismo:
 
-### Proceso de actualización de transacciones
+### Proceso de actualización de las transacciones
 
 Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, ya han intercambiado por adelantado sus respectivos **secretos** para la "transacción de compromiso" anterior (que quedará obsoleta y podría servir para estafar al otro). Esto significa que en el nuevo estado del canal:
 - Alice y Bob tienen una nueva "transacción de compromiso", donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
-- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la "clave de revocación" (Revokation Key"), si uno de ellos intenta estafar fondos, publicando una transacción que refleja el estado anterior en los mempools de nodos Bitcoin. De hecho, para penalizar a la otra parte ("penalty transaction" o "justice transaction"), es necesario tener los dos secretos y, además, la "transacción de compromiso" (Commitment Transaction) del otro par, la cual incluye la entrada de fondos firmada. Sin esta transacción, la "clave de revocación" (Revokation Key") por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones pendientes de registrar en la "blockchain" de Bitcoin) o de transacciones confirmadas en la blockchain de Bitcoin durante el Timelock. Así, demostraríamos que la otra parte está intentando llevar a cabo un engaño malicioso, ya sea intencionadamente o no.
+- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la "clave de revocación" (Revokation Key"), si uno de ellos intenta estafar fondos, publicando una transacción que refleja el estado anterior en los mempools de nodos Bitcoin. De hecho, para penalizar a la otra parte ("penalty transaction" o "justice transaction"), es necesario tener los dos secretos y, además, la "transacción de compromiso" (Commitment Transaction) del otro par, la cual incluye la entrada de fondos firmada. Sin esta "transacción de compromiso", la "clave de revocación" (Revokation Key") por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones pendientes de registrar en la "blockchain" de Bitcoin) o de transacciones confirmadas en la blockchain de Bitcoin durante el Timelock. Así, demostraríamos que la otra parte está intentando llevar a cabo un engaño malicioso, ya sea intencionadamente, o no.
 
 Para entender bien este proceso, pongamos un ejemplo:
 
