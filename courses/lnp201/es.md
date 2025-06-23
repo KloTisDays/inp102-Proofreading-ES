@@ -13,9 +13,9 @@ objectives:
 
 Adéntrese en el corazón de la Lightning Network, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network (LN). Desvela los fundamentos y mecanismos de esta red de segunda capa/nivel, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
 
-Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras, sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos  la gestión de la liquidez. Descubrirás la utilidad de las «transacciones de compromiso» (Commitment transactions), los HTLC, las «claves de revocación» (Revokation key), los "mecanismos de penalización" (Penalty Transactions), el «enrutamiento cebolla» (Onion Routing) y las facturas.
+Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras, sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos enrutadores intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos la gestión de la liquidez. Descubrirás la utilidad de las «transacciones de compromiso» (Commitment transactions), los HTLC, las «claves de revocación» (Revokation key), los "mecanismos de penalización" (Penalty Transactions), el «enrutamiento cebolla» (Onion Routing) y las facturas (Invoice).
 
-Tanto si eres un principiante como si ya eres un usuario experimentado de Bitcoin, este curso te proporcionará información valiosa sobre cómo entender y utilizar la Lightning Network. Aunque cubriremos algunos de los fundamentos sobre el funcionamiento del protocolo de Bitcoin en las primeras etapas, es esencial tener una comprensión sólida de la invención de Satoshi antes de profundizar en LNP201.
+Tanto si eres un principiante, como si ya eres un usuario experimentado de Bitcoin, este curso te proporcionará información valiosa sobre cómo entender y utilizar la Lightning Network (LN). Aunque cubriremos algunos de los fundamentos sobre el funcionamiento del protocolo de Bitcoin en las primeras etapas, es esencial tener una comprensión sólida de la invención de Satoshi antes de profundizar en LNP201.
 
 ¡Disfruta tu viaje por la Lightning Network!
 
@@ -29,19 +29,19 @@ Tanto si eres un principiante como si ya eres un usuario experimentado de Bitcoi
 
 ¡Bienvenido al curso LNP201!
 
-Este curso te proporcionará un amplio conocimiento técnico de la Lightning Network, que es una capa superpuesta, es un nivel superior encima de la blockchain de Bitcoin, que facilita transacciones de Bitcoin rápidas y, a menudo, a bajo coste. La Lightning Network funciona con un protocolo de pagos. A lo largo del curso, irás descubriendo los conceptos fundamentales que rigen el sistema: la apertura de canales de pago, las técnicas de enrutamiento de pagos y el manejo de la gestión de liquidez.
+Este curso te proporcionará un amplio conocimiento técnico de la Lightning Network (LN), que es una capa superpuesta, es un nivel superior por encima de la blockchain de Bitcoin, y que facilita transacciones de Bitcoin rápidas y, a menudo, a bajo coste. La Lightning Network funciona con un protocolo de pagos. A lo largo del curso, irás descubriendo los conceptos fundamentales que rigen el sistema: la apertura de canales de pago, las técnicas de enrutamiento de pagos y el manejo de la gestión de liquidez.
 
-**Sección 1: Fundamentos de la LN** 
-Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, las direcciones, los UTXOs y el funcionamiento de las transacciones. Este repaso básico es necesario para entender que, la Lightning Network se basa en los mecanismos subyacentes de la "cadena de bloques" (blockchain) de Bitcoin para operar de forma segura.
+**Sección 1: Fundamentos de la LN (Lightning Network)** 
+Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, las direcciones, los UTXOs y el funcionamiento de las transacciones de pagos. Este repaso básico es necesario para entender que, la Lightning Network se basa en los mecanismos subyacentes de la "cadena de bloques" (blockchain) de Bitcoin para operar de forma segura.
 
 **Sección 2: Apertura y cierre de canales** 
 En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las transacciones de compromiso (*Commitment Transactions*), el papel que tienen las claves de revocación (*Revokation key*) para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
 
 **Sección 3: Una red de liquidez**
-La Lightning Network no se limita a los canales de pago individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones pueden enrutarse/direccionarse, a través de nodos intermediarios/intermedios, utilizando los HTLC. Esta sección también aborda los retos del manejo y gestión de la liquidez entrante y saliente en los canales de pago.
+La Lightning Network no se limita a los canales de pago individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones de pagos pueden enrutarse/direccionarse, a través de nodos intermediarios/intermedios, utilizando los HTLC. Esta sección también aborda los retos del manejo y gestión de liquidez entrante y saliente en los canales de pago.
 
 **Sección 4: Herramientas de la Lightning Network**
-En esta sección se presentan las herramientas prácticas de la Lightning Network, como son: las facturas (Invoices), las LNURL y la “clave de revocación” (Keysend). También trataremos la gestión de la liquidez de tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones (eficiencia energética) con la tecnología Lightning.
+En esta sección, se presentan las herramientas prácticas de la Lightning Network, como son: las facturas (Invoices), las LNURL y  Keysend. También trataremos la gestión de la liquidez de tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones (eficiencia energética) con la tecnología Lightning.
 
 **Sección 5: Ve más allá** 
 Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos que deseen profundizar en sus conocimientos sobre la Lightning Network.
