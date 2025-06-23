@@ -328,60 +328,60 @@ Ambas partes pueden publicar, en cualquier momento, la **última transacción de
 
 ### La falla en el proceso: Estafar a la contraparte, publicando una transacción antigua.
 
-Si una de las partes decide **estafar**, publicando una "transacción de compromiso" (Commitment Transaction) antigua, surge un potencial problema.  Por ejemplo, Alice podría publicar una "transacción de compromiso" antigua con una posición de balance más favorable a la real de **100.000 satoshis**, ya que, en realidad, sólo dispone de **60.000** satoshis. Así, podría robar **40.000 satoshis** a Bob. 
+Si una de las partes decide **estafar**, publicando una "transacción de compromiso" (Commitment Transaction) antigua, surge un potencial problema.  Por ejemplo, Alice podría publicar una "transacción de compromiso" (Commitment Transaction) antigua con una posición de balance más favorable a la real de **100.000 satoshis**, aunque, en realidad, sólo dispone de **60.000** satoshis. Así, Alice podría robar **40.000 satoshis** a Bob. 
 
 ![LNP201](assets/en/23.webp)
 
-Peor aún, Alice podría publicar la primera transacción de retirada (la anterior a la apertura del canal), en la que disponía de **130,000 satoshis** y, así, estafar la totalidad de los fondos, que hay en el canal de pagos, a Bob .  
+Si nos ponemos en lo peor, Alice podría publicar la primera transacción de retirada (la anterior a la apertura del canal), en la que disponía de **130,000 satoshis** y, de esta manera, robar la totalidad de los fondos, que hay en el canal de pagos, a Bob.  
 
 ![LNP201](assets/en/24.webp)
 
-### Solución:  Revokation Key ("clave/ llave de revocación") y Timelock (“candado de tiempo”)
+### Solución: Revokation Key ("clave/ llave de revocación") y Timelock (“candado de tiempo”)
 
-Para evitar este tipo de trampas por parte de Alice, se han añadido **mecanismos de seguridad** en las "transacciones de compromiso" (Commitment Transactions) de la Lightning Network:
+Para evitar este tipo de trampas de Alice, se han añadido **mecanismos de seguridad** en las "transacciones de compromiso" (Commitment Transactions) de la Lightning Network:
 
-- **Timelock**: Cada "transacción de compromiso" (Commitment Transaction) contiene un Timelock ("candado de tiempo") para los fondos de Alice. El Timelock es una característica de los contratos inteligentes, que establece una requisito de tiempo a cumplir, para que una transacción se llegue a incluir en un bloque de la blockchain de Bitcoin. Esto significa: si Alice publica una de las "transacciones de compromiso" (Commitment Transaction) en la blockchain de Bitcoin, tendrá que esperar a que hayan transcurrido un número de bloques determinado para poder recuperar sus fondos. Este tiempo de espera comienza cuando se confirma la "transacción de compromiso" (Commitment Transaction). Su duración suele ser proporcional a la capacidad del canal, aunque este tiempo de espera también puede configurarse manualmente.
+- **Timelock**: Cada "transacción de compromiso" (Commitment Transaction) contiene un Timelock ("candado de tiempo") para los fondos de Alice. El Timelock es una característica de los contratos inteligentes, que establece una requisito de tiempo a cumplir, para que una transacción se llegue a incluir en un bloque de la blockchain de Bitcoin. Esto significa: si Alice publica una de las "transacciones de compromiso" (Commitment Transaction) en la blockchain de Bitcoin, tendrá que esperar a que hayan transcurrido un número de bloques determinado para poder recuperar sus fondos. Este tiempo de espera (número de bloques) comienza cuando se confirma la "transacción de compromiso" (Commitment Transaction). Su duración suele ser proporcional a la capacidad del canal, aunque este tiempo de espera también puede configurarse manualmente.
   
 - **Clave de revocación** (Revocation Key):
-Los fondos de Alice también pueden ser gastados por Bob directamente, si éste dispone de la "clave de revocación" (Revocation Key). Esta clave/llave está compuesta por un secreto, que controla Alice y, otro secreto, que controla Bob. Tenga en cuenta que, este secreto es diferente para cada "transacción de compromiso" (Commitment Transaction). Gracias a la combinación de estos dos mecanismos, Bob tiene tiempo de detectar el intento de estafa de Alice y puede penalizarle, recuperando su salida de liquidez con la "clave/llave de revocación" (Revocation Key). Esto significa que Bob puede recuperar todos los fondos del canal de pagos. Esta nueva "transacción de compromiso" (Commitment Transaction) la representamos así:
+Los fondos de Alice también pueden ser gastados directamente por Bob , si éste dispone de la "clave de revocación" (Revocation Key). Esta clave/llave está compuesta por un secreto, que controla Alice y, otro secreto, que controla Bob. Tenga en cuenta que, este secreto es diferente para cada "transacción de compromiso" (Commitment Transaction). Gracias a la combinación de estos dos mecanismos, Bob tiene tiempo de detectar el intento de robo de Alice y puede penalizarle, recuperando su salida de liquidez con la "clave/llave de revocación" (Revocation Key). Esto significa que, Bob puede recuperar todos los fondos del canal de pagos. Esta nueva "transacción de compromiso" (Commitment Transaction) la representamos así:
 
 ![LNP201](assets/en/25.webp)
 
-Veamos ahora el funcionamiento de este mecanismo:
+Veamos el funcionamiento de este mecanismo:
 
 ### Proceso de actualización de las transacciones
 
-Cuando Alice y Bob actualizan el estado del canal con una nueva transacción Lightning, han intercambiado previamente sus respectivos **secretos** para la anterior "transacción de compromiso" (Commitment Transaction), la cual quedará obsoleta y podría servir para estafar a la contraparte. Esto significa que en el nuevo estado del canal:
+Cuando el estado del canal se actualiza con una nueva transacción Lightning de Alice y Bob, éstos han intercambiado previamente sus respectivos **secretos** para la anterior "transacción de compromiso" (Commitment Transaction), la cual quedará obsoleta y, podría servir para estafar a la contraparte. Esto significa que en el nuevo estado del canal:
 
 - Alice y Bob tienen una nueva "transacción de compromiso", donde se ha registrado la distribución actual de los fondos, tras la transacción Lightning.
-- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la "clave de revocación" (Revokation Key"), si uno de ellos intenta estafar fondos, publicando una transacción que refleja el estado anterior en los mempools de nodos Bitcoin. De hecho, para penalizar a la otra parte ("penalty transaction" o "justice transaction"), es necesario tener los dos secretos y, además, la "transacción de compromiso" (Commitment Transaction) del otro par, la cual incluye la entrada de fondos firmada. Sin esta "transacción de compromiso", la "clave de revocación" (Revokation Key") por sí sola es inútil. La única forma de obtener esta transacción es recuperándola de los mempools (en transacciones pendientes de registrar en la "blockchain" de Bitcoin) o de transacciones confirmadas en la blockchain de Bitcoin durante el Timelock. Así, demostraríamos que la otra parte está intentando llevar a cabo un engaño malicioso, ya sea intencionadamente, o no.
+- Cada uno de ellos tiene el secreto del otro para la transacción anterior, lo que les permite usar la "clave de revocación" (Revokation Key), si uno de ellos intenta robar fondos, publicando una transacción, que refleja el estado anterior, en los mempools de nodos Bitcoin. De hecho, para penalizar a la contraparte ("penalty transaction" o "justice transaction"), es necesario tener los dos secretos, además de la "transacción de compromiso" (Commitment Transaction) del otro par, la cual incluye la entrada de fondos firmada. Sin esta "transacción de compromiso" (Commitment Transaction), la "clave de revocación" (Revokation Key") es inútil por sí sola, de manera aislada. La única forma de obtener esta "transacción de compromiso" (Commitment Transaction) es, recuperándola de los mempools (en transacciones pendientes de registrar en la blockchain de Bitcoin) o de transacciones confirmadas en la blockchain de Bitcoin durante el Timelock. Así, demostraríamos que la contraparte está intentando llevar a cabo un engaño malicioso, ya sea, intencionadamente o no.
 
 Para entender bien este proceso, pongamos un ejemplo:
 
-- **Estado inicial**: Alice tiene **100,000 satoshis** y Bob, **30,000 sathosis**.
+- **Estado inicial del canal**: Alice tiene **100,000 satoshis** y Bob, **30,000 sathosis**.
 
 ![LNP201](assets/en/26.webp)
 
-- Bob quiere recibir 40,000 satoshis de Alice, a través de su canal de pago Lightning. Para ello:
-   - Bob envía una factura a Alice, junto con su "clave secreta de revocación" (Revokation Key) para su transacción de compromiso anterior.
+- Bob quiere recibir 40,000 satoshis de Alice, a través de su canal de pagos Lightning. Para ello:
+   - Bob envía una factura (Invoice) a Alice, junto con su "clave secreta de revocación" (Revokation Key) para su "transacción de compromiso" (Commitment Transaction) anterior.
      
-- En respuesta, Alice firma la nueva transacción de compromiso de Bob, y proporciona su "clave secreta de revocación", para su transacción anterior.
+- En respuesta, Alice firma la nueva "transacción de compromiso" (Commitment Transaction) de Bob, y proporciona su "clave secreta de revocación" (Revokation Key), para su transacción anterior.
   
 - Por último, Bob envía su firma para la nueva "transacción de compromiso" (Commitment Transaction) de Alice.
-  
-   - Estos intercambios permiten a Alice enviar **40,000 satoshis** a Bob, a través de su canal de pago Lightning, y las nuevas "transacciones de compromiso" reflejan esta nueva distribución actualizada de fondos.
+
+- Estos intercambios permiten a Alice enviar **40,000 satoshis** a Bob, a través de su canal de pago Lightning, y las nuevas "transacciones de compromiso" (Commitment transactions) reflejan esta nueva distribución de fondos actualizada.
 
 ![LNP201](assets/en/27.webp)
 
-- Si Alice intenta publicar la "transacción de compromiso" antigua, en la que todavía tenía **100,000 sathosis**, Bob puede recuperar los fondos inmediatamente, usando la "clave de revocación" (Revoketion Key). Mientras tanto, Alice está bloqueada por el Timelock que marca un bloqueo temporal.
+- Si Alice intenta publicar la "transacción de compromiso" (Commitment Transaction) antigua, en la que todavía tenía **100,000 sathosis**, Bob puede recuperar los fondos inmediatamente, usando la "clave de revocación" (Revoketion Key) obtenida. Mientras tanto, Alice está bloqueada por el Timelock ("candado de tiempo") que le bloquea temporalmente.
 
 ![LNP201](assets/en/28.webp)
 
-En este caso, Bob no tiene motivaciones económicas para intentar estafar a Alice, pero si fuera así, Alice también se beneficiaría de esta protección simétrica, que ofrece las mismas garantías a Alice que a Bob.
+En este caso, Bob no tiene motivaciones económicas para intentar estafar a Alice, pero si fuera así, Alice también se beneficiaría de esta protección simétrica, la cual ofrece las mismas garantías a Alice que a Bob.
 
 **¿Qué debes extraer del contenido de este capítulo?**
 
-Las **transacciones de compromiso** ("Commitments Transactions") en la Lightning Network incorporan mecanismos de seguridad, los cuales mitigan el riesgo de estafa y minimizan el incentivo para llevar a cabo estos engaños. Antes de firmar una nueva "transacción de compromiso" (Commitment Transaction), Alice y Bob intercambian los **secretos** de las "transacciones de compromiso" anteriores. En el caso hipotético de que Alice intentase publicar una "transacción de compromiso" antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice complete su operación. Esto resultaría en una penalización por parte de Bob a Alice por intentar realizar una operación de estafa. 
+Las **transacciones de compromiso** ("Commitments Transactions") incorporan mecanismos de seguridad en la Lightning Network, los cuales mitigan el riesgo de estafa y minimizan el incentivo para llevar a cabo estos engaños. Antes de firmar una nueva "transacción de compromiso" (Commitment Transaction), Alice y Bob intercambian los **secretos** de las "transacciones de compromiso" (Commitment Transactions) anteriores. En el caso hipotético de que Alice intentase publicar una "transacción de compromiso" (Commitment Transaction) antigua, Bob podría utilizar la **clave de revocación** (Revokation Key) para recuperar la totalidad de los fondos, antes de que Alice le robe. Alice quedaría bloqueada por el Timelock ("candado de tiempo"), el cual estaría penalizando a Alice por su intento de estafa. 
 
 Este sistema de seguridad garantiza que los participantes cumplan con las normas de la Lightning Network y que no puedan beneficiarse de la publicación de "transacciones de compromiso" antiguas. 
 Ya hemos aprendido cómo las "transacciones de compromiso" de la Lightning Network incorporan mecanismos de seguridad que mitigan el riesgo de estafa y el incentivo para llevarlas a cabo. En el contexto de las transacciones de compromiso, se establece un intercambio de secretos entre Alice y Bob, antes de proceder con una nueva transacción. 
