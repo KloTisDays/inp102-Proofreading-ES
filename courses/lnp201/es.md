@@ -11,9 +11,9 @@ objectives:
 
 # Un Viaje hacia la Segunda Capa de Bitcoin 
 
-Adéntrese en el corazón de la Lightning Network, un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network (LN). Desvela los fundamentos y mecanismos de esta red de segunda capa/nivel, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
+Adéntrese en el corazón de la Lightning Network (LN), un sistema esencial para el futuro de las transacciones de Bitcoin. LNP201 es un curso teórico que profundiza en el funcionamiento técnico de la Lightning Network (LN). Desvela los fundamentos y mecanismos de esta red de segunda capa/nivel, diseñada para facilitar pagos Bitcoin rápidos, económicos y escalables.
 
-Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras, sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos enrutadores intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos la gestión de la liquidez. Descubrirás la utilidad de las «transacciones de compromiso» (Commitment transactions), los HTLC, las «claves de revocación» (Revokation key), los "mecanismos de penalización" (Penalty Transactions), el «enrutamiento cebolla» (Onion Routing) y las facturas (Invoice).
+Gracias a su red de canales de pago, la tecnología Lightning, posibilita transacciones rápidas y seguras, sin necesidad de registrar cada intercambio en la blockchain ("cadena de bloques") de Bitcoin. A lo largo de este curso, aprenderás a crear, gestionar y cerrar los canales de pago. También aprenderemos cómo enrutar los pagos de forma segura, a través de nodos enrutadores intermedios, minimizando la necesidad de confianza en otros nodos. Además, trataremos la gestión de liquidez. Descubrirás la utilidad de las Commitment Transactions («transacciones de compromiso»), los HTLC, las Revokation Key («claves de revocación») , los Penalty Transactions ("mecanismos de penalización") , el Onion Routing («enrutamiento cebolla») y las Invoice (facturas).
 
 Tanto si eres un principiante, como si ya eres un usuario experimentado de Bitcoin, este curso te proporcionará información valiosa sobre cómo entender y utilizar la Lightning Network (LN). Aunque cubriremos algunos de los fundamentos sobre el funcionamiento del protocolo de Bitcoin en las primeras etapas, es esencial tener una comprensión sólida de la invención de Satoshi antes de profundizar en LNP201.
 
@@ -32,19 +32,19 @@ Tanto si eres un principiante, como si ya eres un usuario experimentado de Bitco
 Este curso te proporcionará un amplio conocimiento técnico de la Lightning Network (LN), que es una capa superpuesta, es un nivel superior por encima de la blockchain de Bitcoin, y que facilita transacciones de Bitcoin rápidas y, a menudo, a bajo coste. La Lightning Network funciona con un protocolo de pagos. A lo largo del curso, irás descubriendo los conceptos fundamentales que rigen el sistema: la apertura de canales de pago, las técnicas de enrutamiento de pagos y el manejo de la gestión de liquidez.
 
 **Sección 1: Fundamentos de la LN (Lightning Network)** 
-Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, las direcciones, los UTXOs y el funcionamiento de las transacciones de pagos. Este repaso básico es necesario para entender que, la Lightning Network se basa en los mecanismos subyacentes de la "cadena de bloques" (blockchain) de Bitcoin para operar de forma segura.
+Comenzaremos con una introducción general a la Lightning Network, en la que abordaremos: los fundamentos esenciales de Bitcoin, las direcciones, los UTXOs y el funcionamiento de las transacciones de pagos. Este repaso básico es necesario para entender que, la Lightning Network se basa en los mecanismos subyacentes de la blockchain de Bitcoin para operar de forma segura.
 
 **Sección 2: Apertura y cierre de canales** 
-En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las transacciones de compromiso (*Commitment Transactions*), el papel que tienen las claves de revocación (*Revokation key*) para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
+En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las *Commitment Transactions* ("transacciones de compromiso"), el papel que tienen las *Revokation key* ("claves de revocación") para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
 
 **Sección 3: Una red de liquidez**
 La Lightning Network no se limita a los canales de pago individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones de pagos pueden enrutarse/direccionarse, a través de nodos intermediarios/intermedios, utilizando los HTLC. Esta sección también aborda los retos del manejo y gestión de liquidez entrante y saliente en los canales de pago.
 
 **Sección 4: Herramientas de la Lightning Network**
-En esta sección, se presentan las herramientas prácticas de la Lightning Network, como son: las facturas (Invoices), las LNURL y  Keysend. También trataremos la gestión de la liquidez de tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones (eficiencia energética) con la tecnología Lightning.
+En esta sección, se presentan las herramientas prácticas de la Lightning Network, como son: Invoices ("facturas")), las LNURL y  Keysend. También trataremos la gestión de liquidez en tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones (eficiencia energética) con la tecnología Lightning.
 
 **Sección 5: Ve más allá** 
-Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos que deseen profundizar en sus conocimientos sobre la Lightning Network.
+Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos que deseen profundizar en sus conocimientos sobre Lightning Network.
 
 ¿Listo para descubrir el funcionamiento técnico de la Lightning Network? ¡Vamos a ello!
 
@@ -58,17 +58,17 @@ Por último, concluiremos la formación con un repaso de los conceptos tratados 
 
 :::video id=62831f54-0ee7-403b-b0e3-67084c2ef6ea:::
 
-La Lightning Network es una red de canales de pagos, construida sobre el protocolo Bitcoin, que permite transacciones rápidas y a bajo coste. La LN es la capa o nivel 2, que permite crear canales de pago entre participantes, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la cadena de bloques de Bitcoin (blockchain). De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo importe.
+La Lightning Network es una red de canales de pagos, construida sobre el protocolo Bitcoin, que permite transacciones rápidas y a bajo coste. La LN es la capa o nivel 2, que permite crear canales de pago entre pares, en los que las transacciones pueden realizarse de forma casi instantánea y con comisiones mínimas, sin necesidad de registrar cada operación por separado en la blockchain de Bitcoin. De este modo, la Lightning Network mejora la escalabilidad de Bitcoin y lo hace apto para pagos de bajo importe.
 
-Antes de abordar el concepto «red» ("network"), es fundamental comprender el concepto de **canal de pago** ("payment channel") en Lightning, además estudiaremos su funcionamiento y sus particularidades. Este es el tema de este primer capítulo.
+Antes de abordar el concepto «red» ("network"), es fundamental comprender el concepto de **payment channel** ("canal de pago") en Lightning. Además, estudiaremos su funcionamiento y sus particularidades. Este es el tema de este primer capítulo.
 
 ### El Concepto de un canal de pagos
 
-Un canal de pago permite a dos partes, en este caso **Alice** y **Bob**, intercambiar fondos a través de la Lightning Network. Cada parte tiene un nodo, simbolizado por un círculo, y el canal de pago, entre ellos, está representado por un segmento, que los conecta.
+Un canal de pago permite a dos pares, en este caso **Alice** y **Bob**, intercambiar fondos, a través de la Lightning Network. Cada par tiene un nodo, simbolizado por un círculo, y el canal de pago, entre ellos, está representado por un segmento, que los conecta.
 
 ![LNP201](assets/en/01.webp)
 
-En nuestro ejemplo, Alice tiene 100,000 satoshis en su extremo del canal de pago y Bob tiene 30.000, por lo que el total es de 130.000 satoshis, y ésta es es la **capacidad total del canal**.
+En nuestro ejemplo, Alice tiene 100,000 satoshis en su extremo del canal de pago y Bob tiene 30.000 satoshis, por lo que el total es de 130.000 satoshis, que es es la **capacidad total del canal**.
 
 **¿Qué es un satoshi?**
 
@@ -76,7 +76,7 @@ El **satoshi** (o «sat») es una unidad de cuenta de Bitcoin. Al igual que un c
 
 ### La distribución de fondos en el canal de pagos
 
-Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis y Bob, 30.000 sats. Como hemos visto, la suma de estos fondos representa la capacidad total del canal;  y es un número establecido cuando se abre.
+Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis y Bob, 30.000 sats. Como hemos visto, la suma de estos fondos representa la capacidad total del canal;  y es un número establecido cuando se abre el canal de pagos.
 
 ![LNP201](assets/en/02.webp)
 
@@ -84,9 +84,9 @@ Pongamos un ejemplo de transacción Lightning: Si Alice quiere enviar 40,000 sat
 
 ![LNP201](assets/en/03.webp)
 
-La **capacidad del canal** se mantiene constante en 130,000 satoshis. Lo que cambia es la distribución de los fondos. Este sistema no permite enviar más fondos de los que se tienen. Por ejemplo, si Bob quisiera enviar 80,000 satoshis a Alice, no podrá, porque únicamente tiene 70,000 satoshis.
+La **capacidad del canal** se mantiene constante en 130,000 satoshis. Lo que cambia es la distribución de los fondos. Este sistema no permite enviar más fondos de los que se tienen. Por ejemplo, si Bob quisiera enviar 80,000 satoshis a Alice, no podrá, porque, tiene solamente 70,000 satoshis.
 
-Otra manera de imaginar la asignación de fondos es pensar en un **"cursor deslizable" (slider)"** que marca dónde están los fondos en el canal. Inicialmente, con 100,000 satoshis para Alice y 30,000 para Bob, el cursor deslizable está, lógicamente, en el extremo de Alice. Después de la transacción de 40,000 satoshis, el cursor deslizable se moverá ligeramente hacia el lado de Bob, quien ahora tiene 70,000 satoshis.
+Otra manera de imaginar la asignación de fondos es pensar en un **slider" ("cursor deslizable")** que marca el lugar donde están los fondos en el canal de pagos. Inicialmente, con 100,000 satoshis para Alice y 30,000 para Bob, el cursor deslizable está, lógicamente, en el extremo de Alice. Después de la transacción de 40,000 satoshis, el cursor deslizable se moverá ligeramente hacia el lado de Bob, quien ahora tiene 70,000 satoshis.
 
 ![LNP201](assets/en/04.webp)
 
@@ -95,16 +95,16 @@ Esta representación puede ser útil para visualizar la distribución de fondos 
 ### Las reglas fundamentales de un canal de pagos
 
 Lo primero que hay que hay que tener en cuenta es, que la capacidad del canal es fija. Es como el diámetro de una tubería: determina la cantidad máxima de dinero que puede enviarse a través del canal de pago en un momento dado.
-Pongamos un ejemplo: si Alice dispone de 130.000 satoshis, solamente puede enviar 130.000 satoshis a Bob en una única transacción. Sin embargo, Bob puede devolverle una parte o la totalidad de estos fondos.
+Pongamos un ejemplo: si Alice dispone de 130.000 satoshis, solamente puede enviar 130.000 satoshis a Bob en una única transacción. Sin embargo, Bob puede devolverle una parte o la totalidad de estos fondos a Alice.
 
-Es importante entender que la capacidad fija del canal limita el importe máximo de una única transacción, pero no el número total de transacciones posibles ni el volumen total de fondos intercambiados dentro del canal.
+Es importante entender que la capacidad fija del canal limita el importe máximo de una única transacción, pero no el número total de transacciones posibles, ni el volumen total de fondos intercambiados dentro del canal.
 
 **¿Qué conclusiones se pueden extraer del contenido de este capítulo?**
 
 - La capacidad de un canal es fija y determina la cantidad máxima que se puede enviar en una sola transacción.
-- Los fondos de un canal se reparten entre los dos pares, y cada uno solamente puede enviar al otro los fondos de los que dispone.
+- Los fondos de un canal se distribuyen entre dos pares, y cada uno, solamente puede enviar por el canal de pagos los fondos de los que disponga en su extremo del canal de pagos al otro.
 De este modo, la Lightning Network permite intercambiar fondos de forma rápida y eficaz, respetando los límites impuestos por la capacidad de los canales.
-Con esto concluye el primer capítulo, en el que hemos sentado las bases de la Lightning Network. En los siguientes capítulos, veremos cómo abrir un canal e investigaremos minuciosamente los conceptos aquí tratados.
+Con esto concluye el primer capítulo, en el que hemos sentado las bases de la Lightning Network. En los siguientes capítulos, veremos cómo abrir un canal de pago e investigaremos minuciosamente los conceptos aquí tratados.
 
 ## Bitcoin, Direcciones, UTXO y Transacciones
 
@@ -113,57 +113,57 @@ Con esto concluye el primer capítulo, en el que hemos sentado las bases de la L
 :::video id=e516e004-3977-45e2-8f50-aa582061b7fa:::
 
 Este capítulo es un poco especial, porque no está dedicado directamente a la Lightning Network, sino a Bitcoin.
-De hecho, la Lightning Network es una capa o nivel, que se superpone a la blockchain de Bitcoin. Por lo tanto, es importante comprender algunos conceptos básicos de Bitcoin, para ir entendiendo correctamente cómo funciona la Lightning Network en los siguientes capítulos. En este capítulo, repasaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXO y el funcionamiento de las transacciones de Bitcoin.
+De hecho, la Lightning Network es una capa o nivel, que se superpone a la blockchain de Bitcoin. Por lo tanto, es importante comprender algunos conceptos básicos de Bitcoin, para ir entendiendo correctamente cómo funciona la Lightning Network en los siguientes capítulos. En este capítulo, repasaremos los conceptos básicos de las direcciones de recepción de Bitcoin, los UTXO y el funcionamiento de las transacciones en Bitcoin.
 
 ### Direcciones Bitcoin, claves públicas y privadas
 
-Una dirección de Bitcoin es una cadena de caracteres derivada de una **clave pública**, que ,a su vez, se calcula a partir de una **clave privada**. Como sabes, se utiliza para bloquear Bitcoins, lo que equivale a recibirlos en nuestro monedero.
+Una dirección de Bitcoin es una cadena de caracteres derivada de una **public key ("clave pública")**, que ,a su vez, se calcula a partir de una **private key ("clave privada")**. Como sabes, se utiliza para bloquear Bitcoins, lo que equivale a recibirlos en nuestra wallet.
 
-La clave privada es un elemento secreto que **nunca debe compartirse**, mientras que la clave pública y la dirección pueden compartirse, sin que suponga ningún riesgo para la seguridad (su revelación sólo representa un riesgo para tu privacidad). A continuación, se muestra una representación común, que utilizaremos a lo largo de esta formación:
+La private key ("clave privada") es un elemento secreto que **nunca debe compartirse**, mientras que la public key ("clave pública") y la dirección (address) pueden compartirse, sin que suponga ningún riesgo para la seguridad (su revelación sólo representa un riesgo para tu privacidad). A continuación, se muestra una representación común, que utilizaremos a lo largo de esta formación:
 
-- Las **claves privadas** se muestran **verticalmente**.
-- Las **claves públicas** se muestran **horizontalmente**.
-- Su color indica a quién pertenecen (Alice en color naranja y, Bob, en color negro).
+- Las **private keys ("claves privadas")** se muestran **verticalmente**.
+- Las **public keys ("claves públicas")** se muestran **horizontalmente**.
+- Su color indica a quién pertenecen (Alice en color naranja o, Bob, en color negro).
 
 ### Transacciones de Bitcoin: Envio de dinero y Scripts
 
-En Bitcoin, una transacción implica el envío de dinero de una dirección a otra. Tomemos el ejemplo de Alice enviando 0,002 Bitcoin a Bob. Alice utiliza la clave privada asociada a su dirección para **firmar** la transacción, lo que muestra que puede gastar esos fondos. Pero, ¿qué ocurre exactamente detrás de esta transacción? Los fondos de una dirección Bitcoin están bloqueados por un **script**, es decir, un miniprograma, que impone ciertas condiciones para el gasto de los fondos.
+En Bitcoin, una transacción implica el envío de dinero de una dirección a otra. Tomemos el ejemplo de Alice enviando 0,002 Bitcoin a Bob. Alice utiliza la private key ("clave privada"), asociada a su dirección Bitcoin, para **firmar** la transacción. Esto demuestra que dispone y puede gastar esos fondos. Pero, ¿qué ocurre exactamente detrás de esta transacción? Los fondos de una dirección Bitcoin están bloqueados por un **script**, es decir, un miniprograma, que impone ciertas condiciones para el gasto de los fondos.
 
-El script más común y corriente requiere una firma con la clave privada de la dirección de recepción de Bitcoins. Cuando Alice firma una transacción con su clave privada, **desbloquea el script**, el cual está bloqueando los fondos, que ahora pueden ser transferidos. Transferir los fondos implica añadir un nuevo script a esos fondos, que estipula que se requiere la firma de la clave privada de **Bob** para gastar los fondos.
+El script más común y corriente requiere una firma con la private key ("clave privada") de la dirección de recepción de Bitcoins. Cuando Alice firma una transacción con su clave privada, **desbloquea el script**, el cual está bloqueando los fondos, que ahora pueden ser transferidos. Transferir los fondos implica añadir un nuevo script a esos fondos, que estipula que se requiere la firma de la private key ("clave privada") de **Bob** para gastar los fondos.
 
 
 ![LNP201](assets/en/05.webp)
 
-### UTXOs: Unspent Transaction Outputs: "Salidas de Transacción No Gastadas" 
+### UTXOs: Unspent Transaction Outputs: ("Salidas de Transacción No Gastadas") 
 
-### UTXOs: "Salidas de Transacciones No Gastadas"
+### UTXOs: Unspent Transaction Outputs
 
-En Bitcoin, lo que realmente intercambiamos no son directamente bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_). El acrónimo UTXO significa "Unspent Transaction Output", que, en español, se puede traducir como "Salida de Transacción No Gastada".
+En Bitcoin, lo que realmente intercambiamos no son directamente bitcoins, sino **UTXOs** (_Unspent Transaction Outputs_). El acrónimo UTXO significa "Unspent Transaction Output", que, en español, puede traducirse como "Salida de Transacción No Gastada".
 
-Un UTXO es una pieza de Bitcoin que puede tener cualquier valor, por ejemplo, **2,000 bitcoins**, **8 bitcoins**, o **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, debemos cumplir las condiciones del script, que es una firma con la clave privada de una dirección de recepción determinada.
+Un UTXO es una pieza de Bitcoin que puede tener cualquier valor, por ejemplo, **2,000 bitcoins**, **8 bitcoins**, o **8,000 sats**. Cada UTXO está bloqueado por un script, y para gastarlo, debemos cumplir las condiciones del script: una firma con la private key ("clave privada") de una dirección (address) de recepción fijada.
 
-Los UTXOs no pueden dividirse. Cada vez que se utilizan los UTXOs para gastar la cantidad en Bitcoins que representan, debe utilizarse la suma del UTXO en su totalidad. Puede compararse con un billete de banco: si tienes un billete de €10 y le debes €5 al panadero, no puedes cortar el billete por la mitad. Tienes que darle el billete de €10, y él te dará €5 de cambio. ¡Este es exactamente el mismo principio para los UTXOs en Bitcoin! Por ejemplo, cuando Alice desbloquea un script con su clave privada, el UTXO completo se desbloquea. Si desea enviar solo una parte de los fondos representados por este UTXO a Bob, puede "fragmentarlo" en varios UTXOs más pequeños. Alice va a enviar 0.0015 BTC a Bob y el resto, 0.0005 BTC, lo va a enviar a una **dirección de cambio** (Change Address). 
-Esta dirección de cambio (Change Address) se refiere a una dirección, donde se reciben los fondos restantes de una transacción, en la que los fondos son mayores que el valor total del UTXO seleccionado.
+Los UTXOs no pueden dividirse. Cada vez que se utilizan los UTXOs para gastar la cantidad en Bitcoins que representan, debe utilizarse la suma del UTXO en su totalidad. Puede compararse con un billete de banco: si tienes un billete de €10 y le debes €5 al panadero, no puedes cortar el billete por la mitad. Tienes que darle el billete de 10€, y él te dará 5€ de cambio. ¡Este es exactamente el mismo principio para los UTXOs en Bitcoin! Por ejemplo, cuando Alice desbloquea un script con su private key ("clave privada"), el UTXO completo se desbloquea. Si desea enviar sólo una parte de los fondos, representados por este UTXO, a Bob, puede "fragmentarlo" en varios UTXOs más pequeños. Alice va a enviar 0.0015 BTC a Bob y el resto, 0.0005 BTC, lo va a enviar a una **Change Address ("dirección de cambio")**.
+Esta Change Address ("dirección de cambio") se refiere a una dirección, donde se reciben los fondos restantes de una transacción, en la que la cantidad de los fondos enviados es mayor que el valor total del UTXO en concreto.
 
-Este término (UTXOs) se refiere a las unidades de Bitcoin, que no han sido gastadas en transacciones anteriores y se crean durante las transacciones y sirven como un medio para rastrear la propiedad y prevenir el doble gasto. Al rastrear las UTXOs, la red de Bitcoin puede verificar la autenticidad de las transacciones y, prevenir el doble gasto sin depender de terceros.  
-Las UTXOs son un componente clave para la seguridad y la confianza en la red descentralizada de Bitcoin. El modelo UTXO no requiere un tercero de confianza para verificar las transacciones. Lo que lo hace resistente a la censura, ya que no hay una autoridad central que pueda impedir que se envíen transacciones.  
+Este término (UTXOs) se refiere a las unidades de Bitcoin, que no han sido gastadas en transacciones anteriores, son creadas durante las transacciones, sirven como medio para rastrear la propiedad de los Bitcoins y previenen el doble gasto de Bitcoins. Al rastrear las UTXOs, la red de Bitcoin puede verificar la autenticidad de las transacciones y, prevenir el doble gasto sin depender de terceros.  
+Las UTXOs son un componente clave para la seguridad y la confianza en la red descentralizada de Bitcoin. El modelo UTXO no requiere un tercero de confianza para verificar las transacciones. Esto los hace resistentes a la censura, ya que no hay una autoridad central que pueda impedir el envío de transacciones.  
 
 Este es un ejemplo de una transacción con 2 salidas:
 
-- Un UTXO de 0.0015 BTC para Bob, bloqueado por un script, que requiere la firma de la clave privada de Bob.
+- Un UTXO de 0.0015 BTC para Bob, bloqueado por un script, que requiere la firma de la private key ("clave privada") de Bob.
 - Un UTXO de 0.0005 BTC para Alice, bloqueado por un script, que requiere su propia firma.
   
 ![LNP201](assets/en/06.webp)
 
 ### Direcciones Multi-firma: (Multi-signature Address)
 
-Además de las direcciones simples generadas a partir de una única clave pública, es posible crear **direcciones multi-firma** (multisig), a partir de varias claves públicas. Un caso particularmente interesante de la Lightning Network es la **dirección multi-firma 2/2** (peer-to-peer), generada a partir de dos claves públicas:
+Además de las direcciones simples generadas a partir de una única public key ("clave pública"), es posible crear **direcciones multi-firma** (multisig), a partir de varias public keys ("claves públicas"). Un caso particularmente interesante de la Lightning Network, es la **Multi-signature Address ("dirección multi-firma 2/2) (peer-to-peer), generada a partir de dos public keys ("claves públicas"):
 
 ![LNP201](assets/en/07.webp)
 
-Para gastar los fondos bloqueados con esta dirección multi-firma 2/2 (peer-to-peer), es necesario firmar con las dos claves privadas, asociadas a las claves públicas.
+Para gastar los fondos bloqueados con esta Multi-signature Address ("dirección multi-firma 2/2) (peer-to-peer), es necesario firmar con las dos private keys ("claves privadas"), asociadas a las public keys ("claves públicas").
 
-La **dirección multi-firma 2/2** (Multi-signature Address) sirve para securizar las transacciones entre pares. Es decir, ambos pares deben firmar cualquier transacción para que ésta se valide. La dirección multi-firma (2-of-2 multisig address) requiere las dos firmas de las dos claves públicas seleccionadas para poder gastar los fondos, y esto asegura que, ninguna de los dos pares pueda mover los fondos de forma unilateral. 
+La **Multi-signature Address ("dirección multi-firma 2/2)** sirve para securizar las transacciones entre pares. Es decir, ambos pares deben firmar cualquier transacción para que ésta se valide. La 2-of-2 multisig address ("dirección multi-firma 2/2) requiere las dos firmas de las dos public keys ("claves públicas") fijadas para poder gastar los fondos, y esto asegura que, ninguna de los dos pares pueda transmitir fondos por decisión unilateral. 
 
 ![LNP201](assets/en/08.webp)
 
@@ -171,12 +171,12 @@ Este tipo de dirección es, precisamente, la representación de los canales de p
 
 **¿Cuáles son los puntos principales de este capítulo?** 
 
-- Una **dirección de Bitcoin** se deriva de una clave pública, que a su vez, deriva de una clave privada.
-- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar estos fondos, uno debe cumplir las condiciones del script: Esto consiste en proveer una firma válida con su clave privada correspondiente.
+- Una **Address ("dirección") de Bitcoin** se deriva de una public key ("clave pública"), que a su vez, deriva de una private key ("clave privada").
+- Los fondos en Bitcoin están bloqueados por **scripts**, y para gastar estos fondos, uno debe cumplir las condiciones del script: Esto consiste en proveer una firma válida con su private key ("clave privada") correspondiente.
 - Los **UTXOs** son unidades de Bitcoin bloqueadas por scripts, y cada transacción en Bitcoin consiste en desbloquear un UTXO y luego crear uno o más UTXOs nuevos a cambio.
-- Las **direcciones multi-firma 2/2** requieren la firma de dos claves privadas para gastar los fondos. En la Lightning Network, estas direcciones específicas se utilizan para crear canales de pago. 
+- Las **Multi-signature Addresses ("direcciones multi-firma 2/2)** requieren la firma de dos private keys ("claves privadas") para poder gastar los fondos. En la Lightning Network, estas direcciones específicas se utilizan para crear canales de pagos. 
 
-Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciales para entender lo que sigue. En el próximo capítulo, analizaremos cómo funciona la apertura de canales de pago en la Lightning Network. 
+Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciales para entender lo que sigue a continuación. En el próximo capítulo, detallaremos el funcionamiento y apertura de payment channels ("canales de pago") en la Lightning Network (LN). 
 
 # Apertura y Cierre de Canales
 
