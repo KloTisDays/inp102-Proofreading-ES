@@ -17,7 +17,7 @@ Gracias a su red de canales de pago, la tecnología Lightning, posibilita transa
 
 Tanto si eres un principiante, como si ya eres un usuario experimentado de Bitcoin, este curso te proporcionará información valiosa sobre cómo entender y utilizar la Lightning Network (LN). Aunque cubriremos algunos de los fundamentos sobre el funcionamiento del protocolo de Bitcoin en las primeras etapas, es esencial tener una comprensión sólida de la invención de Satoshi antes de profundizar en LNP201.
 
-¡Disfruta tu viaje por la Lightning Network!
+¡Disfruta de  tu viaje por la Lightning Network!
 
 +++
 
@@ -38,10 +38,10 @@ Comenzaremos con una introducción general a la Lightning Network, en la que abo
 En esta sección, exploraremos el proceso de apertura de canales, que es la piedra angular de la Lightning Network. Aprenderás cómo se crean las *Commitment Transactions* ("transacciones de compromiso"), el papel que tienen las *Revokation key* ("claves de revocación") para la seguridad y, cómo se pueden cerrar los canales de forma colaborativa o unilateral. Cada paso se explica con precisión y de forma técnica, para que puedas comprender todos los detalles.
 
 **Sección 3: Una red de liquidez**
-La Lightning Network no se limita a los canales de pago individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones de pagos pueden enrutarse/direccionarse, a través de nodos intermediarios/intermedios, utilizando los HTLC. Esta sección también aborda los retos del manejo y gestión de liquidez entrante y saliente en los canales de pago.
+La Lightning Network no se limita a los canales de pago individuales, sino que es una auténtica red de pagos. Veremos cómo las transacciones de pagos pueden enrutarse/direccionarse, a través de nodos intermediarios/intermedios, utilizando los HTLC. Esta sección también aborda los retos del manejo y gestión de liquidez entrante y saliente en los canales de pagos.
 
 **Sección 4: Herramientas de la Lightning Network**
-En esta sección, se presentan las herramientas prácticas de la Lightning Network, como son: Invoices ("facturas")), las LNURL y  Keysend. También trataremos la gestión de liquidez en tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones (eficiencia energética) con la tecnología Lightning.
+En esta sección, se presentan las herramientas prácticas de la Lightning Network, como son: Invoices ("facturas"), las LNURL y  Keysend. También trataremos la gestión de liquidez en tus canales de pago, un aspecto esencial para garantizar la fluidez de los pagos y maximizar la eficiencia de tus transacciones (eficiencia energética) con la tecnología Lightning.
 
 **Sección 5: Ve más allá** 
 Por último, concluiremos la formación con un repaso de los conceptos tratados y avanzaremos hacia temas más específicos para áquellos que deseen profundizar en sus conocimientos sobre Lightning Network.
@@ -64,7 +64,7 @@ Antes de abordar el concepto «red» ("network"), es fundamental comprender el c
 
 ### El Concepto de un canal de pagos
 
-Un canal de pago permite a dos pares, en este caso **Alice** y **Bob**, intercambiar fondos, a través de la Lightning Network. Cada par tiene un nodo, simbolizado por un círculo, y el canal de pago, entre ellos, está representado por un segmento, que los conecta.
+Un canal de pago permite a dos pares, en este caso **Alice** y **Bob**, intercambiar fondos, a través de la Lightning Network. Cada par tiene un nodo, simbolizado por un círculo, y el canal de pago , que discurre entre ellos, está representado por un segmento, que los conecta.
 
 ![LNP201](assets/en/01.webp)
 
@@ -74,9 +74,9 @@ En nuestro ejemplo, Alice tiene 100,000 satoshis en su extremo del canal de pago
 
 El **satoshi** (o «sat») es una unidad de cuenta de Bitcoin. Al igual que un céntimo de euro, un satoshi es simplemente, una fracción de un Bitcoin. Un satoshi equivale a **0.00000001 Bitcoin**, es decir, la cienmillonésima parte de un Bitcoin (que es cada una de las partes iguales de una unidad de medida dividida en cien millones de ellas). A medida que aumente el valor de Bitcoin, el uso de satoshis o "sats" se volverá más práctico.
 
-### La distribución de fondos en el canal de pagos
+### La distribución de los fondos en el canal de pagos
 
-Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis y Bob, 30.000 sats. Como hemos visto, la suma de estos fondos representa la capacidad total del canal;  y es un número establecido cuando se abre el canal de pagos.
+Volvamos al canal de pago. El concepto clave aquí es el «**extremo del canal**». Cada participante tiene fondos en su extremo/lado del canal: Alice tiene 100.000 satoshis y Bob, 30.000 sats. Como hemos visto, la suma de estos fondos representa la capacidad total del canal; y es un número establecido cuando se abre el canal de pagos.
 
 ![LNP201](assets/en/02.webp)
 
@@ -190,9 +190,9 @@ Este capítulo sobre Bitcoin nos ha permitido revisar algunas nociones esenciale
 
 En este capítulo, veremos cómo abrir un canal de pagos en la Lightning Network y analizaremos cómo enlazan la apertura del canal de pagos y el sistema subyacente de Bitcoin.
 
-### Canales de pago en la Lightning Network de Bitcoin
+### Los canales de pago en la Lightning Network de Bitcoin
 
-Como vimos en el primer capítulo, un **canal de pago** en la Lightning Network puede compararse con una "tubería" por la que  transitan los fondos entre dos pares (**Alice** y **Bob**, en nuestros ejemplos). La capacidad total de este canal corresponde a la suma de los fondos disponibles en cada extremo. En nuestro ejemplo, Alice tiene **100,000 satoshis** y Bob tiene **30,000 satoshis**, lo que suma una **capacidad total** de **130,000 satoshis**.
+Como vimos en el primer capítulo, un **canal de pago** en la Lightning Network puede compararse con una "tubería", por la que  transitan los fondos entre dos pares (**Alice** y **Bob**, en nuestros ejemplos). La capacidad total de este canal corresponde a la suma de los fondos disponibles en cada extremo. En nuestro ejemplo, Alice tiene **100,000 satoshis** y Bob tiene **30,000 satoshis**, lo que suma una **capacidad total** del canal de pago de **130,000 satoshis**.
 
 ![LNP201](assets/en/09.webp)
 
@@ -200,13 +200,13 @@ Como vimos en el primer capítulo, un **canal de pago** en la Lightning Network 
 
 Es crucial distinguir de forma clara los diferentes niveles de intercambio de información en la Lightning Network:
 
-- **Comunicaciones entre pares (Peer-to-peer) (protocolo Lightning)**: Estos son los mensajes, que los nodos de Lightning se envían entre sí para comunicarse. En nuestros diagramas, representaremos estos mensajes con líneas negras punteadas .
+- **Comunicaciones entre pares (Peer-to-peer) (protocolo Lightning)**: Estos son los mensajes, que los nodos de Lightning se envían entre sí para comunicarse. En nuestros diagramas, representaremos estos mensajes con líneas negras punteadas.
 - **Canales de pago (protocolo Lightning)**: son rutas de intercambio de fondos en la Lightning Network, que representaremos con líneas negras continuas.
 - **Transacciones Bitcoin (protocolo Bitcoin)**: son las transacciones realizadas en la cadena de bloques (blockchain), (onchain) y las representaremos con líneas en color naranja.
 
 ![LNP201](assets/en/10.webp)
 
-Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero para intercambiar fondos, es necesario abrir un canal de pagos.
+Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2P (peer-to-peer), sin necesidad de abrir un canal de pago, pero, para intercambiar fondos, es necesario abrir un canal de pagos.
 
 ### Pasos para abrir un canal de pagos en la Lightning Network
 
@@ -219,11 +219,11 @@ Cabe destacar que un nodo Lightning puede comunicarse a través del protocolo P2
 ![LNP201](assets/en/12.webp)
 
 - **Transacción de depósito de fondos**: Alice prepara una transacción de Bitcoin para depositar fondos en esta dirección multi-firma. Alice decide enviar **130,000 satoshis** a esta dirección multifirma.
-Esta transacción está **construida, pero no se ha publicado todavía** en la "cadena de bloques" (blockchain).
+Esta transacción está **construida, pero no se ha publicado todavía** en la blockchain.
 
 ![LNP201](assets/en/13.webp)
 
-- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats serán bloqueados en una dirección multifirma 2/2 y, estos fondos solamente podrán desbloquearse con su firma, pero también con la firma de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
+- **Transacción de retiro de fondos**: antes de publicar la transacción de depósito, Alice crea una transacción de retiro de fondos para poder recuperarlos, en caso de que haya algún problema con Bob. De hecho, una vez que Alice publica la transacción de depósito, su sats serán bloqueados en una dirección multifirma 2/2 y, estos fondos solamente podrán desbloquearse con su firma, pero también es necesaria la firma de Bob. Alice se protege contra este riesgo de pérdida, construyendo la transacción de retiro, que le permite recuperar sus fondos.
   
 ![LNP201](assets/en/14.webp)
 
@@ -231,7 +231,7 @@ Esta transacción está **construida, pero no se ha publicado todavía** en la "
 
 ![LNP201](assets/en/15.webp)
 
-- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la cadena de bloques (blockchain) de Bitcoin, abriendo oficialmente el canal de pago Lightning, entre ambos usuarios.
+- **Publicación de la transacción de depósito**: una vez obtenida la firma de Bob, Alice puede publicar la transacción de depósito en la blockchain de Bitcoin, abriendo oficialmente el canal de pago Lightning, entre ambos usuarios.
   
 ![LNP201](assets/en/16.webp)
 
@@ -239,13 +239,17 @@ Esta transacción está **construida, pero no se ha publicado todavía** en la "
 
 El canal se considera abierto, cuando la transacción de depósito se incluye en un bloque de la blockchain de Bitcoin. Esta transacción tiene que acumular el número de confirmaciones necesarias (número de bloques siguientes), para verificar la validez de la operación en el canal de pagos Lightning.
 
-**¿Qué debo recordar de este capítulo?** 
+**¿Qué debo recordar de este capítulo?**
+
 - La apertura de un canal comienza con el intercambio de **mensajes** entre los dos pares (intercambio de importes y claves públicas).
+  
 — Un canal se forma con la creación de una dirección **multi-firma 2/2** y el depósito de fondos en esta dirección, mediante una transacción de Bitcoin.
+
 - La persona que abre el canal de pagos asegura la **recuperación de sus fondos**, mediante una transacción de retirada, firmada por la otra parte, antes de publicar la transacción de depósito.
+  
 En el próximo capítulo, exploraremos el funcionamiento técnico de una transacción Lightning, que se sucede en un canal de pagos.
 
-## "Transacción de Compromiso" (Commitment Transaction)
+## Commitment Transaction ("Transacción de Compromiso")
 
 <chapterId>7d3fd135-129d-5c5a-b306-d5f2f1e63340</chapterId>
 
@@ -255,7 +259,7 @@ En este capítulo, descubriremos el funcionamiento técnico del envío de una tr
 
 ### El ciclo de vida del canal de pagos
 
-Como hemos visto anteriormente, la **apertura** de un canal de pagos comienza a través de una transacción de Bitcoin en la Lightning Network. El canal se puede **cerrar** cuando se desee. El canal se cierra también a través de una transacción Bitcoin. Entre la apertura y el cierre del canal de pago, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que pasar por la blockchain de Bitcoin. Veamos qué ocurre dentro de un canal de pagos durante una transacción.
+Como hemos visto anteriormente, la **apertura** de un canal de pagos comienza a través de una transacción de Bitcoin en la Lightning Network. El canal se puede **cerrar** cuando se desee. El canal se cierra también a través de una transacción Bitcoin. Entre la apertura y el cierre del canal de pagos, se pueden efectuar un número casi infinito de transacciones dentro del canal de pagos, sin tener que pasar por la blockchain de Bitcoin. Veamos qué ocurre dentro de un canal de pagos durante una transacción.
 
 ![LNP201](assets/en/17.webp)
 
